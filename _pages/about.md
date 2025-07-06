@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: From Rocks to Rows: My Journey as an Earth and Data Scientist
+subtitle: "From Rocks to Rows: My Journey as an Earth and Data Scientist"
 
 profile:
   align: right
