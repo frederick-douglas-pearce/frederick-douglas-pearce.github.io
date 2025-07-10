@@ -1,14 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - frederick-douglas-pearce
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - complex_numbers_clock
+  - us-presidential-vote-analysis
+  - 509_Report_Analysis
+  - predict-housling-prices
