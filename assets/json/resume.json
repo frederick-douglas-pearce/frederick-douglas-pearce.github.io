@@ -53,13 +53,7 @@
       "startDate": "2018-07-01",
       "endDate": "2020-05-01",
       "summary": "Member of remote, Agile data team supporting Analytics and Reporting for leadership of CMS’s Quality Payment Program (QPP)",
-      "highlights": [
-f       "Delivered diverse data products using SQL, Python, and Superset, including\n◦ Development and validation of data tables for public-facing reports\n◦ Dashboards with interactive visualization of KPIs for management\n◦ Designed and maintained data mart objects supporting QPP products, e.g. Management Dashboards, Clinician Data Lookup Tool, Policy Simulator",
-        "Transitioned management dashboards from PostgreSQL to Redshift across all tiers, reducing average page load time to well below 2 second target, a >70% decrease",
-	"Validated accuracy of data and reports, including implementation of automated data checks and reviews of production SQL and Python code",
-	"Presented sprint deliverables to program leadership, and gathered feedback for bug fixes and new features",
-	"",
-	""]
+      "highlights": ["Delivered diverse data products using SQL, Python, and Superset", "Transitioned management dashboards from PostgreSQL to Redshift across all tiers, reducing average page load time to well below 2 second target, a >70% decrease", "Validated accuracy of data and reports, including implementation of automated data checks and reviews of production SQL and Python code", "Presented sprint deliverables to program leadership, and gathered feedback for bug fixes and new features", "",""]
     }
   ],
   "education": [
