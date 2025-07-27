@@ -191,20 +191,50 @@
       "organization": "Portland Machine Learning Meetup",
       "location": "Portland, OR",
       "position": "Presenter",
-      "url": "",
+      "url": "https://www.meetup.com/portland-machine-learning-meetup/events/247159958/",
       "startDate": "2018-02-01",
       "endDate": "2018-02-01",
       "summary": "Gave a presentation on my PhD thesis work entitled \"Data Science View of Subduction Zone Imaging\", including a description of the different datasets that are melded together, the preprocessing/imaging methods, and the interpretation of the resulting seismic images in terms of subduction zone structure.",
       "highlights": [""]
     },
     {
-      "organization": "AgilePDX",
-      "location": "Portland, OR",
-      "position": "Scrum Master",
+      "organization": "Amertican Geophysical Union",
+      "location": "San Francisco, CA",
+      "position": "Session Convener and Chair",
       "url": "",
-      "startDate": "2024-06-01",
-      "endDate": "2024-10-01",
-      "summary": "Volunteer Scrum Master for AI & Agility Speaker Series. Identified potential speakers, sent cold emails to invite potential speakers, and handled scheduling and logistics.",
+      "startDate": "2011-12-01",
+      "endDate": "2011-12-01",
+      "summary": "Convenor and Chair for session entitled \"Advances in Signal Processing Methods for Seismology\". Solicited abstracts for session, organized them into a logical program, and introduced speakers when it was show time.",
+      "highlights": [""]
+    },
+    {
+      "organization": "Amertican Geophysical Union",
+      "location": "San Francisco, CA",
+      "position": "Session Chair",
+      "url": "",
+      "startDate": "2010-12-01",
+      "endDate": "2010-12-01",
+      "summary": "Chair for session entitled \"The Formation and Deformation of the Mediterranean Basins, Continental Margins, and Arcs II\”.",
+      "highlights": [""]
+    },
+    {
+      "organization": "Earth Resource Laboratory, MIT",
+      "location": "Cambridge, MA",
+      "position": "Organizer",
+      "url": "",
+      "startDate": "2007-09-01",
+      "endDate": "2009-09-01",
+      "summary": "Co-organizer for the Earth Resources Laboratory's Friday Informal Seminar Hour (FISH), a weekly technical presentation on a wide variety of geophysical research topics. I helped set up speakers, arrange their schedules, and provided introductions prior to the presentation.",
+      "highlights": [""]
+    },
+    {
+      "organization": "Amertican Geophysical Union",
+      "location": "San Francisco, CA",
+      "position": "Session Chair",
+      "url": "",
+      "startDate": "2008-12-01",
+      "endDate": "2008-12-01",
+      "summary": "Chair for session entitled \"Nonlinear Geophysics General Contributions Posters\"",
       "highlights": [""]
     }
   ],
