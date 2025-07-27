@@ -158,6 +158,16 @@
   ],
   "volunteer": [
     {
+      "organization": "AgilePDX",
+      "location": "Portland, OR",
+      "position": "Scrum Master",
+      "url": "",
+      "startDate": "2024-06-01",
+      "endDate": "2024-10-01",
+      "summary": "Volunteer Scrum Master for AI & Agility Speaker Series. Identified potential speakers, sent cold emails to invite potential speakers, and handled scheduling and logistics.",
+      "highlights": [""]
+    },
+    {
       "organization": "Emerging Leaders PDX",
       "location": "Portland, OR",
       "position": "Technical Evaluator",
@@ -165,6 +175,66 @@
       "startDate": "2021-02-01",
       "endDate": "2021-02-01",
       "summary": "Volunteer technical interviewer asking tech questions and providing constructive feedback during mock interviews of Emerging Leader candidates — junior and senior college students from underrepresented groups — seeking to receive internships in the tech industry, as part of a broader mission to increase diversity, equity and inclusion within the leadership of Portland's tech community.",
+      "highlights": [""]
+    },
+    {
+      "organization": "Data Scientist, Subject Matter Expert",
+      "location": "Portland, OR",
+      "position": "Hack Oregon",
+      "url": "",
+      "startDate": "2018-03-01",
+      "endDate": "2018-07-01",
+      "summary": "Team member on the Disaster Resilience project, focused on delivering a web-based app to help members of the Portland community 1) understand the risk they face during a Cascadia subduction zone earthquake, and 2) access resources to prepare themselves and their neighbors. Responsible for building an application to provide ground shaking intensity estimates for individual homes or businesses from raster-based earthquake model outputs, using Docker, Python, GDAL, Rasterio, Geopandas, PostGIS, etc.",
+      "highlights": ["The team's Earthquake Resiliency app was featured at the Oregon Museum of Science and Industry."]
+    },
+    {
+      "organization": "Portland Machine Learning Meetup",
+      "location": "Portland, OR",
+      "position": "Presenter",
+      "url": "https://www.meetup.com/portland-machine-learning-meetup/events/247159958/",
+      "startDate": "2018-02-01",
+      "endDate": "2018-02-01",
+      "summary": "Gave a presentation on my PhD thesis work entitled \"Data Science View of Subduction Zone Imaging\", including a description of the different datasets that are melded together, the preprocessing/imaging methods, and the interpretation of the resulting seismic images in terms of subduction zone structure.",
+      "highlights": [""]
+    },
+    {
+      "organization": "Amertican Geophysical Union",
+      "location": "San Francisco, CA",
+      "position": "Session Convener and Chair",
+      "url": "",
+      "startDate": "2011-12-01",
+      "endDate": "2011-12-01",
+      "summary": "Convenor and Chair for session entitled \"Advances in Signal Processing Methods for Seismology\". Solicited abstracts for session, organized them into a logical program, and introduced speakers when it was show time.",
+      "highlights": [""]
+    },
+    {
+      "organization": "Amertican Geophysical Union",
+      "location": "San Francisco, CA",
+      "position": "Session Chair",
+      "url": "",
+      "startDate": "2010-12-01",
+      "endDate": "2010-12-01",
+      "summary": "Chair for session entitled \"The Formation and Deformation of the Mediterranean Basins, Continental Margins, and Arcs II”.",
+      "highlights": [""]
+    },
+    {
+      "organization": "Earth Resource Laboratory, MIT",
+      "location": "Cambridge, MA",
+      "position": "Organizer",
+      "url": "",
+      "startDate": "2007-09-01",
+      "endDate": "2009-09-01",
+      "summary": "Co-organizer for the Earth Resources Laboratory's Friday Informal Seminar Hour (FISH), a weekly technical presentation on a wide variety of geophysical research topics. I helped set up speakers, arrange their schedules, and provided introductions prior to the presentation.",
+      "highlights": [""]
+    },
+    {
+      "organization": "Amertican Geophysical Union",
+      "location": "San Francisco, CA",
+      "position": "Session Chair",
+      "url": "",
+      "startDate": "2008-12-01",
+      "endDate": "2008-12-01",
+      "summary": "Chair for session entitled \"Nonlinear Geophysics General Contributions Posters\"",
       "highlights": [""]
     }
   ],
