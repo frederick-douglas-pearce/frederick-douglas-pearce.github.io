@@ -94,19 +94,72 @@
   ],
   "skills": [
     {
-      "name": "Geophysics",
+      "name": "Data",
       "level": "Expert",
       "icon": "",
       "keywords": [
-        "Seismic Imaging",
-        "Machine Learning",
-        "Signal Processing",
-        "Distributed Computing",
-        "Numerical Modeling",
-        "Wave theory",
-        "Seismic Refraction",
-        "Gravity",
-        "Radar"
+        "Wrangling",
+	"Validation",
+	"Analysis",
+	"Visualization",
+	"Modeling",
+	"Reporting",
+	"Storytelling",
+	"Time Series",
+	"Images",
+	"Geospatial"
+      ]
+    },
+    {
+      "name": "Machine Learning",
+      "level": "Expert",
+      "icon": "",
+      "keywords": [
+        "Feature Engineering",
+	"Supervised (e.g. Regression, Classificaiton)",
+	"Unsupervised (e.g. Clustering, Anomaly Detection)",
+	"Hyperparameter tuning",
+	"Convolutional Neural Networks",
+	"scikit-learn",
+	"Keras",
+	"PyTorch",
+	"LLMs",
+	"Prompt Engineering"
+      ]
+    },
+    {
+      "name": "Programming",
+      "level": "Expert",
+      "icon": "",
+      "keywords": [
+        "Python (e.g. numpy, pandas, geopandas, matplotlib, seaborn, scipy)",
+        "SQL",
+        "MATLAB",
+	"git"
+      ]
+    },
+    {
+      "name": "Databases",
+      "level": "Expert",
+      "icon": "",
+      "keywords": [
+        "PostgreSQL",
+        "PostGIS",
+        "Redshift",
+        "Elasticsearch"
+      ]
+    },
+    {
+      "name": "Project Managament",
+      "level": "Expert",
+      "icon": "",
+      "keywords": [
+        "Scrum",
+        "Kanban",
+        "Jira",
+        "Confluence",
+	"Github",
+	"User Stories"
       ]
     }
   ],
