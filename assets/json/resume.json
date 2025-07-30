@@ -99,15 +99,15 @@
       "icon": "",
       "keywords": [
         "Wrangling",
-	"Validation",
-	"Analysis",
-	"Visualization",
-	"Modeling",
-	"Reporting",
-	"Storytelling",
-	"Time Series",
-	"Images",
-	"Geospatial"
+        "Validation",
+        "Analysis",
+        "Visualization",
+        "Modeling",
+        "Reporting",
+        "Storytelling",
+        "Time Series",
+        "Images",
+        "Geospatial"
       ]
     },
     {
@@ -116,51 +116,34 @@
       "icon": "",
       "keywords": [
         "Feature Engineering",
-	"Supervised (e.g. Regression, Classificaiton)",
-	"Unsupervised (e.g. Clustering, Anomaly Detection)",
-	"Hyperparameter tuning",
-	"Convolutional Neural Networks",
-	"scikit-learn",
-	"Keras",
-	"PyTorch",
-	"LLMs",
-	"Prompt Engineering"
+        "Supervised (e.g. Regression, Classificaiton)",
+        "Unsupervised (e.g. Clustering, Anomaly Detection)",
+        "Hyperparameter tuning",
+        "Convolutional Neural Networks",
+        "scikit-learn",
+        "Keras",
+        "PyTorch",
+        "LLMs",
+        "Prompt Engineering"
       ]
     },
     {
       "name": "Programming",
       "level": "Expert",
       "icon": "",
-      "keywords": [
-        "Python (e.g. numpy, pandas, geopandas, matplotlib, seaborn, scipy)",
-        "SQL",
-        "MATLAB",
-	"git"
-      ]
+      "keywords": ["Python (e.g. numpy, pandas, geopandas, matplotlib, seaborn, scipy)", "SQL", "MATLAB", "git"]
     },
     {
       "name": "Databases",
       "level": "Expert",
       "icon": "",
-      "keywords": [
-        "PostgreSQL",
-        "PostGIS",
-        "Redshift",
-        "Elasticsearch"
-      ]
+      "keywords": ["PostgreSQL", "PostGIS", "Redshift", "Elasticsearch"]
     },
     {
       "name": "Project Managament",
       "level": "Expert",
       "icon": "",
-      "keywords": [
-        "Scrum",
-        "Kanban",
-        "Jira",
-        "Confluence",
-	"Github",
-	"User Stories"
-      ]
+      "keywords": ["Scrum", "Kanban", "Jira", "Confluence", "Github", "User Stories"]
     }
   ],
   "certificates": [
