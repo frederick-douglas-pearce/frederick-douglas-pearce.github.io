@@ -52,14 +52,31 @@
       "url": "",
       "startDate": "2018-07-01",
       "endDate": "2020-05-01",
-      "summary": "Member of remote, Agile data team supporting Analytics and Reporting for leadership of CMS’s Quality Payment Program (QPP)",
+      "summary": "Member of remote, Agile data team supporting Analytics and Reporting for leadership of CMS’s Quality Payment Program (QPP) by delivering diverse data products using SQL, Python, JupyterLab, and Superset",
       "highlights": [
-        "Delivered diverse data products using SQL, Python, and Superset",
+        "Developed and validated data tables for public-facing reports",
+        "Built dashboards with interactive visualization of KPIs for senior management",
         "Transitioned management dashboards from PostgreSQL to Redshift across all tiers, reducing average page load time to well below 2 second target, a >70% decrease",
+        "Designed and maintained data mart objects supporting QPP products, e.g. Management Dashboards, Clinician Data Lookup Tool, Policy Simulator",
         "Validated accuracy of data and reports, including implementation of automated data checks and reviews of production SQL and Python code",
         "Presented sprint deliverables to program leadership, and gathered feedback for bug fixes and new features",
-        "",
-        ""
+        "Trained external teams and potential customers on data model, metric definitions, and use of platform tools for self-service analytics",
+        "Member of hiring team for over 1 year: conducted dozens of phone screens and technical interviews, plus I created a technical interview for a BI role"
+      ]
+    },
+    {
+      "name": "Tripwire",
+      "position": "Data and Analytics Specialist/Software Engineer",
+      "url": "",
+      "startDate": "2015-09-01",
+      "endDate": "2016-05-01",
+      "summary": "As Tripwire's first data science-related hire, my work began with many a conversation across different groups to understand the data challenges the company faced. Then I leveraged their existing tech stack (Python, Elasticsearch, Logstash, Kibana) to deliver novel tools for visualizing and analyzing data from Tripwire Enterprise, their flagship product, including",
+      "highlights": [
+        "Compelling visualizations of filtered and/or aggregated event data along side insightful analytics (matplotlib)",
+        "Over two dozen security data features engineered with standard (e.g. FFT) and new (e.g. Block analytics) methods",
+        "An anomaly detector that successfully flagged “unusual” security events",
+        "A movie simulation of flagging anomalies in real-time data streams as POC for the marketing and product teams",
+        "High-level presentations and demos of visualization and analytics results, including at R&D All-Hands"
       ]
     }
   ],
