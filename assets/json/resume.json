@@ -144,6 +144,22 @@
       "level": "Expert",
       "icon": "",
       "keywords": ["Scrum", "Kanban", "Jira", "Confluence", "Github", "User Stories"]
+    },
+    {
+      "name": "Geophysics",
+      "level": "Expert",
+      "icon": "",
+      "keywords": [
+        "Seismic Imaging",
+        "Machine Learning",
+        "Signal Processing",
+        "Distributed Computing",
+        "Numerical Modeling",
+        "Wave theory",
+        "Seismic Refraction",
+        "Gravity",
+        "Radar"
+      ]
     }
   ],
   "certificates": [
