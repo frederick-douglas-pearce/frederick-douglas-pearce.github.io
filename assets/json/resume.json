@@ -52,14 +52,75 @@
       "url": "",
       "startDate": "2018-07-01",
       "endDate": "2020-05-01",
-      "summary": "Member of remote, Agile data team supporting Analytics and Reporting for leadership of CMS’s Quality Payment Program (QPP)",
+      "summary": "Member of remote, Agile data team supporting Analytics and Reporting for leadership of CMS’s Quality Payment Program (QPP) by delivering diverse data products using SQL, Python, JupyterLab, and Superset.",
       "highlights": [
-        "Delivered diverse data products using SQL, Python, and Superset",
+        "Developed and validated data tables for public-facing reports",
+        "Built dashboards with interactive visualization of KPIs for senior management",
         "Transitioned management dashboards from PostgreSQL to Redshift across all tiers, reducing average page load time to well below 2 second target, a >70% decrease",
+        "Designed and maintained data mart objects supporting QPP products, e.g. Management Dashboards, Clinician Data Lookup Tool, Policy Simulator",
         "Validated accuracy of data and reports, including implementation of automated data checks and reviews of production SQL and Python code",
         "Presented sprint deliverables to program leadership, and gathered feedback for bug fixes and new features",
-        "",
-        ""
+        "Trained external teams and potential customers on data model, metric definitions, and use of platform tools for self-service analytics",
+        "Member of hiring team for over 1 year: conducted dozens of phone screens and technical interviews, plus I created a technical interview for a BI role"
+      ]
+    },
+    {
+      "name": "Tripwire",
+      "position": "Data and Analytics Specialist/Software Engineer",
+      "url": "",
+      "startDate": "2015-09-01",
+      "endDate": "2016-05-01",
+      "summary": "As Tripwire's first data science-related hire, my work began with many a conversation across different groups to understand the data challenges the company faced. Then I leveraged their existing tech stack (Python, Elasticsearch, Logstash, Kibana) to deliver novel tools for visualizing and analyzing data from Tripwire Enterprise, their flagship product, including",
+      "highlights": [
+        "Compelling visualizations of filtered and/or aggregated event data along side insightful analytics (matplotlib)",
+        "Over two dozen security data features engineered with standard (e.g. FFT) and new (e.g. Block analytics) methods",
+        "An anomaly detector that successfully flagged “unusual” security events",
+        "A movie simulation of flagging anomalies in real-time data streams as POC for the marketing and product teams",
+        "High-level presentations and demos of visualization and analytics results, including at R&D All-Hands"
+      ]
+    },
+    {
+      "name": "Massachusetts Institute of Technology",
+      "position": "Graduate Researcher",
+      "url": "",
+      "startDate": "2005-09-01",
+      "endDate": "2014-12-01",
+      "summary": "As an academic researcher on the front line of discovery about the way the Earth works, I coded data analysis algorithms on a daily basis (mostly Matlab), delivered dozens of presentations, and collaborated on numerous research projects with colleagues from around the world. Check out the publications tab of my website for additional details.",
+      "highlights": [
+        "Produced the first high-resolution seismic image of continental lithosphere subducting into the mantle beneath Northern Greece, a controversial result (see Pearce JGR 2012 paper)",
+        "Developed novel approaches for using seismic images to quantitatively assess the validity of tectonic/geodynamic models, e.g. measuring ~70 km of differential slab rollback induced offset across the Cephalonia Transform Fault in Western Greece, consistent with geologic and geodynamic modeling estimates",
+        "Identified a reflector interpreted as the base of the external Hellenides thin-skinned thrust belt and discovered that it breaches the surface where basement rocks are exposed within the footwall of active extensional faults, as predicted by geodynamic modeling, compelling evidence for how continental crust forms in retreating subduction settings",
+        "Developed a preprocessing pipeline to generate receiver functions from array data with unprecedented fidelity and accuracy, while expanding the number of earthquakes available for imaging (i.e. it made lower signal-to-noise EQs viable for imaging)",
+        "Derived analytical expressions for receiver function imaging of 3D, dipping interfaces with multiple layers to power a Common Conversion Point imaging algorithm",
+        "Managed and quality controlled over a dozen big (TB+) data sets, 6+ for publication",
+        "Developed 12+ data processing workflows combining signal processing (e.g. Filtering, FFT, PCA), and machine learning (e.g. Linear Regression, Genetic Algorithm), etc.",
+        "Trained research teams to apply seismic imaging workflows on their own datasets, resulting in several peer-reviewed publications",
+        "Presented over twenty times at conferences and universities, including invited talks for the Tectonics Observatory Brownbag Seminar at Caltech in July of 2011 and the Department Seminar at the University of Oregon in January of 2011"
+      ]
+    },
+    {
+      "name": "Intel, contracted through EdgeLink",
+      "position": "MATLAB developer",
+      "url": "",
+      "startDate": "2013-01-01",
+      "endDate": "2013-04-01",
+      "summary": "Developer tasked with transitioning fab cost models from EXCEL VBA to MATLAB while on temporary leave from my PhD work at MIT.",
+      "highlights": [
+        "Developed and implemented a method for documenting Excel VBA cost model requirements",
+        "Coded efficient, accurate MATLAB cost model components from requirements",
+        "Trained team members on documentation method and MATLAB fundamentals"
+      ]
+    },
+    {
+      "name": "Los Alamos National Laboratory",
+      "position": "Post MS Researcher",
+      "url": "",
+      "startDate": "2004-01-01",
+      "endDate": "2005-07-01",
+      "summary": "Performed field experiments and data analysis to measure soil hysteresis effects on local resonance modes induced by a large vibrator truck, with application to designing strong ground motion resistant structures.",
+      "highlights": [
+        "Developed and coded novel signal processing methods for extracting quantitative measures of nonlinear soil behavior from large (>GB), experimental data sets",
+        "Wrote publication (Johnson et al., JGR 2009) and presented research findings at 6+ meetings and conferences"
       ]
     }
   ],
@@ -144,6 +205,22 @@
       "level": "Expert",
       "icon": "",
       "keywords": ["Scrum", "Kanban", "Jira", "Confluence", "Github", "User Stories"]
+    },
+    {
+      "name": "Geophysics",
+      "level": "Expert",
+      "icon": "",
+      "keywords": [
+        "Seismic Imaging",
+        "Machine Learning",
+        "Signal Processing",
+        "Distributed Computing",
+        "Numerical Modeling",
+        "Wave theory",
+        "Seismic Refraction",
+        "Gravity",
+        "Radar"
+      ]
     }
   ],
   "certificates": [
@@ -201,7 +278,7 @@
       "startDate": "2024-06-01",
       "endDate": "2024-10-01",
       "summary": "Volunteer Scrum Master for AI & Agility Speaker Series. Identified potential speakers, sent cold emails to invite potential speakers, and handled scheduling and logistics.",
-      "highlights": [""]
+      "highlights": []
     },
     {
       "organization": "Emerging Leaders PDX",
@@ -211,7 +288,7 @@
       "startDate": "2021-02-01",
       "endDate": "2021-02-01",
       "summary": "Volunteer technical interviewer asking tech questions and providing constructive feedback during mock interviews of Emerging Leader candidates — junior and senior college students from underrepresented groups — seeking to receive internships in the tech industry, as part of a broader mission to increase diversity, equity and inclusion within the leadership of Portland's tech community.",
-      "highlights": [""]
+      "highlights": []
     },
     {
       "organization": "Data Scientist, Subject Matter Expert",
@@ -231,7 +308,7 @@
       "startDate": "2018-02-01",
       "endDate": "2018-02-01",
       "summary": "Gave a presentation on my PhD thesis work entitled \"Data Science View of Subduction Zone Imaging\", including a description of the different datasets that are melded together, the preprocessing/imaging methods, and the interpretation of the resulting seismic images in terms of subduction zone structure.",
-      "highlights": [""]
+      "highlights": []
     },
     {
       "organization": "American Geophysical Union",
@@ -241,7 +318,7 @@
       "startDate": "2011-12-01",
       "endDate": "2011-12-01",
       "summary": "Convenor and Chair for session entitled \"Advances in Signal Processing Methods for Seismology\". Solicited abstracts for session, organized them into a logical program, and introduced speakers when it was show time.",
-      "highlights": [""]
+      "highlights": []
     },
     {
       "organization": "American Geophysical Union",
@@ -251,7 +328,7 @@
       "startDate": "2010-12-01",
       "endDate": "2010-12-01",
       "summary": "Chair for session entitled \"The Formation and Deformation of the Mediterranean Basins, Continental Margins, and Arcs II”.",
-      "highlights": [""]
+      "highlights": []
     },
     {
       "organization": "Earth Resource Laboratory, MIT",
@@ -261,7 +338,7 @@
       "startDate": "2007-09-01",
       "endDate": "2009-09-01",
       "summary": "Co-organizer for the Earth Resources Laboratory's Friday Informal Seminar Hour (FISH), a weekly technical presentation on a wide variety of geophysical research topics. I helped set up speakers, arrange their schedules, and provided introductions prior to the presentation.",
-      "highlights": [""]
+      "highlights": []
     },
     {
       "organization": "American Geophysical Union",
@@ -271,7 +348,7 @@
       "startDate": "2008-12-01",
       "endDate": "2008-12-01",
       "summary": "Chair for session entitled \"Nonlinear Geophysics General Contributions Posters\"",
-      "highlights": [""]
+      "highlights": []
     }
   ],
   "languages": [
