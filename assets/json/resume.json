@@ -105,7 +105,11 @@
       "startDate": "2013-01-01",
       "endDate": "2013-04-01",
       "summary": "Developer tasked with transitioning fab cost models from EXCEL VBA to MATLAB while on temporary leave from my PhD work at MIT.",
-      "highlights": ["Developed and implemented a method for documenting Excel VBA cost model requirements", "Coded efficient, accurate MATLAB cost model components from requirements", "Trained team members on documentation method and MATLAB fundamentals"]
+      "highlights": [
+        "Developed and implemented a method for documenting Excel VBA cost model requirements",
+        "Coded efficient, accurate MATLAB cost model components from requirements",
+        "Trained team members on documentation method and MATLAB fundamentals"
+      ]
     },
     {
       "name": "Los Alamos National Laboratory",
@@ -114,7 +118,10 @@
       "startDate": "2004-01-01",
       "endDate": "2005-07-01",
       "summary": "Performed field experiments and data analysis to measure soil hysteresis effects on local resonance modes induced by a large vibrator truck, with application to designing strong ground motion resistant structures.",
-      "highlights": ["Developed and coded novel signal processing methods for extracting quantitative measures of nonlinear soil behavior from large (>GB), experimental data sets", "Wrote publication (Johnson et al., JGR 2009) and presented research findings at 6+ meetings and conferences"]
+      "highlights": [
+        "Developed and coded novel signal processing methods for extracting quantitative measures of nonlinear soil behavior from large (>GB), experimental data sets",
+        "Wrote publication (Johnson et al., JGR 2009) and presented research findings at 6+ meetings and conferences"
+      ]
     }
   ],
   "education": [
