@@ -12,6 +12,19 @@ This project implements an end-to-end machine learning pipeline for classifying 
 
 <div class="mt-5"></div>
 
+## ESG Categories
+
+The classifier identifies four main categories with ternary sentiment (positive/neutral/negative):
+
+| Category | Description | Examples |
+|----------|-------------|----------|
+| **Environmental** | Climate, emissions, sustainability | Carbon neutrality commitments, recycling programs |
+| **Social** | Labor, diversity, community | Worker rights, DEI initiatives, community programs |
+| **Governance** | Ethics, transparency, leadership | Board changes, ethical sourcing, transparency reports |
+| **Digital Transformation** | Technology, innovation | Digital retail, supply chain tech, AI adoption |
+
+<div class="mt-5"></div>
+
 ## Live News Feed
 
 View the classified ESG news articles in real-time:
@@ -20,7 +33,7 @@ View the classified ESG news articles in real-time:
   Browse ESG News Feed
 </a>
 
-The feed includes interactive filtering by brand and ESG category.
+The feed includes {{ site.data.esg_news.total_articles }} articles with interactive filtering by brand and ESG category.
 
 <div class="mt-5"></div>
 
@@ -79,16 +92,13 @@ The pipeline consists of six integrated phases:
 
 <div class="mt-5"></div>
 
-## ESG Categories
+## Technology Stack
 
-The classifier identifies four main categories with ternary sentiment (positive/neutral/negative):
-
-| Category | Description | Examples |
-|----------|-------------|----------|
-| **Environmental** | Climate, emissions, sustainability | Carbon neutrality commitments, recycling programs |
-| **Social** | Labor, diversity, community | Worker rights, DEI initiatives, community programs |
-| **Governance** | Ethics, transparency, leadership | Board changes, ethical sourcing, transparency reports |
-| **Digital Transformation** | Technology, innovation | Digital retail, supply chain tech, AI adoption |
+- **Data Collection:** Python, PostgreSQL + pgvector, NewsData.io, GDELT
+- **ML Pipeline:** scikit-learn, sentence-transformers, spaCy
+- **LLM Integration:** Claude Sonnet (Anthropic), OpenAI embeddings
+- **MLOps:** MLflow, Evidently AI, Docker, GitHub Actions
+- **Deployment:** FastAPI, Google Cloud Run
 
 <div class="mt-5"></div>
 
@@ -118,16 +128,6 @@ The classifier identifies four main categories with ternary sentiment (positive/
         </div>
     </div>
 </div>
-
-<div class="mt-5"></div>
-
-## Technology Stack
-
-- **Data Collection:** Python, PostgreSQL + pgvector, NewsData.io, GDELT
-- **ML Pipeline:** scikit-learn, sentence-transformers, spaCy
-- **LLM Integration:** Claude Sonnet (Anthropic), OpenAI embeddings
-- **MLOps:** MLflow, Evidently AI, Docker, GitHub Actions
-- **Deployment:** FastAPI, Google Cloud Run
 
 <div class="mt-5"></div>
 

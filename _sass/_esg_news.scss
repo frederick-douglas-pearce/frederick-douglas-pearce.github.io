@@ -1,7 +1,7 @@
 // ESG News Feed Styles
 
 .esg-news-container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -11,17 +11,67 @@
   border-bottom: 1px solid var(--global-divider-color);
 }
 
-.esg-news-filters {
+// Sidebar styles
+.esg-news-sidebar {
+  position: sticky;
+  top: 80px;
+  padding: 1rem;
+  background-color: var(--global-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+
+  .sidebar-title {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+
   .form-select {
     height: auto;
     min-height: 38px;
   }
 
   select[multiple] {
-    height: 100px;
+    height: 120px;
+  }
+
+  .filter-group {
+    label {
+      font-size: 0.9rem;
+    }
   }
 }
 
+// Sentiment legend
+.sentiment-legend {
+  padding-top: 1rem;
+  border-top: 1px solid var(--global-divider-color);
+
+  h6 {
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+    color: var(--global-text-color-light);
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+
+    .badge {
+      min-width: 80px;
+      text-align: center;
+    }
+
+    .legend-label {
+      margin-left: 0.5rem;
+      font-size: 0.8rem;
+      color: var(--global-text-color-light);
+    }
+  }
+}
+
+// Article cards
 .esg-news-card {
   transition: box-shadow 0.2s ease-in-out;
 
@@ -63,16 +113,54 @@
   }
 }
 
+// Evidence section
 .esg-evidence {
   .evidence-toggle {
     font-size: 0.85rem;
   }
 
   .evidence-brand {
-    padding: 0.5rem;
+    padding: 0.75rem;
     background-color: var(--global-bg-color);
     border-radius: 4px;
     border: 1px solid var(--global-divider-color);
+  }
+
+  .evidence-item {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: var(--global-card-bg-color);
+    border-radius: 4px;
+  }
+
+  .evidence-chunk {
+    .chunk-text {
+      padding: 0.75rem;
+      background-color: var(--global-code-bg-color);
+      border-radius: 4px;
+      border-left: 3px solid var(--global-theme-color);
+      line-height: 1.5;
+      color: var(--global-text-color);
+    }
+
+    .excerpt-highlight {
+      padding: 0.5rem 0.75rem;
+      margin-top: 0.5rem;
+      background-color: rgba(var(--global-theme-color-rgb), 0.1);
+      border-radius: 4px;
+      font-style: italic;
+
+      strong {
+        font-style: normal;
+        color: var(--global-theme-color);
+      }
+    }
+  }
+
+  .evidence-excerpt {
+    padding: 0.5rem;
+    font-style: italic;
+    color: var(--global-text-color-light);
   }
 
   .evidence-list {
@@ -99,16 +187,48 @@ html[data-theme="dark"] {
     }
   }
 
-  .esg-evidence .evidence-brand {
+  .esg-news-sidebar {
     background-color: var(--global-code-bg-color);
+  }
+
+  .esg-evidence {
+    .evidence-brand {
+      background-color: var(--global-code-bg-color);
+    }
+
+    .evidence-item {
+      background-color: rgba(255, 255, 255, 0.03);
+    }
+
+    .evidence-chunk .chunk-text {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
   }
 }
 
 // Responsive adjustments
 @media (max-width: 768px) {
-  .esg-news-filters {
+  .esg-news-sidebar {
+    position: relative;
+    top: 0;
+    margin-bottom: 1.5rem;
+
     select[multiple] {
       height: 80px;
+    }
+  }
+
+  .sentiment-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    h6 {
+      width: 100%;
+    }
+
+    .legend-item {
+      margin-bottom: 0;
     }
   }
 
