@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ESG News Classifier
+title: Sportswear ESG News Classifier
 description: Multi-label text classification for sportswear brand ESG news
 importance: 1
 category: work
@@ -8,7 +8,7 @@ category: work
 
 ## Overview
 
-This project implements an end-to-end machine learning pipeline for classifying news articles about sportswear brands into Environmental, Social, and Governance (ESG) categories. The system monitors 50+ global sportswear brands including Nike, Adidas, Puma, Lululemon, and Patagonia.
+This project implements an end-to-end machine learning pipeline for classifying news articles about sportswear brands into Environmental, Social, Governance (ESG), and Digital Transformation categories. The system monitors 50+ global sportswear brands including Nike, Adidas, Puma, Lululemon, and Patagonia.
 
 <div class="mt-5"></div>
 
@@ -20,7 +20,7 @@ View the classified ESG news articles in real-time:
   Browse ESG News Feed
 </a>
 
-The feed includes {{ site.data.esg_news.total_articles }} articles with interactive filtering by brand and ESG category.
+The feed includes interactive filtering by brand and ESG category.
 
 <div class="mt-5"></div>
 
@@ -83,16 +83,12 @@ The pipeline consists of six integrated phases:
 
 The classifier identifies four main categories with ternary sentiment (positive/neutral/negative):
 
-<div class="table-responsive mt-3">
-
 | Category | Description | Examples |
 |----------|-------------|----------|
 | **Environmental** | Climate, emissions, sustainability | Carbon neutrality commitments, recycling programs |
 | **Social** | Labor, diversity, community | Worker rights, DEI initiatives, community programs |
 | **Governance** | Ethics, transparency, leadership | Board changes, ethical sourcing, transparency reports |
 | **Digital Transformation** | Technology, innovation | Digital retail, supply chain tech, AI adoption |
-
-</div>
 
 <div class="mt-5"></div>
 
@@ -127,15 +123,11 @@ The classifier identifies four main categories with ternary sentiment (positive/
 
 ## Technology Stack
 
-<div class="mt-3">
-
 - **Data Collection:** Python, PostgreSQL + pgvector, NewsData.io, GDELT
 - **ML Pipeline:** scikit-learn, sentence-transformers, spaCy
 - **LLM Integration:** Claude Sonnet (Anthropic), OpenAI embeddings
 - **MLOps:** MLflow, Evidently AI, Docker, GitHub Actions
 - **Deployment:** FastAPI, Google Cloud Run
-
-</div>
 
 <div class="mt-5"></div>
 
