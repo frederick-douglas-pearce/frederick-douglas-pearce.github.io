@@ -1,0 +1,125 @@
+// ESG News Feed Styles
+
+.esg-news-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.esg-news-header {
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.esg-news-filters {
+  .form-select {
+    height: auto;
+    min-height: 38px;
+  }
+
+  select[multiple] {
+    height: 100px;
+  }
+}
+
+.esg-news-card {
+  transition: box-shadow 0.2s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-header {
+    background-color: transparent;
+    border-bottom: 1px solid var(--global-divider-color);
+    padding: 0.75rem 1rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+
+    a {
+      color: var(--global-text-color);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+
+  .esg-badges {
+    .badge {
+      margin-left: 0.25rem;
+    }
+  }
+
+  .esg-category-badges {
+    .badge {
+      margin-right: 0.25rem;
+      font-weight: normal;
+    }
+  }
+}
+
+.esg-evidence {
+  .evidence-toggle {
+    font-size: 0.85rem;
+  }
+
+  .evidence-brand {
+    padding: 0.5rem;
+    background-color: var(--global-bg-color);
+    border-radius: 4px;
+    border: 1px solid var(--global-divider-color);
+  }
+
+  .evidence-list {
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+
+    li {
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+
+      .badge {
+        font-size: 0.7rem;
+        margin-right: 0.25rem;
+      }
+    }
+  }
+}
+
+// Dark mode adjustments
+html[data-theme="dark"] {
+  .esg-news-card {
+    &:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .esg-evidence .evidence-brand {
+    background-color: var(--global-code-bg-color);
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .esg-news-filters {
+    select[multiple] {
+      height: 80px;
+    }
+  }
+
+  .esg-news-card {
+    .card-header {
+      flex-direction: column;
+      align-items: flex-start !important;
+
+      .esg-badges {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}
