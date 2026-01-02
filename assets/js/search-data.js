@@ -442,6 +442,11 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-esg-news-classifier",
+          title: 'ESG News Classifier',
+          description: "Multi-label text classification for sportswear brand ESG news",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/esg_classifier/";
             },},{
         id: 'social-email',
         title: 'email',
