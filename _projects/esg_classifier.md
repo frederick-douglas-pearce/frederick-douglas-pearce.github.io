@@ -2,6 +2,7 @@
 layout: page
 title: Sportswear ESG News Classifier
 description: Multi-label text classification for sportswear brand ESG news
+img: assets/img/esg_news_funnel.png
 importance: 1
 category: work
 ---
