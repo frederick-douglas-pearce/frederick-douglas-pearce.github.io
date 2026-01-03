@@ -33,24 +33,26 @@ assets/
 
 ## Key Configuration Files
 
-- **_config.yml** - Main Jekyll config (site settings, plugins, third-party libs)
+- **\_config.yml** - Main Jekyll config (site settings, plugins, third-party libs)
 - **Gemfile** - Ruby gem dependencies
 - **package.json** - Node.js dependencies
 
 ## Content Types
 
-| Type | Location | Format |
-|------|----------|--------|
-| Blog posts | `_posts/` | `YYYY-MM-DD-title.md` |
-| Projects | `_projects/` | Markdown with YAML frontmatter |
-| Publications | `_bibliography/papers.bib` | BibTeX |
-| Pages | `_pages/` | Markdown |
-| News | `_news/` | Markdown |
+| Type         | Location                   | Format                         |
+| ------------ | -------------------------- | ------------------------------ |
+| Blog posts   | `_posts/`                  | `YYYY-MM-DD-title.md`          |
+| Projects     | `_projects/`               | Markdown with YAML frontmatter |
+| Publications | `_bibliography/papers.bib` | BibTeX                         |
+| Pages        | `_pages/`                  | Markdown                       |
+| News         | `_news/`                   | Markdown                       |
 
 ## Custom Features
 
 ### ESG News Classifier System
+
 A custom addition for displaying ESG-classified news articles:
+
 - **Data:** `_data/esg_news.json` - Large JSON with classified articles
 - **Page:** `_pages/esg-news.md` - News feed with filters
 - **JS:** `assets/js/esg_news_filter.js` - Client-side filtering
@@ -58,6 +60,7 @@ A custom addition for displaying ESG-classified news articles:
 - **Project page:** `_projects/esg_classifier.md`
 
 ### Key Plugins (`_plugins/`)
+
 - `google-scholar-citations.rb` - Fetch citation counts
 - `download-3rd-party.rb` - Cache CDN libraries locally
 - `cache-bust.rb` - Static asset cache busting
@@ -65,17 +68,20 @@ A custom addition for displaying ESG-classified news articles:
 ## Common Tasks
 
 ### Local Development
+
 ```bash
 bundle install          # Install Ruby dependencies
 bundle exec jekyll serve --livereload  # Start dev server (localhost:4000)
 ```
 
 ### Adding Content
+
 - **New blog post:** Create `_posts/YYYY-MM-DD-title.md` with frontmatter
 - **New project:** Create `_projects/project-name.md` with frontmatter
 - **New publication:** Add entry to `_bibliography/papers.bib`
 
 ### Build for Production
+
 ```bash
 JEKYLL_ENV=production bundle exec jekyll build
 ```
@@ -83,6 +89,7 @@ JEKYLL_ENV=production bundle exec jekyll build
 ## Frontmatter Examples
 
 ### Blog Post
+
 ```yaml
 ---
 layout: post
@@ -95,6 +102,7 @@ categories: category-name
 ```
 
 ### Project
+
 ```yaml
 ---
 layout: page

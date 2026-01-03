@@ -16,12 +16,12 @@ This project implements an end-to-end machine learning pipeline for classifying 
 
 The classifier identifies four main categories with ternary sentiment (positive/neutral/negative):
 
-| Category | Description | Examples |
-|----------|-------------|----------|
-| **Environmental** | Climate, emissions, sustainability | Carbon neutrality commitments, recycling programs |
-| **Social** | Labor, diversity, community | Worker rights, DEI initiatives, community programs |
-| **Governance** | Ethics, transparency, leadership | Board changes, ethical sourcing, transparency reports |
-| **Digital Transformation** | Technology, innovation | Digital retail, supply chain tech, AI adoption |
+| Category                   | Description                        | Examples                                              |
+| -------------------------- | ---------------------------------- | ----------------------------------------------------- |
+| **Environmental**          | Climate, emissions, sustainability | Carbon neutrality commitments, recycling programs     |
+| **Social**                 | Labor, diversity, community        | Worker rights, DEI initiatives, community programs    |
+| **Governance**             | Ethics, transparency, leadership   | Board changes, ethical sourcing, transparency reports |
+| **Digital Transformation** | Technology, innovation             | Digital retail, supply chain tech, AI adoption        |
 
 <div class="mt-5"></div>
 
