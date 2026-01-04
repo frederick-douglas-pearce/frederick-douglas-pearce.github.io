@@ -2,6 +2,11 @@ source 'https://rubygems.org'
 
 gem 'jekyll'
 
+# Security updates - minimum versions to address vulnerabilities
+gem 'nokogiri', '>= 1.18.9'    # CVE patches for libxml2
+gem 'rexml', '>= 3.4.2'        # DoS vulnerability fix
+gem 'uri', '>= 1.0.4'          # Credential leakage fix
+
 # Core plugins that directly affect site building
 group :jekyll_plugins do
     gem 'jekyll-archives-v2'
@@ -29,7 +34,7 @@ end
 group :other_plugins do
     gem 'css_parser'
     gem 'feedjira'
-    gem 'httparty'
+    gem 'httparty', '>= 0.24.0'  # SSRF vulnerability fix
     gem 'observer'       # used by jekyll-scholar
     gem 'ostruct'        # used by jekyll-twitter-plugin
     # gem 'terser'         # used by jekyll-terser
