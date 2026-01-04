@@ -42,6 +42,11 @@ ninja.data = [{
           description: "Multi-label text classification for sportswear brand ESG news",
           section: "Projects",handler: () => {
               window.location.href = "/projects/esg_classifier/";
+            },},{id: "projects-e-commerce-fraud-detection",
+          title: 'E-Commerce Fraud Detection',
+          description: "Real-time fraud detection with XGBoost and SHAP explainability",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/fraud_detection/";
             },},{
         id: 'social-email',
         title: 'email',
