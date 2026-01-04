@@ -667,12 +667,29 @@ footer.sticky-bottom {
   }
 
   .card {
-    img {
-      width: 100%;
+    figure {
+      margin: 0;
       aspect-ratio: 4 / 3;
-      object-fit: contain;
-      object-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background-color: var(--global-card-bg-color);
+
+      picture {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+      }
     }
   }
 
