@@ -65,6 +65,17 @@ A custom addition for displaying ESG-classified news articles:
 - `download-3rd-party.rb` - Cache CDN libraries locally
 - `cache-bust.rb` - Static asset cache busting
 
+## Pre-Push Requirements
+
+**Always run Prettier before pushing:**
+
+```bash
+npx prettier . --check    # Check formatting
+npx prettier . --write    # Fix formatting issues
+```
+
+The GitHub Actions workflow enforces Prettier formatting. Pushes with formatting issues will fail CI.
+
 ## Common Tasks
 
 ### Local Development
