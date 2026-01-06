@@ -5,7 +5,7 @@ permalink: /projects/
 description: Machine learning and data science projects showcasing end-to-end solutions.
 nav: true
 nav_order: 2
-display_categories: [work, fun]
+display_categories: [work, research]
 horizontal: false
 ---
 
