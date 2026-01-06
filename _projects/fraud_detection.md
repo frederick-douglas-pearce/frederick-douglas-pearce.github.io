@@ -13,15 +13,17 @@ This project implements a production-ready machine learning system for detecting
 
 <div class="mt-5"></div>
 
-## Fraud Detection Targets
+## Fraud Detection Capabilities
 
-The classifier is designed to catch three specific fraud patterns:
+The system's 30 engineered features enable detection of diverse fraudulent activity patterns:
 
-| Pattern              | Description                                                     |
-| -------------------- | --------------------------------------------------------------- |
-| **Card Testing**     | Micro-transactions during late hours to validate stolen cards   |
-| **High-Value Fraud** | Large purchases shipped to locations far from the user's origin |
-| **Promo Code Abuse** | Exploitation of promotional offers from newly created accounts  |
+| Feature Category           | Detection Signals                                                                                       |
+| -------------------------- | ------------------------------------------------------------------------------------------------------- |
+| **Temporal Analysis**      | Unusual transaction timing, timezone mismatches between user location and purchase time, late-hour activity |
+| **Amount Patterns**        | Deviations from typical purchase amounts, micro-transactions indicative of card testing, high-value anomalies |
+| **User Behavior**          | Account age relative to transaction patterns, purchase velocity, session characteristics                |
+| **Geographic Risk**        | Distance between user origin and shipping destination, cross-border transactions, location inconsistencies |
+| **Security Indicators**    | Composite risk scores combining multiple signals, device and browser fingerprinting patterns            |
 
 <div class="mt-5"></div>
 
