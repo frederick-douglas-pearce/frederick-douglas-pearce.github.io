@@ -180,6 +180,9 @@ nav: false
         {% endfor %}
       </div>
 
+      <!-- Pagination -->
+      <div id="pagination" class="mt-4"></div>
+
       <!-- No results message -->
       <div id="noResults" class="alert alert-info" style="display: none;">
         No articles match your filter criteria. Try adjusting your filters.

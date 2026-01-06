@@ -206,6 +206,36 @@ html[data-theme="dark"] {
   }
 }
 
+// Pagination
+#pagination {
+  .pagination {
+    flex-wrap: wrap;
+    gap: 0.25rem;
+
+    .page-link {
+      color: var(--global-theme-color);
+      border-color: var(--global-divider-color);
+      background-color: var(--global-bg-color);
+
+      &:hover {
+        background-color: var(--global-theme-color);
+        border-color: var(--global-theme-color);
+        color: white;
+      }
+    }
+
+    .page-item.active .page-link {
+      background-color: var(--global-theme-color);
+      border-color: var(--global-theme-color);
+    }
+
+    .page-item.disabled .page-link {
+      color: var(--global-text-color-light);
+      background-color: var(--global-bg-color);
+    }
+  }
+}
+
 // Responsive adjustments
 @media (max-width: 768px) {
   .esg-news-sidebar {
