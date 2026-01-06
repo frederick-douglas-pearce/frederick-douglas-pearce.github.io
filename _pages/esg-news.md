@@ -4,6 +4,7 @@ title: ESG News Feed
 permalink: /esg-news/
 description: Real-time ESG news for sportswear brands with filtering by brand and category
 nav: false
+enable_math: false
 ---
 
 <div class="esg-news-container">
