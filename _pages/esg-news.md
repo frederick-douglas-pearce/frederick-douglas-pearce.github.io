@@ -156,9 +156,9 @@ enable_math: false
                       <div class="evidence-category">
                         <span class="badge bg-light text-dark">{{ ev.category | replace: '_', ' ' | capitalize }}</span>
                       </div>
-                      {% if ev.chunk_text %}
+                      {% if ev.context_snippet %}
                       <div class="evidence-chunk small mt-1">
-                        <div class="chunk-text">{{ ev.chunk_text }}</div>
+                        <div class="chunk-text">{{ ev.context_snippet }}</div>
                         <div class="excerpt-highlight mt-1">
                           <strong>Key excerpt:</strong> "{{ ev.excerpt }}"
                         </div>
