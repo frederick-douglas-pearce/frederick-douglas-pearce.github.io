@@ -25,8 +25,8 @@ enable_math: false
   {% if site.data.esg_news.scorecard %}
   <!-- Sportswear Sustainability Scorecard -->
   <div id="scorecard-section" class="mb-4">
-    <h3 class="scorecard-title">Sportswear Sustainability Scorecard</h3>
-    <p class="text-muted small">
+    <h3 class="scorecard-title text-center">Sportswear Sustainability Scorecard</h3>
+    <p class="text-muted small text-center">
       Based on {{ site.data.esg_news.scorecard.articles_after_dedup }} unique articles from {{ site.data.esg_news.scorecard.period_start }} to {{ site.data.esg_news.scorecard.period_end }}
       {% if site.data.esg_news.scorecard.duplicates_removed > 0 %}
       ({{ site.data.esg_news.scorecard.duplicates_removed }} duplicates removed)
@@ -36,7 +36,7 @@ enable_math: false
     <div class="row">
       <!-- Top Performers -->
       <div class="col-md-6 mb-3">
-        <h5 class="scorecard-section-title">Top Performers</h5>
+        <h5 class="scorecard-section-title text-center">Top Performers</h5>
         <div id="top-brands">
           {% if site.data.esg_news.scorecard.top_brands.size > 0 %}
             {% for brand in site.data.esg_news.scorecard.top_brands %}
@@ -47,17 +47,21 @@ enable_math: false
               <span class="brand-name">{{ brand.brand }}</span>
               <span class="total-score badge bg-success">+{{ brand.total }}</span>
               <div class="category-breakdown">
-                {% if brand.environmental != 0 %}
-                  <span class="badge bg-success-subtle text-success-emphasis small">E:{% if brand.environmental > 0 %}+{% endif %}{{ brand.environmental }}</span>
+                {% assign env = brand.environmental | plus: 0 %}
+                {% assign soc = brand.social | plus: 0 %}
+                {% assign gov = brand.governance | plus: 0 %}
+                {% assign dig = brand.digital_transformation | plus: 0 %}
+                {% if env != 0 %}
+                  <span class="badge cat-badge cat-env">E:{% if env > 0 %}+{% endif %}{{ env }}</span>
                 {% endif %}
-                {% if brand.social != 0 %}
-                  <span class="badge bg-info-subtle text-info-emphasis small">S:{% if brand.social > 0 %}+{% endif %}{{ brand.social }}</span>
+                {% if soc != 0 %}
+                  <span class="badge cat-badge cat-soc">S:{% if soc > 0 %}+{% endif %}{{ soc }}</span>
                 {% endif %}
-                {% if brand.governance != 0 %}
-                  <span class="badge bg-warning-subtle text-warning-emphasis small">G:{% if brand.governance > 0 %}+{% endif %}{{ brand.governance }}</span>
+                {% if gov != 0 %}
+                  <span class="badge cat-badge cat-gov">G:{% if gov > 0 %}+{% endif %}{{ gov }}</span>
                 {% endif %}
-                {% if brand.digital_transformation != 0 %}
-                  <span class="badge bg-primary-subtle text-primary-emphasis small">D:{% if brand.digital_transformation > 0 %}+{% endif %}{{ brand.digital_transformation }}</span>
+                {% if dig != 0 %}
+                  <span class="badge cat-badge cat-dig">D:{% if dig > 0 %}+{% endif %}{{ dig }}</span>
                 {% endif %}
               </div>
             </div>
@@ -68,13 +72,13 @@ enable_math: false
         </div>
       </div>
 
-      <!-- Needs Improvement -->
+      <!-- Bottom Performers -->
       <div class="col-md-6 mb-3">
-        <h5 class="scorecard-section-title">Needs Improvement</h5>
+        <h5 class="scorecard-section-title text-center">Bottom Performers</h5>
         <div id="bottom-brands">
           {% if site.data.esg_news.scorecard.bottom_brands.size > 0 %}
             {% for brand in site.data.esg_news.scorecard.bottom_brands %}
-            <div class="scorecard-card needs-improvement">
+            <div class="scorecard-card bottom-performer">
               <span class="brand-name">{{ brand.brand }}</span>
               {% if brand.total < 0 %}
                 <span class="total-score badge bg-danger">{{ brand.total }}</span>
@@ -82,17 +86,21 @@ enable_math: false
                 <span class="total-score badge bg-secondary">{{ brand.total }}</span>
               {% endif %}
               <div class="category-breakdown">
-                {% if brand.environmental != 0 %}
-                  <span class="badge bg-success-subtle text-success-emphasis small">E:{% if brand.environmental > 0 %}+{% endif %}{{ brand.environmental }}</span>
+                {% assign env = brand.environmental | plus: 0 %}
+                {% assign soc = brand.social | plus: 0 %}
+                {% assign gov = brand.governance | plus: 0 %}
+                {% assign dig = brand.digital_transformation | plus: 0 %}
+                {% if env != 0 %}
+                  <span class="badge cat-badge cat-env">E:{% if env > 0 %}+{% endif %}{{ env }}</span>
                 {% endif %}
-                {% if brand.social != 0 %}
-                  <span class="badge bg-info-subtle text-info-emphasis small">S:{% if brand.social > 0 %}+{% endif %}{{ brand.social }}</span>
+                {% if soc != 0 %}
+                  <span class="badge cat-badge cat-soc">S:{% if soc > 0 %}+{% endif %}{{ soc }}</span>
                 {% endif %}
-                {% if brand.governance != 0 %}
-                  <span class="badge bg-warning-subtle text-warning-emphasis small">G:{% if brand.governance > 0 %}+{% endif %}{{ brand.governance }}</span>
+                {% if gov != 0 %}
+                  <span class="badge cat-badge cat-gov">G:{% if gov > 0 %}+{% endif %}{{ gov }}</span>
                 {% endif %}
-                {% if brand.digital_transformation != 0 %}
-                  <span class="badge bg-primary-subtle text-primary-emphasis small">D:{% if brand.digital_transformation > 0 %}+{% endif %}{{ brand.digital_transformation }}</span>
+                {% if dig != 0 %}
+                  <span class="badge cat-badge cat-dig">D:{% if dig > 0 %}+{% endif %}{{ dig }}</span>
                 {% endif %}
               </div>
             </div>
@@ -105,9 +113,9 @@ enable_math: false
     </div>
 
     <!-- Scoring Legend -->
-    <div class="scorecard-legend mt-2">
+    <div class="scorecard-legend mt-2 text-center">
       <small class="text-muted">
-        <strong>Scoring:</strong> Positive coverage = +2 pts, Neutral = +1 pt, Negative = -1 pt |
+        <strong>Scoring:</strong> Positive coverage = +2 pts, Neutral = +1 pt, Negative = -1 pt<br>
         <strong>Categories:</strong> E = Environmental, S = Social, G = Governance, D = Digital Transformation
       </small>
     </div>
