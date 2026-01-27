@@ -22,7 +22,8 @@ enable_math: false
     </p>
   </div>
 
-  {% if site.data.esg_news.scorecard %}
+{% if site.data.esg_news.scorecard %}
+
   <!-- Sportswear Sustainability Scorecard -->
   <div id="scorecard-section" class="mb-4">
     <h3 class="scorecard-title text-center">Sportswear Sustainability Scorecard</h3>
@@ -120,6 +121,7 @@ enable_math: false
         <em>Note: Top performers must have a positive score, so fewer than 3 brands may be shown.</em>
       </small>
     </div>
+
   </div>
   {% endif %}
 
