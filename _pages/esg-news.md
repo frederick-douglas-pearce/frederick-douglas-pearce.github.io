@@ -73,19 +73,15 @@ enable_math: false
         </div>
       </div>
 
-      <!-- Bottom Performers -->
+      <!-- Last Performers -->
       <div class="col-md-6 mb-3">
-        <h5 class="scorecard-section-title text-center">Bottom Performers</h5>
+        <h5 class="scorecard-section-title text-center">Last Performers</h5>
         <div id="bottom-brands">
           {% if site.data.esg_news.scorecard.bottom_brands.size > 0 %}
             {% for brand in site.data.esg_news.scorecard.bottom_brands %}
-            <div class="scorecard-card bottom-performer">
+            <div class="scorecard-card last-performer">
               <span class="brand-name">{{ brand.brand }}</span>
-              {% if brand.total < 0 %}
-                <span class="total-score badge bg-danger">{{ brand.total }}</span>
-              {% else %}
-                <span class="total-score badge bg-secondary">{{ brand.total }}</span>
-              {% endif %}
+              <span class="total-score badge bg-danger">{{ brand.total }}</span>
               <div class="category-breakdown">
                 {% assign env = brand.environmental | plus: 0 %}
                 {% assign soc = brand.social | plus: 0 %}
@@ -107,7 +103,7 @@ enable_math: false
             </div>
             {% endfor %}
           {% else %}
-            <p class="text-muted">No data available</p>
+            <p class="text-muted">No brands with negative scores in this period</p>
           {% endif %}
         </div>
       </div>
@@ -118,7 +114,7 @@ enable_math: false
       <small class="text-muted">
         <strong>Scoring:</strong> Positive coverage = +2 pts, Neutral = +1 pt, Negative = -1 pt<br>
         <strong>Categories:</strong> E = Environmental, S = Social, G = Governance, D = Digital Transformation<br>
-        <em>Note: Top performers must have a positive score, so fewer than 3 brands may be shown.</em>
+        <em>Note: Top performers must have positive scores; last performers must have negative scores. Fewer than 3 brands may be shown.</em>
       </small>
     </div>
 
