@@ -97,6 +97,34 @@
   border-top: 1px solid var(--global-divider-color);
 }
 
+// Date range filter
+.date-presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+
+  .date-preset {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+
+    &.active {
+      background-color: var(--global-theme-color);
+      border-color: var(--global-theme-color);
+      color: #fff;
+    }
+  }
+}
+
+.date-inputs {
+  .form-label {
+    margin-bottom: 0.25rem;
+  }
+
+  .form-control-sm {
+    font-size: 0.8rem;
+  }
+}
+
 .esg-news-header {
   text-align: center;
   padding-bottom: 1rem;

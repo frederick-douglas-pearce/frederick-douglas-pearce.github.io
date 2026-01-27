@@ -14,6 +14,9 @@
     const brandFilter = document.getElementById("brandFilter");
     const categoryFilter = document.getElementById("categoryFilter");
     const sentimentFilter = document.getElementById("sentimentFilter");
+    const startDateInput = document.getElementById("startDate");
+    const endDateInput = document.getElementById("endDate");
+    const datePresetButtons = document.querySelectorAll(".date-preset");
     const clearFiltersBtn = document.getElementById("clearFilters");
     const resultsCount = document.getElementById("resultsCount");
     const noResults = document.getElementById("noResults");
@@ -51,17 +54,39 @@
     }
 
     /**
+     * Parse a date string (YYYY-MM-DD) to Date object at start of day
+     */
+    function parseDate(dateStr) {
+      if (!dateStr) return null;
+      const [year, month, day] = dateStr.split("-").map(Number);
+      return new Date(year, month - 1, day);
+    }
+
+    /**
+     * Format a Date object to YYYY-MM-DD string
+     */
+    function formatDate(date) {
+      const year = date.getFullYear();
+      const month = String(date.getMonth() + 1).padStart(2, "0");
+      const day = String(date.getDate()).padStart(2, "0");
+      return `${year}-${month}-${day}`;
+    }
+
+    /**
      * Get filtered articles based on current selections
      */
     function getFilteredArticles() {
       const selectedBrands = getSelectedValues(brandFilter);
       const selectedCategories = getSelectedValues(categoryFilter);
       const selectedSentiment = sentimentFilter.value;
+      const startDate = parseDate(startDateInput?.value);
+      const endDate = parseDate(endDateInput?.value);
 
       return allArticles.filter((article) => {
         const articleBrands = article.dataset.brands ? article.dataset.brands.split(",") : [];
         const articleCategories = article.dataset.categories ? article.dataset.categories.split(",") : [];
         const articleSentiments = article.dataset.sentiments ? article.dataset.sentiments.split(",").filter((s) => s) : [];
+        const articleDate = parseDate(article.dataset.date);
 
         let show = true;
 
@@ -78,6 +103,14 @@
         // Sentiment filter
         if (selectedSentiment) {
           show = show && articleSentiments.includes(selectedSentiment);
+        }
+
+        // Date range filter
+        if (startDate && articleDate) {
+          show = show && articleDate >= startDate;
+        }
+        if (endDate && articleDate) {
+          show = show && articleDate <= endDate;
         }
 
         return show;
@@ -110,10 +143,6 @@
       });
 
       // Update results count
-      const selectedBrands = getSelectedValues(brandFilter);
-      const selectedCategories = getSelectedValues(categoryFilter);
-      const selectedSentiment = sentimentFilter.value;
-
       if (filteredArticles.length === totalArticles) {
         resultsCount.textContent = `Showing ${Math.min(startIndex + 1, filteredArticles.length)}-${Math.min(endIndex, filteredArticles.length)} of ${
           filteredArticles.length
@@ -227,6 +256,41 @@
     }
 
     /**
+     * Set date range based on number of days from today
+     */
+    function setDateRange(days) {
+      if (days === "all") {
+        startDateInput.value = "";
+        endDateInput.value = "";
+      } else {
+        const today = new Date();
+        const startDate = new Date();
+        startDate.setDate(today.getDate() - parseInt(days));
+        startDateInput.value = formatDate(startDate);
+        endDateInput.value = formatDate(today);
+      }
+
+      // Update active state on preset buttons
+      datePresetButtons.forEach((btn) => {
+        btn.classList.remove("active");
+        if (btn.dataset.days === String(days)) {
+          btn.classList.add("active");
+        }
+      });
+
+      filterArticles();
+    }
+
+    /**
+     * Clear preset button active state when custom dates are entered
+     */
+    function clearPresetActive() {
+      datePresetButtons.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+    }
+
+    /**
      * Clear all filters
      */
     function clearFilters() {
@@ -238,6 +302,16 @@
         option.selected = false;
       }
       sentimentFilter.value = "";
+
+      // Clear date filters and set "All" as active
+      if (startDateInput) startDateInput.value = "";
+      if (endDateInput) endDateInput.value = "";
+      datePresetButtons.forEach((btn) => {
+        btn.classList.remove("active");
+        if (btn.dataset.days === "all") {
+          btn.classList.add("active");
+        }
+      });
 
       // Re-filter (show all)
       filterArticles();
@@ -289,6 +363,27 @@
     categoryFilter.addEventListener("change", filterArticles);
     sentimentFilter.addEventListener("change", filterArticles);
     clearFiltersBtn.addEventListener("click", clearFilters);
+
+    // Date filter event listeners
+    if (startDateInput) {
+      startDateInput.addEventListener("change", function () {
+        clearPresetActive();
+        filterArticles();
+      });
+    }
+    if (endDateInput) {
+      endDateInput.addEventListener("change", function () {
+        clearPresetActive();
+        filterArticles();
+      });
+    }
+
+    // Date preset button event listeners
+    datePresetButtons.forEach((btn) => {
+      btn.addEventListener("click", function () {
+        setDateRange(this.dataset.days);
+      });
+    });
 
     // Initialize evidence toggles
     setupEvidenceToggles();

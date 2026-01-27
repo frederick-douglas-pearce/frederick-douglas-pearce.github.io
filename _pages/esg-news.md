@@ -161,6 +161,28 @@ enable_math: false
           </select>
         </div>
 
+        <div class="filter-group mb-3">
+          <label class="form-label"><strong>Date Range</strong></label>
+          <div class="date-presets mb-2">
+            <button type="button" class="btn btn-outline-primary btn-sm date-preset" data-days="7">7 days</button>
+            <button type="button" class="btn btn-outline-primary btn-sm date-preset" data-days="14">14 days</button>
+            <button type="button" class="btn btn-outline-primary btn-sm date-preset" data-days="30">30 days</button>
+            <button type="button" class="btn btn-outline-primary btn-sm date-preset active" data-days="all">All</button>
+          </div>
+          <div class="date-inputs">
+            <div class="row g-2">
+              <div class="col-6">
+                <label for="startDate" class="form-label small text-muted">From</label>
+                <input type="date" id="startDate" class="form-control form-control-sm">
+              </div>
+              <div class="col-6">
+                <label for="endDate" class="form-label small text-muted">To</label>
+                <input type="date" id="endDate" class="form-control form-control-sm">
+              </div>
+            </div>
+          </div>
+        </div>
+
         <button id="clearFilters" class="btn btn-outline-secondary btn-sm w-100 mb-3">Clear Filters</button>
         <span id="resultsCount" class="text-muted small d-block"></span>
 
@@ -190,6 +212,7 @@ enable_math: false
         <div class="esg-news-card card mb-3"
              data-brands="{{ article.brands | join: ',' }}"
              data-categories="{{ article.categories | join: ',' }}"
+             data-date="{{ article.published_date }}"
              data-sentiments="{% for bd in article.brand_details %}{% for cat in bd.categories %}{% if cat[1].applies and cat[1].sentiment_label %}{{ cat[1].sentiment_label }},{% endif %}{% endfor %}{% endfor %}">
 
           <div class="card-header d-flex justify-content-between align-items-center">
