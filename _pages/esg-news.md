@@ -73,13 +73,13 @@ enable_math: false
         </div>
       </div>
 
-      <!-- Last Performers -->
+      <!-- Back Performers -->
       <div class="col-md-6 mb-3">
-        <h5 class="scorecard-section-title text-center">Last Performers</h5>
+        <h5 class="scorecard-section-title text-center">Back Performers</h5>
         <div id="bottom-brands">
           {% if site.data.esg_news.scorecard.bottom_brands.size > 0 %}
             {% for brand in site.data.esg_news.scorecard.bottom_brands %}
-            <div class="scorecard-card last-performer">
+            <div class="scorecard-card back-performer">
               <span class="brand-name">{{ brand.brand }}</span>
               <span class="total-score badge bg-danger">{{ brand.total }}</span>
               <div class="category-breakdown">
@@ -114,7 +114,7 @@ enable_math: false
       <small class="text-muted">
         <strong>Scoring:</strong> Positive coverage = +2 pts, Neutral = +1 pt, Negative = -1 pt<br>
         <strong>Categories:</strong> E = Environmental, S = Social, G = Governance, D = Digital Transformation<br>
-        <em>Note: Top performers must have positive scores; last performers must have negative scores. Fewer than 3 brands may be shown.</em>
+        <em>Note: Top performers must have positive scores; back performers must have negative scores. Fewer than 3 brands may be shown.</em>
       </small>
     </div>
 
