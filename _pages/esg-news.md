@@ -116,7 +116,8 @@ enable_math: false
     <div class="scorecard-legend mt-2 text-center">
       <small class="text-muted">
         <strong>Scoring:</strong> Positive coverage = +2 pts, Neutral = +1 pt, Negative = -1 pt<br>
-        <strong>Categories:</strong> E = Environmental, S = Social, G = Governance, D = Digital Transformation
+        <strong>Categories:</strong> E = Environmental, S = Social, G = Governance, D = Digital Transformation<br>
+        <em>Note: Top performers must have a positive score, so fewer than 3 brands may be shown.</em>
       </small>
     </div>
   </div>
