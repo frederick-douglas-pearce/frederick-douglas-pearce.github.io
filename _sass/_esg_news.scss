@@ -70,28 +70,25 @@
   // Category badges with custom colors
   .cat-badge {
     font-size: 0.75rem;
-    font-weight: 500;
+    font-weight: 600;
     padding: 0.25rem 0.5rem;
+    color: #333;
   }
 
   .cat-env {
-    background-color: rgba(40, 167, 69, 0.15);
-    color: #28a745;
+    background-color: rgba(40, 167, 69, 0.3);
   }
 
   .cat-soc {
-    background-color: rgba(23, 162, 184, 0.15);
-    color: #17a2b8;
+    background-color: rgba(23, 162, 184, 0.3);
   }
 
   .cat-gov {
-    background-color: rgba(255, 193, 7, 0.2);
-    color: #d39e00;
+    background-color: rgba(255, 193, 7, 0.4);
   }
 
   .cat-dig {
-    background-color: rgba(0, 123, 255, 0.15);
-    color: #007bff;
+    background-color: rgba(0, 123, 255, 0.3);
   }
 }
 
@@ -307,24 +304,24 @@ html[data-theme="dark"] {
   .scorecard-card {
     background: rgba(255, 255, 255, 0.03);
 
+    .cat-badge {
+      color: #fff;
+    }
+
     .cat-env {
-      background-color: rgba(40, 167, 69, 0.25);
-      color: #5dd879;
+      background-color: rgba(40, 167, 69, 0.5);
     }
 
     .cat-soc {
-      background-color: rgba(23, 162, 184, 0.25);
-      color: #5bc0de;
+      background-color: rgba(23, 162, 184, 0.5);
     }
 
     .cat-gov {
-      background-color: rgba(255, 193, 7, 0.25);
-      color: #ffc107;
+      background-color: rgba(255, 193, 7, 0.5);
     }
 
     .cat-dig {
-      background-color: rgba(0, 123, 255, 0.25);
-      color: #6cb2f7;
+      background-color: rgba(0, 123, 255, 0.5);
     }
   }
 }
