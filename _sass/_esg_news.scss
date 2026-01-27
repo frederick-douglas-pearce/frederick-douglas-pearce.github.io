@@ -103,14 +103,14 @@
   flex-wrap: wrap;
   gap: 0.25rem;
 
-  .date-preset {
+  .btn.date-preset {
     padding: 0.25rem 0.5rem;
     font-size: 0.75rem;
 
     &.active {
-      background-color: var(--global-theme-color);
-      border-color: var(--global-theme-color);
-      color: #fff;
+      background-color: var(--global-theme-color) !important;
+      border-color: var(--global-theme-color) !important;
+      color: #fff !important;
     }
   }
 }
