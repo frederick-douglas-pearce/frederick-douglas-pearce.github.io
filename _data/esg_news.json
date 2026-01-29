@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-28T15:00:21.629250+00:00",
+  "generated_at": "2026-01-29T00:43:21.054437+00:00",
   "total_articles": 291,
   "brands": [
     "361 Degrees",
@@ -33,11 +33,16 @@
     "Vuori",
     "Xtep"
   ],
-  "categories": ["digital_transformation", "environmental", "governance", "social"],
+  "categories": [
+    "digital_transformation",
+    "environmental",
+    "governance",
+    "social"
+  ],
   "scorecard": {
     "period_days": 14,
-    "period_start": "2026-01-14",
-    "period_end": "2026-01-28",
+    "period_start": "2026-01-15",
+    "period_end": "2026-01-29",
     "articles_in_period": 49,
     "articles_after_dedup": 34,
     "duplicates_removed": 15,
@@ -80,7 +85,7 @@
         "governance": 5,
         "digital_transformation": 0,
         "article_count": 5,
-        "medal": null
+        "medal": "bronze"
       }
     ],
     "bottom_brands": [
@@ -160,7 +165,7 @@
         "governance": 5,
         "digital_transformation": 0,
         "article_count": 5,
-        "medal": null
+        "medal": "bronze"
       },
       {
         "brand": "Hoka",
@@ -217,8 +222,13 @@
       "source_name": "china.org.cn",
       "published_at": "2026-01-28T06:15:00+00:00",
       "published_date": "2026-01-28",
-      "brands": ["Anta", "Puma"],
-      "categories": ["governance"],
+      "brands": [
+        "Anta",
+        "Puma"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Anta",
@@ -323,8 +333,14 @@
       "source_name": "Kathmandupost",
       "published_at": "2026-01-28T00:00:00+00:00",
       "published_date": "2026-01-28",
-      "brands": ["Anta", "Puma"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Anta",
+        "Puma"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Puma",
@@ -438,8 +454,13 @@
       "source_name": "The Sun",
       "published_at": "2026-01-27T23:52:50+00:00",
       "published_date": "2026-01-27",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "social"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -524,8 +545,13 @@
       "source_name": "sanantoniopost.com",
       "published_at": "2026-01-27T22:30:00+00:00",
       "published_date": "2026-01-27",
-      "brands": ["Anta", "Puma"],
-      "categories": ["governance"],
+      "brands": [
+        "Anta",
+        "Puma"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Anta",
@@ -630,8 +656,12 @@
       "source_name": "wwd.com",
       "published_at": "2026-01-27T22:30:00+00:00",
       "published_date": "2026-01-27",
-      "brands": ["Adidas"],
-      "categories": ["social"],
+      "brands": [
+        "Adidas"
+      ],
+      "categories": [
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Adidas",
@@ -689,8 +719,13 @@
       "source_name": "Qatar Tribune",
       "published_at": "2026-01-27T21:26:00+00:00",
       "published_date": "2026-01-27",
-      "brands": ["Anta", "Puma"],
-      "categories": ["governance"],
+      "brands": [
+        "Anta",
+        "Puma"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Anta",
@@ -804,8 +839,13 @@
       "source_name": "webwire.com",
       "published_at": "2026-01-27T20:15:00+00:00",
       "published_date": "2026-01-27",
-      "brands": ["Anta", "Puma"],
-      "categories": ["governance"],
+      "brands": [
+        "Anta",
+        "Puma"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Anta",
@@ -910,8 +950,12 @@
       "source_name": "Nigeria News",
       "published_at": "2026-01-27T19:10:00+00:00",
       "published_date": "2026-01-27",
-      "brands": ["Adidas"],
-      "categories": ["governance"],
+      "brands": [
+        "Adidas"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Adidas",
@@ -960,8 +1004,13 @@
       "source_name": "toronto.citynews.ca",
       "published_at": "2026-01-27T16:30:00+00:00",
       "published_date": "2026-01-27",
-      "brands": ["Lululemon"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -1028,8 +1077,13 @@
       "source_name": "hngn.com",
       "published_at": "2026-01-27T14:00:00+00:00",
       "published_date": "2026-01-27",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "social"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -1114,8 +1168,12 @@
       "source_name": "infosecurity-magazine.com",
       "published_at": "2026-01-27T12:30:00+00:00",
       "published_date": "2026-01-27",
-      "brands": ["Nike"],
-      "categories": ["governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -1182,8 +1240,12 @@
       "source_name": "Techradar Au",
       "published_at": "2026-01-27T12:25:00+00:00",
       "published_date": "2026-01-27",
-      "brands": ["Nike"],
-      "categories": ["governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -1250,8 +1312,12 @@
       "source_name": "sharecast.com",
       "published_at": "2026-01-27T12:00:00+00:00",
       "published_date": "2026-01-27",
-      "brands": ["Puma"],
-      "categories": ["governance"],
+      "brands": [
+        "Puma"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Puma",
@@ -1309,8 +1375,12 @@
       "source_name": "creativeboom.com",
       "published_at": "2026-01-27T09:45:00+00:00",
       "published_date": "2026-01-27",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -1377,8 +1447,13 @@
       "source_name": "Republic World",
       "published_at": "2026-01-27T07:42:48+00:00",
       "published_date": "2026-01-27",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "social"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -1463,8 +1538,13 @@
       "source_name": "Newsbytes",
       "published_at": "2026-01-27T07:14:14+00:00",
       "published_date": "2026-01-27",
-      "brands": ["Anta", "Puma"],
-      "categories": ["governance"],
+      "brands": [
+        "Anta",
+        "Puma"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Anta",
@@ -1569,8 +1649,13 @@
       "source_name": "The Star",
       "published_at": "2026-01-27T06:17:00+00:00",
       "published_date": "2026-01-27",
-      "brands": ["Anta", "Puma"],
-      "categories": ["governance"],
+      "brands": [
+        "Anta",
+        "Puma"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Anta",
@@ -1657,8 +1742,13 @@
       "source_name": "bssnews.net",
       "published_at": "2026-01-27T05:45:00+00:00",
       "published_date": "2026-01-27",
-      "brands": ["Anta", "Puma"],
-      "categories": ["governance"],
+      "brands": [
+        "Anta",
+        "Puma"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Anta",
@@ -1763,8 +1853,13 @@
       "source_name": "Cnbctv18",
       "published_at": "2026-01-27T01:48:36+00:00",
       "published_date": "2026-01-27",
-      "brands": ["Anta", "Puma"],
-      "categories": ["governance"],
+      "brands": [
+        "Anta",
+        "Puma"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Anta",
@@ -1869,8 +1964,13 @@
       "source_name": "The Hindu",
       "published_at": "2026-01-27T01:47:25+00:00",
       "published_date": "2026-01-27",
-      "brands": ["Anta", "Puma"],
-      "categories": ["governance"],
+      "brands": [
+        "Anta",
+        "Puma"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Anta",
@@ -1993,8 +2093,13 @@
       "source_name": "City A.m.",
       "published_at": "2026-01-27T01:01:11+00:00",
       "published_date": "2026-01-27",
-      "brands": ["Anta", "Puma"],
-      "categories": ["governance"],
+      "brands": [
+        "Anta",
+        "Puma"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Anta",
@@ -2108,8 +2213,12 @@
       "source_name": "fool.com",
       "published_at": "2026-01-26T19:15:00+00:00",
       "published_date": "2026-01-26",
-      "brands": ["Nike"],
-      "categories": ["governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -2167,8 +2276,12 @@
       "source_name": "Theglobeandmail",
       "published_at": "2026-01-26T18:51:39+00:00",
       "published_date": "2026-01-26",
-      "brands": ["Nike"],
-      "categories": ["governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -2235,8 +2348,12 @@
       "source_name": "finance.yahoo.com",
       "published_at": "2026-01-26T17:45:00+00:00",
       "published_date": "2026-01-26",
-      "brands": ["Nike"],
-      "categories": ["governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -2303,8 +2420,13 @@
       "source_name": "lgbtqnation.com",
       "published_at": "2026-01-26T17:15:00+00:00",
       "published_date": "2026-01-26",
-      "brands": ["Patagonia"],
-      "categories": ["environmental", "governance"],
+      "brands": [
+        "Patagonia"
+      ],
+      "categories": [
+        "environmental",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Patagonia",
@@ -2380,8 +2502,14 @@
       "source_name": "theregister.com",
       "published_at": "2026-01-26T15:30:00+00:00",
       "published_date": "2026-01-26",
-      "brands": ["Nike", "Under Armour"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Nike",
+        "Under Armour"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -2531,8 +2659,12 @@
       "source_name": "webwire.com",
       "published_at": "2026-01-26T15:00:00+00:00",
       "published_date": "2026-01-26",
-      "brands": ["Adidas"],
-      "categories": ["social"],
+      "brands": [
+        "Adidas"
+      ],
+      "categories": [
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Adidas",
@@ -2590,8 +2722,13 @@
       "source_name": "Plato Data Intelligence",
       "published_at": "2026-01-26T13:22:57+00:00",
       "published_date": "2026-01-26",
-      "brands": ["Nike", "Under Armour"],
-      "categories": ["governance"],
+      "brands": [
+        "Nike",
+        "Under Armour"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -2696,8 +2833,12 @@
       "source_name": "insideretail.asia",
       "published_at": "2026-01-26T06:45:00+00:00",
       "published_date": "2026-01-26",
-      "brands": ["Hoka"],
-      "categories": ["governance"],
+      "brands": [
+        "Hoka"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Hoka",
@@ -2755,8 +2896,13 @@
       "source_name": "Necn",
       "published_at": "2026-01-26T06:33:15+00:00",
       "published_date": "2026-01-26",
-      "brands": ["Adidas"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Adidas"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Adidas",
@@ -2814,8 +2960,12 @@
       "source_name": "textileworld.com",
       "published_at": "2026-01-26T01:00:00+00:00",
       "published_date": "2026-01-26",
-      "brands": ["Under Armour"],
-      "categories": ["governance"],
+      "brands": [
+        "Under Armour"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Under Armour",
@@ -2882,8 +3032,12 @@
       "source_name": "textileworld.com",
       "published_at": "2026-01-26T01:00:00+00:00",
       "published_date": "2026-01-26",
-      "brands": ["Nike"],
-      "categories": ["governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -2950,8 +3104,12 @@
       "source_name": "Thejournal",
       "published_at": "2026-01-25T21:00:52+00:00",
       "published_date": "2026-01-25",
-      "brands": ["Adidas"],
-      "categories": ["environmental"],
+      "brands": [
+        "Adidas"
+      ],
+      "categories": [
+        "environmental"
+      ],
       "brand_details": [
         {
           "brand": "Adidas",
@@ -3018,8 +3176,12 @@
       "source_name": "finance.yahoo.com",
       "published_at": "2026-01-25T05:30:00+00:00",
       "published_date": "2026-01-25",
-      "brands": ["Nike"],
-      "categories": ["governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -3086,8 +3248,13 @@
       "source_name": "out.com",
       "published_at": "2026-01-24T03:00:00+00:00",
       "published_date": "2026-01-24",
-      "brands": ["Patagonia"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Patagonia"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Patagonia",
@@ -3172,8 +3339,15 @@
       "source_name": "Headtopics",
       "published_at": "2026-01-23T23:45:27+00:00",
       "published_date": "2026-01-23",
-      "brands": ["Nike", "Under Armour"],
-      "categories": ["digital_transformation", "governance", "social"],
+      "brands": [
+        "Nike",
+        "Under Armour"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -3359,8 +3533,13 @@
       "source_name": "fox13news.com",
       "published_at": "2026-01-23T03:45:00+00:00",
       "published_date": "2026-01-23",
-      "brands": ["Lululemon"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -3436,8 +3615,13 @@
       "source_name": "coloradohometownweekly.com",
       "published_at": "2026-01-23T02:00:00+00:00",
       "published_date": "2026-01-23",
-      "brands": ["Under Armour"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Under Armour"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Under Armour",
@@ -3522,8 +3706,12 @@
       "source_name": "knoe.com",
       "published_at": "2026-01-23T00:45:00+00:00",
       "published_date": "2026-01-23",
-      "brands": ["Under Armour"],
-      "categories": ["governance"],
+      "brands": [
+        "Under Armour"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Under Armour",
@@ -3590,8 +3778,12 @@
       "source_name": "businessinsurance.com",
       "published_at": "2026-01-23T00:15:00+00:00",
       "published_date": "2026-01-23",
-      "brands": ["Under Armour"],
-      "categories": ["governance"],
+      "brands": [
+        "Under Armour"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Under Armour",
@@ -3658,8 +3850,13 @@
       "source_name": "thetimes.com",
       "published_at": "2026-01-22T23:15:00+00:00",
       "published_date": "2026-01-22",
-      "brands": ["Lululemon"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -3735,8 +3932,13 @@
       "source_name": "hngn.com",
       "published_at": "2026-01-21T13:00:00+00:00",
       "published_date": "2026-01-21",
-      "brands": ["Lululemon"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -3830,8 +4032,13 @@
       "source_name": "Mail Online",
       "published_at": "2026-01-20T23:12:57+00:00",
       "published_date": "2026-01-20",
-      "brands": ["Nike"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -3907,8 +4114,12 @@
       "source_name": "New York Post",
       "published_at": "2026-01-20T19:59:26+00:00",
       "published_date": "2026-01-20",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -3966,8 +4177,12 @@
       "source_name": "econotimes.com",
       "published_at": "2026-01-20T10:30:00+00:00",
       "published_date": "2026-01-20",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -4034,8 +4249,12 @@
       "source_name": "marketscreener.com",
       "published_at": "2026-01-20T01:00:00+00:00",
       "published_date": "2026-01-20",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -4102,8 +4321,13 @@
       "source_name": "oregonlive.com",
       "published_at": "2026-01-16T15:15:00+00:00",
       "published_date": "2026-01-16",
-      "brands": ["Nike"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -4179,8 +4403,13 @@
       "source_name": "campaignbrief.com",
       "published_at": "2026-01-16T03:15:00+00:00",
       "published_date": "2026-01-16",
-      "brands": ["ASICS"],
-      "categories": ["environmental", "social"],
+      "brands": [
+        "ASICS"
+      ],
+      "categories": [
+        "environmental",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "ASICS",
@@ -4246,8 +4475,13 @@
       "source_name": "afaqs.com",
       "published_at": "2026-01-15T04:15:00+00:00",
       "published_date": "2026-01-15",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -4323,8 +4557,12 @@
       "source_name": "markets.financialcontent.com",
       "published_at": "2026-01-13T18:30:00+00:00",
       "published_date": "2026-01-13",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -4391,8 +4629,13 @@
       "source_name": "indiatimes.com",
       "published_at": "2026-01-12T19:00:00+00:00",
       "published_date": "2026-01-12",
-      "brands": ["Nike"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -4486,8 +4729,12 @@
       "source_name": "bnnbloomberg.ca",
       "published_at": "2026-01-12T15:45:00+00:00",
       "published_date": "2026-01-12",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -4554,8 +4801,13 @@
       "source_name": "dezeen.com",
       "published_at": "2026-01-11T21:45:00+00:00",
       "published_date": "2026-01-11",
-      "brands": ["Puma"],
-      "categories": ["digital_transformation", "environmental"],
+      "brands": [
+        "Puma"
+      ],
+      "categories": [
+        "digital_transformation",
+        "environmental"
+      ],
       "brand_details": [
         {
           "brand": "Puma",
@@ -4595,7 +4847,7 @@
               "category": "digital_transformation",
               "excerpt": "self-lacing trainers that tighten at the swipe of a finger",
               "relevance_score": 1.0,
-              "rerank_score": 8.923242952604937e-5,
+              "rerank_score": 8.923242952604937e-05,
               "match_method": "combined",
               "confidence": "unmatched",
               "context_snippet": "...\"In Los Angeles, a global capital of creativity, the studio is both a home for Puma's teams and a platform for engaging with the broader culture of the city \u2014 an architecture of possibility that anticipates the future of work. \"\n\nPuma's innovations over the past decade include steps towards creating a fully biodegradable shoe and self-lacing trainers that tighten at the swipe of a finger. West of West has previously proposed a vertical co-living neighbourhood for San Francisco and completed a concrete office complex in Austin."
@@ -4622,8 +4874,12 @@
       "source_name": "finance.yahoo.com",
       "published_at": "2026-01-11T01:15:00+00:00",
       "published_date": "2026-01-11",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -4681,8 +4937,12 @@
       "source_name": "cnbc.com",
       "published_at": "2026-01-10T14:00:00+00:00",
       "published_date": "2026-01-10",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -4749,8 +5009,13 @@
       "source_name": "finance.yahoo.com",
       "published_at": "2026-01-09T06:45:00+00:00",
       "published_date": "2026-01-09",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -4844,8 +5109,12 @@
       "source_name": "businessoffashion.com",
       "published_at": "2026-01-08T07:30:00+00:00",
       "published_date": "2026-01-08",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -4912,8 +5181,12 @@
       "source_name": "jamaicaplainnews.com",
       "published_at": "2026-01-08T03:30:00+00:00",
       "published_date": "2026-01-08",
-      "brands": ["New Balance"],
-      "categories": ["social"],
+      "brands": [
+        "New Balance"
+      ],
+      "categories": [
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "New Balance",
@@ -4961,8 +5234,12 @@
       "source_name": "ieyenews.com",
       "published_at": "2026-01-08T01:15:00+00:00",
       "published_date": "2026-01-08",
-      "brands": ["ASICS"],
-      "categories": ["social"],
+      "brands": [
+        "ASICS"
+      ],
+      "categories": [
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "ASICS",
@@ -5001,8 +5278,13 @@
       "source_name": "coinspeaker.com",
       "published_at": "2026-01-07T10:15:00+00:00",
       "published_date": "2026-01-07",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -5096,8 +5378,13 @@
       "source_name": "The Korea Times",
       "published_at": "2026-01-07T05:47:03+00:00",
       "published_date": "2026-01-07",
-      "brands": ["Hoka"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Hoka"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Hoka",
@@ -5173,8 +5460,12 @@
       "source_name": "castanetkamloops.net",
       "published_at": "2026-01-06T02:15:00+00:00",
       "published_date": "2026-01-06",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -5241,8 +5532,12 @@
       "source_name": "retaildive.com",
       "published_at": "2026-01-05T21:45:00+00:00",
       "published_date": "2026-01-05",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -5309,8 +5604,13 @@
       "source_name": "nltimes.nl",
       "published_at": "2026-01-04T18:00:00+00:00",
       "published_date": "2026-01-04",
-      "brands": ["Under Armour"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Under Armour"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Under Armour",
@@ -5386,8 +5686,12 @@
       "source_name": "finance.yahoo.com",
       "published_at": "2026-01-02T21:30:00+00:00",
       "published_date": "2026-01-02",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -5445,8 +5749,12 @@
       "source_name": "baltimoresun.com",
       "published_at": "2026-01-02T17:30:00+00:00",
       "published_date": "2026-01-02",
-      "brands": ["Under Armour"],
-      "categories": ["social"],
+      "brands": [
+        "Under Armour"
+      ],
+      "categories": [
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Under Armour",
@@ -5504,8 +5812,12 @@
       "source_name": "sbsun.com",
       "published_at": "2026-01-02T00:45:00+00:00",
       "published_date": "2026-01-02",
-      "brands": ["Lululemon"],
-      "categories": ["social"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -5562,8 +5874,13 @@
       "source_name": "mynewsla.com",
       "published_at": "2026-01-02T00:00:00+00:00",
       "published_date": "2026-01-02",
-      "brands": ["Nike"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -5656,8 +5973,12 @@
       "source_name": "fool.com",
       "published_at": "2026-01-01T20:15:00+00:00",
       "published_date": "2026-01-01",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -5715,8 +6036,12 @@
       "source_name": "whittierdailynews.com",
       "published_at": "2026-01-01T20:15:00+00:00",
       "published_date": "2026-01-01",
-      "brands": ["Lululemon"],
-      "categories": ["social"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -5765,8 +6090,12 @@
       "source_name": "theglobeandmail.com",
       "published_at": "2025-12-31T00:00:00+00:00",
       "published_date": "2025-12-31",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -5832,8 +6161,12 @@
       "source_name": "marketscreener.com",
       "published_at": "2025-12-30T16:00:00+00:00",
       "published_date": "2025-12-30",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -5891,8 +6224,12 @@
       "source_name": "bnnbloomberg.ca",
       "published_at": "2025-12-30T16:00:00+00:00",
       "published_date": "2025-12-30",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -5959,8 +6296,12 @@
       "source_name": "fool.com",
       "published_at": "2025-12-30T15:15:00+00:00",
       "published_date": "2025-12-30",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -6027,8 +6368,12 @@
       "source_name": "ibtimes.com",
       "published_at": "2025-12-30T13:30:00+00:00",
       "published_date": "2025-12-30",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -6095,8 +6440,13 @@
       "source_name": "gulfbusiness.com",
       "published_at": "2025-12-30T06:00:00+00:00",
       "published_date": "2025-12-30",
-      "brands": ["New Balance"],
-      "categories": ["digital_transformation", "social"],
+      "brands": [
+        "New Balance"
+      ],
+      "categories": [
+        "digital_transformation",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "New Balance",
@@ -6181,8 +6531,12 @@
       "source_name": "marketscreener.com",
       "published_at": "2025-12-29T22:00:00+00:00",
       "published_date": "2025-12-29",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -6240,8 +6594,12 @@
       "source_name": "odwyerpr.com",
       "published_at": "2025-12-29T21:30:00+00:00",
       "published_date": "2025-12-29",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -6307,8 +6665,12 @@
       "source_name": "marketscreener.com",
       "published_at": "2025-12-29T21:00:00+00:00",
       "published_date": "2025-12-29",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -6375,8 +6737,12 @@
       "source_name": "virginiabusiness.com",
       "published_at": "2025-12-29T20:30:00+00:00",
       "published_date": "2025-12-29",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -6443,8 +6809,12 @@
       "source_name": "economictimes.indiatimes.com",
       "published_at": "2025-12-29T20:15:00+00:00",
       "published_date": "2025-12-29",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -6511,8 +6881,12 @@
       "source_name": "sharecast.com",
       "published_at": "2025-12-29T19:30:00+00:00",
       "published_date": "2025-12-29",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -6570,8 +6944,12 @@
       "source_name": "wwd.com",
       "published_at": "2025-12-29T19:15:00+00:00",
       "published_date": "2025-12-29",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -6638,8 +7016,12 @@
       "source_name": "Theglobeandmail",
       "published_at": "2025-12-29T19:04:42+00:00",
       "published_date": "2025-12-29",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -6705,8 +7087,12 @@
       "source_name": "edition.cnn.com",
       "published_at": "2025-12-29T18:15:00+00:00",
       "published_date": "2025-12-29",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -6773,8 +7159,12 @@
       "source_name": "el-balad.com",
       "published_at": "2025-12-29T18:15:00+00:00",
       "published_date": "2025-12-29",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -6841,8 +7231,12 @@
       "source_name": "el-balad.com",
       "published_at": "2025-12-29T18:00:00+00:00",
       "published_date": "2025-12-29",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -6909,8 +7303,12 @@
       "source_name": "theepochtimes.com",
       "published_at": "2025-12-29T18:00:00+00:00",
       "published_date": "2025-12-29",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -6968,8 +7366,12 @@
       "source_name": "morningstar.com",
       "published_at": "2025-12-29T17:15:00+00:00",
       "published_date": "2025-12-29",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -7027,8 +7429,12 @@
       "source_name": "cbc.ca",
       "published_at": "2025-12-29T16:30:00+00:00",
       "published_date": "2025-12-29",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -7095,8 +7501,12 @@
       "source_name": "finance.yahoo.com",
       "published_at": "2025-12-29T14:30:00+00:00",
       "published_date": "2025-12-29",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -7162,8 +7572,13 @@
       "source_name": "yardbarker.com",
       "published_at": "2025-12-27T04:00:00+00:00",
       "published_date": "2025-12-27",
-      "brands": ["Under Armour"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Under Armour"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Under Armour",
@@ -7247,8 +7662,13 @@
       "source_name": "themarysue.com",
       "published_at": "2025-12-27T02:15:00+00:00",
       "published_date": "2025-12-27",
-      "brands": ["Lululemon"],
-      "categories": ["environmental", "governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "environmental",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -7332,8 +7752,13 @@
       "source_name": "highsnobiety.com",
       "published_at": "2025-12-26T22:15:00+00:00",
       "published_date": "2025-12-26",
-      "brands": ["The North Face"],
-      "categories": ["environmental", "social"],
+      "brands": [
+        "The North Face"
+      ],
+      "categories": [
+        "environmental",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "The North Face",
@@ -7409,8 +7834,13 @@
       "source_name": "zerohedge.com",
       "published_at": "2025-12-26T19:30:00+00:00",
       "published_date": "2025-12-26",
-      "brands": ["Nike"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -7477,8 +7907,13 @@
       "source_name": "fool.com",
       "published_at": "2025-12-26T10:00:00+00:00",
       "published_date": "2025-12-26",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -7572,8 +8007,12 @@
       "source_name": "jamaicaobserver.com",
       "published_at": "2025-12-25T14:15:00+00:00",
       "published_date": "2025-12-25",
-      "brands": ["Adidas"],
-      "categories": ["social"],
+      "brands": [
+        "Adidas"
+      ],
+      "categories": [
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Adidas",
@@ -7639,8 +8078,12 @@
       "source_name": "investing.com",
       "published_at": "2025-12-25T14:00:00+00:00",
       "published_date": "2025-12-25",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -7707,8 +8150,12 @@
       "source_name": "morningstar.com",
       "published_at": "2025-12-25T08:45:00+00:00",
       "published_date": "2025-12-25",
-      "brands": ["Nike"],
-      "categories": ["governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -7766,8 +8213,13 @@
       "source_name": "webpronews.com",
       "published_at": "2025-12-24T20:45:00+00:00",
       "published_date": "2025-12-24",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -7861,8 +8313,13 @@
       "source_name": "themarysue.com",
       "published_at": "2025-12-24T18:00:00+00:00",
       "published_date": "2025-12-24",
-      "brands": ["Lululemon"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -7947,8 +8404,13 @@
       "source_name": "retaildetail.eu",
       "published_at": "2025-12-24T11:30:00+00:00",
       "published_date": "2025-12-24",
-      "brands": ["Decathlon"],
-      "categories": ["environmental", "governance"],
+      "brands": [
+        "Decathlon"
+      ],
+      "categories": [
+        "environmental",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Decathlon",
@@ -8024,8 +8486,14 @@
       "source_name": "afaqs.com",
       "published_at": "2025-12-24T02:00:00+00:00",
       "published_date": "2025-12-24",
-      "brands": ["ASICS"],
-      "categories": ["digital_transformation", "governance", "social"],
+      "brands": [
+        "ASICS"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "ASICS",
@@ -8128,8 +8596,14 @@
       "source_name": "Zawya",
       "published_at": "2025-12-23T10:22:24+00:00",
       "published_date": "2025-12-23",
-      "brands": ["ASICS"],
-      "categories": ["environmental", "governance", "social"],
+      "brands": [
+        "ASICS"
+      ],
+      "categories": [
+        "environmental",
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "ASICS",
@@ -8222,8 +8696,13 @@
       "source_name": "themarketsdaily.com",
       "published_at": "2025-12-23T03:45:00+00:00",
       "published_date": "2025-12-23",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -8308,8 +8787,13 @@
       "source_name": "finance.yahoo.com",
       "published_at": "2025-12-23T00:30:00+00:00",
       "published_date": "2025-12-23",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -8376,8 +8860,13 @@
       "source_name": "investopedia.com",
       "published_at": "2025-12-21T17:30:00+00:00",
       "published_date": "2025-12-21",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -8452,8 +8941,13 @@
       "source_name": "finance.yahoo.com",
       "published_at": "2025-12-21T03:15:00+00:00",
       "published_date": "2025-12-21",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -8547,8 +9041,13 @@
       "source_name": "dailycardinal.com",
       "published_at": "2025-12-21T00:30:00+00:00",
       "published_date": "2025-12-21",
-      "brands": ["Under Armour"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Under Armour"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Under Armour",
@@ -8633,8 +9132,13 @@
       "source_name": "Insider Trading",
       "published_at": "2025-12-20T13:00:55+00:00",
       "published_date": "2025-12-20",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -8728,8 +9232,12 @@
       "source_name": "themarketsdaily.com",
       "published_at": "2025-12-20T12:15:00+00:00",
       "published_date": "2025-12-20",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -8796,8 +9304,13 @@
       "source_name": "Markets Daily",
       "published_at": "2025-12-20T12:02:00+00:00",
       "published_date": "2025-12-20",
-      "brands": ["Under Armour"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Under Armour"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Under Armour",
@@ -8873,8 +9386,13 @@
       "source_name": "africa.chinadaily.com.cn",
       "published_at": "2025-12-20T02:45:00+00:00",
       "published_date": "2025-12-20",
-      "brands": ["Lululemon"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -8941,8 +9459,13 @@
       "source_name": "observer.com",
       "published_at": "2025-12-20T00:15:00+00:00",
       "published_date": "2025-12-20",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -9009,8 +9532,12 @@
       "source_name": "techcrunch.com",
       "published_at": "2025-12-20T00:15:00+00:00",
       "published_date": "2025-12-20",
-      "brands": ["Patagonia"],
-      "categories": ["governance"],
+      "brands": [
+        "Patagonia"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Patagonia",
@@ -9059,8 +9586,14 @@
       "source_name": "Webpronews",
       "published_at": "2025-12-19T21:40:59+00:00",
       "published_date": "2025-12-19",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "environmental", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "environmental",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -9171,8 +9704,14 @@
       "source_name": "webwire.com",
       "published_at": "2025-12-19T19:30:00+00:00",
       "published_date": "2025-12-19",
-      "brands": ["ASICS"],
-      "categories": ["digital_transformation", "governance", "social"],
+      "brands": [
+        "ASICS"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "ASICS",
@@ -9266,8 +9805,14 @@
       "source_name": "marketscreener.com",
       "published_at": "2025-12-19T19:15:00+00:00",
       "published_date": "2025-12-19",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "governance", "social"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -9370,8 +9915,13 @@
       "source_name": "nypost.com",
       "published_at": "2025-12-19T16:30:00+00:00",
       "published_date": "2025-12-19",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -9456,8 +10006,15 @@
       "source_name": "Cp24",
       "published_at": "2025-12-19T12:44:31+00:00",
       "published_date": "2025-12-19",
-      "brands": ["Anta", "Li-Ning", "Nike"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Anta",
+        "Li-Ning",
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -9618,8 +10175,12 @@
       "source_name": "Cnbc",
       "published_at": "2025-12-19T12:36:05+00:00",
       "published_date": "2025-12-19",
-      "brands": ["Nike"],
-      "categories": ["governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -9677,8 +10238,13 @@
       "source_name": "benzinga.com",
       "published_at": "2025-12-19T11:15:00+00:00",
       "published_date": "2025-12-19",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -9754,8 +10320,12 @@
       "source_name": "fool.com",
       "published_at": "2025-12-19T10:15:00+00:00",
       "published_date": "2025-12-19",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -9813,8 +10383,13 @@
       "source_name": "romania-insider.com",
       "published_at": "2025-12-19T09:30:00+00:00",
       "published_date": "2025-12-19",
-      "brands": ["Lululemon"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -9881,8 +10456,13 @@
       "source_name": "theguardian.com",
       "published_at": "2025-12-19T09:30:00+00:00",
       "published_date": "2025-12-19",
-      "brands": ["Patagonia"],
-      "categories": ["environmental", "social"],
+      "brands": [
+        "Patagonia"
+      ],
+      "categories": [
+        "environmental",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Patagonia",
@@ -9957,8 +10537,13 @@
       "source_name": "channelafrica.co.za",
       "published_at": "2025-12-19T08:00:00+00:00",
       "published_date": "2025-12-19",
-      "brands": ["Nike"],
-      "categories": ["environmental", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "environmental",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -10033,8 +10618,12 @@
       "source_name": "businessdailynetwork.com",
       "published_at": "2025-12-19T04:15:00+00:00",
       "published_date": "2025-12-19",
-      "brands": ["Nike"],
-      "categories": ["social"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -10100,8 +10689,13 @@
       "source_name": "fool.com",
       "published_at": "2025-12-19T04:15:00+00:00",
       "published_date": "2025-12-19",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -10177,8 +10771,15 @@
       "source_name": "marketscreener.com",
       "published_at": "2025-12-19T03:30:00+00:00",
       "published_date": "2025-12-19",
-      "brands": ["Anta", "Li-Ning", "Nike"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Anta",
+        "Li-Ning",
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -10339,8 +10940,13 @@
       "source_name": "cnbc.com",
       "published_at": "2025-12-19T02:15:00+00:00",
       "published_date": "2025-12-19",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -10416,8 +11022,14 @@
       "source_name": "wwd.com",
       "published_at": "2025-12-19T02:00:00+00:00",
       "published_date": "2025-12-19",
-      "brands": ["Lululemon"],
-      "categories": ["digital_transformation", "governance", "social"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -10519,8 +11131,13 @@
       "source_name": "The Economic Times",
       "published_at": "2025-12-19T00:51:52+00:00",
       "published_date": "2025-12-19",
-      "brands": ["Nike"],
-      "categories": ["environmental", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "environmental",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -10596,8 +11213,13 @@
       "source_name": "morningstar.com",
       "published_at": "2025-12-19T00:30:00+00:00",
       "published_date": "2025-12-19",
-      "brands": ["Nike"],
-      "categories": ["environmental", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "environmental",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -10673,8 +11295,13 @@
       "source_name": "Financialcontent",
       "published_at": "2025-12-19T00:00:00+00:00",
       "published_date": "2025-12-19",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -10768,8 +11395,13 @@
       "source_name": "Financialcontent",
       "published_at": "2025-12-19T00:00:00+00:00",
       "published_date": "2025-12-19",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -10845,8 +11477,13 @@
       "source_name": "marketscreener.com",
       "published_at": "2025-12-18T22:00:00+00:00",
       "published_date": "2025-12-18",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -10912,8 +11549,12 @@
       "source_name": "benzinga.com",
       "published_at": "2025-12-18T21:30:00+00:00",
       "published_date": "2025-12-18",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -10952,8 +11593,13 @@
       "source_name": "asia.nikkei.com",
       "published_at": "2025-12-18T20:00:00+00:00",
       "published_date": "2025-12-18",
-      "brands": ["ASICS"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "ASICS"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "ASICS",
@@ -11020,8 +11666,12 @@
       "source_name": "finance.yahoo.com",
       "published_at": "2025-12-18T20:00:00+00:00",
       "published_date": "2025-12-18",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -11088,8 +11738,12 @@
       "source_name": "rollingout.com",
       "published_at": "2025-12-18T18:45:00+00:00",
       "published_date": "2025-12-18",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -11156,8 +11810,12 @@
       "source_name": "wallstreetpit.com",
       "published_at": "2025-12-18T18:30:00+00:00",
       "published_date": "2025-12-18",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -11215,8 +11873,12 @@
       "source_name": "winnipegfreepress.com",
       "published_at": "2025-12-18T16:30:00+00:00",
       "published_date": "2025-12-18",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -11283,8 +11945,12 @@
       "source_name": "biztoc.com",
       "published_at": "2025-12-18T16:30:00+00:00",
       "published_date": "2025-12-18",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -11333,8 +11999,12 @@
       "source_name": "biztoc.com",
       "published_at": "2025-12-18T16:30:00+00:00",
       "published_date": "2025-12-18",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -11392,8 +12062,13 @@
       "source_name": "shangbao.com.ph",
       "published_at": "2025-12-18T16:00:00+00:00",
       "published_date": "2025-12-18",
-      "brands": ["Adidas"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Adidas"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Adidas",
@@ -11476,8 +12151,12 @@
       "source_name": "The Times Of India",
       "published_at": "2025-12-18T15:04:37+00:00",
       "published_date": "2025-12-18",
-      "brands": ["Diadora"],
-      "categories": ["social"],
+      "brands": [
+        "Diadora"
+      ],
+      "categories": [
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Diadora",
@@ -11535,8 +12214,12 @@
       "source_name": "biztoc.com",
       "published_at": "2025-12-18T15:00:00+00:00",
       "published_date": "2025-12-18",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -11593,8 +12276,12 @@
       "source_name": "Cp24",
       "published_at": "2025-12-18T13:56:34+00:00",
       "published_date": "2025-12-18",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -11661,8 +12348,12 @@
       "source_name": "theglobeandmail.com",
       "published_at": "2025-12-18T12:30:00+00:00",
       "published_date": "2025-12-18",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -11729,8 +12420,13 @@
       "source_name": "bizcommunity.com",
       "published_at": "2025-12-18T11:45:00+00:00",
       "published_date": "2025-12-18",
-      "brands": ["Adidas"],
-      "categories": ["environmental", "social"],
+      "brands": [
+        "Adidas"
+      ],
+      "categories": [
+        "environmental",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Adidas",
@@ -11815,8 +12511,12 @@
       "source_name": "biztoc.com",
       "published_at": "2025-12-18T11:15:00+00:00",
       "published_date": "2025-12-18",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -11874,8 +12574,12 @@
       "source_name": "aol.co.uk",
       "published_at": "2025-12-18T11:15:00+00:00",
       "published_date": "2025-12-18",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -11933,8 +12637,12 @@
       "source_name": "rte.ie",
       "published_at": "2025-12-18T10:30:00+00:00",
       "published_date": "2025-12-18",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -12001,8 +12709,12 @@
       "source_name": "heraldglobe.com",
       "published_at": "2025-12-18T10:30:00+00:00",
       "published_date": "2025-12-18",
-      "brands": ["Adidas"],
-      "categories": ["social"],
+      "brands": [
+        "Adidas"
+      ],
+      "categories": [
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Adidas",
@@ -12060,8 +12772,13 @@
       "source_name": "Watch List News",
       "published_at": "2025-12-18T09:32:43+00:00",
       "published_date": "2025-12-18",
-      "brands": ["Under Armour"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Under Armour"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Under Armour",
@@ -12137,8 +12854,12 @@
       "source_name": "businesstimes.com.sg",
       "published_at": "2025-12-18T07:00:00+00:00",
       "published_date": "2025-12-18",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -12205,8 +12926,12 @@
       "source_name": "biztoc.com",
       "published_at": "2025-12-18T05:30:00+00:00",
       "published_date": "2025-12-18",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -12255,8 +12980,12 @@
       "source_name": "Menafn",
       "published_at": "2025-12-18T05:00:45+00:00",
       "published_date": "2025-12-18",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -12323,8 +13052,14 @@
       "source_name": "Menafn",
       "published_at": "2025-12-18T05:00:44+00:00",
       "published_date": "2025-12-18",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "governance", "social"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -12418,8 +13153,13 @@
       "source_name": "insideretail.asia",
       "published_at": "2025-12-18T01:30:00+00:00",
       "published_date": "2025-12-18",
-      "brands": ["Nike"],
-      "categories": ["environmental", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "environmental",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -12486,8 +13226,12 @@
       "source_name": "Financialcontent",
       "published_at": "2025-12-18T00:00:00+00:00",
       "published_date": "2025-12-18",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -12554,8 +13298,12 @@
       "source_name": "el-balad.com",
       "published_at": "2025-12-17T20:15:00+00:00",
       "published_date": "2025-12-17",
-      "brands": ["Adidas"],
-      "categories": ["social"],
+      "brands": [
+        "Adidas"
+      ],
+      "categories": [
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Adidas",
@@ -12622,8 +13370,12 @@
       "source_name": "biztoc.com",
       "published_at": "2025-12-17T12:15:00+00:00",
       "published_date": "2025-12-17",
-      "brands": ["Nike"],
-      "categories": ["social"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -12681,8 +13433,13 @@
       "source_name": "letsrun.com",
       "published_at": "2025-12-17T09:15:00+00:00",
       "published_date": "2025-12-17",
-      "brands": ["Diadora"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Diadora"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Diadora",
@@ -12758,8 +13515,13 @@
       "source_name": "noozhawk.com",
       "published_at": "2025-12-17T03:30:00+00:00",
       "published_date": "2025-12-17",
-      "brands": ["Deckers"],
-      "categories": ["environmental", "social"],
+      "brands": [
+        "Deckers"
+      ],
+      "categories": [
+        "environmental",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Deckers",
@@ -12826,8 +13588,12 @@
       "source_name": "insideretail.asia",
       "published_at": "2025-12-17T01:45:00+00:00",
       "published_date": "2025-12-17",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -12893,8 +13659,13 @@
       "source_name": "Si",
       "published_at": "2025-12-16T17:04:29+00:00",
       "published_date": "2025-12-16",
-      "brands": ["On Running"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "On Running"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "On Running",
@@ -12979,8 +13750,13 @@
       "source_name": "wwd.com",
       "published_at": "2025-12-15T20:00:00+00:00",
       "published_date": "2025-12-15",
-      "brands": ["Salomon"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Salomon"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Salomon",
@@ -13056,8 +13832,12 @@
       "source_name": "aol.com",
       "published_at": "2025-12-15T16:30:00+00:00",
       "published_date": "2025-12-15",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -13124,8 +13904,12 @@
       "source_name": "Marketscreenerc",
       "published_at": "2025-12-15T15:01:07+00:00",
       "published_date": "2025-12-15",
-      "brands": ["Columbia Sportswear"],
-      "categories": ["social"],
+      "brands": [
+        "Columbia Sportswear"
+      ],
+      "categories": [
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Columbia Sportswear",
@@ -13191,8 +13975,13 @@
       "source_name": "finance.yahoo.com",
       "published_at": "2025-12-14T07:30:00+00:00",
       "published_date": "2025-12-14",
-      "brands": ["Lululemon"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -13277,8 +14066,12 @@
       "source_name": "finance.yahoo.com",
       "published_at": "2025-12-13T03:15:00+00:00",
       "published_date": "2025-12-13",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -13345,8 +14138,12 @@
       "source_name": "observer.com",
       "published_at": "2025-12-12T23:45:00+00:00",
       "published_date": "2025-12-12",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -13412,8 +14209,13 @@
       "source_name": "wwd.com",
       "published_at": "2025-12-12T23:45:00+00:00",
       "published_date": "2025-12-12",
-      "brands": ["Lululemon"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -13489,8 +14291,13 @@
       "source_name": "theglobeandmail.com",
       "published_at": "2025-12-12T21:00:00+00:00",
       "published_date": "2025-12-12",
-      "brands": ["Lululemon"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -13575,8 +14382,12 @@
       "source_name": "retaildive.com",
       "published_at": "2025-12-12T21:00:00+00:00",
       "published_date": "2025-12-12",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -13643,8 +14454,12 @@
       "source_name": "nationalpost.com",
       "published_at": "2025-12-12T20:30:00+00:00",
       "published_date": "2025-12-12",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -13711,8 +14526,12 @@
       "source_name": "cp24.com",
       "published_at": "2025-12-12T19:00:00+00:00",
       "published_date": "2025-12-12",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -13779,8 +14598,12 @@
       "source_name": "marketscreener.com",
       "published_at": "2025-12-12T15:00:00+00:00",
       "published_date": "2025-12-12",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -13847,8 +14670,13 @@
       "source_name": "businessoffashion.com",
       "published_at": "2025-12-12T03:45:00+00:00",
       "published_date": "2025-12-12",
-      "brands": ["Lululemon"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -13924,8 +14752,12 @@
       "source_name": "wwd.com",
       "published_at": "2025-12-12T00:45:00+00:00",
       "published_date": "2025-12-12",
-      "brands": ["Lululemon"],
-      "categories": ["governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -13992,8 +14824,14 @@
       "source_name": "wwd.com",
       "published_at": "2025-12-11T20:45:00+00:00",
       "published_date": "2025-12-11",
-      "brands": ["Gymshark"],
-      "categories": ["digital_transformation", "governance", "social"],
+      "brands": [
+        "Gymshark"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Gymshark",
@@ -14077,8 +14915,13 @@
       "source_name": "manilatimes.net",
       "published_at": "2025-12-10T17:45:00+00:00",
       "published_date": "2025-12-10",
-      "brands": ["Puma"],
-      "categories": ["environmental", "social"],
+      "brands": [
+        "Puma"
+      ],
+      "categories": [
+        "environmental",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Puma",
@@ -14154,8 +14997,12 @@
       "source_name": "rollingstoneindia.com",
       "published_at": "2025-12-10T16:00:00+00:00",
       "published_date": "2025-12-10",
-      "brands": ["Adidas"],
-      "categories": ["social"],
+      "brands": [
+        "Adidas"
+      ],
+      "categories": [
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Adidas",
@@ -14222,8 +15069,12 @@
       "source_name": "highsnobiety.com",
       "published_at": "2025-12-03T22:30:00+00:00",
       "published_date": "2025-12-03",
-      "brands": ["Patagonia"],
-      "categories": ["environmental"],
+      "brands": [
+        "Patagonia"
+      ],
+      "categories": [
+        "environmental"
+      ],
       "brand_details": [
         {
           "brand": "Patagonia",
@@ -14281,8 +15132,13 @@
       "source_name": "yahoo.com",
       "published_at": "2025-12-03T21:30:00+00:00",
       "published_date": "2025-12-03",
-      "brands": ["Nike"],
-      "categories": ["environmental", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "environmental",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -14367,8 +15223,13 @@
       "source_name": "marketscreener.com",
       "published_at": "2025-12-03T21:15:00+00:00",
       "published_date": "2025-12-03",
-      "brands": ["Adidas"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Adidas"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Adidas",
@@ -14453,8 +15314,14 @@
       "source_name": "retaildive.com",
       "published_at": "2025-12-03T21:00:00+00:00",
       "published_date": "2025-12-03",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "governance", "social"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -14557,8 +15424,13 @@
       "source_name": "bbc.com",
       "published_at": "2025-12-03T14:30:00+00:00",
       "published_date": "2025-12-03",
-      "brands": ["Nike"],
-      "categories": ["environmental", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "environmental",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -14652,8 +15524,13 @@
       "source_name": "businessgreen.com",
       "published_at": "2025-12-03T13:15:00+00:00",
       "published_date": "2025-12-03",
-      "brands": ["Nike"],
-      "categories": ["environmental", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "environmental",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -14711,8 +15588,14 @@
       "source_name": "finance.yahoo.com",
       "published_at": "2025-12-03T10:45:00+00:00",
       "published_date": "2025-12-03",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "environmental", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "environmental",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -14806,8 +15689,13 @@
       "source_name": "hamhigh.co.uk",
       "published_at": "2025-12-03T01:45:00+00:00",
       "published_date": "2025-12-03",
-      "brands": ["Nike"],
-      "categories": ["environmental", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "environmental",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -14892,8 +15780,13 @@
       "source_name": "theguardian.com",
       "published_at": "2025-12-03T01:00:00+00:00",
       "published_date": "2025-12-03",
-      "brands": ["Nike"],
-      "categories": ["environmental", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "environmental",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -14987,8 +15880,13 @@
       "source_name": "businesstimes.com.sg",
       "published_at": "2025-12-03T00:45:00+00:00",
       "published_date": "2025-12-03",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -15073,8 +15971,13 @@
       "source_name": "wwd.com",
       "published_at": "2025-12-03T00:30:00+00:00",
       "published_date": "2025-12-03",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -15159,8 +16062,14 @@
       "source_name": "deseret.com",
       "published_at": "2025-12-02T23:15:00+00:00",
       "published_date": "2025-12-02",
-      "brands": ["Patagonia"],
-      "categories": ["environmental", "governance", "social"],
+      "brands": [
+        "Patagonia"
+      ],
+      "categories": [
+        "environmental",
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Patagonia",
@@ -15271,8 +16180,13 @@
       "source_name": "madamenoire.com",
       "published_at": "2025-12-02T21:00:00+00:00",
       "published_date": "2025-12-02",
-      "brands": ["Adidas"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Adidas"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Adidas",
@@ -15357,8 +16271,14 @@
       "source_name": "wwd.com",
       "published_at": "2025-12-02T14:45:00+00:00",
       "published_date": "2025-12-02",
-      "brands": ["New Balance"],
-      "categories": ["environmental", "governance", "social"],
+      "brands": [
+        "New Balance"
+      ],
+      "categories": [
+        "environmental",
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "New Balance",
@@ -15443,8 +16363,13 @@
       "source_name": "supplychainmarket.com",
       "published_at": "2025-12-02T14:30:00+00:00",
       "published_date": "2025-12-02",
-      "brands": ["Puma"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Puma"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Puma",
@@ -15529,8 +16454,14 @@
       "source_name": "yahoo.com",
       "published_at": "2025-12-02T04:30:00+00:00",
       "published_date": "2025-12-02",
-      "brands": ["Patagonia"],
-      "categories": ["environmental", "governance", "social"],
+      "brands": [
+        "Patagonia"
+      ],
+      "categories": [
+        "environmental",
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Patagonia",
@@ -15641,8 +16572,14 @@
       "source_name": "wwd.com",
       "published_at": "2025-12-01T23:30:00+00:00",
       "published_date": "2025-12-01",
-      "brands": ["Puma"],
-      "categories": ["digital_transformation", "governance", "social"],
+      "brands": [
+        "Puma"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Puma",
@@ -15735,8 +16672,13 @@
       "source_name": "dailymail.co.uk",
       "published_at": "2025-12-01T20:30:00+00:00",
       "published_date": "2025-12-01",
-      "brands": ["Lululemon"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -15830,8 +16772,13 @@
       "source_name": "bizcommunity.com",
       "published_at": "2025-11-26T09:00:00+00:00",
       "published_date": "2025-11-26",
-      "brands": ["New Balance"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "New Balance"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "New Balance",
@@ -15889,8 +16836,12 @@
       "source_name": "bestmediainfo.com",
       "published_at": "2025-11-26T06:45:00+00:00",
       "published_date": "2025-11-26",
-      "brands": ["Fila"],
-      "categories": ["digital_transformation"],
+      "brands": [
+        "Fila"
+      ],
+      "categories": [
+        "digital_transformation"
+      ],
       "brand_details": [
         {
           "brand": "Fila",
@@ -15939,8 +16890,14 @@
       "source_name": "retaildive.com",
       "published_at": "2025-11-25T17:30:00+00:00",
       "published_date": "2025-11-25",
-      "brands": ["Lululemon"],
-      "categories": ["digital_transformation", "governance", "social"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -16034,8 +16991,12 @@
       "source_name": "miragenews.com",
       "published_at": "2025-11-25T14:30:00+00:00",
       "published_date": "2025-11-25",
-      "brands": ["Decathlon"],
-      "categories": ["environmental"],
+      "brands": [
+        "Decathlon"
+      ],
+      "categories": [
+        "environmental"
+      ],
       "brand_details": [
         {
           "brand": "Decathlon",
@@ -16102,8 +17063,14 @@
       "source_name": "cnbc.com",
       "published_at": "2025-11-24T22:15:00+00:00",
       "published_date": "2025-11-24",
-      "brands": ["Allbirds", "Patagonia"],
-      "categories": ["environmental", "governance"],
+      "brands": [
+        "Allbirds",
+        "Patagonia"
+      ],
+      "categories": [
+        "environmental",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Patagonia",
@@ -16217,8 +17184,13 @@
       "source_name": "finance.yahoo.com",
       "published_at": "2025-11-21T20:00:00+00:00",
       "published_date": "2025-11-21",
-      "brands": ["Lululemon"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -16285,8 +17257,12 @@
       "source_name": "retailtimes.co.uk",
       "published_at": "2025-11-19T19:00:00+00:00",
       "published_date": "2025-11-19",
-      "brands": ["Lululemon"],
-      "categories": ["social"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -16353,8 +17329,13 @@
       "source_name": "theglobeandmail.com",
       "published_at": "2025-11-19T01:00:00+00:00",
       "published_date": "2025-11-19",
-      "brands": ["Lululemon"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -16439,8 +17420,13 @@
       "source_name": "napaneeguide.com",
       "published_at": "2025-11-18T21:00:00+00:00",
       "published_date": "2025-11-18",
-      "brands": ["Lululemon"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -16515,8 +17501,12 @@
       "source_name": "kingstonthisweek.com",
       "published_at": "2025-11-18T20:00:00+00:00",
       "published_date": "2025-11-18",
-      "brands": ["Lululemon"],
-      "categories": ["social"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -16582,8 +17572,13 @@
       "source_name": "dailyhive.com",
       "published_at": "2025-11-18T19:15:00+00:00",
       "published_date": "2025-11-18",
-      "brands": ["Lululemon"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -16650,8 +17645,13 @@
       "source_name": "retailtimes.co.uk",
       "published_at": "2025-11-18T14:30:00+00:00",
       "published_date": "2025-11-18",
-      "brands": ["The North Face"],
-      "categories": ["digital_transformation", "social"],
+      "brands": [
+        "The North Face"
+      ],
+      "categories": [
+        "digital_transformation",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "The North Face",
@@ -16745,8 +17745,13 @@
       "source_name": "fool.com",
       "published_at": "2025-11-18T12:45:00+00:00",
       "published_date": "2025-11-18",
-      "brands": ["Nike"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -16813,8 +17818,13 @@
       "source_name": "menshealth.com",
       "published_at": "2025-11-17T15:30:00+00:00",
       "published_date": "2025-11-17",
-      "brands": ["Vuori"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Vuori"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Vuori",
@@ -16880,8 +17890,12 @@
       "source_name": "dailyhive.com",
       "published_at": "2025-11-13T01:00:00+00:00",
       "published_date": "2025-11-13",
-      "brands": ["Nike"],
-      "categories": ["social"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -16938,8 +17952,12 @@
       "source_name": "kpic.com",
       "published_at": "2025-11-13T00:45:00+00:00",
       "published_date": "2025-11-13",
-      "brands": ["Nike"],
-      "categories": ["social"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -17005,8 +18023,13 @@
       "source_name": "wwd.com",
       "published_at": "2025-11-13T00:00:00+00:00",
       "published_date": "2025-11-13",
-      "brands": ["ASICS"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "ASICS"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "ASICS",
@@ -17064,8 +18087,12 @@
       "source_name": "gq.com",
       "published_at": "2025-11-12T22:30:00+00:00",
       "published_date": "2025-11-12",
-      "brands": ["Nike"],
-      "categories": ["social"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -17113,8 +18140,15 @@
       "source_name": "motherjones.com",
       "published_at": "2025-11-12T19:45:00+00:00",
       "published_date": "2025-11-12",
-      "brands": ["Patagonia"],
-      "categories": ["digital_transformation", "environmental", "governance", "social"],
+      "brands": [
+        "Patagonia"
+      ],
+      "categories": [
+        "digital_transformation",
+        "environmental",
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Patagonia",
@@ -17234,8 +18268,13 @@
       "source_name": "just-style.com",
       "published_at": "2025-11-12T13:00:00+00:00",
       "published_date": "2025-11-12",
-      "brands": ["Nike"],
-      "categories": ["environmental", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "environmental",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -17320,8 +18359,13 @@
       "source_name": "itnewsonline.com",
       "published_at": "2025-11-12T13:00:00+00:00",
       "published_date": "2025-11-12",
-      "brands": ["Puma"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Puma"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Puma",
@@ -17406,8 +18450,13 @@
       "source_name": "manilatimes.net",
       "published_at": "2025-11-12T12:00:00+00:00",
       "published_date": "2025-11-12",
-      "brands": ["Salomon"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Salomon"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Salomon",
@@ -17492,8 +18541,13 @@
       "source_name": "nzherald.co.nz",
       "published_at": "2025-11-12T02:30:00+00:00",
       "published_date": "2025-11-12",
-      "brands": ["Allbirds"],
-      "categories": ["environmental", "governance"],
+      "brands": [
+        "Allbirds"
+      ],
+      "categories": [
+        "environmental",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Allbirds",
@@ -17569,8 +18623,13 @@
       "source_name": "bandt.com.au",
       "published_at": "2025-11-12T02:15:00+00:00",
       "published_date": "2025-11-12",
-      "brands": ["Umbro"],
-      "categories": ["digital_transformation", "social"],
+      "brands": [
+        "Umbro"
+      ],
+      "categories": [
+        "digital_transformation",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Umbro",
@@ -17644,8 +18703,14 @@
       "source_name": "wwd.com",
       "published_at": "2025-11-11T18:15:00+00:00",
       "published_date": "2025-11-11",
-      "brands": ["Adidas"],
-      "categories": ["digital_transformation", "environmental", "social"],
+      "brands": [
+        "Adidas"
+      ],
+      "categories": [
+        "digital_transformation",
+        "environmental",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Adidas",
@@ -17730,8 +18795,13 @@
       "source_name": "businessoffashion.com",
       "published_at": "2025-11-11T14:45:00+00:00",
       "published_date": "2025-11-11",
-      "brands": ["Nike"],
-      "categories": ["environmental", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "environmental",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -17807,8 +18877,13 @@
       "source_name": "thehindubusinessline.com",
       "published_at": "2025-11-11T05:15:00+00:00",
       "published_date": "2025-11-11",
-      "brands": ["Nike"],
-      "categories": ["environmental", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "environmental",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -17893,8 +18968,12 @@
       "source_name": "adgully.com",
       "published_at": "2025-11-11T03:00:00+00:00",
       "published_date": "2025-11-11",
-      "brands": ["Skechers"],
-      "categories": ["social"],
+      "brands": [
+        "Skechers"
+      ],
+      "categories": [
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Skechers",
@@ -17960,8 +19039,14 @@
       "source_name": "wwd.com",
       "published_at": "2025-11-11T00:45:00+00:00",
       "published_date": "2025-11-11",
-      "brands": ["Brooks Running"],
-      "categories": ["digital_transformation", "governance", "social"],
+      "brands": [
+        "Brooks Running"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Brooks Running",
@@ -18046,8 +19131,13 @@
       "source_name": "thenational.scot",
       "published_at": "2025-11-09T18:45:00+00:00",
       "published_date": "2025-11-09",
-      "brands": ["Decathlon"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Decathlon"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Decathlon",
@@ -18123,8 +19213,13 @@
       "source_name": "wwd.com",
       "published_at": "2025-11-04T20:30:00+00:00",
       "published_date": "2025-11-04",
-      "brands": ["Timberland"],
-      "categories": ["environmental", "governance"],
+      "brands": [
+        "Timberland"
+      ],
+      "categories": [
+        "environmental",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Timberland",
@@ -18182,8 +19277,12 @@
       "source_name": "knittingindustry.com",
       "published_at": "2025-11-04T19:00:00+00:00",
       "published_date": "2025-11-04",
-      "brands": ["Gymshark"],
-      "categories": ["digital_transformation"],
+      "brands": [
+        "Gymshark"
+      ],
+      "categories": [
+        "digital_transformation"
+      ],
       "brand_details": [
         {
           "brand": "Gymshark",
@@ -18250,8 +19349,12 @@
       "source_name": "runningmagazine.ca",
       "published_at": "2025-11-04T18:15:00+00:00",
       "published_date": "2025-11-04",
-      "brands": ["Under Armour"],
-      "categories": ["social"],
+      "brands": [
+        "Under Armour"
+      ],
+      "categories": [
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Under Armour",
@@ -18309,8 +19412,13 @@
       "source_name": "thedrum.com",
       "published_at": "2025-11-03T12:30:00+00:00",
       "published_date": "2025-11-03",
-      "brands": ["Decathlon"],
-      "categories": ["digital_transformation", "environmental"],
+      "brands": [
+        "Decathlon"
+      ],
+      "categories": [
+        "digital_transformation",
+        "environmental"
+      ],
       "brand_details": [
         {
           "brand": "Decathlon",
@@ -18385,8 +19493,14 @@
       "source_name": "bnnbloomberg.ca",
       "published_at": "2025-10-29T13:45:00+00:00",
       "published_date": "2025-10-29",
-      "brands": ["Adidas"],
-      "categories": ["environmental", "governance", "social"],
+      "brands": [
+        "Adidas"
+      ],
+      "categories": [
+        "environmental",
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Adidas",
@@ -18462,8 +19576,14 @@
       "source_name": "finance.yahoo.com",
       "published_at": "2025-10-29T13:00:00+00:00",
       "published_date": "2025-10-29",
-      "brands": ["Adidas"],
-      "categories": ["environmental", "governance", "social"],
+      "brands": [
+        "Adidas"
+      ],
+      "categories": [
+        "environmental",
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Adidas",
@@ -18539,8 +19659,12 @@
       "source_name": "euronews.com",
       "published_at": "2025-10-29T08:00:00+00:00",
       "published_date": "2025-10-29",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -18607,8 +19731,13 @@
       "source_name": "finance.yahoo.com",
       "published_at": "2025-10-29T07:45:00+00:00",
       "published_date": "2025-10-29",
-      "brands": ["Puma"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Puma"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Puma",
@@ -18693,8 +19822,13 @@
       "source_name": "powdersvillepost.com",
       "published_at": "2025-10-28T18:45:00+00:00",
       "published_date": "2025-10-28",
-      "brands": ["Under Armour"],
-      "categories": ["digital_transformation", "social"],
+      "brands": [
+        "Under Armour"
+      ],
+      "categories": [
+        "digital_transformation",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Under Armour",
@@ -18778,8 +19912,14 @@
       "source_name": "gazettelive.co.uk",
       "published_at": "2025-10-28T14:15:00+00:00",
       "published_date": "2025-10-28",
-      "brands": ["Decathlon"],
-      "categories": ["digital_transformation", "environmental", "social"],
+      "brands": [
+        "Decathlon"
+      ],
+      "categories": [
+        "digital_transformation",
+        "environmental",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Decathlon",
@@ -18882,8 +20022,13 @@
       "source_name": "bestmediainfo.com",
       "published_at": "2025-10-28T07:30:00+00:00",
       "published_date": "2025-10-28",
-      "brands": ["Puma"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Puma"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Puma",
@@ -18959,8 +20104,13 @@
       "source_name": "thedrum.com",
       "published_at": "2025-10-28T03:30:00+00:00",
       "published_date": "2025-10-28",
-      "brands": ["Puma"],
-      "categories": ["digital_transformation", "social"],
+      "brands": [
+        "Puma"
+      ],
+      "categories": [
+        "digital_transformation",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Puma",
@@ -19054,8 +20204,12 @@
       "source_name": "highsnobiety.com",
       "published_at": "2025-10-27T18:45:00+00:00",
       "published_date": "2025-10-27",
-      "brands": ["Nike"],
-      "categories": ["social"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -19122,8 +20276,14 @@
       "source_name": "techradar.com",
       "published_at": "2025-10-26T19:15:00+00:00",
       "published_date": "2025-10-26",
-      "brands": ["Adidas"],
-      "categories": ["digital_transformation", "governance", "social"],
+      "brands": [
+        "Adidas"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Adidas",
@@ -19235,8 +20395,13 @@
       "source_name": "finance.yahoo.com",
       "published_at": "2025-10-26T01:15:00+00:00",
       "published_date": "2025-10-26",
-      "brands": ["Puma"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Puma"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Puma",
@@ -19321,8 +20486,13 @@
       "source_name": "wwd.com",
       "published_at": "2025-10-24T19:00:00+00:00",
       "published_date": "2025-10-24",
-      "brands": ["Puma"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Puma"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Puma",
@@ -19407,8 +20577,14 @@
       "source_name": "rollingout.com",
       "published_at": "2025-10-23T21:45:00+00:00",
       "published_date": "2025-10-23",
-      "brands": ["Deckers"],
-      "categories": ["digital_transformation", "environmental", "governance"],
+      "brands": [
+        "Deckers"
+      ],
+      "categories": [
+        "digital_transformation",
+        "environmental",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Deckers",
@@ -19502,8 +20678,13 @@
       "source_name": "yahoo.com",
       "published_at": "2025-10-23T21:15:00+00:00",
       "published_date": "2025-10-23",
-      "brands": ["New Balance"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "New Balance"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "New Balance",
@@ -19570,8 +20751,12 @@
       "source_name": "theverge.com",
       "published_at": "2025-10-23T19:45:00+00:00",
       "published_date": "2025-10-23",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -19628,8 +20813,13 @@
       "source_name": "cityam.com",
       "published_at": "2025-10-23T14:45:00+00:00",
       "published_date": "2025-10-23",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "environmental"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "environmental"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -19696,8 +20886,15 @@
       "source_name": "wwd.com",
       "published_at": "2025-10-23T13:45:00+00:00",
       "published_date": "2025-10-23",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "environmental", "governance", "social"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "environmental",
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -19809,8 +21006,12 @@
       "source_name": "wwd.com",
       "published_at": "2025-10-21T23:15:00+00:00",
       "published_date": "2025-10-21",
-      "brands": ["Reebok"],
-      "categories": ["digital_transformation"],
+      "brands": [
+        "Reebok"
+      ],
+      "categories": [
+        "digital_transformation"
+      ],
       "brand_details": [
         {
           "brand": "Reebok",
@@ -19868,8 +21069,14 @@
       "source_name": "digitaljournal.com",
       "published_at": "2025-10-21T21:00:00+00:00",
       "published_date": "2025-10-21",
-      "brands": ["Adidas"],
-      "categories": ["environmental", "governance", "social"],
+      "brands": [
+        "Adidas"
+      ],
+      "categories": [
+        "environmental",
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Adidas",
@@ -19945,8 +21152,13 @@
       "source_name": "dailymail.co.uk",
       "published_at": "2025-10-21T13:15:00+00:00",
       "published_date": "2025-10-21",
-      "brands": ["Adidas"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Adidas"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Adidas",
@@ -20040,8 +21252,13 @@
       "source_name": "portlandtribune.com",
       "published_at": "2025-10-16T20:45:00+00:00",
       "published_date": "2025-10-16",
-      "brands": ["Nike"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -20115,8 +21332,13 @@
       "source_name": "road.cc",
       "published_at": "2025-10-15T07:15:00+00:00",
       "published_date": "2025-10-15",
-      "brands": ["Decathlon"],
-      "categories": ["digital_transformation", "environmental"],
+      "brands": [
+        "Decathlon"
+      ],
+      "categories": [
+        "digital_transformation",
+        "environmental"
+      ],
       "brand_details": [
         {
           "brand": "Decathlon",
@@ -20192,8 +21414,13 @@
       "source_name": "markets.financialcontent.com",
       "published_at": "2025-10-14T22:15:00+00:00",
       "published_date": "2025-10-14",
-      "brands": ["Lululemon"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -20278,8 +21505,13 @@
       "source_name": "oregonlive.com",
       "published_at": "2025-10-14T21:45:00+00:00",
       "published_date": "2025-10-14",
-      "brands": ["Nike"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -20364,8 +21596,12 @@
       "source_name": "manilatimes.net",
       "published_at": "2025-10-14T17:45:00+00:00",
       "published_date": "2025-10-14",
-      "brands": ["Hoka"],
-      "categories": ["social"],
+      "brands": [
+        "Hoka"
+      ],
+      "categories": [
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Hoka",
@@ -20414,8 +21650,14 @@
       "source_name": "businessinsider.com",
       "published_at": "2025-10-14T11:30:00+00:00",
       "published_date": "2025-10-14",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "governance", "social"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -20518,8 +21760,14 @@
       "source_name": "castanetkamloops.net",
       "published_at": "2025-10-09T21:00:00+00:00",
       "published_date": "2025-10-09",
-      "brands": ["Lululemon"],
-      "categories": ["digital_transformation", "governance", "social"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -20604,8 +21852,13 @@
       "source_name": "webwire.com",
       "published_at": "2025-10-09T20:30:00+00:00",
       "published_date": "2025-10-09",
-      "brands": ["New Balance"],
-      "categories": ["digital_transformation", "social"],
+      "brands": [
+        "New Balance"
+      ],
+      "categories": [
+        "digital_transformation",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "New Balance",
@@ -20690,8 +21943,14 @@
       "source_name": "thedrum.com",
       "published_at": "2025-10-09T14:15:00+00:00",
       "published_date": "2025-10-09",
-      "brands": ["The North Face"],
-      "categories": ["digital_transformation", "environmental", "social"],
+      "brands": [
+        "The North Face"
+      ],
+      "categories": [
+        "digital_transformation",
+        "environmental",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "The North Face",
@@ -20776,8 +22035,13 @@
       "source_name": "adgully.com",
       "published_at": "2025-10-09T06:30:00+00:00",
       "published_date": "2025-10-09",
-      "brands": ["Puma"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Puma"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Puma",
@@ -20853,8 +22117,12 @@
       "source_name": "africa.com",
       "published_at": "2025-10-07T11:45:00+00:00",
       "published_date": "2025-10-07",
-      "brands": ["Nike"],
-      "categories": ["social"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -20911,8 +22179,14 @@
       "source_name": "marketscreener.com",
       "published_at": "2025-10-06T20:00:00+00:00",
       "published_date": "2025-10-06",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "governance", "social"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -21024,8 +22298,14 @@
       "source_name": "fool.com",
       "published_at": "2025-10-02T22:00:00+00:00",
       "published_date": "2025-10-02",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "environmental", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "environmental",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -21119,8 +22399,12 @@
       "source_name": "tvone.tv",
       "published_at": "2025-10-02T15:15:00+00:00",
       "published_date": "2025-10-02",
-      "brands": ["Adidas"],
-      "categories": ["social"],
+      "brands": [
+        "Adidas"
+      ],
+      "categories": [
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Adidas",
@@ -21187,8 +22471,13 @@
       "source_name": "retailtimes.co.uk",
       "published_at": "2025-10-01T19:15:00+00:00",
       "published_date": "2025-10-01",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -21255,8 +22544,13 @@
       "source_name": "cnn.com",
       "published_at": "2025-10-01T17:00:00+00:00",
       "published_date": "2025-10-01",
-      "brands": ["Nike"],
-      "categories": ["environmental", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "environmental",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -21332,8 +22626,14 @@
       "source_name": "bnnbloomberg.ca",
       "published_at": "2025-10-01T14:00:00+00:00",
       "published_date": "2025-10-01",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "environmental", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "environmental",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -21427,8 +22727,14 @@
       "source_name": "webpronews.com",
       "published_at": "2025-09-30T23:45:00+00:00",
       "published_date": "2025-09-30",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "governance", "social"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -21512,8 +22818,13 @@
       "source_name": "cnbc.com",
       "published_at": "2025-09-30T16:30:00+00:00",
       "published_date": "2025-09-30",
-      "brands": ["Nike"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -21589,8 +22900,12 @@
       "source_name": "dazeddigital.com",
       "published_at": "2025-09-30T14:45:00+00:00",
       "published_date": "2025-09-30",
-      "brands": ["Vans"],
-      "categories": ["social"],
+      "brands": [
+        "Vans"
+      ],
+      "categories": [
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Vans",
@@ -21656,8 +22971,13 @@
       "source_name": "theweek.in",
       "published_at": "2025-09-30T11:30:00+00:00",
       "published_date": "2025-09-30",
-      "brands": ["Reebok"],
-      "categories": ["environmental", "governance"],
+      "brands": [
+        "Reebok"
+      ],
+      "categories": [
+        "environmental",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Reebok",
@@ -21724,8 +23044,14 @@
       "source_name": "bbc.com",
       "published_at": "2025-09-30T04:00:00+00:00",
       "published_date": "2025-09-30",
-      "brands": ["Adidas", "Nike", "Puma"],
-      "categories": ["social"],
+      "brands": [
+        "Adidas",
+        "Nike",
+        "Puma"
+      ],
+      "categories": [
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Puma",
@@ -21877,8 +23203,13 @@
       "source_name": "finance.yahoo.com",
       "published_at": "2025-09-29T10:45:00+00:00",
       "published_date": "2025-09-29",
-      "brands": ["Nike"],
-      "categories": ["environmental", "governance"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "environmental",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -21954,8 +23285,13 @@
       "source_name": "cityam.com",
       "published_at": "2025-09-25T13:45:00+00:00",
       "published_date": "2025-09-25",
-      "brands": ["New Balance"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "New Balance"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "New Balance",
@@ -22022,8 +23358,13 @@
       "source_name": "letsrun.com",
       "published_at": "2025-09-25T08:15:00+00:00",
       "published_date": "2025-09-25",
-      "brands": ["Nike"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -22098,8 +23439,13 @@
       "source_name": "northdallasgazette.com",
       "published_at": "2025-09-24T23:15:00+00:00",
       "published_date": "2025-09-24",
-      "brands": ["Timberland"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Timberland"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Timberland",
@@ -22193,8 +23539,12 @@
       "source_name": "hypebeast.com",
       "published_at": "2025-09-24T00:00:00+00:00",
       "published_date": "2025-09-24",
-      "brands": ["Puma"],
-      "categories": ["social"],
+      "brands": [
+        "Puma"
+      ],
+      "categories": [
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Puma",
@@ -22252,8 +23602,13 @@
       "source_name": "klcc.org",
       "published_at": "2025-09-23T19:15:00+00:00",
       "published_date": "2025-09-23",
-      "brands": ["Nike"],
-      "categories": ["governance", "social"],
+      "brands": [
+        "Nike"
+      ],
+      "categories": [
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Nike",
@@ -22320,8 +23675,14 @@
       "source_name": "textileworld.com",
       "published_at": "2025-09-23T18:30:00+00:00",
       "published_date": "2025-09-23",
-      "brands": ["Patagonia"],
-      "categories": ["environmental", "governance", "social"],
+      "brands": [
+        "Patagonia"
+      ],
+      "categories": [
+        "environmental",
+        "governance",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Patagonia",
@@ -22423,8 +23784,12 @@
       "source_name": "wwd.com",
       "published_at": "2025-09-23T16:15:00+00:00",
       "published_date": "2025-09-23",
-      "brands": ["Puma"],
-      "categories": ["social"],
+      "brands": [
+        "Puma"
+      ],
+      "categories": [
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Puma",
@@ -22473,8 +23838,13 @@
       "source_name": "retaildive.com",
       "published_at": "2025-09-22T19:45:00+00:00",
       "published_date": "2025-09-22",
-      "brands": ["Lululemon"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "Lululemon"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "Lululemon",
@@ -22550,8 +23920,13 @@
       "source_name": "benzinga.com",
       "published_at": "2025-09-22T11:30:00+00:00",
       "published_date": "2025-09-22",
-      "brands": ["361 Degrees"],
-      "categories": ["digital_transformation", "governance"],
+      "brands": [
+        "361 Degrees"
+      ],
+      "categories": [
+        "digital_transformation",
+        "governance"
+      ],
       "brand_details": [
         {
           "brand": "361 Degrees",
@@ -22636,8 +24011,13 @@
       "source_name": "singaporestar.com",
       "published_at": "2025-09-21T13:30:00+00:00",
       "published_date": "2025-09-21",
-      "brands": ["Xtep"],
-      "categories": ["digital_transformation", "social"],
+      "brands": [
+        "Xtep"
+      ],
+      "categories": [
+        "digital_transformation",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Xtep",
@@ -22713,8 +24093,13 @@
       "source_name": "balticbusinessnews.com",
       "published_at": "2025-09-21T10:45:00+00:00",
       "published_date": "2025-09-21",
-      "brands": ["Xtep"],
-      "categories": ["digital_transformation", "social"],
+      "brands": [
+        "Xtep"
+      ],
+      "categories": [
+        "digital_transformation",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Xtep",
@@ -22790,8 +24175,13 @@
       "source_name": "thailand-business-news.com",
       "published_at": "2025-09-21T09:30:00+00:00",
       "published_date": "2025-09-21",
-      "brands": ["Xtep"],
-      "categories": ["digital_transformation", "social"],
+      "brands": [
+        "Xtep"
+      ],
+      "categories": [
+        "digital_transformation",
+        "social"
+      ],
       "brand_details": [
         {
           "brand": "Xtep",
