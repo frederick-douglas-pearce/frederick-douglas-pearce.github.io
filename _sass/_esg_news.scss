@@ -72,7 +72,7 @@
     font-size: 0.75rem;
     font-weight: 600;
     padding: 0.25rem 0.5rem;
-    color: #333;
+    color: #000 !important;  // Black text for readability on colored backgrounds
   }
 
   .cat-env {
@@ -332,8 +332,9 @@ html[data-theme="dark"] {
   .scorecard-card {
     background: rgba(255, 255, 255, 0.03);
 
+    // Keep black text in dark mode too - colored backgrounds provide contrast
     .cat-badge {
-      color: #fff;
+      color: #000 !important;
     }
 
     .cat-env {
