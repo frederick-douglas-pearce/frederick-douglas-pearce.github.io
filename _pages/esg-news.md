@@ -73,9 +73,9 @@ enable_math: false
         </div>
       </div>
 
-      <!-- Back Performers -->
+      <!-- Back of the Pack -->
       <div class="col-md-6 mb-3">
-        <h5 class="scorecard-section-title text-center">Back Performers</h5>
+        <h5 class="scorecard-section-title text-center">Back of the Pack</h5>
         <div id="bottom-brands">
           {% if site.data.esg_news.scorecard.bottom_brands.size > 0 %}
             {% for brand in site.data.esg_news.scorecard.bottom_brands %}
