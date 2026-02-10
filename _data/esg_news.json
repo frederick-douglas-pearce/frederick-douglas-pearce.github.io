@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-09T15:00:27.944117+00:00",
+  "generated_at": "2026-02-10T09:05:40.073748+00:00",
   "total_articles": 366,
   "brands": [
     "361 Degrees",
@@ -38,11 +38,11 @@
   "categories": ["digital_transformation", "environmental", "governance", "social"],
   "scorecard": {
     "period_days": 14,
-    "period_start": "2026-01-26",
-    "period_end": "2026-02-09",
-    "articles_in_period": 101,
-    "articles_after_dedup": 43,
-    "duplicates_removed": 58,
+    "period_start": "2026-01-27",
+    "period_end": "2026-02-10",
+    "articles_in_period": 89,
+    "articles_after_dedup": 47,
+    "duplicates_removed": 42,
     "top_brands": [
       {
         "brand": "Adidas",
@@ -55,37 +55,36 @@
         "medal": "gold"
       },
       {
-        "brand": "Puma",
-        "total": 6,
+        "brand": "Anta",
+        "total": 7,
         "environmental": 0,
         "social": 2,
-        "governance": 4,
+        "governance": 5,
         "digital_transformation": 0,
-        "article_count": 5,
+        "article_count": 4,
         "medal": "silver"
       },
       {
-        "brand": "Anta",
-        "total": 5,
+        "brand": "Puma",
+        "total": 6,
         "environmental": 0,
-        "social": 2,
-        "governance": 3,
+        "social": 1,
+        "governance": 5,
         "digital_transformation": 0,
-        "article_count": 3,
-        "medal": "bronze"
-      },
-      {
-        "brand": "Nike",
-        "total": 5,
-        "environmental": 0,
-        "social": -2,
-        "governance": 0,
-        "digital_transformation": 7,
-        "article_count": 15,
+        "article_count": 6,
         "medal": "bronze"
       }
     ],
     "bottom_brands": [
+      {
+        "brand": "Eddie Bauer",
+        "total": -9,
+        "environmental": 0,
+        "social": -3,
+        "governance": -6,
+        "digital_transformation": 0,
+        "article_count": 6
+      },
       {
         "brand": "Under Armour",
         "total": -4,
@@ -96,31 +95,13 @@
         "article_count": 5
       },
       {
-        "brand": "Eddie Bauer",
-        "total": -3,
-        "environmental": 0,
-        "social": 0,
-        "governance": -3,
-        "digital_transformation": 0,
-        "article_count": 3
-      },
-      {
         "brand": "Lululemon",
-        "total": -2,
+        "total": -4,
         "environmental": 0,
-        "social": -1,
-        "governance": -1,
+        "social": -2,
+        "governance": -2,
         "digital_transformation": 0,
-        "article_count": 3
-      },
-      {
-        "brand": "Patagonia",
-        "total": -2,
-        "environmental": -1,
-        "social": 0,
-        "governance": -1,
-        "digital_transformation": 0,
-        "article_count": 1
+        "article_count": 4
       }
     ],
     "all_brand_scores": [
@@ -135,43 +116,42 @@
         "medal": "gold"
       },
       {
-        "brand": "Puma",
-        "total": 6,
+        "brand": "Anta",
+        "total": 7,
         "environmental": 0,
         "social": 2,
-        "governance": 4,
+        "governance": 5,
         "digital_transformation": 0,
-        "article_count": 5,
+        "article_count": 4,
         "medal": "silver"
       },
       {
-        "brand": "Anta",
-        "total": 5,
+        "brand": "Puma",
+        "total": 6,
         "environmental": 0,
-        "social": 2,
-        "governance": 3,
+        "social": 1,
+        "governance": 5,
         "digital_transformation": 0,
-        "article_count": 3,
-        "medal": "bronze"
-      },
-      {
-        "brand": "Nike",
-        "total": 5,
-        "environmental": 0,
-        "social": -2,
-        "governance": 0,
-        "digital_transformation": 7,
-        "article_count": 15,
+        "article_count": 6,
         "medal": "bronze"
       },
       {
         "brand": "Columbia Sportswear",
-        "total": 3,
+        "total": 4,
         "environmental": 2,
         "social": 0,
-        "governance": 1,
+        "governance": 2,
         "digital_transformation": 0,
-        "article_count": 1
+        "article_count": 2
+      },
+      {
+        "brand": "Nike",
+        "total": 3,
+        "environmental": 0,
+        "social": -2,
+        "governance": -2,
+        "digital_transformation": 7,
+        "article_count": 14
       },
       {
         "brand": "ASICS",
@@ -229,30 +209,12 @@
       },
       {
         "brand": "Lululemon",
-        "total": -2,
+        "total": -4,
         "environmental": 0,
-        "social": -1,
-        "governance": -1,
+        "social": -2,
+        "governance": -2,
         "digital_transformation": 0,
-        "article_count": 3
-      },
-      {
-        "brand": "Patagonia",
-        "total": -2,
-        "environmental": -1,
-        "social": 0,
-        "governance": -1,
-        "digital_transformation": 0,
-        "article_count": 1
-      },
-      {
-        "brand": "Eddie Bauer",
-        "total": -3,
-        "environmental": 0,
-        "social": 0,
-        "governance": -3,
-        "digital_transformation": 0,
-        "article_count": 3
+        "article_count": 4
       },
       {
         "brand": "Under Armour",
@@ -262,6 +224,15 @@
         "governance": -3,
         "digital_transformation": -1,
         "article_count": 5
+      },
+      {
+        "brand": "Eddie Bauer",
+        "total": -9,
+        "environmental": 0,
+        "social": -3,
+        "governance": -6,
+        "digital_transformation": 0,
+        "article_count": 6
       }
     ]
   },
