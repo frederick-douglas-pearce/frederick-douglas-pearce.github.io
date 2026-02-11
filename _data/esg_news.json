@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-10T15:00:27.297707+00:00",
+  "generated_at": "2026-02-11T08:04:13.354042+00:00",
   "total_articles": 382,
   "brands": [
     "361 Degrees",
@@ -39,40 +39,40 @@
   "categories": ["digital_transformation", "environmental", "governance", "social"],
   "scorecard": {
     "period_days": 14,
-    "period_start": "2026-01-27",
-    "period_end": "2026-02-10",
-    "articles_in_period": 100,
-    "articles_after_dedup": 48,
-    "duplicates_removed": 52,
+    "period_start": "2026-01-28",
+    "period_end": "2026-02-11",
+    "articles_in_period": 91,
+    "articles_after_dedup": 43,
+    "duplicates_removed": 48,
     "top_brands": [
       {
-        "brand": "Adidas",
-        "total": 10,
-        "environmental": 2,
-        "social": 3,
+        "brand": "Anta",
+        "total": 7,
+        "environmental": 0,
+        "social": 4,
         "governance": 3,
-        "digital_transformation": 2,
-        "article_count": 8,
+        "digital_transformation": 0,
+        "article_count": 4,
         "medal": "gold"
       },
       {
-        "brand": "Anta",
-        "total": 9,
-        "environmental": 0,
-        "social": 4,
-        "governance": 5,
-        "digital_transformation": 0,
-        "article_count": 5,
+        "brand": "Adidas",
+        "total": 6,
+        "environmental": 2,
+        "social": 1,
+        "governance": 1,
+        "digital_transformation": 2,
+        "article_count": 6,
         "medal": "silver"
       },
       {
         "brand": "Puma",
         "total": 5,
         "environmental": 0,
-        "social": 1,
-        "governance": 4,
+        "social": 2,
+        "governance": 3,
         "digital_transformation": 0,
-        "article_count": 5,
+        "article_count": 4,
         "medal": "bronze"
       }
     ],
@@ -90,10 +90,10 @@
         "brand": "Lululemon",
         "total": -4,
         "environmental": 0,
-        "social": -2,
-        "governance": -2,
+        "social": -1,
+        "governance": -3,
         "digital_transformation": 0,
-        "article_count": 4
+        "article_count": 3
       },
       {
         "brand": "Under Armour",
@@ -107,33 +107,33 @@
     ],
     "all_brand_scores": [
       {
-        "brand": "Adidas",
-        "total": 10,
-        "environmental": 2,
-        "social": 3,
+        "brand": "Anta",
+        "total": 7,
+        "environmental": 0,
+        "social": 4,
         "governance": 3,
-        "digital_transformation": 2,
-        "article_count": 8,
+        "digital_transformation": 0,
+        "article_count": 4,
         "medal": "gold"
       },
       {
-        "brand": "Anta",
-        "total": 9,
-        "environmental": 0,
-        "social": 4,
-        "governance": 5,
-        "digital_transformation": 0,
-        "article_count": 5,
+        "brand": "Adidas",
+        "total": 6,
+        "environmental": 2,
+        "social": 1,
+        "governance": 1,
+        "digital_transformation": 2,
+        "article_count": 6,
         "medal": "silver"
       },
       {
         "brand": "Puma",
         "total": 5,
         "environmental": 0,
-        "social": 1,
-        "governance": 4,
+        "social": 2,
+        "governance": 3,
         "digital_transformation": 0,
-        "article_count": 5,
+        "article_count": 4,
         "medal": "bronze"
       },
       {
@@ -185,10 +185,10 @@
         "brand": "Nike",
         "total": 1,
         "environmental": 0,
-        "social": -3,
+        "social": -2,
         "governance": -1,
-        "digital_transformation": 5,
-        "article_count": 13
+        "digital_transformation": 4,
+        "article_count": 12
       },
       {
         "brand": "Alo Yoga",
@@ -221,10 +221,10 @@
         "brand": "Lululemon",
         "total": -4,
         "environmental": 0,
-        "social": -2,
-        "governance": -2,
+        "social": -1,
+        "governance": -3,
         "digital_transformation": 0,
-        "article_count": 4
+        "article_count": 3
       },
       {
         "brand": "Under Armour",
