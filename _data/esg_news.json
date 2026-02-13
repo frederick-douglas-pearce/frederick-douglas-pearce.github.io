@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-13T05:56:49.466637+00:00",
+  "generated_at": "2026-02-13T09:32:38.056957+00:00",
   "total_articles": 392,
   "brands": [
     "361 Degrees",
@@ -123,6 +123,15 @@
         "governance": -2,
         "digital_transformation": -1,
         "article_count": 4
+      },
+      {
+        "brand": "Converse",
+        "total": -1,
+        "environmental": 0,
+        "social": -2,
+        "governance": 1,
+        "digital_transformation": 0,
+        "article_count": 2
       }
     ],
     "all_brand_scores": [
