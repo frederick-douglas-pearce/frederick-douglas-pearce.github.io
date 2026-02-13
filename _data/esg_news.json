@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-12T19:42:12.317783+00:00",
+  "generated_at": "2026-02-13T05:47:17.049231+00:00",
   "total_articles": 392,
   "brands": [
     "361 Degrees",
@@ -39,20 +39,20 @@
   "categories": ["digital_transformation", "environmental", "governance", "social"],
   "scorecard": {
     "period_days": 14,
-    "period_start": "2026-01-29",
-    "period_end": "2026-02-12",
-    "articles_in_period": 99,
-    "articles_after_dedup": 43,
-    "duplicates_removed": 56,
+    "period_start": "2026-01-30",
+    "period_end": "2026-02-13",
+    "articles_in_period": 97,
+    "articles_after_dedup": 42,
+    "duplicates_removed": 55,
     "top_brands": [
       {
         "brand": "Adidas",
-        "total": 6,
+        "total": 7,
         "environmental": 2,
         "social": 1,
-        "governance": 1,
+        "governance": 2,
         "digital_transformation": 2,
-        "article_count": 6,
+        "article_count": 5,
         "medal": "gold"
       },
       {
@@ -63,7 +63,7 @@
         "governance": 2,
         "digital_transformation": 0,
         "article_count": 3,
-        "medal": "gold"
+        "medal": "silver"
       },
       {
         "brand": "Columbia Sportswear",
@@ -73,7 +73,7 @@
         "governance": 2,
         "digital_transformation": 0,
         "article_count": 2,
-        "medal": "silver"
+        "medal": "bronze"
       },
       {
         "brand": "Nike",
@@ -83,7 +83,7 @@
         "governance": 1,
         "digital_transformation": 5,
         "article_count": 12,
-        "medal": "silver"
+        "medal": "bronze"
       },
       {
         "brand": "Puma",
@@ -93,7 +93,7 @@
         "governance": 2,
         "digital_transformation": 0,
         "article_count": 3,
-        "medal": "silver"
+        "medal": "bronze"
       }
     ],
     "bottom_brands": [
@@ -128,12 +128,12 @@
     "all_brand_scores": [
       {
         "brand": "Adidas",
-        "total": 6,
+        "total": 7,
         "environmental": 2,
         "social": 1,
-        "governance": 1,
+        "governance": 2,
         "digital_transformation": 2,
-        "article_count": 6,
+        "article_count": 5,
         "medal": "gold"
       },
       {
@@ -144,7 +144,7 @@
         "governance": 2,
         "digital_transformation": 0,
         "article_count": 3,
-        "medal": "gold"
+        "medal": "silver"
       },
       {
         "brand": "Columbia Sportswear",
@@ -154,7 +154,7 @@
         "governance": 2,
         "digital_transformation": 0,
         "article_count": 2,
-        "medal": "silver"
+        "medal": "bronze"
       },
       {
         "brand": "Nike",
@@ -164,7 +164,7 @@
         "governance": 1,
         "digital_transformation": 5,
         "article_count": 12,
-        "medal": "silver"
+        "medal": "bronze"
       },
       {
         "brand": "Puma",
@@ -174,7 +174,7 @@
         "governance": 2,
         "digital_transformation": 0,
         "article_count": 3,
-        "medal": "silver"
+        "medal": "bronze"
       },
       {
         "brand": "ASICS",
