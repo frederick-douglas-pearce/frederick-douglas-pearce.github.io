@@ -280,10 +280,10 @@ enable_math: false
                       </div>
                       {% if ev.context_snippet %}
                       <div class="evidence-chunk small mt-1">
-                        <div class="chunk-text">{{ ev.context_snippet }}</div>
-                        <div class="excerpt-highlight mt-1">
+                        <div class="excerpt-highlight">
                           <strong>Key excerpt:</strong> "{{ ev.excerpt }}"
                         </div>
+                        <div class="chunk-text mt-1">{{ ev.context_snippet }}</div>
                       </div>
                       {% else %}
                       <div class="evidence-excerpt small mt-1">
