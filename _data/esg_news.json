@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-15T15:00:28.831139+00:00",
+  "generated_at": "2026-02-16T15:00:28.109504+00:00",
   "total_articles": 404,
   "brands": [
     "361 Degrees",
@@ -39,10 +39,10 @@
   "categories": ["digital_transformation", "environmental", "governance", "social"],
   "scorecard": {
     "period_days": 14,
-    "period_start": "2026-02-01",
-    "period_end": "2026-02-15",
-    "articles_in_period": 100,
-    "articles_after_dedup": 41,
+    "period_start": "2026-02-02",
+    "period_end": "2026-02-16",
+    "articles_in_period": 98,
+    "articles_after_dedup": 39,
     "duplicates_removed": 59,
     "top_brands": [
       {
@@ -57,12 +57,12 @@
       },
       {
         "brand": "Nike",
-        "total": 9,
+        "total": 8,
         "environmental": 0,
-        "social": -1,
-        "governance": 3,
-        "digital_transformation": 7,
-        "article_count": 13,
+        "social": 0,
+        "governance": 2,
+        "digital_transformation": 6,
+        "article_count": 11,
         "medal": "silver"
       },
       {
@@ -109,12 +109,12 @@
       },
       {
         "brand": "Nike",
-        "total": 9,
+        "total": 8,
         "environmental": 0,
-        "social": -1,
-        "governance": 3,
-        "digital_transformation": 7,
-        "article_count": 13,
+        "social": 0,
+        "governance": 2,
+        "digital_transformation": 6,
+        "article_count": 11,
         "medal": "silver"
       },
       {
