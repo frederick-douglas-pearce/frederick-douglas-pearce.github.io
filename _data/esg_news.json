@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-22T15:00:28.417154+00:00",
+  "generated_at": "2026-02-23T15:00:28.317003+00:00",
   "total_articles": 415,
   "brands": [
     "361 Degrees",
@@ -39,22 +39,12 @@
   "categories": ["digital_transformation", "environmental", "governance", "social"],
   "scorecard": {
     "period_days": 14,
-    "period_start": "2026-02-08",
-    "period_end": "2026-02-22",
-    "articles_in_period": 53,
-    "articles_after_dedup": 30,
-    "duplicates_removed": 23,
+    "period_start": "2026-02-09",
+    "period_end": "2026-02-23",
+    "articles_in_period": 49,
+    "articles_after_dedup": 27,
+    "duplicates_removed": 22,
     "top_brands": [
-      {
-        "brand": "Adidas",
-        "total": 5,
-        "environmental": 0,
-        "social": 6,
-        "governance": -2,
-        "digital_transformation": 1,
-        "article_count": 7,
-        "medal": "gold"
-      },
       {
         "brand": "Lululemon",
         "total": 5,
@@ -72,34 +62,34 @@
         "social": -2,
         "governance": 1,
         "digital_transformation": 6,
-        "article_count": 8,
+        "article_count": 7,
         "medal": "gold"
       },
       {
-        "brand": "Anta",
-        "total": 4,
+        "brand": "Adidas",
+        "total": 3,
         "environmental": 0,
-        "social": 2,
-        "governance": 2,
-        "digital_transformation": 0,
-        "article_count": 2,
+        "social": 4,
+        "governance": -2,
+        "digital_transformation": 1,
+        "article_count": 5,
         "medal": "silver"
-      },
-      {
-        "brand": "ASICS",
-        "total": 2,
-        "environmental": 0,
-        "social": 2,
-        "governance": 0,
-        "digital_transformation": 0,
-        "article_count": 1,
-        "medal": "bronze"
       },
       {
         "brand": "Allbirds",
         "total": 2,
         "environmental": 2,
         "social": 0,
+        "governance": 0,
+        "digital_transformation": 0,
+        "article_count": 1,
+        "medal": "bronze"
+      },
+      {
+        "brand": "Anta",
+        "total": 2,
+        "environmental": 0,
+        "social": 2,
         "governance": 0,
         "digital_transformation": 0,
         "article_count": 1,
@@ -138,16 +128,6 @@
     ],
     "all_brand_scores": [
       {
-        "brand": "Adidas",
-        "total": 5,
-        "environmental": 0,
-        "social": 6,
-        "governance": -2,
-        "digital_transformation": 1,
-        "article_count": 7,
-        "medal": "gold"
-      },
-      {
         "brand": "Lululemon",
         "total": 5,
         "environmental": 0,
@@ -164,34 +144,34 @@
         "social": -2,
         "governance": 1,
         "digital_transformation": 6,
-        "article_count": 8,
+        "article_count": 7,
         "medal": "gold"
       },
       {
-        "brand": "Anta",
-        "total": 4,
+        "brand": "Adidas",
+        "total": 3,
         "environmental": 0,
-        "social": 2,
-        "governance": 2,
-        "digital_transformation": 0,
-        "article_count": 2,
+        "social": 4,
+        "governance": -2,
+        "digital_transformation": 1,
+        "article_count": 5,
         "medal": "silver"
-      },
-      {
-        "brand": "ASICS",
-        "total": 2,
-        "environmental": 0,
-        "social": 2,
-        "governance": 0,
-        "digital_transformation": 0,
-        "article_count": 1,
-        "medal": "bronze"
       },
       {
         "brand": "Allbirds",
         "total": 2,
         "environmental": 2,
         "social": 0,
+        "governance": 0,
+        "digital_transformation": 0,
+        "article_count": 1,
+        "medal": "bronze"
+      },
+      {
+        "brand": "Anta",
+        "total": 2,
+        "environmental": 0,
+        "social": 2,
         "governance": 0,
         "digital_transformation": 0,
         "article_count": 1,
@@ -206,15 +186,6 @@
         "digital_transformation": 0,
         "article_count": 1,
         "medal": "bronze"
-      },
-      {
-        "brand": "Puma",
-        "total": 1,
-        "environmental": 0,
-        "social": 0,
-        "governance": 1,
-        "digital_transformation": 0,
-        "article_count": 1
       },
       {
         "brand": "Under Armour",
