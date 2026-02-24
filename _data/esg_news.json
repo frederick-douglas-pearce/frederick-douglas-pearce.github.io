@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-02-23T15:00:28.317003+00:00",
-  "total_articles": 415,
+  "generated_at": "2026-02-24T15:00:30.441986+00:00",
+  "total_articles": 417,
   "brands": [
     "361 Degrees",
     "ASICS",
@@ -39,11 +39,11 @@
   "categories": ["digital_transformation", "environmental", "governance", "social"],
   "scorecard": {
     "period_days": 14,
-    "period_start": "2026-02-09",
-    "period_end": "2026-02-23",
-    "articles_in_period": 49,
-    "articles_after_dedup": 27,
-    "duplicates_removed": 22,
+    "period_start": "2026-02-10",
+    "period_end": "2026-02-24",
+    "articles_in_period": 36,
+    "articles_after_dedup": 25,
+    "duplicates_removed": 11,
     "top_brands": [
       {
         "brand": "Lululemon",
@@ -59,9 +59,9 @@
         "brand": "Nike",
         "total": 5,
         "environmental": 0,
-        "social": -2,
+        "social": 0,
         "governance": 1,
-        "digital_transformation": 6,
+        "digital_transformation": 4,
         "article_count": 7,
         "medal": "gold"
       },
@@ -86,16 +86,6 @@
         "medal": "bronze"
       },
       {
-        "brand": "Anta",
-        "total": 2,
-        "environmental": 0,
-        "social": 2,
-        "governance": 0,
-        "digital_transformation": 0,
-        "article_count": 1,
-        "medal": "bronze"
-      },
-      {
         "brand": "New Balance",
         "total": 2,
         "environmental": 0,
@@ -111,10 +101,10 @@
         "brand": "Eddie Bauer",
         "total": -5,
         "environmental": 0,
-        "social": -2,
-        "governance": -6,
-        "digital_transformation": 3,
-        "article_count": 6
+        "social": -1,
+        "governance": -5,
+        "digital_transformation": 1,
+        "article_count": 5
       },
       {
         "brand": "Converse",
@@ -141,9 +131,9 @@
         "brand": "Nike",
         "total": 5,
         "environmental": 0,
-        "social": -2,
+        "social": 0,
         "governance": 1,
-        "digital_transformation": 6,
+        "digital_transformation": 4,
         "article_count": 7,
         "medal": "gold"
       },
@@ -162,16 +152,6 @@
         "total": 2,
         "environmental": 2,
         "social": 0,
-        "governance": 0,
-        "digital_transformation": 0,
-        "article_count": 1,
-        "medal": "bronze"
-      },
-      {
-        "brand": "Anta",
-        "total": 2,
-        "environmental": 0,
-        "social": 2,
         "governance": 0,
         "digital_transformation": 0,
         "article_count": 1,
@@ -209,14 +189,123 @@
         "brand": "Eddie Bauer",
         "total": -5,
         "environmental": 0,
-        "social": -2,
-        "governance": -6,
-        "digital_transformation": 3,
-        "article_count": 6
+        "social": -1,
+        "governance": -5,
+        "digital_transformation": 1,
+        "article_count": 5
       }
     ]
   },
   "articles": [
+    {
+      "id": "bf66e6b3-2f1a-4f5b-a408-d5377d5088a2",
+      "title": "Aja Wilson Takes Her Show on the Road in Her First Global Tour as a Nike Signature Athlete",
+      "url": "https://www.webwire.com/ViewPressRel.asp?aId=350954",
+      "source_name": "webwire.com",
+      "published_at": "2026-02-24T01:45:00+00:00",
+      "published_date": "2026-02-24",
+      "brands": ["Nike"],
+      "categories": ["social"],
+      "brand_details": [
+        {
+          "brand": "Nike",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "social",
+              "excerpt": "where she will inspire the next generation of hoopers and introduce more athletes to the aspirational energy she brings to the court",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998478142429775,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "What to know\n\nNike signature athlete A\u0092ja Wilson is set to begin her first global tour with Nike Basketball, visiting several cities in Europe next month. A\u0092ja\u0092s tour will include stops in Paris, London, Berlin and Hilversum, where she will inspire the next generation of hoopers and introduce more athletes to the aspirational energy she brings to the court. Each visit will be grounded at the intersection of community, sport, culture and fashion, with programming that ranges from basketball clinics to real conversations that engage the next generation of players and fans in Europe."
+            },
+            {
+              "category": "social",
+              "excerpt": "Each visit will be grounded at the intersection of community, sport, culture and fashion, with programming that ranges from basketball clinics to real conversations that engage the next generation of players and fans in Europe.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9982875306264013,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "What to know\n\nNike signature athlete A\u0092ja Wilson is set to begin her first global tour with Nike Basketball, visiting several cities in Europe next month. A\u0092ja\u0092s tour will include stops in Paris, London, Berlin and Hilversum, where she will inspire the next generation of hoopers and introduce more athletes to the aspirational energy she brings to the court. Each visit will be grounded at the intersection of community, sport, culture and fashion, with programming that ranges from basketball clinics to real conversations that engage the next generation of players and fans in Europe."
+            }
+          ],
+          "confidence": 0.8,
+          "reasoning": "This is a community engagement initiative where Nike is organizing basketball clinics and youth development programming across European cities. The tour includes substantive community investment through sports clinics and mentorship programs that go beyond basic marketing, qualifying as Social ESG activity focused on youth development and community engagement."
+        }
+      ]
+    },
+    {
+      "id": "1a4f7b00-d193-4f0c-9a2f-f373a34be322",
+      "title": "Eddie Bauer Closes Amarillo Store at Westgate Mall",
+      "url": "https://kissfm969.com/ixp/195/p/eddie-bauer-closes-westgate-mall/",
+      "source_name": "kissfm969.com",
+      "published_at": "2026-02-23T19:45:00+00:00",
+      "published_date": "2026-02-23",
+      "brands": ["Eddie Bauer"],
+      "categories": ["governance"],
+      "brand_details": [
+        {
+          "brand": "Eddie Bauer",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "governance",
+              "excerpt": "Eddie Bauer, a staple in the industry, is closing all of its stores. Yahoo Finance reported that the brand plans to close all of its 200-plus stores in North America as it prepares to file for Chapter 11 bankruptcy again.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999580060034595,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Now we find out that Eddie Bauer, a staple in the industry, is closing all of its stores. Yahoo Finance reported that the brand plans to close all of its 200-plus stores in North America as it prepares to file for Chapter 11 bankruptcy again. Unfortunately, the store has now closed at Westgate Mall...."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "Article reports on Eddie Bauer filing for Chapter 11 bankruptcy and closing all stores, which is a significant governance/financial distress event indicating corporate failure."
+        }
+      ]
+    },
     {
       "id": "8fe91426-21f6-4357-885b-631f3dcac386",
       "title": "lululemon LA Pop - Up Just Assembled The Black Fitness Trainer Roster Of Our Dreams - Essence",
@@ -380,24 +469,6 @@
           },
           "evidence": [
             {
-              "category": "digital_transformation",
-              "excerpt": "Industry experts recommend several measures that companies like Adidas should implement \u2014 or verify are already in place \u2014 to mitigate third-party risk. These include requiring vendors to adhere to specific security frameworks such as SOC 2 or ISO 27001, mandating multi-factor authentication for all access to shared systems",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999611487772032,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Industry experts recommend several measures that companies like Adidas should implement \u2014 or verify are already in place \u2014 to mitigate third-party risk. These include requiring vendors to adhere to specific security frameworks such as SOC 2 or ISO 27001, mandating multi-factor authentication for all access to shared systems, conducting regular security audits of vendor environments, and establishing contractual obligations for breach notification timelines. Some organizations have gone further, implementing zero-trust architectures that limit vendor access to only the specific data and systems necessary for their function...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "The breach underscores a fundamental challenge facing large enterprises: no matter how strong internal security measures may be, the chain is only as strong as its weakest vendor.",
-              "relevance_score": 0.8538393854982191,
-              "rerank_score": 0.9994915515727488,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "For Adidas specifically, this is not the first time the company has dealt with a data security incident. In 2018, the company disclosed a breach affecting millions of customers on its U.S. website, wh..."
-            },
-            {
               "category": "governance",
               "excerpt": "A hacker operating under the alias 'Sp1d3r' has claimed responsibility for breaching systems connected to Adidas, allegedly exfiltrating a massive trove of customer data that includes millions of records.",
               "relevance_score": 0.924601468947603,
@@ -423,6 +494,24 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "However, the speed and transparency of Adidas\u2019s response have drawn scrutiny. Consumer advocates have pointed out that the company\u2019s initial statements were carefully worded to minimize perceived damage, emphasizing what was not stolen (passwords and payment data) rather than providing a full accounting of what was compromised. Email addresses and phone numbers, while not as immediately dangerous as financial credentials, are highly valuable to cybercriminals for phishing campaigns, SIM-swapping attacks, and social engineering schemes...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "Industry experts recommend several measures that companies like Adidas should implement \u2014 or verify are already in place \u2014 to mitigate third-party risk. These include requiring vendors to adhere to specific security frameworks such as SOC 2 or ISO 27001, mandating multi-factor authentication for all access to shared systems",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999611487772032,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Industry experts recommend several measures that companies like Adidas should implement \u2014 or verify are already in place \u2014 to mitigate third-party risk. These include requiring vendors to adhere to specific security frameworks such as SOC 2 or ISO 27001, mandating multi-factor authentication for all access to shared systems, conducting regular security audits of vendor environments, and establishing contractual obligations for breach notification timelines. Some organizations have gone further, implementing zero-trust architectures that limit vendor access to only the specific data and systems necessary for their function...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "The breach underscores a fundamental challenge facing large enterprises: no matter how strong internal security measures may be, the chain is only as strong as its weakest vendor.",
+              "relevance_score": 0.8538393854982191,
+              "rerank_score": 0.9994915515727488,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "For Adidas specifically, this is not the first time the company has dealt with a data security incident. In 2018, the company disclosed a breach affecting millions of customers on its U.S. website, wh..."
             }
           ],
           "confidence": 0.9,
@@ -4908,6 +4997,24 @@
           },
           "evidence": [
             {
+              "category": "social",
+              "excerpt": "Adidas has always valued customers' shopping experience, with safety and privacy being our top priorities. The recent incident at the Langham Place branch reflected shortcomings in our operational management and resulted in an unpleasant experience",
+              "relevance_score": 0.8814746952763268,
+              "rerank_score": 0.9999431746233859,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Adidas has apologised and said it will conduct a comprehensive review of its fitting rooms to better protect customer privacy, after a woman complained that a staff member and other patrons opened the..."
+            },
+            {
+              "category": "social",
+              "excerpt": "a woman complained that a staff member and other patrons opened the curtain while she was inside one at a store in Hong Kong",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998457966798782,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Adidas has apologised and said it will conduct a comprehensive review of its fitting rooms to better protect customer privacy, after a woman complained that a staff member and other patrons opened the curtain while she was inside one at a store in Hong Kong. The sportswear giant said on Friday in a social media statement that the company\u2019s management had met the customer to offer an apology and provide help...."
+            },
+            {
               "category": "governance",
               "excerpt": "The company said it was handling the matter seriously to prevent similar incidents from happening again",
               "relevance_score": 1.0,
@@ -4933,24 +5040,6 @@
               "match_method": "exact",
               "confidence": "unmatched",
               "context_snippet": "...It said the temporary fitting room at the branch had been suspended and signs were added. The company would engage an independent consulting firm to carry out a comprehensive review of its fitting room designs to better protect customer privacy, it said. The staff member involved had been reassigned and the company would follow up based on the police investigation outcome, laws and internal guidelines, it added."
-            },
-            {
-              "category": "social",
-              "excerpt": "Adidas has always valued customers' shopping experience, with safety and privacy being our top priorities. The recent incident at the Langham Place branch reflected shortcomings in our operational management and resulted in an unpleasant experience",
-              "relevance_score": 0.8814746952763268,
-              "rerank_score": 0.9999431746233859,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Adidas has apologised and said it will conduct a comprehensive review of its fitting rooms to better protect customer privacy, after a woman complained that a staff member and other patrons opened the..."
-            },
-            {
-              "category": "social",
-              "excerpt": "a woman complained that a staff member and other patrons opened the curtain while she was inside one at a store in Hong Kong",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998457966798782,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Adidas has apologised and said it will conduct a comprehensive review of its fitting rooms to better protect customer privacy, after a woman complained that a staff member and other patrons opened the curtain while she was inside one at a store in Hong Kong. The sportswear giant said on Friday in a social media statement that the company\u2019s management had met the customer to offer an apology and provide help...."
             }
           ],
           "confidence": 0.9,
@@ -4994,24 +5083,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "On Wednesday, the EEOC revealed that it filed a subpoena enforcement action in a Missouri court to force Nike to turn over records tied to allegations that the company discriminated against White workers",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998743995137132,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...The U.S. Equal Employment Opportunity Commission (EEOC) is investigating Nike over the company\u2019s treatment of its White employees in its corporate diversity policies. The investigation is one of the first high-profile cases of its kind under the Trump administration, which has urged workers to come forward with discrimination complaints. On Wednesday, the EEOC revealed that it filed a subpoena enforcement action in a Missouri court to force Nike to turn over records tied to allegations that the company discriminated against White workers, as part of its diversity, equity, and inclusion (DEI) program. The agency claims Nike may have engaged in \u201ca pattern or practice of disparate treatment against White employees, applicants and training program participants in hiring, promotion, demotion, or separation decisions, including selection for layoffs; internship programs; and mentoring, leadership development and other career development programs.\u201d"
-            },
-            {
-              "category": "governance",
-              "excerpt": "We are committed to fair and lawful employment practices and follow all applicable laws, including those that prohibit discrimination",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9993283263719787,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...\u201cWe have shared thousands of pages of information and detailed written responses to the EEOC\u2019s inquiry and are in the process of providing additional information.\u201d \u201cWe are committed to fair and lawful employment practices and follow all applicable laws, including those that prohibit discrimination,\u201d the statement continued. \u201cWe believe our programs and practices are consistent with those obligations and take these matters seriously...."
-            },
-            {
               "category": "social",
               "excerpt": "The U.S. Equal Employment Opportunity Commission (EEOC) is investigating Nike over the company's treatment of its White employees in its corporate diversity policies.",
               "relevance_score": 0.9019734779583537,
@@ -5028,6 +5099,24 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "...The investigation is one of the first high-profile cases of its kind under the Trump administration, which has urged workers to come forward with discrimination complaints. On Wednesday, the EEOC revealed that it filed a subpoena enforcement action in a Missouri court to force Nike to turn over records tied to allegations that the company discriminated against White workers, as part of its diversity, equity, and inclusion (DEI) program. The agency claims Nike may have engaged in \u201ca pattern or practice of disparate treatment against White employees, applicants and training program participants in hiring, promotion, demotion, or separation decisions, including selection for layoffs; internship programs; and mentoring, leadership development and other career development programs.\u201d"
+            },
+            {
+              "category": "governance",
+              "excerpt": "On Wednesday, the EEOC revealed that it filed a subpoena enforcement action in a Missouri court to force Nike to turn over records tied to allegations that the company discriminated against White workers",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998743995137132,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...The U.S. Equal Employment Opportunity Commission (EEOC) is investigating Nike over the company\u2019s treatment of its White employees in its corporate diversity policies. The investigation is one of the first high-profile cases of its kind under the Trump administration, which has urged workers to come forward with discrimination complaints. On Wednesday, the EEOC revealed that it filed a subpoena enforcement action in a Missouri court to force Nike to turn over records tied to allegations that the company discriminated against White workers, as part of its diversity, equity, and inclusion (DEI) program. The agency claims Nike may have engaged in \u201ca pattern or practice of disparate treatment against White employees, applicants and training program participants in hiring, promotion, demotion, or separation decisions, including selection for layoffs; internship programs; and mentoring, leadership development and other career development programs.\u201d"
+            },
+            {
+              "category": "governance",
+              "excerpt": "We are committed to fair and lawful employment practices and follow all applicable laws, including those that prohibit discrimination",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9993283263719787,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...\u201cWe have shared thousands of pages of information and detailed written responses to the EEOC\u2019s inquiry and are in the process of providing additional information.\u201d \u201cWe are committed to fair and lawful employment practices and follow all applicable laws, including those that prohibit discrimination,\u201d the statement continued. \u201cWe believe our programs and practices are consistent with those obligations and take these matters seriously...."
             }
           ],
           "confidence": 0.95,
@@ -5379,6 +5468,24 @@
           },
           "evidence": [
             {
+              "category": "governance",
+              "excerpt": "the administration's Equal Employment Opportunity Commission has announced it is investigating Nike over vague allegations that it discriminated against white people",
+              "relevance_score": 0.8928872312282969,
+              "rerank_score": 0.9999768919479715,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Anyway, the administration\u2019s Equal Employment Opportunity Commission has announced it is investigating Nike over vague allegations that it discriminated against white people.\n\n*yawn*\n\nWhatever, let\u2019s ..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "In response to the EEOC's allegations, a Nike spokesperson told Forbes the probe is a 'surprising and unusual escalation,' stating the company has had 'extensive, good-faith participation in an EEOC inquiry'",
+              "relevance_score": 0.8882261510674485,
+              "rerank_score": 0.999929127542903,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "It\u2019s almost as if the Trump administration is a white supremacist organization.\n\nIn response to the EEOC\u2019s allegations, a Nike spokesperson told Forbes the probe is a \u201csurprising and unusual escalatio..."
+            },
+            {
               "category": "social",
               "excerpt": "it claims Nike's DEI initiatives may have created a 'pattern or practice of disparate treatment against white employees'",
               "relevance_score": 0.8818888366533217,
@@ -5404,24 +5511,6 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "Anyway, the administration\u2019s Equal Employment Opportunity Commission has announced it is investigating Nike over vague allegations that it discriminated against white people. *yawn*\n\nWhatever, let\u2019s get into it\u2026\n\nThe EEOC said in a press release that it \u201cseeks court order for information related to systemic race discrimination allegations that athletic footwear and apparel giant discriminated against white workers,\u201d which it seems to be basing largely on the fact that the company maintains a diversity, equity and inclusion page on its website, which notes that Nike is committed to \u201ccreating a workforce that represents different backgrounds, experiences and perspectives.\u201d The horror, right?"
-            },
-            {
-              "category": "governance",
-              "excerpt": "the administration's Equal Employment Opportunity Commission has announced it is investigating Nike over vague allegations that it discriminated against white people",
-              "relevance_score": 0.8928872312282969,
-              "rerank_score": 0.9999768919479715,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Anyway, the administration\u2019s Equal Employment Opportunity Commission has announced it is investigating Nike over vague allegations that it discriminated against white people.\n\n*yawn*\n\nWhatever, let\u2019s ..."
-            },
-            {
-              "category": "governance",
-              "excerpt": "In response to the EEOC's allegations, a Nike spokesperson told Forbes the probe is a 'surprising and unusual escalation,' stating the company has had 'extensive, good-faith participation in an EEOC inquiry'",
-              "relevance_score": 0.8882261510674485,
-              "rerank_score": 0.999929127542903,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "It\u2019s almost as if the Trump administration is a white supremacist organization.\n\nIn response to the EEOC\u2019s allegations, a Nike spokesperson told Forbes the probe is a \u201csurprising and unusual escalatio..."
             }
           ],
           "confidence": 0.9,
@@ -5465,33 +5554,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "Nike received a regular subpoena but did not respond, prompting the EEOC to take the next step.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999316232468929,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Nike received a regular subpoena but did not respond, prompting the EEOC to take the next step. \u201cWhen there are compelling indications, including corporate admissions in extensive public materials, that an employer\u2019s Diversity, Equity, and Inclusion-related programs may violate federal prohibitions against race discrimination or other forms of unlawful discrimination, the EEOC will take all necessary steps\u2014including subpoena enforcement actions\u2014to ensure the opportunity to fully and comprehensively investigate,\u201d said EEOC Chair Andrea Lucas...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "When the company failed to produce all the information sought by the subpoena, the agency filed an enforcement action in federal court.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9984318156160221,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...The EEOC requested documents and information going back to 2018:\n\nInformation sought included criteria used in selecting employees for layoffs; information related to the company\u2019s tracking and use of worker race and ethnicity data, including as a factor in setting executive compensation; and information about 16 programs which allegedly provided race-restricted mentoring, leadership, or career development opportunities. When the company failed to produce all the information sought by the subpoena, the agency filed an enforcement action in federal court."
-            },
-            {
-              "category": "governance",
-              "excerpt": "The EEOC filed a subpoena enforcement action against Nike in the U.S. District Court for the Eastern District of Missouri to compel the company to produce any information regarding the allegations.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9908531157912251,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...\u201cThe Company\u2019s \u20182025 Targets Summary\u2019 reveals that Nike appears to use numerical quotas for hiring, training, and promotion,\u201d according to AFL. \u201cFor example, by 2025 Nike aims to have \u201850% of women in global corporate workforce and 45% in leadership positions.'\u201d\n\nAFL noted that Nike CEO John Donahoe pushed a similar goal in 2021, aiming \u201cto have 30% \u2018representation of racial and ethnic minorities at the director level and above in Nike\u2019s U.S. workforce.\u2019\u201d The EEOC filed a subpoena enforcement action against Nike in the U.S. District Court for the Eastern District of Missouri to compel the company to produce any information regarding the allegations."
-            },
-            {
               "category": "social",
               "excerpt": "The U.S. Equal Employment Opportunity Commission (EEOC) has launched an investigation into Nike's hiring practices due to allegations of discrimination against white employees.",
               "relevance_score": 0.9092635288578768,
@@ -5517,6 +5579,33 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "Nike received a regular subpoena but did not respond, prompting the EEOC to take the next step. \u201cWhen there are compelling indications, including corporate admissions in extensive public materials, that an employer\u2019s Diversity, Equity, and Inclusion-related programs may violate federal prohibitions against race discrimination or other forms of unlawful discrimination, the EEOC will take all necessary steps\u2014including subpoena enforcement actions\u2014to ensure the opportunity to fully and comprehensively investigate,\u201d said EEOC Chair Andrea Lucas. The EEOC requested documents and information going back to 2018:\n\nInformation sought included criteria used in selecting employees for layoffs; information related to the company\u2019s tracking and use of worker race and ethnicity data, including as a factor in setting executive compensation; and information about 16 programs which allegedly provided race-restricted mentoring, leadership, or career development opportunities...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Nike received a regular subpoena but did not respond, prompting the EEOC to take the next step.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999316232468929,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Nike received a regular subpoena but did not respond, prompting the EEOC to take the next step. \u201cWhen there are compelling indications, including corporate admissions in extensive public materials, that an employer\u2019s Diversity, Equity, and Inclusion-related programs may violate federal prohibitions against race discrimination or other forms of unlawful discrimination, the EEOC will take all necessary steps\u2014including subpoena enforcement actions\u2014to ensure the opportunity to fully and comprehensively investigate,\u201d said EEOC Chair Andrea Lucas...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "When the company failed to produce all the information sought by the subpoena, the agency filed an enforcement action in federal court.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9984318156160221,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...The EEOC requested documents and information going back to 2018:\n\nInformation sought included criteria used in selecting employees for layoffs; information related to the company\u2019s tracking and use of worker race and ethnicity data, including as a factor in setting executive compensation; and information about 16 programs which allegedly provided race-restricted mentoring, leadership, or career development opportunities. When the company failed to produce all the information sought by the subpoena, the agency filed an enforcement action in federal court."
+            },
+            {
+              "category": "governance",
+              "excerpt": "The EEOC filed a subpoena enforcement action against Nike in the U.S. District Court for the Eastern District of Missouri to compel the company to produce any information regarding the allegations.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9908531157912251,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...\u201cThe Company\u2019s \u20182025 Targets Summary\u2019 reveals that Nike appears to use numerical quotas for hiring, training, and promotion,\u201d according to AFL. \u201cFor example, by 2025 Nike aims to have \u201850% of women in global corporate workforce and 45% in leadership positions.'\u201d\n\nAFL noted that Nike CEO John Donahoe pushed a similar goal in 2021, aiming \u201cto have 30% \u2018representation of racial and ethnic minorities at the director level and above in Nike\u2019s U.S. workforce.\u2019\u201d The EEOC filed a subpoena enforcement action against Nike in the U.S. District Court for the Eastern District of Missouri to compel the company to produce any information regarding the allegations."
             }
           ],
           "confidence": 0.95,
@@ -5628,24 +5717,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "One of the claims against Nike was filed with the EEOC was by America First Legal. The company's website indicated a release that said it filed its federal civil rights complaint with the EEOC on Jan. 11, 2024",
-              "relevance_score": 0.9092955581008417,
-              "rerank_score": 0.9999562563286309,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "One of the claims against Nike was filed with the EEOC was by America First Legal. The company\u2019s website indicated a release that said it filed its federal civil rights complaint with the EEOC on Jan. 11, 2024. America First Legal charged Nike with allegations of racial and sex discrimination against White males...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "the U.S. Equal Employment Opportunity Commission (EEOC) on Wednesday filed an action for enforcement of an EEOC administrative subpoena against the athletic firm seeking the production of documents in connection to a discrimination probe",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999250210428319,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Nike Inc. appears to be the latest example of how President Trump\u2019s administration has escalated efforts to challenge diversity efforts across corporate America. As reported, the U.S. Equal Employment Opportunity Commission (EEOC) on Wednesday filed an action for enforcement of an EEOC administrative subpoena against the athletic firm seeking the production of documents in connection to a discrimination probe. More specifically, the EEOC is probing \u201csystemic allegations\u201d involving DEI-related intentional race discrimination against White employees and job applicants...."
-            },
-            {
               "category": "social",
               "excerpt": "Among the eight executive officers listed in the annual report, Nike's executive vice president and chief commercial officer Craig Williams was the only one listed who isn't white",
               "relevance_score": 0.8967315183962705,
@@ -5671,10 +5742,105 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "Nike Inc. appears to be the latest example of how President Trump\u2019s administration has escalated efforts to challenge diversity efforts across corporate America.\n\nAs reported, the U.S. Equal Employmen..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "One of the claims against Nike was filed with the EEOC was by America First Legal. The company's website indicated a release that said it filed its federal civil rights complaint with the EEOC on Jan. 11, 2024",
+              "relevance_score": 0.9092955581008417,
+              "rerank_score": 0.9999562563286309,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "One of the claims against Nike was filed with the EEOC was by America First Legal. The company\u2019s website indicated a release that said it filed its federal civil rights complaint with the EEOC on Jan. 11, 2024. America First Legal charged Nike with allegations of racial and sex discrimination against White males...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "the U.S. Equal Employment Opportunity Commission (EEOC) on Wednesday filed an action for enforcement of an EEOC administrative subpoena against the athletic firm seeking the production of documents in connection to a discrimination probe",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999250210428319,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Nike Inc. appears to be the latest example of how President Trump\u2019s administration has escalated efforts to challenge diversity efforts across corporate America. As reported, the U.S. Equal Employment Opportunity Commission (EEOC) on Wednesday filed an action for enforcement of an EEOC administrative subpoena against the athletic firm seeking the production of documents in connection to a discrimination probe. More specifically, the EEOC is probing \u201csystemic allegations\u201d involving DEI-related intentional race discrimination against White employees and job applicants...."
             }
           ],
           "confidence": 0.9,
           "reasoning": "This article focuses on a federal discrimination investigation against Nike's DEI practices, which falls under both Social (diversity and inclusion issues) and Governance (regulatory compliance and legal accountability). The sentiment is negative due to the enforcement action and discrimination allegations."
+        }
+      ]
+    },
+    {
+      "id": "e99e7f41-9f69-45e4-82fb-90dcd5f9b9c5",
+      "title": "Trump Admin Accuses Nike Of Discriminating Against White Employees",
+      "url": "https://www.wbls.com/news/trump-admin-accuses-nike-of-discriminating-against-white-employees/",
+      "source_name": "wbls.com",
+      "published_at": "2026-02-05T22:00:00+00:00",
+      "published_date": "2026-02-05",
+      "brands": ["Nike"],
+      "categories": ["governance", "social"],
+      "brand_details": [
+        {
+          "brand": "Nike",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "social",
+              "excerpt": "The US Equal Employment Opportunity Commission (EEOC) said on Wednesday that it had filed a court motion to compel Nike to produce information related to allegations of 'intentional race discrimination' against white employees.",
+              "relevance_score": 0.8864029201480659,
+              "rerank_score": 0.9999602110572093,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "A Trump appointee is calling for a deep dive into Nike\u2019s business practices as part of the administration\u2019s efforts to abolish DEI. The US Equal Employment Opportunity Commission (EEOC) said on Wednesday that it had filed a court motion to compel Nike to produce information related to allegations of \u201cintentional race discrimination\u201d against white employees. Despite no employees speaking out, the February 4 filing relates to a suspected pattern of discrimination in \u201chiring, promotion, demotion, or separation decisions, including selection for layoffs; internship programs; and mentoring, leadership development and other career development programs.\u201d..."
+            },
+            {
+              "category": "social",
+              "excerpt": "The E.E.O.C. seeks information directly relevant to the allegations that Nike subjected white employees, applicants, and training program participants to disparate treatment based on race in various employment decisions, including layoffs, internship programs, mentoring, leadership development, and other career development programs",
+              "relevance_score": 1.0,
+              "rerank_score": 0.999515649796336,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Despite no employees speaking out, the February 4 filing relates to a suspected pattern of discrimination in \u201chiring, promotion, demotion, or separation decisions, including selection for layoffs; internship programs; and mentoring, leadership development and other career development programs.\u201d \u201cThe E.E.O.C. seeks information directly relevant to the allegations that Nike subjected white employees, applicants, and training program participants to disparate treatment based on race in various employment decisions, including layoffs, internship programs, mentoring, leadership development, and other career development programs,\u201d the commission said in the motion."
+            },
+            {
+              "category": "governance",
+              "excerpt": "The agency said it took the action after Nike failed to respond to a subpoena for various information, including the criteria used in selecting employees for redundancies and setting executives' pay.",
+              "relevance_score": 0.8815433244014392,
+              "rerank_score": 0.9998986529465249,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "The agency said it took the action after Nike failed to respond to a subpoena for various information, including the criteria used in selecting employees for redundancies and setting executives\u2019 pay. EEOC chair, Andrea Lucas, an ardent critic of racial diversity initiatives who was appointed last year by President Donald Trump, said US anti-discrimination law is \u201ccolour-blind\u201d and protects employees of \u201call races\u201d...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "In response, Nike says it has provided thousands of documents to the EEOC and is fully cooperating, so they're shocked that the commission would pursue the subpoena.",
+              "relevance_score": 0.8857928192252422,
+              "rerank_score": 0.9994441328985402,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...\u201cThanks to President Trump\u2019s commitment to enforcing our nation\u2019s civil rights laws, the EEOC has renewed its focus on even-handed enforcement of Title VII,\u201d Lucas said in a statement, referring to a section of the 1964 Civil Rights Act that prohibits employment discrimination based on race, colour, religion or sex. Nike responds\n\nIn response, Nike says it has provided thousands of documents to the EEOC and is fully cooperating, so they\u2019re shocked that the commission would pursue the subpoena."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "Article is about Nike facing federal investigation for alleged racial discrimination and regulatory compliance issues. Social category applies due to workplace discrimination allegations. Governance applies due to regulatory compliance failure (not responding to subpoena) and transparency issues around employment practices and executive compensation criteria."
         }
       ]
     },
@@ -5743,83 +5909,6 @@
           ],
           "confidence": 0.9,
           "reasoning": "Article is about Nike's technological innovation in apparel design with inflatable clothing technology. This represents significant technological advancement in sportswear but contains no environmental, social, or governance ESG content - it's purely about product innovation and technology development."
-        }
-      ]
-    },
-    {
-      "id": "e99e7f41-9f69-45e4-82fb-90dcd5f9b9c5",
-      "title": "Trump Admin Accuses Nike Of Discriminating Against White Employees",
-      "url": "https://www.wbls.com/news/trump-admin-accuses-nike-of-discriminating-against-white-employees/",
-      "source_name": "wbls.com",
-      "published_at": "2026-02-05T22:00:00+00:00",
-      "published_date": "2026-02-05",
-      "brands": ["Nike"],
-      "categories": ["governance", "social"],
-      "brand_details": [
-        {
-          "brand": "Nike",
-          "categories": {
-            "environmental": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "social": {
-              "applies": true,
-              "sentiment": -1,
-              "sentiment_label": "negative"
-            },
-            "governance": {
-              "applies": true,
-              "sentiment": -1,
-              "sentiment_label": "negative"
-            },
-            "digital_transformation": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            }
-          },
-          "evidence": [
-            {
-              "category": "governance",
-              "excerpt": "The agency said it took the action after Nike failed to respond to a subpoena for various information, including the criteria used in selecting employees for redundancies and setting executives' pay.",
-              "relevance_score": 0.8815433244014392,
-              "rerank_score": 0.9998986529465249,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "The agency said it took the action after Nike failed to respond to a subpoena for various information, including the criteria used in selecting employees for redundancies and setting executives\u2019 pay. EEOC chair, Andrea Lucas, an ardent critic of racial diversity initiatives who was appointed last year by President Donald Trump, said US anti-discrimination law is \u201ccolour-blind\u201d and protects employees of \u201call races\u201d...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "In response, Nike says it has provided thousands of documents to the EEOC and is fully cooperating, so they're shocked that the commission would pursue the subpoena.",
-              "relevance_score": 0.8857928192252422,
-              "rerank_score": 0.9994441328985402,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "...\u201cThanks to President Trump\u2019s commitment to enforcing our nation\u2019s civil rights laws, the EEOC has renewed its focus on even-handed enforcement of Title VII,\u201d Lucas said in a statement, referring to a section of the 1964 Civil Rights Act that prohibits employment discrimination based on race, colour, religion or sex. Nike responds\n\nIn response, Nike says it has provided thousands of documents to the EEOC and is fully cooperating, so they\u2019re shocked that the commission would pursue the subpoena."
-            },
-            {
-              "category": "social",
-              "excerpt": "The US Equal Employment Opportunity Commission (EEOC) said on Wednesday that it had filed a court motion to compel Nike to produce information related to allegations of 'intentional race discrimination' against white employees.",
-              "relevance_score": 0.8864029201480659,
-              "rerank_score": 0.9999602110572093,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "A Trump appointee is calling for a deep dive into Nike\u2019s business practices as part of the administration\u2019s efforts to abolish DEI. The US Equal Employment Opportunity Commission (EEOC) said on Wednesday that it had filed a court motion to compel Nike to produce information related to allegations of \u201cintentional race discrimination\u201d against white employees. Despite no employees speaking out, the February 4 filing relates to a suspected pattern of discrimination in \u201chiring, promotion, demotion, or separation decisions, including selection for layoffs; internship programs; and mentoring, leadership development and other career development programs.\u201d..."
-            },
-            {
-              "category": "social",
-              "excerpt": "The E.E.O.C. seeks information directly relevant to the allegations that Nike subjected white employees, applicants, and training program participants to disparate treatment based on race in various employment decisions, including layoffs, internship programs, mentoring, leadership development, and other career development programs",
-              "relevance_score": 1.0,
-              "rerank_score": 0.999515649796336,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Despite no employees speaking out, the February 4 filing relates to a suspected pattern of discrimination in \u201chiring, promotion, demotion, or separation decisions, including selection for layoffs; internship programs; and mentoring, leadership development and other career development programs.\u201d \u201cThe E.E.O.C. seeks information directly relevant to the allegations that Nike subjected white employees, applicants, and training program participants to disparate treatment based on race in various employment decisions, including layoffs, internship programs, mentoring, leadership development, and other career development programs,\u201d the commission said in the motion."
-            }
-          ],
-          "confidence": 0.9,
-          "reasoning": "Article is about Nike facing federal investigation for alleged racial discrimination and regulatory compliance issues. Social category applies due to workplace discrimination allegations. Governance applies due to regulatory compliance failure (not responding to subpoena) and transparency issues around employment practices and executive compensation criteria."
         }
       ]
     },
