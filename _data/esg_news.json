@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-24T15:00:30.441986+00:00",
+  "generated_at": "2026-02-25T15:00:28.397788+00:00",
   "total_articles": 417,
   "brands": [
     "361 Degrees",
@@ -39,30 +39,20 @@
   "categories": ["digital_transformation", "environmental", "governance", "social"],
   "scorecard": {
     "period_days": 14,
-    "period_start": "2026-02-10",
-    "period_end": "2026-02-24",
-    "articles_in_period": 36,
-    "articles_after_dedup": 25,
-    "duplicates_removed": 11,
+    "period_start": "2026-02-11",
+    "period_end": "2026-02-25",
+    "articles_in_period": 31,
+    "articles_after_dedup": 22,
+    "duplicates_removed": 9,
     "top_brands": [
       {
-        "brand": "Lululemon",
-        "total": 5,
-        "environmental": 0,
-        "social": 4,
-        "governance": 1,
-        "digital_transformation": 0,
-        "article_count": 5,
-        "medal": "gold"
-      },
-      {
         "brand": "Nike",
-        "total": 5,
+        "total": 6,
         "environmental": 0,
-        "social": 0,
+        "social": 1,
         "governance": 1,
         "digital_transformation": 4,
-        "article_count": 7,
+        "article_count": 6,
         "medal": "gold"
       },
       {
@@ -76,20 +66,20 @@
         "medal": "silver"
       },
       {
+        "brand": "Lululemon",
+        "total": 3,
+        "environmental": 0,
+        "social": 2,
+        "governance": 1,
+        "digital_transformation": 0,
+        "article_count": 4,
+        "medal": "silver"
+      },
+      {
         "brand": "Allbirds",
         "total": 2,
         "environmental": 2,
         "social": 0,
-        "governance": 0,
-        "digital_transformation": 0,
-        "article_count": 1,
-        "medal": "bronze"
-      },
-      {
-        "brand": "New Balance",
-        "total": 2,
-        "environmental": 0,
-        "social": 2,
         "governance": 0,
         "digital_transformation": 0,
         "article_count": 1,
@@ -108,33 +98,23 @@
       },
       {
         "brand": "Converse",
-        "total": -2,
+        "total": -1,
         "environmental": 0,
-        "social": -3,
+        "social": -2,
         "governance": 1,
         "digital_transformation": 0,
-        "article_count": 3
+        "article_count": 2
       }
     ],
     "all_brand_scores": [
       {
-        "brand": "Lululemon",
-        "total": 5,
-        "environmental": 0,
-        "social": 4,
-        "governance": 1,
-        "digital_transformation": 0,
-        "article_count": 5,
-        "medal": "gold"
-      },
-      {
         "brand": "Nike",
-        "total": 5,
+        "total": 6,
         "environmental": 0,
-        "social": 0,
+        "social": 1,
         "governance": 1,
         "digital_transformation": 4,
-        "article_count": 7,
+        "article_count": 6,
         "medal": "gold"
       },
       {
@@ -148,20 +128,20 @@
         "medal": "silver"
       },
       {
+        "brand": "Lululemon",
+        "total": 3,
+        "environmental": 0,
+        "social": 2,
+        "governance": 1,
+        "digital_transformation": 0,
+        "article_count": 4,
+        "medal": "silver"
+      },
+      {
         "brand": "Allbirds",
         "total": 2,
         "environmental": 2,
         "social": 0,
-        "governance": 0,
-        "digital_transformation": 0,
-        "article_count": 1,
-        "medal": "bronze"
-      },
-      {
-        "brand": "New Balance",
-        "total": 2,
-        "environmental": 0,
-        "social": 2,
         "governance": 0,
         "digital_transformation": 0,
         "article_count": 1,
@@ -178,12 +158,12 @@
       },
       {
         "brand": "Converse",
-        "total": -2,
+        "total": -1,
         "environmental": 0,
-        "social": -3,
+        "social": -2,
         "governance": 1,
         "digital_transformation": 0,
-        "article_count": 3
+        "article_count": 2
       },
       {
         "brand": "Eddie Bauer",
