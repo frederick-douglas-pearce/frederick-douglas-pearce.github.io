@@ -37,7 +37,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "projects-sportswear-esg-news-classifier",
+        },{id: "projects-codefluent",
+          title: 'CodeFluent',
+          description: "Personal AI fluency analytics for Claude Code users",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/codefluent/";
+            },},{id: "projects-sportswear-esg-news-classifier",
           title: 'Sportswear ESG News Classifier',
           description: "Multi-label text classification for sportswear brand ESG news",
           section: "Projects",handler: () => {
