@@ -75,8 +75,8 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.3.5"
-          bundler-cache: true
-          cache-version: 1
+      - name: Install dependencies 💎
+        run: bundle install --jobs 4
       - name: Setup Python 🐍
         uses: actions/setup-python@v5
         with:
