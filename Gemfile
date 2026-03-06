@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'jekyll'
 
 # Security updates - minimum versions to address vulnerabilities
-gem 'nokogiri', '>= 1.18.9'    # CVE patches for libxml2
+gem 'nokogiri', '>= 1.19.1'    # CVE patches for libxml2
 gem 'rexml', '>= 3.4.2'        # DoS vulnerability fix
 gem 'uri', '>= 1.0.4'          # Credential leakage fix
 
