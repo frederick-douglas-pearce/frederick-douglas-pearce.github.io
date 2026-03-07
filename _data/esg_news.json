@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-06T15:00:31.120451+00:00",
+  "generated_at": "2026-03-07T15:00:32.577123+00:00",
   "total_articles": 443,
   "brands": [
     "361 Degrees",
@@ -41,10 +41,10 @@
   "categories": ["digital_transformation", "environmental", "governance", "social"],
   "scorecard": {
     "period_days": 14,
-    "period_start": "2026-02-20",
-    "period_end": "2026-03-06",
-    "articles_in_period": 30,
-    "articles_after_dedup": 26,
+    "period_start": "2026-02-21",
+    "period_end": "2026-03-07",
+    "articles_in_period": 28,
+    "articles_after_dedup": 24,
     "duplicates_removed": 4,
     "top_brands": [
       {
@@ -91,12 +91,12 @@
     "bottom_brands": [
       {
         "brand": "Eddie Bauer",
-        "total": -4,
+        "total": -3,
         "environmental": 0,
         "social": -1,
-        "governance": -3,
+        "governance": -2,
         "digital_transformation": 0,
-        "article_count": 3
+        "article_count": 2
       }
     ],
     "all_brand_scores": [
@@ -150,15 +150,6 @@
         "article_count": 2
       },
       {
-        "brand": "Lululemon",
-        "total": 3,
-        "environmental": 0,
-        "social": 2,
-        "governance": -1,
-        "digital_transformation": 2,
-        "article_count": 3
-      },
-      {
         "brand": "Merrell",
         "total": 2,
         "environmental": 0,
@@ -186,6 +177,15 @@
         "article_count": 1
       },
       {
+        "brand": "Lululemon",
+        "total": 1,
+        "environmental": 0,
+        "social": 0,
+        "governance": -1,
+        "digital_transformation": 2,
+        "article_count": 2
+      },
+      {
         "brand": "Puma",
         "total": 1,
         "environmental": 2,
@@ -196,12 +196,12 @@
       },
       {
         "brand": "Eddie Bauer",
-        "total": -4,
+        "total": -3,
         "environmental": 0,
         "social": -1,
-        "governance": -3,
+        "governance": -2,
         "digital_transformation": 0,
-        "article_count": 3
+        "article_count": 2
       }
     ]
   },
