@@ -11,19 +11,20 @@ category: work
 
 CodeFluent is an open-source tool that helps developers measure and improve how effectively they collaborate with AI coding assistants. While millions of developers use AI assistants daily, Anthropic's research shows most users exhibit only 3 of 11 key fluency behaviors — and that interaction patterns directly predict whether developers build skills or lose them.
 
-CodeFluent reads your local Claude Code session data, scores your prompting behaviors against [Anthropic's AI Fluency Research](https://www.anthropic.com/research/AI-fluency-index), and provides actionable recommendations to become a more effective AI collaborator. Available as a **VS Code extension** and a **standalone web app**.
+CodeFluent reads your local Claude Code session data, scores your prompting behaviors against [Anthropic's AI Fluency Research](https://www.anthropic.com/research/AI-fluency-index), and provides actionable recommendations to become a more effective AI collaborator. Available as an open-source **[VS Code extension](https://marketplace.visualstudio.com/items?itemName=frederick-douglas-pearce.codefluent)** published on the Visual Studio Marketplace and a **standalone web app**.
 
 <div class="mt-5"></div>
 
 ## Key Features
 
-| Feature                      | Description                                                                                                                        |
-| ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| **Fluency Score**            | Scores sessions against 11 fluency behaviors and 6 coding interaction patterns, with color-coded benchmark comparisons             |
-| **Quick Wins**               | Scans your GitHub repos and generates copy-paste-ready Claude Code prompts for high-value tasks, launchable directly from VS Code  |
-| **Recommendations**          | Personalized, research-backed coaching prioritized by impact, with links to the underlying Anthropic research papers               |
-| **CLAUDE.md Config Scoring** | Analyzes your project's CLAUDE.md against the same fluency framework — behaviors defined as conventions boost your effective score |
-| **Usage Dashboard**          | Token consumption, cost tracking, and model breakdown from your Claude Code history via stacked area charts                        |
+| Feature                      | Description                                                                                                                                                                                                                                   |
+| ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Fluency Score**            | Scores sessions against 11 fluency behaviors and 6 coding interaction patterns, with color-coded benchmark comparisons                                                                                                                        |
+| **Prompt Optimizer**         | Paste any prompt and get an optimized version that incorporates missing fluency behaviors, factoring in your CLAUDE.md config so it won't duplicate covered behaviors. Shows before/after scores and lets you copy or run the result directly |
+| **Quick Wins**               | Scans your GitHub repos and generates copy-paste-ready Claude Code prompts for high-value tasks, scoped to the selected project and launchable directly from VS Code                                                                          |
+| **Recommendations**          | Personalized, research-backed coaching prioritized by impact, with links to the underlying Anthropic research papers                                                                                                                          |
+| **CLAUDE.md Config Scoring** | Analyzes your project's CLAUDE.md against the same fluency framework — behaviors defined as conventions boost your effective score                                                                                                            |
+| **Usage Dashboard**          | Token consumption, cost tracking, and model breakdown from your Claude Code history via stacked area charts                                                                                                                                   |
 
 <div class="mt-5"></div>
 
@@ -78,6 +79,17 @@ CodeFluent reads your local Claude Code session data, scores your prompting beha
     </div>
 </div>
 
+<div class="row mt-3">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Prompt Optimization</h5>
+                <p class="card-text mb-0">Analyzes any prompt against the 11 fluency behaviors, factors in your CLAUDE.md config (scoring on demand if not cached), then generates an optimized version that incorporates only the missing behaviors not already covered by project conventions.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="mt-5"></div>
 
 ## What Sets It Apart
@@ -96,7 +108,8 @@ All data stays on your machine. The only external calls are to the Anthropic API
 - **Scoring:** Anthropic API (Claude Sonnet)
 - **Usage Data:** [ccusage](https://github.com/ryoppippi/ccusage)
 - **GitHub Integration:** `gh` CLI
-- **Testing:** Jest + ts-jest (416 tests across 12 suites)
+- **Testing:** Jest + ts-jest, pytest (662 tests including security-focused suites)
+- **CI/CD:** GitHub Actions with automated testing, security audit (`pip-audit`), and marketplace publishing
 
 <div class="mt-5"></div>
 
