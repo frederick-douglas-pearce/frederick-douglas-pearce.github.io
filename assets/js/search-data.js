@@ -74,6 +74,13 @@ ninja.data = [{
           window.open("https://www.linkedin.com/in/frederick-douglas-pearce", "_blank");
         },
       },{
+        id: 'social-orcid',
+        title: 'ORCID',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://orcid.org/0009-0003-6756-6463", "_blank");
+        },
+      },{
       id: 'light-theme',
       title: 'Change theme to light',
       description: 'Change the theme of the site to Light',
