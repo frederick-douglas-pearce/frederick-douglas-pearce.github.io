@@ -55,21 +55,30 @@
   <!-- OpenGraph -->
   <meta property="og:site_name" content="{{ title }}">
   <meta property="og:type" content="{% if is_blog_post %}article{% else %}website{% endif %}">
-  <meta property="og:title" content="{% if page.title %}{{ title }} | {{ page.title }}{% else %}{{ title }}{% endif %}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ title }}{% else %}{{ title }}{% endif %}">
   <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url | remove_first: 'index.html' }}">
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   {% if page.og_image or site.og_image %}
-    <meta property="og:image" content="{% if page.og_image %}{{ page.og_image }}{% else %}{{ site.og_image }}{% endif %}">
+    <meta
+      property="og:image"
+      content="{% if page.og_image %}{{ page.og_image }}{% else %}{{ site.og_image | prepend: site.baseurl | prepend: site.url }}{% endif %}"
+    >
   {% endif %}
   <meta property="og:locale" content="{{ site.lang }}">
 
   <!-- Twitter card -->
-  <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ title }}{% endif %}">
   <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   {% if page.og_image or site.og_image %}
-    <meta name="twitter:image" content="{% if page.og_image %}{{ page.og_image }}{% else %}{{ site.og_image }}{% endif %}">
+    {% assign twitter_card_type = 'summary_large_image' %}
+    <meta
+      name="twitter:image"
+      content="{% if page.og_image %}{{ page.og_image }}{% else %}{{ site.og_image | prepend: site.baseurl | prepend: site.url }}{% endif %}"
+    >
+  {% else %}
+    {% assign twitter_card_type = 'summary' %}
   {% endif %}
+  <meta name="twitter:card" content="{{ twitter_card_type }}">
   {% if site.x_username %}
     <meta name="twitter:site" content="@{{ site.x_username }}">
     <meta name="twitter:creator" content="@{{ site.x_username }}">
@@ -222,20 +231,55 @@
 
   <script type="application/ld+json">
     {
-        "author":
-        {
-            "@type": "Person",
-            "name": "{{ author_name }}"
-        },
-        "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
+        "@context": "https://schema.org",
         "@type": "{% if is_blog_post %}BlogPosting{% else %}WebSite{% endif %}",
-        "description": "{% if page.description %}{{ page.description }}{% else if site.description %}{{ site.description }}{% endif %}",
-        "headline": "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
-        {% if sameaslinks != blank %}
-        "sameAs": {{ sameaslinks }},
-        {% endif %}
         "name": "{{ author_name }}",
-        "@context": "https://schema.org"
+        "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
+        "description": "{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}",
+        "headline": "{% if page.title %}{{ page.title }}{% else %}{{ title }}{% endif %}",
+        "author": {
+            "@type": "Person",
+            "name": "{{ author_name }}",
+            "url": "{{ site.url }}{{ site.baseurl }}",
+            "jobTitle": "Data Scientist",
+            {% if site.og_image %}
+            "image": "{{ site.og_image | prepend: site.baseurl | prepend: site.url }}",
+            {% endif %}
+            {% if sameaslinks != blank %}
+            "sameAs": {{ sameaslinks }},
+            {% endif %}
+            "knowsAbout": ["Data Science", "Earth Science", "Machine Learning", "Python", "ESG Analytics"]
+        }{% if is_blog_post %},
+        "datePublished": "{{ page.date | date_to_xmlschema }}",
+        {% if page.last_modified_at %}
+        "dateModified": "{{ page.last_modified_at | date_to_xmlschema }}",
+        {% endif %}
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "{{ page.url | prepend: site.baseurl | prepend: site.url }}"
+        }{% endif %}
     }
   </script>
+  {% if page.url == '/esg-news/' %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "ESG News Feed - Sportswear Brands",
+        "url": "{{ '/esg-news/' | prepend: site.baseurl | prepend: site.url }}",
+        "description": "{{ page.description }}",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Any",
+        "author": {
+          "@type": "Person",
+          "name": "{{ author_name }}"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
+  {% endif %}
 {% endif %}

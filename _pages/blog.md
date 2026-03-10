@@ -2,6 +2,7 @@
 layout: default
 permalink: /blog/
 title: blog
+description: Fred's Data blog - insights and lessons learned on the journey from Earth science to data science.
 nav: true
 nav_order: 1
 pagination:
