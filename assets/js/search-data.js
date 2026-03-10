@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-blog",
           title: "blog",
-          description: "",
+          description: "Fred&#39;s Data blog - insights and lessons learned on the journey from Earth science to data science.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/blog/";
@@ -72,13 +72,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://www.linkedin.com/in/frederick-douglas-pearce", "_blank");
-        },
-      },{
-        id: 'social-scholar',
-        title: 'Google Scholar',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://scholar.google.com/citations?user=8sKkGHQAAAAJ", "_blank");
         },
       },{
       id: 'light-theme',
