@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-14T14:00:30.720204+00:00",
-  "total_articles": 454,
+  "generated_at": "2026-03-15T14:00:29.986126+00:00",
+  "total_articles": 455,
   "brands": [
     "361 Degrees",
     "ASICS",
@@ -41,10 +41,10 @@
   "categories": ["digital_transformation", "environmental", "governance", "social"],
   "scorecard": {
     "period_days": 14,
-    "period_start": "2026-02-28",
-    "period_end": "2026-03-14",
-    "articles_in_period": 26,
-    "articles_after_dedup": 21,
+    "period_start": "2026-03-01",
+    "period_end": "2026-03-15",
+    "articles_in_period": 27,
+    "articles_after_dedup": 22,
     "duplicates_removed": 5,
     "top_brands": [
       {
@@ -175,6 +175,15 @@
         "article_count": 1
       },
       {
+        "brand": "Umbro",
+        "total": 2,
+        "environmental": 0,
+        "social": 2,
+        "governance": 0,
+        "digital_transformation": 0,
+        "article_count": 1
+      },
+      {
         "brand": "Puma",
         "total": -1,
         "environmental": 0,
@@ -195,6 +204,65 @@
     ]
   },
   "articles": [
+    {
+      "id": "224958f2-33c5-42c0-be91-bda775302470",
+      "title": "New year, new cup and a taller ask for El Farolito soccer team",
+      "url": "https://missionlocal.org/2026/03/new-year-new-cup-and-a-taller-ask-for-el-farolito-soccer-team/",
+      "source_name": "Mission Local",
+      "published_at": "2026-03-14T14:00:00+00:00",
+      "published_date": "2026-03-14",
+      "brands": ["Umbro"],
+      "categories": ["social"],
+      "brand_details": [
+        {
+          "brand": "Umbro",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "social",
+              "excerpt": "Some of the most compelling stories in American soccer still come from the grassroots level... El Farolito represents the kind of authentic community football culture that has always existed in the U.S., and we want to help support and celebrate that.",
+              "relevance_score": 0.889924348174506,
+              "rerank_score": 0.9999398480432584,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "\u201cSome of the most compelling stories in American soccer still come from the grassroots level,\u201d said Kevin Miranda, Umbro\u2019s digital consultant for North America. \u201cEl Farolito represents the kind of authentic community football culture that has always existed in the U.S., and we want to help support and celebrate that.\u201d For the players, the World Cup is less a business opportunity than a mirror...."
+            },
+            {
+              "category": "social",
+              "excerpt": "Umbro, the English sportswear brand that kits out clubs across the Premier League and La Liga, recently signed El Farolito as part of its grassroots expansion in the United States.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9995756373703524,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...There is something different about this year that goes beyond the fixture. The World Cup comes to the United States in June \u2014 the first time since 1994 \u2014 and the attention it brings has already found its way to the Mission District. Umbro, the English sportswear brand that kits out clubs across the Premier League and La Liga, recently signed El Farolito as part of its grassroots expansion in the United States. S. The team will serve as the showcase for Umbro\u2019s new custom kit program \u2014 a platform that allows amateur clubs to design their own uniforms."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "Umbro's signing of El Farolito as part of grassroots expansion represents community engagement and support for local soccer culture, which qualifies as Social ESG. The positive sentiment reflects Umbro's commitment to supporting authentic community football culture."
+        }
+      ]
+    },
     {
       "id": "d81c2768-d78f-4c16-94ed-0072761092d9",
       "title": "Nike After Dark Tour 2026 will bring women-focused half-marathon to LA again",
@@ -861,24 +929,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "Eddie Bauer, LLC announced that its retail operator had entered into a Restructuring Support Agreement (\"RSA\") pact with its secured lenders as part of its Chapter 11 proceedings.",
-              "relevance_score": 0.8855424893902009,
-              "rerank_score": 0.9999201608094166,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "PENNSYLVANIA (WHTM) \u2014 Less than a month after Eddie Bauer\u2019s store operator in North America and Canada filed for Chapter 11 bankruptcy, dozens of stores are hitting the market. Nexstar\u2019s WHTM reported in February that Eddie Bauer, LLC announced that its retail operator had entered into a Restructuring Support Agreement (\u201cRSA\u201d) pact with its secured lenders as part of its Chapter 11 proceedings. The company, which blamed declining sales and a litany of other industry headwinds for the Chapter 11 filing, also said it would begin winding down operations at certain locations...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "The Chapter 11 filing marked the third time in a little over two decades for the storied-but-now-tired brand that began as a Seattle fishing shop.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9997786078936443,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "The Associated Press previously reported that Eddier Bauer has roughly 180 stores across the U.S. and Canada. At the company\u2019s peak in 2001, the retailer boasted nearly 600 stores. The Chapter 11 filing marked the third time in a little over two decades for the storied-but-now-tired brand that began as a Seattle fishing shop. Eddie Bauer\u2019s namesake founder \u2014 an avid outdoorsman \u2014 started the company in Seattle in 1920 as Bauer\u2019s Sports Shop, according to the brand\u2019s website...."
-            },
-            {
               "category": "social",
               "excerpt": "Less than a month after Eddie Bauer's store operator in North America and Canada filed for Chapter 11 bankruptcy, dozens of stores are hitting the market.",
               "relevance_score": 0.9222811018505842,
@@ -904,6 +954,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "PENNSYLVANIA (WHTM) \u2014 Less than a month after Eddie Bauer\u2019s store operator in North America and Canada filed for Chapter 11 bankruptcy, dozens of stores are hitting the market. Nexstar\u2019s WHTM reported in February that Eddie Bauer, LLC announced that its retail operator had entered into a Restructuring Support Agreement (\u201cRSA\u201d) pact with its secured lenders as part of its Chapter 11 proceedings. The company, which blamed declining sales and a litany of other industry headwinds for the Chapter 11 filing, also said it would begin winding down operations at certain locations. However, at the time, it was uncertain which stores would eventually shutter...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Eddie Bauer, LLC announced that its retail operator had entered into a Restructuring Support Agreement (\"RSA\") pact with its secured lenders as part of its Chapter 11 proceedings.",
+              "relevance_score": 0.8855424893902009,
+              "rerank_score": 0.9999201608094166,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "PENNSYLVANIA (WHTM) \u2014 Less than a month after Eddie Bauer\u2019s store operator in North America and Canada filed for Chapter 11 bankruptcy, dozens of stores are hitting the market. Nexstar\u2019s WHTM reported in February that Eddie Bauer, LLC announced that its retail operator had entered into a Restructuring Support Agreement (\u201cRSA\u201d) pact with its secured lenders as part of its Chapter 11 proceedings. The company, which blamed declining sales and a litany of other industry headwinds for the Chapter 11 filing, also said it would begin winding down operations at certain locations...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "The Chapter 11 filing marked the third time in a little over two decades for the storied-but-now-tired brand that began as a Seattle fishing shop.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9997786078936443,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "The Associated Press previously reported that Eddier Bauer has roughly 180 stores across the U.S. and Canada. At the company\u2019s peak in 2001, the retailer boasted nearly 600 stores. The Chapter 11 filing marked the third time in a little over two decades for the storied-but-now-tired brand that began as a Seattle fishing shop. Eddie Bauer\u2019s namesake founder \u2014 an avid outdoorsman \u2014 started the company in Seattle in 1920 as Bauer\u2019s Sports Shop, according to the brand\u2019s website...."
             }
           ],
           "confidence": 0.9,
@@ -1857,13 +1925,22 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "Arne spent over a decade at The North Face, where, as Global Brand President, he led the brand through a period of significant global growth, cementing its position as one of the world's leading outdoor companies",
-              "relevance_score": 0.9147854849784485,
-              "rerank_score": 0.9999494613271678,
-              "match_method": "combined",
+              "category": "digital_transformation",
+              "excerpt": "unspun is rebuilding apparel manufacturing for speed and efficiency \u2014 replacing long, offshore production cycles with software and hardware-driven systems",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9997806633802023,
+              "match_method": "exact",
               "confidence": "high",
-              "context_snippet": "Arne spent over a decade at The North Face, where, as Global Brand President, he led the brand through a period of significant global growth, cementing its position as one of the world\u2019s leading outdoor companies. He later became CEO of Boardriders, the global action sports and lifestyle company behind Quiksilver, Billabong, and Roxy, leading the business through its acquisition by Authentic Brands Group for approximately $1.25 billion...."
+              "context_snippet": "...\u201cunspun\u2019s manufacturing model fundamentally transforms how and where products are made \u2014 unlocking meaningful financial benefits and significantly reducing the industry\u2019s carbon footprint. I am honored to lead unspun at this pivotal moment and look forward to scaling our proven model into broad, lasting industry impact.\u201d unspun is rebuilding apparel manufacturing for speed and efficiency \u2014 replacing long, offshore production cycles with software and hardware-driven systems that enable garments to be produced closer to demand. Its proprietary 3D weaving technology, Vega\u2122, weaves semi-finished products directly from yarn in minutes, dramatically shortening supply chains and reducing waste."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "Its proprietary 3D weaving technology, Vega\u2122, weaves semi-finished products directly from yarn in minutes, dramatically shortening supply chains and reducing waste",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9991514851905394,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...unspun is rebuilding apparel manufacturing for speed and efficiency \u2014 replacing long, offshore production cycles with software and hardware-driven systems that enable garments to be produced closer to demand. Its proprietary 3D weaving technology, Vega\u2122, weaves semi-finished products directly from yarn in minutes, dramatically shortening supply chains and reducing waste."
             },
             {
               "category": "environmental",
@@ -1884,22 +1961,13 @@
               "context_snippet": "...unspun\u2019s localized, automated approach turns manufacturing into responsive infrastructure, enabling production closer to when and where demand actually occurs. This speed-based model lowers inventory risk, reduces overproduction and the apparel supply chain\u2019s carbon footprint, and can improve gross margins by 400\u2013500 bps through fewer markdowns and write-offs."
             },
             {
-              "category": "digital_transformation",
-              "excerpt": "unspun is rebuilding apparel manufacturing for speed and efficiency \u2014 replacing long, offshore production cycles with software and hardware-driven systems",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9997806633802023,
-              "match_method": "exact",
+              "category": "governance",
+              "excerpt": "Arne spent over a decade at The North Face, where, as Global Brand President, he led the brand through a period of significant global growth, cementing its position as one of the world's leading outdoor companies",
+              "relevance_score": 0.9147854849784485,
+              "rerank_score": 0.9999494613271678,
+              "match_method": "combined",
               "confidence": "high",
-              "context_snippet": "...\u201cunspun\u2019s manufacturing model fundamentally transforms how and where products are made \u2014 unlocking meaningful financial benefits and significantly reducing the industry\u2019s carbon footprint. I am honored to lead unspun at this pivotal moment and look forward to scaling our proven model into broad, lasting industry impact.\u201d unspun is rebuilding apparel manufacturing for speed and efficiency \u2014 replacing long, offshore production cycles with software and hardware-driven systems that enable garments to be produced closer to demand. Its proprietary 3D weaving technology, Vega\u2122, weaves semi-finished products directly from yarn in minutes, dramatically shortening supply chains and reducing waste."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "Its proprietary 3D weaving technology, Vega\u2122, weaves semi-finished products directly from yarn in minutes, dramatically shortening supply chains and reducing waste",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9991514851905394,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...unspun is rebuilding apparel manufacturing for speed and efficiency \u2014 replacing long, offshore production cycles with software and hardware-driven systems that enable garments to be produced closer to demand. Its proprietary 3D weaving technology, Vega\u2122, weaves semi-finished products directly from yarn in minutes, dramatically shortening supply chains and reducing waste."
+              "context_snippet": "Arne spent over a decade at The North Face, where, as Global Brand President, he led the brand through a period of significant global growth, cementing its position as one of the world\u2019s leading outdoor companies. He later became CEO of Boardriders, the global action sports and lifestyle company behind Quiksilver, Billabong, and Roxy, leading the business through its acquisition by Authentic Brands Group for approximately $1.25 billion...."
             }
           ],
           "confidence": 0.8,
@@ -2477,71 +2545,6 @@
       "categories": ["digital_transformation", "environmental"],
       "brand_details": [
         {
-          "brand": "Puma",
-          "categories": {
-            "environmental": {
-              "applies": true,
-              "sentiment": 1,
-              "sentiment_label": "positive"
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "digital_transformation": {
-              "applies": true,
-              "sentiment": 1,
-              "sentiment_label": "positive"
-            }
-          },
-          "evidence": [
-            {
-              "category": "environmental",
-              "excerpt": "Brands such as Nike, Adidas and Puma are expected to lead through and sustainability.",
-              "relevance_score": 0.7870133696896093,
-              "rerank_score": 0.9998642271203562,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Brands such as Nike, Adidas and Puma are expected to lead through and . And while there will be challenges from increased competition, counterfeit products and fluctuating raw material prices, opportunities in emerging markets will ensure continued growth of the sneaker category. Technical advancements in design and manufacturing were also cited as representing new opportunities for expansion...."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "Investments in recycled fabrics, biodegradable soles and energy-efficient manufacturing methods help to reduce carbon footprints.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.929060467882787,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...The report noted that sustainability has become a defining feature of the modern sneaker market, with consumers increasingly preferring eco-friendly materials and ethical production practices. Investments in recycled fabrics, biodegradable soles and energy-efficient manufacturing methods help to reduce carbon footprints. And the rise in customization options and design innovations are allowing brands to cater to individual style preferences."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "brands that can leverage digitalization, sustainability and celebrity collaborations will be best able to cater to diverse consumer preferences",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999223776297491,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "The increasing integration of sportswear into everyday fashion has evolved what was once a niche athletic footwear segment into a major lifestyle category. In addition, brands that can leverage digitalization, sustainability and celebrity collaborations will be best able to cater to diverse consumer preferences, which in turn will drive innovation. Moreover, the influence of celebrity endorsements, sports collaborations and limited-edition releases have helped to enhance brand visibility and customer loyalty...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "anti-counterfeiting technologies, such as blockchain tracking and RFID tagging, can be used to ensure product authenticity",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9996450017919903,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Technical advancements in design and manufacturing were also cited as representing new opportunities for expansion. Moreover, anti-counterfeiting technologies, such as blockchain tracking and RFID tagging, can be used to ensure product authenticity. \u201cThe combination of comfort, functionality, and fashion will continue to drive consumer interest, ensuring the sneakers market remains one of the most dynamic sectors in the global footwear industry,\u201d ResearchAndMarket said...."
-            }
-          ],
-          "confidence": 0.8,
-          "reasoning": "Puma is identified as a leader in sustainability initiatives and digital transformation alongside Nike and Adidas. The article discusses environmental benefits and digital innovation that apply to all three brands mentioned as leaders."
-        },
-        {
           "brand": "Adidas",
           "categories": {
             "environmental": {
@@ -2605,6 +2608,71 @@
           ],
           "confidence": 0.8,
           "reasoning": "Adidas is identified as a leader in sustainability initiatives and digital transformation alongside Nike and Puma. The article discusses environmental benefits and digital innovation that apply to all three brands mentioned as leaders."
+        },
+        {
+          "brand": "Puma",
+          "categories": {
+            "environmental": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            }
+          },
+          "evidence": [
+            {
+              "category": "digital_transformation",
+              "excerpt": "brands that can leverage digitalization, sustainability and celebrity collaborations will be best able to cater to diverse consumer preferences",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999223776297491,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "The increasing integration of sportswear into everyday fashion has evolved what was once a niche athletic footwear segment into a major lifestyle category. In addition, brands that can leverage digitalization, sustainability and celebrity collaborations will be best able to cater to diverse consumer preferences, which in turn will drive innovation. Moreover, the influence of celebrity endorsements, sports collaborations and limited-edition releases have helped to enhance brand visibility and customer loyalty...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "anti-counterfeiting technologies, such as blockchain tracking and RFID tagging, can be used to ensure product authenticity",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9996450017919903,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Technical advancements in design and manufacturing were also cited as representing new opportunities for expansion. Moreover, anti-counterfeiting technologies, such as blockchain tracking and RFID tagging, can be used to ensure product authenticity. \u201cThe combination of comfort, functionality, and fashion will continue to drive consumer interest, ensuring the sneakers market remains one of the most dynamic sectors in the global footwear industry,\u201d ResearchAndMarket said...."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "Brands such as Nike, Adidas and Puma are expected to lead through and sustainability.",
+              "relevance_score": 0.7870133696896093,
+              "rerank_score": 0.9998642271203562,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Brands such as Nike, Adidas and Puma are expected to lead through and . And while there will be challenges from increased competition, counterfeit products and fluctuating raw material prices, opportunities in emerging markets will ensure continued growth of the sneaker category. Technical advancements in design and manufacturing were also cited as representing new opportunities for expansion...."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "Investments in recycled fabrics, biodegradable soles and energy-efficient manufacturing methods help to reduce carbon footprints.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.929060467882787,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...The report noted that sustainability has become a defining feature of the modern sneaker market, with consumers increasingly preferring eco-friendly materials and ethical production practices. Investments in recycled fabrics, biodegradable soles and energy-efficient manufacturing methods help to reduce carbon footprints. And the rise in customization options and design innovations are allowing brands to cater to individual style preferences."
+            }
+          ],
+          "confidence": 0.8,
+          "reasoning": "Puma is identified as a leader in sustainability initiatives and digital transformation alongside Nike and Adidas. The article discusses environmental benefits and digital innovation that apply to all three brands mentioned as leaders."
         },
         {
           "brand": "Nike",
@@ -2777,15 +2845,6 @@
           },
           "evidence": [
             {
-              "category": "social",
-              "excerpt": "Puma was also in the process of cutting around 1,400 corporate roles. Around 800 jobs have already gone and a further 600 will be by the end of this year.",
-              "relevance_score": 0.888184077942876,
-              "rerank_score": 0.9997386968480222,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Over the last two quarters of 2025, the company has drawn back from what it calls \u201cundesirable\u201d wholesale business and reduced discounts in its own direct-to-consumer channels. It has brought back inv..."
-            },
-            {
               "category": "governance",
               "excerpt": "In January, Chinese sportswear brand Anta struck a deal to become Puma's biggest shareholder and is promising to help the German sportswear maker improve sales in China.",
               "relevance_score": 0.9409848212773597,
@@ -2811,6 +2870,15 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "Over a montage of sports and a stirring soundtrack, a female narrator told viewers, \u201cwe\u2019ve been in this game for over 75 years, it\u2019s fair to say we have what it takes \u2026 but the truth is we\u2019ve also lea..."
+            },
+            {
+              "category": "social",
+              "excerpt": "Puma was also in the process of cutting around 1,400 corporate roles. Around 800 jobs have already gone and a further 600 will be by the end of this year.",
+              "relevance_score": 0.888184077942876,
+              "rerank_score": 0.9997386968480222,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Over the last two quarters of 2025, the company has drawn back from what it calls \u201cundesirable\u201d wholesale business and reduced discounts in its own direct-to-consumer channels. It has brought back inv..."
             }
           ],
           "confidence": 0.9,
