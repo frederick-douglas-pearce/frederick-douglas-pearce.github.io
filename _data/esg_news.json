@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-19T14:00:30.662690+00:00",
-  "total_articles": 464,
+  "generated_at": "2026-03-20T14:00:32.777070+00:00",
+  "total_articles": 465,
   "brands": [
     "361 Degrees",
     "ASICS",
@@ -41,22 +41,12 @@
   "categories": ["digital_transformation", "environmental", "governance", "social"],
   "scorecard": {
     "period_days": 14,
-    "period_start": "2026-03-05",
-    "period_end": "2026-03-19",
-    "articles_in_period": 25,
-    "articles_after_dedup": 19,
+    "period_start": "2026-03-06",
+    "period_end": "2026-03-20",
+    "articles_in_period": 22,
+    "articles_after_dedup": 16,
     "duplicates_removed": 6,
     "top_brands": [
-      {
-        "brand": "Nike",
-        "total": 11,
-        "environmental": 4,
-        "social": 3,
-        "governance": 2,
-        "digital_transformation": 2,
-        "article_count": 6,
-        "medal": "gold"
-      },
       {
         "brand": "Lululemon",
         "total": 9,
@@ -65,16 +55,26 @@
         "governance": -1,
         "digital_transformation": 5,
         "article_count": 4,
+        "medal": "gold"
+      },
+      {
+        "brand": "Nike",
+        "total": 8,
+        "environmental": 2,
+        "social": 4,
+        "governance": 0,
+        "digital_transformation": 2,
+        "article_count": 4,
         "medal": "silver"
       },
       {
-        "brand": "Adidas",
-        "total": 6,
-        "environmental": 6,
+        "brand": "New Balance",
+        "total": 4,
+        "environmental": 2,
         "social": 0,
         "governance": 0,
-        "digital_transformation": 0,
-        "article_count": 5,
+        "digital_transformation": 2,
+        "article_count": 1,
         "medal": "bronze"
       }
     ],
@@ -91,16 +91,6 @@
     ],
     "all_brand_scores": [
       {
-        "brand": "Nike",
-        "total": 11,
-        "environmental": 4,
-        "social": 3,
-        "governance": 2,
-        "digital_transformation": 2,
-        "article_count": 6,
-        "medal": "gold"
-      },
-      {
         "brand": "Lululemon",
         "total": 9,
         "environmental": 2,
@@ -108,17 +98,17 @@
         "governance": -1,
         "digital_transformation": 5,
         "article_count": 4,
-        "medal": "silver"
+        "medal": "gold"
       },
       {
-        "brand": "Adidas",
-        "total": 6,
-        "environmental": 6,
-        "social": 0,
+        "brand": "Nike",
+        "total": 8,
+        "environmental": 2,
+        "social": 4,
         "governance": 0,
-        "digital_transformation": 0,
-        "article_count": 5,
-        "medal": "bronze"
+        "digital_transformation": 2,
+        "article_count": 4,
+        "medal": "silver"
       },
       {
         "brand": "New Balance",
@@ -127,14 +117,24 @@
         "social": 0,
         "governance": 0,
         "digital_transformation": 2,
-        "article_count": 1
+        "article_count": 1,
+        "medal": "bronze"
       },
       {
-        "brand": "Under Armour",
-        "total": 4,
-        "environmental": 2,
+        "brand": "Adidas",
+        "total": 2,
+        "environmental": 4,
         "social": 0,
-        "governance": 2,
+        "governance": -2,
+        "digital_transformation": 0,
+        "article_count": 4
+      },
+      {
+        "brand": "Puma",
+        "total": 2,
+        "environmental": 0,
+        "social": 2,
+        "governance": 0,
         "digital_transformation": 0,
         "article_count": 1
       },
@@ -148,15 +148,6 @@
         "article_count": 1
       },
       {
-        "brand": "Puma",
-        "total": 1,
-        "environmental": 0,
-        "social": 2,
-        "governance": -1,
-        "digital_transformation": 0,
-        "article_count": 2
-      },
-      {
         "brand": "Eddie Bauer",
         "total": -3,
         "environmental": 0,
@@ -168,6 +159,56 @@
     ]
   },
   "articles": [
+    {
+      "id": "d2835c20-c6db-42ae-aa2d-6c22752ac367",
+      "title": "Lululemon Athletica Inc . Q4 2025 Earnings Call Summary",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/lululemon-athletica-inc-q4-2025-123000664.html",
+      "source_name": "finance.yahoo.com",
+      "published_at": "2026-03-19T21:00:00+00:00",
+      "published_date": "2026-03-19",
+      "brands": ["Lululemon"],
+      "categories": ["digital_transformation"],
+      "brand_details": [
+        {
+          "brand": "Lululemon",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            }
+          },
+          "evidence": [
+            {
+              "category": "digital_transformation",
+              "excerpt": "This acceleration will leverage automation and AI tools to improve speed-to-market without sacrificing the brand's high quality standards.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999029406962942,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "The company aims to shorten its product development cycle from the current 18-24 months to approximately 12-14 months. This acceleration will leverage automation and AI tools to improve speed-to-market without sacrificing the brand's high quality standards. Inventory composition and unit growth targets\n\nManagement expressed confidence in current inventory health, noting that Q4 units were up only 6% despite higher dollar values driven by tariffs...."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "This earnings call summary discusses Lululemon's strategic use of AI and automation to accelerate product development cycles, which represents positive digital transformation initiatives. The other content focuses on financial performance, marketing strategy, and inventory management without substantive ESG implications."
+        }
+      ]
+    },
     {
       "id": "3d6ed981-64ec-4e9a-8117-8f75e3731648",
       "title": "Lululemon disappointing outlook adds urgency to CEO search",
@@ -1484,24 +1525,6 @@
           },
           "evidence": [
             {
-              "category": "social",
-              "excerpt": "Eddie Bauer LLC, which operates the brand's U.S. and Canadian stores, said it received no qualified bids for its assets by a March 3 deadline",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999628614204064,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Eddie Bauer's Bay Area stores, along with the rest of its North American retail fleet, are on track to close after the company's store operator failed to find a buyer in bankruptcy court. Eddie Bauer LLC, which operates the brand's U.S. and Canadian stores, said it received no qualified bids for its assets by a March 3 deadline, according to court filings. That forced the cancellation of a planned March 6 auction in U.S. Bankruptcy Court in New Jersey and left the company moving ahead with store-closing sales...."
-            },
-            {
-              "category": "social",
-              "excerpt": "The shutdown would affect about 150 stores in 40 U.S. states and 24 stores in six Canadian provinces",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9996455465884139,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...For shoppers in California and across the country, the clock is ticking. Eddie Bauer said gift cards and loyalty credits will no longer be accepted after Thursday, and all sales are final, with no returns or exchanges. The shutdown would affect about 150 stores in 40 U.S. states and 24 stores in six Canadian provinces, according to RCS Real Estate Advisors, the brokerage hired to market roughly 174 store leases."
-            },
-            {
               "category": "governance",
               "excerpt": "Eddie Bauer's store operator filed for Chapter 11 bankruptcy protection on Feb. 9, citing declining sales, supply chain problems and rising operating costs",
               "relevance_score": 0.9048235850900118,
@@ -1518,6 +1541,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...The Seattle-founded retailer's store operator filed for Chapter 11 bankruptcy protection on Feb. 9, citing declining sales, supply chain problems and rising operating costs. It was the third bankruptcy filing tied to Eddie Bauer's retail operations since 2003. \"This is not an easy decision,\" Marc Rosen, chief executive of Catalyst Brands - the company that holds the license to operate Eddie Bauer stores in the United States and Canada - said in a statement...."
+            },
+            {
+              "category": "social",
+              "excerpt": "Eddie Bauer LLC, which operates the brand's U.S. and Canadian stores, said it received no qualified bids for its assets by a March 3 deadline",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999628614204064,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Eddie Bauer's Bay Area stores, along with the rest of its North American retail fleet, are on track to close after the company's store operator failed to find a buyer in bankruptcy court. Eddie Bauer LLC, which operates the brand's U.S. and Canadian stores, said it received no qualified bids for its assets by a March 3 deadline, according to court filings. That forced the cancellation of a planned March 6 auction in U.S. Bankruptcy Court in New Jersey and left the company moving ahead with store-closing sales...."
+            },
+            {
+              "category": "social",
+              "excerpt": "The shutdown would affect about 150 stores in 40 U.S. states and 24 stores in six Canadian provinces",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9996455465884139,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...For shoppers in California and across the country, the clock is ticking. Eddie Bauer said gift cards and loyalty credits will no longer be accepted after Thursday, and all sales are final, with no returns or exchanges. The shutdown would affect about 150 stores in 40 U.S. states and 24 stores in six Canadian provinces, according to RCS Real Estate Advisors, the brokerage hired to market roughly 174 store leases."
             }
           ],
           "confidence": 0.9,
@@ -1833,7 +1874,7 @@
           },
           "evidence": [
             {
-              "category": "governance",
+              "category": "environmental",
               "excerpt": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers",
               "relevance_score": 1.0,
               "rerank_score": 0.9998988170088464,
@@ -1842,7 +1883,7 @@
               "context_snippet": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers. The integration of smart textiles, such as temperature-regulating fabrics and odor-control technology, further differentiates premium product lines...."
             },
             {
-              "category": "environmental",
+              "category": "governance",
               "excerpt": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers",
               "relevance_score": 1.0,
               "rerank_score": 0.9998988170088464,
@@ -2054,24 +2095,6 @@
           },
           "evidence": [
             {
-              "category": "social",
-              "excerpt": "An Adidas franchise store in Israel was destroyed in an attack, but it was closed at the time and no staff were affected",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999547376947694,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "An Adidas franchise store in Israel was destroyed in an attack, but it was closed at the time and no staff were affected, a group executive told reporters on an earnings call. Gulden said there would be a \u201crevenue impact\u201d where stores in the region have had to close and there could be disruptions to air freight that goes through the Middle East, potentially delaying delivery of some products...."
-            },
-            {
-              "category": "social",
-              "excerpt": "there would be a 'revenue impact' where stores in the region have had to close",
-              "relevance_score": 0.7264796745996458,
-              "rerank_score": 0.9997703115930615,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "An Adidas franchise store in Israel was destroyed in an attack, but it was closed at the time and no staff were affected, a group executive told reporters on an earnings call.\n\nGulden said there would..."
-            },
-            {
               "category": "governance",
               "excerpt": "Gulden's contract was extended until 2030, in a sign of confidence that his strategy is bearing fruit",
               "relevance_score": 0.8374172922857349,
@@ -2088,6 +2111,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...The group\u2019s shares fell more than eight percent in Frankfurt, extending recent declines, but won back some ground later in the session and closed 3.6 percent lower at around \u20ac142. Nevertheless, 2025 profits were up sharply and Adidas extended the contract of CEO Bjorn Gulden, who has put the group on a more stable footing after the messy end of its lucrative partnership with US rapper Kanye West. The Middle East conflict that began at the weekend with US-Israeli strikes on Iran, triggering Iranian retaliatory attacks, is the latest geopolitical turmoil that global businesses are having to contend with."
+            },
+            {
+              "category": "social",
+              "excerpt": "An Adidas franchise store in Israel was destroyed in an attack, but it was closed at the time and no staff were affected",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999547376947694,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "An Adidas franchise store in Israel was destroyed in an attack, but it was closed at the time and no staff were affected, a group executive told reporters on an earnings call. Gulden said there would be a \u201crevenue impact\u201d where stores in the region have had to close and there could be disruptions to air freight that goes through the Middle East, potentially delaying delivery of some products...."
+            },
+            {
+              "category": "social",
+              "excerpt": "there would be a 'revenue impact' where stores in the region have had to close",
+              "relevance_score": 0.7264796745996458,
+              "rerank_score": 0.9997703115930615,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "An Adidas franchise store in Israel was destroyed in an attack, but it was closed at the time and no staff were affected, a group executive told reporters on an earnings call.\n\nGulden said there would..."
             }
           ],
           "confidence": 0.9,
@@ -2276,24 +2317,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "Adidas also extended Gulden's contract until 2030, signalling confidence in his leadership",
-              "relevance_score": 0.7797590103569426,
-              "rerank_score": 0.9991370560041816,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Chief financial officer Harm Ohlymeyer said the company would not immediately join firms seeking refunds after the US Supreme Court ruled many of the global duties illegal. \u201cWe will wait and see,\u201d he ..."
-            },
-            {
-              "category": "governance",
-              "excerpt": "He took charge in 2023 after the company severed ties with US rapper Kanye West, now known as Ye, following backlash over antisemitic remarks",
-              "relevance_score": 1.0,
-              "rerank_score": 0.08465646486929995,
-              "match_method": "exact",
-              "confidence": "unmatched",
-              "context_snippet": "...Adidas reported net income rising 75 per cent to 1.34 billion euros, while sales increased around five per cent to 24.8 billion euros, driven by strong demand for footwear and apparel. Adidas also extended Gulden\u2019s contract until 2030, signalling confidence in his leadership. He took charge in 2023 after the company severed ties with US rapper Kanye West, now known as Ye, following backlash over antisemitic remarks. Adidas had previously collaborated with West on the popular Yeezy trainer line...."
-            },
-            {
               "category": "social",
               "excerpt": "An Adidas franchise store in Israel was destroyed in an attack, though it was closed at the time and no staff were affected",
               "relevance_score": 1.0,
@@ -2310,6 +2333,24 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "An Adidas franchise store in Israel was destroyed in an attack, though it was closed at the time and no staff were affected, a company executive told reporters during an earnings call. Chief executive Bjorn Gulden said there could be a \u201crevenue impact\u201d as stores in the region close and air freight routes through the Middle East face disruptions, potentially delaying product deliveries. However, executives stressed it was too early to assess the broader fallout...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Adidas also extended Gulden's contract until 2030, signalling confidence in his leadership",
+              "relevance_score": 0.7797590103569426,
+              "rerank_score": 0.9991370560041816,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Chief financial officer Harm Ohlymeyer said the company would not immediately join firms seeking refunds after the US Supreme Court ruled many of the global duties illegal. \u201cWe will wait and see,\u201d he ..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "He took charge in 2023 after the company severed ties with US rapper Kanye West, now known as Ye, following backlash over antisemitic remarks",
+              "relevance_score": 1.0,
+              "rerank_score": 0.08465646486929995,
+              "match_method": "exact",
+              "confidence": "unmatched",
+              "context_snippet": "...Adidas reported net income rising 75 per cent to 1.34 billion euros, while sales increased around five per cent to 24.8 billion euros, driven by strong demand for footwear and apparel. Adidas also extended Gulden\u2019s contract until 2030, signalling confidence in his leadership. He took charge in 2023 after the company severed ties with US rapper Kanye West, now known as Ye, following backlash over antisemitic remarks. Adidas had previously collaborated with West on the popular Yeezy trainer line...."
             }
           ],
           "confidence": 0.9,
@@ -2557,24 +2598,6 @@
           },
           "evidence": [
             {
-              "category": "digital_transformation",
-              "excerpt": "unspun is rebuilding apparel manufacturing for speed and efficiency \u2014 replacing long, offshore production cycles with software and hardware-driven systems",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9997806633802023,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...\u201cunspun\u2019s manufacturing model fundamentally transforms how and where products are made \u2014 unlocking meaningful financial benefits and significantly reducing the industry\u2019s carbon footprint. I am honored to lead unspun at this pivotal moment and look forward to scaling our proven model into broad, lasting industry impact.\u201d unspun is rebuilding apparel manufacturing for speed and efficiency \u2014 replacing long, offshore production cycles with software and hardware-driven systems that enable garments to be produced closer to demand. Its proprietary 3D weaving technology, Vega\u2122, weaves semi-finished products directly from yarn in minutes, dramatically shortening supply chains and reducing waste."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "Its proprietary 3D weaving technology, Vega\u2122, weaves semi-finished products directly from yarn in minutes, dramatically shortening supply chains and reducing waste",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9991514851905394,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...unspun is rebuilding apparel manufacturing for speed and efficiency \u2014 replacing long, offshore production cycles with software and hardware-driven systems that enable garments to be produced closer to demand. Its proprietary 3D weaving technology, Vega\u2122, weaves semi-finished products directly from yarn in minutes, dramatically shortening supply chains and reducing waste."
-            },
-            {
               "category": "environmental",
               "excerpt": "unspun's manufacturing model fundamentally transforms how and where products are made \u2014 unlocking meaningful financial benefits and significantly reducing the industry's carbon footprint",
               "relevance_score": 0.8759448229135532,
@@ -2600,6 +2623,24 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "Arne spent over a decade at The North Face, where, as Global Brand President, he led the brand through a period of significant global growth, cementing its position as one of the world\u2019s leading outdoor companies. He later became CEO of Boardriders, the global action sports and lifestyle company behind Quiksilver, Billabong, and Roxy, leading the business through its acquisition by Authentic Brands Group for approximately $1.25 billion...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "unspun is rebuilding apparel manufacturing for speed and efficiency \u2014 replacing long, offshore production cycles with software and hardware-driven systems",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9997806633802023,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...\u201cunspun\u2019s manufacturing model fundamentally transforms how and where products are made \u2014 unlocking meaningful financial benefits and significantly reducing the industry\u2019s carbon footprint. I am honored to lead unspun at this pivotal moment and look forward to scaling our proven model into broad, lasting industry impact.\u201d unspun is rebuilding apparel manufacturing for speed and efficiency \u2014 replacing long, offshore production cycles with software and hardware-driven systems that enable garments to be produced closer to demand. Its proprietary 3D weaving technology, Vega\u2122, weaves semi-finished products directly from yarn in minutes, dramatically shortening supply chains and reducing waste."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "Its proprietary 3D weaving technology, Vega\u2122, weaves semi-finished products directly from yarn in minutes, dramatically shortening supply chains and reducing waste",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9991514851905394,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...unspun is rebuilding apparel manufacturing for speed and efficiency \u2014 replacing long, offshore production cycles with software and hardware-driven systems that enable garments to be produced closer to demand. Its proprietary 3D weaving technology, Vega\u2122, weaves semi-finished products directly from yarn in minutes, dramatically shortening supply chains and reducing waste."
             }
           ],
           "confidence": 0.8,
@@ -2643,33 +2684,6 @@
           },
           "evidence": [
             {
-              "category": "social",
-              "excerpt": "An investigation by Nova's group found that women at a Central Javanese factory producing Nike-licensed goods for Fanatics, a privately owned brand, had been sexually harassed for years.",
-              "relevance_score": 0.895358700018159,
-              "rerank_score": 0.9999543750573003,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "\u201cBecause unions have a tenuous foothold in the region and face harsh employer resistance,\u201d he added, \u201cworkers often cannot fight back.\u201d\n\nAn investigation by Nova\u2019s group found that women at a Central ..."
-            },
-            {
-              "category": "social",
-              "excerpt": "Ten workers at one supplier said many women's toilets hadn't been working for months. Two workers at other factories said they received written reprimands after they told their employers they were injured on the job.",
-              "relevance_score": 0.8502023649092156,
-              "rerank_score": 0.9999334273603943,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "But workers told the news organizations that problems have persisted at other factories in Central Java. Ten workers at one supplier said many women\u2019s toilets hadn\u2019t been working for months. Two workers at other factories said they received written reprimands after they told their employers they were injured on the job. Asked about these workers\u2019 accounts, Nike said that a \u201csafe and healthy work environment is a fundamental human right\u201d and that it audits factories annually for compliance with its code of conduct...."
-            },
-            {
-              "category": "social",
-              "excerpt": "Over the last decade, employment at factories supplying the world's largest athletic apparel brand expanded dramatically in regions of Indonesia where, according to one leading estimate, the minimum wage is less than the amount workers need to live on.",
-              "relevance_score": 0.8811258562571933,
-              "rerank_score": 0.9993859902425598,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "...If your factory wages don\u2019t cut it, your employer should have a plan to get you there. But Nike\u2019s expansion in Indonesia over the last decade has directly undermined these goals, an analysis by ProPublica and The Oregonian/OregonLive found. Over the last decade, employment at factories supplying the world\u2019s largest athletic apparel brand expanded dramatically in regions of Indonesia where, according to one leading estimate, the minimum wage is less than the amount workers need to live on. Meanwhile, Nike\u2019s supply chain shrank overall in places that pay this estimated living wage, our analysis found."
-            },
-            {
               "category": "governance",
               "excerpt": "Jason Judd, executive director of the Global Labor Institute at Cornell University, said living wage pledges from companies like Nike are so flexible that they're almost meaningless. Only asking factories to be working toward living wages, as Nike does, 'could go on for 20 years,' until you've found yet another lower-wage province.",
               "relevance_score": 0.9069527386414624,
@@ -2695,6 +2709,33 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...They said the company is building a new factory in Cirebon, in West Java, where the minimum wage is 45% lower. Employees said when they were offered a choice between keeping their jobs and accepting severance packages during layoffs last year, workers were willing to take the buyout, fearing that they wouldn\u2019t get anything if the factory closed altogether. That happened in 2018 when one Nike supplier near Jakarta, Kahoindah Citragarment, shut down without paying workers their full severance after Nike pulled its orders, an investigation by the Worker Rights Consortium found. The factory\u2019s South Korean parent company, Hojeon, eventually agreed to pay workers $4.5 million after labor advocates argued they were legally owed separation pay...."
+            },
+            {
+              "category": "social",
+              "excerpt": "An investigation by Nova's group found that women at a Central Javanese factory producing Nike-licensed goods for Fanatics, a privately owned brand, had been sexually harassed for years.",
+              "relevance_score": 0.895358700018159,
+              "rerank_score": 0.9999543750573003,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "\u201cBecause unions have a tenuous foothold in the region and face harsh employer resistance,\u201d he added, \u201cworkers often cannot fight back.\u201d\n\nAn investigation by Nova\u2019s group found that women at a Central ..."
+            },
+            {
+              "category": "social",
+              "excerpt": "Ten workers at one supplier said many women's toilets hadn't been working for months. Two workers at other factories said they received written reprimands after they told their employers they were injured on the job.",
+              "relevance_score": 0.8502023649092156,
+              "rerank_score": 0.9999334273603943,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "But workers told the news organizations that problems have persisted at other factories in Central Java. Ten workers at one supplier said many women\u2019s toilets hadn\u2019t been working for months. Two workers at other factories said they received written reprimands after they told their employers they were injured on the job. Asked about these workers\u2019 accounts, Nike said that a \u201csafe and healthy work environment is a fundamental human right\u201d and that it audits factories annually for compliance with its code of conduct...."
+            },
+            {
+              "category": "social",
+              "excerpt": "Over the last decade, employment at factories supplying the world's largest athletic apparel brand expanded dramatically in regions of Indonesia where, according to one leading estimate, the minimum wage is less than the amount workers need to live on.",
+              "relevance_score": 0.8811258562571933,
+              "rerank_score": 0.9993859902425598,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...If your factory wages don\u2019t cut it, your employer should have a plan to get you there. But Nike\u2019s expansion in Indonesia over the last decade has directly undermined these goals, an analysis by ProPublica and The Oregonian/OregonLive found. Over the last decade, employment at factories supplying the world\u2019s largest athletic apparel brand expanded dramatically in regions of Indonesia where, according to one leading estimate, the minimum wage is less than the amount workers need to live on. Meanwhile, Nike\u2019s supply chain shrank overall in places that pay this estimated living wage, our analysis found."
             }
           ],
           "confidence": 0.95,
@@ -3177,6 +3218,71 @@
       "categories": ["digital_transformation", "environmental"],
       "brand_details": [
         {
+          "brand": "Nike",
+          "categories": {
+            "environmental": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            }
+          },
+          "evidence": [
+            {
+              "category": "digital_transformation",
+              "excerpt": "brands that can leverage digitalization, sustainability and celebrity collaborations will be best able to cater to diverse consumer preferences",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999223776297491,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "The increasing integration of sportswear into everyday fashion has evolved what was once a niche athletic footwear segment into a major lifestyle category. In addition, brands that can leverage digitalization, sustainability and celebrity collaborations will be best able to cater to diverse consumer preferences, which in turn will drive innovation. Moreover, the influence of celebrity endorsements, sports collaborations and limited-edition releases have helped to enhance brand visibility and customer loyalty...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "anti-counterfeiting technologies, such as blockchain tracking and RFID tagging, can be used to ensure product authenticity",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9996450017919903,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Technical advancements in design and manufacturing were also cited as representing new opportunities for expansion. Moreover, anti-counterfeiting technologies, such as blockchain tracking and RFID tagging, can be used to ensure product authenticity. \u201cThe combination of comfort, functionality, and fashion will continue to drive consumer interest, ensuring the sneakers market remains one of the most dynamic sectors in the global footwear industry,\u201d ResearchAndMarket said...."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "Brands such as Nike, Adidas and Puma are expected to lead through and sustainability.",
+              "relevance_score": 0.7870133696896093,
+              "rerank_score": 0.9998642271203562,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Brands such as Nike, Adidas and Puma are expected to lead through and . And while there will be challenges from increased competition, counterfeit products and fluctuating raw material prices, opportunities in emerging markets will ensure continued growth of the sneaker category. Technical advancements in design and manufacturing were also cited as representing new opportunities for expansion...."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "Investments in recycled fabrics, biodegradable soles and energy-efficient manufacturing methods help to reduce carbon footprints.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.929060467882787,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...The report noted that sustainability has become a defining feature of the modern sneaker market, with consumers increasingly preferring eco-friendly materials and ethical production practices. Investments in recycled fabrics, biodegradable soles and energy-efficient manufacturing methods help to reduce carbon footprints. And the rise in customization options and design innovations are allowing brands to cater to individual style preferences."
+            }
+          ],
+          "confidence": 0.8,
+          "reasoning": "Nike is identified as a leader in sustainability initiatives and digital transformation. The article discusses environmental benefits through recycled materials and energy-efficient manufacturing, plus digital innovation through blockchain and RFID technologies."
+        },
+        {
           "brand": "Adidas",
           "categories": {
             "environmental": {
@@ -3267,24 +3373,6 @@
           },
           "evidence": [
             {
-              "category": "environmental",
-              "excerpt": "Brands such as Nike, Adidas and Puma are expected to lead through and sustainability.",
-              "relevance_score": 0.7870133696896093,
-              "rerank_score": 0.9998642271203562,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Brands such as Nike, Adidas and Puma are expected to lead through and . And while there will be challenges from increased competition, counterfeit products and fluctuating raw material prices, opportunities in emerging markets will ensure continued growth of the sneaker category. Technical advancements in design and manufacturing were also cited as representing new opportunities for expansion...."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "Investments in recycled fabrics, biodegradable soles and energy-efficient manufacturing methods help to reduce carbon footprints.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.929060467882787,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...The report noted that sustainability has become a defining feature of the modern sneaker market, with consumers increasingly preferring eco-friendly materials and ethical production practices. Investments in recycled fabrics, biodegradable soles and energy-efficient manufacturing methods help to reduce carbon footprints. And the rise in customization options and design innovations are allowing brands to cater to individual style preferences."
-            },
-            {
               "category": "digital_transformation",
               "excerpt": "brands that can leverage digitalization, sustainability and celebrity collaborations will be best able to cater to diverse consumer preferences",
               "relevance_score": 1.0,
@@ -3301,75 +3389,28 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...Technical advancements in design and manufacturing were also cited as representing new opportunities for expansion. Moreover, anti-counterfeiting technologies, such as blockchain tracking and RFID tagging, can be used to ensure product authenticity. \u201cThe combination of comfort, functionality, and fashion will continue to drive consumer interest, ensuring the sneakers market remains one of the most dynamic sectors in the global footwear industry,\u201d ResearchAndMarket said...."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "Brands such as Nike, Adidas and Puma are expected to lead through and sustainability.",
+              "relevance_score": 0.7870133696896093,
+              "rerank_score": 0.9998642271203562,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Brands such as Nike, Adidas and Puma are expected to lead through and . And while there will be challenges from increased competition, counterfeit products and fluctuating raw material prices, opportunities in emerging markets will ensure continued growth of the sneaker category. Technical advancements in design and manufacturing were also cited as representing new opportunities for expansion...."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "Investments in recycled fabrics, biodegradable soles and energy-efficient manufacturing methods help to reduce carbon footprints.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.929060467882787,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...The report noted that sustainability has become a defining feature of the modern sneaker market, with consumers increasingly preferring eco-friendly materials and ethical production practices. Investments in recycled fabrics, biodegradable soles and energy-efficient manufacturing methods help to reduce carbon footprints. And the rise in customization options and design innovations are allowing brands to cater to individual style preferences."
             }
           ],
           "confidence": 0.8,
           "reasoning": "Puma is identified as a leader in sustainability initiatives and digital transformation alongside Nike and Adidas. The article discusses environmental benefits and digital innovation that apply to all three brands mentioned as leaders."
-        },
-        {
-          "brand": "Nike",
-          "categories": {
-            "environmental": {
-              "applies": true,
-              "sentiment": 1,
-              "sentiment_label": "positive"
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "digital_transformation": {
-              "applies": true,
-              "sentiment": 1,
-              "sentiment_label": "positive"
-            }
-          },
-          "evidence": [
-            {
-              "category": "digital_transformation",
-              "excerpt": "brands that can leverage digitalization, sustainability and celebrity collaborations will be best able to cater to diverse consumer preferences",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999223776297491,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "The increasing integration of sportswear into everyday fashion has evolved what was once a niche athletic footwear segment into a major lifestyle category. In addition, brands that can leverage digitalization, sustainability and celebrity collaborations will be best able to cater to diverse consumer preferences, which in turn will drive innovation. Moreover, the influence of celebrity endorsements, sports collaborations and limited-edition releases have helped to enhance brand visibility and customer loyalty...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "anti-counterfeiting technologies, such as blockchain tracking and RFID tagging, can be used to ensure product authenticity",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9996450017919903,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Technical advancements in design and manufacturing were also cited as representing new opportunities for expansion. Moreover, anti-counterfeiting technologies, such as blockchain tracking and RFID tagging, can be used to ensure product authenticity. \u201cThe combination of comfort, functionality, and fashion will continue to drive consumer interest, ensuring the sneakers market remains one of the most dynamic sectors in the global footwear industry,\u201d ResearchAndMarket said...."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "Brands such as Nike, Adidas and Puma are expected to lead through and sustainability.",
-              "relevance_score": 0.7870133696896093,
-              "rerank_score": 0.9998642271203562,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Brands such as Nike, Adidas and Puma are expected to lead through and . And while there will be challenges from increased competition, counterfeit products and fluctuating raw material prices, opportunities in emerging markets will ensure continued growth of the sneaker category. Technical advancements in design and manufacturing were also cited as representing new opportunities for expansion...."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "Investments in recycled fabrics, biodegradable soles and energy-efficient manufacturing methods help to reduce carbon footprints.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.929060467882787,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...The report noted that sustainability has become a defining feature of the modern sneaker market, with consumers increasingly preferring eco-friendly materials and ethical production practices. Investments in recycled fabrics, biodegradable soles and energy-efficient manufacturing methods help to reduce carbon footprints. And the rise in customization options and design innovations are allowing brands to cater to individual style preferences."
-            }
-          ],
-          "confidence": 0.8,
-          "reasoning": "Nike is identified as a leader in sustainability initiatives and digital transformation. The article discusses environmental benefits through recycled materials and energy-efficient manufacturing, plus digital innovation through blockchain and RFID technologies."
         }
       ]
     },
@@ -3554,33 +3595,6 @@
           },
           "evidence": [
             {
-              "category": "social",
-              "excerpt": "Many of us across the state of Maine have been hit with some bad news recently",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999010140093134,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Many of us across the state of Maine have been hit with some bad news recently as it was announced that we must say goodbye to our beloved outdoor brand, Eddie Bauer. They officially announced, as per Portland Press Herald, plans to close several Maine stores after a recent bankruptcy filing...."
-            },
-            {
-              "category": "social",
-              "excerpt": "It's always tough to see big brands and familiar storefronts disappear, especially ones that have been a part of Maine life for so long",
-              "relevance_score": 0.8698692665076697,
-              "rerank_score": 0.9996382244473453,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "We don\u2019t know as of yet when the exact closing date will be but the news is showing yet another shift in the retail world, where long standing brand names have to close their doors due to rising costs..."
-            },
-            {
-              "category": "social",
-              "excerpt": "This is leaving many of us shocked and sad",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9977905223940828,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...They officially announced, as per Portland Press Herald, plans to close several Maine stores after a recent bankruptcy filing. This is leaving many of us shocked and sad. This store has been a staple in Maine, founded more than a century ago and will now shut the doors of about 175 locations across the United States and Canada...."
-            },
-            {
               "category": "governance",
               "excerpt": "plans to close several Maine stores after a recent bankruptcy filing",
               "relevance_score": 1.0,
@@ -3606,6 +3620,33 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...This is leaving many of us shocked and sad. This store has been a staple in Maine, founded more than a century ago and will now shut the doors of about 175 locations across the United States and Canada. Sadly, Maine is on that list...."
+            },
+            {
+              "category": "social",
+              "excerpt": "Many of us across the state of Maine have been hit with some bad news recently",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999010140093134,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Many of us across the state of Maine have been hit with some bad news recently as it was announced that we must say goodbye to our beloved outdoor brand, Eddie Bauer. They officially announced, as per Portland Press Herald, plans to close several Maine stores after a recent bankruptcy filing...."
+            },
+            {
+              "category": "social",
+              "excerpt": "It's always tough to see big brands and familiar storefronts disappear, especially ones that have been a part of Maine life for so long",
+              "relevance_score": 0.8698692665076697,
+              "rerank_score": 0.9996382244473453,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "We don\u2019t know as of yet when the exact closing date will be but the news is showing yet another shift in the retail world, where long standing brand names have to close their doors due to rising costs..."
+            },
+            {
+              "category": "social",
+              "excerpt": "This is leaving many of us shocked and sad",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9977905223940828,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...They officially announced, as per Portland Press Herald, plans to close several Maine stores after a recent bankruptcy filing. This is leaving many of us shocked and sad. This store has been a staple in Maine, founded more than a century ago and will now shut the doors of about 175 locations across the United States and Canada...."
             }
           ],
           "confidence": 0.9,
@@ -4080,6 +4121,24 @@
           },
           "evidence": [
             {
+              "category": "digital_transformation",
+              "excerpt": "Industry experts recommend several measures that companies like Adidas should implement \u2014 or verify are already in place \u2014 to mitigate third-party risk. These include requiring vendors to adhere to specific security frameworks such as SOC 2 or ISO 27001, mandating multi-factor authentication for all access to shared systems",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999611487772032,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Industry experts recommend several measures that companies like Adidas should implement \u2014 or verify are already in place \u2014 to mitigate third-party risk. These include requiring vendors to adhere to specific security frameworks such as SOC 2 or ISO 27001, mandating multi-factor authentication for all access to shared systems, conducting regular security audits of vendor environments, and establishing contractual obligations for breach notification timelines. Some organizations have gone further, implementing zero-trust architectures that limit vendor access to only the specific data and systems necessary for their function...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "The breach underscores a fundamental challenge facing large enterprises: no matter how strong internal security measures may be, the chain is only as strong as its weakest vendor.",
+              "relevance_score": 0.8538393854982191,
+              "rerank_score": 0.9994915515727488,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "For Adidas specifically, this is not the first time the company has dealt with a data security incident. In 2018, the company disclosed a breach affecting millions of customers on its U.S. website, wh..."
+            },
+            {
               "category": "governance",
               "excerpt": "A hacker operating under the alias 'Sp1d3r' has claimed responsibility for breaching systems connected to Adidas, allegedly exfiltrating a massive trove of customer data that includes millions of records.",
               "relevance_score": 0.924601468947603,
@@ -4105,24 +4164,6 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "However, the speed and transparency of Adidas\u2019s response have drawn scrutiny. Consumer advocates have pointed out that the company\u2019s initial statements were carefully worded to minimize perceived damage, emphasizing what was not stolen (passwords and payment data) rather than providing a full accounting of what was compromised. Email addresses and phone numbers, while not as immediately dangerous as financial credentials, are highly valuable to cybercriminals for phishing campaigns, SIM-swapping attacks, and social engineering schemes...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "Industry experts recommend several measures that companies like Adidas should implement \u2014 or verify are already in place \u2014 to mitigate third-party risk. These include requiring vendors to adhere to specific security frameworks such as SOC 2 or ISO 27001, mandating multi-factor authentication for all access to shared systems",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999611487772032,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Industry experts recommend several measures that companies like Adidas should implement \u2014 or verify are already in place \u2014 to mitigate third-party risk. These include requiring vendors to adhere to specific security frameworks such as SOC 2 or ISO 27001, mandating multi-factor authentication for all access to shared systems, conducting regular security audits of vendor environments, and establishing contractual obligations for breach notification timelines. Some organizations have gone further, implementing zero-trust architectures that limit vendor access to only the specific data and systems necessary for their function...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "The breach underscores a fundamental challenge facing large enterprises: no matter how strong internal security measures may be, the chain is only as strong as its weakest vendor.",
-              "relevance_score": 0.8538393854982191,
-              "rerank_score": 0.9994915515727488,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "For Adidas specifically, this is not the first time the company has dealt with a data security incident. In 2018, the company disclosed a breach affecting millions of customers on its U.S. website, wh..."
             }
           ],
           "confidence": 0.9,
@@ -8360,33 +8401,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "The EEOC had to take Nike to court because the company refused to voluntarily reject DEI and follow the law, according to the federal agency",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999470979907586,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "The filing is in the U.S. District Court for the Eastern District of Missouri. The EEOC had to take Nike to court because the company refused to voluntarily reject DEI and follow the law, according to the federal agency. EEOC Chair Andrea Lucas explained, \"When there are compelling indications, including corporate admissions in extensive public materials, that an employer\u2019s Diversity, Equity, and Inclusion-related programs may violate federal prohibitions against race discrimination or other forms of unlawful discrimination, the EEOC will take all necessary steps \u2014 including subpoena enforcement actions\u2014to ensure the opportunity to fully and comprehensively investigate.\"..."
-            },
-            {
-              "category": "governance",
-              "excerpt": "the U.S. Equal Employment Opportunity Commission (EEOC) announced on February 4 that it had filed an action in federal court against Nike",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999353142241822,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...The woke footwear company that enthusiastically promoted serial grifter and race-baiter Colin Kaepernick is \u2014 surprise, surprise \u2014 fixated on skin color and other external characteristics rather than merit. Now, however, the U.S. Equal Employment Opportunity Commission (EEOC) announced on February 4 that it had filed an action in federal court against Nike. Advertisement\n\nThe EEOC is investigating Nike over its various diversity, equity, and inclusion (DEI) projects and goals for last year...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "When the company failed to produce all the information sought by the subpoena, the agency filed an enforcement action in federal court",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9991744093903058,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...For Our VIPs: Reagan\u2019s Observations on Taxation and Government Spending Are Even More Urgent Today\n\nThe EEOC press release on the court filing explains:\n\nInformation sought included criteria used in selecting employees for layoffs; information related to the company\u2019s tracking and use of worker race and ethnicity data, including as a factor in setting executive compensation; and information about 16 programs which allegedly provided race-restricted mentoring, leadership, or career development opportunities. When the company failed to produce all the information sought by the subpoena, the agency filed an enforcement action in federal court. Advertisement"
-            },
-            {
               "category": "social",
               "excerpt": "The EEOC is investigating Nike over its various diversity, equity, and inclusion (DEI) projects and goals for last year",
               "relevance_score": 1.0,
@@ -8412,6 +8426,33 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...Either that or it just assumed that it was too big to face any real consequences. For Our VIPs: Reagan\u2019s Observations on Taxation and Government Spending Are Even More Urgent Today\n\nThe EEOC press release on the court filing explains:\n\nInformation sought included criteria used in selecting employees for layoffs; information related to the company\u2019s tracking and use of worker race and ethnicity data, including as a factor in setting executive compensation; and information about 16 programs which allegedly provided race-restricted mentoring, leadership, or career development opportunities. When the company failed to produce all the information sought by the subpoena, the agency filed an enforcement action in federal court...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "The EEOC had to take Nike to court because the company refused to voluntarily reject DEI and follow the law, according to the federal agency",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999470979907586,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "The filing is in the U.S. District Court for the Eastern District of Missouri. The EEOC had to take Nike to court because the company refused to voluntarily reject DEI and follow the law, according to the federal agency. EEOC Chair Andrea Lucas explained, \"When there are compelling indications, including corporate admissions in extensive public materials, that an employer\u2019s Diversity, Equity, and Inclusion-related programs may violate federal prohibitions against race discrimination or other forms of unlawful discrimination, the EEOC will take all necessary steps \u2014 including subpoena enforcement actions\u2014to ensure the opportunity to fully and comprehensively investigate.\"..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "the U.S. Equal Employment Opportunity Commission (EEOC) announced on February 4 that it had filed an action in federal court against Nike",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999353142241822,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...The woke footwear company that enthusiastically promoted serial grifter and race-baiter Colin Kaepernick is \u2014 surprise, surprise \u2014 fixated on skin color and other external characteristics rather than merit. Now, however, the U.S. Equal Employment Opportunity Commission (EEOC) announced on February 4 that it had filed an action in federal court against Nike. Advertisement\n\nThe EEOC is investigating Nike over its various diversity, equity, and inclusion (DEI) projects and goals for last year...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "When the company failed to produce all the information sought by the subpoena, the agency filed an enforcement action in federal court",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9991744093903058,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...For Our VIPs: Reagan\u2019s Observations on Taxation and Government Spending Are Even More Urgent Today\n\nThe EEOC press release on the court filing explains:\n\nInformation sought included criteria used in selecting employees for layoffs; information related to the company\u2019s tracking and use of worker race and ethnicity data, including as a factor in setting executive compensation; and information about 16 programs which allegedly provided race-restricted mentoring, leadership, or career development opportunities. When the company failed to produce all the information sought by the subpoena, the agency filed an enforcement action in federal court. Advertisement"
             }
           ],
           "confidence": 0.95,
@@ -8907,33 +8948,6 @@
           },
           "evidence": [
             {
-              "category": "social",
-              "excerpt": "The Equal Employment Opportunity Commission (EEOC) is seeking a court order for investigating systemic race discrimination allegations against white workers by footwear and apparel corporation Nike Inc.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999795491431269,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Authored by Naveen Athrappully via The Epoch Times (emphasis ours),\n\nThe Equal Employment Opportunity Commission (EEOC) is seeking a court order for investigating systemic race discrimination allegations against white workers by footwear and apparel corporation Nike Inc., according to a Feb. 4 statement from the agency. The EEOC filed an action in federal court to compel Nike, headquartered in Oregon, to produce information related to allegations that the company discriminated against white workers as part of its diversity, equity, and inclusion (DEI) programs...."
-            },
-            {
-              "category": "social",
-              "excerpt": "Lucas alleged that Nike, since at least 2020, engaged in 'a pattern or practice of disparate treatment against white employees, applicants and training program participants in hiring, promotion, demotion, or separation decisions, including selection for layoffs; internship programs; and mentoring, leadership development and other career development programs.'",
-              "relevance_score": 0.9051340439296658,
-              "rerank_score": 0.9999279850412103,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Lucas alleged that Nike, since at least 2020, engaged in \u201ca pattern or practice of disparate treatment against white employees, applicants and training program participants in hiring, promotion, demotion, or separation decisions, including selection for layoffs; internship programs; and mentoring, leadership development and other career development programs.\u201d EEOC is the sole federal agency that investigates and litigates against companies for violating federal law prohibiting employment discrimination...."
-            },
-            {
-              "category": "social",
-              "excerpt": "Based on Bloomberg data, from 2020 to 2021, Nike showcased the largest amount of change against hiring white workers among large U.S. companies. While the numbers of black, Hispanic, and Asian people went up across the board, Nike let go of white workers, said the analysis.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998068768900678,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...In its fiscal year 2024 \u201cRepresentation by the Numbers\u201d document published online, Nike said women made up 50.3 percent of the global corporate workforce. As for racial representation, white employees made up 57 percent, with black employees making up 9 percent, Asian 18 percent, and Hispanic 8.8 percent. Based on Bloomberg data, from 2020 to 2021, Nike showcased the largest amount of change against hiring white workers among large U.S. companies. While the numbers of black, Hispanic, and Asian people went up across the board, Nike let go of white workers, said the analysis. Kismet Mills is currently Nike\u2019s chief diversity, equity and inclusion officer...."
-            },
-            {
               "category": "governance",
               "excerpt": "The EEOC filed an action in federal court to compel Nike, headquartered in Oregon, to produce information related to allegations that the company discriminated against white workers as part of its diversity, equity, and inclusion (DEI) programs.",
               "relevance_score": 1.0,
@@ -8959,6 +8973,33 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "Authored by Naveen Athrappully via The Epoch Times (emphasis ours),\n\nThe Equal Employment Opportunity Commission (EEOC) is seeking a court order for investigating systemic race discrimination allegations against white workers by footwear and apparel corporation Nike Inc., according to a Feb. 4 statement from the agency. The EEOC filed an action in federal court to compel Nike, headquartered in Oregon, to produce information related to allegations that the company discriminated against white workers as part of its diversity, equity, and inclusion (DEI) programs. According to the filing made by EEOC in the U.S. District Court for the Eastern District of Missouri, the agency is looking to enforce an administrative subpoena against Nike for failing to submit the required information, which was initially requested in 2024 by then-commissioner, and now chair, Andrea Lucas."
+            },
+            {
+              "category": "social",
+              "excerpt": "The Equal Employment Opportunity Commission (EEOC) is seeking a court order for investigating systemic race discrimination allegations against white workers by footwear and apparel corporation Nike Inc.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999795491431269,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Authored by Naveen Athrappully via The Epoch Times (emphasis ours),\n\nThe Equal Employment Opportunity Commission (EEOC) is seeking a court order for investigating systemic race discrimination allegations against white workers by footwear and apparel corporation Nike Inc., according to a Feb. 4 statement from the agency. The EEOC filed an action in federal court to compel Nike, headquartered in Oregon, to produce information related to allegations that the company discriminated against white workers as part of its diversity, equity, and inclusion (DEI) programs...."
+            },
+            {
+              "category": "social",
+              "excerpt": "Lucas alleged that Nike, since at least 2020, engaged in 'a pattern or practice of disparate treatment against white employees, applicants and training program participants in hiring, promotion, demotion, or separation decisions, including selection for layoffs; internship programs; and mentoring, leadership development and other career development programs.'",
+              "relevance_score": 0.9051340439296658,
+              "rerank_score": 0.9999279850412103,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Lucas alleged that Nike, since at least 2020, engaged in \u201ca pattern or practice of disparate treatment against white employees, applicants and training program participants in hiring, promotion, demotion, or separation decisions, including selection for layoffs; internship programs; and mentoring, leadership development and other career development programs.\u201d EEOC is the sole federal agency that investigates and litigates against companies for violating federal law prohibiting employment discrimination...."
+            },
+            {
+              "category": "social",
+              "excerpt": "Based on Bloomberg data, from 2020 to 2021, Nike showcased the largest amount of change against hiring white workers among large U.S. companies. While the numbers of black, Hispanic, and Asian people went up across the board, Nike let go of white workers, said the analysis.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998068768900678,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...In its fiscal year 2024 \u201cRepresentation by the Numbers\u201d document published online, Nike said women made up 50.3 percent of the global corporate workforce. As for racial representation, white employees made up 57 percent, with black employees making up 9 percent, Asian 18 percent, and Hispanic 8.8 percent. Based on Bloomberg data, from 2020 to 2021, Nike showcased the largest amount of change against hiring white workers among large U.S. companies. While the numbers of black, Hispanic, and Asian people went up across the board, Nike let go of white workers, said the analysis. Kismet Mills is currently Nike\u2019s chief diversity, equity and inclusion officer...."
             }
           ],
           "confidence": 0.95,
