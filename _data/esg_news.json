@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-20T14:00:32.777070+00:00",
-  "total_articles": 465,
+  "generated_at": "2026-03-21T14:00:32.017605+00:00",
+  "total_articles": 467,
   "brands": [
     "361 Degrees",
     "ASICS",
@@ -41,10 +41,10 @@
   "categories": ["digital_transformation", "environmental", "governance", "social"],
   "scorecard": {
     "period_days": 14,
-    "period_start": "2026-03-06",
-    "period_end": "2026-03-20",
-    "articles_in_period": 22,
-    "articles_after_dedup": 16,
+    "period_start": "2026-03-07",
+    "period_end": "2026-03-21",
+    "articles_in_period": 24,
+    "articles_after_dedup": 18,
     "duplicates_removed": 6,
     "top_brands": [
       {
@@ -75,6 +75,16 @@
         "governance": 0,
         "digital_transformation": 2,
         "article_count": 1,
+        "medal": "bronze"
+      },
+      {
+        "brand": "Puma",
+        "total": 4,
+        "environmental": 2,
+        "social": 2,
+        "governance": 0,
+        "digital_transformation": 0,
+        "article_count": 2,
         "medal": "bronze"
       }
     ],
@@ -121,22 +131,14 @@
         "medal": "bronze"
       },
       {
-        "brand": "Adidas",
-        "total": 2,
-        "environmental": 4,
-        "social": 0,
-        "governance": -2,
-        "digital_transformation": 0,
-        "article_count": 4
-      },
-      {
         "brand": "Puma",
-        "total": 2,
-        "environmental": 0,
+        "total": 4,
+        "environmental": 2,
         "social": 2,
         "governance": 0,
         "digital_transformation": 0,
-        "article_count": 1
+        "article_count": 2,
+        "medal": "bronze"
       },
       {
         "brand": "Umbro",
@@ -146,6 +148,15 @@
         "governance": 0,
         "digital_transformation": 0,
         "article_count": 1
+      },
+      {
+        "brand": "Adidas",
+        "total": 1,
+        "environmental": 4,
+        "social": 0,
+        "governance": -3,
+        "digital_transformation": 0,
+        "article_count": 5
       },
       {
         "brand": "Eddie Bauer",
@@ -159,6 +170,115 @@
     ]
   },
   "articles": [
+    {
+      "id": "8195f11e-9e6c-4f2b-99ee-040b272d2537",
+      "title": "Gyan headlines Ghana, Africa presence as PUMA unveils World Cup kits in New York",
+      "url": "https://ghananewss.com/gyan-headlines-ghana-africa-presence-as-puma-unveils-world-cup-kits-in-new-york/",
+      "source_name": "Ghana News Online",
+      "published_at": "2026-03-20T23:04:46+00:00",
+      "published_date": "2026-03-20",
+      "brands": ["Puma"],
+      "categories": ["environmental"],
+      "brand_details": [
+        {
+          "brand": "Puma",
+          "categories": {
+            "environmental": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "environmental",
+              "excerpt": "The 2026 kit collection will be available from March 24, featuring ULTRAWEAVE technology and dryCELL fabric, with replica jerseys produced through RE:FIBRE as part of PUMA's sustainability drive.",
+              "relevance_score": 0.8821936512988422,
+              "rerank_score": 0.9996944859613498,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...Equipping nations across four continents, with close to a quarter of all nations heading into this summer\u2019s biggest competition wearing PUMA, we\u2019re showing up at football\u2019s biggest moment, reinforcing PUMA\u2019s position as one of the leading brands in international football. \u201cCombining cutting-edge performance innovation with cultural identity, this collection unites technical excellence and the spirit that brings nations together on the world\u2019s biggest stage\u201d, said Dominique Gathier, PUMA Vice President Teamsport. The 2026 kit collection will be available from March 24, featuring ULTRAWEAVE technology and dryCELL fabric, with replica jerseys produced through RE:FIBRE as part of PUMA\u2019s sustainability drive. DISCLAIMER: The Views, Comments, Opinions, Contributions and Statements made by Readers and Contributors on this platform do not necessarily represent the views or policy of Multimedia Group Limited."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "Article clearly refers to PUMA sportswear company and their World Cup kit launch. Environmental category applies due to explicit mention of RE:FIBRE technology as part of their sustainability drive for replica jersey production. Other aspects of the article focus on marketing/sponsorship activities which don't constitute ESG content."
+        }
+      ]
+    },
+    {
+      "id": "992f42e5-82aa-4602-8c5c-b578785be386",
+      "title": "Nigo Officially Launches Human Made US & John Galliano Designs for Zara in This Week's Top Fashion News",
+      "url": "https://hypebeast.com/2026/3/nigo-human-made-simone-rocha-pitti-uomo-john-galliano-zara-adidas-fw26-runway-trends-top-fashion-news",
+      "source_name": "Hypebeast",
+      "published_at": "2026-03-20T18:10:05+00:00",
+      "published_date": "2026-03-20",
+      "brands": ["Adidas"],
+      "categories": ["governance"],
+      "brand_details": [
+        {
+          "brand": "Adidas",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "governance",
+              "excerpt": "Adidas has filed a lawsuit against the sneaker information platform Sole Retriever, alleging a range of illicit activities, including extortion and the unauthorized use of trade secrets",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999801925284708,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Adidas has filed a lawsuit against the sneaker information platform Sole Retriever, alleging a range of illicit activities, including extortion and the unauthorized use of trade secrets. The sportswear giant claims the site uses \u201cstolen\u201d data to leak confidential release dates and product details, which Adidas argues disrupts its marketing cycles and devalues its intellectual property...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "The sportswear giant claims the site uses 'stolen' data to leak confidential release dates and product details, which Adidas argues disrupts its marketing cycles and devalues its intellectual property",
+              "relevance_score": 0.8901065893605478,
+              "rerank_score": 0.9999356362800351,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Adidas has filed a lawsuit against the sneaker information platform Sole Retriever, alleging a range of illicit activities, including extortion and the unauthorized use of trade secrets. The sportswear giant claims the site uses \u201cstolen\u201d data to leak confidential release dates and product details, which Adidas argues disrupts its marketing cycles and devalues its intellectual property. Furthermore, the brand alleges that the platform\u2019s business model exploits internal data for profit...."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "This is governance-related because it involves corporate legal action to protect intellectual property and trade secrets, which relates to corporate oversight and protecting company assets from alleged illegal activities."
+        }
+      ]
+    },
     {
       "id": "d2835c20-c6db-42ae-aa2d-6c22752ac367",
       "title": "Lululemon Athletica Inc . Q4 2025 Earnings Call Summary",
@@ -363,6 +483,24 @@
           },
           "evidence": [
             {
+              "category": "social",
+              "excerpt": "Eddie Bauer is shutting down almost 200 stores in North America after failing to find a buyer for the company that operates the locations.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999722641186148,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Eddie Bauer is shutting down almost 200 stores in North America after failing to find a buyer for the company that operates the locations. The operating entity is Eddie Bauer LLC, a portion of the holding company Catalyst Brands, which licenses the rights to operate Eddie Bauer stores in North America, Business Insider reported...."
+            },
+            {
+              "category": "social",
+              "excerpt": "Eddie Bauer stores have already started liquidation sales, with closings expected to wrap up by the end of April",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999353401884279,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...The operating entity is Eddie Bauer LLC, a portion of the holding company Catalyst Brands, which licenses the rights to operate Eddie Bauer stores in North America, Business Insider reported. The bankruptcy does not affect Authentic Brands Group and SPARC Group LLC, which own the brand and the intellectual property, according to The Street. Eddie Bauer stores have already started liquidation sales, with closings expected to wrap up by the end of April, Business Insider reported. An auction scheduled for March 6 to sell all or part of the business was canceled after no qualified bids were submitted...."
+            },
+            {
               "category": "governance",
               "excerpt": "Eddie Bauer LLC, a portion of the holding company Catalyst Brands, which licenses the rights to operate Eddie Bauer stores in North America",
               "relevance_score": 1.0,
@@ -388,24 +526,6 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...The bankruptcy does not affect Authentic Brands Group and SPARC Group LLC, which own the brand and the intellectual property, according to The Street. Eddie Bauer stores have already started liquidation sales, with closings expected to wrap up by the end of April, Business Insider reported. An auction scheduled for March 6 to sell all or part of the business was canceled after no qualified bids were submitted. \u201cThe debtors will continue store-closing sales at all of their brick-and-mortar locations unless and until a more value-maximizing transaction becomes available,\u201d the company said in court documents."
-            },
-            {
-              "category": "social",
-              "excerpt": "Eddie Bauer is shutting down almost 200 stores in North America after failing to find a buyer for the company that operates the locations.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999722641186148,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Eddie Bauer is shutting down almost 200 stores in North America after failing to find a buyer for the company that operates the locations. The operating entity is Eddie Bauer LLC, a portion of the holding company Catalyst Brands, which licenses the rights to operate Eddie Bauer stores in North America, Business Insider reported...."
-            },
-            {
-              "category": "social",
-              "excerpt": "Eddie Bauer stores have already started liquidation sales, with closings expected to wrap up by the end of April",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999353401884279,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...The operating entity is Eddie Bauer LLC, a portion of the holding company Catalyst Brands, which licenses the rights to operate Eddie Bauer stores in North America, Business Insider reported. The bankruptcy does not affect Authentic Brands Group and SPARC Group LLC, which own the brand and the intellectual property, according to The Street. Eddie Bauer stores have already started liquidation sales, with closings expected to wrap up by the end of April, Business Insider reported. An auction scheduled for March 6 to sell all or part of the business was canceled after no qualified bids were submitted...."
             }
           ],
           "confidence": 0.9,
@@ -1108,6 +1228,24 @@
           },
           "evidence": [
             {
+              "category": "digital_transformation",
+              "excerpt": "Reconsidered is supported by resale platform Archive and Tersus Solutions, which provides cleaning, fulfilment and warehousing solutions for the scheme",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999108599315614,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "\u201cWe\u2019ve seen an influx of new customers come to us through Reconsidered, so we\u2019re excited to continue offering them even more options through our expansion into the apparel category.\u201d Reconsidered is supported by resale platform Archive and Tersus Solutions, which provides cleaning, fulfilment and warehousing solutions for the scheme. \u201cWith Reconsidered seeing strong engagement and continued growth, New Balance expanding into apparel is a natural next step,\u201d added Emily Gittins, CEO of Archive...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "building systems to help keep products in circulation at scale and proving that resale can be core to how a modern brand operates",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9993579043877951,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...\u201cWith Reconsidered seeing strong engagement and continued growth, New Balance expanding into apparel is a natural next step,\u201d added Emily Gittins, CEO of Archive. \u201cWe\u2019re proud to work with a brand that\u2019s investing for the long term, building systems to help keep products in circulation at scale and proving that resale can be core to how a modern brand operates.\u201d"
+            },
+            {
               "category": "environmental",
               "excerpt": "Reconsider, which launched two years ago and has already helped to circulate 100,000 pairs of new Balance shoes",
               "relevance_score": 1.0,
@@ -1133,24 +1271,6 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...Apparel is not currently available for trade in. \u201cReconsidered has been an impactful platform for New Balance consumers to access popular, like-new or gently worn styles while helping to extend the life of our footwear,\u201d Tracy Knauer, vice president of North America, marketing and direct to consumer, at New Balance explained."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "Reconsidered is supported by resale platform Archive and Tersus Solutions, which provides cleaning, fulfilment and warehousing solutions for the scheme",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999108599315614,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "\u201cWe\u2019ve seen an influx of new customers come to us through Reconsidered, so we\u2019re excited to continue offering them even more options through our expansion into the apparel category.\u201d Reconsidered is supported by resale platform Archive and Tersus Solutions, which provides cleaning, fulfilment and warehousing solutions for the scheme. \u201cWith Reconsidered seeing strong engagement and continued growth, New Balance expanding into apparel is a natural next step,\u201d added Emily Gittins, CEO of Archive...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "building systems to help keep products in circulation at scale and proving that resale can be core to how a modern brand operates",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9993579043877951,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...\u201cWith Reconsidered seeing strong engagement and continued growth, New Balance expanding into apparel is a natural next step,\u201d added Emily Gittins, CEO of Archive. \u201cWe\u2019re proud to work with a brand that\u2019s investing for the long term, building systems to help keep products in circulation at scale and proving that resale can be core to how a modern brand operates.\u201d"
             }
           ],
           "confidence": 0.9,
@@ -1262,24 +1382,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "a greater collaboration with law enforcement has already led to multiple arrests in 2026 alone",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998865444859194,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...This is not the first time they have faced organized retail crime. However, they added that a greater collaboration with law enforcement has already led to multiple arrests in 2026 alone. The source also stated that Lululemon is continuing to enhance its security measures, including the use of advanced technology and individuals on hand to monitor potential robberies in real time...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "We take retail crime seriously and work alongside law enforcement partners to respond to incidents and support investigations",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998288088843645,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...\u201cThe safety and well-being of our people, guests, and the communities we serve is our top priority. We take retail crime seriously and work alongside law enforcement partners to respond to incidents and support investigations,\u201d a spokesperson said. In this case, all three individuals were seen wearing dark-colored clothing and hooded sweatshirts...."
-            },
-            {
               "category": "social",
               "excerpt": "Lululemon is continuing to enhance its security measures, including the use of advanced technology and individuals on hand to monitor potential robberies in real time",
               "relevance_score": 1.0,
@@ -1296,6 +1398,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...The source also stated that Lululemon is continuing to enhance its security measures, including the use of advanced technology and individuals on hand to monitor potential robberies in real time. \u201cThe safety and well-being of our people, guests, and the communities we serve is our top priority. We take retail crime seriously and work alongside law enforcement partners to respond to incidents and support investigations,\u201d a spokesperson said...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "a greater collaboration with law enforcement has already led to multiple arrests in 2026 alone",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998865444859194,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...This is not the first time they have faced organized retail crime. However, they added that a greater collaboration with law enforcement has already led to multiple arrests in 2026 alone. The source also stated that Lululemon is continuing to enhance its security measures, including the use of advanced technology and individuals on hand to monitor potential robberies in real time...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "We take retail crime seriously and work alongside law enforcement partners to respond to incidents and support investigations",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998288088843645,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...\u201cThe safety and well-being of our people, guests, and the communities we serve is our top priority. We take retail crime seriously and work alongside law enforcement partners to respond to incidents and support investigations,\u201d a spokesperson said. In this case, all three individuals were seen wearing dark-colored clothing and hooded sweatshirts...."
             },
             {
               "category": "digital_transformation",
@@ -1525,24 +1645,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "Eddie Bauer's store operator filed for Chapter 11 bankruptcy protection on Feb. 9, citing declining sales, supply chain problems and rising operating costs",
-              "relevance_score": 0.9048235850900118,
-              "rerank_score": 0.999956099574017,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "The collapse of the sale process is the clearest sign yet that Eddie Bauer's brick-and-mortar business may be at the end of the trail.\n\nThe Seattle-founded retailer's store operator filed for Chapter ..."
-            },
-            {
-              "category": "governance",
-              "excerpt": "It was the third bankruptcy filing tied to Eddie Bauer's retail operations since 2003",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999410402693042,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...The Seattle-founded retailer's store operator filed for Chapter 11 bankruptcy protection on Feb. 9, citing declining sales, supply chain problems and rising operating costs. It was the third bankruptcy filing tied to Eddie Bauer's retail operations since 2003. \"This is not an easy decision,\" Marc Rosen, chief executive of Catalyst Brands - the company that holds the license to operate Eddie Bauer stores in the United States and Canada - said in a statement...."
-            },
-            {
               "category": "social",
               "excerpt": "Eddie Bauer LLC, which operates the brand's U.S. and Canadian stores, said it received no qualified bids for its assets by a March 3 deadline",
               "relevance_score": 1.0,
@@ -1559,78 +1661,28 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...For shoppers in California and across the country, the clock is ticking. Eddie Bauer said gift cards and loyalty credits will no longer be accepted after Thursday, and all sales are final, with no returns or exchanges. The shutdown would affect about 150 stores in 40 U.S. states and 24 stores in six Canadian provinces, according to RCS Real Estate Advisors, the brokerage hired to market roughly 174 store leases."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Eddie Bauer's store operator filed for Chapter 11 bankruptcy protection on Feb. 9, citing declining sales, supply chain problems and rising operating costs",
+              "relevance_score": 0.9048235850900118,
+              "rerank_score": 0.999956099574017,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "The collapse of the sale process is the clearest sign yet that Eddie Bauer's brick-and-mortar business may be at the end of the trail.\n\nThe Seattle-founded retailer's store operator filed for Chapter ..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "It was the third bankruptcy filing tied to Eddie Bauer's retail operations since 2003",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999410402693042,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...The Seattle-founded retailer's store operator filed for Chapter 11 bankruptcy protection on Feb. 9, citing declining sales, supply chain problems and rising operating costs. It was the third bankruptcy filing tied to Eddie Bauer's retail operations since 2003. \"This is not an easy decision,\" Marc Rosen, chief executive of Catalyst Brands - the company that holds the license to operate Eddie Bauer stores in the United States and Canada - said in a statement...."
             }
           ],
           "confidence": 0.9,
           "reasoning": "This is clearly about Eddie Bauer the outdoor apparel company. The bankruptcy and store closures represent significant governance failures (third bankruptcy since 2003) and negative social impact (job losses from 174 store closures across North America)."
-        }
-      ]
-    },
-    {
-      "id": "c90fda0e-4125-4039-8725-734b58d8682e",
-      "title": "Are all Eddie Bauer stores closing ? Here what we know . ",
-      "url": "https://www.aol.com/articles/eddie-bauer-stores-closing-heres-192624640.html",
-      "source_name": "aol.com",
-      "published_at": "2026-03-07T20:15:00+00:00",
-      "published_date": "2026-03-07",
-      "brands": ["Eddie Bauer"],
-      "categories": ["governance"],
-      "brand_details": [
-        {
-          "brand": "Eddie Bauer",
-          "categories": {
-            "environmental": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": true,
-              "sentiment": -1,
-              "sentiment_label": "negative"
-            },
-            "digital_transformation": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            }
-          },
-          "evidence": [
-            {
-              "category": "governance",
-              "excerpt": "All Eddie Bauer stores are on the verge of closing after the clothing retailer failed to find a buyer as it navigates Chapter 11 bankruptcy",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999748064588265,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "All Eddie Bauer stores are on the verge of closing after the clothing retailer failed to find a buyer as it navigates Chapter 11 bankruptcy, according to court documents filed in early March. Eddie Bauer LLC, the operator of Eddie Bauer stores in the United States and Canada, and a licensee of the Eddie Bauer brand, could not find a satisfactory bidder for its assets by its March 3 deadline, according to a notice filed in the U.S. Bankruptcy Court of New Jersey...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "The Feb. 9 filing marks the third time the retailer has filed for bankruptcy, with the other two times occurring in 2003 and 2009.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999291728100242,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "The Feb. 9 filing marks the third time the retailer has filed for bankruptcy, with the other two times occurring in 2003 and 2009. \"This is not an easy decision,\" Marc Rosen, CEO of Catalyst Brands, said in a statement...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "Eddie Bauer LLC, the operator of Eddie Bauer stores in the United States and Canada, and a licensee of the Eddie Bauer brand, could not find a satisfactory bidder for its assets by its March 3 deadline",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999089859102153,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "All Eddie Bauer stores are on the verge of closing after the clothing retailer failed to find a buyer as it navigates Chapter 11 bankruptcy, according to court documents filed in early March. Eddie Bauer LLC, the operator of Eddie Bauer stores in the United States and Canada, and a licensee of the Eddie Bauer brand, could not find a satisfactory bidder for its assets by its March 3 deadline, according to a notice filed in the U.S. Bankruptcy Court of New Jersey. Since the retailer had no qualified bids for its remaining assets, the auction set for March 6 was canceled...."
-            }
-          ],
-          "confidence": 0.9,
-          "reasoning": "This is clearly about Eddie Bauer the outdoor apparel retailer. The article reports on corporate governance issues including the third bankruptcy filing and failed asset sale, indicating poor financial management and corporate oversight. This is negative governance news about the company's inability to maintain financial stability."
         }
       ]
     },
@@ -1717,6 +1769,74 @@
           ],
           "confidence": 0.9,
           "reasoning": "The article is about Eddie Bauer's Chapter 11 bankruptcy filing and mass store closures. This qualifies for Social (negative impact on communities losing stores and workers facing job losses) and Governance (corporate financial distress requiring restructuring, third bankruptcy in 20+ years indicates governance challenges)."
+        }
+      ]
+    },
+    {
+      "id": "c90fda0e-4125-4039-8725-734b58d8682e",
+      "title": "Are all Eddie Bauer stores closing ? Here what we know . ",
+      "url": "https://www.aol.com/articles/eddie-bauer-stores-closing-heres-192624640.html",
+      "source_name": "aol.com",
+      "published_at": "2026-03-07T20:15:00+00:00",
+      "published_date": "2026-03-07",
+      "brands": ["Eddie Bauer"],
+      "categories": ["governance"],
+      "brand_details": [
+        {
+          "brand": "Eddie Bauer",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "governance",
+              "excerpt": "All Eddie Bauer stores are on the verge of closing after the clothing retailer failed to find a buyer as it navigates Chapter 11 bankruptcy",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999748064588265,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "All Eddie Bauer stores are on the verge of closing after the clothing retailer failed to find a buyer as it navigates Chapter 11 bankruptcy, according to court documents filed in early March. Eddie Bauer LLC, the operator of Eddie Bauer stores in the United States and Canada, and a licensee of the Eddie Bauer brand, could not find a satisfactory bidder for its assets by its March 3 deadline, according to a notice filed in the U.S. Bankruptcy Court of New Jersey...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "The Feb. 9 filing marks the third time the retailer has filed for bankruptcy, with the other two times occurring in 2003 and 2009.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999291728100242,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "The Feb. 9 filing marks the third time the retailer has filed for bankruptcy, with the other two times occurring in 2003 and 2009. \"This is not an easy decision,\" Marc Rosen, CEO of Catalyst Brands, said in a statement...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Eddie Bauer LLC, the operator of Eddie Bauer stores in the United States and Canada, and a licensee of the Eddie Bauer brand, could not find a satisfactory bidder for its assets by its March 3 deadline",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999089859102153,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "All Eddie Bauer stores are on the verge of closing after the clothing retailer failed to find a buyer as it navigates Chapter 11 bankruptcy, according to court documents filed in early March. Eddie Bauer LLC, the operator of Eddie Bauer stores in the United States and Canada, and a licensee of the Eddie Bauer brand, could not find a satisfactory bidder for its assets by its March 3 deadline, according to a notice filed in the U.S. Bankruptcy Court of New Jersey. Since the retailer had no qualified bids for its remaining assets, the auction set for March 6 was canceled...."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "This is clearly about Eddie Bauer the outdoor apparel retailer. The article reports on corporate governance issues including the third bankruptcy filing and failed asset sale, indicating poor financial management and corporate oversight. This is negative governance news about the company's inability to maintain financial stability."
         }
       ]
     },
@@ -1849,6 +1969,53 @@
       "categories": ["environmental", "governance"],
       "brand_details": [
         {
+          "brand": "Under Armour",
+          "categories": {
+            "environmental": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "governance",
+              "excerpt": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998988170088464,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers. The integration of smart textiles, such as temperature-regulating fabrics and odor-control technology, further differentiates premium product lines...."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998988170088464,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers. The integration of smart textiles, such as temperature-regulating fabrics and odor-control technology, further differentiates premium product lines...."
+            }
+          ],
+          "confidence": 0.8,
+          "reasoning": "Under Armour is mentioned alongside Nike and Adidas as incorporating sustainable manufacturing processes (Environmental) and transparent supply chains (Governance). Same general industry reporting context as the other two brands."
+        },
+        {
           "brand": "Adidas",
           "categories": {
             "environmental": {
@@ -1894,53 +2061,6 @@
           ],
           "confidence": 0.8,
           "reasoning": "Adidas is mentioned alongside Nike and Under Armour as incorporating sustainable manufacturing processes (Environmental) and transparent supply chains (Governance). Same general industry reporting context as Nike."
-        },
-        {
-          "brand": "Under Armour",
-          "categories": {
-            "environmental": {
-              "applies": true,
-              "sentiment": 1,
-              "sentiment_label": "positive"
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": true,
-              "sentiment": 1,
-              "sentiment_label": "positive"
-            },
-            "digital_transformation": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            }
-          },
-          "evidence": [
-            {
-              "category": "environmental",
-              "excerpt": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998988170088464,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers. The integration of smart textiles, such as temperature-regulating fabrics and odor-control technology, further differentiates premium product lines...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998988170088464,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers. The integration of smart textiles, such as temperature-regulating fabrics and odor-control technology, further differentiates premium product lines...."
-            }
-          ],
-          "confidence": 0.8,
-          "reasoning": "Under Armour is mentioned alongside Nike and Adidas as incorporating sustainable manufacturing processes (Environmental) and transparent supply chains (Governance). Same general industry reporting context as the other two brands."
         },
         {
           "brand": "Nike",
@@ -2598,33 +2718,6 @@
           },
           "evidence": [
             {
-              "category": "environmental",
-              "excerpt": "unspun's manufacturing model fundamentally transforms how and where products are made \u2014 unlocking meaningful financial benefits and significantly reducing the industry's carbon footprint",
-              "relevance_score": 0.8759448229135532,
-              "rerank_score": 0.9999106602060859,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "\u201cI have spent a good part of my career working with some of the world\u2019s leading apparel and footwear brands and have seen firsthand the economic and environmental costs of excessively long lead times ..."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "This speed-based model lowers inventory risk, reduces overproduction and the apparel supply chain's carbon footprint",
-              "relevance_score": 0.845685878910247,
-              "rerank_score": 0.9995203949615432,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "...unspun\u2019s localized, automated approach turns manufacturing into responsive infrastructure, enabling production closer to when and where demand actually occurs. This speed-based model lowers inventory risk, reduces overproduction and the apparel supply chain\u2019s carbon footprint, and can improve gross margins by 400\u2013500 bps through fewer markdowns and write-offs."
-            },
-            {
-              "category": "governance",
-              "excerpt": "Arne spent over a decade at The North Face, where, as Global Brand President, he led the brand through a period of significant global growth, cementing its position as one of the world's leading outdoor companies",
-              "relevance_score": 0.9147854849784485,
-              "rerank_score": 0.9999494613271678,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Arne spent over a decade at The North Face, where, as Global Brand President, he led the brand through a period of significant global growth, cementing its position as one of the world\u2019s leading outdoor companies. He later became CEO of Boardriders, the global action sports and lifestyle company behind Quiksilver, Billabong, and Roxy, leading the business through its acquisition by Authentic Brands Group for approximately $1.25 billion...."
-            },
-            {
               "category": "digital_transformation",
               "excerpt": "unspun is rebuilding apparel manufacturing for speed and efficiency \u2014 replacing long, offshore production cycles with software and hardware-driven systems",
               "relevance_score": 1.0,
@@ -2641,6 +2734,33 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...unspun is rebuilding apparel manufacturing for speed and efficiency \u2014 replacing long, offshore production cycles with software and hardware-driven systems that enable garments to be produced closer to demand. Its proprietary 3D weaving technology, Vega\u2122, weaves semi-finished products directly from yarn in minutes, dramatically shortening supply chains and reducing waste."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Arne spent over a decade at The North Face, where, as Global Brand President, he led the brand through a period of significant global growth, cementing its position as one of the world's leading outdoor companies",
+              "relevance_score": 0.9147854849784485,
+              "rerank_score": 0.9999494613271678,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Arne spent over a decade at The North Face, where, as Global Brand President, he led the brand through a period of significant global growth, cementing its position as one of the world\u2019s leading outdoor companies. He later became CEO of Boardriders, the global action sports and lifestyle company behind Quiksilver, Billabong, and Roxy, leading the business through its acquisition by Authentic Brands Group for approximately $1.25 billion...."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "unspun's manufacturing model fundamentally transforms how and where products are made \u2014 unlocking meaningful financial benefits and significantly reducing the industry's carbon footprint",
+              "relevance_score": 0.8759448229135532,
+              "rerank_score": 0.9999106602060859,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "\u201cI have spent a good part of my career working with some of the world\u2019s leading apparel and footwear brands and have seen firsthand the economic and environmental costs of excessively long lead times ..."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "This speed-based model lowers inventory risk, reduces overproduction and the apparel supply chain's carbon footprint",
+              "relevance_score": 0.845685878910247,
+              "rerank_score": 0.9995203949615432,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...unspun\u2019s localized, automated approach turns manufacturing into responsive infrastructure, enabling production closer to when and where demand actually occurs. This speed-based model lowers inventory risk, reduces overproduction and the apparel supply chain\u2019s carbon footprint, and can improve gross margins by 400\u2013500 bps through fewer markdowns and write-offs."
             }
           ],
           "confidence": 0.8,
@@ -3051,6 +3171,24 @@
           },
           "evidence": [
             {
+              "category": "social",
+              "excerpt": "Eddie Bauer customers must redeem gift cards and loyalty points by March 12 as the retail operator enters bankruptcy proceedings and closes 180 stores across the US and Canada.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.999977278730212,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Eddie Bauer customers must redeem gift cards and loyalty points by March 12 as the retail operator enters bankruptcy proceedings and closes 180 stores across the US and Canada. Shoppers need to act immediately as gift cards are set to become worthless in just weeks after a major retailer announced bankruptcy...."
+            },
+            {
+              "category": "social",
+              "excerpt": "The business had approximately 379 employees nationwide when it filed for bankruptcy protection.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.996746713926091,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...\"\n\nCourt filings from Ontario show 24 of the company's 175 North American stores are situated in Canada. The business had approximately 379 employees nationwide when it filed for bankruptcy protection. The application does not affect Eddie Bauer's digital retail and wholesale operations, which are run by a distinct organization called Outdoor 5 and have not filed for creditor protection...."
+            },
+            {
               "category": "governance",
               "excerpt": "Catalyst Brands, which operates Eddie Bauer stores, is trying to sell the business as it closes its American and Canadian locations.",
               "relevance_score": 1.0,
@@ -3076,24 +3214,6 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...\"This is not an easy decision,\" Rosen admitted about the bankruptcy filing, telling the Associated Press. \"However, this restructuring is the best way to optimize value for the retail company's stakeholders and also ensure Catalyst Brands remains profitable and with strong liquidity and cash flow. \"\n\nCourt filings from Ontario show 24 of the company's 175 North American stores are situated in Canada. The business had approximately 379 employees nationwide when it filed for bankruptcy protection...."
-            },
-            {
-              "category": "social",
-              "excerpt": "Eddie Bauer customers must redeem gift cards and loyalty points by March 12 as the retail operator enters bankruptcy proceedings and closes 180 stores across the US and Canada.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.999977278730212,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Eddie Bauer customers must redeem gift cards and loyalty points by March 12 as the retail operator enters bankruptcy proceedings and closes 180 stores across the US and Canada. Shoppers need to act immediately as gift cards are set to become worthless in just weeks after a major retailer announced bankruptcy...."
-            },
-            {
-              "category": "social",
-              "excerpt": "The business had approximately 379 employees nationwide when it filed for bankruptcy protection.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.996746713926091,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...\"\n\nCourt filings from Ontario show 24 of the company's 175 North American stores are situated in Canada. The business had approximately 379 employees nationwide when it filed for bankruptcy protection. The application does not affect Eddie Bauer's digital retail and wholesale operations, which are run by a distinct organization called Outdoor 5 and have not filed for creditor protection...."
             }
           ],
           "confidence": 0.9,
@@ -3283,71 +3403,6 @@
           "reasoning": "Nike is identified as a leader in sustainability initiatives and digital transformation. The article discusses environmental benefits through recycled materials and energy-efficient manufacturing, plus digital innovation through blockchain and RFID technologies."
         },
         {
-          "brand": "Adidas",
-          "categories": {
-            "environmental": {
-              "applies": true,
-              "sentiment": 1,
-              "sentiment_label": "positive"
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "digital_transformation": {
-              "applies": true,
-              "sentiment": 1,
-              "sentiment_label": "positive"
-            }
-          },
-          "evidence": [
-            {
-              "category": "digital_transformation",
-              "excerpt": "brands that can leverage digitalization, sustainability and celebrity collaborations will be best able to cater to diverse consumer preferences",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999223776297491,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "The increasing integration of sportswear into everyday fashion has evolved what was once a niche athletic footwear segment into a major lifestyle category. In addition, brands that can leverage digitalization, sustainability and celebrity collaborations will be best able to cater to diverse consumer preferences, which in turn will drive innovation. Moreover, the influence of celebrity endorsements, sports collaborations and limited-edition releases have helped to enhance brand visibility and customer loyalty...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "anti-counterfeiting technologies, such as blockchain tracking and RFID tagging, can be used to ensure product authenticity",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9996450017919903,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Technical advancements in design and manufacturing were also cited as representing new opportunities for expansion. Moreover, anti-counterfeiting technologies, such as blockchain tracking and RFID tagging, can be used to ensure product authenticity. \u201cThe combination of comfort, functionality, and fashion will continue to drive consumer interest, ensuring the sneakers market remains one of the most dynamic sectors in the global footwear industry,\u201d ResearchAndMarket said...."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "Brands such as Nike, Adidas and Puma are expected to lead through and sustainability.",
-              "relevance_score": 0.7870133696896093,
-              "rerank_score": 0.9998642271203562,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Brands such as Nike, Adidas and Puma are expected to lead through and . And while there will be challenges from increased competition, counterfeit products and fluctuating raw material prices, opportunities in emerging markets will ensure continued growth of the sneaker category. Technical advancements in design and manufacturing were also cited as representing new opportunities for expansion...."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "Investments in recycled fabrics, biodegradable soles and energy-efficient manufacturing methods help to reduce carbon footprints.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.929060467882787,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...The report noted that sustainability has become a defining feature of the modern sneaker market, with consumers increasingly preferring eco-friendly materials and ethical production practices. Investments in recycled fabrics, biodegradable soles and energy-efficient manufacturing methods help to reduce carbon footprints. And the rise in customization options and design innovations are allowing brands to cater to individual style preferences."
-            }
-          ],
-          "confidence": 0.8,
-          "reasoning": "Adidas is identified as a leader in sustainability initiatives and digital transformation alongside Nike and Puma. The article discusses environmental benefits and digital innovation that apply to all three brands mentioned as leaders."
-        },
-        {
           "brand": "Puma",
           "categories": {
             "environmental": {
@@ -3411,6 +3466,71 @@
           ],
           "confidence": 0.8,
           "reasoning": "Puma is identified as a leader in sustainability initiatives and digital transformation alongside Nike and Adidas. The article discusses environmental benefits and digital innovation that apply to all three brands mentioned as leaders."
+        },
+        {
+          "brand": "Adidas",
+          "categories": {
+            "environmental": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            }
+          },
+          "evidence": [
+            {
+              "category": "digital_transformation",
+              "excerpt": "brands that can leverage digitalization, sustainability and celebrity collaborations will be best able to cater to diverse consumer preferences",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999223776297491,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "The increasing integration of sportswear into everyday fashion has evolved what was once a niche athletic footwear segment into a major lifestyle category. In addition, brands that can leverage digitalization, sustainability and celebrity collaborations will be best able to cater to diverse consumer preferences, which in turn will drive innovation. Moreover, the influence of celebrity endorsements, sports collaborations and limited-edition releases have helped to enhance brand visibility and customer loyalty...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "anti-counterfeiting technologies, such as blockchain tracking and RFID tagging, can be used to ensure product authenticity",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9996450017919903,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Technical advancements in design and manufacturing were also cited as representing new opportunities for expansion. Moreover, anti-counterfeiting technologies, such as blockchain tracking and RFID tagging, can be used to ensure product authenticity. \u201cThe combination of comfort, functionality, and fashion will continue to drive consumer interest, ensuring the sneakers market remains one of the most dynamic sectors in the global footwear industry,\u201d ResearchAndMarket said...."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "Brands such as Nike, Adidas and Puma are expected to lead through and sustainability.",
+              "relevance_score": 0.7870133696896093,
+              "rerank_score": 0.9998642271203562,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Brands such as Nike, Adidas and Puma are expected to lead through and . And while there will be challenges from increased competition, counterfeit products and fluctuating raw material prices, opportunities in emerging markets will ensure continued growth of the sneaker category. Technical advancements in design and manufacturing were also cited as representing new opportunities for expansion...."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "Investments in recycled fabrics, biodegradable soles and energy-efficient manufacturing methods help to reduce carbon footprints.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.929060467882787,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...The report noted that sustainability has become a defining feature of the modern sneaker market, with consumers increasingly preferring eco-friendly materials and ethical production practices. Investments in recycled fabrics, biodegradable soles and energy-efficient manufacturing methods help to reduce carbon footprints. And the rise in customization options and design innovations are allowing brands to cater to individual style preferences."
+            }
+          ],
+          "confidence": 0.8,
+          "reasoning": "Adidas is identified as a leader in sustainability initiatives and digital transformation alongside Nike and Puma. The article discusses environmental benefits and digital innovation that apply to all three brands mentioned as leaders."
         }
       ]
     },
@@ -3518,6 +3638,15 @@
           },
           "evidence": [
             {
+              "category": "social",
+              "excerpt": "Puma was also in the process of cutting around 1,400 corporate roles. Around 800 jobs have already gone and a further 600 will be by the end of this year.",
+              "relevance_score": 0.888184077942876,
+              "rerank_score": 0.9997386968480222,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Over the last two quarters of 2025, the company has drawn back from what it calls \u201cundesirable\u201d wholesale business and reduced discounts in its own direct-to-consumer channels. It has brought back inv..."
+            },
+            {
               "category": "governance",
               "excerpt": "In January, Chinese sportswear brand Anta struck a deal to become Puma's biggest shareholder and is promising to help the German sportswear maker improve sales in China.",
               "relevance_score": 0.9409848212773597,
@@ -3543,15 +3672,6 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "Over a montage of sports and a stirring soundtrack, a female narrator told viewers, \u201cwe\u2019ve been in this game for over 75 years, it\u2019s fair to say we have what it takes \u2026 but the truth is we\u2019ve also lea..."
-            },
-            {
-              "category": "social",
-              "excerpt": "Puma was also in the process of cutting around 1,400 corporate roles. Around 800 jobs have already gone and a further 600 will be by the end of this year.",
-              "relevance_score": 0.888184077942876,
-              "rerank_score": 0.9997386968480222,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Over the last two quarters of 2025, the company has drawn back from what it calls \u201cundesirable\u201d wholesale business and reduced discounts in its own direct-to-consumer channels. It has brought back inv..."
             }
           ],
           "confidence": 0.9,
@@ -3595,33 +3715,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "plans to close several Maine stores after a recent bankruptcy filing",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999394418173257,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Many of us across the state of Maine have been hit with some bad news recently as it was announced that we must say goodbye to our beloved outdoor brand, Eddie Bauer. They officially announced, as per Portland Press Herald, plans to close several Maine stores after a recent bankruptcy filing. This is leaving many of us shocked and sad...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "long standing brand names have to close their doors due to rising costs and bankruptcy",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998085739838907,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "We don\u2019t know as of yet when the exact closing date will be but the news is showing yet another shift in the retail world, where long standing brand names have to close their doors due to rising costs and bankruptcy. So for now, if you are a Eddie Bauer shopper, you may want to hop on over there to grab what you\u2019d like...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "shut the doors of about 175 locations across the United States and Canada",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9991405828457389,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...This is leaving many of us shocked and sad. This store has been a staple in Maine, founded more than a century ago and will now shut the doors of about 175 locations across the United States and Canada. Sadly, Maine is on that list...."
-            },
-            {
               "category": "social",
               "excerpt": "Many of us across the state of Maine have been hit with some bad news recently",
               "relevance_score": 1.0,
@@ -3647,6 +3740,33 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...They officially announced, as per Portland Press Herald, plans to close several Maine stores after a recent bankruptcy filing. This is leaving many of us shocked and sad. This store has been a staple in Maine, founded more than a century ago and will now shut the doors of about 175 locations across the United States and Canada...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "plans to close several Maine stores after a recent bankruptcy filing",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999394418173257,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Many of us across the state of Maine have been hit with some bad news recently as it was announced that we must say goodbye to our beloved outdoor brand, Eddie Bauer. They officially announced, as per Portland Press Herald, plans to close several Maine stores after a recent bankruptcy filing. This is leaving many of us shocked and sad...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "long standing brand names have to close their doors due to rising costs and bankruptcy",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998085739838907,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "We don\u2019t know as of yet when the exact closing date will be but the news is showing yet another shift in the retail world, where long standing brand names have to close their doors due to rising costs and bankruptcy. So for now, if you are a Eddie Bauer shopper, you may want to hop on over there to grab what you\u2019d like...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "shut the doors of about 175 locations across the United States and Canada",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9991405828457389,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...This is leaving many of us shocked and sad. This store has been a staple in Maine, founded more than a century ago and will now shut the doors of about 175 locations across the United States and Canada. Sadly, Maine is on that list...."
             }
           ],
           "confidence": 0.9,
@@ -4121,24 +4241,6 @@
           },
           "evidence": [
             {
-              "category": "digital_transformation",
-              "excerpt": "Industry experts recommend several measures that companies like Adidas should implement \u2014 or verify are already in place \u2014 to mitigate third-party risk. These include requiring vendors to adhere to specific security frameworks such as SOC 2 or ISO 27001, mandating multi-factor authentication for all access to shared systems",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999611487772032,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Industry experts recommend several measures that companies like Adidas should implement \u2014 or verify are already in place \u2014 to mitigate third-party risk. These include requiring vendors to adhere to specific security frameworks such as SOC 2 or ISO 27001, mandating multi-factor authentication for all access to shared systems, conducting regular security audits of vendor environments, and establishing contractual obligations for breach notification timelines. Some organizations have gone further, implementing zero-trust architectures that limit vendor access to only the specific data and systems necessary for their function...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "The breach underscores a fundamental challenge facing large enterprises: no matter how strong internal security measures may be, the chain is only as strong as its weakest vendor.",
-              "relevance_score": 0.8538393854982191,
-              "rerank_score": 0.9994915515727488,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "For Adidas specifically, this is not the first time the company has dealt with a data security incident. In 2018, the company disclosed a breach affecting millions of customers on its U.S. website, wh..."
-            },
-            {
               "category": "governance",
               "excerpt": "A hacker operating under the alias 'Sp1d3r' has claimed responsibility for breaching systems connected to Adidas, allegedly exfiltrating a massive trove of customer data that includes millions of records.",
               "relevance_score": 0.924601468947603,
@@ -4164,6 +4266,24 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "However, the speed and transparency of Adidas\u2019s response have drawn scrutiny. Consumer advocates have pointed out that the company\u2019s initial statements were carefully worded to minimize perceived damage, emphasizing what was not stolen (passwords and payment data) rather than providing a full accounting of what was compromised. Email addresses and phone numbers, while not as immediately dangerous as financial credentials, are highly valuable to cybercriminals for phishing campaigns, SIM-swapping attacks, and social engineering schemes...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "Industry experts recommend several measures that companies like Adidas should implement \u2014 or verify are already in place \u2014 to mitigate third-party risk. These include requiring vendors to adhere to specific security frameworks such as SOC 2 or ISO 27001, mandating multi-factor authentication for all access to shared systems",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999611487772032,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Industry experts recommend several measures that companies like Adidas should implement \u2014 or verify are already in place \u2014 to mitigate third-party risk. These include requiring vendors to adhere to specific security frameworks such as SOC 2 or ISO 27001, mandating multi-factor authentication for all access to shared systems, conducting regular security audits of vendor environments, and establishing contractual obligations for breach notification timelines. Some organizations have gone further, implementing zero-trust architectures that limit vendor access to only the specific data and systems necessary for their function...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "The breach underscores a fundamental challenge facing large enterprises: no matter how strong internal security measures may be, the chain is only as strong as its weakest vendor.",
+              "relevance_score": 0.8538393854982191,
+              "rerank_score": 0.9994915515727488,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "For Adidas specifically, this is not the first time the company has dealt with a data security incident. In 2018, the company disclosed a breach affecting millions of customers on its U.S. website, wh..."
             }
           ],
           "confidence": 0.9,
