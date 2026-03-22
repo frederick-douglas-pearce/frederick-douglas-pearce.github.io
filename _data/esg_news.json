@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-21T14:00:32.017605+00:00",
+  "generated_at": "2026-03-22T14:00:33.989499+00:00",
   "total_articles": 467,
   "brands": [
     "361 Degrees",
@@ -41,11 +41,11 @@
   "categories": ["digital_transformation", "environmental", "governance", "social"],
   "scorecard": {
     "period_days": 14,
-    "period_start": "2026-03-07",
-    "period_end": "2026-03-21",
-    "articles_in_period": 24,
-    "articles_after_dedup": 18,
-    "duplicates_removed": 6,
+    "period_start": "2026-03-08",
+    "period_end": "2026-03-22",
+    "articles_in_period": 21,
+    "articles_after_dedup": 17,
+    "duplicates_removed": 4,
     "top_brands": [
       {
         "brand": "Lululemon",
@@ -91,12 +91,12 @@
     "bottom_brands": [
       {
         "brand": "Eddie Bauer",
-        "total": -3,
+        "total": -2,
         "environmental": 0,
         "social": -1,
-        "governance": -2,
+        "governance": -1,
         "digital_transformation": 0,
-        "article_count": 2
+        "article_count": 1
       }
     ],
     "all_brand_scores": [
@@ -160,12 +160,12 @@
       },
       {
         "brand": "Eddie Bauer",
-        "total": -3,
+        "total": -2,
         "environmental": 0,
         "social": -1,
-        "governance": -2,
+        "governance": -1,
         "digital_transformation": 0,
-        "article_count": 2
+        "article_count": 1
       }
     ]
   },
