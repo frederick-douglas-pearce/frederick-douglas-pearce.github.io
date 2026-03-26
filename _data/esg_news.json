@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-25T14:00:31.506523+00:00",
-  "total_articles": 483,
+  "generated_at": "2026-03-26T14:00:31.978370+00:00",
+  "total_articles": 489,
   "brands": [
     "361 Degrees",
     "ASICS",
@@ -41,11 +41,11 @@
   "categories": ["digital_transformation", "environmental", "governance", "social"],
   "scorecard": {
     "period_days": 14,
-    "period_start": "2026-03-11",
-    "period_end": "2026-03-25",
-    "articles_in_period": 35,
-    "articles_after_dedup": 24,
-    "duplicates_removed": 11,
+    "period_start": "2026-03-12",
+    "period_end": "2026-03-26",
+    "articles_in_period": 40,
+    "articles_after_dedup": 26,
+    "duplicates_removed": 14,
     "top_brands": [
       {
         "brand": "Lululemon",
@@ -58,6 +58,16 @@
         "medal": "gold"
       },
       {
+        "brand": "Puma",
+        "total": 10,
+        "environmental": 4,
+        "social": 6,
+        "governance": 0,
+        "digital_transformation": 0,
+        "article_count": 4,
+        "medal": "silver"
+      },
+      {
         "brand": "Nike",
         "total": 9,
         "environmental": 4,
@@ -65,16 +75,6 @@
         "governance": -2,
         "digital_transformation": 2,
         "article_count": 8,
-        "medal": "silver"
-      },
-      {
-        "brand": "Puma",
-        "total": 8,
-        "environmental": 4,
-        "social": 4,
-        "governance": 0,
-        "digital_transformation": 0,
-        "article_count": 3,
         "medal": "bronze"
       }
     ],
@@ -101,6 +101,16 @@
         "medal": "gold"
       },
       {
+        "brand": "Puma",
+        "total": 10,
+        "environmental": 4,
+        "social": 6,
+        "governance": 0,
+        "digital_transformation": 0,
+        "article_count": 4,
+        "medal": "silver"
+      },
+      {
         "brand": "Nike",
         "total": 9,
         "environmental": 4,
@@ -108,26 +118,25 @@
         "governance": -2,
         "digital_transformation": 2,
         "article_count": 8,
-        "medal": "silver"
-      },
-      {
-        "brand": "Puma",
-        "total": 8,
-        "environmental": 4,
-        "social": 4,
-        "governance": 0,
-        "digital_transformation": 0,
-        "article_count": 3,
         "medal": "bronze"
       },
       {
         "brand": "Adidas",
         "total": 4,
-        "environmental": 4,
-        "social": 0,
+        "environmental": 2,
+        "social": 2,
         "governance": -2,
         "digital_transformation": 2,
         "article_count": 5
+      },
+      {
+        "brand": "Anta",
+        "total": 4,
+        "environmental": 0,
+        "social": 2,
+        "governance": 0,
+        "digital_transformation": 2,
+        "article_count": 1
       },
       {
         "brand": "New Balance",
@@ -168,6 +177,360 @@
     ]
   },
   "articles": [
+    {
+      "id": "03da7ae1-7d73-4067-912d-19c92a132c26",
+      "title": "ANTA Sports 2025 revenue surpasses 80 billion yuan , extending China market leadership -- China Economic Net",
+      "url": "http://en.ce.cn/main/latest/202603/t20260326_2858432.shtml",
+      "source_name": "en.ce.cn",
+      "published_at": "2026-03-26T03:15:00+00:00",
+      "published_date": "2026-03-26",
+      "brands": ["Anta"],
+      "categories": ["digital_transformation", "social"],
+      "brand_details": [
+        {
+          "brand": "Anta",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            }
+          },
+          "evidence": [
+            {
+              "category": "social",
+              "excerpt": "ANTA also reported total charitable donations of over 800 million yuan in 2025 from the group and the Hemin Foundation, bringing cumulative donations to more than 3.5 billion yuan.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999392138571813,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "ANTA also reported total charitable donations of over 800 million yuan in 2025 from the group and the Hemin Foundation, bringing cumulative donations to more than 3.5 billion yuan. \"The Group's revenue surpassed 80 billion yuan for the first time...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "The group's research and development expenditure rose to approximately 2.2 billion yuan during the year as it launched an 'AI365 Strategy' to integrate artificial intelligence tools across its value chain.",
+              "relevance_score": 0.8336237873441092,
+              "rerank_score": 0.996747605985167,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...Revenue from all other brands surged 59.2% to 17.00 billion yuan, with operating profit jumping 55.3% to 4.74 billion yuan. DESCENTE's retail sales surpassed 10 billion yuan for the first time in 2025, making it the group's third brand to reach the milestone after ANTA and FILA. The group's research and development expenditure rose to approximately 2.2 billion yuan during the year as it launched an \"AI365 Strategy\" to integrate artificial intelligence tools across its value chain."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "Article reports on ANTA's substantial charitable donations (Social category) and their AI integration strategy across operations (Digital Transformation category). The financial performance data and brand portfolio updates are business news without ESG implications."
+        }
+      ]
+    },
+    {
+      "id": "e2a719a4-42b6-4550-80ec-915cb6bd52b0",
+      "title": "adidas debuts adaptive running shoe for disabled athletes",
+      "url": "https://www.afaqs.com/news/advertising/adidas-debuts-adaptive-running-shoe-for-disabled-athletes-11263950",
+      "source_name": "afaqs.com",
+      "published_at": "2026-03-26T00:30:00+00:00",
+      "published_date": "2026-03-26",
+      "brands": ["Adidas"],
+      "categories": ["social"],
+      "brand_details": [
+        {
+          "brand": "Adidas",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "social",
+              "excerpt": "adidas has introduced what it describes as its 'first running shoe specifically designed for people with disabilities'\u2014marking a notable shift towards more inclusive product design",
+              "relevance_score": 0.9044044862886857,
+              "rerank_score": 0.999958753278294,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "adidas is stepping into a space the performance footwear industry has long overlooked. With the launch of the Supernova Rise 3 Adaptive, the brand has introduced what it describes as its \"first runnin..."
+            },
+            {
+              "category": "social",
+              "excerpt": "adidas partnered with GAMUT Management and worked with a broad set of users, including Paralympians such as Tracy Otto and Haven Shepherd, alongside individuals with mobility, sensory, and limb differences",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998220627413248,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Functional additions like heel loops with magnetic toggles further address ease of use, an area often ignored in performance footwear. To get there, adidas partnered with GAMUT Management and worked with a broad set of users, including Paralympians such as Tracy Otto and Haven Shepherd, alongside individuals with mobility, sensory, and limb differences. The goal wasn\u2019t simplification but usability \u2013 making a high-performance shoe that adapts to different bodies and needs...."
+            },
+            {
+              "category": "social",
+              "excerpt": "These include a wider fit, a step-in heel designed for hands-free entry, a low-pressure lacing system to minimise irritation, and tactile elements to support those with visual or sensory needs",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998097824724684,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "These include a wider fit, a step-in heel designed for hands-free entry, a low-pressure lacing system to minimise irritation, and tactile elements to support those with visual or sensory needs. Functional additions like heel loops with magnetic toggles further address ease of use, an area often ignored in performance footwear...."
+            }
+          ],
+          "confidence": 0.95,
+          "reasoning": "This is clearly about Adidas the sportswear company launching an adaptive running shoe. The article demonstrates strong Social ESG content through inclusive design for disabled athletes, accessibility features, and meaningful collaboration with Paralympic athletes and disability communities. This represents genuine social impact through product accessibility, not just marketing."
+        }
+      ]
+    },
+    {
+      "id": "ac32f68a-22c6-4c68-9e56-bd3fb114e69d",
+      "title": "Nike gaining traction in North America ahead of Q3 earnings , Bank of America says",
+      "url": "https://www.proactiveinvestors.com/companies/news/1089519/nike-gaining-traction-in-north-america-ahead-of-q3-earnings-bank-of-america-says-1089519.html",
+      "source_name": "proactiveinvestors.com",
+      "published_at": "2026-03-25T20:30:00+00:00",
+      "published_date": "2026-03-25",
+      "brands": ["Nike"],
+      "categories": ["environmental"],
+      "brand_details": [
+        {
+          "brand": "Nike",
+          "categories": {
+            "environmental": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "environmental",
+              "excerpt": "Nike has begun rolling out its 2026 World Cup fan and performance apparel, featuring Aero\u2011FIT, a new performance fabric made entirely from textile waste.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998854417092434,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...They added that there is \u201cpotential for Q4 gross margin stability as tariff mitigation ramps,\u201d as Nike has started importing products at a lower 10% tariff rate following the IEEPA ruling. On the product front, Nike has begun rolling out its 2026 World Cup fan and performance apparel, featuring Aero\u2011FIT, a new performance fabric made entirely from textile waste. Analysts expect this launch to bolster Q4 and early fiscal 2027 sales...."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "Article contains clear environmental ESG content about Nike's new sustainable fabric innovation made from textile waste. This represents a corporate sustainability initiative, not just a product feature mention, as it's part of a major product launch strategy."
+        }
+      ]
+    },
+    {
+      "id": "364fa662-c044-4786-a5e7-861aeccadeb4",
+      "title": "Nike Unveils Every Country 2026 World Cup Jersey Designs",
+      "url": "https://tvone.tv/1957295/nike-2026-world-cup-jersey-kits-designs/",
+      "source_name": "tvone.tv",
+      "published_at": "2026-03-25T19:30:00+00:00",
+      "published_date": "2026-03-25",
+      "brands": ["Nike"],
+      "categories": ["environmental"],
+      "brand_details": [
+        {
+          "brand": "Nike",
+          "categories": {
+            "environmental": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "environmental",
+              "excerpt": "they're made from 100% textile waste",
+              "relevance_score": 0.6634236414410571,
+              "rerank_score": 0.9827158757769094,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "The 2026 World Cup kicks off on June 11, and to get fans of every country primed to root for their squad, Nike has unveiled all its kits.\n\nThey include France, Croatia, T\u00fcrkiye, Poland, Nigeria, China..."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "Article mentions Nike's use of 100% textile waste in jersey production, which represents a positive environmental initiative in sustainable material usage. This is presented as an 'environmentally friendly component' of their product design."
+        }
+      ]
+    },
+    {
+      "id": "33ab846e-3df1-4ce8-8d72-1586210f0902",
+      "title": "Why Puma took its World Cup kit reveal to the streets of Brooklyn",
+      "url": "https://www.thedrum.com/news/not-a-theme-park-but-a-celebration-of-culture-puma-kicks-off-its-2026-world-cup",
+      "source_name": "thedrum.com",
+      "published_at": "2026-03-25T18:00:00+00:00",
+      "published_date": "2026-03-25",
+      "brands": ["Puma"],
+      "categories": ["social"],
+      "brand_details": [
+        {
+          "brand": "Puma",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "social",
+              "excerpt": "All that activity was fully open to the residents of Brooklyn, no ticket required.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.999890937545768,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "All that activity was fully open to the residents of Brooklyn, no ticket required. A different version of a similar activation may be designed for broadcast, or hidden behind physical gating, but Nadia Kokni, Puma\u2019s vice-president of brand marketing, says an open event in Brooklyn was a no-brainer...."
+            },
+            {
+              "category": "social",
+              "excerpt": "We love the idea of people from Morocco, Ghana, Ivory Coast, and New Zealand coming together and celebrating each other's culture. Brooklyn is the perfect pivot point of that within the New York landscape.",
+              "relevance_score": 0.8318346959195869,
+              "rerank_score": 0.9994220561798125,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...\u201cBecause this is where you can really see such a broad variety of communities and cultures coming together and fusing to drive culture forward... We love the idea of people from Morocco, Ghana, Ivory Coast, and New Zealand coming together and celebrating each other\u2019s culture. Brooklyn is the perfect pivot point of that within the New York landscape.\u201d"
+            },
+            {
+              "category": "social",
+              "excerpt": "Expect to see this celebration of diversity throughout Puma's World Cup output",
+              "relevance_score": 0.788697218454244,
+              "rerank_score": 0.9994171930328749,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...It\u2019s where cultures come together. So for us, it\u2019s like, yo, Brooklyn is the one\u201d. Expect to see this celebration of diversity throughout Puma\u2019s World Cup output, says Kokni \u2013 across its athlete partnerships (including with US captain Christian Pulisic) and cultural partnerships (including with designer KidSuper). From a strategic point of view, Kokni says, all of that activity is rooted in experiences."
+            }
+          ],
+          "confidence": 0.8,
+          "reasoning": "The article describes Puma's community-first approach and celebration of diversity through its World Cup activation in Brooklyn, which represents genuine community engagement and cultural inclusion initiatives beyond typical marketing."
+        }
+      ]
+    },
+    {
+      "id": "ff3d9904-3260-49bb-b231-0a260c27b6c0",
+      "title": "Hall of Famer Frank Thomas files lawsuit seeking damages against White Sox , Fanatics , Nike",
+      "url": "https://www.947wls.com/2026/03/25/hall-of-famer-frank-thomas-files-lawsuit-seeking-damages-against-white-sox-fanatics-nike/",
+      "source_name": "947wls.com",
+      "published_at": "2026-03-25T15:15:00+00:00",
+      "published_date": "2026-03-25",
+      "brands": ["Nike"],
+      "categories": ["governance"],
+      "brand_details": [
+        {
+          "brand": "Nike",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "governance",
+              "excerpt": "Thomas claims he has received no compensation or other consideration from Nike, Fanatics and the White Sox for the use of his name and likeness",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999573395967739,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Thomas seeks payment in excess of $50,000 and demands a jury trial. Thomas said the defendants profited from selling items using his identity without his permission, notably the sale of City Connect 2.0 jerseys that bear his name without his consent. Thomas claims he has received no compensation or other consideration from Nike, Fanatics and the White Sox for the use of his name and likeness\n\n\u201cThe complaint we filed alleges violations of the Illinois Right to Publicity Act,\u201d wrote William T. Gibbs of Corboy & Demetrio, the law firm representing Thomas, in a statement. \u201cCompanies may not profit from anyone\u2019s identity without their permission...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Thomas said the defendants profited from selling items using his identity without his permission, notably the sale of City Connect 2.0 jerseys that bear his name without his consent",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998708510900444,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...The lawsuit was filed March 19 in Cook County, Illinois, and also named Nike and Fanatics as defendants. Thomas seeks payment in excess of $50,000 and demands a jury trial. Thomas said the defendants profited from selling items using his identity without his permission, notably the sale of City Connect 2.0 jerseys that bear his name without his consent. Thomas claims he has received no compensation or other consideration from Nike, Fanatics and the White Sox for the use of his name and likeness\n\n\u201cThe complaint we filed alleges violations of the Illinois Right to Publicity Act,\u201d wrote William T. Gibbs of Corboy & Demetrio, the law firm representing Thomas, in a statement...."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "Nike is accused in a lawsuit of using Frank Thomas's likeness without permission or compensation, which represents a governance issue related to corporate ethics and legal compliance. The negative sentiment reflects the legal allegations against the company."
+        }
+      ]
+    },
     {
       "id": "68901837-23cf-4eb5-b022-1bd244eaf579",
       "title": "Why is Nike revisiting Virgil Abloh legacy now ? ",
@@ -1528,22 +1891,22 @@
           },
           "evidence": [
             {
-              "category": "digital_transformation",
-              "excerpt": "Omni-channel Strategy: The 'Power of Three x2' strategy emphasizes doubling digital revenue, which currently accounts for nearly half of total sales.",
-              "relevance_score": 0.8123036820250821,
-              "rerank_score": 0.9998730954763138,
+              "category": "environmental",
+              "excerpt": "Lululemon Like New: The brand's resale program has become a key driver for sustainability-conscious Gen Z consumers and provides a secondary revenue stream for pre-owned gear.",
+              "relevance_score": 0.8921777358608121,
+              "rerank_score": 0.9998151421276862,
               "match_method": "combined",
               "confidence": "high",
-              "context_snippet": "Omni-channel Strategy: The \"Power of Three x2\" strategy emphasizes doubling digital revenue, which currently accounts for nearly half of total sales.\n\nCommunity-Based Marketing: Rather than traditiona..."
+              "context_snippet": "Footwear: After a slow start in 2022, the footwear line expanded in 2024\u20132025 with the Beyondfeel running shoe and the Cityverse casual sneaker. While footwear is not yet a primary revenue driver, it ..."
             },
             {
-              "category": "digital_transformation",
-              "excerpt": "The 'Power of Three x2' strategy emphasizes doubling digital revenue, which currently accounts for nearly half of total sales.",
-              "relevance_score": 0.7894369809719282,
-              "rerank_score": 0.9998396616300292,
-              "match_method": "combined",
+              "category": "environmental",
+              "excerpt": "The circular economy (resale and repair) is becoming a mandatory component of the retail business model to satisfy ESG-conscious investors.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9762633805848813,
+              "match_method": "exact",
               "confidence": "high",
-              "context_snippet": "Omni-channel Strategy: The \"Power of Three x2\" strategy emphasizes doubling digital revenue, which currently accounts for nearly half of total sales.\n\nCommunity-Based Marketing: Rather than traditiona..."
+              "context_snippet": "...Technical Lifestyle: There is a growing trend toward \"versatile\" clothing\u2014gear that looks like professional attire but feels like athletic wear (e.g., the ABC Pant). Resale Economy: The circular economy (resale and repair) is becoming a mandatory component of the retail business model to satisfy ESG-conscious investors. Risks and Challenges"
             },
             {
               "category": "social",
@@ -1591,22 +1954,22 @@
               "context_snippet": "...Leadership and Management\n\nThe leadership landscape is currently in flux. In January 2026, Calvin McDonald stepped down as CEO. While he is credited with the company\u2019s massive scale-up, his final year was marred by a \"lack of newness\" in the product pipeline. Interim Leadership: CFO Meghan Frank and CCO Andr\u00e9 Maestrini are currently serving as interim co-CEOs."
             },
             {
-              "category": "environmental",
-              "excerpt": "Lululemon Like New: The brand's resale program has become a key driver for sustainability-conscious Gen Z consumers and provides a secondary revenue stream for pre-owned gear.",
-              "relevance_score": 0.8921777358608121,
-              "rerank_score": 0.9998151421276862,
+              "category": "digital_transformation",
+              "excerpt": "Omni-channel Strategy: The 'Power of Three x2' strategy emphasizes doubling digital revenue, which currently accounts for nearly half of total sales.",
+              "relevance_score": 0.8123036820250821,
+              "rerank_score": 0.9998730954763138,
               "match_method": "combined",
               "confidence": "high",
-              "context_snippet": "Footwear: After a slow start in 2022, the footwear line expanded in 2024\u20132025 with the Beyondfeel running shoe and the Cityverse casual sneaker. While footwear is not yet a primary revenue driver, it ..."
+              "context_snippet": "Omni-channel Strategy: The \"Power of Three x2\" strategy emphasizes doubling digital revenue, which currently accounts for nearly half of total sales.\n\nCommunity-Based Marketing: Rather than traditiona..."
             },
             {
-              "category": "environmental",
-              "excerpt": "The circular economy (resale and repair) is becoming a mandatory component of the retail business model to satisfy ESG-conscious investors.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9762633805848813,
-              "match_method": "exact",
+              "category": "digital_transformation",
+              "excerpt": "The 'Power of Three x2' strategy emphasizes doubling digital revenue, which currently accounts for nearly half of total sales.",
+              "relevance_score": 0.7894369809719282,
+              "rerank_score": 0.9998396616300292,
+              "match_method": "combined",
               "confidence": "high",
-              "context_snippet": "...Technical Lifestyle: There is a growing trend toward \"versatile\" clothing\u2014gear that looks like professional attire but feels like athletic wear (e.g., the ABC Pant). Resale Economy: The circular economy (resale and repair) is becoming a mandatory component of the retail business model to satisfy ESG-conscious investors. Risks and Challenges"
+              "context_snippet": "Omni-channel Strategy: The \"Power of Three x2\" strategy emphasizes doubling digital revenue, which currently accounts for nearly half of total sales.\n\nCommunity-Based Marketing: Rather than traditiona..."
             }
           ],
           "confidence": 0.9,
@@ -3396,24 +3759,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "Adidas also extended Gulden's contract until 2030, signalling confidence in his leadership",
-              "relevance_score": 0.7797590103569426,
-              "rerank_score": 0.9991370560041816,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Chief financial officer Harm Ohlymeyer said the company would not immediately join firms seeking refunds after the US Supreme Court ruled many of the global duties illegal. \u201cWe will wait and see,\u201d he ..."
-            },
-            {
-              "category": "governance",
-              "excerpt": "He took charge in 2023 after the company severed ties with US rapper Kanye West, now known as Ye, following backlash over antisemitic remarks",
-              "relevance_score": 1.0,
-              "rerank_score": 0.08465646486929995,
-              "match_method": "exact",
-              "confidence": "unmatched",
-              "context_snippet": "...Adidas reported net income rising 75 per cent to 1.34 billion euros, while sales increased around five per cent to 24.8 billion euros, driven by strong demand for footwear and apparel. Adidas also extended Gulden\u2019s contract until 2030, signalling confidence in his leadership. He took charge in 2023 after the company severed ties with US rapper Kanye West, now known as Ye, following backlash over antisemitic remarks. Adidas had previously collaborated with West on the popular Yeezy trainer line...."
-            },
-            {
               "category": "social",
               "excerpt": "An Adidas franchise store in Israel was destroyed in an attack, though it was closed at the time and no staff were affected",
               "relevance_score": 1.0,
@@ -3430,6 +3775,24 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "An Adidas franchise store in Israel was destroyed in an attack, though it was closed at the time and no staff were affected, a company executive told reporters during an earnings call. Chief executive Bjorn Gulden said there could be a \u201crevenue impact\u201d as stores in the region close and air freight routes through the Middle East face disruptions, potentially delaying product deliveries. However, executives stressed it was too early to assess the broader fallout...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Adidas also extended Gulden's contract until 2030, signalling confidence in his leadership",
+              "relevance_score": 0.7797590103569426,
+              "rerank_score": 0.9991370560041816,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Chief financial officer Harm Ohlymeyer said the company would not immediately join firms seeking refunds after the US Supreme Court ruled many of the global duties illegal. \u201cWe will wait and see,\u201d he ..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "He took charge in 2023 after the company severed ties with US rapper Kanye West, now known as Ye, following backlash over antisemitic remarks",
+              "relevance_score": 1.0,
+              "rerank_score": 0.08465646486929995,
+              "match_method": "exact",
+              "confidence": "unmatched",
+              "context_snippet": "...Adidas reported net income rising 75 per cent to 1.34 billion euros, while sales increased around five per cent to 24.8 billion euros, driven by strong demand for footwear and apparel. Adidas also extended Gulden\u2019s contract until 2030, signalling confidence in his leadership. He took charge in 2023 after the company severed ties with US rapper Kanye West, now known as Ye, following backlash over antisemitic remarks. Adidas had previously collaborated with West on the popular Yeezy trainer line...."
             }
           ],
           "confidence": 0.9,
@@ -3677,33 +4040,6 @@
           },
           "evidence": [
             {
-              "category": "digital_transformation",
-              "excerpt": "unspun is rebuilding apparel manufacturing for speed and efficiency \u2014 replacing long, offshore production cycles with software and hardware-driven systems",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9997806633802023,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...\u201cunspun\u2019s manufacturing model fundamentally transforms how and where products are made \u2014 unlocking meaningful financial benefits and significantly reducing the industry\u2019s carbon footprint. I am honored to lead unspun at this pivotal moment and look forward to scaling our proven model into broad, lasting industry impact.\u201d unspun is rebuilding apparel manufacturing for speed and efficiency \u2014 replacing long, offshore production cycles with software and hardware-driven systems that enable garments to be produced closer to demand. Its proprietary 3D weaving technology, Vega\u2122, weaves semi-finished products directly from yarn in minutes, dramatically shortening supply chains and reducing waste."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "Its proprietary 3D weaving technology, Vega\u2122, weaves semi-finished products directly from yarn in minutes, dramatically shortening supply chains and reducing waste",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9991514851905394,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...unspun is rebuilding apparel manufacturing for speed and efficiency \u2014 replacing long, offshore production cycles with software and hardware-driven systems that enable garments to be produced closer to demand. Its proprietary 3D weaving technology, Vega\u2122, weaves semi-finished products directly from yarn in minutes, dramatically shortening supply chains and reducing waste."
-            },
-            {
-              "category": "governance",
-              "excerpt": "Arne spent over a decade at The North Face, where, as Global Brand President, he led the brand through a period of significant global growth, cementing its position as one of the world's leading outdoor companies",
-              "relevance_score": 0.9147854849784485,
-              "rerank_score": 0.9999494613271678,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Arne spent over a decade at The North Face, where, as Global Brand President, he led the brand through a period of significant global growth, cementing its position as one of the world\u2019s leading outdoor companies. He later became CEO of Boardriders, the global action sports and lifestyle company behind Quiksilver, Billabong, and Roxy, leading the business through its acquisition by Authentic Brands Group for approximately $1.25 billion...."
-            },
-            {
               "category": "environmental",
               "excerpt": "unspun's manufacturing model fundamentally transforms how and where products are made \u2014 unlocking meaningful financial benefits and significantly reducing the industry's carbon footprint",
               "relevance_score": 0.8759448229135532,
@@ -3720,6 +4056,33 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "...unspun\u2019s localized, automated approach turns manufacturing into responsive infrastructure, enabling production closer to when and where demand actually occurs. This speed-based model lowers inventory risk, reduces overproduction and the apparel supply chain\u2019s carbon footprint, and can improve gross margins by 400\u2013500 bps through fewer markdowns and write-offs."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Arne spent over a decade at The North Face, where, as Global Brand President, he led the brand through a period of significant global growth, cementing its position as one of the world's leading outdoor companies",
+              "relevance_score": 0.9147854849784485,
+              "rerank_score": 0.9999494613271678,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Arne spent over a decade at The North Face, where, as Global Brand President, he led the brand through a period of significant global growth, cementing its position as one of the world\u2019s leading outdoor companies. He later became CEO of Boardriders, the global action sports and lifestyle company behind Quiksilver, Billabong, and Roxy, leading the business through its acquisition by Authentic Brands Group for approximately $1.25 billion...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "unspun is rebuilding apparel manufacturing for speed and efficiency \u2014 replacing long, offshore production cycles with software and hardware-driven systems",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9997806633802023,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...\u201cunspun\u2019s manufacturing model fundamentally transforms how and where products are made \u2014 unlocking meaningful financial benefits and significantly reducing the industry\u2019s carbon footprint. I am honored to lead unspun at this pivotal moment and look forward to scaling our proven model into broad, lasting industry impact.\u201d unspun is rebuilding apparel manufacturing for speed and efficiency \u2014 replacing long, offshore production cycles with software and hardware-driven systems that enable garments to be produced closer to demand. Its proprietary 3D weaving technology, Vega\u2122, weaves semi-finished products directly from yarn in minutes, dramatically shortening supply chains and reducing waste."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "Its proprietary 3D weaving technology, Vega\u2122, weaves semi-finished products directly from yarn in minutes, dramatically shortening supply chains and reducing waste",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9991514851905394,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...unspun is rebuilding apparel manufacturing for speed and efficiency \u2014 replacing long, offshore production cycles with software and hardware-driven systems that enable garments to be produced closer to demand. Its proprietary 3D weaving technology, Vega\u2122, weaves semi-finished products directly from yarn in minutes, dramatically shortening supply chains and reducing waste."
             }
           ],
           "confidence": 0.8,
@@ -4130,24 +4493,6 @@
           },
           "evidence": [
             {
-              "category": "social",
-              "excerpt": "Eddie Bauer customers must redeem gift cards and loyalty points by March 12 as the retail operator enters bankruptcy proceedings and closes 180 stores across the US and Canada.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.999977278730212,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Eddie Bauer customers must redeem gift cards and loyalty points by March 12 as the retail operator enters bankruptcy proceedings and closes 180 stores across the US and Canada. Shoppers need to act immediately as gift cards are set to become worthless in just weeks after a major retailer announced bankruptcy...."
-            },
-            {
-              "category": "social",
-              "excerpt": "The business had approximately 379 employees nationwide when it filed for bankruptcy protection.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.996746713926091,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...\"\n\nCourt filings from Ontario show 24 of the company's 175 North American stores are situated in Canada. The business had approximately 379 employees nationwide when it filed for bankruptcy protection. The application does not affect Eddie Bauer's digital retail and wholesale operations, which are run by a distinct organization called Outdoor 5 and have not filed for creditor protection...."
-            },
-            {
               "category": "governance",
               "excerpt": "Catalyst Brands, which operates Eddie Bauer stores, is trying to sell the business as it closes its American and Canadian locations.",
               "relevance_score": 1.0,
@@ -4173,6 +4518,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...\"This is not an easy decision,\" Rosen admitted about the bankruptcy filing, telling the Associated Press. \"However, this restructuring is the best way to optimize value for the retail company's stakeholders and also ensure Catalyst Brands remains profitable and with strong liquidity and cash flow. \"\n\nCourt filings from Ontario show 24 of the company's 175 North American stores are situated in Canada. The business had approximately 379 employees nationwide when it filed for bankruptcy protection...."
+            },
+            {
+              "category": "social",
+              "excerpt": "Eddie Bauer customers must redeem gift cards and loyalty points by March 12 as the retail operator enters bankruptcy proceedings and closes 180 stores across the US and Canada.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.999977278730212,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Eddie Bauer customers must redeem gift cards and loyalty points by March 12 as the retail operator enters bankruptcy proceedings and closes 180 stores across the US and Canada. Shoppers need to act immediately as gift cards are set to become worthless in just weeks after a major retailer announced bankruptcy...."
+            },
+            {
+              "category": "social",
+              "excerpt": "The business had approximately 379 employees nationwide when it filed for bankruptcy protection.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.996746713926091,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...\"\n\nCourt filings from Ontario show 24 of the company's 175 North American stores are situated in Canada. The business had approximately 379 employees nationwide when it filed for bankruptcy protection. The application does not affect Eddie Bauer's digital retail and wholesale operations, which are run by a distinct organization called Outdoor 5 and have not filed for creditor protection...."
             }
           ],
           "confidence": 0.9,
@@ -4297,7 +4660,7 @@
       "categories": ["digital_transformation", "environmental"],
       "brand_details": [
         {
-          "brand": "Puma",
+          "brand": "Nike",
           "categories": {
             "environmental": {
               "applies": true,
@@ -4322,24 +4685,6 @@
           },
           "evidence": [
             {
-              "category": "digital_transformation",
-              "excerpt": "brands that can leverage digitalization, sustainability and celebrity collaborations will be best able to cater to diverse consumer preferences",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999223776297491,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "The increasing integration of sportswear into everyday fashion has evolved what was once a niche athletic footwear segment into a major lifestyle category. In addition, brands that can leverage digitalization, sustainability and celebrity collaborations will be best able to cater to diverse consumer preferences, which in turn will drive innovation. Moreover, the influence of celebrity endorsements, sports collaborations and limited-edition releases have helped to enhance brand visibility and customer loyalty...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "anti-counterfeiting technologies, such as blockchain tracking and RFID tagging, can be used to ensure product authenticity",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9996450017919903,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Technical advancements in design and manufacturing were also cited as representing new opportunities for expansion. Moreover, anti-counterfeiting technologies, such as blockchain tracking and RFID tagging, can be used to ensure product authenticity. \u201cThe combination of comfort, functionality, and fashion will continue to drive consumer interest, ensuring the sneakers market remains one of the most dynamic sectors in the global footwear industry,\u201d ResearchAndMarket said...."
-            },
-            {
               "category": "environmental",
               "excerpt": "Brands such as Nike, Adidas and Puma are expected to lead through and sustainability.",
               "relevance_score": 0.7870133696896093,
@@ -4356,10 +4701,28 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...The report noted that sustainability has become a defining feature of the modern sneaker market, with consumers increasingly preferring eco-friendly materials and ethical production practices. Investments in recycled fabrics, biodegradable soles and energy-efficient manufacturing methods help to reduce carbon footprints. And the rise in customization options and design innovations are allowing brands to cater to individual style preferences."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "brands that can leverage digitalization, sustainability and celebrity collaborations will be best able to cater to diverse consumer preferences",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999223776297491,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "The increasing integration of sportswear into everyday fashion has evolved what was once a niche athletic footwear segment into a major lifestyle category. In addition, brands that can leverage digitalization, sustainability and celebrity collaborations will be best able to cater to diverse consumer preferences, which in turn will drive innovation. Moreover, the influence of celebrity endorsements, sports collaborations and limited-edition releases have helped to enhance brand visibility and customer loyalty...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "anti-counterfeiting technologies, such as blockchain tracking and RFID tagging, can be used to ensure product authenticity",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9996450017919903,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Technical advancements in design and manufacturing were also cited as representing new opportunities for expansion. Moreover, anti-counterfeiting technologies, such as blockchain tracking and RFID tagging, can be used to ensure product authenticity. \u201cThe combination of comfort, functionality, and fashion will continue to drive consumer interest, ensuring the sneakers market remains one of the most dynamic sectors in the global footwear industry,\u201d ResearchAndMarket said...."
             }
           ],
           "confidence": 0.8,
-          "reasoning": "Puma is identified as a leader in sustainability initiatives and digital transformation alongside Nike and Adidas. The article discusses environmental benefits and digital innovation that apply to all three brands mentioned as leaders."
+          "reasoning": "Nike is identified as a leader in sustainability initiatives and digital transformation. The article discusses environmental benefits through recycled materials and energy-efficient manufacturing, plus digital innovation through blockchain and RFID technologies."
         },
         {
           "brand": "Adidas",
@@ -4427,7 +4790,7 @@
           "reasoning": "Adidas is identified as a leader in sustainability initiatives and digital transformation alongside Nike and Puma. The article discusses environmental benefits and digital innovation that apply to all three brands mentioned as leaders."
         },
         {
-          "brand": "Nike",
+          "brand": "Puma",
           "categories": {
             "environmental": {
               "applies": true,
@@ -4489,7 +4852,7 @@
             }
           ],
           "confidence": 0.8,
-          "reasoning": "Nike is identified as a leader in sustainability initiatives and digital transformation. The article discusses environmental benefits through recycled materials and energy-efficient manufacturing, plus digital innovation through blockchain and RFID technologies."
+          "reasoning": "Puma is identified as a leader in sustainability initiatives and digital transformation alongside Nike and Adidas. The article discusses environmental benefits and digital innovation that apply to all three brands mentioned as leaders."
         }
       ]
     },
@@ -9269,34 +9632,6 @@
           "reasoning": "Article discusses Puma's acquisition by Anta and corporate strategic positioning, which relates to governance and corporate structure, but contains no environmental, social, or digital transformation ESG content."
         },
         {
-          "brand": "Adidas",
-          "categories": {
-            "environmental": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "digital_transformation": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            }
-          },
-          "evidence": [],
-          "confidence": 0.9,
-          "reasoning": "Article mentions Adidas as a competitor/benchmark but contains no substantive ESG content about Adidas specifically. Discussion focuses on market positioning comparisons."
-        },
-        {
           "brand": "Nike",
           "categories": {
             "environmental": {
@@ -9323,6 +9658,34 @@
           "evidence": [],
           "confidence": 0.9,
           "reasoning": "Article mentions Nike as a competitor/benchmark but contains no substantive ESG content about Nike specifically. Discussion focuses on market positioning and pricing comparisons."
+        },
+        {
+          "brand": "Adidas",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [],
+          "confidence": 0.9,
+          "reasoning": "Article mentions Adidas as a competitor/benchmark but contains no substantive ESG content about Adidas specifically. Discussion focuses on market positioning comparisons."
         }
       ]
     },
@@ -9597,6 +9960,34 @@
           "reasoning": "Article presents Anta's strategic acquisition and portfolio expansion positively as successful governance and corporate development strategy, positioning the company for global growth."
         },
         {
+          "brand": "Adidas",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [],
+          "confidence": 0.95,
+          "reasoning": "Article mentions Adidas only as context for competitive landscape. No substantive ESG content about Adidas specifically - just positioning as an incumbent facing new competition."
+        },
+        {
           "brand": "Puma",
           "categories": {
             "environmental": {
@@ -9661,34 +10052,6 @@
           "evidence": [],
           "confidence": 0.95,
           "reasoning": "Article mentions Nike only as context for competitive landscape. No substantive ESG content about Nike specifically - just positioning as an incumbent facing new competition."
-        },
-        {
-          "brand": "Adidas",
-          "categories": {
-            "environmental": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "digital_transformation": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            }
-          },
-          "evidence": [],
-          "confidence": 0.95,
-          "reasoning": "Article mentions Adidas only as context for competitive landscape. No substantive ESG content about Adidas specifically - just positioning as an incumbent facing new competition."
         }
       ]
     },
@@ -9728,6 +10091,24 @@
           },
           "evidence": [
             {
+              "category": "social",
+              "excerpt": "Adidas has always valued customers' shopping experience, with safety and privacy being our top priorities. The recent incident at the Langham Place branch reflected shortcomings in our operational management and resulted in an unpleasant experience",
+              "relevance_score": 0.8814746952763268,
+              "rerank_score": 0.9999431746233859,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Adidas has apologised and said it will conduct a comprehensive review of its fitting rooms to better protect customer privacy, after a woman complained that a staff member and other patrons opened the..."
+            },
+            {
+              "category": "social",
+              "excerpt": "a woman complained that a staff member and other patrons opened the curtain while she was inside one at a store in Hong Kong",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998457966798782,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Adidas has apologised and said it will conduct a comprehensive review of its fitting rooms to better protect customer privacy, after a woman complained that a staff member and other patrons opened the curtain while she was inside one at a store in Hong Kong. The sportswear giant said on Friday in a social media statement that the company\u2019s management had met the customer to offer an apology and provide help...."
+            },
+            {
               "category": "governance",
               "excerpt": "The company said it was handling the matter seriously to prevent similar incidents from happening again",
               "relevance_score": 1.0,
@@ -9753,24 +10134,6 @@
               "match_method": "exact",
               "confidence": "unmatched",
               "context_snippet": "...It said the temporary fitting room at the branch had been suspended and signs were added. The company would engage an independent consulting firm to carry out a comprehensive review of its fitting room designs to better protect customer privacy, it said. The staff member involved had been reassigned and the company would follow up based on the police investigation outcome, laws and internal guidelines, it added."
-            },
-            {
-              "category": "social",
-              "excerpt": "Adidas has always valued customers' shopping experience, with safety and privacy being our top priorities. The recent incident at the Langham Place branch reflected shortcomings in our operational management and resulted in an unpleasant experience",
-              "relevance_score": 0.8814746952763268,
-              "rerank_score": 0.9999431746233859,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Adidas has apologised and said it will conduct a comprehensive review of its fitting rooms to better protect customer privacy, after a woman complained that a staff member and other patrons opened the..."
-            },
-            {
-              "category": "social",
-              "excerpt": "a woman complained that a staff member and other patrons opened the curtain while she was inside one at a store in Hong Kong",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998457966798782,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Adidas has apologised and said it will conduct a comprehensive review of its fitting rooms to better protect customer privacy, after a woman complained that a staff member and other patrons opened the curtain while she was inside one at a store in Hong Kong. The sportswear giant said on Friday in a social media statement that the company\u2019s management had met the customer to offer an apology and provide help...."
             }
           ],
           "confidence": 0.9,
@@ -9950,24 +10313,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "\"Respondent NIKE's failure to comply with the subpoena has delayed and hampered the EEOC's investigation of alleged unlawful employment practices under Title VII\" of the Civil Rights Act of 1964, the motion states.",
-              "relevance_score": 0.8807363830430972,
-              "rerank_score": 0.9997456060179436,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "In its filing, the EEOC says the charges were not triggered by internal complaints from workers, but were \u201cbased on publicly available information regarding Nike,\u201d including the company\u2019s public pledg..."
-            },
-            {
-              "category": "governance",
-              "excerpt": "The EEOC filed its motion this week in U.S. District Court for the Eastern District of Missouri",
-              "relevance_score": 0.7642950025863464,
-              "rerank_score": 0.9997154768987967,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "(WASHINGTON) \u2014 The federal agency that investigates workplace discrimination is seeking court enforcement of a subpoena it has issued to Nike as it pursues allegations that the athletic apparel maker ..."
-            },
-            {
               "category": "social",
               "excerpt": "The EEOC said in the filing that it has gone to court because the company provided some, but not all, of the data the agency requested on the racial and ethnic makeup of its workforce following the issuance of a subpoena last September.",
               "relevance_score": 1.0,
@@ -9984,6 +10329,24 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "...The Equal Employment Opportunity Commission (EEOC) filed its motion this week in U.S. District Court for the Eastern District of Missouri, where Nike has a factory that produces its famous AIR footwear technology. The agency\u2019s charges against Nike date to 2024, when commission member, and current Trump-appointed chair, Andrea Lucas alleged that Nike had been engaging in a pattern of discriminatory practices, including \u201crace-based workforce representation quotas,\u201d and hiring, promotion, demotion and firing decisions that were a function of \u201cdisparate treatment against White employees, applicants, and training program participants.\u201d"
+            },
+            {
+              "category": "governance",
+              "excerpt": "\"Respondent NIKE's failure to comply with the subpoena has delayed and hampered the EEOC's investigation of alleged unlawful employment practices under Title VII\" of the Civil Rights Act of 1964, the motion states.",
+              "relevance_score": 0.8807363830430972,
+              "rerank_score": 0.9997456060179436,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "In its filing, the EEOC says the charges were not triggered by internal complaints from workers, but were \u201cbased on publicly available information regarding Nike,\u201d including the company\u2019s public pledg..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "The EEOC filed its motion this week in U.S. District Court for the Eastern District of Missouri",
+              "relevance_score": 0.7642950025863464,
+              "rerank_score": 0.9997154768987967,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "(WASHINGTON) \u2014 The federal agency that investigates workplace discrimination is seeking court enforcement of a subpoena it has issued to Nike as it pursues allegations that the athletic apparel maker ..."
             }
           ],
           "confidence": 0.95,
@@ -10027,33 +10390,6 @@
           },
           "evidence": [
             {
-              "category": "social",
-              "excerpt": "The Equal Employment Opportunity Commission (EEOC) is seeking a court order for investigating systemic race discrimination allegations against white workers by footwear and apparel corporation Nike Inc.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999795491431269,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Authored by Naveen Athrappully via The Epoch Times (emphasis ours),\n\nThe Equal Employment Opportunity Commission (EEOC) is seeking a court order for investigating systemic race discrimination allegations against white workers by footwear and apparel corporation Nike Inc., according to a Feb. 4 statement from the agency. The EEOC filed an action in federal court to compel Nike, headquartered in Oregon, to produce information related to allegations that the company discriminated against white workers as part of its diversity, equity, and inclusion (DEI) programs...."
-            },
-            {
-              "category": "social",
-              "excerpt": "Lucas alleged that Nike, since at least 2020, engaged in 'a pattern or practice of disparate treatment against white employees, applicants and training program participants in hiring, promotion, demotion, or separation decisions, including selection for layoffs; internship programs; and mentoring, leadership development and other career development programs.'",
-              "relevance_score": 0.9051340439296658,
-              "rerank_score": 0.9999279850412103,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Lucas alleged that Nike, since at least 2020, engaged in \u201ca pattern or practice of disparate treatment against white employees, applicants and training program participants in hiring, promotion, demotion, or separation decisions, including selection for layoffs; internship programs; and mentoring, leadership development and other career development programs.\u201d EEOC is the sole federal agency that investigates and litigates against companies for violating federal law prohibiting employment discrimination...."
-            },
-            {
-              "category": "social",
-              "excerpt": "Based on Bloomberg data, from 2020 to 2021, Nike showcased the largest amount of change against hiring white workers among large U.S. companies. While the numbers of black, Hispanic, and Asian people went up across the board, Nike let go of white workers, said the analysis.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998068768900678,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...In its fiscal year 2024 \u201cRepresentation by the Numbers\u201d document published online, Nike said women made up 50.3 percent of the global corporate workforce. As for racial representation, white employees made up 57 percent, with black employees making up 9 percent, Asian 18 percent, and Hispanic 8.8 percent. Based on Bloomberg data, from 2020 to 2021, Nike showcased the largest amount of change against hiring white workers among large U.S. companies. While the numbers of black, Hispanic, and Asian people went up across the board, Nike let go of white workers, said the analysis. Kismet Mills is currently Nike\u2019s chief diversity, equity and inclusion officer...."
-            },
-            {
               "category": "governance",
               "excerpt": "The EEOC filed an action in federal court to compel Nike, headquartered in Oregon, to produce information related to allegations that the company discriminated against white workers as part of its diversity, equity, and inclusion (DEI) programs.",
               "relevance_score": 1.0,
@@ -10079,6 +10415,33 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "Authored by Naveen Athrappully via The Epoch Times (emphasis ours),\n\nThe Equal Employment Opportunity Commission (EEOC) is seeking a court order for investigating systemic race discrimination allegations against white workers by footwear and apparel corporation Nike Inc., according to a Feb. 4 statement from the agency. The EEOC filed an action in federal court to compel Nike, headquartered in Oregon, to produce information related to allegations that the company discriminated against white workers as part of its diversity, equity, and inclusion (DEI) programs. According to the filing made by EEOC in the U.S. District Court for the Eastern District of Missouri, the agency is looking to enforce an administrative subpoena against Nike for failing to submit the required information, which was initially requested in 2024 by then-commissioner, and now chair, Andrea Lucas."
+            },
+            {
+              "category": "social",
+              "excerpt": "The Equal Employment Opportunity Commission (EEOC) is seeking a court order for investigating systemic race discrimination allegations against white workers by footwear and apparel corporation Nike Inc.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999795491431269,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Authored by Naveen Athrappully via The Epoch Times (emphasis ours),\n\nThe Equal Employment Opportunity Commission (EEOC) is seeking a court order for investigating systemic race discrimination allegations against white workers by footwear and apparel corporation Nike Inc., according to a Feb. 4 statement from the agency. The EEOC filed an action in federal court to compel Nike, headquartered in Oregon, to produce information related to allegations that the company discriminated against white workers as part of its diversity, equity, and inclusion (DEI) programs...."
+            },
+            {
+              "category": "social",
+              "excerpt": "Lucas alleged that Nike, since at least 2020, engaged in 'a pattern or practice of disparate treatment against white employees, applicants and training program participants in hiring, promotion, demotion, or separation decisions, including selection for layoffs; internship programs; and mentoring, leadership development and other career development programs.'",
+              "relevance_score": 0.9051340439296658,
+              "rerank_score": 0.9999279850412103,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Lucas alleged that Nike, since at least 2020, engaged in \u201ca pattern or practice of disparate treatment against white employees, applicants and training program participants in hiring, promotion, demotion, or separation decisions, including selection for layoffs; internship programs; and mentoring, leadership development and other career development programs.\u201d EEOC is the sole federal agency that investigates and litigates against companies for violating federal law prohibiting employment discrimination...."
+            },
+            {
+              "category": "social",
+              "excerpt": "Based on Bloomberg data, from 2020 to 2021, Nike showcased the largest amount of change against hiring white workers among large U.S. companies. While the numbers of black, Hispanic, and Asian people went up across the board, Nike let go of white workers, said the analysis.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998068768900678,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...In its fiscal year 2024 \u201cRepresentation by the Numbers\u201d document published online, Nike said women made up 50.3 percent of the global corporate workforce. As for racial representation, white employees made up 57 percent, with black employees making up 9 percent, Asian 18 percent, and Hispanic 8.8 percent. Based on Bloomberg data, from 2020 to 2021, Nike showcased the largest amount of change against hiring white workers among large U.S. companies. While the numbers of black, Hispanic, and Asian people went up across the board, Nike let go of white workers, said the analysis. Kismet Mills is currently Nike\u2019s chief diversity, equity and inclusion officer...."
             }
           ],
           "confidence": 0.95,
@@ -10122,24 +10485,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "Respondent NIKE's failure to comply with the subpoena has delayed and hampered the EEOC's investigation of alleged unlawful employment practices under Title VII of the Civil Rights Act of 1964",
-              "relevance_score": 0.8653567071744988,
-              "rerank_score": 0.9998382325421936,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "In its filing, the EEOC says the charges were not triggered by internal complaints from workers, but were \u201cbased on publicly available information regarding Nike,\u201d including the company\u2019s public pledg..."
-            },
-            {
-              "category": "governance",
-              "excerpt": "The Equal Employment Opportunity Commission (EEOC) filed its motion this week in U.S. District Court for the Eastern District of Missouri",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9997369337934132,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "EEOC alleges anti-white discrimination at Nike, seeks court enforcement of subpoena\n\nPosted/updated on: February 5, 2026 at 4:31 pm\n\n(WASHINGTON) -- The federal agency that investigates workplace discrimination is seeking court enforcement of a subpoena it has issued to Nike as it pursues allegations that the athletic apparel maker has been discriminating against its white employees in its corporate diversity policies. The Equal Employment Opportunity Commission (EEOC) filed its motion this week in U.S. District Court for the Eastern District of Missouri, where Nike has a factory that produces its famous AIR footwear technology. The agency's charges against Nike date to 2024, when commission member, and current Trump-appointed chair, Andrea Lucas alleged that Nike had been engaging in a pattern of discriminatory practices, including \u201crace-based workforce representation quotas,\u201d and hiring, promotion, demotion and firing decisions that were a function of \u201cdisparate treatment against White employees, applicants, and training program participants.\""
-            },
-            {
               "category": "social",
               "excerpt": "the charges were 'based on publicly available information regarding Nike,' including the company's public pledges to have '30% representation of racial and ethnic minorities at Director level and above in the U.S.,' and 35% representation across its entire U.S. corporate workforce",
               "relevance_score": 0.8820350574368694,
@@ -10156,6 +10501,24 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "...The Equal Employment Opportunity Commission (EEOC) filed its motion this week in U.S. District Court for the Eastern District of Missouri, where Nike has a factory that produces its famous AIR footwear technology. The agency's charges against Nike date to 2024, when commission member, and current Trump-appointed chair, Andrea Lucas alleged that Nike had been engaging in a pattern of discriminatory practices, including \u201crace-based workforce representation quotas,\u201d and hiring, promotion, demotion and firing decisions that were a function of \u201cdisparate treatment against White employees, applicants, and training program participants.\""
+            },
+            {
+              "category": "governance",
+              "excerpt": "Respondent NIKE's failure to comply with the subpoena has delayed and hampered the EEOC's investigation of alleged unlawful employment practices under Title VII of the Civil Rights Act of 1964",
+              "relevance_score": 0.8653567071744988,
+              "rerank_score": 0.9998382325421936,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "In its filing, the EEOC says the charges were not triggered by internal complaints from workers, but were \u201cbased on publicly available information regarding Nike,\u201d including the company\u2019s public pledg..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "The Equal Employment Opportunity Commission (EEOC) filed its motion this week in U.S. District Court for the Eastern District of Missouri",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9997369337934132,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "EEOC alleges anti-white discrimination at Nike, seeks court enforcement of subpoena\n\nPosted/updated on: February 5, 2026 at 4:31 pm\n\n(WASHINGTON) -- The federal agency that investigates workplace discrimination is seeking court enforcement of a subpoena it has issued to Nike as it pursues allegations that the athletic apparel maker has been discriminating against its white employees in its corporate diversity policies. The Equal Employment Opportunity Commission (EEOC) filed its motion this week in U.S. District Court for the Eastern District of Missouri, where Nike has a factory that produces its famous AIR footwear technology. The agency's charges against Nike date to 2024, when commission member, and current Trump-appointed chair, Andrea Lucas alleged that Nike had been engaging in a pattern of discriminatory practices, including \u201crace-based workforce representation quotas,\u201d and hiring, promotion, demotion and firing decisions that were a function of \u201cdisparate treatment against White employees, applicants, and training program participants.\""
             }
           ],
           "confidence": 0.95,
@@ -10199,6 +10562,24 @@
           },
           "evidence": [
             {
+              "category": "governance",
+              "excerpt": "the administration's Equal Employment Opportunity Commission has announced it is investigating Nike over vague allegations that it discriminated against white people",
+              "relevance_score": 0.8928872312282969,
+              "rerank_score": 0.9999768919479715,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Anyway, the administration\u2019s Equal Employment Opportunity Commission has announced it is investigating Nike over vague allegations that it discriminated against white people.\n\n*yawn*\n\nWhatever, let\u2019s ..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "In response to the EEOC's allegations, a Nike spokesperson told Forbes the probe is a 'surprising and unusual escalation,' stating the company has had 'extensive, good-faith participation in an EEOC inquiry'",
+              "relevance_score": 0.8882261510674485,
+              "rerank_score": 0.999929127542903,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "It\u2019s almost as if the Trump administration is a white supremacist organization.\n\nIn response to the EEOC\u2019s allegations, a Nike spokesperson told Forbes the probe is a \u201csurprising and unusual escalatio..."
+            },
+            {
               "category": "social",
               "excerpt": "it claims Nike's DEI initiatives may have created a 'pattern or practice of disparate treatment against white employees'",
               "relevance_score": 0.8818888366533217,
@@ -10224,24 +10605,6 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "Anyway, the administration\u2019s Equal Employment Opportunity Commission has announced it is investigating Nike over vague allegations that it discriminated against white people. *yawn*\n\nWhatever, let\u2019s get into it\u2026\n\nThe EEOC said in a press release that it \u201cseeks court order for information related to systemic race discrimination allegations that athletic footwear and apparel giant discriminated against white workers,\u201d which it seems to be basing largely on the fact that the company maintains a diversity, equity and inclusion page on its website, which notes that Nike is committed to \u201ccreating a workforce that represents different backgrounds, experiences and perspectives.\u201d The horror, right?"
-            },
-            {
-              "category": "governance",
-              "excerpt": "the administration's Equal Employment Opportunity Commission has announced it is investigating Nike over vague allegations that it discriminated against white people",
-              "relevance_score": 0.8928872312282969,
-              "rerank_score": 0.9999768919479715,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Anyway, the administration\u2019s Equal Employment Opportunity Commission has announced it is investigating Nike over vague allegations that it discriminated against white people.\n\n*yawn*\n\nWhatever, let\u2019s ..."
-            },
-            {
-              "category": "governance",
-              "excerpt": "In response to the EEOC's allegations, a Nike spokesperson told Forbes the probe is a 'surprising and unusual escalation,' stating the company has had 'extensive, good-faith participation in an EEOC inquiry'",
-              "relevance_score": 0.8882261510674485,
-              "rerank_score": 0.999929127542903,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "It\u2019s almost as if the Trump administration is a white supremacist organization.\n\nIn response to the EEOC\u2019s allegations, a Nike spokesperson told Forbes the probe is a \u201csurprising and unusual escalatio..."
             }
           ],
           "confidence": 0.9,
@@ -10285,33 +10648,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "Nike received a regular subpoena but did not respond, prompting the EEOC to take the next step.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999316232468929,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Nike received a regular subpoena but did not respond, prompting the EEOC to take the next step. \u201cWhen there are compelling indications, including corporate admissions in extensive public materials, that an employer\u2019s Diversity, Equity, and Inclusion-related programs may violate federal prohibitions against race discrimination or other forms of unlawful discrimination, the EEOC will take all necessary steps\u2014including subpoena enforcement actions\u2014to ensure the opportunity to fully and comprehensively investigate,\u201d said EEOC Chair Andrea Lucas...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "When the company failed to produce all the information sought by the subpoena, the agency filed an enforcement action in federal court.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9984318156160221,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...The EEOC requested documents and information going back to 2018:\n\nInformation sought included criteria used in selecting employees for layoffs; information related to the company\u2019s tracking and use of worker race and ethnicity data, including as a factor in setting executive compensation; and information about 16 programs which allegedly provided race-restricted mentoring, leadership, or career development opportunities. When the company failed to produce all the information sought by the subpoena, the agency filed an enforcement action in federal court."
-            },
-            {
-              "category": "governance",
-              "excerpt": "The EEOC filed a subpoena enforcement action against Nike in the U.S. District Court for the Eastern District of Missouri to compel the company to produce any information regarding the allegations.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9908531157912251,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...\u201cThe Company\u2019s \u20182025 Targets Summary\u2019 reveals that Nike appears to use numerical quotas for hiring, training, and promotion,\u201d according to AFL. \u201cFor example, by 2025 Nike aims to have \u201850% of women in global corporate workforce and 45% in leadership positions.'\u201d\n\nAFL noted that Nike CEO John Donahoe pushed a similar goal in 2021, aiming \u201cto have 30% \u2018representation of racial and ethnic minorities at the director level and above in Nike\u2019s U.S. workforce.\u2019\u201d The EEOC filed a subpoena enforcement action against Nike in the U.S. District Court for the Eastern District of Missouri to compel the company to produce any information regarding the allegations."
-            },
-            {
               "category": "social",
               "excerpt": "The U.S. Equal Employment Opportunity Commission (EEOC) has launched an investigation into Nike's hiring practices due to allegations of discrimination against white employees.",
               "relevance_score": 0.9092635288578768,
@@ -10337,6 +10673,33 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "Nike received a regular subpoena but did not respond, prompting the EEOC to take the next step. \u201cWhen there are compelling indications, including corporate admissions in extensive public materials, that an employer\u2019s Diversity, Equity, and Inclusion-related programs may violate federal prohibitions against race discrimination or other forms of unlawful discrimination, the EEOC will take all necessary steps\u2014including subpoena enforcement actions\u2014to ensure the opportunity to fully and comprehensively investigate,\u201d said EEOC Chair Andrea Lucas. The EEOC requested documents and information going back to 2018:\n\nInformation sought included criteria used in selecting employees for layoffs; information related to the company\u2019s tracking and use of worker race and ethnicity data, including as a factor in setting executive compensation; and information about 16 programs which allegedly provided race-restricted mentoring, leadership, or career development opportunities...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Nike received a regular subpoena but did not respond, prompting the EEOC to take the next step.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999316232468929,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Nike received a regular subpoena but did not respond, prompting the EEOC to take the next step. \u201cWhen there are compelling indications, including corporate admissions in extensive public materials, that an employer\u2019s Diversity, Equity, and Inclusion-related programs may violate federal prohibitions against race discrimination or other forms of unlawful discrimination, the EEOC will take all necessary steps\u2014including subpoena enforcement actions\u2014to ensure the opportunity to fully and comprehensively investigate,\u201d said EEOC Chair Andrea Lucas...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "When the company failed to produce all the information sought by the subpoena, the agency filed an enforcement action in federal court.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9984318156160221,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...The EEOC requested documents and information going back to 2018:\n\nInformation sought included criteria used in selecting employees for layoffs; information related to the company\u2019s tracking and use of worker race and ethnicity data, including as a factor in setting executive compensation; and information about 16 programs which allegedly provided race-restricted mentoring, leadership, or career development opportunities. When the company failed to produce all the information sought by the subpoena, the agency filed an enforcement action in federal court."
+            },
+            {
+              "category": "governance",
+              "excerpt": "The EEOC filed a subpoena enforcement action against Nike in the U.S. District Court for the Eastern District of Missouri to compel the company to produce any information regarding the allegations.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9908531157912251,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...\u201cThe Company\u2019s \u20182025 Targets Summary\u2019 reveals that Nike appears to use numerical quotas for hiring, training, and promotion,\u201d according to AFL. \u201cFor example, by 2025 Nike aims to have \u201850% of women in global corporate workforce and 45% in leadership positions.'\u201d\n\nAFL noted that Nike CEO John Donahoe pushed a similar goal in 2021, aiming \u201cto have 30% \u2018representation of racial and ethnic minorities at the director level and above in Nike\u2019s U.S. workforce.\u2019\u201d The EEOC filed a subpoena enforcement action against Nike in the U.S. District Court for the Eastern District of Missouri to compel the company to produce any information regarding the allegations."
             }
           ],
           "confidence": 0.95,
@@ -10448,6 +10811,24 @@
           },
           "evidence": [
             {
+              "category": "governance",
+              "excerpt": "One of the claims against Nike was filed with the EEOC was by America First Legal. The company's website indicated a release that said it filed its federal civil rights complaint with the EEOC on Jan. 11, 2024",
+              "relevance_score": 0.9092955581008417,
+              "rerank_score": 0.9999562563286309,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "One of the claims against Nike was filed with the EEOC was by America First Legal. The company\u2019s website indicated a release that said it filed its federal civil rights complaint with the EEOC on Jan. 11, 2024. America First Legal charged Nike with allegations of racial and sex discrimination against White males...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "the U.S. Equal Employment Opportunity Commission (EEOC) on Wednesday filed an action for enforcement of an EEOC administrative subpoena against the athletic firm seeking the production of documents in connection to a discrimination probe",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999250210428319,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Nike Inc. appears to be the latest example of how President Trump\u2019s administration has escalated efforts to challenge diversity efforts across corporate America. As reported, the U.S. Equal Employment Opportunity Commission (EEOC) on Wednesday filed an action for enforcement of an EEOC administrative subpoena against the athletic firm seeking the production of documents in connection to a discrimination probe. More specifically, the EEOC is probing \u201csystemic allegations\u201d involving DEI-related intentional race discrimination against White employees and job applicants...."
+            },
+            {
               "category": "social",
               "excerpt": "Among the eight executive officers listed in the annual report, Nike's executive vice president and chief commercial officer Craig Williams was the only one listed who isn't white",
               "relevance_score": 0.8967315183962705,
@@ -10473,24 +10854,6 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "Nike Inc. appears to be the latest example of how President Trump\u2019s administration has escalated efforts to challenge diversity efforts across corporate America.\n\nAs reported, the U.S. Equal Employmen..."
-            },
-            {
-              "category": "governance",
-              "excerpt": "One of the claims against Nike was filed with the EEOC was by America First Legal. The company's website indicated a release that said it filed its federal civil rights complaint with the EEOC on Jan. 11, 2024",
-              "relevance_score": 0.9092955581008417,
-              "rerank_score": 0.9999562563286309,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "One of the claims against Nike was filed with the EEOC was by America First Legal. The company\u2019s website indicated a release that said it filed its federal civil rights complaint with the EEOC on Jan. 11, 2024. America First Legal charged Nike with allegations of racial and sex discrimination against White males...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "the U.S. Equal Employment Opportunity Commission (EEOC) on Wednesday filed an action for enforcement of an EEOC administrative subpoena against the athletic firm seeking the production of documents in connection to a discrimination probe",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999250210428319,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Nike Inc. appears to be the latest example of how President Trump\u2019s administration has escalated efforts to challenge diversity efforts across corporate America. As reported, the U.S. Equal Employment Opportunity Commission (EEOC) on Wednesday filed an action for enforcement of an EEOC administrative subpoena against the athletic firm seeking the production of documents in connection to a discrimination probe. More specifically, the EEOC is probing \u201csystemic allegations\u201d involving DEI-related intentional race discrimination against White employees and job applicants...."
             }
           ],
           "confidence": 0.9,
@@ -10534,24 +10897,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "The agency said it took the action after Nike failed to respond to a subpoena for various information, including the criteria used in selecting employees for redundancies and setting executives' pay.",
-              "relevance_score": 0.8815433244014392,
-              "rerank_score": 0.9998986529465249,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "The agency said it took the action after Nike failed to respond to a subpoena for various information, including the criteria used in selecting employees for redundancies and setting executives\u2019 pay. EEOC chair, Andrea Lucas, an ardent critic of racial diversity initiatives who was appointed last year by President Donald Trump, said US anti-discrimination law is \u201ccolour-blind\u201d and protects employees of \u201call races\u201d...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "In response, Nike says it has provided thousands of documents to the EEOC and is fully cooperating, so they're shocked that the commission would pursue the subpoena.",
-              "relevance_score": 0.8857928192252422,
-              "rerank_score": 0.9994441328985402,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "...\u201cThanks to President Trump\u2019s commitment to enforcing our nation\u2019s civil rights laws, the EEOC has renewed its focus on even-handed enforcement of Title VII,\u201d Lucas said in a statement, referring to a section of the 1964 Civil Rights Act that prohibits employment discrimination based on race, colour, religion or sex. Nike responds\n\nIn response, Nike says it has provided thousands of documents to the EEOC and is fully cooperating, so they\u2019re shocked that the commission would pursue the subpoena."
-            },
-            {
               "category": "social",
               "excerpt": "The US Equal Employment Opportunity Commission (EEOC) said on Wednesday that it had filed a court motion to compel Nike to produce information related to allegations of 'intentional race discrimination' against white employees.",
               "relevance_score": 0.8864029201480659,
@@ -10568,6 +10913,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...Despite no employees speaking out, the February 4 filing relates to a suspected pattern of discrimination in \u201chiring, promotion, demotion, or separation decisions, including selection for layoffs; internship programs; and mentoring, leadership development and other career development programs.\u201d \u201cThe E.E.O.C. seeks information directly relevant to the allegations that Nike subjected white employees, applicants, and training program participants to disparate treatment based on race in various employment decisions, including layoffs, internship programs, mentoring, leadership development, and other career development programs,\u201d the commission said in the motion."
+            },
+            {
+              "category": "governance",
+              "excerpt": "The agency said it took the action after Nike failed to respond to a subpoena for various information, including the criteria used in selecting employees for redundancies and setting executives' pay.",
+              "relevance_score": 0.8815433244014392,
+              "rerank_score": 0.9998986529465249,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "The agency said it took the action after Nike failed to respond to a subpoena for various information, including the criteria used in selecting employees for redundancies and setting executives\u2019 pay. EEOC chair, Andrea Lucas, an ardent critic of racial diversity initiatives who was appointed last year by President Donald Trump, said US anti-discrimination law is \u201ccolour-blind\u201d and protects employees of \u201call races\u201d...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "In response, Nike says it has provided thousands of documents to the EEOC and is fully cooperating, so they're shocked that the commission would pursue the subpoena.",
+              "relevance_score": 0.8857928192252422,
+              "rerank_score": 0.9994441328985402,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...\u201cThanks to President Trump\u2019s commitment to enforcing our nation\u2019s civil rights laws, the EEOC has renewed its focus on even-handed enforcement of Title VII,\u201d Lucas said in a statement, referring to a section of the 1964 Civil Rights Act that prohibits employment discrimination based on race, colour, religion or sex. Nike responds\n\nIn response, Nike says it has provided thousands of documents to the EEOC and is fully cooperating, so they\u2019re shocked that the commission would pursue the subpoena."
             }
           ],
           "confidence": 0.9,
@@ -14570,34 +14933,6 @@
           "reasoning": "This is clearly governance-related content as founder Chip Wilson directly criticizes the Board's oversight, decision-making, and governance structure. His statements about Board accountability, lack of proper committees, and focus on short-term priorities are classic governance issues. The product quality failures are attributed to governance failures rather than operational issues."
         },
         {
-          "brand": "Vuori",
-          "categories": {
-            "environmental": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "digital_transformation": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            }
-          },
-          "evidence": [],
-          "confidence": 0.95,
-          "reasoning": "Vuori is mentioned only as a competitor gaining market share alongside Alo Yoga. No ESG-related content is discussed about the company."
-        },
-        {
           "brand": "Alo Yoga",
           "categories": {
             "environmental": {
@@ -14624,6 +14959,34 @@
           "evidence": [],
           "confidence": 0.95,
           "reasoning": "Alo Yoga is mentioned only as a competitor gaining market share. No ESG-related content is discussed about the company."
+        },
+        {
+          "brand": "Vuori",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [],
+          "confidence": 0.95,
+          "reasoning": "Vuori is mentioned only as a competitor gaining market share alongside Alo Yoga. No ESG-related content is discussed about the company."
         }
       ]
     },
@@ -15327,34 +15690,6 @@
           "reasoning": "Article reports on significant ownership change with Anta becoming largest shareholder, which relates to governance structure and stakeholder composition"
         },
         {
-          "brand": "Adidas",
-          "categories": {
-            "environmental": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "digital_transformation": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            }
-          },
-          "evidence": [],
-          "confidence": 0.95,
-          "reasoning": "Adidas is discussed primarily in competitive/business context (market performance, product success) with no ESG-related content"
-        },
-        {
           "brand": "Nike",
           "categories": {
             "environmental": {
@@ -15381,6 +15716,34 @@
           "evidence": [],
           "confidence": 0.95,
           "reasoning": "Nike is mentioned only as a market comparison point (no. 2 in sportswear) with no substantive ESG-related content in the article"
+        },
+        {
+          "brand": "Adidas",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [],
+          "confidence": 0.95,
+          "reasoning": "Adidas is discussed primarily in competitive/business context (market performance, product success) with no ESG-related content"
         }
       ]
     },
