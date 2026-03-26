@@ -1,0 +1,80 @@
+<svg viewBox="0 0 1584 396" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2C6FB5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sky background -->
+  <rect width="1584" height="396" fill="url(#skyGradient)" />
+
+  <!-- Mountain layers - flattened for 4:1 aspect ratio -->
+  <!-- Back range -->
+  <polygon
+    points="0,396 0,280 100,260 264,230 422,245 580,210 740,220 900,190 1056,175 1214,150 1372,120 1480,95 1584,60 1584,396"
+    fill="#1E5A3A"
+  />
+  <!-- Mid range -->
+  <polygon
+    points="0,396 0,305 132,285 290,275 448,285 608,255 766,265 924,235 1082,220 1240,195 1400,170 1504,145 1584,120 1584,396"
+    fill="#266848"
+    opacity="0.85"
+  />
+  <!-- Front range -->
+  <polygon
+    points="0,396 0,335 158,315 316,310 474,320 634,300 792,310 950,280 1108,265 1254,240 1426,215 1530,195 1584,175 1584,396"
+    fill="#2E8B57"
+    opacity="0.75"
+  />
+  <!-- Foreground hills -->
+  <polygon
+    points="0,396 0,360 184,348 344,342 502,350 634,338 806,348 964,320 1108,310 1280,285 1412,268 1518,252 1584,238 1584,396"
+    fill="#35A065"
+    opacity="0.5"
+  />
+
+  <!-- Name -->
+  <text
+    x="792"
+    y="120"
+    text-anchor="middle"
+    font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
+    font-size="64"
+    font-weight="700"
+    fill="#ffffff"
+    letter-spacing="2"
+  >
+    Frederick Douglas Pearce
+  </text>
+
+  <!-- Tagline -->
+  <text
+    x="792"
+    y="180"
+    text-anchor="middle"
+    font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
+    font-size="28"
+    font-weight="300"
+    fill="#ffffff"
+    fill-opacity="0.85"
+    letter-spacing="4"
+  >
+    FROM ROCKS TO ROWS
+  </text>
+
+  <!-- Subtitle -->
+  <text
+    x="792"
+    y="225"
+    text-anchor="middle"
+    font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
+    font-size="22"
+    font-weight="300"
+    fill="#ffffff"
+    fill-opacity="0.85"
+  >
+    Machine Learning &#x2022; Data Science &#x2022; Earth Science
+  </text>
+</svg>
