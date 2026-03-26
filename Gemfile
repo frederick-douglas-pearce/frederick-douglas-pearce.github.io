@@ -6,6 +6,7 @@ gem 'jekyll'
 gem 'nokogiri', '>= 1.19.1'    # CVE patches for libxml2
 gem 'rexml', '>= 3.4.2'        # DoS vulnerability fix
 gem 'uri', '>= 1.0.4'          # Credential leakage fix
+gem 'activesupport', '>= 8.0.4.1' # DoS, XSS, and ReDoS fixes
 
 # Core plugins that directly affect site building
 group :jekyll_plugins do
