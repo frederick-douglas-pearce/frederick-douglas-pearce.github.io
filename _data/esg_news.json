@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-08T14:00:35.846944+00:00",
-  "total_articles": 527,
+  "generated_at": "2026-04-09T14:00:33.426941+00:00",
+  "total_articles": 528,
   "brands": [
     "361 Degrees",
     "ASICS",
@@ -41,30 +41,30 @@
   "categories": ["digital_transformation", "environmental", "governance", "social"],
   "scorecard": {
     "period_days": 14,
-    "period_start": "2026-03-25",
-    "period_end": "2026-04-08",
-    "articles_in_period": 44,
-    "articles_after_dedup": 30,
+    "period_start": "2026-03-26",
+    "period_end": "2026-04-09",
+    "articles_in_period": 38,
+    "articles_after_dedup": 24,
     "duplicates_removed": 14,
     "top_brands": [
       {
         "brand": "Adidas",
-        "total": 9,
+        "total": 5,
         "environmental": 0,
-        "social": 10,
+        "social": 6,
         "governance": -1,
         "digital_transformation": 0,
-        "article_count": 6,
+        "article_count": 4,
         "medal": "gold"
       },
       {
-        "brand": "Anta",
-        "total": 6,
+        "brand": "ASICS",
+        "total": 4,
         "environmental": 0,
-        "social": 4,
+        "social": 2,
         "governance": 0,
         "digital_transformation": 2,
-        "article_count": 2,
+        "article_count": 1,
         "medal": "silver"
       },
       {
@@ -75,22 +75,42 @@
         "governance": 0,
         "digital_transformation": 2,
         "article_count": 1,
-        "medal": "bronze"
-      },
-      {
-        "brand": "Puma",
-        "total": 4,
-        "environmental": 0,
-        "social": 4,
-        "governance": 0,
-        "digital_transformation": 0,
-        "article_count": 2,
-        "medal": "bronze"
+        "medal": "silver"
       },
       {
         "brand": "Salomon",
         "total": 4,
         "environmental": 2,
+        "social": 2,
+        "governance": 0,
+        "digital_transformation": 0,
+        "article_count": 1,
+        "medal": "silver"
+      },
+      {
+        "brand": "Anta",
+        "total": 2,
+        "environmental": 0,
+        "social": 2,
+        "governance": 0,
+        "digital_transformation": 0,
+        "article_count": 1,
+        "medal": "bronze"
+      },
+      {
+        "brand": "Lululemon",
+        "total": 2,
+        "environmental": 0,
+        "social": 0,
+        "governance": 2,
+        "digital_transformation": 0,
+        "article_count": 1,
+        "medal": "bronze"
+      },
+      {
+        "brand": "Puma",
+        "total": 2,
+        "environmental": 0,
         "social": 2,
         "governance": 0,
         "digital_transformation": 0,
@@ -110,33 +130,33 @@
       },
       {
         "brand": "Nike",
-        "total": -2,
-        "environmental": 4,
+        "total": -5,
+        "environmental": 0,
         "social": -2,
-        "governance": -7,
+        "governance": -6,
         "digital_transformation": 3,
-        "article_count": 12
+        "article_count": 9
       }
     ],
     "all_brand_scores": [
       {
         "brand": "Adidas",
-        "total": 9,
+        "total": 5,
         "environmental": 0,
-        "social": 10,
+        "social": 6,
         "governance": -1,
         "digital_transformation": 0,
-        "article_count": 6,
+        "article_count": 4,
         "medal": "gold"
       },
       {
-        "brand": "Anta",
-        "total": 6,
+        "brand": "ASICS",
+        "total": 4,
         "environmental": 0,
-        "social": 4,
+        "social": 2,
         "governance": 0,
         "digital_transformation": 2,
-        "article_count": 2,
+        "article_count": 1,
         "medal": "silver"
       },
       {
@@ -147,22 +167,22 @@
         "governance": 0,
         "digital_transformation": 2,
         "article_count": 1,
-        "medal": "bronze"
-      },
-      {
-        "brand": "Puma",
-        "total": 4,
-        "environmental": 0,
-        "social": 4,
-        "governance": 0,
-        "digital_transformation": 0,
-        "article_count": 2,
-        "medal": "bronze"
+        "medal": "silver"
       },
       {
         "brand": "Salomon",
         "total": 4,
         "environmental": 2,
+        "social": 2,
+        "governance": 0,
+        "digital_transformation": 0,
+        "article_count": 1,
+        "medal": "silver"
+      },
+      {
+        "brand": "Anta",
+        "total": 2,
+        "environmental": 0,
         "social": 2,
         "governance": 0,
         "digital_transformation": 0,
@@ -176,7 +196,18 @@
         "social": 0,
         "governance": 2,
         "digital_transformation": 0,
-        "article_count": 1
+        "article_count": 1,
+        "medal": "bronze"
+      },
+      {
+        "brand": "Puma",
+        "total": 2,
+        "environmental": 0,
+        "social": 2,
+        "governance": 0,
+        "digital_transformation": 0,
+        "article_count": 1,
+        "medal": "bronze"
       },
       {
         "brand": "New Balance",
@@ -197,15 +228,6 @@
         "article_count": 1
       },
       {
-        "brand": "Nike",
-        "total": -2,
-        "environmental": 4,
-        "social": -2,
-        "governance": -7,
-        "digital_transformation": 3,
-        "article_count": 12
-      },
-      {
         "brand": "Allbirds",
         "total": -5,
         "environmental": -1,
@@ -213,10 +235,105 @@
         "governance": -3,
         "digital_transformation": 0,
         "article_count": 3
+      },
+      {
+        "brand": "Nike",
+        "total": -5,
+        "environmental": 0,
+        "social": -2,
+        "governance": -6,
+        "digital_transformation": 3,
+        "article_count": 9
       }
     ]
   },
   "articles": [
+    {
+      "id": "e9275b13-3e4e-469c-bddd-2bf3cd51cfd1",
+      "title": "ASICS goes community-first with Ekiden as running drives 60% of business",
+      "url": "https://www.afaqs.com/news/mktg/asics-goes-community-first-with-ekiden-as-running-drives-60-of-business-11701641",
+      "source_name": "Afaqs",
+      "published_at": "2026-04-08T23:40:37+00:00",
+      "published_date": "2026-04-08",
+      "brands": ["ASICS"],
+      "categories": ["digital_transformation", "social"],
+      "brand_details": [
+        {
+          "brand": "ASICS",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            }
+          },
+          "evidence": [
+            {
+              "category": "social",
+              "excerpt": "We wanted to come back to the community concept of Ekiden",
+              "relevance_score": 0.7584312452071451,
+              "rerank_score": 0.9998046055184939,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...You can always ask people to come and run on the road. But we wanted to come back to the community concept of Ekiden,\u201d he adds. The initiative quickly evolved into a broader collaboration...."
+            },
+            {
+              "category": "social",
+              "excerpt": "The relay, rooted in Japan's long-standing running tradition, brings teams together to pass a tasuki, a ceremonial sash that symbolises continuity, shared purpose and teamwork.",
+              "relevance_score": 0.8366055502847666,
+              "rerank_score": 0.9998006903425833,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "ASICS India is sharpening its focus on India\u2019s fast-growing running culture, and its latest initiative, the Ekiden relay, signals a shift in strategy from participation to ownership, from sponsorship ..."
+            },
+            {
+              "category": "social",
+              "excerpt": "With more than 240 teams participating, each comprising four runners including at least one Japanese participant, the event served as both a sporting contest and a cultural bridge between India and Japan.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9995457758773739,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...The Japanese sportswear brand recently hosted the first edition of the ASICS Ekiden India 2026. The relay, rooted in Japan\u2019s long-standing running tradition, brings teams together to pass a tasuki, a ceremonial sash that symbolises continuity, shared purpose and teamwork. With more than 240 teams participating, each comprising four runners including at least one Japanese participant, the event served as both a sporting contest and a cultural bridge between India and Japan. For ASICS, the move is deliberate...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "The brand has been investing in initiatives such as in-store foot ID analysis, where consumers can run on a treadmill and receive a detailed assessment before purchasing footwear.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998225429201426,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...This focus has translated into a product-led strategy that emphasises performance and technology. The brand has been investing in initiatives such as in-store foot ID analysis, where consumers can run on a treadmill and receive a detailed assessment before purchasing footwear. \u201cThere is not even a single brand which is making you run on a treadmill, show you the foot ID analysis, give you a physical report and then offer you the shoe,\u201d Sharma says, adding that such experiences help build trust and educate consumers...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "There is not even a single brand which is making you run on a treadmill, show you the foot ID analysis, give you a physical report and then offer you the shoe",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9996501529146825,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...The brand has been investing in initiatives such as in-store foot ID analysis, where consumers can run on a treadmill and receive a detailed assessment before purchasing footwear. \u201cThere is not even a single brand which is making you run on a treadmill, show you the foot ID analysis, give you a physical report and then offer you the shoe,\u201d Sharma says, adding that such experiences help build trust and educate consumers. Even as running leads the pack, ASICS continues to broaden its portfolio...."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "ASICS is creating community-building initiatives through the Ekiden relay that foster cultural exchange and teamwork (Social), and implementing innovative digital foot analysis technology to enhance customer experience (Digital Transformation). The article focuses on business strategy and community engagement rather than environmental or governance topics."
+        }
+      ]
+    },
     {
       "id": "4c1f304d-7e1a-48c9-9578-5224efa17dfa",
       "title": "Nike\u2019s high-tech 2026 World Cup jerseys have a shoulder problem",
@@ -253,24 +370,6 @@
           },
           "evidence": [
             {
-              "category": "digital_transformation",
-              "excerpt": "A source familiar with that design process told the Guardian this week that Nike's 'computational design' is driven by performance data, and incorporates elements of AI to work alongside the company's designers as they craft a product.",
-              "relevance_score": 0.8769893173627609,
-              "rerank_score": 0.9999472903539128,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "A source familiar with that design process told the Guardian this week that Nike\u2019s \u201ccomputational design\u201d is driven by performance data, and incorporates elements of AI to work alongside the company\u2019s designers as they craft a product. A source familiar with Nike\u2019s rollout said on Tuesday that the company is now in conversation with partner federations and vendors as they weigh any next steps...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "[Aero-FIT] leverages computational design and a highly specialized, stitch-specific knitting process to help athletes stay cool",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9991905950905992,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Outdoor matches at this summer\u2019s World Cup, played in the US, Canada and Mexico, may be among the hottest ever played in tournament history, an issue ostensibly addressed through the Aero-FIT design that serves as the framework for all of its authentic World Cup kits. \u201c[Aero-FIT] leverages computational design and a highly specialized, stitch-specific knitting process to help athletes stay cool,\u201d the company\u2019 marketing material reads."
-            },
-            {
               "category": "governance",
               "excerpt": "We always hold ourselves and our products to the highest standards and this fell short.",
               "relevance_score": 1.0,
@@ -296,6 +395,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "\u201cDuring the recent international break, we observed a minor issue with our Nike national team kits, most noticeable around the shoulder seam,\u201d the company said via a spokesperson. \u201cPerformance is unaffected, but the overall aesthetic is not where it needs to be.\u201d Indeed, it\u2019s an uncharacteristic flub from the sportswear giant, who touted the design and technology of the kits upon their release...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "A source familiar with that design process told the Guardian this week that Nike's 'computational design' is driven by performance data, and incorporates elements of AI to work alongside the company's designers as they craft a product.",
+              "relevance_score": 0.8769893173627609,
+              "rerank_score": 0.9999472903539128,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "A source familiar with that design process told the Guardian this week that Nike\u2019s \u201ccomputational design\u201d is driven by performance data, and incorporates elements of AI to work alongside the company\u2019s designers as they craft a product. A source familiar with Nike\u2019s rollout said on Tuesday that the company is now in conversation with partner federations and vendors as they weigh any next steps...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "[Aero-FIT] leverages computational design and a highly specialized, stitch-specific knitting process to help athletes stay cool",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9991905950905992,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Outdoor matches at this summer\u2019s World Cup, played in the US, Canada and Mexico, may be among the hottest ever played in tournament history, an issue ostensibly addressed through the Aero-FIT design that serves as the framework for all of its authentic World Cup kits. \u201c[Aero-FIT] leverages computational design and a highly specialized, stitch-specific knitting process to help athletes stay cool,\u201d the company\u2019 marketing material reads."
             }
           ],
           "confidence": 0.9,
@@ -1226,6 +1343,83 @@
       ]
     },
     {
+      "id": "dd56c235-fe91-4592-8473-6444d411aae2",
+      "title": "Nike sued after customer personal information was exposed",
+      "url": "https://kyma.com/dsw-living/consumer/2026/04/01/nike-sued-after-customers-personal-information-was-exposed/",
+      "source_name": "kyma.com",
+      "published_at": "2026-04-01T16:15:00+00:00",
+      "published_date": "2026-04-01",
+      "brands": ["Nike"],
+      "categories": ["digital_transformation", "governance"],
+      "brand_details": [
+        {
+          "brand": "Nike",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            },
+            "digital_transformation": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            }
+          },
+          "evidence": [
+            {
+              "category": "governance",
+              "excerpt": "A lawsuit filed in California alleges the global sneaker company failed to protect sensitive information, and waited too long to notify customers of a data breach.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999521188200069,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "(NBC, KYMA) - Nike is being sued after customers' personal information was exposed. A lawsuit filed in California alleges the global sneaker company failed to protect sensitive information, and waited too long to notify customers of a data breach. The suit claims names, addresses, phone numbers, and payment info were exposed...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "It says Nike discovered the breach around January 21, but didn't notify victims for over a month.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999208839899555,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...A lawsuit filed in California alleges the global sneaker company failed to protect sensitive information, and waited too long to notify customers of a data breach. The suit claims names, addresses, phone numbers, and payment info were exposed. It says Nike discovered the breach around January 21, but didn't notify victims for over a month. The suit is seeking at least $5 million in damages...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "Nike is being sued after customers' personal information was exposed.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999809785375419,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "(NBC, KYMA) - Nike is being sued after customers' personal information was exposed. A lawsuit filed in California alleges the global sneaker company failed to protect sensitive information, and waited too long to notify customers of a data breach...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "The suit claims names, addresses, phone numbers, and payment info were exposed.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9997363520163735,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Nike is being sued after customers' personal information was exposed. A lawsuit filed in California alleges the global sneaker company failed to protect sensitive information, and waited too long to notify customers of a data breach. The suit claims names, addresses, phone numbers, and payment info were exposed. It says Nike discovered the breach around January 21, but didn't notify victims for over a month...."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "This is clearly about Nike the sportswear company facing a data breach lawsuit. Governance applies due to corporate accountability and transparency failures in breach notification. Digital transformation applies as this involves cybersecurity and data protection failures. Both are negative due to the breach and delayed notification."
+        }
+      ]
+    },
+    {
       "id": "20cde66f-bdbb-4e5e-8edf-f72bb7635681",
       "title": "Nike Resets Digital Strategy with Strong Push on AI and Technology Transformation",
       "url": "https://infotechlead.com/cio/nike-resets-digital-strategy-with-strong-push-on-ai-and-technology-transformation-94822",
@@ -1308,83 +1502,6 @@
           ],
           "confidence": 0.9,
           "reasoning": "Article focuses on Nike's digital transformation strategy with AI/technology innovation (positive Digital Transformation) and workforce reductions affecting employees (negative Social impact). No environmental or governance ESG content present."
-        }
-      ]
-    },
-    {
-      "id": "dd56c235-fe91-4592-8473-6444d411aae2",
-      "title": "Nike sued after customer personal information was exposed",
-      "url": "https://kyma.com/dsw-living/consumer/2026/04/01/nike-sued-after-customers-personal-information-was-exposed/",
-      "source_name": "kyma.com",
-      "published_at": "2026-04-01T16:15:00+00:00",
-      "published_date": "2026-04-01",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "governance"],
-      "brand_details": [
-        {
-          "brand": "Nike",
-          "categories": {
-            "environmental": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": true,
-              "sentiment": -1,
-              "sentiment_label": "negative"
-            },
-            "digital_transformation": {
-              "applies": true,
-              "sentiment": -1,
-              "sentiment_label": "negative"
-            }
-          },
-          "evidence": [
-            {
-              "category": "governance",
-              "excerpt": "A lawsuit filed in California alleges the global sneaker company failed to protect sensitive information, and waited too long to notify customers of a data breach.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999521188200069,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "(NBC, KYMA) - Nike is being sued after customers' personal information was exposed. A lawsuit filed in California alleges the global sneaker company failed to protect sensitive information, and waited too long to notify customers of a data breach. The suit claims names, addresses, phone numbers, and payment info were exposed...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "It says Nike discovered the breach around January 21, but didn't notify victims for over a month.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999208839899555,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...A lawsuit filed in California alleges the global sneaker company failed to protect sensitive information, and waited too long to notify customers of a data breach. The suit claims names, addresses, phone numbers, and payment info were exposed. It says Nike discovered the breach around January 21, but didn't notify victims for over a month. The suit is seeking at least $5 million in damages...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "Nike is being sued after customers' personal information was exposed.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999809785375419,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "(NBC, KYMA) - Nike is being sued after customers' personal information was exposed. A lawsuit filed in California alleges the global sneaker company failed to protect sensitive information, and waited too long to notify customers of a data breach...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "The suit claims names, addresses, phone numbers, and payment info were exposed.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9997363520163735,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Nike is being sued after customers' personal information was exposed. A lawsuit filed in California alleges the global sneaker company failed to protect sensitive information, and waited too long to notify customers of a data breach. The suit claims names, addresses, phone numbers, and payment info were exposed. It says Nike discovered the breach around January 21, but didn't notify victims for over a month...."
-            }
-          ],
-          "confidence": 0.9,
-          "reasoning": "This is clearly about Nike the sportswear company facing a data breach lawsuit. Governance applies due to corporate accountability and transparency failures in breach notification. Digital transformation applies as this involves cybersecurity and data protection failures. Both are negative due to the breach and delayed notification."
         }
       ]
     },
@@ -1696,24 +1813,6 @@
           },
           "evidence": [
             {
-              "category": "digital_transformation",
-              "excerpt": "we are investing in the technology platforms that we expect will help us serve more consumers better and run our business more effectively",
-              "relevance_score": 0.800918936972338,
-              "rerank_score": 0.9998533656943097,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "We have new leadership in place, clearer strategies taken straight, and structural changes underway designed to strengthen these businesses over the long term. We are moving with urgency. We are not s..."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "These moves require us to rewire our supply chain and upgrade our technology platforms",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9997127493613228,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Now we are rebalancing our offense through an integrated and elevated marketplace, and running a Key City offense. These moves require us to rewire our supply chain and upgrade our technology platforms. You saw the early signs of those actions this quarter, and it is a critical step in our return to double-digit EBIT margins."
-            },
-            {
               "category": "social",
               "excerpt": "SG&A Expense -- Increased 2%, including a $230 million charge for employee-related severance costs concentrated in Supply Chain and Technology.",
               "relevance_score": 1.0,
@@ -1730,6 +1829,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...Nike reported tangible demand signals for innovative products, notably with the Nike MIND platform selling out and triggering increased production for future periods. A $230 million severance expense was incurred to reset fixed cost structures in Supply Chain, Technology, and Converse, fueling expectations for profitability improvements beginning in fiscal 2027. Guidance calls for low single-digit revenue declines into year-end as North America improves, offset by a sharp downturn in Greater China from ongoing marketplace management and reduced sell-in...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "we are investing in the technology platforms that we expect will help us serve more consumers better and run our business more effectively",
+              "relevance_score": 0.800918936972338,
+              "rerank_score": 0.9998533656943097,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "We have new leadership in place, clearer strategies taken straight, and structural changes underway designed to strengthen these businesses over the long term. We are moving with urgency. We are not s..."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "These moves require us to rewire our supply chain and upgrade our technology platforms",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9997127493613228,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Now we are rebalancing our offense through an integrated and elevated marketplace, and running a Key City offense. These moves require us to rewire our supply chain and upgrade our technology platforms. You saw the early signs of those actions this quarter, and it is a critical step in our return to double-digit EBIT margins."
             }
           ],
           "confidence": 0.9,
@@ -2036,6 +2153,15 @@
           },
           "evidence": [
             {
+              "category": "environmental",
+              "excerpt": "Its focus on using sustainable materials meant that its products weren't always as durable as alternatives",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998734088682789,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...It expanded its product line too quickly, getting away from its core \"wool runner\" shoe and diluting the brand. Its focus on using sustainable materials meant that its products weren't always as durable as alternatives, and it opened brick-and-mortar stores too aggressively, eventually closing most of them. Allbirds' revenue peaked in 2022 and has steadily eroded since then as it has not had a quarter of positive revenue growth in more than three years...."
+            },
+            {
               "category": "governance",
               "excerpt": "The company made several errors that torched the business and the stock. It expanded its product line too quickly, getting away from its core \"wool runner\" shoe and diluting the brand",
               "relevance_score": 1.0,
@@ -2049,15 +2175,6 @@
               "excerpt": "it opened brick-and-mortar stores too aggressively, eventually closing most of them",
               "relevance_score": 1.0,
               "rerank_score": 0.9995669645904863,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...It expanded its product line too quickly, getting away from its core \"wool runner\" shoe and diluting the brand. Its focus on using sustainable materials meant that its products weren't always as durable as alternatives, and it opened brick-and-mortar stores too aggressively, eventually closing most of them. Allbirds' revenue peaked in 2022 and has steadily eroded since then as it has not had a quarter of positive revenue growth in more than three years...."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "Its focus on using sustainable materials meant that its products weren't always as durable as alternatives",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998734088682789,
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...It expanded its product line too quickly, getting away from its core \"wool runner\" shoe and diluting the brand. Its focus on using sustainable materials meant that its products weren't always as durable as alternatives, and it opened brick-and-mortar stores too aggressively, eventually closing most of them. Allbirds' revenue peaked in 2022 and has steadily eroded since then as it has not had a quarter of positive revenue growth in more than three years...."
@@ -4661,6 +4778,42 @@
           },
           "evidence": [
             {
+              "category": "environmental",
+              "excerpt": "Lululemon Like New: The brand's resale program has become a key driver for sustainability-conscious Gen Z consumers and provides a secondary revenue stream for pre-owned gear.",
+              "relevance_score": 0.8921777358608121,
+              "rerank_score": 0.9998151421276862,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Footwear: After a slow start in 2022, the footwear line expanded in 2024\u20132025 with the Beyondfeel running shoe and the Cityverse casual sneaker. While footwear is not yet a primary revenue driver, it ..."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "The circular economy (resale and repair) is becoming a mandatory component of the retail business model to satisfy ESG-conscious investors.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9762633805848813,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Technical Lifestyle: There is a growing trend toward \"versatile\" clothing\u2014gear that looks like professional attire but feels like athletic wear (e.g., the ABC Pant). Resale Economy: The circular economy (resale and repair) is becoming a mandatory component of the retail business model to satisfy ESG-conscious investors. Risks and Challenges"
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "Omni-channel Strategy: The 'Power of Three x2' strategy emphasizes doubling digital revenue, which currently accounts for nearly half of total sales.",
+              "relevance_score": 0.8123036820250821,
+              "rerank_score": 0.9998730954763138,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Omni-channel Strategy: The \"Power of Three x2\" strategy emphasizes doubling digital revenue, which currently accounts for nearly half of total sales.\n\nCommunity-Based Marketing: Rather than traditiona..."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "The 'Power of Three x2' strategy emphasizes doubling digital revenue, which currently accounts for nearly half of total sales.",
+              "relevance_score": 0.7894369809719282,
+              "rerank_score": 0.9998396616300292,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Omni-channel Strategy: The \"Power of Three x2\" strategy emphasizes doubling digital revenue, which currently accounts for nearly half of total sales.\n\nCommunity-Based Marketing: Rather than traditiona..."
+            },
+            {
               "category": "governance",
               "excerpt": "Board Under Fire: Board Chair Marti Morfitt is facing a proxy fight from founder Chip Wilson, who has nominated three independent directors (including former executives from On Running and Activision) to refocus the company on 'technical excellence.'",
               "relevance_score": 0.8889623219233522,
@@ -4686,42 +4839,6 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "...Leadership and Management\n\nThe leadership landscape is currently in flux. In January 2026, Calvin McDonald stepped down as CEO. While he is credited with the company\u2019s massive scale-up, his final year was marred by a \"lack of newness\" in the product pipeline. Interim Leadership: CFO Meghan Frank and CCO Andr\u00e9 Maestrini are currently serving as interim co-CEOs."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "Omni-channel Strategy: The 'Power of Three x2' strategy emphasizes doubling digital revenue, which currently accounts for nearly half of total sales.",
-              "relevance_score": 0.8123036820250821,
-              "rerank_score": 0.9998730954763138,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Omni-channel Strategy: The \"Power of Three x2\" strategy emphasizes doubling digital revenue, which currently accounts for nearly half of total sales.\n\nCommunity-Based Marketing: Rather than traditiona..."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "The 'Power of Three x2' strategy emphasizes doubling digital revenue, which currently accounts for nearly half of total sales.",
-              "relevance_score": 0.7894369809719282,
-              "rerank_score": 0.9998396616300292,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Omni-channel Strategy: The \"Power of Three x2\" strategy emphasizes doubling digital revenue, which currently accounts for nearly half of total sales.\n\nCommunity-Based Marketing: Rather than traditiona..."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "Lululemon Like New: The brand's resale program has become a key driver for sustainability-conscious Gen Z consumers and provides a secondary revenue stream for pre-owned gear.",
-              "relevance_score": 0.8921777358608121,
-              "rerank_score": 0.9998151421276862,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Footwear: After a slow start in 2022, the footwear line expanded in 2024\u20132025 with the Beyondfeel running shoe and the Cityverse casual sneaker. While footwear is not yet a primary revenue driver, it ..."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "The circular economy (resale and repair) is becoming a mandatory component of the retail business model to satisfy ESG-conscious investors.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9762633805848813,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Technical Lifestyle: There is a growing trend toward \"versatile\" clothing\u2014gear that looks like professional attire but feels like athletic wear (e.g., the ABC Pant). Resale Economy: The circular economy (resale and repair) is becoming a mandatory component of the retail business model to satisfy ESG-conscious investors. Risks and Challenges"
             },
             {
               "category": "social",
@@ -4757,44 +4874,6 @@
       "brands": ["Adidas", "Nike"],
       "categories": ["digital_transformation", "environmental"],
       "brand_details": [
-        {
-          "brand": "Adidas",
-          "categories": {
-            "environmental": {
-              "applies": true,
-              "sentiment": 1,
-              "sentiment_label": "positive"
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "digital_transformation": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            }
-          },
-          "evidence": [
-            {
-              "category": "environmental",
-              "excerpt": "Adidas AG \u2013 Focus on performance apparel and sustainability initiatives",
-              "relevance_score": 1.0,
-              "rerank_score": 0.999932547480326,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Geography: North America, Europe, Asia-Pacific, Rest of the World\n\nKey Players in the Outdoor Apparel Market\n\nAdidas AG \u2013 Focus on performance apparel and sustainability initiatives\n\nNike Inc. \u2013 Expanding technical apparel and smart fabric integration\n\nVF Corporation \u2013 Diverse brand portfolio with specialty outdoor offerings\n\nColumbia Sportswear Company \u2013 Innovative fabrics and global retail presence\n\nAmer Sports \u2013 Strong DTC strategy and growth in Asia-Pacific markets\n\nConclusion\n\nThe outdoor apparel market is set for steady growth, driven by rising participation in outdoor activities, health-conscious lifestyles, and the use of advanced fabrics. Sustainable materials, regulatory compliance, and the expansion of e-commerce and direct-to-consumer channels are further supporting market growth...."
-            }
-          ],
-          "confidence": 0.85,
-          "reasoning": "Adidas is specifically mentioned as having a focus on sustainability initiatives, which qualifies as Environmental ESG content"
-        },
         {
           "brand": "Nike",
           "categories": {
@@ -4832,6 +4911,44 @@
           ],
           "confidence": 0.8,
           "reasoning": "Nike is mentioned as expanding smart fabric integration, which represents digital/technology innovation in their product offerings"
+        },
+        {
+          "brand": "Adidas",
+          "categories": {
+            "environmental": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "environmental",
+              "excerpt": "Adidas AG \u2013 Focus on performance apparel and sustainability initiatives",
+              "relevance_score": 1.0,
+              "rerank_score": 0.999932547480326,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Geography: North America, Europe, Asia-Pacific, Rest of the World\n\nKey Players in the Outdoor Apparel Market\n\nAdidas AG \u2013 Focus on performance apparel and sustainability initiatives\n\nNike Inc. \u2013 Expanding technical apparel and smart fabric integration\n\nVF Corporation \u2013 Diverse brand portfolio with specialty outdoor offerings\n\nColumbia Sportswear Company \u2013 Innovative fabrics and global retail presence\n\nAmer Sports \u2013 Strong DTC strategy and growth in Asia-Pacific markets\n\nConclusion\n\nThe outdoor apparel market is set for steady growth, driven by rising participation in outdoor activities, health-conscious lifestyles, and the use of advanced fabrics. Sustainable materials, regulatory compliance, and the expansion of e-commerce and direct-to-consumer channels are further supporting market growth...."
+            }
+          ],
+          "confidence": 0.85,
+          "reasoning": "Adidas is specifically mentioned as having a focus on sustainability initiatives, which qualifies as Environmental ESG content"
         }
       ]
     },
@@ -5737,24 +5854,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "Eddie Bauer's store operator filed for Chapter 11 bankruptcy protection on Feb. 9, citing declining sales, supply chain problems and rising operating costs",
-              "relevance_score": 0.9048235850900118,
-              "rerank_score": 0.999956099574017,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "The collapse of the sale process is the clearest sign yet that Eddie Bauer's brick-and-mortar business may be at the end of the trail.\n\nThe Seattle-founded retailer's store operator filed for Chapter ..."
-            },
-            {
-              "category": "governance",
-              "excerpt": "It was the third bankruptcy filing tied to Eddie Bauer's retail operations since 2003",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999410402693042,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...The Seattle-founded retailer's store operator filed for Chapter 11 bankruptcy protection on Feb. 9, citing declining sales, supply chain problems and rising operating costs. It was the third bankruptcy filing tied to Eddie Bauer's retail operations since 2003. \"This is not an easy decision,\" Marc Rosen, chief executive of Catalyst Brands - the company that holds the license to operate Eddie Bauer stores in the United States and Canada - said in a statement...."
-            },
-            {
               "category": "social",
               "excerpt": "Eddie Bauer LLC, which operates the brand's U.S. and Canadian stores, said it received no qualified bids for its assets by a March 3 deadline",
               "relevance_score": 1.0,
@@ -5771,6 +5870,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...For shoppers in California and across the country, the clock is ticking. Eddie Bauer said gift cards and loyalty credits will no longer be accepted after Thursday, and all sales are final, with no returns or exchanges. The shutdown would affect about 150 stores in 40 U.S. states and 24 stores in six Canadian provinces, according to RCS Real Estate Advisors, the brokerage hired to market roughly 174 store leases."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Eddie Bauer's store operator filed for Chapter 11 bankruptcy protection on Feb. 9, citing declining sales, supply chain problems and rising operating costs",
+              "relevance_score": 0.9048235850900118,
+              "rerank_score": 0.999956099574017,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "The collapse of the sale process is the clearest sign yet that Eddie Bauer's brick-and-mortar business may be at the end of the trail.\n\nThe Seattle-founded retailer's store operator filed for Chapter ..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "It was the third bankruptcy filing tied to Eddie Bauer's retail operations since 2003",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999410402693042,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...The Seattle-founded retailer's store operator filed for Chapter 11 bankruptcy protection on Feb. 9, citing declining sales, supply chain problems and rising operating costs. It was the third bankruptcy filing tied to Eddie Bauer's retail operations since 2003. \"This is not an easy decision,\" Marc Rosen, chief executive of Catalyst Brands - the company that holds the license to operate Eddie Bauer stores in the United States and Canada - said in a statement...."
             }
           ],
           "confidence": 0.9,
@@ -5814,6 +5931,24 @@
           },
           "evidence": [
             {
+              "category": "governance",
+              "excerpt": "Eddie Bauer, LLC announced that its retail operator had entered into a Restructuring Support Agreement (\"RSA\") pact with its secured lenders as part of its Chapter 11 proceedings.",
+              "relevance_score": 0.8855424893902009,
+              "rerank_score": 0.9999201608094166,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "PENNSYLVANIA (WHTM) \u2014 Less than a month after Eddie Bauer\u2019s store operator in North America and Canada filed for Chapter 11 bankruptcy, dozens of stores are hitting the market. Nexstar\u2019s WHTM reported in February that Eddie Bauer, LLC announced that its retail operator had entered into a Restructuring Support Agreement (\u201cRSA\u201d) pact with its secured lenders as part of its Chapter 11 proceedings. The company, which blamed declining sales and a litany of other industry headwinds for the Chapter 11 filing, also said it would begin winding down operations at certain locations...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "The Chapter 11 filing marked the third time in a little over two decades for the storied-but-now-tired brand that began as a Seattle fishing shop.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9997786078936443,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "The Associated Press previously reported that Eddier Bauer has roughly 180 stores across the U.S. and Canada. At the company\u2019s peak in 2001, the retailer boasted nearly 600 stores. The Chapter 11 filing marked the third time in a little over two decades for the storied-but-now-tired brand that began as a Seattle fishing shop. Eddie Bauer\u2019s namesake founder \u2014 an avid outdoorsman \u2014 started the company in Seattle in 1920 as Bauer\u2019s Sports Shop, according to the brand\u2019s website...."
+            },
+            {
               "category": "social",
               "excerpt": "Less than a month after Eddie Bauer's store operator in North America and Canada filed for Chapter 11 bankruptcy, dozens of stores are hitting the market.",
               "relevance_score": 0.9222811018505842,
@@ -5839,24 +5974,6 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "PENNSYLVANIA (WHTM) \u2014 Less than a month after Eddie Bauer\u2019s store operator in North America and Canada filed for Chapter 11 bankruptcy, dozens of stores are hitting the market. Nexstar\u2019s WHTM reported in February that Eddie Bauer, LLC announced that its retail operator had entered into a Restructuring Support Agreement (\u201cRSA\u201d) pact with its secured lenders as part of its Chapter 11 proceedings. The company, which blamed declining sales and a litany of other industry headwinds for the Chapter 11 filing, also said it would begin winding down operations at certain locations. However, at the time, it was uncertain which stores would eventually shutter...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "Eddie Bauer, LLC announced that its retail operator had entered into a Restructuring Support Agreement (\"RSA\") pact with its secured lenders as part of its Chapter 11 proceedings.",
-              "relevance_score": 0.8855424893902009,
-              "rerank_score": 0.9999201608094166,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "PENNSYLVANIA (WHTM) \u2014 Less than a month after Eddie Bauer\u2019s store operator in North America and Canada filed for Chapter 11 bankruptcy, dozens of stores are hitting the market. Nexstar\u2019s WHTM reported in February that Eddie Bauer, LLC announced that its retail operator had entered into a Restructuring Support Agreement (\u201cRSA\u201d) pact with its secured lenders as part of its Chapter 11 proceedings. The company, which blamed declining sales and a litany of other industry headwinds for the Chapter 11 filing, also said it would begin winding down operations at certain locations...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "The Chapter 11 filing marked the third time in a little over two decades for the storied-but-now-tired brand that began as a Seattle fishing shop.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9997786078936443,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "The Associated Press previously reported that Eddier Bauer has roughly 180 stores across the U.S. and Canada. At the company\u2019s peak in 2001, the retailer boasted nearly 600 stores. The Chapter 11 filing marked the third time in a little over two decades for the storied-but-now-tired brand that began as a Seattle fishing shop. Eddie Bauer\u2019s namesake founder \u2014 an avid outdoorsman \u2014 started the company in Seattle in 1920 as Bauer\u2019s Sports Shop, according to the brand\u2019s website...."
             }
           ],
           "confidence": 0.9,
@@ -6061,7 +6178,7 @@
       "categories": ["environmental", "governance"],
       "brand_details": [
         {
-          "brand": "Adidas",
+          "brand": "Under Armour",
           "categories": {
             "environmental": {
               "applies": true,
@@ -6086,7 +6203,7 @@
           },
           "evidence": [
             {
-              "category": "environmental",
+              "category": "governance",
               "excerpt": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers",
               "relevance_score": 1.0,
               "rerank_score": 0.9998988170088464,
@@ -6095,7 +6212,7 @@
               "context_snippet": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers. The integration of smart textiles, such as temperature-regulating fabrics and odor-control technology, further differentiates premium product lines...."
             },
             {
-              "category": "governance",
+              "category": "environmental",
               "excerpt": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers",
               "relevance_score": 1.0,
               "rerank_score": 0.9998988170088464,
@@ -6105,7 +6222,7 @@
             }
           ],
           "confidence": 0.8,
-          "reasoning": "Adidas is mentioned alongside Nike and Under Armour as incorporating sustainable manufacturing processes (Environmental) and transparent supply chains (Governance). Same general industry reporting context as Nike."
+          "reasoning": "Under Armour is mentioned alongside Nike and Adidas as incorporating sustainable manufacturing processes (Environmental) and transparent supply chains (Governance). Same general industry reporting context as the other two brands."
         },
         {
           "brand": "Nike",
@@ -6155,7 +6272,7 @@
           "reasoning": "Nike is mentioned as incorporating sustainable manufacturing processes (Environmental) and transparent supply chains (Governance). However, this is general industry reporting rather than specific Nike initiatives, so confidence is moderate."
         },
         {
-          "brand": "Under Armour",
+          "brand": "Adidas",
           "categories": {
             "environmental": {
               "applies": true,
@@ -6199,7 +6316,7 @@
             }
           ],
           "confidence": 0.8,
-          "reasoning": "Under Armour is mentioned alongside Nike and Adidas as incorporating sustainable manufacturing processes (Environmental) and transparent supply chains (Governance). Same general industry reporting context as the other two brands."
+          "reasoning": "Adidas is mentioned alongside Nike and Under Armour as incorporating sustainable manufacturing processes (Environmental) and transparent supply chains (Governance). Same general industry reporting context as Nike."
         }
       ]
     },
