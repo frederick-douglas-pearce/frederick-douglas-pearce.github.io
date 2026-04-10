@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-09T14:00:33.426941+00:00",
-  "total_articles": 528,
+  "generated_at": "2026-04-10T14:00:33.302608+00:00",
+  "total_articles": 532,
   "brands": [
     "361 Degrees",
     "ASICS",
@@ -41,34 +41,24 @@
   "categories": ["digital_transformation", "environmental", "governance", "social"],
   "scorecard": {
     "period_days": 14,
-    "period_start": "2026-03-26",
-    "period_end": "2026-04-09",
-    "articles_in_period": 38,
-    "articles_after_dedup": 24,
-    "duplicates_removed": 14,
+    "period_start": "2026-03-27",
+    "period_end": "2026-04-10",
+    "articles_in_period": 41,
+    "articles_after_dedup": 26,
+    "duplicates_removed": 15,
     "top_brands": [
       {
         "brand": "Adidas",
-        "total": 5,
+        "total": 7,
         "environmental": 0,
-        "social": 6,
+        "social": 8,
         "governance": -1,
         "digital_transformation": 0,
-        "article_count": 4,
+        "article_count": 5,
         "medal": "gold"
       },
       {
         "brand": "ASICS",
-        "total": 4,
-        "environmental": 0,
-        "social": 2,
-        "governance": 0,
-        "digital_transformation": 2,
-        "article_count": 1,
-        "medal": "silver"
-      },
-      {
-        "brand": "Decathlon",
         "total": 4,
         "environmental": 0,
         "social": 2,
@@ -109,6 +99,16 @@
       },
       {
         "brand": "Puma",
+        "total": 2,
+        "environmental": 0,
+        "social": 2,
+        "governance": 0,
+        "digital_transformation": 0,
+        "article_count": 1,
+        "medal": "bronze"
+      },
+      {
+        "brand": "Under Armour",
         "total": 2,
         "environmental": 0,
         "social": 2,
@@ -120,47 +120,37 @@
     ],
     "bottom_brands": [
       {
+        "brand": "Nike",
+        "total": -6,
+        "environmental": 0,
+        "social": -2,
+        "governance": -7,
+        "digital_transformation": 3,
+        "article_count": 10
+      },
+      {
         "brand": "Allbirds",
-        "total": -5,
-        "environmental": -1,
+        "total": -3,
+        "environmental": 1,
         "social": -1,
         "governance": -3,
         "digital_transformation": 0,
         "article_count": 3
-      },
-      {
-        "brand": "Nike",
-        "total": -5,
-        "environmental": 0,
-        "social": -2,
-        "governance": -6,
-        "digital_transformation": 3,
-        "article_count": 9
       }
     ],
     "all_brand_scores": [
       {
         "brand": "Adidas",
-        "total": 5,
+        "total": 7,
         "environmental": 0,
-        "social": 6,
+        "social": 8,
         "governance": -1,
         "digital_transformation": 0,
-        "article_count": 4,
+        "article_count": 5,
         "medal": "gold"
       },
       {
         "brand": "ASICS",
-        "total": 4,
-        "environmental": 0,
-        "social": 2,
-        "governance": 0,
-        "digital_transformation": 2,
-        "article_count": 1,
-        "medal": "silver"
-      },
-      {
-        "brand": "Decathlon",
         "total": 4,
         "environmental": 0,
         "social": 2,
@@ -201,6 +191,16 @@
       },
       {
         "brand": "Puma",
+        "total": 2,
+        "environmental": 0,
+        "social": 2,
+        "governance": 0,
+        "digital_transformation": 0,
+        "article_count": 1,
+        "medal": "bronze"
+      },
+      {
+        "brand": "Under Armour",
         "total": 2,
         "environmental": 0,
         "social": 2,
@@ -229,8 +229,8 @@
       },
       {
         "brand": "Allbirds",
-        "total": -5,
-        "environmental": -1,
+        "total": -3,
+        "environmental": 1,
         "social": -1,
         "governance": -3,
         "digital_transformation": 0,
@@ -238,16 +238,270 @@
       },
       {
         "brand": "Nike",
-        "total": -5,
+        "total": -6,
         "environmental": 0,
         "social": -2,
-        "governance": -6,
+        "governance": -7,
         "digital_transformation": 3,
-        "article_count": 9
+        "article_count": 10
       }
     ]
   },
   "articles": [
+    {
+      "id": "a907c144-5bcf-4bd4-9c1e-d5c4dfc45af5",
+      "title": "Adidas help bring out kid creative side by using shoes as a canvas \u00f0\u0178  \u0178",
+      "url": "https://www.cbs58.com/news/adidas-helps-bring-out-kids-creative-side-using-shoes-as-a-canvas",
+      "source_name": "cbs58.com",
+      "published_at": "2026-04-09T23:00:00+00:00",
+      "published_date": "2026-04-09",
+      "brands": ["Adidas"],
+      "categories": ["social"],
+      "brand_details": [
+        {
+          "brand": "Adidas",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "social",
+              "excerpt": "Students got to bring their creativity to the forefront.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998836490948687,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "MILWAUKEE (CBS 58) -- It was quite the day over at Hawthrone Elementary School! Students got to bring their creativity to the forefront. Face paintings, a live DJ and free haircuts were just some of the fun offerings happening over at Hawthorne...."
+            },
+            {
+              "category": "social",
+              "excerpt": "But the main event was Adidas bringing in hundreds of pairs of shoes that functioned as a canvas for the students!",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998759343347242,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Students got to bring their creativity to the forefront. Face paintings, a live DJ and free haircuts were just some of the fun offerings happening over at Hawthorne. But the main event was Adidas bringing in hundreds of pairs of shoes that functioned as a canvas for the students! Using paint, the styled up their shoes however they wanted - awakening a creative side that some maybe thought they didn't have!..."
+            },
+            {
+              "category": "social",
+              "excerpt": "The hope is that there is something else they can do that they didn't know, maybe an unlocked superpower that they have",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9993091537646451,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Using paint, the styled up their shoes however they wanted - awakening a creative side that some maybe thought they didn't have! \"The hope is that there is something else they can do that they didn't know, maybe an unlocked superpower that they have,\" said Alexander John, creative director and designer. \"Now that starts a conversation about their creativity with someone else...."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "This is a genuine community investment program where Adidas provided hundreds of shoes and organized a creative event for elementary school students. This goes beyond marketing to meaningful community engagement and youth development, qualifying as Social ESG with positive sentiment."
+        }
+      ]
+    },
+    {
+      "id": "8a196363-b29e-4ad1-b9b2-0b581d817857",
+      "title": "Nike Rocked By Rare Sneaker Theft Scheme",
+      "url": "http://www.thesmokinggun.com/documents/Nike-sneaker-scandal-576324",
+      "source_name": "thesmokinggun.com",
+      "published_at": "2026-04-09T14:45:00+00:00",
+      "published_date": "2026-04-09",
+      "brands": ["Nike"],
+      "categories": ["governance"],
+      "brand_details": [
+        {
+          "brand": "Nike",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "governance",
+              "excerpt": "A federal criminal investigation has uncovered a 'large-scale theft' operation inside Nike's Oregon headquarters",
+              "relevance_score": 0.8815585213400627,
+              "rerank_score": 0.9999669166473073,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "APRIL 17--A federal criminal investigation has uncovered a \u201clarge-scale theft\u201d operation inside Nike\u2019s Oregon headquarters, a scheme that targeted valuable sneaker prototypes and involved a Nike product manager, his predecessor at the shoe giant, and a Florida businessman who resold the \u201cextremely rare\u201d kicks to buyers nationwide, The Smoking Gun has learned. The reseller, Jason Keating, 35, was named yesterday in a U.S. District Court complaint charging him with receiving stolen property...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Ho had the 'ability and authority' to order the production of sample shoes from a Nike factory in China. When those sneakers arrived at Nike's campus, Ho would load them into a gym bag and transport the items to his car",
+              "relevance_score": 0.8881683996758176,
+              "rerank_score": 0.9999333002704666,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Nike officials told police that Ho had the \u201cability and authority\u201d to order the production of sample shoes from a Nike factory in China. When those sneakers arrived at Nike\u2019s campus, Ho would load the..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Nike employee Tung Ho reportedly admitted to stealing 'several hundred pairs' of 'pre-production or sample' Nike sneakers",
+              "relevance_score": 0.8726676563982786,
+              "rerank_score": 0.9999159104336665,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "APRIL 17--A federal criminal investigation has uncovered a \u201clarge-scale theft\u201d operation inside Nike\u2019s Oregon headquarters, a scheme that targeted valuable sneaker prototypes and involved a Nike produ..."
+            }
+          ],
+          "confidence": 0.95,
+          "reasoning": "This is clearly about Nike the sportswear company and involves a significant governance issue - internal theft by employees, lack of proper controls over valuable inventory, and criminal activity within the organization. This represents a failure of internal controls and oversight."
+        }
+      ]
+    },
+    {
+      "id": "c5e7cb1f-0256-41bb-8128-9bc9cae3fb86",
+      "title": "Unrivaled Sports Partners with Under Armour and DICK'S Sporting Goods to Build the Future of Youth Sports Experiences",
+      "url": "https://www.prnewswire.com/news-releases/unrivaled-sports-partners-with-under-armour-and-dicks-sporting-goods-to-build-the-future-of-youth-sports-experiences-302737580.html",
+      "source_name": "Pr Newswire",
+      "published_at": "2026-04-09T13:00:00+00:00",
+      "published_date": "2026-04-09",
+      "brands": ["Under Armour"],
+      "categories": ["social"],
+      "brand_details": [
+        {
+          "brand": "Under Armour",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "social",
+              "excerpt": "Under Armour's committed to helping drive innovation and performance by delivering the best product and experiences for young athletes at Unrivaled tournaments and events",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999622052260861,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "\"Under Armour is proud to partner with Unrivaled Sports,\" said Craig Cummings, Under Armour Vice President, Team Division. \"Unrivaled showcases a level of excellence in youth sport and Under Armour's committed to helping drive innovation and performance by delivering the best product and experiences for young athletes at Unrivaled tournaments and events. \"\n\nIn addition to the athlete-focused moments, DICK'S will serve as the Presenting-Level Sponsor of Ripken Nationals and the Ripken Nationals Championship, and deliver a premium brand presence throughout the tournament...."
+            },
+            {
+              "category": "social",
+              "excerpt": "These strategic partnerships and sponsorship models are incredibly meaningful as we strive to change the world of youth sports \u2014 by creating inspiring, inclusive, and memory-making experiences for young athletes everywhere, for boys and girls, across multiple sports, and across the country",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999604331673392,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "\"These strategic partnerships and sponsorship models are incredibly meaningful as we strive to change the world of youth sports \u2014 by creating inspiring, inclusive, and memory-making experiences for young athletes everywhere, for boys and girls, across multiple sports, and across the country,\" said Andy Campion, Chief Executive Officer & Chairman of Unrivaled Sports. Unrivaled Sports, Under Armour and DICK'S will collaborate on a series of integrated, experiential activations designed to bring the partnerships to life for participants and fans with a broader roadmap of initiatives to follow throughout the year and beyond...."
+            }
+          ],
+          "confidence": 0.8,
+          "reasoning": "This qualifies as Social ESG because Under Armour is making a substantive commitment to youth development through comprehensive programming that goes beyond simple sponsorship - they're providing equipment, experiences, and dedicated support for young athletes across multiple sports with explicit focus on inclusivity ('boys and girls, across multiple sports'). This represents genuine community investment in youth development rather than just marketing."
+        }
+      ]
+    },
+    {
+      "id": "1b303525-1f15-48cc-8a0d-4e683f2b1862",
+      "title": "Nike admits World Cup kit flaw as England shirt among those affected despite huge price",
+      "url": "https://www.gbnews.com/sport/football/nike-world-cup-kit-flaw-england",
+      "source_name": "Gb News",
+      "published_at": "2026-04-09T09:34:54+00:00",
+      "published_date": "2026-04-09",
+      "brands": ["Nike"],
+      "categories": ["governance"],
+      "brand_details": [
+        {
+          "brand": "Nike",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "governance",
+              "excerpt": "Nike has admitted that its World Cup kits suffer from a design flaw affecting the shoulder area, conceding the appearance does not meet expectations.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999724692977116,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Nike has admitted that its World Cup kits suffer from a design flaw affecting the shoulder area, conceding the appearance does not meet expectations. The sportswear giant confirmed in a statement to the Guardian that whilst the shirts perform as intended, the visual element has fallen below acceptable standards."
+            },
+            {
+              "category": "governance",
+              "excerpt": "The sportswear giant confirmed in a statement to the Guardian that whilst the shirts perform as intended, the visual element has fallen below acceptable standards.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999072077099929,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Nike has admitted that its World Cup kits suffer from a design flaw affecting the shoulder area, conceding the appearance does not meet expectations. The sportswear giant confirmed in a statement to the Guardian that whilst the shirts perform as intended, the visual element has fallen below acceptable standards."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "Nike's public admission of a design flaw and acknowledgment that their product quality fell below acceptable standards represents a governance issue related to corporate accountability and transparency. The company is taking responsibility for a product defect, which is a governance matter."
+        }
+      ]
+    },
     {
       "id": "e9275b13-3e4e-469c-bddd-2bf3cd51cfd1",
       "title": "ASICS goes community-first with Ekiden as running drives 60% of business",
@@ -1233,6 +1487,15 @@
           },
           "evidence": [
             {
+              "category": "social",
+              "excerpt": "At the close of the year, the company employed 362 people, nearly 90% in the United States. More than 200 people worked in its stores at that point, though Allbirds now has fewer than 50 retail employees.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.5448125926806884,
+              "match_method": "exact",
+              "confidence": "low",
+              "context_snippet": "...Throughout, the company failed to turn a profit. In financial filings Tuesday, Allbirds said it has \u201cincurred significant net losses since inception\u201d and expects \u201cto incur significant losses and negative cash flows from operating activities in the future.\u201d At the close of the year, the company employed 362 people, nearly 90% in the United States. More than 200 people worked in its stores at that point, though Allbirds now has fewer than 50 retail employees. The sale to AXNY is expected to close in Q2."
+            },
+            {
               "category": "governance",
               "excerpt": "Allbirds warned of 'substantial doubt about our ability to continue as a going concern' in financial filings Tuesday.",
               "relevance_score": 0.843920993350088,
@@ -1258,15 +1521,6 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...Gross margin contracted to 41% from 42.7% a year ago. The company said it has never turned a profit; net loss last year narrowed by 17% compared to 2024 but topped $77 million. Dive Insight:\n\nIt\u2019s been years since Allbirds relinquished its unicorn status, and this sale is only the latest sign that the disruption from direct-to-consumer brands has fizzled."
-            },
-            {
-              "category": "social",
-              "excerpt": "At the close of the year, the company employed 362 people, nearly 90% in the United States. More than 200 people worked in its stores at that point, though Allbirds now has fewer than 50 retail employees.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.5448125926806884,
-              "match_method": "exact",
-              "confidence": "low",
-              "context_snippet": "...Throughout, the company failed to turn a profit. In financial filings Tuesday, Allbirds said it has \u201cincurred significant net losses since inception\u201d and expects \u201cto incur significant losses and negative cash flows from operating activities in the future.\u201d At the close of the year, the company employed 362 people, nearly 90% in the United States. More than 200 people worked in its stores at that point, though Allbirds now has fewer than 50 retail employees. The sale to AXNY is expected to close in Q2."
             }
           ],
           "confidence": 0.9,
@@ -1378,24 +1632,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "A lawsuit filed in California alleges the global sneaker company failed to protect sensitive information, and waited too long to notify customers of a data breach.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999521188200069,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "(NBC, KYMA) - Nike is being sued after customers' personal information was exposed. A lawsuit filed in California alleges the global sneaker company failed to protect sensitive information, and waited too long to notify customers of a data breach. The suit claims names, addresses, phone numbers, and payment info were exposed...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "It says Nike discovered the breach around January 21, but didn't notify victims for over a month.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999208839899555,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...A lawsuit filed in California alleges the global sneaker company failed to protect sensitive information, and waited too long to notify customers of a data breach. The suit claims names, addresses, phone numbers, and payment info were exposed. It says Nike discovered the breach around January 21, but didn't notify victims for over a month. The suit is seeking at least $5 million in damages...."
-            },
-            {
               "category": "digital_transformation",
               "excerpt": "Nike is being sued after customers' personal information was exposed.",
               "relevance_score": 1.0,
@@ -1412,6 +1648,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...Nike is being sued after customers' personal information was exposed. A lawsuit filed in California alleges the global sneaker company failed to protect sensitive information, and waited too long to notify customers of a data breach. The suit claims names, addresses, phone numbers, and payment info were exposed. It says Nike discovered the breach around January 21, but didn't notify victims for over a month...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "A lawsuit filed in California alleges the global sneaker company failed to protect sensitive information, and waited too long to notify customers of a data breach.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999521188200069,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "(NBC, KYMA) - Nike is being sued after customers' personal information was exposed. A lawsuit filed in California alleges the global sneaker company failed to protect sensitive information, and waited too long to notify customers of a data breach. The suit claims names, addresses, phone numbers, and payment info were exposed...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "It says Nike discovered the breach around January 21, but didn't notify victims for over a month.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999208839899555,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...A lawsuit filed in California alleges the global sneaker company failed to protect sensitive information, and waited too long to notify customers of a data breach. The suit claims names, addresses, phone numbers, and payment info were exposed. It says Nike discovered the breach around January 21, but didn't notify victims for over a month. The suit is seeking at least $5 million in damages...."
             }
           ],
           "confidence": 0.9,
@@ -1813,24 +2067,6 @@
           },
           "evidence": [
             {
-              "category": "social",
-              "excerpt": "SG&A Expense -- Increased 2%, including a $230 million charge for employee-related severance costs concentrated in Supply Chain and Technology.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999159850549314,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "SG&A Expense -- Increased 2%, including a $230 million charge for employee-related severance costs concentrated in Supply Chain and Technology. North America Revenue -- Up 3%; Running and Global Football grew double digits, Basketball up high single digits, Sportswear down double digits...."
-            },
-            {
-              "category": "social",
-              "excerpt": "A $230 million severance expense was incurred to reset fixed cost structures in Supply Chain, Technology, and Converse",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9996650320219354,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Nike reported tangible demand signals for innovative products, notably with the Nike MIND platform selling out and triggering increased production for future periods. A $230 million severance expense was incurred to reset fixed cost structures in Supply Chain, Technology, and Converse, fueling expectations for profitability improvements beginning in fiscal 2027. Guidance calls for low single-digit revenue declines into year-end as North America improves, offset by a sharp downturn in Greater China from ongoing marketplace management and reduced sell-in...."
-            },
-            {
               "category": "digital_transformation",
               "excerpt": "we are investing in the technology platforms that we expect will help us serve more consumers better and run our business more effectively",
               "relevance_score": 0.800918936972338,
@@ -1847,6 +2083,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...Now we are rebalancing our offense through an integrated and elevated marketplace, and running a Key City offense. These moves require us to rewire our supply chain and upgrade our technology platforms. You saw the early signs of those actions this quarter, and it is a critical step in our return to double-digit EBIT margins."
+            },
+            {
+              "category": "social",
+              "excerpt": "SG&A Expense -- Increased 2%, including a $230 million charge for employee-related severance costs concentrated in Supply Chain and Technology.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999159850549314,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "SG&A Expense -- Increased 2%, including a $230 million charge for employee-related severance costs concentrated in Supply Chain and Technology. North America Revenue -- Up 3%; Running and Global Football grew double digits, Basketball up high single digits, Sportswear down double digits...."
+            },
+            {
+              "category": "social",
+              "excerpt": "A $230 million severance expense was incurred to reset fixed cost structures in Supply Chain, Technology, and Converse",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9996650320219354,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Nike reported tangible demand signals for innovative products, notably with the Nike MIND platform selling out and triggering increased production for future periods. A $230 million severance expense was incurred to reset fixed cost structures in Supply Chain, Technology, and Converse, fueling expectations for profitability improvements beginning in fiscal 2027. Guidance calls for low single-digit revenue declines into year-end as North America improves, offset by a sharp downturn in Greater China from ongoing marketplace management and reduced sell-in...."
             }
           ],
           "confidence": 0.9,
@@ -2118,6 +2372,92 @@
       ]
     },
     {
+      "id": "d8f3fe26-b6c4-430d-b77a-912794ff5b30",
+      "title": "Allbirds , once worth $7b , sells its assets for $68m , will wind down",
+      "url": "https://www.newstalkzb.co.nz/news/business/allbirds-once-worth-7b-sells-its-assets-for-68m-will-wind-down/",
+      "source_name": "newstalkzb.co.nz",
+      "published_at": "2026-04-01T00:00:00+00:00",
+      "published_date": "2026-04-01",
+      "brands": ["Allbirds"],
+      "categories": ["environmental", "governance"],
+      "brand_details": [
+        {
+          "brand": "Allbirds",
+          "categories": {
+            "environmental": {
+              "applies": true,
+              "sentiment": 0,
+              "sentiment_label": "neutral"
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "governance",
+              "excerpt": "Allbirds said in a statement. The firm will see shareholder approval for the asset sale, 'and subsequent dissolution and winding down of the company'",
+              "relevance_score": 0.8791314733099426,
+              "rerank_score": 0.9998950783123711,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Allbirds, the sustainable footwear maker co-founded by ex-All White Tim Brown, says it has sold its \u201cintellectual property and certain other assets\u201d for \u201can estimated transaction value of US$39 million ($68m)\u201d. The firm will see shareholder approval for the asset sale, \u201cand subsequent dissolution and winding down of the company\u201d, Allbirds said in a statement. The process is expected to be completed by April 24, followed by a distribution to shareholders. Its fourth-quarter earnings call was cancelled and no financials will be released for the period. The buyer is the New York-based, privately-held American Exchange Group, founded by Syrian immigrant Alen Mamrout, which specialises in buying distressed or undervalued jewellery, lifestyle and footwear brands, then rebooting them with a leaner model...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Brown quit as co-CEO in May 2023 but remains a director.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9995237942485415,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Cash started to run low as revenue dropped and Allbirds lost money quarter after quarter, despite cost-cutting measures that included closing most of its stores. Straight out of Wellington\n\nBrown quit as co-CEO in May 2023 but remains a director. The Wellington Phoenix midfielder and All Whites captain started Allbirds from a Cuba St flat in 2014...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Its fourth-quarter earnings call was cancelled and no financials will be released for the period.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9990182156336803,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...The firm will see shareholder approval for the asset sale, \u201cand subsequent dissolution and winding down of the company\u201d, Allbirds said in a statement. The process is expected to be completed by April 24, followed by a distribution to shareholders. Its fourth-quarter earnings call was cancelled and no financials will be released for the period. The buyer is the New York-based, privately-held American Exchange Group, founded by Syrian immigrant Alen Mamrout, which specialises in buying distressed or undervalued jewellery, lifestyle and footwear brands, then rebooting them with a leaner model...."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "Allbirds, the sustainable footwear maker co-founded by ex-All White Tim Brown",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999606003449393,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Allbirds, the sustainable footwear maker co-founded by ex-All White Tim Brown, says it has sold its \u201cintellectual property and certain other assets\u201d for \u201can estimated transaction value of US$39 million ($68m)\u201d. The firm will see shareholder approval for the asset sale, \u201cand subsequent dissolution and winding down of the company\u201d, Allbirds said in a statement...."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "He teamed with Joey Zwillinger, a San Francisco biotech engineer, to design shoes made from New Zealand merino wool, plus various recycled materials.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9989282931972427,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Straight out of Wellington\n\nBrown quit as co-CEO in May 2023 but remains a director. The Wellington Phoenix midfielder and All Whites captain started Allbirds from a Cuba St flat in 2014. He teamed with Joey Zwillinger, a San Francisco biotech engineer, to design shoes made from New Zealand merino wool, plus various recycled materials. Allbirds had a 20:1 reverse stock split in September 2024 after it was threatened with a Nasdaq delisting as its shares traded below US$1 for 30 days in a row."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "Environmental applies neutrally as the article mentions Allbirds' sustainable positioning and use of recycled materials as factual context. Governance applies negatively due to the company dissolution, leadership changes, and cancelled earnings reporting, which represent significant governance failures and lack of transparency."
+        }
+      ]
+    },
+    {
       "id": "23d82ecf-d2f7-4ae4-9b8a-93abda969b11",
       "title": "American Exchange Is Set to Acquire Allbirds for $39 Million . Here What Investors Need to Know . ",
       "url": "https://www.fool.com/investing/2026/03/31/american-exchange-is-set-to-acquire-allbirds-for-3/?source=iedfolrf0000001",
@@ -2182,92 +2522,6 @@
           ],
           "confidence": 0.9,
           "reasoning": "Article discusses Allbirds' sustainability focus as a business weakness (Environmental negative) and multiple strategic failures including rapid expansion and brand dilution (Governance negative). This is substantive ESG content about corporate decision-making and environmental strategy trade-offs."
-        }
-      ]
-    },
-    {
-      "id": "d8f3fe26-b6c4-430d-b77a-912794ff5b30",
-      "title": "Allbirds , once worth $7b , sells its assets for $68m , will wind down",
-      "url": "https://www.newstalkzb.co.nz/news/business/allbirds-once-worth-7b-sells-its-assets-for-68m-will-wind-down/",
-      "source_name": "newstalkzb.co.nz",
-      "published_at": "2026-04-01T00:00:00+00:00",
-      "published_date": "2026-04-01",
-      "brands": ["Allbirds"],
-      "categories": ["environmental", "governance"],
-      "brand_details": [
-        {
-          "brand": "Allbirds",
-          "categories": {
-            "environmental": {
-              "applies": true,
-              "sentiment": 0,
-              "sentiment_label": "neutral"
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": true,
-              "sentiment": -1,
-              "sentiment_label": "negative"
-            },
-            "digital_transformation": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            }
-          },
-          "evidence": [
-            {
-              "category": "environmental",
-              "excerpt": "Allbirds, the sustainable footwear maker co-founded by ex-All White Tim Brown",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999606003449393,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Allbirds, the sustainable footwear maker co-founded by ex-All White Tim Brown, says it has sold its \u201cintellectual property and certain other assets\u201d for \u201can estimated transaction value of US$39 million ($68m)\u201d. The firm will see shareholder approval for the asset sale, \u201cand subsequent dissolution and winding down of the company\u201d, Allbirds said in a statement...."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "He teamed with Joey Zwillinger, a San Francisco biotech engineer, to design shoes made from New Zealand merino wool, plus various recycled materials.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9989282931972427,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Straight out of Wellington\n\nBrown quit as co-CEO in May 2023 but remains a director. The Wellington Phoenix midfielder and All Whites captain started Allbirds from a Cuba St flat in 2014. He teamed with Joey Zwillinger, a San Francisco biotech engineer, to design shoes made from New Zealand merino wool, plus various recycled materials. Allbirds had a 20:1 reverse stock split in September 2024 after it was threatened with a Nasdaq delisting as its shares traded below US$1 for 30 days in a row."
-            },
-            {
-              "category": "governance",
-              "excerpt": "Allbirds said in a statement. The firm will see shareholder approval for the asset sale, 'and subsequent dissolution and winding down of the company'",
-              "relevance_score": 0.8791314733099426,
-              "rerank_score": 0.9998950783123711,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Allbirds, the sustainable footwear maker co-founded by ex-All White Tim Brown, says it has sold its \u201cintellectual property and certain other assets\u201d for \u201can estimated transaction value of US$39 million ($68m)\u201d. The firm will see shareholder approval for the asset sale, \u201cand subsequent dissolution and winding down of the company\u201d, Allbirds said in a statement. The process is expected to be completed by April 24, followed by a distribution to shareholders. Its fourth-quarter earnings call was cancelled and no financials will be released for the period. The buyer is the New York-based, privately-held American Exchange Group, founded by Syrian immigrant Alen Mamrout, which specialises in buying distressed or undervalued jewellery, lifestyle and footwear brands, then rebooting them with a leaner model...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "Brown quit as co-CEO in May 2023 but remains a director.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9995237942485415,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Cash started to run low as revenue dropped and Allbirds lost money quarter after quarter, despite cost-cutting measures that included closing most of its stores. Straight out of Wellington\n\nBrown quit as co-CEO in May 2023 but remains a director. The Wellington Phoenix midfielder and All Whites captain started Allbirds from a Cuba St flat in 2014...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "Its fourth-quarter earnings call was cancelled and no financials will be released for the period.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9990182156336803,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...The firm will see shareholder approval for the asset sale, \u201cand subsequent dissolution and winding down of the company\u201d, Allbirds said in a statement. The process is expected to be completed by April 24, followed by a distribution to shareholders. Its fourth-quarter earnings call was cancelled and no financials will be released for the period. The buyer is the New York-based, privately-held American Exchange Group, founded by Syrian immigrant Alen Mamrout, which specialises in buying distressed or undervalued jewellery, lifestyle and footwear brands, then rebooting them with a leaner model...."
-            }
-          ],
-          "confidence": 0.9,
-          "reasoning": "Environmental applies neutrally as the article mentions Allbirds' sustainable positioning and use of recycled materials as factual context. Governance applies negatively due to the company dissolution, leadership changes, and cancelled earnings reporting, which represent significant governance failures and lack of transparency."
         }
       ]
     },
@@ -3100,15 +3354,6 @@
           },
           "evidence": [
             {
-              "category": "digital_transformation",
-              "excerpt": "The group's research and development expenditure rose to approximately 2.2 billion yuan during the year as it launched an 'AI365 Strategy' to integrate artificial intelligence tools across its value chain.",
-              "relevance_score": 0.8336237873441092,
-              "rerank_score": 0.996747605985167,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "...Revenue from all other brands surged 59.2% to 17.00 billion yuan, with operating profit jumping 55.3% to 4.74 billion yuan. DESCENTE's retail sales surpassed 10 billion yuan for the first time in 2025, making it the group's third brand to reach the milestone after ANTA and FILA. The group's research and development expenditure rose to approximately 2.2 billion yuan during the year as it launched an \"AI365 Strategy\" to integrate artificial intelligence tools across its value chain."
-            },
-            {
               "category": "social",
               "excerpt": "ANTA also reported total charitable donations of over 800 million yuan in 2025 from the group and the Hemin Foundation, bringing cumulative donations to more than 3.5 billion yuan.",
               "relevance_score": 1.0,
@@ -3116,6 +3361,15 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "ANTA also reported total charitable donations of over 800 million yuan in 2025 from the group and the Hemin Foundation, bringing cumulative donations to more than 3.5 billion yuan. \"The Group's revenue surpassed 80 billion yuan for the first time...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "The group's research and development expenditure rose to approximately 2.2 billion yuan during the year as it launched an 'AI365 Strategy' to integrate artificial intelligence tools across its value chain.",
+              "relevance_score": 0.8336237873441092,
+              "rerank_score": 0.996747605985167,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...Revenue from all other brands surged 59.2% to 17.00 billion yuan, with operating profit jumping 55.3% to 4.74 billion yuan. DESCENTE's retail sales surpassed 10 billion yuan for the first time in 2025, making it the group's third brand to reach the milestone after ANTA and FILA. The group's research and development expenditure rose to approximately 2.2 billion yuan during the year as it launched an \"AI365 Strategy\" to integrate artificial intelligence tools across its value chain."
             }
           ],
           "confidence": 0.9,
@@ -4778,24 +5032,6 @@
           },
           "evidence": [
             {
-              "category": "environmental",
-              "excerpt": "Lululemon Like New: The brand's resale program has become a key driver for sustainability-conscious Gen Z consumers and provides a secondary revenue stream for pre-owned gear.",
-              "relevance_score": 0.8921777358608121,
-              "rerank_score": 0.9998151421276862,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Footwear: After a slow start in 2022, the footwear line expanded in 2024\u20132025 with the Beyondfeel running shoe and the Cityverse casual sneaker. While footwear is not yet a primary revenue driver, it ..."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "The circular economy (resale and repair) is becoming a mandatory component of the retail business model to satisfy ESG-conscious investors.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9762633805848813,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Technical Lifestyle: There is a growing trend toward \"versatile\" clothing\u2014gear that looks like professional attire but feels like athletic wear (e.g., the ABC Pant). Resale Economy: The circular economy (resale and repair) is becoming a mandatory component of the retail business model to satisfy ESG-conscious investors. Risks and Challenges"
-            },
-            {
               "category": "digital_transformation",
               "excerpt": "Omni-channel Strategy: The 'Power of Three x2' strategy emphasizes doubling digital revenue, which currently accounts for nearly half of total sales.",
               "relevance_score": 0.8123036820250821,
@@ -4812,6 +5048,24 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "Omni-channel Strategy: The \"Power of Three x2\" strategy emphasizes doubling digital revenue, which currently accounts for nearly half of total sales.\n\nCommunity-Based Marketing: Rather than traditiona..."
+            },
+            {
+              "category": "social",
+              "excerpt": "UFLPA Compliance: Lululemon maintains a 'zero-tolerance' policy regarding forced labor, but rigorous auditing under the Uyghur Forced Labor Prevention Act remains a high operational cost.",
+              "relevance_score": 0.8248677528040176,
+              "rerank_score": 0.9999382828107367,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Regulatory, Policy, and Geopolitical Factors\n\nUFLPA Compliance: Lululemon maintains a \"zero-tolerance\" policy regarding forced labor, but rigorous auditing under the Uyghur Forced Labor Prevention Act remains a high operational cost. Trade Tariffs: New 2025-2026 trade policies have placed significant pressure on Lululemon's Asian-centric supply chain, forcing the company to explore near-shoring in Mexico and Central America...."
+            },
+            {
+              "category": "social",
+              "excerpt": "ESG Accreditation: Achieving full accreditation from the Fair Labor Association (FLA) in late 2024 has helped insulate the brand from some social governance criticisms.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9996713953734924,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Regulatory, Policy, and Geopolitical Factors\n\nUFLPA Compliance: Lululemon maintains a \"zero-tolerance\" policy regarding forced labor, but rigorous auditing under the Uyghur Forced Labor Prevention Act remains a high operational cost. Trade Tariffs: New 2025-2026 trade policies have placed significant pressure on Lululemon's Asian-centric supply chain, forcing the company to explore near-shoring in Mexico and Central America. ESG Accreditation: Achieving full accreditation from the Fair Labor Association (FLA) in late 2024 has helped insulate the brand from some social governance criticisms. Conclusion\n\nAs we look at Lululemon on March 17, 2026, the company is no longer the high-flying growth darling it once was...."
             },
             {
               "category": "governance",
@@ -4841,22 +5095,22 @@
               "context_snippet": "...Leadership and Management\n\nThe leadership landscape is currently in flux. In January 2026, Calvin McDonald stepped down as CEO. While he is credited with the company\u2019s massive scale-up, his final year was marred by a \"lack of newness\" in the product pipeline. Interim Leadership: CFO Meghan Frank and CCO Andr\u00e9 Maestrini are currently serving as interim co-CEOs."
             },
             {
-              "category": "social",
-              "excerpt": "UFLPA Compliance: Lululemon maintains a 'zero-tolerance' policy regarding forced labor, but rigorous auditing under the Uyghur Forced Labor Prevention Act remains a high operational cost.",
-              "relevance_score": 0.8248677528040176,
-              "rerank_score": 0.9999382828107367,
+              "category": "environmental",
+              "excerpt": "Lululemon Like New: The brand's resale program has become a key driver for sustainability-conscious Gen Z consumers and provides a secondary revenue stream for pre-owned gear.",
+              "relevance_score": 0.8921777358608121,
+              "rerank_score": 0.9998151421276862,
               "match_method": "combined",
               "confidence": "high",
-              "context_snippet": "Regulatory, Policy, and Geopolitical Factors\n\nUFLPA Compliance: Lululemon maintains a \"zero-tolerance\" policy regarding forced labor, but rigorous auditing under the Uyghur Forced Labor Prevention Act remains a high operational cost. Trade Tariffs: New 2025-2026 trade policies have placed significant pressure on Lululemon's Asian-centric supply chain, forcing the company to explore near-shoring in Mexico and Central America...."
+              "context_snippet": "Footwear: After a slow start in 2022, the footwear line expanded in 2024\u20132025 with the Beyondfeel running shoe and the Cityverse casual sneaker. While footwear is not yet a primary revenue driver, it ..."
             },
             {
-              "category": "social",
-              "excerpt": "ESG Accreditation: Achieving full accreditation from the Fair Labor Association (FLA) in late 2024 has helped insulate the brand from some social governance criticisms.",
+              "category": "environmental",
+              "excerpt": "The circular economy (resale and repair) is becoming a mandatory component of the retail business model to satisfy ESG-conscious investors.",
               "relevance_score": 1.0,
-              "rerank_score": 0.9996713953734924,
+              "rerank_score": 0.9762633805848813,
               "match_method": "exact",
               "confidence": "high",
-              "context_snippet": "Regulatory, Policy, and Geopolitical Factors\n\nUFLPA Compliance: Lululemon maintains a \"zero-tolerance\" policy regarding forced labor, but rigorous auditing under the Uyghur Forced Labor Prevention Act remains a high operational cost. Trade Tariffs: New 2025-2026 trade policies have placed significant pressure on Lululemon's Asian-centric supply chain, forcing the company to explore near-shoring in Mexico and Central America. ESG Accreditation: Achieving full accreditation from the Fair Labor Association (FLA) in late 2024 has helped insulate the brand from some social governance criticisms. Conclusion\n\nAs we look at Lululemon on March 17, 2026, the company is no longer the high-flying growth darling it once was...."
+              "context_snippet": "...Technical Lifestyle: There is a growing trend toward \"versatile\" clothing\u2014gear that looks like professional attire but feels like athletic wear (e.g., the ABC Pant). Resale Economy: The circular economy (resale and repair) is becoming a mandatory component of the retail business model to satisfy ESG-conscious investors. Risks and Challenges"
             }
           ],
           "confidence": 0.9,
@@ -5591,24 +5845,6 @@
           },
           "evidence": [
             {
-              "category": "social",
-              "excerpt": "Lululemon is continuing to enhance its security measures, including the use of advanced technology and individuals on hand to monitor potential robberies in real time",
-              "relevance_score": 1.0,
-              "rerank_score": 0.999912502509396,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...However, they added that a greater collaboration with law enforcement has already led to multiple arrests in 2026 alone. The source also stated that Lululemon is continuing to enhance its security measures, including the use of advanced technology and individuals on hand to monitor potential robberies in real time. \u201cThe safety and well-being of our people, guests, and the communities we serve is our top priority...."
-            },
-            {
-              "category": "social",
-              "excerpt": "The safety and well-being of our people, guests, and the communities we serve is our top priority",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9965409630631951,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...The source also stated that Lululemon is continuing to enhance its security measures, including the use of advanced technology and individuals on hand to monitor potential robberies in real time. \u201cThe safety and well-being of our people, guests, and the communities we serve is our top priority. We take retail crime seriously and work alongside law enforcement partners to respond to incidents and support investigations,\u201d a spokesperson said...."
-            },
-            {
               "category": "governance",
               "excerpt": "a greater collaboration with law enforcement has already led to multiple arrests in 2026 alone",
               "relevance_score": 1.0,
@@ -5634,6 +5870,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...However, they added that a greater collaboration with law enforcement has already led to multiple arrests in 2026 alone. The source also stated that Lululemon is continuing to enhance its security measures, including the use of advanced technology and individuals on hand to monitor potential robberies in real time. \u201cThe safety and well-being of our people, guests, and the communities we serve is our top priority...."
+            },
+            {
+              "category": "social",
+              "excerpt": "Lululemon is continuing to enhance its security measures, including the use of advanced technology and individuals on hand to monitor potential robberies in real time",
+              "relevance_score": 1.0,
+              "rerank_score": 0.999912502509396,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...However, they added that a greater collaboration with law enforcement has already led to multiple arrests in 2026 alone. The source also stated that Lululemon is continuing to enhance its security measures, including the use of advanced technology and individuals on hand to monitor potential robberies in real time. \u201cThe safety and well-being of our people, guests, and the communities we serve is our top priority...."
+            },
+            {
+              "category": "social",
+              "excerpt": "The safety and well-being of our people, guests, and the communities we serve is our top priority",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9965409630631951,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...The source also stated that Lululemon is continuing to enhance its security measures, including the use of advanced technology and individuals on hand to monitor potential robberies in real time. \u201cThe safety and well-being of our people, guests, and the communities we serve is our top priority. We take retail crime seriously and work alongside law enforcement partners to respond to incidents and support investigations,\u201d a spokesperson said...."
             }
           ],
           "confidence": 0.8,
@@ -5854,24 +6108,6 @@
           },
           "evidence": [
             {
-              "category": "social",
-              "excerpt": "Eddie Bauer LLC, which operates the brand's U.S. and Canadian stores, said it received no qualified bids for its assets by a March 3 deadline",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999628614204064,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Eddie Bauer's Bay Area stores, along with the rest of its North American retail fleet, are on track to close after the company's store operator failed to find a buyer in bankruptcy court. Eddie Bauer LLC, which operates the brand's U.S. and Canadian stores, said it received no qualified bids for its assets by a March 3 deadline, according to court filings. That forced the cancellation of a planned March 6 auction in U.S. Bankruptcy Court in New Jersey and left the company moving ahead with store-closing sales...."
-            },
-            {
-              "category": "social",
-              "excerpt": "The shutdown would affect about 150 stores in 40 U.S. states and 24 stores in six Canadian provinces",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9996455465884139,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...For shoppers in California and across the country, the clock is ticking. Eddie Bauer said gift cards and loyalty credits will no longer be accepted after Thursday, and all sales are final, with no returns or exchanges. The shutdown would affect about 150 stores in 40 U.S. states and 24 stores in six Canadian provinces, according to RCS Real Estate Advisors, the brokerage hired to market roughly 174 store leases."
-            },
-            {
               "category": "governance",
               "excerpt": "Eddie Bauer's store operator filed for Chapter 11 bankruptcy protection on Feb. 9, citing declining sales, supply chain problems and rising operating costs",
               "relevance_score": 0.9048235850900118,
@@ -5888,10 +6124,96 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...The Seattle-founded retailer's store operator filed for Chapter 11 bankruptcy protection on Feb. 9, citing declining sales, supply chain problems and rising operating costs. It was the third bankruptcy filing tied to Eddie Bauer's retail operations since 2003. \"This is not an easy decision,\" Marc Rosen, chief executive of Catalyst Brands - the company that holds the license to operate Eddie Bauer stores in the United States and Canada - said in a statement...."
+            },
+            {
+              "category": "social",
+              "excerpt": "Eddie Bauer LLC, which operates the brand's U.S. and Canadian stores, said it received no qualified bids for its assets by a March 3 deadline",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999628614204064,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Eddie Bauer's Bay Area stores, along with the rest of its North American retail fleet, are on track to close after the company's store operator failed to find a buyer in bankruptcy court. Eddie Bauer LLC, which operates the brand's U.S. and Canadian stores, said it received no qualified bids for its assets by a March 3 deadline, according to court filings. That forced the cancellation of a planned March 6 auction in U.S. Bankruptcy Court in New Jersey and left the company moving ahead with store-closing sales...."
+            },
+            {
+              "category": "social",
+              "excerpt": "The shutdown would affect about 150 stores in 40 U.S. states and 24 stores in six Canadian provinces",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9996455465884139,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...For shoppers in California and across the country, the clock is ticking. Eddie Bauer said gift cards and loyalty credits will no longer be accepted after Thursday, and all sales are final, with no returns or exchanges. The shutdown would affect about 150 stores in 40 U.S. states and 24 stores in six Canadian provinces, according to RCS Real Estate Advisors, the brokerage hired to market roughly 174 store leases."
             }
           ],
           "confidence": 0.9,
           "reasoning": "This is clearly about Eddie Bauer the outdoor apparel company. The bankruptcy and store closures represent significant governance failures (third bankruptcy since 2003) and negative social impact (job losses from 174 store closures across North America)."
+        }
+      ]
+    },
+    {
+      "id": "c90fda0e-4125-4039-8725-734b58d8682e",
+      "title": "Are all Eddie Bauer stores closing ? Here what we know . ",
+      "url": "https://www.aol.com/articles/eddie-bauer-stores-closing-heres-192624640.html",
+      "source_name": "aol.com",
+      "published_at": "2026-03-07T20:15:00+00:00",
+      "published_date": "2026-03-07",
+      "brands": ["Eddie Bauer"],
+      "categories": ["governance"],
+      "brand_details": [
+        {
+          "brand": "Eddie Bauer",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "governance",
+              "excerpt": "All Eddie Bauer stores are on the verge of closing after the clothing retailer failed to find a buyer as it navigates Chapter 11 bankruptcy",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999748064588265,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "All Eddie Bauer stores are on the verge of closing after the clothing retailer failed to find a buyer as it navigates Chapter 11 bankruptcy, according to court documents filed in early March. Eddie Bauer LLC, the operator of Eddie Bauer stores in the United States and Canada, and a licensee of the Eddie Bauer brand, could not find a satisfactory bidder for its assets by its March 3 deadline, according to a notice filed in the U.S. Bankruptcy Court of New Jersey...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "The Feb. 9 filing marks the third time the retailer has filed for bankruptcy, with the other two times occurring in 2003 and 2009.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999291728100242,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "The Feb. 9 filing marks the third time the retailer has filed for bankruptcy, with the other two times occurring in 2003 and 2009. \"This is not an easy decision,\" Marc Rosen, CEO of Catalyst Brands, said in a statement...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Eddie Bauer LLC, the operator of Eddie Bauer stores in the United States and Canada, and a licensee of the Eddie Bauer brand, could not find a satisfactory bidder for its assets by its March 3 deadline",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999089859102153,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "All Eddie Bauer stores are on the verge of closing after the clothing retailer failed to find a buyer as it navigates Chapter 11 bankruptcy, according to court documents filed in early March. Eddie Bauer LLC, the operator of Eddie Bauer stores in the United States and Canada, and a licensee of the Eddie Bauer brand, could not find a satisfactory bidder for its assets by its March 3 deadline, according to a notice filed in the U.S. Bankruptcy Court of New Jersey. Since the retailer had no qualified bids for its remaining assets, the auction set for March 6 was canceled...."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "This is clearly about Eddie Bauer the outdoor apparel retailer. The article reports on corporate governance issues including the third bankruptcy filing and failed asset sale, indicating poor financial management and corporate oversight. This is negative governance news about the company's inability to maintain financial stability."
         }
       ]
     },
@@ -5978,74 +6300,6 @@
           ],
           "confidence": 0.9,
           "reasoning": "The article is about Eddie Bauer's Chapter 11 bankruptcy filing and mass store closures. This qualifies for Social (negative impact on communities losing stores and workers facing job losses) and Governance (corporate financial distress requiring restructuring, third bankruptcy in 20+ years indicates governance challenges)."
-        }
-      ]
-    },
-    {
-      "id": "c90fda0e-4125-4039-8725-734b58d8682e",
-      "title": "Are all Eddie Bauer stores closing ? Here what we know . ",
-      "url": "https://www.aol.com/articles/eddie-bauer-stores-closing-heres-192624640.html",
-      "source_name": "aol.com",
-      "published_at": "2026-03-07T20:15:00+00:00",
-      "published_date": "2026-03-07",
-      "brands": ["Eddie Bauer"],
-      "categories": ["governance"],
-      "brand_details": [
-        {
-          "brand": "Eddie Bauer",
-          "categories": {
-            "environmental": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": true,
-              "sentiment": -1,
-              "sentiment_label": "negative"
-            },
-            "digital_transformation": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            }
-          },
-          "evidence": [
-            {
-              "category": "governance",
-              "excerpt": "All Eddie Bauer stores are on the verge of closing after the clothing retailer failed to find a buyer as it navigates Chapter 11 bankruptcy",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999748064588265,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "All Eddie Bauer stores are on the verge of closing after the clothing retailer failed to find a buyer as it navigates Chapter 11 bankruptcy, according to court documents filed in early March. Eddie Bauer LLC, the operator of Eddie Bauer stores in the United States and Canada, and a licensee of the Eddie Bauer brand, could not find a satisfactory bidder for its assets by its March 3 deadline, according to a notice filed in the U.S. Bankruptcy Court of New Jersey...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "The Feb. 9 filing marks the third time the retailer has filed for bankruptcy, with the other two times occurring in 2003 and 2009.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999291728100242,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "The Feb. 9 filing marks the third time the retailer has filed for bankruptcy, with the other two times occurring in 2003 and 2009. \"This is not an easy decision,\" Marc Rosen, CEO of Catalyst Brands, said in a statement...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "Eddie Bauer LLC, the operator of Eddie Bauer stores in the United States and Canada, and a licensee of the Eddie Bauer brand, could not find a satisfactory bidder for its assets by its March 3 deadline",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999089859102153,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "All Eddie Bauer stores are on the verge of closing after the clothing retailer failed to find a buyer as it navigates Chapter 11 bankruptcy, according to court documents filed in early March. Eddie Bauer LLC, the operator of Eddie Bauer stores in the United States and Canada, and a licensee of the Eddie Bauer brand, could not find a satisfactory bidder for its assets by its March 3 deadline, according to a notice filed in the U.S. Bankruptcy Court of New Jersey. Since the retailer had no qualified bids for its remaining assets, the auction set for March 6 was canceled...."
-            }
-          ],
-          "confidence": 0.9,
-          "reasoning": "This is clearly about Eddie Bauer the outdoor apparel retailer. The article reports on corporate governance issues including the third bankruptcy filing and failed asset sale, indicating poor financial management and corporate oversight. This is negative governance news about the company's inability to maintain financial stability."
         }
       ]
     },
@@ -6225,53 +6479,6 @@
           "reasoning": "Under Armour is mentioned alongside Nike and Adidas as incorporating sustainable manufacturing processes (Environmental) and transparent supply chains (Governance). Same general industry reporting context as the other two brands."
         },
         {
-          "brand": "Nike",
-          "categories": {
-            "environmental": {
-              "applies": true,
-              "sentiment": 1,
-              "sentiment_label": "positive"
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": true,
-              "sentiment": 1,
-              "sentiment_label": "positive"
-            },
-            "digital_transformation": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            }
-          },
-          "evidence": [
-            {
-              "category": "governance",
-              "excerpt": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998988170088464,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers. The integration of smart textiles, such as temperature-regulating fabrics and odor-control technology, further differentiates premium product lines...."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998988170088464,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers. The integration of smart textiles, such as temperature-regulating fabrics and odor-control technology, further differentiates premium product lines...."
-            }
-          ],
-          "confidence": 0.8,
-          "reasoning": "Nike is mentioned as incorporating sustainable manufacturing processes (Environmental) and transparent supply chains (Governance). However, this is general industry reporting rather than specific Nike initiatives, so confidence is moderate."
-        },
-        {
           "brand": "Adidas",
           "categories": {
             "environmental": {
@@ -6297,7 +6504,7 @@
           },
           "evidence": [
             {
-              "category": "governance",
+              "category": "environmental",
               "excerpt": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers",
               "relevance_score": 1.0,
               "rerank_score": 0.9998988170088464,
@@ -6306,7 +6513,7 @@
               "context_snippet": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers. The integration of smart textiles, such as temperature-regulating fabrics and odor-control technology, further differentiates premium product lines...."
             },
             {
-              "category": "environmental",
+              "category": "governance",
               "excerpt": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers",
               "relevance_score": 1.0,
               "rerank_score": 0.9998988170088464,
@@ -6317,6 +6524,53 @@
           ],
           "confidence": 0.8,
           "reasoning": "Adidas is mentioned alongside Nike and Under Armour as incorporating sustainable manufacturing processes (Environmental) and transparent supply chains (Governance). Same general industry reporting context as Nike."
+        },
+        {
+          "brand": "Nike",
+          "categories": {
+            "environmental": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "environmental",
+              "excerpt": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998988170088464,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers. The integration of smart textiles, such as temperature-regulating fabrics and odor-control technology, further differentiates premium product lines...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998988170088464,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers. The integration of smart textiles, such as temperature-regulating fabrics and odor-control technology, further differentiates premium product lines...."
+            }
+          ],
+          "confidence": 0.8,
+          "reasoning": "Nike is mentioned as incorporating sustainable manufacturing processes (Environmental) and transparent supply chains (Governance). However, this is general industry reporting rather than specific Nike initiatives, so confidence is moderate."
         }
       ]
     },
