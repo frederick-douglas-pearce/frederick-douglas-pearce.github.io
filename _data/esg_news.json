@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-11T14:00:38.004600+00:00",
-  "total_articles": 540,
+  "generated_at": "2026-04-12T14:00:35.249912+00:00",
+  "total_articles": 542,
   "brands": [
     "361 Degrees",
     "ASICS",
@@ -41,11 +41,11 @@
   "categories": ["digital_transformation", "environmental", "governance", "social"],
   "scorecard": {
     "period_days": 14,
-    "period_start": "2026-03-28",
-    "period_end": "2026-04-11",
-    "articles_in_period": 48,
+    "period_start": "2026-03-29",
+    "period_end": "2026-04-12",
+    "articles_in_period": 50,
     "articles_after_dedup": 27,
-    "duplicates_removed": 21,
+    "duplicates_removed": 23,
     "top_brands": [
       {
         "brand": "Adidas",
@@ -90,8 +90,8 @@
       },
       {
         "brand": "Allbirds",
-        "total": -5,
-        "environmental": -1,
+        "total": -3,
+        "environmental": 1,
         "social": -1,
         "governance": -3,
         "digital_transformation": 0,
@@ -176,8 +176,8 @@
       },
       {
         "brand": "Allbirds",
-        "total": -5,
-        "environmental": -1,
+        "total": -3,
+        "environmental": 1,
         "social": -1,
         "governance": -3,
         "digital_transformation": 0,
@@ -195,6 +195,124 @@
     ]
   },
   "articles": [
+    {
+      "id": "7950b176-c95c-41fe-b082-256e6f05f052",
+      "title": "Why are Nike's World Cup kits bulging at the shoulder?",
+      "url": "https://www.fourfourtwo.com/products-kit/why-are-nikes-world-cup-kits-bulging-at-the-shoulder",
+      "source_name": "Fourfourtwo",
+      "published_at": "2026-04-11T11:00:00+00:00",
+      "published_date": "2026-04-11",
+      "brands": ["Nike"],
+      "categories": ["governance"],
+      "brand_details": [
+        {
+          "brand": "Nike",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "governance",
+              "excerpt": "We're working quickly to make this right for players and fans, because every kit should reflect the care, precision and pride that the game deserves.",
+              "relevance_score": 0.8804135792425198,
+              "rerank_score": 0.9999019180864787,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "\"Performance is unaffected, but the overall aesthetic is not where it needs to be. We always hold ourselves and our products to the highest standards and this fell short.\n\n\"We\u2019re working quickly to ma..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Performance is unaffected, but the overall aesthetic is not where it needs to be. We always hold ourselves and our products to the highest standards and this fell short.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.999855196312955,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "\"Performance is unaffected, but the overall aesthetic is not where it needs to be. We always hold ourselves and our products to the highest standards and this fell short. \"We\u2019re working quickly to make this right for players and fans, because every kit should reflect the care, precision and pride that the game deserves...."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "This is a governance issue involving product quality control failure and corporate accountability. Nike acknowledged falling short of their own standards and committed to making it right, demonstrating corporate responsibility in addressing a quality defect that affects their brand reputation."
+        }
+      ]
+    },
+    {
+      "id": "291d1f56-4781-4397-943e-ed4f9fae669a",
+      "title": "FIFA World Cup 2026 \u2014 Nike investigating kit issues before tournament in June-July",
+      "url": "https://sportstar.thehindu.com/football/fifa-world-cup-2026-kits-nike-investigation-national-team-jerseys-problem-issues-explained/article70850068.ece",
+      "source_name": "Sport Star The Hindu",
+      "published_at": "2026-04-11T02:59:12+00:00",
+      "published_date": "2026-04-11",
+      "brands": ["Nike"],
+      "categories": ["governance"],
+      "brand_details": [
+        {
+          "brand": "Nike",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "governance",
+              "excerpt": "The issue comes as the struggling company faces questions over its product innovation and works through excess inventory after a string of weak earnings.",
+              "relevance_score": 0.8216558441695293,
+              "rerank_score": 0.9998700064866012,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "The kits have been designed with cooling technology \u200cto help players cope with high temperatures expected at the tournament, which kicks off on June 11 and is also co-hosted by Mexico. The issue comes as the struggling company faces questions over its product \u200cinnovation and works through excess inventory after a string \u200bof weak earnings. Chief Executive Elliott Hill has pledged to refocus Nike on \u2060core sports, and the company said on Friday \u2060it had appointed Andy Caine as chief innovation officer...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "A Nike spokesperson told The Guardian newspaper that the company had identified a 'minor issue' with the kits, adding that performance was unaffected but the 'overall aesthetic is not where it needs to be.'",
+              "relevance_score": 0.8690292236280469,
+              "rerank_score": 0.9994958551114637,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Nike is investigating a design issue affecting several national team kits before the FIFA World Cup 2026, British \u200cmedia reported on Friday, after problems with \u200bthe shirts became visible during \u2060last month\u2019s international break. Bulging around the shoulder seams was visible on shirts worn by teams including \u200cEngland, France and Uruguay during the international window. A Nike spokesperson told The \u200cGuardian newspaper that the company had \u200cidentified \u2060a \u201cminor issue\u201d with the kits, adding \u2060that performance was unaffected but the \u201coverall aesthetic is not where it needs to be.\u201d The issue is present \u200bon both match \u200cshirts worn by players and replica versions sold to supporters, according to the BBC, with some fans raising concerns...."
+            }
+          ],
+          "confidence": 0.85,
+          "reasoning": "This is a governance issue involving product quality control failures and corporate accountability. Nike acknowledged a design defect affecting multiple national team kits for the World Cup, which reflects on the company's quality assurance processes and operational oversight. The article also mentions broader concerns about product innovation capabilities, indicating governance challenges around operational excellence."
+        }
+      ]
+    },
     {
       "id": "6552de1d-66fa-48a7-bd03-4f6135c74789",
       "title": "World Cup Nike",
@@ -698,15 +816,6 @@
           },
           "evidence": [
             {
-              "category": "environmental",
-              "excerpt": "The company continues to invest in sustainability initiatives, digital transformation and athlete partnerships to drive long-term growth.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998254195485182,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Under Armour has also faced corporate governance questions in the past but has strengthened its board with new independent directors possessing strong financial and retail expertise. These changes are viewed positively by some investors as supporting a potential strategic review, including possible sale or privatization scenarios, though no formal process has been announced. The company continues to invest in sustainability initiatives, digital transformation and athlete partnerships to drive long-term growth. Its connected fitness platform and apps remain part of the ecosystem, though less emphasized than in previous years...."
-            },
-            {
               "category": "governance",
               "excerpt": "Under Armour has also faced corporate governance questions in the past but has strengthened its board with new independent directors possessing strong financial and retail expertise.",
               "relevance_score": 1.0,
@@ -741,6 +850,15 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...The company continues to invest in sustainability initiatives, digital transformation and athlete partnerships to drive long-term growth. Its connected fitness platform and apps remain part of the ecosystem, though less emphasized than in previous years. As of April 2026, Under Armour's path forward involves balancing near-term profitability pressures with strategic investments for future growth...."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "The company continues to invest in sustainability initiatives, digital transformation and athlete partnerships to drive long-term growth.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998254195485182,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Under Armour has also faced corporate governance questions in the past but has strengthened its board with new independent directors possessing strong financial and retail expertise. These changes are viewed positively by some investors as supporting a potential strategic review, including possible sale or privatization scenarios, though no formal process has been announced. The company continues to invest in sustainability initiatives, digital transformation and athlete partnerships to drive long-term growth. Its connected fitness platform and apps remain part of the ecosystem, though less emphasized than in previous years...."
             }
           ],
           "confidence": 0.8,
@@ -1312,53 +1430,6 @@
       "categories": ["governance"],
       "brand_details": [
         {
-          "brand": "Lululemon",
-          "categories": {
-            "environmental": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": true,
-              "sentiment": 1,
-              "sentiment_label": "positive"
-            },
-            "digital_transformation": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            }
-          },
-          "evidence": [
-            {
-              "category": "governance",
-              "excerpt": "Judge Subramanian's ruling last week that Nike's patent claims as a matter of law were invalid on the ground of obviousness voids the jury verdict and the fine",
-              "relevance_score": 0.9112695355363596,
-              "rerank_score": 0.9999178448891721,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "A jury verdict in March 2025 found in favor of Nike on one of its two patent infringement claims and rejected the remaining claim. Damages were awarded as a fine in the amount of $355,450 in favor of ..."
-            },
-            {
-              "category": "governance",
-              "excerpt": "filed petitions with the Patent Trial and Appeal Board (PTAB) to challenge the validity of Nike's patents",
-              "relevance_score": 0.8524200540326592,
-              "rerank_score": 0.9996266814017082,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "...The lawsuit, initially filed in January 2023, claimed that the athleisure brand\u2019s sneakers \u2014 Chargefeel Mid, Chargefeel Low, Blissfeel and Strongfeel \u2014 infringed on Nike\u2019s utility patents related to its Flyknit technology in connection with how they are manufactured and including their knitted textile and structural elements. filed petitions with the Patent Trial and Appeal Board (PTAB) to challenge the validity of Nike\u2019s patents. Judge Subramanian declined to stay the district court lawsuit pending the PTAB review."
-            }
-          ],
-          "confidence": 0.9,
-          "reasoning": "This is a governance issue involving patent litigation defense. Lululemon successfully challenged Nike's patent claims and had the court ruling in their favor, representing a positive legal outcome for the company in terms of intellectual property governance."
-        },
-        {
           "brand": "Nike",
           "categories": {
             "environmental": {
@@ -1404,6 +1475,53 @@
           ],
           "confidence": 0.9,
           "reasoning": "This is a governance issue involving patent litigation and legal compliance. Nike's patent claims were ruled invalid by the court, overturning a previous jury verdict in their favor, which represents a negative legal outcome for the company."
+        },
+        {
+          "brand": "Lululemon",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "governance",
+              "excerpt": "Judge Subramanian's ruling last week that Nike's patent claims as a matter of law were invalid on the ground of obviousness voids the jury verdict and the fine",
+              "relevance_score": 0.9112695355363596,
+              "rerank_score": 0.9999178448891721,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "A jury verdict in March 2025 found in favor of Nike on one of its two patent infringement claims and rejected the remaining claim. Damages were awarded as a fine in the amount of $355,450 in favor of ..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "filed petitions with the Patent Trial and Appeal Board (PTAB) to challenge the validity of Nike's patents",
+              "relevance_score": 0.8524200540326592,
+              "rerank_score": 0.9996266814017082,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...The lawsuit, initially filed in January 2023, claimed that the athleisure brand\u2019s sneakers \u2014 Chargefeel Mid, Chargefeel Low, Blissfeel and Strongfeel \u2014 infringed on Nike\u2019s utility patents related to its Flyknit technology in connection with how they are manufactured and including their knitted textile and structural elements. filed petitions with the Patent Trial and Appeal Board (PTAB) to challenge the validity of Nike\u2019s patents. Judge Subramanian declined to stay the district court lawsuit pending the PTAB review."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "This is a governance issue involving patent litigation defense. Lululemon successfully challenged Nike's patent claims and had the court ruling in their favor, representing a positive legal outcome for the company in terms of intellectual property governance."
         }
       ]
     },
@@ -1774,6 +1892,24 @@
           },
           "evidence": [
             {
+              "category": "governance",
+              "excerpt": "Now undergoing a massive leadership reset with Elliott Hill taking the reins, Nike is executing a drastic multi-year restructuring plan",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999635749260919,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Former CEO John Donahoe acknowledged that the brand\u2019s aggressive shift away from wholesale partners toward its own digital channels failed to sustain momentum. Now undergoing a massive leadership reset with Elliott Hill taking the reins, Nike is executing a drastic multi-year restructuring plan. The brand aims to slash overhead costs and reinvest heavily into speedier product development and performance-oriented marketing...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Former CEO John Donahoe acknowledged that the brand's aggressive shift away from wholesale partners toward its own digital channels failed to sustain momentum",
+              "relevance_score": 0.8734741602054971,
+              "rerank_score": 0.9999517621654631,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Former CEO John Donahoe acknowledged that the brand\u2019s aggressive shift away from wholesale partners toward its own digital channels failed to sustain momentum. Now undergoing a massive leadership reset with Elliott Hill taking the reins, Nike is executing a drastic multi-year restructuring plan...."
+            },
+            {
               "category": "digital_transformation",
               "excerpt": "the brand's aggressive shift away from wholesale partners toward its own digital channels failed to sustain momentum",
               "relevance_score": 0.841784158426325,
@@ -1799,24 +1935,6 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "Summary\n\nNike shares plummeted by 20 percent in their worst single-day drop on record after the company lowered its annual sales guidance\n\nManagement expects a mid-single-digit decline in fiscal 2025 revenue due to softening demand and a slowdown in the lifestyle footwear category The company is shifting its strategy back toward wholesale partners and performance innovation to counter rising competition\n\nNike is facing historic turbulence...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "Now undergoing a massive leadership reset with Elliott Hill taking the reins, Nike is executing a drastic multi-year restructuring plan",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999635749260919,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Former CEO John Donahoe acknowledged that the brand\u2019s aggressive shift away from wholesale partners toward its own digital channels failed to sustain momentum. Now undergoing a massive leadership reset with Elliott Hill taking the reins, Nike is executing a drastic multi-year restructuring plan. The brand aims to slash overhead costs and reinvest heavily into speedier product development and performance-oriented marketing...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "Former CEO John Donahoe acknowledged that the brand's aggressive shift away from wholesale partners toward its own digital channels failed to sustain momentum",
-              "relevance_score": 0.8734741602054971,
-              "rerank_score": 0.9999517621654631,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Former CEO John Donahoe acknowledged that the brand\u2019s aggressive shift away from wholesale partners toward its own digital channels failed to sustain momentum. Now undergoing a massive leadership reset with Elliott Hill taking the reins, Nike is executing a drastic multi-year restructuring plan...."
             }
           ],
           "confidence": 0.9,
@@ -2567,24 +2685,6 @@
           },
           "evidence": [
             {
-              "category": "digital_transformation",
-              "excerpt": "we are investing in the technology platforms that we expect will help us serve more consumers better and run our business more effectively",
-              "relevance_score": 0.800918936972338,
-              "rerank_score": 0.9998533656943097,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "We have new leadership in place, clearer strategies taken straight, and structural changes underway designed to strengthen these businesses over the long term. We are moving with urgency. We are not s..."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "These moves require us to rewire our supply chain and upgrade our technology platforms",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9997127493613228,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Now we are rebalancing our offense through an integrated and elevated marketplace, and running a Key City offense. These moves require us to rewire our supply chain and upgrade our technology platforms. You saw the early signs of those actions this quarter, and it is a critical step in our return to double-digit EBIT margins."
-            },
-            {
               "category": "social",
               "excerpt": "SG&A Expense -- Increased 2%, including a $230 million charge for employee-related severance costs concentrated in Supply Chain and Technology.",
               "relevance_score": 1.0,
@@ -2601,6 +2701,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...Nike reported tangible demand signals for innovative products, notably with the Nike MIND platform selling out and triggering increased production for future periods. A $230 million severance expense was incurred to reset fixed cost structures in Supply Chain, Technology, and Converse, fueling expectations for profitability improvements beginning in fiscal 2027. Guidance calls for low single-digit revenue declines into year-end as North America improves, offset by a sharp downturn in Greater China from ongoing marketplace management and reduced sell-in...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "we are investing in the technology platforms that we expect will help us serve more consumers better and run our business more effectively",
+              "relevance_score": 0.800918936972338,
+              "rerank_score": 0.9998533656943097,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "We have new leadership in place, clearer strategies taken straight, and structural changes underway designed to strengthen these businesses over the long term. We are moving with urgency. We are not s..."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "These moves require us to rewire our supply chain and upgrade our technology platforms",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9997127493613228,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Now we are rebalancing our offense through an integrated and elevated marketplace, and running a Key City offense. These moves require us to rewire our supply chain and upgrade our technology platforms. You saw the early signs of those actions this quarter, and it is a critical step in our return to double-digit EBIT margins."
             }
           ],
           "confidence": 0.9,
@@ -2644,24 +2762,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "Some consumers also questioned why the company, if committed to environmental causes, does not cover such costs from its own profits, calling the policy an 'absurd excuse.'",
-              "relevance_score": 0.8499252704466485,
-              "rerank_score": 0.9998697467890039,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "A check of the brand\u2019s Australian website shows that free returns are still offered in that market. However, some commentators suggested the discrepancy may reflect differences in consumer scale, noting that return shipping fees are also charged in markets such as the US. Some consumers also questioned why the company, if committed to environmental causes, does not cover such costs from its own profits, calling the policy an \u201cabsurd excuse.\u201d\n\nWhile the environmental message has resonated with some users\u2014who acknowledge the need to address resource waste \u2013 many remain uncomfortable with what they see as being labeled \u201cenvironmentally irresponsible\u201d simply for returning ill-fitting clothes. \u201cBuying less is the best way to protect the planet, regardless of the brand...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "most online comments have been critical. One self-described loyal customer wrote under the brand's post that they had already tolerated the lack of shipping insurance, but found it 'unacceptable' that the company fully passes logistics costs onto consumers, accusing the brand of using environmental protection as a 'fig leaf.'",
-              "relevance_score": 0.8625855125685982,
-              "rerank_score": 0.9996714780686953,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "...Customer service staff from the brand\u2019s Tmall flagship store said the policy had already come into effect on Monday. However, most online comments have been critical. One self-described loyal customer wrote under the brand\u2019s post that they had already tolerated the lack of shipping insurance, but found it \u201cunacceptable\u201d that the company fully passes logistics costs onto consumers, accusing the brand of using environmental protection as a \u201cfig leaf.\u201d Sales staff said the brand\u2019s Tmall flagship store has not offered shipping insurance for the past two to three years...."
-            },
-            {
               "category": "environmental",
               "excerpt": "From 2023 to 2025, shipments from its Tmall flagship store generated 190.36 tons of carbon emissions, while returns accounted for a further 40.9 tons",
               "relevance_score": 1.0,
@@ -2687,6 +2787,24 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "...It even specifically cited the high return rate in women\u2019s apparel. \u201cTherefore, we made a decision: during Earth Month this April, the Tmall flagship store will implement the \u2018Earth usage fee\u2019 policy,\u201d the company said, adding that \u201cit is not a punishment, but an invitation\u201d for consumers to help reduce the environmental impact of online shopping."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Some consumers also questioned why the company, if committed to environmental causes, does not cover such costs from its own profits, calling the policy an 'absurd excuse.'",
+              "relevance_score": 0.8499252704466485,
+              "rerank_score": 0.9998697467890039,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "A check of the brand\u2019s Australian website shows that free returns are still offered in that market. However, some commentators suggested the discrepancy may reflect differences in consumer scale, noting that return shipping fees are also charged in markets such as the US. Some consumers also questioned why the company, if committed to environmental causes, does not cover such costs from its own profits, calling the policy an \u201cabsurd excuse.\u201d\n\nWhile the environmental message has resonated with some users\u2014who acknowledge the need to address resource waste \u2013 many remain uncomfortable with what they see as being labeled \u201cenvironmentally irresponsible\u201d simply for returning ill-fitting clothes. \u201cBuying less is the best way to protect the planet, regardless of the brand...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "most online comments have been critical. One self-described loyal customer wrote under the brand's post that they had already tolerated the lack of shipping insurance, but found it 'unacceptable' that the company fully passes logistics costs onto consumers, accusing the brand of using environmental protection as a 'fig leaf.'",
+              "relevance_score": 0.8625855125685982,
+              "rerank_score": 0.9996714780686953,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...Customer service staff from the brand\u2019s Tmall flagship store said the policy had already come into effect on Monday. However, most online comments have been critical. One self-described loyal customer wrote under the brand\u2019s post that they had already tolerated the lack of shipping insurance, but found it \u201cunacceptable\u201d that the company fully passes logistics costs onto consumers, accusing the brand of using environmental protection as a \u201cfig leaf.\u201d Sales staff said the brand\u2019s Tmall flagship store has not offered shipping insurance for the past two to three years...."
             }
           ],
           "confidence": 0.9,
@@ -2872,74 +2990,6 @@
       ]
     },
     {
-      "id": "23d82ecf-d2f7-4ae4-9b8a-93abda969b11",
-      "title": "American Exchange Is Set to Acquire Allbirds for $39 Million . Here What Investors Need to Know . ",
-      "url": "https://www.fool.com/investing/2026/03/31/american-exchange-is-set-to-acquire-allbirds-for-3/?source=iedfolrf0000001",
-      "source_name": "fool.com",
-      "published_at": "2026-04-01T00:00:00+00:00",
-      "published_date": "2026-04-01",
-      "brands": ["Allbirds"],
-      "categories": ["environmental", "governance"],
-      "brand_details": [
-        {
-          "brand": "Allbirds",
-          "categories": {
-            "environmental": {
-              "applies": true,
-              "sentiment": -1,
-              "sentiment_label": "negative"
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": true,
-              "sentiment": -1,
-              "sentiment_label": "negative"
-            },
-            "digital_transformation": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            }
-          },
-          "evidence": [
-            {
-              "category": "governance",
-              "excerpt": "The company made several errors that torched the business and the stock. It expanded its product line too quickly, getting away from its core \"wool runner\" shoe and diluting the brand",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998865947818794,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "The company made several errors that torched the business and the stock. It expanded its product line too quickly, getting away from its core \"wool runner\" shoe and diluting the brand. Its focus on using sustainable materials meant that its products weren't always as durable as alternatives, and it opened brick-and-mortar stores too aggressively, eventually closing most of them...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "it opened brick-and-mortar stores too aggressively, eventually closing most of them",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9995669645904863,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...It expanded its product line too quickly, getting away from its core \"wool runner\" shoe and diluting the brand. Its focus on using sustainable materials meant that its products weren't always as durable as alternatives, and it opened brick-and-mortar stores too aggressively, eventually closing most of them. Allbirds' revenue peaked in 2022 and has steadily eroded since then as it has not had a quarter of positive revenue growth in more than three years...."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "Its focus on using sustainable materials meant that its products weren't always as durable as alternatives",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998734088682789,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...It expanded its product line too quickly, getting away from its core \"wool runner\" shoe and diluting the brand. Its focus on using sustainable materials meant that its products weren't always as durable as alternatives, and it opened brick-and-mortar stores too aggressively, eventually closing most of them. Allbirds' revenue peaked in 2022 and has steadily eroded since then as it has not had a quarter of positive revenue growth in more than three years...."
-            }
-          ],
-          "confidence": 0.9,
-          "reasoning": "Article discusses Allbirds' sustainability focus as a business weakness (Environmental negative) and multiple strategic failures including rapid expansion and brand dilution (Governance negative). This is substantive ESG content about corporate decision-making and environmental strategy trade-offs."
-        }
-      ]
-    },
-    {
       "id": "d8f3fe26-b6c4-430d-b77a-912794ff5b30",
       "title": "Allbirds , once worth $7b , sells its assets for $68m , will wind down",
       "url": "https://www.newstalkzb.co.nz/news/business/allbirds-once-worth-7b-sells-its-assets-for-68m-will-wind-down/",
@@ -2975,6 +3025,24 @@
           },
           "evidence": [
             {
+              "category": "environmental",
+              "excerpt": "Allbirds, the sustainable footwear maker co-founded by ex-All White Tim Brown",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999606003449393,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Allbirds, the sustainable footwear maker co-founded by ex-All White Tim Brown, says it has sold its \u201cintellectual property and certain other assets\u201d for \u201can estimated transaction value of US$39 million ($68m)\u201d. The firm will see shareholder approval for the asset sale, \u201cand subsequent dissolution and winding down of the company\u201d, Allbirds said in a statement...."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "He teamed with Joey Zwillinger, a San Francisco biotech engineer, to design shoes made from New Zealand merino wool, plus various recycled materials.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9989282931972427,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Straight out of Wellington\n\nBrown quit as co-CEO in May 2023 but remains a director. The Wellington Phoenix midfielder and All Whites captain started Allbirds from a Cuba St flat in 2014. He teamed with Joey Zwillinger, a San Francisco biotech engineer, to design shoes made from New Zealand merino wool, plus various recycled materials. Allbirds had a 20:1 reverse stock split in September 2024 after it was threatened with a Nasdaq delisting as its shares traded below US$1 for 30 days in a row."
+            },
+            {
               "category": "governance",
               "excerpt": "Allbirds said in a statement. The firm will see shareholder approval for the asset sale, 'and subsequent dissolution and winding down of the company'",
               "relevance_score": 0.8791314733099426,
@@ -3000,28 +3068,78 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...The firm will see shareholder approval for the asset sale, \u201cand subsequent dissolution and winding down of the company\u201d, Allbirds said in a statement. The process is expected to be completed by April 24, followed by a distribution to shareholders. Its fourth-quarter earnings call was cancelled and no financials will be released for the period. The buyer is the New York-based, privately-held American Exchange Group, founded by Syrian immigrant Alen Mamrout, which specialises in buying distressed or undervalued jewellery, lifestyle and footwear brands, then rebooting them with a leaner model...."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "Allbirds, the sustainable footwear maker co-founded by ex-All White Tim Brown",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999606003449393,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Allbirds, the sustainable footwear maker co-founded by ex-All White Tim Brown, says it has sold its \u201cintellectual property and certain other assets\u201d for \u201can estimated transaction value of US$39 million ($68m)\u201d. The firm will see shareholder approval for the asset sale, \u201cand subsequent dissolution and winding down of the company\u201d, Allbirds said in a statement...."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "He teamed with Joey Zwillinger, a San Francisco biotech engineer, to design shoes made from New Zealand merino wool, plus various recycled materials.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9989282931972427,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Straight out of Wellington\n\nBrown quit as co-CEO in May 2023 but remains a director. The Wellington Phoenix midfielder and All Whites captain started Allbirds from a Cuba St flat in 2014. He teamed with Joey Zwillinger, a San Francisco biotech engineer, to design shoes made from New Zealand merino wool, plus various recycled materials. Allbirds had a 20:1 reverse stock split in September 2024 after it was threatened with a Nasdaq delisting as its shares traded below US$1 for 30 days in a row."
             }
           ],
           "confidence": 0.9,
           "reasoning": "Environmental applies neutrally as the article mentions Allbirds' sustainable positioning and use of recycled materials as factual context. Governance applies negatively due to the company dissolution, leadership changes, and cancelled earnings reporting, which represent significant governance failures and lack of transparency."
+        }
+      ]
+    },
+    {
+      "id": "23d82ecf-d2f7-4ae4-9b8a-93abda969b11",
+      "title": "American Exchange Is Set to Acquire Allbirds for $39 Million . Here What Investors Need to Know . ",
+      "url": "https://www.fool.com/investing/2026/03/31/american-exchange-is-set-to-acquire-allbirds-for-3/?source=iedfolrf0000001",
+      "source_name": "fool.com",
+      "published_at": "2026-04-01T00:00:00+00:00",
+      "published_date": "2026-04-01",
+      "brands": ["Allbirds"],
+      "categories": ["environmental", "governance"],
+      "brand_details": [
+        {
+          "brand": "Allbirds",
+          "categories": {
+            "environmental": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "environmental",
+              "excerpt": "Its focus on using sustainable materials meant that its products weren't always as durable as alternatives",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998734088682789,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...It expanded its product line too quickly, getting away from its core \"wool runner\" shoe and diluting the brand. Its focus on using sustainable materials meant that its products weren't always as durable as alternatives, and it opened brick-and-mortar stores too aggressively, eventually closing most of them. Allbirds' revenue peaked in 2022 and has steadily eroded since then as it has not had a quarter of positive revenue growth in more than three years...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "The company made several errors that torched the business and the stock. It expanded its product line too quickly, getting away from its core \"wool runner\" shoe and diluting the brand",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998865947818794,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "The company made several errors that torched the business and the stock. It expanded its product line too quickly, getting away from its core \"wool runner\" shoe and diluting the brand. Its focus on using sustainable materials meant that its products weren't always as durable as alternatives, and it opened brick-and-mortar stores too aggressively, eventually closing most of them...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "it opened brick-and-mortar stores too aggressively, eventually closing most of them",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9995669645904863,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...It expanded its product line too quickly, getting away from its core \"wool runner\" shoe and diluting the brand. Its focus on using sustainable materials meant that its products weren't always as durable as alternatives, and it opened brick-and-mortar stores too aggressively, eventually closing most of them. Allbirds' revenue peaked in 2022 and has steadily eroded since then as it has not had a quarter of positive revenue growth in more than three years...."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "Article discusses Allbirds' sustainability focus as a business weakness (Environmental negative) and multiple strategic failures including rapid expansion and brand dilution (Governance negative). This is substantive ESG content about corporate decision-making and environmental strategy trade-offs."
         }
       ]
     },
@@ -3700,33 +3818,6 @@
           },
           "evidence": [
             {
-              "category": "social",
-              "excerpt": "At Decathlon's Northampton site, workers who previously walked up to 10km a day now cover closer to 1km, while workplace incidents linked to order preparation have fallen significantly, from 'one per 5,000 to 1 per 10,000'.",
-              "relevance_score": 0.8864228068585691,
-              "rerank_score": 0.9999119832494108,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "At Decathlon\u2019s Northampton site, workers who previously walked up to 10km a day now cover closer to 1km, while workplace incidents linked to order preparation have fallen significantly, from \u201cone per ..."
-            },
-            {
-              "category": "social",
-              "excerpt": "In five years, we have profoundly transformed the workplace experience within our warehouses",
-              "relevance_score": 1.0,
-              "rerank_score": 0.999836235603449,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "He added that Exotec was selected because it could \u201cdeploy multiple sites in a short time and integrate scalable solutions that evolve with our needs\u201d. \u201cIn five years, we have profoundly transformed the workplace experience within our warehouses and written the next chapter of logistics at Decathlon,\u201d he said. Exotec co-founder and chief executive Romain Moulin said the programme demonstrates the company\u2019s ability to deliver complex projects at scale...."
-            },
-            {
-              "category": "social",
-              "excerpt": "The programme has also delivered notable changes for warehouse staff, with a reduction in physically demanding tasks and increased opportunities for upskilling.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9987874219808441,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...By standardising equipment and design choices across multiple locations, the company said it has been able to reduce costs and speed up deployment, particularly during the early performance ramp-up phase. Operations are coordinated through Exotec\u2019s Deepsky\u00ae software, which ensures what the company describes as \u201cseamless end-to-end operational continuity\u201d across all sites using a shared system architecture. The programme has also delivered notable changes for warehouse staff, with a reduction in physically demanding tasks and increased opportunities for upskilling."
-            },
-            {
               "category": "digital_transformation",
               "excerpt": "Warehouse robotics firm Exotec has rolled out a major multi-site automation programme for sports retailer Decathlon",
               "relevance_score": 1.0,
@@ -3752,6 +3843,33 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "Each installation includes fleets of up to 200 robots, tens of thousands of storage locations and the capacity to process thousands of order lines per hour, with full automation of both inbound and ou..."
+            },
+            {
+              "category": "social",
+              "excerpt": "At Decathlon's Northampton site, workers who previously walked up to 10km a day now cover closer to 1km, while workplace incidents linked to order preparation have fallen significantly, from 'one per 5,000 to 1 per 10,000'.",
+              "relevance_score": 0.8864228068585691,
+              "rerank_score": 0.9999119832494108,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "At Decathlon\u2019s Northampton site, workers who previously walked up to 10km a day now cover closer to 1km, while workplace incidents linked to order preparation have fallen significantly, from \u201cone per ..."
+            },
+            {
+              "category": "social",
+              "excerpt": "In five years, we have profoundly transformed the workplace experience within our warehouses",
+              "relevance_score": 1.0,
+              "rerank_score": 0.999836235603449,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "He added that Exotec was selected because it could \u201cdeploy multiple sites in a short time and integrate scalable solutions that evolve with our needs\u201d. \u201cIn five years, we have profoundly transformed the workplace experience within our warehouses and written the next chapter of logistics at Decathlon,\u201d he said. Exotec co-founder and chief executive Romain Moulin said the programme demonstrates the company\u2019s ability to deliver complex projects at scale...."
+            },
+            {
+              "category": "social",
+              "excerpt": "The programme has also delivered notable changes for warehouse staff, with a reduction in physically demanding tasks and increased opportunities for upskilling.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9987874219808441,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...By standardising equipment and design choices across multiple locations, the company said it has been able to reduce costs and speed up deployment, particularly during the early performance ramp-up phase. Operations are coordinated through Exotec\u2019s Deepsky\u00ae software, which ensures what the company describes as \u201cseamless end-to-end operational continuity\u201d across all sites using a shared system architecture. The programme has also delivered notable changes for warehouse staff, with a reduction in physically demanding tasks and increased opportunities for upskilling."
             }
           ],
           "confidence": 0.9,
@@ -5559,24 +5677,6 @@
               "context_snippet": "...Leadership and Management\n\nThe leadership landscape is currently in flux. In January 2026, Calvin McDonald stepped down as CEO. While he is credited with the company\u2019s massive scale-up, his final year was marred by a \"lack of newness\" in the product pipeline. Interim Leadership: CFO Meghan Frank and CCO Andr\u00e9 Maestrini are currently serving as interim co-CEOs."
             },
             {
-              "category": "environmental",
-              "excerpt": "Lululemon Like New: The brand's resale program has become a key driver for sustainability-conscious Gen Z consumers and provides a secondary revenue stream for pre-owned gear.",
-              "relevance_score": 0.8921777358608121,
-              "rerank_score": 0.9998151421276862,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Footwear: After a slow start in 2022, the footwear line expanded in 2024\u20132025 with the Beyondfeel running shoe and the Cityverse casual sneaker. While footwear is not yet a primary revenue driver, it ..."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "The circular economy (resale and repair) is becoming a mandatory component of the retail business model to satisfy ESG-conscious investors.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9762633805848813,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Technical Lifestyle: There is a growing trend toward \"versatile\" clothing\u2014gear that looks like professional attire but feels like athletic wear (e.g., the ABC Pant). Resale Economy: The circular economy (resale and repair) is becoming a mandatory component of the retail business model to satisfy ESG-conscious investors. Risks and Challenges"
-            },
-            {
               "category": "digital_transformation",
               "excerpt": "Omni-channel Strategy: The 'Power of Three x2' strategy emphasizes doubling digital revenue, which currently accounts for nearly half of total sales.",
               "relevance_score": 0.8123036820250821,
@@ -5593,6 +5693,24 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "Omni-channel Strategy: The \"Power of Three x2\" strategy emphasizes doubling digital revenue, which currently accounts for nearly half of total sales.\n\nCommunity-Based Marketing: Rather than traditiona..."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "Lululemon Like New: The brand's resale program has become a key driver for sustainability-conscious Gen Z consumers and provides a secondary revenue stream for pre-owned gear.",
+              "relevance_score": 0.8921777358608121,
+              "rerank_score": 0.9998151421276862,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Footwear: After a slow start in 2022, the footwear line expanded in 2024\u20132025 with the Beyondfeel running shoe and the Cityverse casual sneaker. While footwear is not yet a primary revenue driver, it ..."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "The circular economy (resale and repair) is becoming a mandatory component of the retail business model to satisfy ESG-conscious investors.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9762633805848813,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Technical Lifestyle: There is a growing trend toward \"versatile\" clothing\u2014gear that looks like professional attire but feels like athletic wear (e.g., the ABC Pant). Resale Economy: The circular economy (resale and repair) is becoming a mandatory component of the retail business model to satisfy ESG-conscious investors. Risks and Challenges"
             },
             {
               "category": "social",
@@ -5628,44 +5746,6 @@
       "brands": ["Adidas", "Nike"],
       "categories": ["digital_transformation", "environmental"],
       "brand_details": [
-        {
-          "brand": "Nike",
-          "categories": {
-            "environmental": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "digital_transformation": {
-              "applies": true,
-              "sentiment": 1,
-              "sentiment_label": "positive"
-            }
-          },
-          "evidence": [
-            {
-              "category": "digital_transformation",
-              "excerpt": "Nike Inc. \u2013 Expanding technical apparel and smart fabric integration",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998679815629099,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Geography: North America, Europe, Asia-Pacific, Rest of the World\n\nKey Players in the Outdoor Apparel Market\n\nAdidas AG \u2013 Focus on performance apparel and sustainability initiatives\n\nNike Inc. \u2013 Expanding technical apparel and smart fabric integration\n\nVF Corporation \u2013 Diverse brand portfolio with specialty outdoor offerings\n\nColumbia Sportswear Company \u2013 Innovative fabrics and global retail presence\n\nAmer Sports \u2013 Strong DTC strategy and growth in Asia-Pacific markets\n\nConclusion\n\nThe outdoor apparel market is set for steady growth, driven by rising participation in outdoor activities, health-conscious lifestyles, and the use of advanced fabrics. Sustainable materials, regulatory compliance, and the expansion of e-commerce and direct-to-consumer channels are further supporting market growth...."
-            }
-          ],
-          "confidence": 0.8,
-          "reasoning": "Nike is mentioned as expanding smart fabric integration, which represents digital/technology innovation in their product offerings"
-        },
         {
           "brand": "Adidas",
           "categories": {
@@ -5703,6 +5783,44 @@
           ],
           "confidence": 0.85,
           "reasoning": "Adidas is specifically mentioned as having a focus on sustainability initiatives, which qualifies as Environmental ESG content"
+        },
+        {
+          "brand": "Nike",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            }
+          },
+          "evidence": [
+            {
+              "category": "digital_transformation",
+              "excerpt": "Nike Inc. \u2013 Expanding technical apparel and smart fabric integration",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998679815629099,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Geography: North America, Europe, Asia-Pacific, Rest of the World\n\nKey Players in the Outdoor Apparel Market\n\nAdidas AG \u2013 Focus on performance apparel and sustainability initiatives\n\nNike Inc. \u2013 Expanding technical apparel and smart fabric integration\n\nVF Corporation \u2013 Diverse brand portfolio with specialty outdoor offerings\n\nColumbia Sportswear Company \u2013 Innovative fabrics and global retail presence\n\nAmer Sports \u2013 Strong DTC strategy and growth in Asia-Pacific markets\n\nConclusion\n\nThe outdoor apparel market is set for steady growth, driven by rising participation in outdoor activities, health-conscious lifestyles, and the use of advanced fabrics. Sustainable materials, regulatory compliance, and the expansion of e-commerce and direct-to-consumer channels are further supporting market growth...."
+            }
+          ],
+          "confidence": 0.8,
+          "reasoning": "Nike is mentioned as expanding smart fabric integration, which represents digital/technology innovation in their product offerings"
         }
       ]
     },
@@ -6191,24 +6309,6 @@
           },
           "evidence": [
             {
-              "category": "digital_transformation",
-              "excerpt": "Reconsidered is supported by resale platform Archive and Tersus Solutions, which provides cleaning, fulfilment and warehousing solutions for the scheme",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999108599315614,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "\u201cWe\u2019ve seen an influx of new customers come to us through Reconsidered, so we\u2019re excited to continue offering them even more options through our expansion into the apparel category.\u201d Reconsidered is supported by resale platform Archive and Tersus Solutions, which provides cleaning, fulfilment and warehousing solutions for the scheme. \u201cWith Reconsidered seeing strong engagement and continued growth, New Balance expanding into apparel is a natural next step,\u201d added Emily Gittins, CEO of Archive...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "building systems to help keep products in circulation at scale and proving that resale can be core to how a modern brand operates",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9993579043877951,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...\u201cWith Reconsidered seeing strong engagement and continued growth, New Balance expanding into apparel is a natural next step,\u201d added Emily Gittins, CEO of Archive. \u201cWe\u2019re proud to work with a brand that\u2019s investing for the long term, building systems to help keep products in circulation at scale and proving that resale can be core to how a modern brand operates.\u201d"
-            },
-            {
               "category": "environmental",
               "excerpt": "Reconsider, which launched two years ago and has already helped to circulate 100,000 pairs of new Balance shoes",
               "relevance_score": 1.0,
@@ -6234,6 +6334,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...Apparel is not currently available for trade in. \u201cReconsidered has been an impactful platform for New Balance consumers to access popular, like-new or gently worn styles while helping to extend the life of our footwear,\u201d Tracy Knauer, vice president of North America, marketing and direct to consumer, at New Balance explained."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "Reconsidered is supported by resale platform Archive and Tersus Solutions, which provides cleaning, fulfilment and warehousing solutions for the scheme",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999108599315614,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "\u201cWe\u2019ve seen an influx of new customers come to us through Reconsidered, so we\u2019re excited to continue offering them even more options through our expansion into the apparel category.\u201d Reconsidered is supported by resale platform Archive and Tersus Solutions, which provides cleaning, fulfilment and warehousing solutions for the scheme. \u201cWith Reconsidered seeing strong engagement and continued growth, New Balance expanding into apparel is a natural next step,\u201d added Emily Gittins, CEO of Archive...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "building systems to help keep products in circulation at scale and proving that resale can be core to how a modern brand operates",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9993579043877951,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...\u201cWith Reconsidered seeing strong engagement and continued growth, New Balance expanding into apparel is a natural next step,\u201d added Emily Gittins, CEO of Archive. \u201cWe\u2019re proud to work with a brand that\u2019s investing for the long term, building systems to help keep products in circulation at scale and proving that resale can be core to how a modern brand operates.\u201d"
             }
           ],
           "confidence": 0.9,
@@ -6345,6 +6463,15 @@
           },
           "evidence": [
             {
+              "category": "digital_transformation",
+              "excerpt": "Lululemon is continuing to enhance its security measures, including the use of advanced technology and individuals on hand to monitor potential robberies in real time",
+              "relevance_score": 1.0,
+              "rerank_score": 0.999912502509396,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...However, they added that a greater collaboration with law enforcement has already led to multiple arrests in 2026 alone. The source also stated that Lululemon is continuing to enhance its security measures, including the use of advanced technology and individuals on hand to monitor potential robberies in real time. \u201cThe safety and well-being of our people, guests, and the communities we serve is our top priority...."
+            },
+            {
               "category": "social",
               "excerpt": "Lululemon is continuing to enhance its security measures, including the use of advanced technology and individuals on hand to monitor potential robberies in real time",
               "relevance_score": 1.0,
@@ -6361,15 +6488,6 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...The source also stated that Lululemon is continuing to enhance its security measures, including the use of advanced technology and individuals on hand to monitor potential robberies in real time. \u201cThe safety and well-being of our people, guests, and the communities we serve is our top priority. We take retail crime seriously and work alongside law enforcement partners to respond to incidents and support investigations,\u201d a spokesperson said...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "Lululemon is continuing to enhance its security measures, including the use of advanced technology and individuals on hand to monitor potential robberies in real time",
-              "relevance_score": 1.0,
-              "rerank_score": 0.999912502509396,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...However, they added that a greater collaboration with law enforcement has already led to multiple arrests in 2026 alone. The source also stated that Lululemon is continuing to enhance its security measures, including the use of advanced technology and individuals on hand to monitor potential robberies in real time. \u201cThe safety and well-being of our people, guests, and the communities we serve is our top priority...."
             },
             {
               "category": "governance",
@@ -6608,24 +6726,6 @@
           },
           "evidence": [
             {
-              "category": "social",
-              "excerpt": "Eddie Bauer LLC, which operates the brand's U.S. and Canadian stores, said it received no qualified bids for its assets by a March 3 deadline",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999628614204064,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Eddie Bauer's Bay Area stores, along with the rest of its North American retail fleet, are on track to close after the company's store operator failed to find a buyer in bankruptcy court. Eddie Bauer LLC, which operates the brand's U.S. and Canadian stores, said it received no qualified bids for its assets by a March 3 deadline, according to court filings. That forced the cancellation of a planned March 6 auction in U.S. Bankruptcy Court in New Jersey and left the company moving ahead with store-closing sales...."
-            },
-            {
-              "category": "social",
-              "excerpt": "The shutdown would affect about 150 stores in 40 U.S. states and 24 stores in six Canadian provinces",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9996455465884139,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...For shoppers in California and across the country, the clock is ticking. Eddie Bauer said gift cards and loyalty credits will no longer be accepted after Thursday, and all sales are final, with no returns or exchanges. The shutdown would affect about 150 stores in 40 U.S. states and 24 stores in six Canadian provinces, according to RCS Real Estate Advisors, the brokerage hired to market roughly 174 store leases."
-            },
-            {
               "category": "governance",
               "excerpt": "Eddie Bauer's store operator filed for Chapter 11 bankruptcy protection on Feb. 9, citing declining sales, supply chain problems and rising operating costs",
               "relevance_score": 0.9048235850900118,
@@ -6642,6 +6742,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...The Seattle-founded retailer's store operator filed for Chapter 11 bankruptcy protection on Feb. 9, citing declining sales, supply chain problems and rising operating costs. It was the third bankruptcy filing tied to Eddie Bauer's retail operations since 2003. \"This is not an easy decision,\" Marc Rosen, chief executive of Catalyst Brands - the company that holds the license to operate Eddie Bauer stores in the United States and Canada - said in a statement...."
+            },
+            {
+              "category": "social",
+              "excerpt": "Eddie Bauer LLC, which operates the brand's U.S. and Canadian stores, said it received no qualified bids for its assets by a March 3 deadline",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999628614204064,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Eddie Bauer's Bay Area stores, along with the rest of its North American retail fleet, are on track to close after the company's store operator failed to find a buyer in bankruptcy court. Eddie Bauer LLC, which operates the brand's U.S. and Canadian stores, said it received no qualified bids for its assets by a March 3 deadline, according to court filings. That forced the cancellation of a planned March 6 auction in U.S. Bankruptcy Court in New Jersey and left the company moving ahead with store-closing sales...."
+            },
+            {
+              "category": "social",
+              "excerpt": "The shutdown would affect about 150 stores in 40 U.S. states and 24 stores in six Canadian provinces",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9996455465884139,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...For shoppers in California and across the country, the clock is ticking. Eddie Bauer said gift cards and loyalty credits will no longer be accepted after Thursday, and all sales are final, with no returns or exchanges. The shutdown would affect about 150 stores in 40 U.S. states and 24 stores in six Canadian provinces, according to RCS Real Estate Advisors, the brokerage hired to market roughly 174 store leases."
             }
           ],
           "confidence": 0.9,
@@ -6685,6 +6803,24 @@
           },
           "evidence": [
             {
+              "category": "governance",
+              "excerpt": "Eddie Bauer, LLC announced that its retail operator had entered into a Restructuring Support Agreement (\"RSA\") pact with its secured lenders as part of its Chapter 11 proceedings.",
+              "relevance_score": 0.8855424893902009,
+              "rerank_score": 0.9999201608094166,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "PENNSYLVANIA (WHTM) \u2014 Less than a month after Eddie Bauer\u2019s store operator in North America and Canada filed for Chapter 11 bankruptcy, dozens of stores are hitting the market. Nexstar\u2019s WHTM reported in February that Eddie Bauer, LLC announced that its retail operator had entered into a Restructuring Support Agreement (\u201cRSA\u201d) pact with its secured lenders as part of its Chapter 11 proceedings. The company, which blamed declining sales and a litany of other industry headwinds for the Chapter 11 filing, also said it would begin winding down operations at certain locations...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "The Chapter 11 filing marked the third time in a little over two decades for the storied-but-now-tired brand that began as a Seattle fishing shop.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9997786078936443,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "The Associated Press previously reported that Eddier Bauer has roughly 180 stores across the U.S. and Canada. At the company\u2019s peak in 2001, the retailer boasted nearly 600 stores. The Chapter 11 filing marked the third time in a little over two decades for the storied-but-now-tired brand that began as a Seattle fishing shop. Eddie Bauer\u2019s namesake founder \u2014 an avid outdoorsman \u2014 started the company in Seattle in 1920 as Bauer\u2019s Sports Shop, according to the brand\u2019s website...."
+            },
+            {
               "category": "social",
               "excerpt": "Less than a month after Eddie Bauer's store operator in North America and Canada filed for Chapter 11 bankruptcy, dozens of stores are hitting the market.",
               "relevance_score": 0.9222811018505842,
@@ -6710,24 +6846,6 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "PENNSYLVANIA (WHTM) \u2014 Less than a month after Eddie Bauer\u2019s store operator in North America and Canada filed for Chapter 11 bankruptcy, dozens of stores are hitting the market. Nexstar\u2019s WHTM reported in February that Eddie Bauer, LLC announced that its retail operator had entered into a Restructuring Support Agreement (\u201cRSA\u201d) pact with its secured lenders as part of its Chapter 11 proceedings. The company, which blamed declining sales and a litany of other industry headwinds for the Chapter 11 filing, also said it would begin winding down operations at certain locations. However, at the time, it was uncertain which stores would eventually shutter...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "Eddie Bauer, LLC announced that its retail operator had entered into a Restructuring Support Agreement (\"RSA\") pact with its secured lenders as part of its Chapter 11 proceedings.",
-              "relevance_score": 0.8855424893902009,
-              "rerank_score": 0.9999201608094166,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "PENNSYLVANIA (WHTM) \u2014 Less than a month after Eddie Bauer\u2019s store operator in North America and Canada filed for Chapter 11 bankruptcy, dozens of stores are hitting the market. Nexstar\u2019s WHTM reported in February that Eddie Bauer, LLC announced that its retail operator had entered into a Restructuring Support Agreement (\u201cRSA\u201d) pact with its secured lenders as part of its Chapter 11 proceedings. The company, which blamed declining sales and a litany of other industry headwinds for the Chapter 11 filing, also said it would begin winding down operations at certain locations...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "The Chapter 11 filing marked the third time in a little over two decades for the storied-but-now-tired brand that began as a Seattle fishing shop.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9997786078936443,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "The Associated Press previously reported that Eddier Bauer has roughly 180 stores across the U.S. and Canada. At the company\u2019s peak in 2001, the retailer boasted nearly 600 stores. The Chapter 11 filing marked the third time in a little over two decades for the storied-but-now-tired brand that began as a Seattle fishing shop. Eddie Bauer\u2019s namesake founder \u2014 an avid outdoorsman \u2014 started the company in Seattle in 1920 as Bauer\u2019s Sports Shop, according to the brand\u2019s website...."
             }
           ],
           "confidence": 0.9,
@@ -6932,53 +7050,6 @@
       "categories": ["environmental", "governance"],
       "brand_details": [
         {
-          "brand": "Nike",
-          "categories": {
-            "environmental": {
-              "applies": true,
-              "sentiment": 1,
-              "sentiment_label": "positive"
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": true,
-              "sentiment": 1,
-              "sentiment_label": "positive"
-            },
-            "digital_transformation": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            }
-          },
-          "evidence": [
-            {
-              "category": "environmental",
-              "excerpt": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998988170088464,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers. The integration of smart textiles, such as temperature-regulating fabrics and odor-control technology, further differentiates premium product lines...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998988170088464,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers. The integration of smart textiles, such as temperature-regulating fabrics and odor-control technology, further differentiates premium product lines...."
-            }
-          ],
-          "confidence": 0.8,
-          "reasoning": "Nike is mentioned as incorporating sustainable manufacturing processes (Environmental) and transparent supply chains (Governance). However, this is general industry reporting rather than specific Nike initiatives, so confidence is moderate."
-        },
-        {
           "brand": "Adidas",
           "categories": {
             "environmental": {
@@ -7051,6 +7122,53 @@
           },
           "evidence": [
             {
+              "category": "governance",
+              "excerpt": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998988170088464,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers. The integration of smart textiles, such as temperature-regulating fabrics and odor-control technology, further differentiates premium product lines...."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998988170088464,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers. The integration of smart textiles, such as temperature-regulating fabrics and odor-control technology, further differentiates premium product lines...."
+            }
+          ],
+          "confidence": 0.8,
+          "reasoning": "Under Armour is mentioned alongside Nike and Adidas as incorporating sustainable manufacturing processes (Environmental) and transparent supply chains (Governance). Same general industry reporting context as the other two brands."
+        },
+        {
+          "brand": "Nike",
+          "categories": {
+            "environmental": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
               "category": "environmental",
               "excerpt": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers",
               "relevance_score": 1.0,
@@ -7070,7 +7188,7 @@
             }
           ],
           "confidence": 0.8,
-          "reasoning": "Under Armour is mentioned alongside Nike and Adidas as incorporating sustainable manufacturing processes (Environmental) and transparent supply chains (Governance). Same general industry reporting context as the other two brands."
+          "reasoning": "Nike is mentioned as incorporating sustainable manufacturing processes (Environmental) and transparent supply chains (Governance). However, this is general industry reporting rather than specific Nike initiatives, so confidence is moderate."
         }
       ]
     },
@@ -7767,33 +7885,6 @@
           },
           "evidence": [
             {
-              "category": "social",
-              "excerpt": "An investigation by Nova's group found that women at a Central Javanese factory producing Nike-licensed goods for Fanatics, a privately owned brand, had been sexually harassed for years.",
-              "relevance_score": 0.895358700018159,
-              "rerank_score": 0.9999543750573003,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "\u201cBecause unions have a tenuous foothold in the region and face harsh employer resistance,\u201d he added, \u201cworkers often cannot fight back.\u201d\n\nAn investigation by Nova\u2019s group found that women at a Central ..."
-            },
-            {
-              "category": "social",
-              "excerpt": "Ten workers at one supplier said many women's toilets hadn't been working for months. Two workers at other factories said they received written reprimands after they told their employers they were injured on the job.",
-              "relevance_score": 0.8502023649092156,
-              "rerank_score": 0.9999334273603943,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "But workers told the news organizations that problems have persisted at other factories in Central Java. Ten workers at one supplier said many women\u2019s toilets hadn\u2019t been working for months. Two workers at other factories said they received written reprimands after they told their employers they were injured on the job. Asked about these workers\u2019 accounts, Nike said that a \u201csafe and healthy work environment is a fundamental human right\u201d and that it audits factories annually for compliance with its code of conduct...."
-            },
-            {
-              "category": "social",
-              "excerpt": "Over the last decade, employment at factories supplying the world's largest athletic apparel brand expanded dramatically in regions of Indonesia where, according to one leading estimate, the minimum wage is less than the amount workers need to live on.",
-              "relevance_score": 0.8811258562571933,
-              "rerank_score": 0.9993859902425598,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "...If your factory wages don\u2019t cut it, your employer should have a plan to get you there. But Nike\u2019s expansion in Indonesia over the last decade has directly undermined these goals, an analysis by ProPublica and The Oregonian/OregonLive found. Over the last decade, employment at factories supplying the world\u2019s largest athletic apparel brand expanded dramatically in regions of Indonesia where, according to one leading estimate, the minimum wage is less than the amount workers need to live on. Meanwhile, Nike\u2019s supply chain shrank overall in places that pay this estimated living wage, our analysis found."
-            },
-            {
               "category": "governance",
               "excerpt": "Jason Judd, executive director of the Global Labor Institute at Cornell University, said living wage pledges from companies like Nike are so flexible that they're almost meaningless. Only asking factories to be working toward living wages, as Nike does, 'could go on for 20 years,' until you've found yet another lower-wage province.",
               "relevance_score": 0.9069527386414624,
@@ -7819,6 +7910,33 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...They said the company is building a new factory in Cirebon, in West Java, where the minimum wage is 45% lower. Employees said when they were offered a choice between keeping their jobs and accepting severance packages during layoffs last year, workers were willing to take the buyout, fearing that they wouldn\u2019t get anything if the factory closed altogether. That happened in 2018 when one Nike supplier near Jakarta, Kahoindah Citragarment, shut down without paying workers their full severance after Nike pulled its orders, an investigation by the Worker Rights Consortium found. The factory\u2019s South Korean parent company, Hojeon, eventually agreed to pay workers $4.5 million after labor advocates argued they were legally owed separation pay...."
+            },
+            {
+              "category": "social",
+              "excerpt": "An investigation by Nova's group found that women at a Central Javanese factory producing Nike-licensed goods for Fanatics, a privately owned brand, had been sexually harassed for years.",
+              "relevance_score": 0.895358700018159,
+              "rerank_score": 0.9999543750573003,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "\u201cBecause unions have a tenuous foothold in the region and face harsh employer resistance,\u201d he added, \u201cworkers often cannot fight back.\u201d\n\nAn investigation by Nova\u2019s group found that women at a Central ..."
+            },
+            {
+              "category": "social",
+              "excerpt": "Ten workers at one supplier said many women's toilets hadn't been working for months. Two workers at other factories said they received written reprimands after they told their employers they were injured on the job.",
+              "relevance_score": 0.8502023649092156,
+              "rerank_score": 0.9999334273603943,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "But workers told the news organizations that problems have persisted at other factories in Central Java. Ten workers at one supplier said many women\u2019s toilets hadn\u2019t been working for months. Two workers at other factories said they received written reprimands after they told their employers they were injured on the job. Asked about these workers\u2019 accounts, Nike said that a \u201csafe and healthy work environment is a fundamental human right\u201d and that it audits factories annually for compliance with its code of conduct...."
+            },
+            {
+              "category": "social",
+              "excerpt": "Over the last decade, employment at factories supplying the world's largest athletic apparel brand expanded dramatically in regions of Indonesia where, according to one leading estimate, the minimum wage is less than the amount workers need to live on.",
+              "relevance_score": 0.8811258562571933,
+              "rerank_score": 0.9993859902425598,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...If your factory wages don\u2019t cut it, your employer should have a plan to get you there. But Nike\u2019s expansion in Indonesia over the last decade has directly undermined these goals, an analysis by ProPublica and The Oregonian/OregonLive found. Over the last decade, employment at factories supplying the world\u2019s largest athletic apparel brand expanded dramatically in regions of Indonesia where, according to one leading estimate, the minimum wage is less than the amount workers need to live on. Meanwhile, Nike\u2019s supply chain shrank overall in places that pay this estimated living wage, our analysis found."
             }
           ],
           "confidence": 0.95,
@@ -8195,44 +8313,6 @@
       "categories": ["governance"],
       "brand_details": [
         {
-          "brand": "Anta",
-          "categories": {
-            "environmental": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": true,
-              "sentiment": 0,
-              "sentiment_label": "neutral"
-            },
-            "digital_transformation": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            }
-          },
-          "evidence": [
-            {
-              "category": "governance",
-              "excerpt": "China's Anta is becoming a strategic investor, acquiring a 29% stake",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999062940540651,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Chief Executive Arthur Hoeld is leading a turnaround for the German sportswear brand. China's Anta is becoming a strategic investor, acquiring a 29% stake. Puma expects an operating loss between 50 million and 150 million euros in 2026."
-            }
-          ],
-          "confidence": 0.85,
-          "reasoning": "This refers to Anta Sports, the Chinese sportswear company. The governance category applies due to the strategic investment and stake acquisition, which represents a significant corporate governance event. The sentiment is neutral as this is presented as a factual business transaction without positive or negative framing."
-        },
-        {
           "brand": "Puma",
           "categories": {
             "environmental": {
@@ -8287,6 +8367,44 @@
           ],
           "confidence": 0.9,
           "reasoning": "This is clearly about Puma AG, the German sportswear company. The governance category applies due to the dividend cancellation and corporate turnaround situation, which reflects poor financial performance and corporate decision-making. The sentiment is negative due to the anticipated losses and need for turnaround measures."
+        },
+        {
+          "brand": "Anta",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": 0,
+              "sentiment_label": "neutral"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "governance",
+              "excerpt": "China's Anta is becoming a strategic investor, acquiring a 29% stake",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999062940540651,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Chief Executive Arthur Hoeld is leading a turnaround for the German sportswear brand. China's Anta is becoming a strategic investor, acquiring a 29% stake. Puma expects an operating loss between 50 million and 150 million euros in 2026."
+            }
+          ],
+          "confidence": 0.85,
+          "reasoning": "This refers to Anta Sports, the Chinese sportswear company. The governance category applies due to the strategic investment and stake acquisition, which represents a significant corporate governance event. The sentiment is neutral as this is presented as a factual business transaction without positive or negative framing."
         }
       ]
     },
@@ -8326,24 +8444,6 @@
           },
           "evidence": [
             {
-              "category": "environmental",
-              "excerpt": "Brands such as Nike, Adidas and Puma are expected to lead through and sustainability.",
-              "relevance_score": 0.7870133696896093,
-              "rerank_score": 0.9998642271203562,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Brands such as Nike, Adidas and Puma are expected to lead through and . And while there will be challenges from increased competition, counterfeit products and fluctuating raw material prices, opportunities in emerging markets will ensure continued growth of the sneaker category. Technical advancements in design and manufacturing were also cited as representing new opportunities for expansion...."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "Investments in recycled fabrics, biodegradable soles and energy-efficient manufacturing methods help to reduce carbon footprints.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.929060467882787,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...The report noted that sustainability has become a defining feature of the modern sneaker market, with consumers increasingly preferring eco-friendly materials and ethical production practices. Investments in recycled fabrics, biodegradable soles and energy-efficient manufacturing methods help to reduce carbon footprints. And the rise in customization options and design innovations are allowing brands to cater to individual style preferences."
-            },
-            {
               "category": "digital_transformation",
               "excerpt": "brands that can leverage digitalization, sustainability and celebrity collaborations will be best able to cater to diverse consumer preferences",
               "relevance_score": 1.0,
@@ -8360,75 +8460,28 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...Technical advancements in design and manufacturing were also cited as representing new opportunities for expansion. Moreover, anti-counterfeiting technologies, such as blockchain tracking and RFID tagging, can be used to ensure product authenticity. \u201cThe combination of comfort, functionality, and fashion will continue to drive consumer interest, ensuring the sneakers market remains one of the most dynamic sectors in the global footwear industry,\u201d ResearchAndMarket said...."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "Brands such as Nike, Adidas and Puma are expected to lead through and sustainability.",
+              "relevance_score": 0.7870133696896093,
+              "rerank_score": 0.9998642271203562,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Brands such as Nike, Adidas and Puma are expected to lead through and . And while there will be challenges from increased competition, counterfeit products and fluctuating raw material prices, opportunities in emerging markets will ensure continued growth of the sneaker category. Technical advancements in design and manufacturing were also cited as representing new opportunities for expansion...."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "Investments in recycled fabrics, biodegradable soles and energy-efficient manufacturing methods help to reduce carbon footprints.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.929060467882787,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...The report noted that sustainability has become a defining feature of the modern sneaker market, with consumers increasingly preferring eco-friendly materials and ethical production practices. Investments in recycled fabrics, biodegradable soles and energy-efficient manufacturing methods help to reduce carbon footprints. And the rise in customization options and design innovations are allowing brands to cater to individual style preferences."
             }
           ],
           "confidence": 0.8,
           "reasoning": "Adidas is identified as a leader in sustainability initiatives and digital transformation alongside Nike and Puma. The article discusses environmental benefits and digital innovation that apply to all three brands mentioned as leaders."
-        },
-        {
-          "brand": "Nike",
-          "categories": {
-            "environmental": {
-              "applies": true,
-              "sentiment": 1,
-              "sentiment_label": "positive"
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "digital_transformation": {
-              "applies": true,
-              "sentiment": 1,
-              "sentiment_label": "positive"
-            }
-          },
-          "evidence": [
-            {
-              "category": "environmental",
-              "excerpt": "Brands such as Nike, Adidas and Puma are expected to lead through and sustainability.",
-              "relevance_score": 0.7870133696896093,
-              "rerank_score": 0.9998642271203562,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Brands such as Nike, Adidas and Puma are expected to lead through and . And while there will be challenges from increased competition, counterfeit products and fluctuating raw material prices, opportunities in emerging markets will ensure continued growth of the sneaker category. Technical advancements in design and manufacturing were also cited as representing new opportunities for expansion...."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "Investments in recycled fabrics, biodegradable soles and energy-efficient manufacturing methods help to reduce carbon footprints.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.929060467882787,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...The report noted that sustainability has become a defining feature of the modern sneaker market, with consumers increasingly preferring eco-friendly materials and ethical production practices. Investments in recycled fabrics, biodegradable soles and energy-efficient manufacturing methods help to reduce carbon footprints. And the rise in customization options and design innovations are allowing brands to cater to individual style preferences."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "brands that can leverage digitalization, sustainability and celebrity collaborations will be best able to cater to diverse consumer preferences",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999223776297491,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "The increasing integration of sportswear into everyday fashion has evolved what was once a niche athletic footwear segment into a major lifestyle category. In addition, brands that can leverage digitalization, sustainability and celebrity collaborations will be best able to cater to diverse consumer preferences, which in turn will drive innovation. Moreover, the influence of celebrity endorsements, sports collaborations and limited-edition releases have helped to enhance brand visibility and customer loyalty...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "anti-counterfeiting technologies, such as blockchain tracking and RFID tagging, can be used to ensure product authenticity",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9996450017919903,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Technical advancements in design and manufacturing were also cited as representing new opportunities for expansion. Moreover, anti-counterfeiting technologies, such as blockchain tracking and RFID tagging, can be used to ensure product authenticity. \u201cThe combination of comfort, functionality, and fashion will continue to drive consumer interest, ensuring the sneakers market remains one of the most dynamic sectors in the global footwear industry,\u201d ResearchAndMarket said...."
-            }
-          ],
-          "confidence": 0.8,
-          "reasoning": "Nike is identified as a leader in sustainability initiatives and digital transformation. The article discusses environmental benefits through recycled materials and energy-efficient manufacturing, plus digital innovation through blockchain and RFID technologies."
         },
         {
           "brand": "Puma",
@@ -8494,6 +8547,71 @@
           ],
           "confidence": 0.8,
           "reasoning": "Puma is identified as a leader in sustainability initiatives and digital transformation alongside Nike and Adidas. The article discusses environmental benefits and digital innovation that apply to all three brands mentioned as leaders."
+        },
+        {
+          "brand": "Nike",
+          "categories": {
+            "environmental": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            }
+          },
+          "evidence": [
+            {
+              "category": "digital_transformation",
+              "excerpt": "brands that can leverage digitalization, sustainability and celebrity collaborations will be best able to cater to diverse consumer preferences",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999223776297491,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "The increasing integration of sportswear into everyday fashion has evolved what was once a niche athletic footwear segment into a major lifestyle category. In addition, brands that can leverage digitalization, sustainability and celebrity collaborations will be best able to cater to diverse consumer preferences, which in turn will drive innovation. Moreover, the influence of celebrity endorsements, sports collaborations and limited-edition releases have helped to enhance brand visibility and customer loyalty...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "anti-counterfeiting technologies, such as blockchain tracking and RFID tagging, can be used to ensure product authenticity",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9996450017919903,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Technical advancements in design and manufacturing were also cited as representing new opportunities for expansion. Moreover, anti-counterfeiting technologies, such as blockchain tracking and RFID tagging, can be used to ensure product authenticity. \u201cThe combination of comfort, functionality, and fashion will continue to drive consumer interest, ensuring the sneakers market remains one of the most dynamic sectors in the global footwear industry,\u201d ResearchAndMarket said...."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "Brands such as Nike, Adidas and Puma are expected to lead through and sustainability.",
+              "relevance_score": 0.7870133696896093,
+              "rerank_score": 0.9998642271203562,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Brands such as Nike, Adidas and Puma are expected to lead through and . And while there will be challenges from increased competition, counterfeit products and fluctuating raw material prices, opportunities in emerging markets will ensure continued growth of the sneaker category. Technical advancements in design and manufacturing were also cited as representing new opportunities for expansion...."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "Investments in recycled fabrics, biodegradable soles and energy-efficient manufacturing methods help to reduce carbon footprints.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.929060467882787,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...The report noted that sustainability has become a defining feature of the modern sneaker market, with consumers increasingly preferring eco-friendly materials and ethical production practices. Investments in recycled fabrics, biodegradable soles and energy-efficient manufacturing methods help to reduce carbon footprints. And the rise in customization options and design innovations are allowing brands to cater to individual style preferences."
+            }
+          ],
+          "confidence": 0.8,
+          "reasoning": "Nike is identified as a leader in sustainability initiatives and digital transformation. The article discusses environmental benefits through recycled materials and energy-efficient manufacturing, plus digital innovation through blockchain and RFID technologies."
         }
       ]
     },
