@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-12T14:00:35.249912+00:00",
-  "total_articles": 542,
+  "generated_at": "2026-04-13T14:00:35.550877+00:00",
+  "total_articles": 543,
   "brands": [
     "361 Degrees",
     "ASICS",
@@ -41,20 +41,20 @@
   "categories": ["digital_transformation", "environmental", "governance", "social"],
   "scorecard": {
     "period_days": 14,
-    "period_start": "2026-03-29",
-    "period_end": "2026-04-12",
-    "articles_in_period": 50,
-    "articles_after_dedup": 27,
-    "duplicates_removed": 23,
+    "period_start": "2026-03-30",
+    "period_end": "2026-04-13",
+    "articles_in_period": 46,
+    "articles_after_dedup": 26,
+    "duplicates_removed": 20,
     "top_brands": [
       {
         "brand": "Adidas",
-        "total": 7,
+        "total": 8,
         "environmental": 0,
         "social": 8,
-        "governance": -1,
+        "governance": 0,
         "digital_transformation": 0,
-        "article_count": 5,
+        "article_count": 4,
         "medal": "gold"
       },
       {
@@ -90,8 +90,8 @@
       },
       {
         "brand": "Allbirds",
-        "total": -3,
-        "environmental": 1,
+        "total": -5,
+        "environmental": -1,
         "social": -1,
         "governance": -3,
         "digital_transformation": 0,
@@ -101,12 +101,12 @@
     "all_brand_scores": [
       {
         "brand": "Adidas",
-        "total": 7,
+        "total": 8,
         "environmental": 0,
         "social": 8,
-        "governance": -1,
+        "governance": 0,
         "digital_transformation": 0,
-        "article_count": 5,
+        "article_count": 4,
         "medal": "gold"
       },
       {
@@ -176,8 +176,8 @@
       },
       {
         "brand": "Allbirds",
-        "total": -3,
-        "environmental": 1,
+        "total": -5,
+        "environmental": -1,
         "social": -1,
         "governance": -3,
         "digital_transformation": 0,
@@ -195,6 +195,101 @@
     ]
   },
   "articles": [
+    {
+      "id": "ba0fae54-900a-4cd3-987e-6f333c2029d5",
+      "title": "Nike\u2019s AI Designed World Cup Jerseys Are a Disaster",
+      "url": "https://futurism.com/artificial-intelligence/nikes-ai-designed-world-cup-jerseys",
+      "source_name": "Futurism",
+      "published_at": "2026-04-12T19:00:00+00:00",
+      "published_date": "2026-04-12",
+      "brands": ["Nike"],
+      "categories": ["digital_transformation", "governance"],
+      "brand_details": [
+        {
+          "brand": "Nike",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            },
+            "digital_transformation": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            }
+          },
+          "evidence": [
+            {
+              "category": "digital_transformation",
+              "excerpt": "A source familiar with the design process told The Guardian that it involves using elements of AI to work alongside its human designers, raising the possibility that an AI tool may have been involved in the flub.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9997064853176557,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...If \u201ccomputational design\u201d sounds like a euphemism for AI, you might be on to something. A source familiar with the design process told The Guardian that it involves using elements of AI to work alongside its human designers, raising the possibility that an AI tool may have been involved in the flub. The athletic apparel maker acknowledged the shoulder bulge issue in a statement to The Guardian, but didn\u2019t address how it occurred."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "It supposedly 'leverages computational design and a highly specialized, stich-specific knitting process,' marketing copy states. If 'computational design' sounds like a euphemism for AI, you might be on to something.",
+              "relevance_score": 0.8504185944988132,
+              "rerank_score": 0.9995962693149467,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Nike has placed a lot of emphasis on its new \u201cAero-FIT\u201d design that\u2019s supposed to help athletes keep cool during what\u2019s anticipated to be a scorching hot tournament. It supposedly \u201cleverages computati..."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "Nike's newly debuted collection of World Cup kits \u2014 which were reportedly made with the help of AI \u2014 has turned out to be a sartorial catastrophe.",
+              "relevance_score": 0.8428502467132755,
+              "rerank_score": 0.9992773192877404,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Sign up to see the future, today\n\nCan\u2019t-miss innovations from the bleeding edge of science and tech\n\nEmail address Thank you!\n\nIs there anything about this upcoming World Cup \u2014 which will be taking pl..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "So too were the many fans that paid up to $200 to buy the Nike jerseys, who fumed about their poor quality on social media.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9996631168965869,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Athletes weren\u2019t the only ones made to look ridiculous. So too were the many fans that paid up to $200 to buy the Nike jerseys, who fumed about their poor quality on social media. \u201cThe way the shoulders are sewn together just makes them bunch like this no matter what,\u201d one complained on Reddit...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "It's unclear how, or if, Nike will be able to redesign the kits in time.",
+              "relevance_score": 0.7701820087344559,
+              "rerank_score": 0.9994513163146443,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "\u201cDuring the recent international break, we observed a minor issue with our Nike national team kits, most noticeable around the shoulder seam,\u201d a Nike spokesperson said. \u201cPerformance is unaffected, but..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "The athletic apparel maker acknowledged the shoulder bulge issue in a statement to The Guardian, but didn't address how it occurred.",
+              "relevance_score": 0.847980684307267,
+              "rerank_score": 0.999198525308893,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...If \u201ccomputational design\u201d sounds like a euphemism for AI, you might be on to something. A source familiar with the design process told The Guardian that it involves using elements of AI to work alongside its human designers, raising the possibility that an AI tool may have been involved in the flub. The athletic apparel maker acknowledged the shoulder bulge issue in a statement to The Guardian, but didn\u2019t address how it occurred."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "Article reports on Nike's product quality failure and inadequate corporate response (Governance), and the problematic use of AI in product design that led to defective jerseys (Digital Transformation). Both categories reflect negative outcomes from Nike's practices."
+        }
+      ]
+    },
     {
       "id": "7950b176-c95c-41fe-b082-256e6f05f052",
       "title": "Why are Nike's World Cup kits bulging at the shoulder?",
@@ -1892,24 +1987,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "Now undergoing a massive leadership reset with Elliott Hill taking the reins, Nike is executing a drastic multi-year restructuring plan",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999635749260919,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Former CEO John Donahoe acknowledged that the brand\u2019s aggressive shift away from wholesale partners toward its own digital channels failed to sustain momentum. Now undergoing a massive leadership reset with Elliott Hill taking the reins, Nike is executing a drastic multi-year restructuring plan. The brand aims to slash overhead costs and reinvest heavily into speedier product development and performance-oriented marketing...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "Former CEO John Donahoe acknowledged that the brand's aggressive shift away from wholesale partners toward its own digital channels failed to sustain momentum",
-              "relevance_score": 0.8734741602054971,
-              "rerank_score": 0.9999517621654631,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Former CEO John Donahoe acknowledged that the brand\u2019s aggressive shift away from wholesale partners toward its own digital channels failed to sustain momentum. Now undergoing a massive leadership reset with Elliott Hill taking the reins, Nike is executing a drastic multi-year restructuring plan...."
-            },
-            {
               "category": "digital_transformation",
               "excerpt": "the brand's aggressive shift away from wholesale partners toward its own digital channels failed to sustain momentum",
               "relevance_score": 0.841784158426325,
@@ -1935,6 +2012,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "Summary\n\nNike shares plummeted by 20 percent in their worst single-day drop on record after the company lowered its annual sales guidance\n\nManagement expects a mid-single-digit decline in fiscal 2025 revenue due to softening demand and a slowdown in the lifestyle footwear category The company is shifting its strategy back toward wholesale partners and performance innovation to counter rising competition\n\nNike is facing historic turbulence...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Now undergoing a massive leadership reset with Elliott Hill taking the reins, Nike is executing a drastic multi-year restructuring plan",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999635749260919,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Former CEO John Donahoe acknowledged that the brand\u2019s aggressive shift away from wholesale partners toward its own digital channels failed to sustain momentum. Now undergoing a massive leadership reset with Elliott Hill taking the reins, Nike is executing a drastic multi-year restructuring plan. The brand aims to slash overhead costs and reinvest heavily into speedier product development and performance-oriented marketing...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Former CEO John Donahoe acknowledged that the brand's aggressive shift away from wholesale partners toward its own digital channels failed to sustain momentum",
+              "relevance_score": 0.8734741602054971,
+              "rerank_score": 0.9999517621654631,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Former CEO John Donahoe acknowledged that the brand\u2019s aggressive shift away from wholesale partners toward its own digital channels failed to sustain momentum. Now undergoing a massive leadership reset with Elliott Hill taking the reins, Nike is executing a drastic multi-year restructuring plan...."
             }
           ],
           "confidence": 0.9,
@@ -2215,83 +2310,6 @@
       ]
     },
     {
-      "id": "dd56c235-fe91-4592-8473-6444d411aae2",
-      "title": "Nike sued after customer personal information was exposed",
-      "url": "https://kyma.com/dsw-living/consumer/2026/04/01/nike-sued-after-customers-personal-information-was-exposed/",
-      "source_name": "kyma.com",
-      "published_at": "2026-04-01T16:15:00+00:00",
-      "published_date": "2026-04-01",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "governance"],
-      "brand_details": [
-        {
-          "brand": "Nike",
-          "categories": {
-            "environmental": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": true,
-              "sentiment": -1,
-              "sentiment_label": "negative"
-            },
-            "digital_transformation": {
-              "applies": true,
-              "sentiment": -1,
-              "sentiment_label": "negative"
-            }
-          },
-          "evidence": [
-            {
-              "category": "digital_transformation",
-              "excerpt": "Nike is being sued after customers' personal information was exposed.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999809785375419,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "(NBC, KYMA) - Nike is being sued after customers' personal information was exposed. A lawsuit filed in California alleges the global sneaker company failed to protect sensitive information, and waited too long to notify customers of a data breach...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "The suit claims names, addresses, phone numbers, and payment info were exposed.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9997363520163735,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Nike is being sued after customers' personal information was exposed. A lawsuit filed in California alleges the global sneaker company failed to protect sensitive information, and waited too long to notify customers of a data breach. The suit claims names, addresses, phone numbers, and payment info were exposed. It says Nike discovered the breach around January 21, but didn't notify victims for over a month...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "A lawsuit filed in California alleges the global sneaker company failed to protect sensitive information, and waited too long to notify customers of a data breach.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999521188200069,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "(NBC, KYMA) - Nike is being sued after customers' personal information was exposed. A lawsuit filed in California alleges the global sneaker company failed to protect sensitive information, and waited too long to notify customers of a data breach. The suit claims names, addresses, phone numbers, and payment info were exposed...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "It says Nike discovered the breach around January 21, but didn't notify victims for over a month.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999208839899555,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...A lawsuit filed in California alleges the global sneaker company failed to protect sensitive information, and waited too long to notify customers of a data breach. The suit claims names, addresses, phone numbers, and payment info were exposed. It says Nike discovered the breach around January 21, but didn't notify victims for over a month. The suit is seeking at least $5 million in damages...."
-            }
-          ],
-          "confidence": 0.9,
-          "reasoning": "This is clearly about Nike the sportswear company facing a data breach lawsuit. Governance applies due to corporate accountability and transparency failures in breach notification. Digital transformation applies as this involves cybersecurity and data protection failures. Both are negative due to the breach and delayed notification."
-        }
-      ]
-    },
-    {
       "id": "20cde66f-bdbb-4e5e-8edf-f72bb7635681",
       "title": "Nike Resets Digital Strategy with Strong Push on AI and Technology Transformation",
       "url": "https://infotechlead.com/cio/nike-resets-digital-strategy-with-strong-push-on-ai-and-technology-transformation-94822",
@@ -2327,6 +2345,24 @@
           },
           "evidence": [
             {
+              "category": "social",
+              "excerpt": "This move reflects a broader effort to streamline operations and reduce fixed costs associated with previous digital expansion initiatives.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.99965676741438,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "This move reflects a broader effort to streamline operations and reduce fixed costs associated with previous digital expansion initiatives. Nike is transitioning toward a more flexible and efficient supply chain model that can better respond to changing consumer demand...."
+            },
+            {
+              "category": "social",
+              "excerpt": "The company recorded a $230 million charge related to workforce reductions, primarily affecting technology and logistics functions.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9994932865538826,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Technology Restructuring to Improve Efficiency\n\nAs part of its transformation, Nike has implemented restructuring measures within its technology and supply chain operations. The company recorded a $230 million charge related to workforce reductions, primarily affecting technology and logistics functions."
+            },
+            {
               "category": "digital_transformation",
               "excerpt": "Nike is leveraging technologies to differentiate its product offerings and strengthen its competitive position. Innovations such as self-inflating thermal apparel powered by Nike Air, the Liquid Air Max cushioning system, and Aero-FIT cooling technology demonstrate the company's commitment to integrating engineering and digital intelligence into its products.",
               "relevance_score": 0.9015637837313855,
@@ -2352,28 +2388,87 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "...AI Platforms Accelerate Innovation and Engagement\n\nArtificial intelligence is emerging as a central pillar of Nike\u2019s long-term growth strategy. The company highlighted its Nike MIND platform as a key innovation engine that integrates AI into product development and consumer engagement. The platform has demonstrated strong traction, with more than 150 patents filed globally and over 2 million consumer sign-ups through Nike\u2019s digital ecosystem. Product launches linked to this platform have seen strong demand, frequently selling out across multiple markets...."
-            },
-            {
-              "category": "social",
-              "excerpt": "This move reflects a broader effort to streamline operations and reduce fixed costs associated with previous digital expansion initiatives.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.99965676741438,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "This move reflects a broader effort to streamline operations and reduce fixed costs associated with previous digital expansion initiatives. Nike is transitioning toward a more flexible and efficient supply chain model that can better respond to changing consumer demand...."
-            },
-            {
-              "category": "social",
-              "excerpt": "The company recorded a $230 million charge related to workforce reductions, primarily affecting technology and logistics functions.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9994932865538826,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Technology Restructuring to Improve Efficiency\n\nAs part of its transformation, Nike has implemented restructuring measures within its technology and supply chain operations. The company recorded a $230 million charge related to workforce reductions, primarily affecting technology and logistics functions."
             }
           ],
           "confidence": 0.9,
           "reasoning": "Article focuses on Nike's digital transformation strategy with AI/technology innovation (positive Digital Transformation) and workforce reductions affecting employees (negative Social impact). No environmental or governance ESG content present."
+        }
+      ]
+    },
+    {
+      "id": "dd56c235-fe91-4592-8473-6444d411aae2",
+      "title": "Nike sued after customer personal information was exposed",
+      "url": "https://kyma.com/dsw-living/consumer/2026/04/01/nike-sued-after-customers-personal-information-was-exposed/",
+      "source_name": "kyma.com",
+      "published_at": "2026-04-01T16:15:00+00:00",
+      "published_date": "2026-04-01",
+      "brands": ["Nike"],
+      "categories": ["digital_transformation", "governance"],
+      "brand_details": [
+        {
+          "brand": "Nike",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            },
+            "digital_transformation": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            }
+          },
+          "evidence": [
+            {
+              "category": "governance",
+              "excerpt": "A lawsuit filed in California alleges the global sneaker company failed to protect sensitive information, and waited too long to notify customers of a data breach.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999521188200069,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "(NBC, KYMA) - Nike is being sued after customers' personal information was exposed. A lawsuit filed in California alleges the global sneaker company failed to protect sensitive information, and waited too long to notify customers of a data breach. The suit claims names, addresses, phone numbers, and payment info were exposed...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "It says Nike discovered the breach around January 21, but didn't notify victims for over a month.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999208839899555,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...A lawsuit filed in California alleges the global sneaker company failed to protect sensitive information, and waited too long to notify customers of a data breach. The suit claims names, addresses, phone numbers, and payment info were exposed. It says Nike discovered the breach around January 21, but didn't notify victims for over a month. The suit is seeking at least $5 million in damages...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "Nike is being sued after customers' personal information was exposed.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999809785375419,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "(NBC, KYMA) - Nike is being sued after customers' personal information was exposed. A lawsuit filed in California alleges the global sneaker company failed to protect sensitive information, and waited too long to notify customers of a data breach...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "The suit claims names, addresses, phone numbers, and payment info were exposed.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9997363520163735,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Nike is being sued after customers' personal information was exposed. A lawsuit filed in California alleges the global sneaker company failed to protect sensitive information, and waited too long to notify customers of a data breach. The suit claims names, addresses, phone numbers, and payment info were exposed. It says Nike discovered the breach around January 21, but didn't notify victims for over a month...."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "This is clearly about Nike the sportswear company facing a data breach lawsuit. Governance applies due to corporate accountability and transparency failures in breach notification. Digital transformation applies as this involves cybersecurity and data protection failures. Both are negative due to the breach and delayed notification."
         }
       ]
     },
@@ -2413,6 +2508,15 @@
           },
           "evidence": [
             {
+              "category": "digital_transformation",
+              "excerpt": "the company grappled with a sluggish digital business, stubborn excess inventory and intensifying competition",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9996894516724485,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Hill, who took the helm in 2024, has looked to reset the business as the company grappled with a sluggish digital business, stubborn excess inventory and intensifying competition from Chinese sportswear brands such as Anta and Li Ning, which have deeper connections with Chinese consumers. TURNAROUND IN TURMOIL\n\nThe turnaround \"is taking longer than I would like,\" Hill said on Nike's third-quarter earnings call...."
+            },
+            {
               "category": "governance",
               "excerpt": "Nike has also lagged competition due to years of strategy missteps and lack of innovation.",
               "relevance_score": 1.0,
@@ -2438,15 +2542,6 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...\"If Nike's recovery is a marathon rather than a sprint, then the company seems to be \u2060hitting a \u200cwall,\" said Russ Mould, investment director at AJ Bell. Live Events\n\n\"Pleas for patience from CEO Elliott Hill, a Nike lifer, who returned from retirement to lead the company, are falling on deaf ears. \"\n\nMajor sportswear \u2060makers including Nike and Adidas have been hit by their heavy reliance on manufacturing hubs in Southeast Asia, leaving them exposed to steep U.S. tariffs on imports from Vietnam and other countries."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "the company grappled with a sluggish digital business, stubborn excess inventory and intensifying competition",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9996894516724485,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Hill, who took the helm in 2024, has looked to reset the business as the company grappled with a sluggish digital business, stubborn excess inventory and intensifying competition from Chinese sportswear brands such as Anta and Li Ning, which have deeper connections with Chinese consumers. TURNAROUND IN TURMOIL\n\nThe turnaround \"is taking longer than I would like,\" Hill said on Nike's third-quarter earnings call...."
             }
           ],
           "confidence": 0.9,
@@ -2990,6 +3085,74 @@
       ]
     },
     {
+      "id": "23d82ecf-d2f7-4ae4-9b8a-93abda969b11",
+      "title": "American Exchange Is Set to Acquire Allbirds for $39 Million . Here What Investors Need to Know . ",
+      "url": "https://www.fool.com/investing/2026/03/31/american-exchange-is-set-to-acquire-allbirds-for-3/?source=iedfolrf0000001",
+      "source_name": "fool.com",
+      "published_at": "2026-04-01T00:00:00+00:00",
+      "published_date": "2026-04-01",
+      "brands": ["Allbirds"],
+      "categories": ["environmental", "governance"],
+      "brand_details": [
+        {
+          "brand": "Allbirds",
+          "categories": {
+            "environmental": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "governance",
+              "excerpt": "The company made several errors that torched the business and the stock. It expanded its product line too quickly, getting away from its core \"wool runner\" shoe and diluting the brand",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998865947818794,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "The company made several errors that torched the business and the stock. It expanded its product line too quickly, getting away from its core \"wool runner\" shoe and diluting the brand. Its focus on using sustainable materials meant that its products weren't always as durable as alternatives, and it opened brick-and-mortar stores too aggressively, eventually closing most of them...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "it opened brick-and-mortar stores too aggressively, eventually closing most of them",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9995669645904863,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...It expanded its product line too quickly, getting away from its core \"wool runner\" shoe and diluting the brand. Its focus on using sustainable materials meant that its products weren't always as durable as alternatives, and it opened brick-and-mortar stores too aggressively, eventually closing most of them. Allbirds' revenue peaked in 2022 and has steadily eroded since then as it has not had a quarter of positive revenue growth in more than three years...."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "Its focus on using sustainable materials meant that its products weren't always as durable as alternatives",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998734088682789,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...It expanded its product line too quickly, getting away from its core \"wool runner\" shoe and diluting the brand. Its focus on using sustainable materials meant that its products weren't always as durable as alternatives, and it opened brick-and-mortar stores too aggressively, eventually closing most of them. Allbirds' revenue peaked in 2022 and has steadily eroded since then as it has not had a quarter of positive revenue growth in more than three years...."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "Article discusses Allbirds' sustainability focus as a business weakness (Environmental negative) and multiple strategic failures including rapid expansion and brand dilution (Governance negative). This is substantive ESG content about corporate decision-making and environmental strategy trade-offs."
+        }
+      ]
+    },
+    {
       "id": "d8f3fe26-b6c4-430d-b77a-912794ff5b30",
       "title": "Allbirds , once worth $7b , sells its assets for $68m , will wind down",
       "url": "https://www.newstalkzb.co.nz/news/business/allbirds-once-worth-7b-sells-its-assets-for-68m-will-wind-down/",
@@ -3072,74 +3235,6 @@
           ],
           "confidence": 0.9,
           "reasoning": "Environmental applies neutrally as the article mentions Allbirds' sustainable positioning and use of recycled materials as factual context. Governance applies negatively due to the company dissolution, leadership changes, and cancelled earnings reporting, which represent significant governance failures and lack of transparency."
-        }
-      ]
-    },
-    {
-      "id": "23d82ecf-d2f7-4ae4-9b8a-93abda969b11",
-      "title": "American Exchange Is Set to Acquire Allbirds for $39 Million . Here What Investors Need to Know . ",
-      "url": "https://www.fool.com/investing/2026/03/31/american-exchange-is-set-to-acquire-allbirds-for-3/?source=iedfolrf0000001",
-      "source_name": "fool.com",
-      "published_at": "2026-04-01T00:00:00+00:00",
-      "published_date": "2026-04-01",
-      "brands": ["Allbirds"],
-      "categories": ["environmental", "governance"],
-      "brand_details": [
-        {
-          "brand": "Allbirds",
-          "categories": {
-            "environmental": {
-              "applies": true,
-              "sentiment": -1,
-              "sentiment_label": "negative"
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": true,
-              "sentiment": -1,
-              "sentiment_label": "negative"
-            },
-            "digital_transformation": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            }
-          },
-          "evidence": [
-            {
-              "category": "environmental",
-              "excerpt": "Its focus on using sustainable materials meant that its products weren't always as durable as alternatives",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998734088682789,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...It expanded its product line too quickly, getting away from its core \"wool runner\" shoe and diluting the brand. Its focus on using sustainable materials meant that its products weren't always as durable as alternatives, and it opened brick-and-mortar stores too aggressively, eventually closing most of them. Allbirds' revenue peaked in 2022 and has steadily eroded since then as it has not had a quarter of positive revenue growth in more than three years...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "The company made several errors that torched the business and the stock. It expanded its product line too quickly, getting away from its core \"wool runner\" shoe and diluting the brand",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998865947818794,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "The company made several errors that torched the business and the stock. It expanded its product line too quickly, getting away from its core \"wool runner\" shoe and diluting the brand. Its focus on using sustainable materials meant that its products weren't always as durable as alternatives, and it opened brick-and-mortar stores too aggressively, eventually closing most of them...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "it opened brick-and-mortar stores too aggressively, eventually closing most of them",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9995669645904863,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...It expanded its product line too quickly, getting away from its core \"wool runner\" shoe and diluting the brand. Its focus on using sustainable materials meant that its products weren't always as durable as alternatives, and it opened brick-and-mortar stores too aggressively, eventually closing most of them. Allbirds' revenue peaked in 2022 and has steadily eroded since then as it has not had a quarter of positive revenue growth in more than three years...."
-            }
-          ],
-          "confidence": 0.9,
-          "reasoning": "Article discusses Allbirds' sustainability focus as a business weakness (Environmental negative) and multiple strategic failures including rapid expansion and brand dilution (Governance negative). This is substantive ESG content about corporate decision-making and environmental strategy trade-offs."
         }
       ]
     },
@@ -3605,6 +3700,15 @@
           },
           "evidence": [
             {
+              "category": "digital_transformation",
+              "excerpt": "charged with improving retail ties, clearing stale stock and speeding its digital push",
+              "relevance_score": 0.7279230562827719,
+              "rerank_score": 0.99983766422034,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "The sportswear giant earlier this year appointed 25-year company veteran Cathy Sparks as Vice President and General Manager of Greater China, succeeding long-time executive Angela Dong, charged with i..."
+            },
+            {
               "category": "governance",
               "excerpt": "Structural issues have compounded Nike's brand problems, according to two former and one current Nike China employees who spoke on condition of anonymity",
               "relevance_score": 0.8913125193198725,
@@ -3630,15 +3734,6 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "Structural issues have compounded Nike's brand problems, according to two former and one current Nike China employees \u200bwho spoke on condition of \u2060anonymity. A top-down decision-making culture blunted responsiveness to local demand, while repeated efforts to push poorly received products onto retail partners intensified inventory strains at a time of slowing consumer spending. Frequent discounting to clear excess inventory hurt Nike\u2019s brand image and its wholesale relationships, they added...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "charged with improving retail ties, clearing stale stock and speeding its digital push",
-              "relevance_score": 0.7279230562827719,
-              "rerank_score": 0.99983766422034,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "The sportswear giant earlier this year appointed 25-year company veteran Cathy Sparks as Vice President and General Manager of Greater China, succeeding long-time executive Angela Dong, charged with i..."
             }
           ],
           "confidence": 0.9,
@@ -5747,44 +5842,6 @@
       "categories": ["digital_transformation", "environmental"],
       "brand_details": [
         {
-          "brand": "Adidas",
-          "categories": {
-            "environmental": {
-              "applies": true,
-              "sentiment": 1,
-              "sentiment_label": "positive"
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "digital_transformation": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            }
-          },
-          "evidence": [
-            {
-              "category": "environmental",
-              "excerpt": "Adidas AG \u2013 Focus on performance apparel and sustainability initiatives",
-              "relevance_score": 1.0,
-              "rerank_score": 0.999932547480326,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Geography: North America, Europe, Asia-Pacific, Rest of the World\n\nKey Players in the Outdoor Apparel Market\n\nAdidas AG \u2013 Focus on performance apparel and sustainability initiatives\n\nNike Inc. \u2013 Expanding technical apparel and smart fabric integration\n\nVF Corporation \u2013 Diverse brand portfolio with specialty outdoor offerings\n\nColumbia Sportswear Company \u2013 Innovative fabrics and global retail presence\n\nAmer Sports \u2013 Strong DTC strategy and growth in Asia-Pacific markets\n\nConclusion\n\nThe outdoor apparel market is set for steady growth, driven by rising participation in outdoor activities, health-conscious lifestyles, and the use of advanced fabrics. Sustainable materials, regulatory compliance, and the expansion of e-commerce and direct-to-consumer channels are further supporting market growth...."
-            }
-          ],
-          "confidence": 0.85,
-          "reasoning": "Adidas is specifically mentioned as having a focus on sustainability initiatives, which qualifies as Environmental ESG content"
-        },
-        {
           "brand": "Nike",
           "categories": {
             "environmental": {
@@ -5821,6 +5878,44 @@
           ],
           "confidence": 0.8,
           "reasoning": "Nike is mentioned as expanding smart fabric integration, which represents digital/technology innovation in their product offerings"
+        },
+        {
+          "brand": "Adidas",
+          "categories": {
+            "environmental": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "environmental",
+              "excerpt": "Adidas AG \u2013 Focus on performance apparel and sustainability initiatives",
+              "relevance_score": 1.0,
+              "rerank_score": 0.999932547480326,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Geography: North America, Europe, Asia-Pacific, Rest of the World\n\nKey Players in the Outdoor Apparel Market\n\nAdidas AG \u2013 Focus on performance apparel and sustainability initiatives\n\nNike Inc. \u2013 Expanding technical apparel and smart fabric integration\n\nVF Corporation \u2013 Diverse brand portfolio with specialty outdoor offerings\n\nColumbia Sportswear Company \u2013 Innovative fabrics and global retail presence\n\nAmer Sports \u2013 Strong DTC strategy and growth in Asia-Pacific markets\n\nConclusion\n\nThe outdoor apparel market is set for steady growth, driven by rising participation in outdoor activities, health-conscious lifestyles, and the use of advanced fabrics. Sustainable materials, regulatory compliance, and the expansion of e-commerce and direct-to-consumer channels are further supporting market growth...."
+            }
+          ],
+          "confidence": 0.85,
+          "reasoning": "Adidas is specifically mentioned as having a focus on sustainability initiatives, which qualifies as Environmental ESG content"
         }
       ]
     },
@@ -6463,6 +6558,24 @@
           },
           "evidence": [
             {
+              "category": "governance",
+              "excerpt": "a greater collaboration with law enforcement has already led to multiple arrests in 2026 alone",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998865444859194,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...This is not the first time they have faced organized retail crime. However, they added that a greater collaboration with law enforcement has already led to multiple arrests in 2026 alone. The source also stated that Lululemon is continuing to enhance its security measures, including the use of advanced technology and individuals on hand to monitor potential robberies in real time...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "We take retail crime seriously and work alongside law enforcement partners to respond to incidents and support investigations",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998288088843645,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...\u201cThe safety and well-being of our people, guests, and the communities we serve is our top priority. We take retail crime seriously and work alongside law enforcement partners to respond to incidents and support investigations,\u201d a spokesperson said. In this case, all three individuals were seen wearing dark-colored clothing and hooded sweatshirts...."
+            },
+            {
               "category": "digital_transformation",
               "excerpt": "Lululemon is continuing to enhance its security measures, including the use of advanced technology and individuals on hand to monitor potential robberies in real time",
               "relevance_score": 1.0,
@@ -6488,24 +6601,6 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...The source also stated that Lululemon is continuing to enhance its security measures, including the use of advanced technology and individuals on hand to monitor potential robberies in real time. \u201cThe safety and well-being of our people, guests, and the communities we serve is our top priority. We take retail crime seriously and work alongside law enforcement partners to respond to incidents and support investigations,\u201d a spokesperson said...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "a greater collaboration with law enforcement has already led to multiple arrests in 2026 alone",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998865444859194,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...This is not the first time they have faced organized retail crime. However, they added that a greater collaboration with law enforcement has already led to multiple arrests in 2026 alone. The source also stated that Lululemon is continuing to enhance its security measures, including the use of advanced technology and individuals on hand to monitor potential robberies in real time...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "We take retail crime seriously and work alongside law enforcement partners to respond to incidents and support investigations",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998288088843645,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...\u201cThe safety and well-being of our people, guests, and the communities we serve is our top priority. We take retail crime seriously and work alongside law enforcement partners to respond to incidents and support investigations,\u201d a spokesperson said. In this case, all three individuals were seen wearing dark-colored clothing and hooded sweatshirts...."
             }
           ],
           "confidence": 0.8,
@@ -6726,24 +6821,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "Eddie Bauer's store operator filed for Chapter 11 bankruptcy protection on Feb. 9, citing declining sales, supply chain problems and rising operating costs",
-              "relevance_score": 0.9048235850900118,
-              "rerank_score": 0.999956099574017,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "The collapse of the sale process is the clearest sign yet that Eddie Bauer's brick-and-mortar business may be at the end of the trail.\n\nThe Seattle-founded retailer's store operator filed for Chapter ..."
-            },
-            {
-              "category": "governance",
-              "excerpt": "It was the third bankruptcy filing tied to Eddie Bauer's retail operations since 2003",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999410402693042,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...The Seattle-founded retailer's store operator filed for Chapter 11 bankruptcy protection on Feb. 9, citing declining sales, supply chain problems and rising operating costs. It was the third bankruptcy filing tied to Eddie Bauer's retail operations since 2003. \"This is not an easy decision,\" Marc Rosen, chief executive of Catalyst Brands - the company that holds the license to operate Eddie Bauer stores in the United States and Canada - said in a statement...."
-            },
-            {
               "category": "social",
               "excerpt": "Eddie Bauer LLC, which operates the brand's U.S. and Canadian stores, said it received no qualified bids for its assets by a March 3 deadline",
               "relevance_score": 1.0,
@@ -6760,6 +6837,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...For shoppers in California and across the country, the clock is ticking. Eddie Bauer said gift cards and loyalty credits will no longer be accepted after Thursday, and all sales are final, with no returns or exchanges. The shutdown would affect about 150 stores in 40 U.S. states and 24 stores in six Canadian provinces, according to RCS Real Estate Advisors, the brokerage hired to market roughly 174 store leases."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Eddie Bauer's store operator filed for Chapter 11 bankruptcy protection on Feb. 9, citing declining sales, supply chain problems and rising operating costs",
+              "relevance_score": 0.9048235850900118,
+              "rerank_score": 0.999956099574017,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "The collapse of the sale process is the clearest sign yet that Eddie Bauer's brick-and-mortar business may be at the end of the trail.\n\nThe Seattle-founded retailer's store operator filed for Chapter ..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "It was the third bankruptcy filing tied to Eddie Bauer's retail operations since 2003",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999410402693042,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...The Seattle-founded retailer's store operator filed for Chapter 11 bankruptcy protection on Feb. 9, citing declining sales, supply chain problems and rising operating costs. It was the third bankruptcy filing tied to Eddie Bauer's retail operations since 2003. \"This is not an easy decision,\" Marc Rosen, chief executive of Catalyst Brands - the company that holds the license to operate Eddie Bauer stores in the United States and Canada - said in a statement...."
             }
           ],
           "confidence": 0.9,
@@ -7050,53 +7145,6 @@
       "categories": ["environmental", "governance"],
       "brand_details": [
         {
-          "brand": "Adidas",
-          "categories": {
-            "environmental": {
-              "applies": true,
-              "sentiment": 1,
-              "sentiment_label": "positive"
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": true,
-              "sentiment": 1,
-              "sentiment_label": "positive"
-            },
-            "digital_transformation": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            }
-          },
-          "evidence": [
-            {
-              "category": "environmental",
-              "excerpt": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998988170088464,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers. The integration of smart textiles, such as temperature-regulating fabrics and odor-control technology, further differentiates premium product lines...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998988170088464,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers. The integration of smart textiles, such as temperature-regulating fabrics and odor-control technology, further differentiates premium product lines...."
-            }
-          ],
-          "confidence": 0.8,
-          "reasoning": "Adidas is mentioned alongside Nike and Under Armour as incorporating sustainable manufacturing processes (Environmental) and transparent supply chains (Governance). Same general industry reporting context as Nike."
-        },
-        {
           "brand": "Under Armour",
           "categories": {
             "environmental": {
@@ -7142,6 +7190,53 @@
           ],
           "confidence": 0.8,
           "reasoning": "Under Armour is mentioned alongside Nike and Adidas as incorporating sustainable manufacturing processes (Environmental) and transparent supply chains (Governance). Same general industry reporting context as the other two brands."
+        },
+        {
+          "brand": "Adidas",
+          "categories": {
+            "environmental": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "environmental",
+              "excerpt": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998988170088464,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers. The integration of smart textiles, such as temperature-regulating fabrics and odor-control technology, further differentiates premium product lines...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998988170088464,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Brands like Nike, Adidas, and Under Armour are incorporating sustainable manufacturing processes and transparent supply chains to appeal to environmentally conscious consumers. The integration of smart textiles, such as temperature-regulating fabrics and odor-control technology, further differentiates premium product lines...."
+            }
+          ],
+          "confidence": 0.8,
+          "reasoning": "Adidas is mentioned alongside Nike and Under Armour as incorporating sustainable manufacturing processes (Environmental) and transparent supply chains (Governance). Same general industry reporting context as Nike."
         },
         {
           "brand": "Nike",
@@ -7885,33 +7980,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "Jason Judd, executive director of the Global Labor Institute at Cornell University, said living wage pledges from companies like Nike are so flexible that they're almost meaningless. Only asking factories to be working toward living wages, as Nike does, 'could go on for 20 years,' until you've found yet another lower-wage province.",
-              "relevance_score": 0.9069527386414624,
-              "rerank_score": 0.9999174620790707,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Jason Judd, executive director of the Global Labor Institute at Cornell University, said living wage pledges from companies like Nike are so flexible that they\u2019re almost meaningless. Only asking factories to be working toward living wages, as Nike does, \u201ccould go on for 20 years,\u201d Judd said, \u201cuntil you\u2019ve found yet another lower-wage province.\u201d Nike\u2019s recent move to Central Java is notable because while wages are far lower there than in urban Jakarta, food and housing are not dramatically cheaper, according to estimates from the WageIndicator Foundation, a Dutch nonprofit...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "Although Nike does not explicitly require its suppliers to pay this amount, it says every worker 'has a right to compensation for a regular work week that is sufficient to meet workers' basic needs and provide some discretionary income.'",
-              "relevance_score": 0.8662488483945043,
-              "rerank_score": 0.9998704911142428,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "...But the company also told the news organizations that it\u2019s important not just to compare what its suppliers pay relative to the minimum wage. Nike\u2019s focus, one company official said, is on whether workers make a living wage and, if not, whether their employers are trying to get there. Although Nike does not explicitly require its suppliers to pay this amount, it says every worker \u201chas a right to compensation for a regular work week that is sufficient to meet workers\u2019 basic needs and provide some discretionary income.\u201d The company reported that two-thirds of its key suppliers \u2014 it did not say which ones \u2014 paid above living wage benchmarks in 2022."
-            },
-            {
-              "category": "governance",
-              "excerpt": "That happened in 2018 when one Nike supplier near Jakarta, Kahoindah Citragarment, shut down without paying workers their full severance after Nike pulled its orders, an investigation by the Worker Rights Consortium found.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998341861932296,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...They said the company is building a new factory in Cirebon, in West Java, where the minimum wage is 45% lower. Employees said when they were offered a choice between keeping their jobs and accepting severance packages during layoffs last year, workers were willing to take the buyout, fearing that they wouldn\u2019t get anything if the factory closed altogether. That happened in 2018 when one Nike supplier near Jakarta, Kahoindah Citragarment, shut down without paying workers their full severance after Nike pulled its orders, an investigation by the Worker Rights Consortium found. The factory\u2019s South Korean parent company, Hojeon, eventually agreed to pay workers $4.5 million after labor advocates argued they were legally owed separation pay...."
-            },
-            {
               "category": "social",
               "excerpt": "An investigation by Nova's group found that women at a Central Javanese factory producing Nike-licensed goods for Fanatics, a privately owned brand, had been sexually harassed for years.",
               "relevance_score": 0.895358700018159,
@@ -7937,6 +8005,33 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "...If your factory wages don\u2019t cut it, your employer should have a plan to get you there. But Nike\u2019s expansion in Indonesia over the last decade has directly undermined these goals, an analysis by ProPublica and The Oregonian/OregonLive found. Over the last decade, employment at factories supplying the world\u2019s largest athletic apparel brand expanded dramatically in regions of Indonesia where, according to one leading estimate, the minimum wage is less than the amount workers need to live on. Meanwhile, Nike\u2019s supply chain shrank overall in places that pay this estimated living wage, our analysis found."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Jason Judd, executive director of the Global Labor Institute at Cornell University, said living wage pledges from companies like Nike are so flexible that they're almost meaningless. Only asking factories to be working toward living wages, as Nike does, 'could go on for 20 years,' until you've found yet another lower-wage province.",
+              "relevance_score": 0.9069527386414624,
+              "rerank_score": 0.9999174620790707,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Jason Judd, executive director of the Global Labor Institute at Cornell University, said living wage pledges from companies like Nike are so flexible that they\u2019re almost meaningless. Only asking factories to be working toward living wages, as Nike does, \u201ccould go on for 20 years,\u201d Judd said, \u201cuntil you\u2019ve found yet another lower-wage province.\u201d Nike\u2019s recent move to Central Java is notable because while wages are far lower there than in urban Jakarta, food and housing are not dramatically cheaper, according to estimates from the WageIndicator Foundation, a Dutch nonprofit...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Although Nike does not explicitly require its suppliers to pay this amount, it says every worker 'has a right to compensation for a regular work week that is sufficient to meet workers' basic needs and provide some discretionary income.'",
+              "relevance_score": 0.8662488483945043,
+              "rerank_score": 0.9998704911142428,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...But the company also told the news organizations that it\u2019s important not just to compare what its suppliers pay relative to the minimum wage. Nike\u2019s focus, one company official said, is on whether workers make a living wage and, if not, whether their employers are trying to get there. Although Nike does not explicitly require its suppliers to pay this amount, it says every worker \u201chas a right to compensation for a regular work week that is sufficient to meet workers\u2019 basic needs and provide some discretionary income.\u201d The company reported that two-thirds of its key suppliers \u2014 it did not say which ones \u2014 paid above living wage benchmarks in 2022."
+            },
+            {
+              "category": "governance",
+              "excerpt": "That happened in 2018 when one Nike supplier near Jakarta, Kahoindah Citragarment, shut down without paying workers their full severance after Nike pulled its orders, an investigation by the Worker Rights Consortium found.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998341861932296,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...They said the company is building a new factory in Cirebon, in West Java, where the minimum wage is 45% lower. Employees said when they were offered a choice between keeping their jobs and accepting severance packages during layoffs last year, workers were willing to take the buyout, fearing that they wouldn\u2019t get anything if the factory closed altogether. That happened in 2018 when one Nike supplier near Jakarta, Kahoindah Citragarment, shut down without paying workers their full severance after Nike pulled its orders, an investigation by the Worker Rights Consortium found. The factory\u2019s South Korean parent company, Hojeon, eventually agreed to pay workers $4.5 million after labor advocates argued they were legally owed separation pay...."
             }
           ],
           "confidence": 0.95,
@@ -8252,6 +8347,24 @@
           },
           "evidence": [
             {
+              "category": "social",
+              "excerpt": "Eddie Bauer customers must redeem gift cards and loyalty points by March 12 as the retail operator enters bankruptcy proceedings and closes 180 stores across the US and Canada.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.999977278730212,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Eddie Bauer customers must redeem gift cards and loyalty points by March 12 as the retail operator enters bankruptcy proceedings and closes 180 stores across the US and Canada. Shoppers need to act immediately as gift cards are set to become worthless in just weeks after a major retailer announced bankruptcy...."
+            },
+            {
+              "category": "social",
+              "excerpt": "The business had approximately 379 employees nationwide when it filed for bankruptcy protection.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.996746713926091,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...\"\n\nCourt filings from Ontario show 24 of the company's 175 North American stores are situated in Canada. The business had approximately 379 employees nationwide when it filed for bankruptcy protection. The application does not affect Eddie Bauer's digital retail and wholesale operations, which are run by a distinct organization called Outdoor 5 and have not filed for creditor protection...."
+            },
+            {
               "category": "governance",
               "excerpt": "Catalyst Brands, which operates Eddie Bauer stores, is trying to sell the business as it closes its American and Canadian locations.",
               "relevance_score": 1.0,
@@ -8277,24 +8390,6 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...\"This is not an easy decision,\" Rosen admitted about the bankruptcy filing, telling the Associated Press. \"However, this restructuring is the best way to optimize value for the retail company's stakeholders and also ensure Catalyst Brands remains profitable and with strong liquidity and cash flow. \"\n\nCourt filings from Ontario show 24 of the company's 175 North American stores are situated in Canada. The business had approximately 379 employees nationwide when it filed for bankruptcy protection...."
-            },
-            {
-              "category": "social",
-              "excerpt": "Eddie Bauer customers must redeem gift cards and loyalty points by March 12 as the retail operator enters bankruptcy proceedings and closes 180 stores across the US and Canada.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.999977278730212,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Eddie Bauer customers must redeem gift cards and loyalty points by March 12 as the retail operator enters bankruptcy proceedings and closes 180 stores across the US and Canada. Shoppers need to act immediately as gift cards are set to become worthless in just weeks after a major retailer announced bankruptcy...."
-            },
-            {
-              "category": "social",
-              "excerpt": "The business had approximately 379 employees nationwide when it filed for bankruptcy protection.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.996746713926091,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...\"\n\nCourt filings from Ontario show 24 of the company's 175 North American stores are situated in Canada. The business had approximately 379 employees nationwide when it filed for bankruptcy protection. The application does not affect Eddie Bauer's digital retail and wholesale operations, which are run by a distinct organization called Outdoor 5 and have not filed for creditor protection...."
             }
           ],
           "confidence": 0.9,
@@ -8796,33 +8891,6 @@
           },
           "evidence": [
             {
-              "category": "social",
-              "excerpt": "Many of us across the state of Maine have been hit with some bad news recently",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999010140093134,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Many of us across the state of Maine have been hit with some bad news recently as it was announced that we must say goodbye to our beloved outdoor brand, Eddie Bauer. They officially announced, as per Portland Press Herald, plans to close several Maine stores after a recent bankruptcy filing...."
-            },
-            {
-              "category": "social",
-              "excerpt": "It's always tough to see big brands and familiar storefronts disappear, especially ones that have been a part of Maine life for so long",
-              "relevance_score": 0.8698692665076697,
-              "rerank_score": 0.9996382244473453,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "We don\u2019t know as of yet when the exact closing date will be but the news is showing yet another shift in the retail world, where long standing brand names have to close their doors due to rising costs..."
-            },
-            {
-              "category": "social",
-              "excerpt": "This is leaving many of us shocked and sad",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9977905223940828,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...They officially announced, as per Portland Press Herald, plans to close several Maine stores after a recent bankruptcy filing. This is leaving many of us shocked and sad. This store has been a staple in Maine, founded more than a century ago and will now shut the doors of about 175 locations across the United States and Canada...."
-            },
-            {
               "category": "governance",
               "excerpt": "plans to close several Maine stores after a recent bankruptcy filing",
               "relevance_score": 1.0,
@@ -8848,6 +8916,33 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...This is leaving many of us shocked and sad. This store has been a staple in Maine, founded more than a century ago and will now shut the doors of about 175 locations across the United States and Canada. Sadly, Maine is on that list...."
+            },
+            {
+              "category": "social",
+              "excerpt": "Many of us across the state of Maine have been hit with some bad news recently",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999010140093134,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Many of us across the state of Maine have been hit with some bad news recently as it was announced that we must say goodbye to our beloved outdoor brand, Eddie Bauer. They officially announced, as per Portland Press Herald, plans to close several Maine stores after a recent bankruptcy filing...."
+            },
+            {
+              "category": "social",
+              "excerpt": "It's always tough to see big brands and familiar storefronts disappear, especially ones that have been a part of Maine life for so long",
+              "relevance_score": 0.8698692665076697,
+              "rerank_score": 0.9996382244473453,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "We don\u2019t know as of yet when the exact closing date will be but the news is showing yet another shift in the retail world, where long standing brand names have to close their doors due to rising costs..."
+            },
+            {
+              "category": "social",
+              "excerpt": "This is leaving many of us shocked and sad",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9977905223940828,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...They officially announced, as per Portland Press Herald, plans to close several Maine stores after a recent bankruptcy filing. This is leaving many of us shocked and sad. This store has been a staple in Maine, founded more than a century ago and will now shut the doors of about 175 locations across the United States and Canada...."
             }
           ],
           "confidence": 0.9,
@@ -13391,34 +13486,6 @@
           "reasoning": "Article discusses Puma's acquisition by Anta and corporate strategic positioning, which relates to governance and corporate structure, but contains no environmental, social, or digital transformation ESG content."
         },
         {
-          "brand": "Adidas",
-          "categories": {
-            "environmental": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "digital_transformation": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            }
-          },
-          "evidence": [],
-          "confidence": 0.9,
-          "reasoning": "Article mentions Adidas as a competitor/benchmark but contains no substantive ESG content about Adidas specifically. Discussion focuses on market positioning comparisons."
-        },
-        {
           "brand": "Nike",
           "categories": {
             "environmental": {
@@ -13445,6 +13512,34 @@
           "evidence": [],
           "confidence": 0.9,
           "reasoning": "Article mentions Nike as a competitor/benchmark but contains no substantive ESG content about Nike specifically. Discussion focuses on market positioning and pricing comparisons."
+        },
+        {
+          "brand": "Adidas",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [],
+          "confidence": 0.9,
+          "reasoning": "Article mentions Adidas as a competitor/benchmark but contains no substantive ESG content about Adidas specifically. Discussion focuses on market positioning comparisons."
         }
       ]
     },
@@ -13602,33 +13697,6 @@
           },
           "evidence": [
             {
-              "category": "social",
-              "excerpt": "The EEOC is investigating Nike over its various diversity, equity, and inclusion (DEI) projects and goals for last year",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998372811273968,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Now, however, the U.S. Equal Employment Opportunity Commission (EEOC) announced on February 4 that it had filed an action in federal court against Nike. Advertisement\n\nThe EEOC is investigating Nike over its various diversity, equity, and inclusion (DEI) projects and goals for last year. The court filing, according to the federal agency, accuses Nike of \"a pattern or practice of disparate treatment against white employees, applicants, and training program participants\" based on DEI ideology."
-            },
-            {
-              "category": "social",
-              "excerpt": "accuses Nike of \"a pattern or practice of disparate treatment against white employees, applicants, and training program participants\" based on DEI ideology",
-              "relevance_score": 1.0,
-              "rerank_score": 0.999589699608964,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Advertisement\n\nThe EEOC is investigating Nike over its various diversity, equity, and inclusion (DEI) projects and goals for last year. The court filing, according to the federal agency, accuses Nike of \"a pattern or practice of disparate treatment against white employees, applicants, and training program participants\" based on DEI ideology."
-            },
-            {
-              "category": "social",
-              "excerpt": "information about 16 programs which allegedly provided race-restricted mentoring, leadership, or career development opportunities",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9980912671623844,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Either that or it just assumed that it was too big to face any real consequences. For Our VIPs: Reagan\u2019s Observations on Taxation and Government Spending Are Even More Urgent Today\n\nThe EEOC press release on the court filing explains:\n\nInformation sought included criteria used in selecting employees for layoffs; information related to the company\u2019s tracking and use of worker race and ethnicity data, including as a factor in setting executive compensation; and information about 16 programs which allegedly provided race-restricted mentoring, leadership, or career development opportunities. When the company failed to produce all the information sought by the subpoena, the agency filed an enforcement action in federal court...."
-            },
-            {
               "category": "governance",
               "excerpt": "The EEOC had to take Nike to court because the company refused to voluntarily reject DEI and follow the law, according to the federal agency",
               "relevance_score": 1.0,
@@ -13654,6 +13722,33 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...For Our VIPs: Reagan\u2019s Observations on Taxation and Government Spending Are Even More Urgent Today\n\nThe EEOC press release on the court filing explains:\n\nInformation sought included criteria used in selecting employees for layoffs; information related to the company\u2019s tracking and use of worker race and ethnicity data, including as a factor in setting executive compensation; and information about 16 programs which allegedly provided race-restricted mentoring, leadership, or career development opportunities. When the company failed to produce all the information sought by the subpoena, the agency filed an enforcement action in federal court. Advertisement"
+            },
+            {
+              "category": "social",
+              "excerpt": "The EEOC is investigating Nike over its various diversity, equity, and inclusion (DEI) projects and goals for last year",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998372811273968,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Now, however, the U.S. Equal Employment Opportunity Commission (EEOC) announced on February 4 that it had filed an action in federal court against Nike. Advertisement\n\nThe EEOC is investigating Nike over its various diversity, equity, and inclusion (DEI) projects and goals for last year. The court filing, according to the federal agency, accuses Nike of \"a pattern or practice of disparate treatment against white employees, applicants, and training program participants\" based on DEI ideology."
+            },
+            {
+              "category": "social",
+              "excerpt": "accuses Nike of \"a pattern or practice of disparate treatment against white employees, applicants, and training program participants\" based on DEI ideology",
+              "relevance_score": 1.0,
+              "rerank_score": 0.999589699608964,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Advertisement\n\nThe EEOC is investigating Nike over its various diversity, equity, and inclusion (DEI) projects and goals for last year. The court filing, according to the federal agency, accuses Nike of \"a pattern or practice of disparate treatment against white employees, applicants, and training program participants\" based on DEI ideology."
+            },
+            {
+              "category": "social",
+              "excerpt": "information about 16 programs which allegedly provided race-restricted mentoring, leadership, or career development opportunities",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9980912671623844,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Either that or it just assumed that it was too big to face any real consequences. For Our VIPs: Reagan\u2019s Observations on Taxation and Government Spending Are Even More Urgent Today\n\nThe EEOC press release on the court filing explains:\n\nInformation sought included criteria used in selecting employees for layoffs; information related to the company\u2019s tracking and use of worker race and ethnicity data, including as a factor in setting executive compensation; and information about 16 programs which allegedly provided race-restricted mentoring, leadership, or career development opportunities. When the company failed to produce all the information sought by the subpoena, the agency filed an enforcement action in federal court...."
             }
           ],
           "confidence": 0.95,
@@ -13671,6 +13766,72 @@
       "brands": ["Adidas", "Anta", "Nike", "Puma"],
       "categories": ["governance"],
       "brand_details": [
+        {
+          "brand": "Adidas",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [],
+          "confidence": 0.95,
+          "reasoning": "Article mentions Adidas only as context for competitive landscape. No substantive ESG content about Adidas specifically - just positioning as an incumbent facing new competition."
+        },
+        {
+          "brand": "Puma",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": 0,
+              "sentiment_label": "neutral"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "governance",
+              "excerpt": "China's Anta Sports acquired a 29 per cent stake in Germany's Puma for $1.8 billion",
+              "relevance_score": 0.8584112491352919,
+              "rerank_score": 0.9999643318125644,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Nike and Adidas are set to face a challenger after China\u2019s Anta Sports acquired a 29 per cent stake in Germany\u2019s Puma for $1.8 billion, sharpening its push into the global big league of sportswear.\n\nT..."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "Article discusses a major ownership/governance change with Anta acquiring a significant stake in Puma. This is a neutral governance development regarding corporate control and ownership structure."
+        },
         {
           "brand": "Anta",
           "categories": {
@@ -13745,72 +13906,6 @@
           "evidence": [],
           "confidence": 0.95,
           "reasoning": "Article mentions Nike only as context for competitive landscape. No substantive ESG content about Nike specifically - just positioning as an incumbent facing new competition."
-        },
-        {
-          "brand": "Puma",
-          "categories": {
-            "environmental": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": true,
-              "sentiment": 0,
-              "sentiment_label": "neutral"
-            },
-            "digital_transformation": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            }
-          },
-          "evidence": [
-            {
-              "category": "governance",
-              "excerpt": "China's Anta Sports acquired a 29 per cent stake in Germany's Puma for $1.8 billion",
-              "relevance_score": 0.8584112491352919,
-              "rerank_score": 0.9999643318125644,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Nike and Adidas are set to face a challenger after China\u2019s Anta Sports acquired a 29 per cent stake in Germany\u2019s Puma for $1.8 billion, sharpening its push into the global big league of sportswear.\n\nT..."
-            }
-          ],
-          "confidence": 0.9,
-          "reasoning": "Article discusses a major ownership/governance change with Anta acquiring a significant stake in Puma. This is a neutral governance development regarding corporate control and ownership structure."
-        },
-        {
-          "brand": "Adidas",
-          "categories": {
-            "environmental": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "digital_transformation": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            }
-          },
-          "evidence": [],
-          "confidence": 0.95,
-          "reasoning": "Article mentions Adidas only as context for competitive landscape. No substantive ESG content about Adidas specifically - just positioning as an incumbent facing new competition."
         }
       ]
     },
@@ -13936,24 +14031,6 @@
           },
           "evidence": [
             {
-              "category": "social",
-              "excerpt": "The U.S. Equal Employment Opportunity Commission (EEOC) is investigating Nike over the company's treatment of its White employees in its corporate diversity policies.",
-              "relevance_score": 0.9019734779583537,
-              "rerank_score": 0.9999769740879719,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "OAN Staff Cory Hawkins\n\n8:26 PM \u2013 Thursday, February 5, 2026 The U.S. Equal Employment Opportunity Commission (EEOC) is investigating Nike over the company\u2019s treatment of its White employees in its corporate diversity policies. The investigation is one of the first high-profile cases of its kind under the Trump administration, which has urged workers to come forward with discrimination complaints...."
-            },
-            {
-              "category": "social",
-              "excerpt": "The agency claims Nike may have engaged in 'a pattern or practice of disparate treatment against White employees, applicants and training program participants in hiring, promotion, demotion, or separation decisions, including selection for layoffs; internship programs; and mentoring, leadership development and other career development programs.'",
-              "relevance_score": 0.8518609086929458,
-              "rerank_score": 0.9987995497379394,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "...The investigation is one of the first high-profile cases of its kind under the Trump administration, which has urged workers to come forward with discrimination complaints. On Wednesday, the EEOC revealed that it filed a subpoena enforcement action in a Missouri court to force Nike to turn over records tied to allegations that the company discriminated against White workers, as part of its diversity, equity, and inclusion (DEI) program. The agency claims Nike may have engaged in \u201ca pattern or practice of disparate treatment against White employees, applicants and training program participants in hiring, promotion, demotion, or separation decisions, including selection for layoffs; internship programs; and mentoring, leadership development and other career development programs.\u201d"
-            },
-            {
               "category": "governance",
               "excerpt": "On Wednesday, the EEOC revealed that it filed a subpoena enforcement action in a Missouri court to force Nike to turn over records tied to allegations that the company discriminated against White workers",
               "relevance_score": 1.0,
@@ -13970,6 +14047,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...\u201cWe have shared thousands of pages of information and detailed written responses to the EEOC\u2019s inquiry and are in the process of providing additional information.\u201d \u201cWe are committed to fair and lawful employment practices and follow all applicable laws, including those that prohibit discrimination,\u201d the statement continued. \u201cWe believe our programs and practices are consistent with those obligations and take these matters seriously...."
+            },
+            {
+              "category": "social",
+              "excerpt": "The U.S. Equal Employment Opportunity Commission (EEOC) is investigating Nike over the company's treatment of its White employees in its corporate diversity policies.",
+              "relevance_score": 0.9019734779583537,
+              "rerank_score": 0.9999769740879719,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "OAN Staff Cory Hawkins\n\n8:26 PM \u2013 Thursday, February 5, 2026 The U.S. Equal Employment Opportunity Commission (EEOC) is investigating Nike over the company\u2019s treatment of its White employees in its corporate diversity policies. The investigation is one of the first high-profile cases of its kind under the Trump administration, which has urged workers to come forward with discrimination complaints...."
+            },
+            {
+              "category": "social",
+              "excerpt": "The agency claims Nike may have engaged in 'a pattern or practice of disparate treatment against White employees, applicants and training program participants in hiring, promotion, demotion, or separation decisions, including selection for layoffs; internship programs; and mentoring, leadership development and other career development programs.'",
+              "relevance_score": 0.8518609086929458,
+              "rerank_score": 0.9987995497379394,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...The investigation is one of the first high-profile cases of its kind under the Trump administration, which has urged workers to come forward with discrimination complaints. On Wednesday, the EEOC revealed that it filed a subpoena enforcement action in a Missouri court to force Nike to turn over records tied to allegations that the company discriminated against White workers, as part of its diversity, equity, and inclusion (DEI) program. The agency claims Nike may have engaged in \u201ca pattern or practice of disparate treatment against White employees, applicants and training program participants in hiring, promotion, demotion, or separation decisions, including selection for layoffs; internship programs; and mentoring, leadership development and other career development programs.\u201d"
             }
           ],
           "confidence": 0.95,
@@ -14072,24 +14167,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "\"Respondent NIKE's failure to comply with the subpoena has delayed and hampered the EEOC's investigation of alleged unlawful employment practices under Title VII\" of the Civil Rights Act of 1964, the motion states.",
-              "relevance_score": 0.8807363830430972,
-              "rerank_score": 0.9997456060179436,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "In its filing, the EEOC says the charges were not triggered by internal complaints from workers, but were \u201cbased on publicly available information regarding Nike,\u201d including the company\u2019s public pledg..."
-            },
-            {
-              "category": "governance",
-              "excerpt": "The EEOC filed its motion this week in U.S. District Court for the Eastern District of Missouri",
-              "relevance_score": 0.7642950025863464,
-              "rerank_score": 0.9997154768987967,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "(WASHINGTON) \u2014 The federal agency that investigates workplace discrimination is seeking court enforcement of a subpoena it has issued to Nike as it pursues allegations that the athletic apparel maker ..."
-            },
-            {
               "category": "social",
               "excerpt": "The EEOC said in the filing that it has gone to court because the company provided some, but not all, of the data the agency requested on the racial and ethnic makeup of its workforce following the issuance of a subpoena last September.",
               "relevance_score": 1.0,
@@ -14106,6 +14183,24 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "...The Equal Employment Opportunity Commission (EEOC) filed its motion this week in U.S. District Court for the Eastern District of Missouri, where Nike has a factory that produces its famous AIR footwear technology. The agency\u2019s charges against Nike date to 2024, when commission member, and current Trump-appointed chair, Andrea Lucas alleged that Nike had been engaging in a pattern of discriminatory practices, including \u201crace-based workforce representation quotas,\u201d and hiring, promotion, demotion and firing decisions that were a function of \u201cdisparate treatment against White employees, applicants, and training program participants.\u201d"
+            },
+            {
+              "category": "governance",
+              "excerpt": "\"Respondent NIKE's failure to comply with the subpoena has delayed and hampered the EEOC's investigation of alleged unlawful employment practices under Title VII\" of the Civil Rights Act of 1964, the motion states.",
+              "relevance_score": 0.8807363830430972,
+              "rerank_score": 0.9997456060179436,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "In its filing, the EEOC says the charges were not triggered by internal complaints from workers, but were \u201cbased on publicly available information regarding Nike,\u201d including the company\u2019s public pledg..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "The EEOC filed its motion this week in U.S. District Court for the Eastern District of Missouri",
+              "relevance_score": 0.7642950025863464,
+              "rerank_score": 0.9997154768987967,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "(WASHINGTON) \u2014 The federal agency that investigates workplace discrimination is seeking court enforcement of a subpoena it has issued to Nike as it pursues allegations that the athletic apparel maker ..."
             }
           ],
           "confidence": 0.95,
@@ -14149,33 +14244,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "The EEOC filed an action in federal court to compel Nike, headquartered in Oregon, to produce information related to allegations that the company discriminated against white workers as part of its diversity, equity, and inclusion (DEI) programs.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999246177021135,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Authored by Naveen Athrappully via The Epoch Times (emphasis ours),\n\nThe Equal Employment Opportunity Commission (EEOC) is seeking a court order for investigating systemic race discrimination allegations against white workers by footwear and apparel corporation Nike Inc., according to a Feb. 4 statement from the agency. The EEOC filed an action in federal court to compel Nike, headquartered in Oregon, to produce information related to allegations that the company discriminated against white workers as part of its diversity, equity, and inclusion (DEI) programs. According to the filing made by EEOC in the U.S. District Court for the Eastern District of Missouri, the agency is looking to enforce an administrative subpoena against Nike for failing to submit the required information, which was initially requested in 2024 by then-commissioner, and now chair, Andrea Lucas."
-            },
-            {
-              "category": "governance",
-              "excerpt": "In 2024, nonprofit law firm America First Legal filed a federal civil rights complaint with EEOC against Nike alleging racial and sex discrimination in violation of Title VII.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999038843872046,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "DEI policies violate civil-rights laws, while undermining national unity, as \u201cthey deny, discredit, and undermine the traditional American values of hard work, excellence, and individual achievement in favor of an unlawful, corrosive, and pernicious identity-based spoils system,\u201d said Trump\u2019s Jan. 31 executive order. In 2024, nonprofit law firm America First Legal filed a federal civil rights complaint with EEOC against Nike alleging racial and sex discrimination in violation of Title VII. The firm said in a statement at the time that Nike appeared to be using numerical quotas for hiring, training, and promotion...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "According to the filing made by EEOC in the U.S. District Court for the Eastern District of Missouri, the agency is looking to enforce an administrative subpoena against Nike for failing to submit the required information",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9992414958470198,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Authored by Naveen Athrappully via The Epoch Times (emphasis ours),\n\nThe Equal Employment Opportunity Commission (EEOC) is seeking a court order for investigating systemic race discrimination allegations against white workers by footwear and apparel corporation Nike Inc., according to a Feb. 4 statement from the agency. The EEOC filed an action in federal court to compel Nike, headquartered in Oregon, to produce information related to allegations that the company discriminated against white workers as part of its diversity, equity, and inclusion (DEI) programs. According to the filing made by EEOC in the U.S. District Court for the Eastern District of Missouri, the agency is looking to enforce an administrative subpoena against Nike for failing to submit the required information, which was initially requested in 2024 by then-commissioner, and now chair, Andrea Lucas."
-            },
-            {
               "category": "social",
               "excerpt": "The Equal Employment Opportunity Commission (EEOC) is seeking a court order for investigating systemic race discrimination allegations against white workers by footwear and apparel corporation Nike Inc.",
               "relevance_score": 1.0,
@@ -14201,6 +14269,33 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...In its fiscal year 2024 \u201cRepresentation by the Numbers\u201d document published online, Nike said women made up 50.3 percent of the global corporate workforce. As for racial representation, white employees made up 57 percent, with black employees making up 9 percent, Asian 18 percent, and Hispanic 8.8 percent. Based on Bloomberg data, from 2020 to 2021, Nike showcased the largest amount of change against hiring white workers among large U.S. companies. While the numbers of black, Hispanic, and Asian people went up across the board, Nike let go of white workers, said the analysis. Kismet Mills is currently Nike\u2019s chief diversity, equity and inclusion officer...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "The EEOC filed an action in federal court to compel Nike, headquartered in Oregon, to produce information related to allegations that the company discriminated against white workers as part of its diversity, equity, and inclusion (DEI) programs.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999246177021135,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Authored by Naveen Athrappully via The Epoch Times (emphasis ours),\n\nThe Equal Employment Opportunity Commission (EEOC) is seeking a court order for investigating systemic race discrimination allegations against white workers by footwear and apparel corporation Nike Inc., according to a Feb. 4 statement from the agency. The EEOC filed an action in federal court to compel Nike, headquartered in Oregon, to produce information related to allegations that the company discriminated against white workers as part of its diversity, equity, and inclusion (DEI) programs. According to the filing made by EEOC in the U.S. District Court for the Eastern District of Missouri, the agency is looking to enforce an administrative subpoena against Nike for failing to submit the required information, which was initially requested in 2024 by then-commissioner, and now chair, Andrea Lucas."
+            },
+            {
+              "category": "governance",
+              "excerpt": "In 2024, nonprofit law firm America First Legal filed a federal civil rights complaint with EEOC against Nike alleging racial and sex discrimination in violation of Title VII.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999038843872046,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "DEI policies violate civil-rights laws, while undermining national unity, as \u201cthey deny, discredit, and undermine the traditional American values of hard work, excellence, and individual achievement in favor of an unlawful, corrosive, and pernicious identity-based spoils system,\u201d said Trump\u2019s Jan. 31 executive order. In 2024, nonprofit law firm America First Legal filed a federal civil rights complaint with EEOC against Nike alleging racial and sex discrimination in violation of Title VII. The firm said in a statement at the time that Nike appeared to be using numerical quotas for hiring, training, and promotion...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "According to the filing made by EEOC in the U.S. District Court for the Eastern District of Missouri, the agency is looking to enforce an administrative subpoena against Nike for failing to submit the required information",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9992414958470198,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Authored by Naveen Athrappully via The Epoch Times (emphasis ours),\n\nThe Equal Employment Opportunity Commission (EEOC) is seeking a court order for investigating systemic race discrimination allegations against white workers by footwear and apparel corporation Nike Inc., according to a Feb. 4 statement from the agency. The EEOC filed an action in federal court to compel Nike, headquartered in Oregon, to produce information related to allegations that the company discriminated against white workers as part of its diversity, equity, and inclusion (DEI) programs. According to the filing made by EEOC in the U.S. District Court for the Eastern District of Missouri, the agency is looking to enforce an administrative subpoena against Nike for failing to submit the required information, which was initially requested in 2024 by then-commissioner, and now chair, Andrea Lucas."
             }
           ],
           "confidence": 0.95,
@@ -14321,24 +14416,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "the administration's Equal Employment Opportunity Commission has announced it is investigating Nike over vague allegations that it discriminated against white people",
-              "relevance_score": 0.8928872312282969,
-              "rerank_score": 0.9999768919479715,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Anyway, the administration\u2019s Equal Employment Opportunity Commission has announced it is investigating Nike over vague allegations that it discriminated against white people.\n\n*yawn*\n\nWhatever, let\u2019s ..."
-            },
-            {
-              "category": "governance",
-              "excerpt": "In response to the EEOC's allegations, a Nike spokesperson told Forbes the probe is a 'surprising and unusual escalation,' stating the company has had 'extensive, good-faith participation in an EEOC inquiry'",
-              "relevance_score": 0.8882261510674485,
-              "rerank_score": 0.999929127542903,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "It\u2019s almost as if the Trump administration is a white supremacist organization.\n\nIn response to the EEOC\u2019s allegations, a Nike spokesperson told Forbes the probe is a \u201csurprising and unusual escalatio..."
-            },
-            {
               "category": "social",
               "excerpt": "it claims Nike's DEI initiatives may have created a 'pattern or practice of disparate treatment against white employees'",
               "relevance_score": 0.8818888366533217,
@@ -14364,6 +14441,24 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "Anyway, the administration\u2019s Equal Employment Opportunity Commission has announced it is investigating Nike over vague allegations that it discriminated against white people. *yawn*\n\nWhatever, let\u2019s get into it\u2026\n\nThe EEOC said in a press release that it \u201cseeks court order for information related to systemic race discrimination allegations that athletic footwear and apparel giant discriminated against white workers,\u201d which it seems to be basing largely on the fact that the company maintains a diversity, equity and inclusion page on its website, which notes that Nike is committed to \u201ccreating a workforce that represents different backgrounds, experiences and perspectives.\u201d The horror, right?"
+            },
+            {
+              "category": "governance",
+              "excerpt": "the administration's Equal Employment Opportunity Commission has announced it is investigating Nike over vague allegations that it discriminated against white people",
+              "relevance_score": 0.8928872312282969,
+              "rerank_score": 0.9999768919479715,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Anyway, the administration\u2019s Equal Employment Opportunity Commission has announced it is investigating Nike over vague allegations that it discriminated against white people.\n\n*yawn*\n\nWhatever, let\u2019s ..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "In response to the EEOC's allegations, a Nike spokesperson told Forbes the probe is a 'surprising and unusual escalation,' stating the company has had 'extensive, good-faith participation in an EEOC inquiry'",
+              "relevance_score": 0.8882261510674485,
+              "rerank_score": 0.999929127542903,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "It\u2019s almost as if the Trump administration is a white supremacist organization.\n\nIn response to the EEOC\u2019s allegations, a Nike spokesperson told Forbes the probe is a \u201csurprising and unusual escalatio..."
             }
           ],
           "confidence": 0.9,
@@ -14656,24 +14751,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "The agency said it took the action after Nike failed to respond to a subpoena for various information, including the criteria used in selecting employees for redundancies and setting executives' pay.",
-              "relevance_score": 0.8815433244014392,
-              "rerank_score": 0.9998986529465249,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "The agency said it took the action after Nike failed to respond to a subpoena for various information, including the criteria used in selecting employees for redundancies and setting executives\u2019 pay. EEOC chair, Andrea Lucas, an ardent critic of racial diversity initiatives who was appointed last year by President Donald Trump, said US anti-discrimination law is \u201ccolour-blind\u201d and protects employees of \u201call races\u201d...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "In response, Nike says it has provided thousands of documents to the EEOC and is fully cooperating, so they're shocked that the commission would pursue the subpoena.",
-              "relevance_score": 0.8857928192252422,
-              "rerank_score": 0.9994441328985402,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "...\u201cThanks to President Trump\u2019s commitment to enforcing our nation\u2019s civil rights laws, the EEOC has renewed its focus on even-handed enforcement of Title VII,\u201d Lucas said in a statement, referring to a section of the 1964 Civil Rights Act that prohibits employment discrimination based on race, colour, religion or sex. Nike responds\n\nIn response, Nike says it has provided thousands of documents to the EEOC and is fully cooperating, so they\u2019re shocked that the commission would pursue the subpoena."
-            },
-            {
               "category": "social",
               "excerpt": "The US Equal Employment Opportunity Commission (EEOC) said on Wednesday that it had filed a court motion to compel Nike to produce information related to allegations of 'intentional race discrimination' against white employees.",
               "relevance_score": 0.8864029201480659,
@@ -14690,6 +14767,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...Despite no employees speaking out, the February 4 filing relates to a suspected pattern of discrimination in \u201chiring, promotion, demotion, or separation decisions, including selection for layoffs; internship programs; and mentoring, leadership development and other career development programs.\u201d \u201cThe E.E.O.C. seeks information directly relevant to the allegations that Nike subjected white employees, applicants, and training program participants to disparate treatment based on race in various employment decisions, including layoffs, internship programs, mentoring, leadership development, and other career development programs,\u201d the commission said in the motion."
+            },
+            {
+              "category": "governance",
+              "excerpt": "The agency said it took the action after Nike failed to respond to a subpoena for various information, including the criteria used in selecting employees for redundancies and setting executives' pay.",
+              "relevance_score": 0.8815433244014392,
+              "rerank_score": 0.9998986529465249,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "The agency said it took the action after Nike failed to respond to a subpoena for various information, including the criteria used in selecting employees for redundancies and setting executives\u2019 pay. EEOC chair, Andrea Lucas, an ardent critic of racial diversity initiatives who was appointed last year by President Donald Trump, said US anti-discrimination law is \u201ccolour-blind\u201d and protects employees of \u201call races\u201d...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "In response, Nike says it has provided thousands of documents to the EEOC and is fully cooperating, so they're shocked that the commission would pursue the subpoena.",
+              "relevance_score": 0.8857928192252422,
+              "rerank_score": 0.9994441328985402,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...\u201cThanks to President Trump\u2019s commitment to enforcing our nation\u2019s civil rights laws, the EEOC has renewed its focus on even-handed enforcement of Title VII,\u201d Lucas said in a statement, referring to a section of the 1964 Civil Rights Act that prohibits employment discrimination based on race, colour, religion or sex. Nike responds\n\nIn response, Nike says it has provided thousands of documents to the EEOC and is fully cooperating, so they\u2019re shocked that the commission would pursue the subpoena."
             }
           ],
           "confidence": 0.9,
@@ -14919,17 +15014,17 @@
           },
           "evidence": [
             {
-              "category": "social",
+              "category": "governance",
               "excerpt": "Trump administration demands Nike hand over documents related to discrimination",
-              "relevance_score": 0.1018475376283771,
+              "relevance_score": 0.10185267502089687,
               "rerank_score": 6.489733102038299e-5,
               "match_method": "none",
               "confidence": "unmatched"
             },
             {
-              "category": "governance",
+              "category": "social",
               "excerpt": "Trump administration demands Nike hand over documents related to discrimination",
-              "relevance_score": 0.10185267502089687,
+              "relevance_score": 0.1018475376283771,
               "rerank_score": 6.489733102038299e-5,
               "match_method": "none",
               "confidence": "unmatched"
@@ -16279,33 +16374,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "The agency said it is seeking the records to determine whether Nike violated federal anti-discrimination law",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999401733205534,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...The commission said the investigation centers on claims that Nike deliberately treated White employees and job applicants unfairly, including allegations that they were disproportionately targeted for layoffs. NIKE PLANS TO CUT HUNDREDS OF JOBS AMID AUTOMATION PUSH\n\nThe agency said it is seeking the records to determine whether Nike violated federal anti-discrimination law."
-            },
-            {
-              "category": "governance",
-              "excerpt": "Nike has refused to comply with a subpoena seeking information, including data on the racial and ethnic makeup of the global athletic apparel and footwear company",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998873819953831,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "The federal agency that enforces U.S. workplace discrimination laws said Wednesday it is investigating Nike over allegations that its diversity initiatives unlawfully discriminated against White employees and job applicants, according to a court filing. Reuters reported that the Equal Employment Opportunity Commission (EEOC) said Nike has refused to comply with a subpoena seeking information, including data on the racial and ethnic makeup of the global athletic apparel and footwear company based in Beaverton, Oregon. The subpoenas also seek a roster of employees selected for mentoring and development programs...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "We are committed to fair and lawful employment practices and follow all applicable laws, including those that prohibit discrimination",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9997086618835554,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "\"We are committed to fair and lawful employment practices and follow all applicable laws, including those that prohibit discrimination,\" the spokesperson added. \"We believe our programs and practices are consistent with those obligations and take these matters seriously...."
-            },
-            {
               "category": "social",
               "excerpt": "The federal agency that enforces U.S. workplace discrimination laws said Wednesday it is investigating Nike over allegations that its diversity initiatives unlawfully discriminated against White employees and job applicants",
               "relevance_score": 1.0,
@@ -16331,6 +16399,33 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...The commission said the investigation centers on claims that Nike deliberately treated White employees and job applicants unfairly, including allegations that they were disproportionately targeted for layoffs. NIKE PLANS TO CUT HUNDREDS OF JOBS AMID AUTOMATION PUSH\n\nThe agency said it is seeking the records to determine whether Nike violated federal anti-discrimination law."
+            },
+            {
+              "category": "governance",
+              "excerpt": "The agency said it is seeking the records to determine whether Nike violated federal anti-discrimination law",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999401733205534,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...The commission said the investigation centers on claims that Nike deliberately treated White employees and job applicants unfairly, including allegations that they were disproportionately targeted for layoffs. NIKE PLANS TO CUT HUNDREDS OF JOBS AMID AUTOMATION PUSH\n\nThe agency said it is seeking the records to determine whether Nike violated federal anti-discrimination law."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Nike has refused to comply with a subpoena seeking information, including data on the racial and ethnic makeup of the global athletic apparel and footwear company",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998873819953831,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "The federal agency that enforces U.S. workplace discrimination laws said Wednesday it is investigating Nike over allegations that its diversity initiatives unlawfully discriminated against White employees and job applicants, according to a court filing. Reuters reported that the Equal Employment Opportunity Commission (EEOC) said Nike has refused to comply with a subpoena seeking information, including data on the racial and ethnic makeup of the global athletic apparel and footwear company based in Beaverton, Oregon. The subpoenas also seek a roster of employees selected for mentoring and development programs...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "We are committed to fair and lawful employment practices and follow all applicable laws, including those that prohibit discrimination",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9997086618835554,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "\"We are committed to fair and lawful employment practices and follow all applicable laws, including those that prohibit discrimination,\" the spokesperson added. \"We believe our programs and practices are consistent with those obligations and take these matters seriously...."
             }
           ],
           "confidence": 0.9,
@@ -19449,34 +19544,6 @@
           "reasoning": "Article reports on significant ownership change with Anta becoming largest shareholder, which relates to governance structure and stakeholder composition"
         },
         {
-          "brand": "Adidas",
-          "categories": {
-            "environmental": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "digital_transformation": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            }
-          },
-          "evidence": [],
-          "confidence": 0.95,
-          "reasoning": "Adidas is discussed primarily in competitive/business context (market performance, product success) with no ESG-related content"
-        },
-        {
           "brand": "Nike",
           "categories": {
             "environmental": {
@@ -19503,6 +19570,34 @@
           "evidence": [],
           "confidence": 0.95,
           "reasoning": "Nike is mentioned only as a market comparison point (no. 2 in sportswear) with no substantive ESG-related content in the article"
+        },
+        {
+          "brand": "Adidas",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [],
+          "confidence": 0.95,
+          "reasoning": "Adidas is discussed primarily in competitive/business context (market performance, product success) with no ESG-related content"
         }
       ]
     },
