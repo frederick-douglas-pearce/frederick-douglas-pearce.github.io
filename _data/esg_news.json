@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-16T14:00:34.807025+00:00",
+  "generated_at": "2026-04-17T14:00:34.183401+00:00",
   "total_articles": 559,
   "brands": [
     "361 Degrees",
@@ -41,11 +41,11 @@
   "categories": ["digital_transformation", "environmental", "governance", "social"],
   "scorecard": {
     "period_days": 14,
-    "period_start": "2026-04-02",
-    "period_end": "2026-04-16",
-    "articles_in_period": 40,
-    "articles_after_dedup": 22,
-    "duplicates_removed": 18,
+    "period_start": "2026-04-03",
+    "period_end": "2026-04-17",
+    "articles_in_period": 38,
+    "articles_after_dedup": 21,
+    "duplicates_removed": 17,
     "top_brands": [
       {
         "brand": "Puma",
@@ -97,6 +97,15 @@
         "governance": -5,
         "digital_transformation": -1,
         "article_count": 6
+      },
+      {
+        "brand": "New Balance",
+        "total": -1,
+        "environmental": 0,
+        "social": 0,
+        "governance": -1,
+        "digital_transformation": 0,
+        "article_count": 1
       }
     ],
     "all_brand_scores": [
@@ -168,15 +177,6 @@
         "article_count": 1
       },
       {
-        "brand": "New Balance",
-        "total": 1,
-        "environmental": 0,
-        "social": 2,
-        "governance": -1,
-        "digital_transformation": 0,
-        "article_count": 2
-      },
-      {
         "brand": "Adidas",
         "total": 0,
         "environmental": 0,
@@ -184,6 +184,15 @@
         "governance": -1,
         "digital_transformation": 0,
         "article_count": 2
+      },
+      {
+        "brand": "New Balance",
+        "total": -1,
+        "environmental": 0,
+        "social": 0,
+        "governance": -1,
+        "digital_transformation": 0,
+        "article_count": 1
       },
       {
         "brand": "Nike",
