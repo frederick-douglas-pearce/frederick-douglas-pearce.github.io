@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T14:00:34.968635+00:00",
+  "generated_at": "2026-04-23T14:00:35.460469+00:00",
   "total_articles": 576,
   "brands": [
     "361 Degrees",
@@ -41,11 +41,11 @@
   "categories": ["digital_transformation", "environmental", "governance", "social"],
   "scorecard": {
     "period_days": 14,
-    "period_start": "2026-04-08",
-    "period_end": "2026-04-22",
-    "articles_in_period": 49,
-    "articles_after_dedup": 24,
-    "duplicates_removed": 25,
+    "period_start": "2026-04-09",
+    "period_end": "2026-04-23",
+    "articles_in_period": 46,
+    "articles_after_dedup": 22,
+    "duplicates_removed": 24,
     "top_brands": [
       {
         "brand": "Puma",
@@ -59,21 +59,51 @@
       },
       {
         "brand": "Under Armour",
-        "total": 6,
+        "total": 4,
         "environmental": 1,
-        "social": 2,
+        "social": 0,
         "governance": 2,
         "digital_transformation": 1,
-        "article_count": 2,
+        "article_count": 1,
         "medal": "silver"
       },
       {
-        "brand": "ASICS",
-        "total": 4,
+        "brand": "Merrell",
+        "total": 2,
         "environmental": 0,
         "social": 2,
         "governance": 0,
+        "digital_transformation": 0,
+        "article_count": 1,
+        "medal": "bronze"
+      },
+      {
+        "brand": "Reebok",
+        "total": 2,
+        "environmental": 0,
+        "social": 0,
+        "governance": 0,
         "digital_transformation": 2,
+        "article_count": 1,
+        "medal": "bronze"
+      },
+      {
+        "brand": "The North Face",
+        "total": 2,
+        "environmental": 0,
+        "social": 2,
+        "governance": 0,
+        "digital_transformation": 0,
+        "article_count": 1,
+        "medal": "bronze"
+      },
+      {
+        "brand": "Vuori",
+        "total": 2,
+        "environmental": 0,
+        "social": 0,
+        "governance": 2,
+        "digital_transformation": 0,
         "article_count": 1,
         "medal": "bronze"
       }
@@ -102,23 +132,13 @@
       },
       {
         "brand": "Under Armour",
-        "total": 6,
+        "total": 4,
         "environmental": 1,
-        "social": 2,
+        "social": 0,
         "governance": 2,
         "digital_transformation": 1,
-        "article_count": 2,
-        "medal": "silver"
-      },
-      {
-        "brand": "ASICS",
-        "total": 4,
-        "environmental": 0,
-        "social": 2,
-        "governance": 0,
-        "digital_transformation": 2,
         "article_count": 1,
-        "medal": "bronze"
+        "medal": "silver"
       },
       {
         "brand": "Merrell",
@@ -127,7 +147,8 @@
         "social": 2,
         "governance": 0,
         "digital_transformation": 0,
-        "article_count": 1
+        "article_count": 1,
+        "medal": "bronze"
       },
       {
         "brand": "Reebok",
@@ -136,7 +157,8 @@
         "social": 0,
         "governance": 0,
         "digital_transformation": 2,
-        "article_count": 1
+        "article_count": 1,
+        "medal": "bronze"
       },
       {
         "brand": "The North Face",
@@ -145,7 +167,8 @@
         "social": 2,
         "governance": 0,
         "digital_transformation": 0,
-        "article_count": 1
+        "article_count": 1,
+        "medal": "bronze"
       },
       {
         "brand": "Vuori",
@@ -154,7 +177,8 @@
         "social": 0,
         "governance": 2,
         "digital_transformation": 0,
-        "article_count": 1
+        "article_count": 1,
+        "medal": "bronze"
       },
       {
         "brand": "Lululemon",
