@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-04T14:00:41.254987+00:00",
-  "total_articles": 635,
+  "generated_at": "2026-05-05T14:00:38.794693+00:00",
+  "total_articles": 638,
   "brands": [
     "361 Degrees",
     "ASICS",
@@ -42,11 +42,11 @@
   "categories": ["digital_transformation", "environmental", "governance", "social"],
   "scorecard": {
     "period_days": 14,
-    "period_start": "2026-04-20",
-    "period_end": "2026-05-04",
-    "articles_in_period": 70,
-    "articles_after_dedup": 28,
-    "duplicates_removed": 42,
+    "period_start": "2026-04-21",
+    "period_end": "2026-05-05",
+    "articles_in_period": 67,
+    "articles_after_dedup": 30,
+    "duplicates_removed": 37,
     "top_brands": [
       {
         "brand": "Anta",
@@ -57,6 +57,16 @@
         "digital_transformation": 2,
         "article_count": 2,
         "medal": "gold"
+      },
+      {
+        "brand": "Adidas",
+        "total": 4,
+        "environmental": 2,
+        "social": 0,
+        "governance": 0,
+        "digital_transformation": 2,
+        "article_count": 2,
+        "medal": "silver"
       },
       {
         "brand": "Cotopaxi",
@@ -85,16 +95,6 @@
         "social": 2,
         "governance": 0,
         "digital_transformation": 0,
-        "article_count": 1,
-        "medal": "bronze"
-      },
-      {
-        "brand": "Adidas",
-        "total": 2,
-        "environmental": 0,
-        "social": 0,
-        "governance": 0,
-        "digital_transformation": 2,
         "article_count": 1,
         "medal": "bronze"
       },
@@ -141,15 +141,6 @@
     ],
     "bottom_brands": [
       {
-        "brand": "Allbirds",
-        "total": -2,
-        "environmental": -1,
-        "social": 0,
-        "governance": -1,
-        "digital_transformation": 0,
-        "article_count": 1
-      },
-      {
         "brand": "Nike",
         "total": -2,
         "environmental": 0,
@@ -169,6 +160,16 @@
         "digital_transformation": 2,
         "article_count": 2,
         "medal": "gold"
+      },
+      {
+        "brand": "Adidas",
+        "total": 4,
+        "environmental": 2,
+        "social": 0,
+        "governance": 0,
+        "digital_transformation": 2,
+        "article_count": 2,
+        "medal": "silver"
       },
       {
         "brand": "Cotopaxi",
@@ -197,16 +198,6 @@
         "social": 2,
         "governance": 0,
         "digital_transformation": 0,
-        "article_count": 1,
-        "medal": "bronze"
-      },
-      {
-        "brand": "Adidas",
-        "total": 2,
-        "environmental": 0,
-        "social": 0,
-        "governance": 0,
-        "digital_transformation": 2,
         "article_count": 1,
         "medal": "bronze"
       },
@@ -251,6 +242,24 @@
         "medal": "bronze"
       },
       {
+        "brand": "Columbia Sportswear",
+        "total": 1,
+        "environmental": 0,
+        "social": 0,
+        "governance": 1,
+        "digital_transformation": 0,
+        "article_count": 1
+      },
+      {
+        "brand": "Allbirds",
+        "total": 0,
+        "environmental": 0,
+        "social": 0,
+        "governance": -1,
+        "digital_transformation": 1,
+        "article_count": 1
+      },
+      {
         "brand": "Lululemon",
         "total": 0,
         "environmental": 0,
@@ -258,15 +267,6 @@
         "governance": -2,
         "digital_transformation": 0,
         "article_count": 3
-      },
-      {
-        "brand": "Allbirds",
-        "total": -2,
-        "environmental": -1,
-        "social": 0,
-        "governance": -1,
-        "digital_transformation": 0,
-        "article_count": 1
       },
       {
         "brand": "Nike",
@@ -280,6 +280,210 @@
     ]
   },
   "articles": [
+    {
+      "id": "de956955-c89a-454e-86af-87f5ca9495d2",
+      "title": "Columbia Sportswear Keeps Ivy Rival on the Hook in Portland Trademark Fight",
+      "url": "https://hoodline.com/2026/05/columbia-sportswear-keeps-ivy-rival-on-the-hook-in-portland-trademark-fight/",
+      "source_name": "Hoodline",
+      "published_at": "2026-05-04T23:28:44+00:00",
+      "published_date": "2026-05-04",
+      "brands": ["Columbia Sportswear"],
+      "categories": ["governance"],
+      "brand_details": [
+        {
+          "brand": "Columbia Sportswear",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": 0,
+              "sentiment_label": "neutral"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "governance",
+              "excerpt": "According to the complaint, a 2023 coexistence agreement let Columbia University use the name 'Columbia' on apparel only if it appeared with a clear university identifier",
+              "relevance_score": 0.931215936372379,
+              "rerank_score": 0.999970414142429,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "According to the complaint, a 2023 coexistence agreement let Columbia University use the name \u201cColumbia\u201d on apparel only if it appeared with a clear university identifier, such as the school\u2019s shield, the word \u201cUniversity,\u201d or the founding year 1754. Columbia Sportswear says that deal was tested in September 2024, when it discovered that the university\u2019s webstore was selling shirts, hats, and other items bearing only the word \u201cColumbia,\u201d and in some cases appearing next to competitor logos, a detail first flagged by Willamette Week...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Columbia Sportswear just chalked up an early win on its home turf, after a federal judge in Oregon refused to toss the Portland company's trademark lawsuit against Columbia University",
+              "relevance_score": 0.9291234790926302,
+              "rerank_score": 0.9999603455691305,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Columbia Sportswear just chalked up an early win on its home turf, after a federal judge in Oregon refused to toss the Portland company\u2019s trademark lawsuit against Columbia University. The decision keeps alive a high-profile fight over whether the Ivy League school can slap the word \u201cColumbia\u201d by itself on campus gear, despite a 2023 coexistence deal that was supposed to keep the peace and avoid confusion at the cash register...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Columbia Sportswear says that deal was tested in September 2024, when it discovered that the university's webstore was selling shirts, hats, and other items bearing only the word 'Columbia'",
+              "relevance_score": 0.9101804113354477,
+              "rerank_score": 0.9999213926573894,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "According to the complaint, a 2023 coexistence agreement let Columbia University use the name \u201cColumbia\u201d on apparel only if it appeared with a clear university identifier, such as the school\u2019s shield, the word \u201cUniversity,\u201d or the founding year 1754. Columbia Sportswear says that deal was tested in September 2024, when it discovered that the university\u2019s webstore was selling shirts, hats, and other items bearing only the word \u201cColumbia,\u201d and in some cases appearing next to competitor logos, a detail first flagged by Willamette Week. Jurisdiction Turned On A Portland Shipment"
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "This is a governance issue involving trademark protection, legal compliance, and corporate oversight of brand agreements. The article reports factually on the legal proceedings without clear positive or negative framing for Columbia Sportswear's actions."
+        }
+      ]
+    },
+    {
+      "id": "640be1ae-64c2-4358-bb9b-d208e2013950",
+      "title": "Stella McCartney's Crazy Stylish adidas Runner Is a Repeat Flexer",
+      "url": "https://www.highsnobiety.com/p/stella-mccartney-adidas-adistar-sneakers/",
+      "source_name": "Highsnobiety",
+      "published_at": "2026-05-04T21:10:59+00:00",
+      "published_date": "2026-05-04",
+      "brands": ["Adidas"],
+      "categories": ["environmental"],
+      "brand_details": [
+        {
+          "brand": "Adidas",
+          "categories": {
+            "environmental": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "environmental",
+              "excerpt": "Moreover, Stella McCartney's sneakers not only look good and energized, but they're also vegan.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9995449233970489,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...It has the chunky HOKA-like soles, which features adidas' lightweight REPETITOR foam cushioning and a classic rocker for smoother takeoffs. Oh, and it has Adiwear rubber outsoles, which provide a pretty solid grip. Moreover, Stella McCartney's sneakers not only look good and energized, but they're also vegan. They were made with recycled materials and essentially uphold the brand's longtime commitment to sustainable fashion."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "They were made with recycled materials and essentially uphold the brand's longtime commitment to sustainable fashion.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.6723995828937521,
+              "match_method": "exact",
+              "confidence": "low",
+              "context_snippet": "...Moreover, Stella McCartney's sneakers not only look good and energized, but they're also vegan. They were made with recycled materials and essentially uphold the brand's longtime commitment to sustainable fashion."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "Article discusses Adidas collaboration with Stella McCartney featuring vegan materials and recycled content as part of sustainable fashion commitment, which represents positive environmental practices."
+        }
+      ]
+    },
+    {
+      "id": "60e1f528-2205-4922-8ca1-702f40751f9c",
+      "title": "Allbirds Is Now an AI Company , and That Should Strike Fear Into Anyone Investing in Its Competition",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/allbirds-now-ai-company-strike-104300550.html",
+      "source_name": "finance.yahoo.com",
+      "published_at": "2026-05-04T11:15:00+00:00",
+      "published_date": "2026-05-04",
+      "brands": ["Allbirds"],
+      "categories": ["digital_transformation", "governance"],
+      "brand_details": [
+        {
+          "brand": "Allbirds",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            },
+            "digital_transformation": {
+              "applies": true,
+              "sentiment": 0,
+              "sentiment_label": "neutral"
+            }
+          },
+          "evidence": [
+            {
+              "category": "governance",
+              "excerpt": "The venture-capital-backed direct-to-consumer shoe company was once worth $4 billion. In March, the company sold its shoe brand for less than 1% of that value, $39 million.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998927383324576,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Silicon Valley may have abandoned its favorite shoe company, but Allbirds (NASDAQ: BIRD) isn't abandoning Silicon Valley. The venture-capital-backed direct-to-consumer shoe company was once worth $4 billion. In March, the company sold its shoe brand for less than 1% of that value, $39 million. But Allbirds is like a phoenix...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "From the ashes of its eco-friendly shoe business, it's emerging as an artificial intelligence (AI) company. A $50 million financing agreement will help it pivot into being an infrastructure-as-a-service cloud provider",
+              "relevance_score": 1.0,
+              "rerank_score": 0.999638338933123,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...But Allbirds is like a phoenix. From the ashes of its eco-friendly shoe business, it's emerging as an artificial intelligence (AI) company. A $50 million financing agreement will help it pivot into being an infrastructure-as-a-service cloud provider, similar to CoreWeave (NASDAQ: CRWV) or Nebius Group (NASDAQ: NBIS). And it comes with a fancy new name: NewBird AI...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "This isn't the first time a struggling company has made a shift into a trendy business that's completely unrelated to anything it has done in the past.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9994827349368423,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...And not because the new competitor is a major threat to those more-established AI businesses, but because it says something about how investors are valuing them. We've seen this story before\n\nThis isn't the first time a struggling company has made a shift into a trendy business that's completely unrelated to anything it has done in the past. Allbird's rebrand calls to mind how some companies behaved during two other significant periods in recent market history."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "From the ashes of its eco-friendly shoe business, it's emerging as an artificial intelligence (AI) company. A $50 million financing agreement will help it pivot into being an infrastructure-as-a-service cloud provider, similar to CoreWeave (NASDAQ: CRWV) or Nebius Group (NASDAQ: NBIS). And it comes with a fancy new name: NewBird AI.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.999000634026419,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...But Allbirds is like a phoenix. From the ashes of its eco-friendly shoe business, it's emerging as an artificial intelligence (AI) company. A $50 million financing agreement will help it pivot into being an infrastructure-as-a-service cloud provider, similar to CoreWeave (NASDAQ: CRWV) or Nebius Group (NASDAQ: NBIS). And it comes with a fancy new name: NewBird AI. Will AI create the world's first trillionaire?..."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "Article discusses Allbirds' complete business pivot from footwear to AI, which raises governance concerns about strategic direction and shareholder value destruction. The digital transformation category applies as it covers the company's pivot to AI/cloud infrastructure, though sentiment is neutral as the success of this transformation is uncertain."
+        }
+      ]
+    },
     {
       "id": "d7867732-14b1-4463-b74e-578e437d3ef1",
       "title": "She Helped Bring Down an Elite Nike Coach . Now , Renewal",
@@ -506,6 +710,15 @@
           },
           "evidence": [
             {
+              "category": "social",
+              "excerpt": "Nike also said it would cut 1,400 jobs, most of which are in its technology department, geared toward making structural changes in the company.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998740314107679,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Over the rest of the month, there was more news out on Nike, but it failed to move the footwear stock. The company's innovation chief, Tony Bignell, said he was leaving the company after less than a year in that position, an apparent setback for its turnaround efforts. Nike also said it would cut 1,400 jobs, most of which are in its technology department, geared toward making structural changes in the company. In a positive sign, a new Kobe collaboration sold out in minutes, showing it still has the ability to drive demand...."
+            },
+            {
               "category": "governance",
               "excerpt": "The company's innovation chief, Tony Bignell, said he was leaving the company after less than a year in that position, an apparent setback for its turnaround efforts.",
               "relevance_score": 1.0,
@@ -522,15 +735,6 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...Nike stock is now down 75% from its all-time high after the business has collapsed over the last five years. Decisions under former CEO John Donahoe, including pivoting away from the wholesale market and underinvesting in innovation, led to sales growth turning negative, and new CEO Elliott Hill has been unable to right the ship thus far, despite some positive signs."
-            },
-            {
-              "category": "social",
-              "excerpt": "Nike also said it would cut 1,400 jobs, most of which are in its technology department, geared toward making structural changes in the company.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998740314107679,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Over the rest of the month, there was more news out on Nike, but it failed to move the footwear stock. The company's innovation chief, Tony Bignell, said he was leaving the company after less than a year in that position, an apparent setback for its turnaround efforts. Nike also said it would cut 1,400 jobs, most of which are in its technology department, geared toward making structural changes in the company. In a positive sign, a new Kobe collaboration sold out in minutes, showing it still has the ability to drive demand...."
             }
           ],
           "confidence": 0.9,
@@ -1469,6 +1673,53 @@
       "categories": ["digital_transformation", "governance"],
       "brand_details": [
         {
+          "brand": "Adidas",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            }
+          },
+          "evidence": [
+            {
+              "category": "digital_transformation",
+              "excerpt": "Using innovative foam and carbon-plated soles, and ultra-light components, the third iteration of the Adizero Adios Pro Evo 3 weighs an average 97 grams, 30 percent less than its predecessor, and improves running economy by 1.6 percent",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9994184079978987,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...It means a lot to me,\u201d said Assefa, who put the win down to shoes that \u201callow me to run fast\u201d - and years of discipline and hard work. \u201cI\u2019ve trained hard, and because of all the hard work I\u2019ve put in, I\u2019ve achieved this level of success,\u201d she said. Using innovative foam and carbon-plated soles, and ultra-light components, the third iteration of the Adizero Adios Pro Evo 3 weighs an average 97 grams, 30 percent less than its predecessor, and improves running economy by 1.6 percent, Adidas said. Many runners that Reuters saw on Sunday in the championship start zone, the fastest amateur section at the London marathon, were wearing Adidas shoes or Puma\u2019s Nitro Elite...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "This is a testament to the years of hard work and dedication they have made, alongside our innovation team",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9984812561802433,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...\u201cThe Adidas family is incredibly proud of Sabastian and Tigst\u2019s historic achievements,\u201d Patrick Nava, general manager at Adidas Running, said in a statement. \u201cThis is a testament to the years of hard work and dedication they have made, alongside our innovation team.\u201d Adidas released its Adizero Adios Pro Evo 1 trainers in late 2023, after Assefa set a new women\u2019s marathon world record while wearing them at the women\u2019s Berlin Marathon...."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "Article focuses on Adidas' technological innovation in developing advanced running shoe technology that achieved breakthrough performance results. The innovation team's work on lightweight materials and performance improvements represents digital transformation/technology advancement."
+        },
+        {
           "brand": "Nike",
           "categories": {
             "environmental": {
@@ -1523,53 +1774,6 @@
           ],
           "confidence": 0.85,
           "reasoning": "Article discusses Nike's governance challenges including leadership failure under former CEO John Donahoe and ongoing strategic struggles under new CEO Elliott Hill, with negative business outcomes including job cuts and market cap decline."
-        },
-        {
-          "brand": "Adidas",
-          "categories": {
-            "environmental": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "digital_transformation": {
-              "applies": true,
-              "sentiment": 1,
-              "sentiment_label": "positive"
-            }
-          },
-          "evidence": [
-            {
-              "category": "digital_transformation",
-              "excerpt": "Using innovative foam and carbon-plated soles, and ultra-light components, the third iteration of the Adizero Adios Pro Evo 3 weighs an average 97 grams, 30 percent less than its predecessor, and improves running economy by 1.6 percent",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9994184079978987,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...It means a lot to me,\u201d said Assefa, who put the win down to shoes that \u201callow me to run fast\u201d - and years of discipline and hard work. \u201cI\u2019ve trained hard, and because of all the hard work I\u2019ve put in, I\u2019ve achieved this level of success,\u201d she said. Using innovative foam and carbon-plated soles, and ultra-light components, the third iteration of the Adizero Adios Pro Evo 3 weighs an average 97 grams, 30 percent less than its predecessor, and improves running economy by 1.6 percent, Adidas said. Many runners that Reuters saw on Sunday in the championship start zone, the fastest amateur section at the London marathon, were wearing Adidas shoes or Puma\u2019s Nitro Elite...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "This is a testament to the years of hard work and dedication they have made, alongside our innovation team",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9984812561802433,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...\u201cThe Adidas family is incredibly proud of Sabastian and Tigst\u2019s historic achievements,\u201d Patrick Nava, general manager at Adidas Running, said in a statement. \u201cThis is a testament to the years of hard work and dedication they have made, alongside our innovation team.\u201d Adidas released its Adizero Adios Pro Evo 1 trainers in late 2023, after Assefa set a new women\u2019s marathon world record while wearing them at the women\u2019s Berlin Marathon...."
-            }
-          ],
-          "confidence": 0.9,
-          "reasoning": "Article focuses on Adidas' technological innovation in developing advanced running shoe technology that achieved breakthrough performance results. The innovation team's work on lightweight materials and performance improvements represents digital transformation/technology advancement."
         }
       ]
     },
@@ -1976,6 +2180,24 @@
           },
           "evidence": [
             {
+              "category": "social",
+              "excerpt": "Nike has announced a significant reduction in its workforce, laying off approximately 1,400 employees",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999845519079417,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Nike has announced a significant reduction in its workforce, laying off approximately 1,400 employees. This decision affects the company\u2019s Global Operations team and primarily targets its technology division across North America, Europe, and Asia...."
+            },
+            {
+              "category": "social",
+              "excerpt": "This follows earlier reductions in the workforce, including 775 layoffs in January related to automation at distribution centers and another plan to cut over 1,600 jobs in February",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9996616388588718,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Alagirisamy noted that the changes are not a new direction but a continuation of ongoing efforts to simplify processes. This follows earlier reductions in the workforce, including 775 layoffs in January related to automation at distribution centers and another plan to cut over 1,600 jobs in February."
+            },
+            {
               "category": "governance",
               "excerpt": "The layoffs are part of a broader restructuring strategy aimed at streamlining operations",
               "relevance_score": 1.0,
@@ -2010,24 +2232,6 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "Nike has been investing in automation to enhance efficiency. The company is centralizing its technology operations in two main hubs: Beaverton, Oregon, and the Nike India Technology Center. Additionally, manufacturing operations for the Converse brand will be relocated closer to production partners to improve responsiveness...."
-            },
-            {
-              "category": "social",
-              "excerpt": "Nike has announced a significant reduction in its workforce, laying off approximately 1,400 employees",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999845519079417,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Nike has announced a significant reduction in its workforce, laying off approximately 1,400 employees. This decision affects the company\u2019s Global Operations team and primarily targets its technology division across North America, Europe, and Asia...."
-            },
-            {
-              "category": "social",
-              "excerpt": "This follows earlier reductions in the workforce, including 775 layoffs in January related to automation at distribution centers and another plan to cut over 1,600 jobs in February",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9996616388588718,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Alagirisamy noted that the changes are not a new direction but a continuation of ongoing efforts to simplify processes. This follows earlier reductions in the workforce, including 775 layoffs in January related to automation at distribution centers and another plan to cut over 1,600 jobs in February."
             }
           ],
           "confidence": 0.9,
@@ -2130,22 +2334,22 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "In a memo to employees on Thursday, Chief Operating Officer Venkatesh Alagirisamy said Nike would reduce headcount",
+              "category": "digital_transformation",
+              "excerpt": "focus its technology operations in two main hubs -- its Beaverton, Oregon, headquarters, and the Nike India Technology Center",
               "relevance_score": 1.0,
-              "rerank_score": 0.9999722824690251,
+              "rerank_score": 0.9997556101928413,
               "match_method": "exact",
               "confidence": "high",
-              "context_snippet": "Nike said Thursday that it is laying off about 1,400 global operations employees in an effort to streamline workflows as the struggling sportswear company fights through a yearslong sales slump. In a memo to employees on Thursday, Chief Operating Officer Venkatesh Alagirisamy said Nike would reduce headcount mainly in North America and Europe, and mainly on its technology team. The layoffs account for a little less than 2 percent of Nike's global workforce...."
+              "context_snippet": "...China, its primary trouble spot, is expected to fall 20 percent in the quarter, Nike has said. The layoffs will allow Nike to better integrate its supply chains for materials, footwear and apparel, and focus its technology operations in two main hubs -- its Beaverton, Oregon, headquarters, and the Nike India Technology Center -- according to Alagirisamy's memo. Nike will move some manufacturing operations for its struggling Converse brand closer to Nike's factory partners, to \"better support the brand's needs going forward,\" Alagirisamy said...."
             },
             {
-              "category": "governance",
-              "excerpt": "CEO Elliott Hill, who took the helm in 2024, has vowed to re-center the Nike brand on core sports such as running and soccer",
+              "category": "digital_transformation",
+              "excerpt": "Nike has conducted several rounds of layoffs in recent years, most recently axing 775 jobs to speed up automation",
               "relevance_score": 1.0,
-              "rerank_score": 0.9998121327323537,
+              "rerank_score": 0.9997142895425997,
               "match_method": "exact",
               "confidence": "high",
-              "context_snippet": "...Nike shares have lost more than half their value in the last three years, as nimbler competitors such as On, Hoka and Anta have won more shelf space. CEO Elliott Hill, who took the helm in 2024, has vowed to re-center the Nike brand on core sports such as running and soccer, and bring new and innovative shoes to market quickly."
+              "context_snippet": "...The layoffs will allow Nike to better integrate its supply chains for materials, footwear and apparel, and focus its technology operations in two main hubs -- its Beaverton, Oregon, headquarters, and the Nike India Technology Center -- according to Alagirisamy's memo. Nike will move some manufacturing operations for its struggling Converse brand closer to Nike's factory partners, to \"better support the brand's needs going forward,\" Alagirisamy said. Nike has conducted several rounds of layoffs in recent years, most recently axing 775 jobs to speed up automation."
             },
             {
               "category": "social",
@@ -2175,22 +2379,22 @@
               "context_snippet": "...The layoffs will allow Nike to better integrate its supply chains for materials, footwear and apparel, and focus its technology operations in two main hubs -- its Beaverton, Oregon, headquarters, and the Nike India Technology Center -- according to Alagirisamy's memo. Nike will move some manufacturing operations for its struggling Converse brand closer to Nike's factory partners, to \"better support the brand's needs going forward,\" Alagirisamy said. Nike has conducted several rounds of layoffs in recent years, most recently axing 775 jobs to speed up automation."
             },
             {
-              "category": "digital_transformation",
-              "excerpt": "focus its technology operations in two main hubs -- its Beaverton, Oregon, headquarters, and the Nike India Technology Center",
+              "category": "governance",
+              "excerpt": "In a memo to employees on Thursday, Chief Operating Officer Venkatesh Alagirisamy said Nike would reduce headcount",
               "relevance_score": 1.0,
-              "rerank_score": 0.9997556101928413,
+              "rerank_score": 0.9999722824690251,
               "match_method": "exact",
               "confidence": "high",
-              "context_snippet": "...China, its primary trouble spot, is expected to fall 20 percent in the quarter, Nike has said. The layoffs will allow Nike to better integrate its supply chains for materials, footwear and apparel, and focus its technology operations in two main hubs -- its Beaverton, Oregon, headquarters, and the Nike India Technology Center -- according to Alagirisamy's memo. Nike will move some manufacturing operations for its struggling Converse brand closer to Nike's factory partners, to \"better support the brand's needs going forward,\" Alagirisamy said...."
+              "context_snippet": "Nike said Thursday that it is laying off about 1,400 global operations employees in an effort to streamline workflows as the struggling sportswear company fights through a yearslong sales slump. In a memo to employees on Thursday, Chief Operating Officer Venkatesh Alagirisamy said Nike would reduce headcount mainly in North America and Europe, and mainly on its technology team. The layoffs account for a little less than 2 percent of Nike's global workforce...."
             },
             {
-              "category": "digital_transformation",
-              "excerpt": "Nike has conducted several rounds of layoffs in recent years, most recently axing 775 jobs to speed up automation",
+              "category": "governance",
+              "excerpt": "CEO Elliott Hill, who took the helm in 2024, has vowed to re-center the Nike brand on core sports such as running and soccer",
               "relevance_score": 1.0,
-              "rerank_score": 0.9997142895425997,
+              "rerank_score": 0.9998121327323537,
               "match_method": "exact",
               "confidence": "high",
-              "context_snippet": "...The layoffs will allow Nike to better integrate its supply chains for materials, footwear and apparel, and focus its technology operations in two main hubs -- its Beaverton, Oregon, headquarters, and the Nike India Technology Center -- according to Alagirisamy's memo. Nike will move some manufacturing operations for its struggling Converse brand closer to Nike's factory partners, to \"better support the brand's needs going forward,\" Alagirisamy said. Nike has conducted several rounds of layoffs in recent years, most recently axing 775 jobs to speed up automation."
+              "context_snippet": "...Nike shares have lost more than half their value in the last three years, as nimbler competitors such as On, Hoka and Anta have won more shelf space. CEO Elliott Hill, who took the helm in 2024, has vowed to re-center the Nike brand on core sports such as running and soccer, and bring new and innovative shoes to market quickly."
             }
           ],
           "confidence": 0.9,
@@ -2293,24 +2497,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "Nike leadership says the move is part of the final stretch of their 'Win Now' plan.",
-              "relevance_score": 0.7460569312506444,
-              "rerank_score": 0.9998997941966246,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "...People working in North America, Asia, and Europe will be impacted, the company said. Those will include positions at the world headquarters in Beaverton. Nike leadership says the move is part of the final stretch of their \u201cWin Now\u201d plan. In an email to FOX 12 -- Nike said these decisions are intended to ensure the company emerges stronger, more focused, and on a clear path back toward sustainable, long-term profitable growth...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "these decisions are intended to ensure the company emerges stronger, more focused, and on a clear path back toward sustainable, long-term profitable growth",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9991388355888398,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Nike leadership says the move is part of the final stretch of their \u201cWin Now\u201d plan. In an email to FOX 12 -- Nike said these decisions are intended to ensure the company emerges stronger, more focused, and on a clear path back toward sustainable, long-term profitable growth. According to Nike, the company\u2019s net income for fiscal year 2025 was $3.2 billion, down about 44% from 2024."
-            },
-            {
               "category": "social",
               "excerpt": "Nike announced on Thursday that it will be laying off about 1,400 people from their Global Operations department",
               "relevance_score": 1.0,
@@ -2327,6 +2513,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "BEAVERTON Ore. (KPTV) - Nike announced on Thursday that it will be laying off about 1,400 people from their Global Operations department, the majority in technology. People working in North America, Asia, and Europe will be impacted, the company said. Those will include positions at the world headquarters in Beaverton. Nike leadership says the move is part of the final stretch of their \u201cWin Now\u201d plan...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Nike leadership says the move is part of the final stretch of their 'Win Now' plan.",
+              "relevance_score": 0.7460569312506444,
+              "rerank_score": 0.9998997941966246,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...People working in North America, Asia, and Europe will be impacted, the company said. Those will include positions at the world headquarters in Beaverton. Nike leadership says the move is part of the final stretch of their \u201cWin Now\u201d plan. In an email to FOX 12 -- Nike said these decisions are intended to ensure the company emerges stronger, more focused, and on a clear path back toward sustainable, long-term profitable growth...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "these decisions are intended to ensure the company emerges stronger, more focused, and on a clear path back toward sustainable, long-term profitable growth",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9991388355888398,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Nike leadership says the move is part of the final stretch of their \u201cWin Now\u201d plan. In an email to FOX 12 -- Nike said these decisions are intended to ensure the company emerges stronger, more focused, and on a clear path back toward sustainable, long-term profitable growth. According to Nike, the company\u2019s net income for fiscal year 2025 was $3.2 billion, down about 44% from 2024."
             }
           ],
           "confidence": 0.9,
@@ -2968,33 +3172,6 @@
           },
           "evidence": [
             {
-              "category": "digital_transformation",
-              "excerpt": "The company will reshape its Technology team to align more closely with business needs, streamline structures, and consolidate its footprint",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998688494512409,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...A significant focus is on technology modernisation. The company will reshape its Technology team to align more closely with business needs, streamline structures, and consolidate its footprint. Work will be concentrated in key hubs, including the Philip H. Knight Campus and the Nike India Technology Centre, with the aim of creating leaner teams and improving speed and focus...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "NIKE is also looking to modernise its air manufacturing modernisation facilities in Beaverton, St. Louis, and Vietnam",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998077899061313,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...The company will reshape its Technology team to align more closely with business needs, streamline structures, and consolidate its footprint. Work will be concentrated in key hubs, including the Philip H. Knight Campus and the Nike India Technology Centre, with the aim of creating leaner teams and improving speed and focus. NIKE is also looking to modernise its air manufacturing modernisation facilities in Beaverton, St. Louis, and Vietnam. This includes increasing resilience, streamlining processes, and adjusting staffing levels to better match demand, while supporting product quality and future innovation."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "accelerating technology deployment",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9951999721580626,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "optimising its supply chain footprint,\n\naccelerating technology deployment,\n\ninvesting in upskilling employees, and\n\nstrengthening partner and supplier relationships. The latest changes build on these areas...."
-            },
-            {
               "category": "social",
               "excerpt": "NIKE is set to reduce around 1,400 roles as part of changes to its Global Operations",
               "relevance_score": 1.0,
@@ -3038,6 +3215,33 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...Another part is making sure people are treated with care. Teammates whose roles are impacted will hear directly from their leaders and HR partners starting today, and we will work to make sure they have clear information and support through this transition,\" Alagirisamy said."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "The company will reshape its Technology team to align more closely with business needs, streamline structures, and consolidate its footprint",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998688494512409,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...A significant focus is on technology modernisation. The company will reshape its Technology team to align more closely with business needs, streamline structures, and consolidate its footprint. Work will be concentrated in key hubs, including the Philip H. Knight Campus and the Nike India Technology Centre, with the aim of creating leaner teams and improving speed and focus...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "NIKE is also looking to modernise its air manufacturing modernisation facilities in Beaverton, St. Louis, and Vietnam",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998077899061313,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...The company will reshape its Technology team to align more closely with business needs, streamline structures, and consolidate its footprint. Work will be concentrated in key hubs, including the Philip H. Knight Campus and the Nike India Technology Centre, with the aim of creating leaner teams and improving speed and focus. NIKE is also looking to modernise its air manufacturing modernisation facilities in Beaverton, St. Louis, and Vietnam. This includes increasing resilience, streamlining processes, and adjusting staffing levels to better match demand, while supporting product quality and future innovation."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "accelerating technology deployment",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9951999721580626,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "optimising its supply chain footprint,\n\naccelerating technology deployment,\n\ninvesting in upskilling employees, and\n\nstrengthening partner and supplier relationships. The latest changes build on these areas...."
             }
           ],
           "confidence": 0.9,
@@ -3114,6 +3318,110 @@
       ]
     },
     {
+      "id": "a8e23af2-7e44-49c3-a410-df7e55f087e2",
+      "title": "Nike to lay off 1400 , majority cuts to be in technology team ; COO Venkatesh Alagirisamy says in memo : This is not a new \u2026 ",
+      "url": "https://timesofindia.indiatimes.com/technology/tech-news/nike-to-lay-off-1400-majority-cuts-to-be-in-technology-team-coo-venkatesh-alagirisamy-says-in-memo-this-is-not-a-new-/articleshow/130487559.cms",
+      "source_name": "timesofindia.indiatimes.com",
+      "published_at": "2026-04-24T09:00:00+00:00",
+      "published_date": "2026-04-24",
+      "brands": ["Nike"],
+      "categories": ["digital_transformation", "governance", "social"],
+      "brand_details": [
+        {
+          "brand": "Nike",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": 0,
+              "sentiment_label": "neutral"
+            },
+            "digital_transformation": {
+              "applies": true,
+              "sentiment": 0,
+              "sentiment_label": "neutral"
+            }
+          },
+          "evidence": [
+            {
+              "category": "social",
+              "excerpt": "Nike has announced that it will layoff 1400 employees across its global operations team",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999815486994208,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Representative image\n\nNike has announced that it will layoff 1400 employees across its global operations team, with the majority of reductions coming from its technology division. This move of the company is part of its ongoing \u2018Win Now\u2019 action plan which is aimed at streamlining operations and positions the brand for longterm profitable growth...."
+            },
+            {
+              "category": "social",
+              "excerpt": "Teammates whose roles are impacted will hear directly from their leaders and HR partners starting today, and we will work to make sure they have clear information and support through this transition",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998286769415947,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Another part is making sure people are treated with care. Teammates whose roles are impacted will hear directly from their leaders and HR partners starting today, and we will work to make sure they have clear information and support through this transition. To teammates whose roles are impacted, thank you...."
+            },
+            {
+              "category": "social",
+              "excerpt": "These reductions are very hard for the teammates directly affected and for the teams around them, too",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998175591295646,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Collectively, these changes will result in a reduction of approximately 1,400 roles in Global Operations, with the majority in Technology. These reductions are very hard for the teammates directly affected and for the teams around them, too. Part of doing the right thing is being direct...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "We're reshaping our Technology team to sharpen alignment with the business, build leaner teams, and accelerate what matters most",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999651483328926,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Technology Modernization. We're reshaping our Technology team to sharpen alignment with the business, build leaner teams, and accelerate what matters most. This means consolidating our technology footprint, streamlining our structure to move with greater speed and focus, and doubling down on the locations where our work gets done with a focus on two strategically important hubs \u2014 Philip H. Knight Campus and our Nike India Technology Center...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "consolidating our technology footprint, streamlining our structure to move with greater speed and focus, and doubling down on the locations where our work gets done with a focus on two strategically important hubs \u2014 Philip H. Knight Campus and our Nike India Technology Center",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998520492802524,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...We're reshaping our Technology team to sharpen alignment with the business, build leaner teams, and accelerate what matters most. This means consolidating our technology footprint, streamlining our structure to move with greater speed and focus, and doubling down on the locations where our work gets done with a focus on two strategically important hubs \u2014 Philip H. Knight Campus and our Nike India Technology Center. These are deliberate moves to build a leaner, faster, more connected Technology organization \u2014 one built to deliver for the consumer, the athlete, and the business...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "This move of the company is part of its ongoing 'Win Now' action plan which is aimed at streamlining operations and positions the brand for longterm profitable growth",
+              "relevance_score": 0.8201050803636162,
+              "rerank_score": 0.999876653891945,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Representative image\n\nNike has announced that it will layoff 1400 employees across its global operations team, with the majority of reductions coming from its technology division. This move of the company is part of its ongoing \u2018Win Now\u2019 action plan which is aimed at streamlining operations and positions the brand for longterm profitable growth. In a memo to the employees, chief operating officer Venkatesh Alagirisamy stressed that the job cuts are not a new direction but the next phase of work already underway...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "In a memo to the employees, chief operating officer Venkatesh Alagirisamy stressed that the job cuts are not a new direction but the next phase of work already underway",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9997868284962892,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...This move of the company is part of its ongoing \u2018Win Now\u2019 action plan which is aimed at streamlining operations and positions the brand for longterm profitable growth. In a memo to the employees, chief operating officer Venkatesh Alagirisamy stressed that the job cuts are not a new direction but the next phase of work already underway. He also outlined four important ares to focus:\n\nTechnology Modernisation: Consolidating the technology footprint, streamlining structures, and focusing on two hubs \u2014 the Philip H. Knight Campus and Nike India Technology Center...."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "Clear corporate restructuring announcement with significant workforce reduction (Social negative), strategic organizational changes (Governance neutral), and technology modernization initiatives (Digital Transformation neutral). The layoffs represent a negative social impact on employees, while the strategic planning and technology consolidation are neutral governance and digital transformation activities."
+        }
+      ]
+    },
+    {
       "id": "27fc2c53-7a18-483d-9816-d0b5ada82875",
       "title": "Nike is cutting another 1 , 400 jobs worldwide",
       "url": "https://www.retaildetail.eu/news/fashion/nike-is-cutting-another-1400-jobs-worldwide/",
@@ -3160,110 +3468,6 @@
           ],
           "confidence": 0.9,
           "reasoning": "This is clearly about Nike the sportswear company conducting layoffs. The job cuts represent a negative social impact on employees and workforce, warranting a Social classification with negative sentiment. While the article mentions technology departments, this is about job cuts rather than digital transformation initiatives."
-        }
-      ]
-    },
-    {
-      "id": "a8e23af2-7e44-49c3-a410-df7e55f087e2",
-      "title": "Nike to lay off 1400 , majority cuts to be in technology team ; COO Venkatesh Alagirisamy says in memo : This is not a new \u2026 ",
-      "url": "https://timesofindia.indiatimes.com/technology/tech-news/nike-to-lay-off-1400-majority-cuts-to-be-in-technology-team-coo-venkatesh-alagirisamy-says-in-memo-this-is-not-a-new-/articleshow/130487559.cms",
-      "source_name": "timesofindia.indiatimes.com",
-      "published_at": "2026-04-24T09:00:00+00:00",
-      "published_date": "2026-04-24",
-      "brands": ["Nike"],
-      "categories": ["digital_transformation", "governance", "social"],
-      "brand_details": [
-        {
-          "brand": "Nike",
-          "categories": {
-            "environmental": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "social": {
-              "applies": true,
-              "sentiment": -1,
-              "sentiment_label": "negative"
-            },
-            "governance": {
-              "applies": true,
-              "sentiment": 0,
-              "sentiment_label": "neutral"
-            },
-            "digital_transformation": {
-              "applies": true,
-              "sentiment": 0,
-              "sentiment_label": "neutral"
-            }
-          },
-          "evidence": [
-            {
-              "category": "governance",
-              "excerpt": "This move of the company is part of its ongoing 'Win Now' action plan which is aimed at streamlining operations and positions the brand for longterm profitable growth",
-              "relevance_score": 0.8201050803636162,
-              "rerank_score": 0.999876653891945,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Representative image\n\nNike has announced that it will layoff 1400 employees across its global operations team, with the majority of reductions coming from its technology division. This move of the company is part of its ongoing \u2018Win Now\u2019 action plan which is aimed at streamlining operations and positions the brand for longterm profitable growth. In a memo to the employees, chief operating officer Venkatesh Alagirisamy stressed that the job cuts are not a new direction but the next phase of work already underway...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "In a memo to the employees, chief operating officer Venkatesh Alagirisamy stressed that the job cuts are not a new direction but the next phase of work already underway",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9997868284962892,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...This move of the company is part of its ongoing \u2018Win Now\u2019 action plan which is aimed at streamlining operations and positions the brand for longterm profitable growth. In a memo to the employees, chief operating officer Venkatesh Alagirisamy stressed that the job cuts are not a new direction but the next phase of work already underway. He also outlined four important ares to focus:\n\nTechnology Modernisation: Consolidating the technology footprint, streamlining structures, and focusing on two hubs \u2014 the Philip H. Knight Campus and Nike India Technology Center...."
-            },
-            {
-              "category": "social",
-              "excerpt": "Nike has announced that it will layoff 1400 employees across its global operations team",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999815486994208,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Representative image\n\nNike has announced that it will layoff 1400 employees across its global operations team, with the majority of reductions coming from its technology division. This move of the company is part of its ongoing \u2018Win Now\u2019 action plan which is aimed at streamlining operations and positions the brand for longterm profitable growth...."
-            },
-            {
-              "category": "social",
-              "excerpt": "Teammates whose roles are impacted will hear directly from their leaders and HR partners starting today, and we will work to make sure they have clear information and support through this transition",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998286769415947,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Another part is making sure people are treated with care. Teammates whose roles are impacted will hear directly from their leaders and HR partners starting today, and we will work to make sure they have clear information and support through this transition. To teammates whose roles are impacted, thank you...."
-            },
-            {
-              "category": "social",
-              "excerpt": "These reductions are very hard for the teammates directly affected and for the teams around them, too",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998175591295646,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Collectively, these changes will result in a reduction of approximately 1,400 roles in Global Operations, with the majority in Technology. These reductions are very hard for the teammates directly affected and for the teams around them, too. Part of doing the right thing is being direct...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "We're reshaping our Technology team to sharpen alignment with the business, build leaner teams, and accelerate what matters most",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999651483328926,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Technology Modernization. We're reshaping our Technology team to sharpen alignment with the business, build leaner teams, and accelerate what matters most. This means consolidating our technology footprint, streamlining our structure to move with greater speed and focus, and doubling down on the locations where our work gets done with a focus on two strategically important hubs \u2014 Philip H. Knight Campus and our Nike India Technology Center...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "consolidating our technology footprint, streamlining our structure to move with greater speed and focus, and doubling down on the locations where our work gets done with a focus on two strategically important hubs \u2014 Philip H. Knight Campus and our Nike India Technology Center",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998520492802524,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...We're reshaping our Technology team to sharpen alignment with the business, build leaner teams, and accelerate what matters most. This means consolidating our technology footprint, streamlining our structure to move with greater speed and focus, and doubling down on the locations where our work gets done with a focus on two strategically important hubs \u2014 Philip H. Knight Campus and our Nike India Technology Center. These are deliberate moves to build a leaner, faster, more connected Technology organization \u2014 one built to deliver for the consumer, the athlete, and the business...."
-            }
-          ],
-          "confidence": 0.9,
-          "reasoning": "Clear corporate restructuring announcement with significant workforce reduction (Social negative), strategic organizational changes (Governance neutral), and technology modernization initiatives (Digital Transformation neutral). The layoffs represent a negative social impact on employees, while the strategic planning and technology consolidation are neutral governance and digital transformation activities."
         }
       ]
     },
@@ -3330,24 +3534,6 @@
               "context_snippet": "...\"To the broader team, moments like this require professionalism, empathy, and a shared commitment to one another.\"\n\nMoving towards automation\n\nThis is the second round of layoffs at Nike this year after the brand cut more than 700 employees in the US in January to speed up automation, according to a Reuters report. While this latest round of layoffs has been attributed to the company's turnaround strategy, Alagirisamy noted that the company will be using \"more advanced automation\" in the future. \"These changes are meant to make the company less complex and more responsive,\" he said."
             },
             {
-              "category": "governance",
-              "excerpt": "Chief operating officer Venkatesh Alagirisamy announced on Thursday that Nike will be undergoing 'several significant changes' under the final phase of its 'Win Now' strategy",
-              "relevance_score": 0.8674430880839108,
-              "rerank_score": 0.9999690909285028,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Nike is laying off about 1,400 people globally as the sports brand enters the final stretch of its turnaround strategy that will impact its workforce. Chief operating officer Venkatesh Alagirisamy announced on Thursday that Nike will be undergoing \"several significant changes\" under the final phase of its \"Win Now\" strategy that will impact global operations. The strategy, introduced under CEO Elliott Hill, will reshape the company's tech team, modernise its Air Manufacturing, move Converse Footwear Manufacturing and Engineering resources close to factory partners, and position materials work closer to its Footwear and Apparel Supply Chain teams...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "Teammates whose roles are impacted will hear directly from their leaders and HR partners starting today, and we will work to make sure they have clear information and support through this transition",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999142390556026,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "The layoffs are expected to impact employees in the company's North America, Asia, and Europe operations, according to reports. \"Teammates whose roles are impacted will hear directly from their leaders and HR partners starting today, and we will work to make sure they have clear information and support through this transition,\" Alagirisamy said. The COO extended his gratitude to departing employees, while urging empathy among the company's broader workforce...."
-            },
-            {
               "category": "social",
               "excerpt": "Nike is laying off about 1,400 people globally as the sports brand enters the final stretch of its turnaround strategy that will impact its workforce.",
               "relevance_score": 1.0,
@@ -3373,6 +3559,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...\"Collectively, these changes will result in a reduction of approximately 1,400 roles in Global Operations, with the majority in Technology,\" Alagirisamy said in the announcement. \"These reductions are very hard for the teammates directly affected and for the teams around them, too.\""
+            },
+            {
+              "category": "governance",
+              "excerpt": "Chief operating officer Venkatesh Alagirisamy announced on Thursday that Nike will be undergoing 'several significant changes' under the final phase of its 'Win Now' strategy",
+              "relevance_score": 0.8674430880839108,
+              "rerank_score": 0.9999690909285028,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Nike is laying off about 1,400 people globally as the sports brand enters the final stretch of its turnaround strategy that will impact its workforce. Chief operating officer Venkatesh Alagirisamy announced on Thursday that Nike will be undergoing \"several significant changes\" under the final phase of its \"Win Now\" strategy that will impact global operations. The strategy, introduced under CEO Elliott Hill, will reshape the company's tech team, modernise its Air Manufacturing, move Converse Footwear Manufacturing and Engineering resources close to factory partners, and position materials work closer to its Footwear and Apparel Supply Chain teams...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Teammates whose roles are impacted will hear directly from their leaders and HR partners starting today, and we will work to make sure they have clear information and support through this transition",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999142390556026,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "The layoffs are expected to impact employees in the company's North America, Asia, and Europe operations, according to reports. \"Teammates whose roles are impacted will hear directly from their leaders and HR partners starting today, and we will work to make sure they have clear information and support through this transition,\" Alagirisamy said. The COO extended his gratitude to departing employees, while urging empathy among the company's broader workforce...."
             }
           ],
           "confidence": 0.9,
@@ -3434,24 +3638,6 @@
               "context_snippet": "On Thursday the sportswear giant announced the deletion of about 1,400 roles across its global operations, with a heavy concentration in technology, representing a bit under 2% of its total workforce. Management framed the move as a further step in the \"Win Now\" initiative, aimed at simplifying the organizational structure, modernizing industrial tools, reorganizing certain Converse operations and better integrating materials and supply chain functions...."
             },
             {
-              "category": "governance",
-              "excerpt": "Management framed the move as a further step in the 'Win Now' initiative, aimed at simplifying the organizational structure",
-              "relevance_score": 0.792682880701682,
-              "rerank_score": 0.9998909080061327,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "On Thursday the sportswear giant announced the deletion of about 1,400 roles across its global operations, with a heavy concentration in technology, representing a bit under 2% of its total workforce. Management framed the move as a further step in the \"Win Now\" initiative, aimed at simplifying the organizational structure, modernizing industrial tools, reorganizing certain Converse operations and better integrating materials and supply chain functions. Since Elliott Hill returned to lead the company in late 2024, the group has stepped up adjustments to restore more profitable growth...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "Since Elliott Hill returned to lead the company in late 2024, the group has stepped up adjustments to restore more profitable growth",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9997954146838699,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "On Thursday the sportswear giant announced the deletion of about 1,400 roles across its global operations, with a heavy concentration in technology, representing a bit under 2% of its total workforce. Management framed the move as a further step in the \"Win Now\" initiative, aimed at simplifying the organizational structure, modernizing industrial tools, reorganizing certain Converse operations and better integrating materials and supply chain functions. Since Elliott Hill returned to lead the company in late 2024, the group has stepped up adjustments to restore more profitable growth. In January, Nike had already announced 775 job cuts at its US distribution centers as part of an automation ramp-up...."
-            },
-            {
               "category": "social",
               "excerpt": "On Thursday the sportswear giant announced the deletion of about 1,400 roles across its global operations",
               "relevance_score": 1.0,
@@ -3468,6 +3654,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...Since Elliott Hill returned to lead the company in late 2024, the group has stepped up adjustments to restore more profitable growth. In January, Nike had already announced 775 job cuts at its US distribution centers as part of an automation ramp-up. Reuters noted at the time that the group employed 77,800 people as of late May 2025."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Management framed the move as a further step in the 'Win Now' initiative, aimed at simplifying the organizational structure",
+              "relevance_score": 0.792682880701682,
+              "rerank_score": 0.9998909080061327,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "On Thursday the sportswear giant announced the deletion of about 1,400 roles across its global operations, with a heavy concentration in technology, representing a bit under 2% of its total workforce. Management framed the move as a further step in the \"Win Now\" initiative, aimed at simplifying the organizational structure, modernizing industrial tools, reorganizing certain Converse operations and better integrating materials and supply chain functions. Since Elliott Hill returned to lead the company in late 2024, the group has stepped up adjustments to restore more profitable growth...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Since Elliott Hill returned to lead the company in late 2024, the group has stepped up adjustments to restore more profitable growth",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9997954146838699,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "On Thursday the sportswear giant announced the deletion of about 1,400 roles across its global operations, with a heavy concentration in technology, representing a bit under 2% of its total workforce. Management framed the move as a further step in the \"Win Now\" initiative, aimed at simplifying the organizational structure, modernizing industrial tools, reorganizing certain Converse operations and better integrating materials and supply chain functions. Since Elliott Hill returned to lead the company in late 2024, the group has stepped up adjustments to restore more profitable growth. In January, Nike had already announced 775 job cuts at its US distribution centers as part of an automation ramp-up...."
             }
           ],
           "confidence": 0.9,
@@ -3692,24 +3896,6 @@
           },
           "evidence": [
             {
-              "category": "social",
-              "excerpt": "Nike has announced a further 1,400 job cuts, marking its second major round of layoffs this year.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999460040557167,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Jump to content\n\nThank you for registering\n\nPlease refresh the page or navigate to another page on the site to be automatically logged inPlease refresh your browser to be logged in\n\nSwipe for next article\n\nNike confirms further job cuts in major turnaround plan\n\nRachel Dobkin\n\nFriday 24 April 2026 06:45 BST\n\nNike has announced a further 1,400 job cuts, marking its second major round of layoffs this year. The majority of these redundancies will impact Nike's technology team, with workers affected across North America, Europe, and Asia...."
-            },
-            {
-              "category": "social",
-              "excerpt": "Earlier in January, Nike had already laid off nearly 800 employees at its distribution centres in Tennessee and Mississippi.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.975437710957998,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...The sportswear giant stated the cuts are part of its 'Win Now' action plan, aimed at simplifying operations and improving responsiveness. This move follows a significant 10 per cent drop in Nike's revenue for its 2025 fiscal year compared to the previous year. Earlier in January, Nike had already laid off nearly 800 employees at its distribution centres in Tennessee and Mississippi."
-            },
-            {
               "category": "governance",
               "excerpt": "The sportswear giant stated the cuts are part of its 'Win Now' action plan, aimed at simplifying operations and improving responsiveness.",
               "relevance_score": 1.0,
@@ -3726,6 +3912,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...The majority of these redundancies will impact Nike's technology team, with workers affected across North America, Europe, and Asia. The sportswear giant stated the cuts are part of its 'Win Now' action plan, aimed at simplifying operations and improving responsiveness. This move follows a significant 10 per cent drop in Nike's revenue for its 2025 fiscal year compared to the previous year. Earlier in January, Nike had already laid off nearly 800 employees at its distribution centres in Tennessee and Mississippi."
+            },
+            {
+              "category": "social",
+              "excerpt": "Nike has announced a further 1,400 job cuts, marking its second major round of layoffs this year.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999460040557167,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Jump to content\n\nThank you for registering\n\nPlease refresh the page or navigate to another page on the site to be automatically logged inPlease refresh your browser to be logged in\n\nSwipe for next article\n\nNike confirms further job cuts in major turnaround plan\n\nRachel Dobkin\n\nFriday 24 April 2026 06:45 BST\n\nNike has announced a further 1,400 job cuts, marking its second major round of layoffs this year. The majority of these redundancies will impact Nike's technology team, with workers affected across North America, Europe, and Asia...."
+            },
+            {
+              "category": "social",
+              "excerpt": "Earlier in January, Nike had already laid off nearly 800 employees at its distribution centres in Tennessee and Mississippi.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.975437710957998,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...The sportswear giant stated the cuts are part of its 'Win Now' action plan, aimed at simplifying operations and improving responsiveness. This move follows a significant 10 per cent drop in Nike's revenue for its 2025 fiscal year compared to the previous year. Earlier in January, Nike had already laid off nearly 800 employees at its distribution centres in Tennessee and Mississippi."
             }
           ],
           "confidence": 0.9,
@@ -3855,24 +4059,6 @@
           },
           "evidence": [
             {
-              "category": "digital_transformation",
-              "excerpt": "Consolidating Facilities: Streamlining Nike's technology footprint, particularly at key locations like the Philip H. Knight Campus in Beaverton, Oregon, and the Nike India Technology Center",
-              "relevance_score": 0.8740244249246103,
-              "rerank_score": 0.9996063471086891,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Alagirisamy stated that the layoffs are integral to simplifying Nike\u2019s global operations. The initiative aims to enhance operational efficiency and adaptability in response to the fast-paced nature of..."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "Restructuring Technology Teams: This aims to build more agile and focused teams",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9991264334271078,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...These adjustments will affect team structures, work locations, and overall headcount. Key components of the strategy include:\n\nRestructuring Technology Teams: This aims to build more agile and focused teams. Consolidating Facilities: Streamlining Nike\u2019s technology footprint, particularly at key locations like the Philip H. Knight Campus in Beaverton, Oregon, and the Nike India Technology Center...."
-            },
-            {
               "category": "governance",
               "excerpt": "Alagirisamy stated that the layoffs are integral to simplifying Nike's global operations",
               "relevance_score": 0.8398723435584815,
@@ -3925,6 +4111,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...The company aims to assist them during this transition phase. Recent Financial Performance\n\nThese workforce reductions follow previous layoffs, including nearly 800 jobs announced earlier this year as Nike streamlined its U.S. distribution centers. In March, Nike reported a drastic 35% decline in net income for the third quarter of fiscal 2026, totaling $520 million, down from $794 million year-over-year...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "Consolidating Facilities: Streamlining Nike's technology footprint, particularly at key locations like the Philip H. Knight Campus in Beaverton, Oregon, and the Nike India Technology Center",
+              "relevance_score": 0.8740244249246103,
+              "rerank_score": 0.9996063471086891,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Alagirisamy stated that the layoffs are integral to simplifying Nike\u2019s global operations. The initiative aims to enhance operational efficiency and adaptability in response to the fast-paced nature of..."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "Restructuring Technology Teams: This aims to build more agile and focused teams",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9991264334271078,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...These adjustments will affect team structures, work locations, and overall headcount. Key components of the strategy include:\n\nRestructuring Technology Teams: This aims to build more agile and focused teams. Consolidating Facilities: Streamlining Nike\u2019s technology footprint, particularly at key locations like the Philip H. Knight Campus in Beaverton, Oregon, and the Nike India Technology Center...."
             }
           ],
           "confidence": 0.9,
@@ -4154,6 +4358,33 @@
           },
           "evidence": [
             {
+              "category": "governance",
+              "excerpt": "Venkatesh Alagirisamy, who became chief operating officer in December, announced the reductions in a memo to staff detailing several changes 'in the coming weeks.'",
+              "relevance_score": 0.8364566335841733,
+              "rerank_score": 0.9998967536486882,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...The sportswear giant said Thursday that it is cutting about 1,400 roles in its global operations division, mainly in technology. Venkatesh Alagirisamy, who became chief operating officer in December, announced the reductions in a memo to staff detailing several changes \"in the coming weeks. \"\n\nAlagirisamy wrote that the company is in the \"final stretch\" of the turnaround plan, dubbed its \"win now\" actions, which focuses on five key areas: culture, product, marketing, marketplace, and in-person presence. The changes include modernizing manufacturing, reallocating resources, and reshaping Nike's tech team, according to the memo...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Alagirisamy wrote that the company is in the 'final stretch' of the turnaround plan, dubbed its 'win now' actions, which focuses on five key areas: culture, product, marketing, marketplace, and in-person presence.",
+              "relevance_score": 0.793396490014938,
+              "rerank_score": 0.9997429315596821,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...Venkatesh Alagirisamy, who became chief operating officer in December, announced the reductions in a memo to staff detailing several changes \"in the coming weeks. \"\n\nAlagirisamy wrote that the company is in the \"final stretch\" of the turnaround plan, dubbed its \"win now\" actions, which focuses on five key areas: culture, product, marketing, marketplace, and in-person presence. The changes include modernizing manufacturing, reallocating resources, and reshaping Nike's tech team, according to the memo...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "CEO Elliott Hill told analysts in a March earnings call that the turnaround plan is taking 'longer than I would like.'",
+              "relevance_score": 0.7851543334854114,
+              "rerank_score": 0.9965214189915318,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...The changes include modernizing manufacturing, reallocating resources, and reshaping Nike's tech team, according to the memo. The cuts mark Nike's second round of cuts in 2026, following the elimination of 775 distribution center jobs. CEO Elliott Hill told analysts in a March earnings call that the turnaround plan is taking \"longer than I would like.\"\n\nRead the full memo below:"
+            },
+            {
               "category": "social",
               "excerpt": "The sportswear giant said Thursday that it is cutting about 1,400 roles in its global operations division, mainly in technology.",
               "relevance_score": 1.0,
@@ -4197,33 +4428,6 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...Venkatesh Alagirisamy, who became chief operating officer in December, announced the reductions in a memo to staff detailing several changes \"in the coming weeks. \"\n\nAlagirisamy wrote that the company is in the \"final stretch\" of the turnaround plan, dubbed its \"win now\" actions, which focuses on five key areas: culture, product, marketing, marketplace, and in-person presence. The changes include modernizing manufacturing, reallocating resources, and reshaping Nike's tech team, according to the memo. The cuts mark Nike's second round of cuts in 2026, following the elimination of 775 distribution center jobs...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "Venkatesh Alagirisamy, who became chief operating officer in December, announced the reductions in a memo to staff detailing several changes 'in the coming weeks.'",
-              "relevance_score": 0.8364566335841733,
-              "rerank_score": 0.9998967536486882,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "...The sportswear giant said Thursday that it is cutting about 1,400 roles in its global operations division, mainly in technology. Venkatesh Alagirisamy, who became chief operating officer in December, announced the reductions in a memo to staff detailing several changes \"in the coming weeks. \"\n\nAlagirisamy wrote that the company is in the \"final stretch\" of the turnaround plan, dubbed its \"win now\" actions, which focuses on five key areas: culture, product, marketing, marketplace, and in-person presence. The changes include modernizing manufacturing, reallocating resources, and reshaping Nike's tech team, according to the memo...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "Alagirisamy wrote that the company is in the 'final stretch' of the turnaround plan, dubbed its 'win now' actions, which focuses on five key areas: culture, product, marketing, marketplace, and in-person presence.",
-              "relevance_score": 0.793396490014938,
-              "rerank_score": 0.9997429315596821,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "...Venkatesh Alagirisamy, who became chief operating officer in December, announced the reductions in a memo to staff detailing several changes \"in the coming weeks. \"\n\nAlagirisamy wrote that the company is in the \"final stretch\" of the turnaround plan, dubbed its \"win now\" actions, which focuses on five key areas: culture, product, marketing, marketplace, and in-person presence. The changes include modernizing manufacturing, reallocating resources, and reshaping Nike's tech team, according to the memo...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "CEO Elliott Hill told analysts in a March earnings call that the turnaround plan is taking 'longer than I would like.'",
-              "relevance_score": 0.7851543334854114,
-              "rerank_score": 0.9965214189915318,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "...The changes include modernizing manufacturing, reallocating resources, and reshaping Nike's tech team, according to the memo. The cuts mark Nike's second round of cuts in 2026, following the elimination of 775 distribution center jobs. CEO Elliott Hill told analysts in a March earnings call that the turnaround plan is taking \"longer than I would like.\"\n\nRead the full memo below:"
             }
           ],
           "confidence": 0.9,
@@ -4879,24 +5083,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "The sportswear giant responded to the backlash by emphasizing inclusivity, saying it wants more people to 'feel welcome in running,' regardless of 'pace, experience or the distance.'",
-              "relevance_score": 0.866180635203408,
-              "rerank_score": 0.9999596053435221,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "The sportswear giant responded to the backlash by emphasizing inclusivity, saying it wants more people to \"feel welcome in running,\" regardless of \"pace, experience or the distance.\" \"During race week in Boston, we put up a series of signs to encourage runners...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "During race week in Boston, we put up a series of signs to encourage runners. One of them missed the mark. We took it down, and we'll use this moment to do better and continue showing up for all runners.",
-              "relevance_score": 0.83316762016666,
-              "rerank_score": 0.99986295894625,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "The sportswear giant responded to the backlash by emphasizing inclusivity, saying it wants more people to \"feel welcome in running,\" regardless of \"pace, experience or the distance.\" \"During race week in Boston, we put up a series of signs to encourage runners. One of them missed the mark,\" the company said. \"We took it down, and we\u2019ll use this moment to do better and continue showing up for all runners. \"\n\nSEAFOOD RESTAURANT FIRES BACK AT ANTI-AMERICAN HUFFPOST OLYMPICS ARTICLE..."
-            },
-            {
               "category": "social",
               "excerpt": "Nike is facing backlash after a now-viral Boston Marathon ad reading 'Runners welcome. Walkers tolerated.' drew criticism online for allegedly 'pace-shaming' slower participants and those with disabilities.",
               "relevance_score": 0.9269926612613476,
@@ -4922,6 +5108,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...We should be building a more inclusive community, not isolating and belittling people that are a part of it,\" running coach Amy Gougler said in a TikTok post. \"As a run-walk runner, this is offensive,\" she added. IS THIS 'TRANSPHOBIC' SHIRT..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "The sportswear giant responded to the backlash by emphasizing inclusivity, saying it wants more people to 'feel welcome in running,' regardless of 'pace, experience or the distance.'",
+              "relevance_score": 0.866180635203408,
+              "rerank_score": 0.9999596053435221,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "The sportswear giant responded to the backlash by emphasizing inclusivity, saying it wants more people to \"feel welcome in running,\" regardless of \"pace, experience or the distance.\" \"During race week in Boston, we put up a series of signs to encourage runners...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "During race week in Boston, we put up a series of signs to encourage runners. One of them missed the mark. We took it down, and we'll use this moment to do better and continue showing up for all runners.",
+              "relevance_score": 0.83316762016666,
+              "rerank_score": 0.99986295894625,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "The sportswear giant responded to the backlash by emphasizing inclusivity, saying it wants more people to \"feel welcome in running,\" regardless of \"pace, experience or the distance.\" \"During race week in Boston, we put up a series of signs to encourage runners. One of them missed the mark,\" the company said. \"We took it down, and we\u2019ll use this moment to do better and continue showing up for all runners. \"\n\nSEAFOOD RESTAURANT FIRES BACK AT ANTI-AMERICAN HUFFPOST OLYMPICS ARTICLE..."
             }
           ],
           "confidence": 0.9,
@@ -5993,24 +6197,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "Nike's corporate communications department confirmed the removal of the sign in a statement provided to GBH News.",
-              "relevance_score": 0.8703710757128459,
-              "rerank_score": 0.999920571939519,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Nike has taken down a controversial sign at its Newbury Street store that prompted a backlash from disability advocates. The sign, displayed prominently on an outside window a few blocks from the fini..."
-            },
-            {
-              "category": "governance",
-              "excerpt": "'We want more people to feel welcome in running \u2014 no matter their pace, experience or the distance. During race week in Boston, we put up a series of signs to encourage runners. One of them missed the mark. We took it down, and we'll use this moment to do better and continue showing up for all runners,' the statement said.",
-              "relevance_score": 0.8805603081288091,
-              "rerank_score": 0.9997347818403999,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Nike has taken down a controversial sign at its Newbury Street store that prompted a backlash from disability advocates. The sign, displayed prominently on an outside window a few blocks from the fini..."
-            },
-            {
               "category": "social",
               "excerpt": "Some local runners and disability advocates argued that the sign was belittling to people who finish the race at their own pace, according to their body's ability, and goes against the inclusive mission of the marathon.",
               "relevance_score": 0.9181920567369638,
@@ -6036,6 +6222,24 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "\u201cI think everybody was so upset with what Nike did, because that\u2019s not who we are as runners, as the running community,\u201d she said. \u201cI wish that everyone could have the experience of visiting the adapt..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Nike's corporate communications department confirmed the removal of the sign in a statement provided to GBH News.",
+              "relevance_score": 0.8703710757128459,
+              "rerank_score": 0.999920571939519,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Nike has taken down a controversial sign at its Newbury Street store that prompted a backlash from disability advocates. The sign, displayed prominently on an outside window a few blocks from the fini..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "'We want more people to feel welcome in running \u2014 no matter their pace, experience or the distance. During race week in Boston, we put up a series of signs to encourage runners. One of them missed the mark. We took it down, and we'll use this moment to do better and continue showing up for all runners,' the statement said.",
+              "relevance_score": 0.8805603081288091,
+              "rerank_score": 0.9997347818403999,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Nike has taken down a controversial sign at its Newbury Street store that prompted a backlash from disability advocates. The sign, displayed prominently on an outside window a few blocks from the fini..."
             }
           ],
           "confidence": 0.9,
@@ -6215,6 +6419,15 @@
           },
           "evidence": [
             {
+              "category": "governance",
+              "excerpt": "Texas Attorney General Ken Paxton has launched an investigation into the company, issuing a Civil Investigative Demand to Lululemon's US unit to examine whether it misled consumers about product safety, quality and potential health effects",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998466927571578,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Lululemon Athletica Inc claimed its products currently sold in China do not contain per \u2014 and polyfluoroalkyl substances (PFAS), amid concerns following a US investigation into the potential presence of toxic chemicals in the leisure wear maker's apparel. Texas Attorney General Ken Paxton has launched an investigation into the company, issuing a Civil Investigative Demand to Lululemon's US unit to examine whether it misled consumers about product safety, quality and potential health effects, according to a statement released on Monday. In response to inquiries, Lululemon China said that all products currently sold in the country are free of PFAS and comply with applicable laws, regulations and industry standards...."
+            },
+            {
               "category": "social",
               "excerpt": "PFAS, sometimes referred to as 'forever chemicals', have been linked in some studies to endocrine disruption, infertility and certain cancers \u2014 raising broader concerns about their use in performance apparel",
               "relevance_score": 0.8928938124391517,
@@ -6249,15 +6462,6 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "...Texas Attorney General Ken Paxton has launched an investigation into the company, issuing a Civil Investigative Demand to Lululemon's US unit to examine whether it misled consumers about product safety, quality and potential health effects, according to a statement released on Monday. In response to inquiries, Lululemon China said that all products currently sold in the country are free of PFAS and comply with applicable laws, regulations and industry standards. Its global company spokesperson said \"Lululemon does not use PFAS in its products,\" adding it phased out the substance in fiscal 2023, after limited use in durable water repellent products."
-            },
-            {
-              "category": "governance",
-              "excerpt": "Texas Attorney General Ken Paxton has launched an investigation into the company, issuing a Civil Investigative Demand to Lululemon's US unit to examine whether it misled consumers about product safety, quality and potential health effects",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998466927571578,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Lululemon Athletica Inc claimed its products currently sold in China do not contain per \u2014 and polyfluoroalkyl substances (PFAS), amid concerns following a US investigation into the potential presence of toxic chemicals in the leisure wear maker's apparel. Texas Attorney General Ken Paxton has launched an investigation into the company, issuing a Civil Investigative Demand to Lululemon's US unit to examine whether it misled consumers about product safety, quality and potential health effects, according to a statement released on Monday. In response to inquiries, Lululemon China said that all products currently sold in the country are free of PFAS and comply with applicable laws, regulations and industry standards...."
             }
           ],
           "confidence": 0.9,
@@ -6464,33 +6668,6 @@
           },
           "evidence": [
             {
-              "category": "digital_transformation",
-              "excerpt": "the company expects to change its name to NewBird AI and use initial capital to acquire high-performance GPU assets",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998666977449151,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...This is a rare corporate reset because it combines a divestiture, a balance-sheet event, and a strategy change into one sequence. If approved, the company expects to change its name to NewBird AI and use initial capital to acquire high-performance GPU assets. The stated long-term goal is to become a fully integrated GPU-as-a-Service and AI-native cloud solutions provider...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "set its sights on a new identity centered on AI compute infrastructure and GPU-as-a-Service",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998110150503609,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "allbirds is now at an inflection point that would have seemed unlikely only a short time ago. The company has agreed to sell its brand and footwear assets, lined up a $50 million convertible financing facility, and set its sights on a new identity centered on AI compute infrastructure and GPU-as-a-Service. The shift is not complete, but the direction is clear: a consumer brand is preparing to reintroduce itself around compute capacity, capital structure, and a very different market...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "The stated long-term goal is to become a fully integrated GPU-as-a-Service and AI-native cloud solutions provider",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9995771218286335,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...If approved, the company expects to change its name to NewBird AI and use initial capital to acquire high-performance GPU assets. The stated long-term goal is to become a fully integrated GPU-as-a-Service and AI-native cloud solutions provider. What If Demand for AI Compute Keeps Tightening?"
-            },
-            {
               "category": "governance",
               "excerpt": "Allbirds has already entered into a definitive agreement to sell its brand and footwear assets to American Exchange Group",
               "relevance_score": 1.0,
@@ -6516,6 +6693,33 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...What Happens When Shareholders Decide the Pace?\n\nShareholder support will determine how quickly the transformation can proceed. The company has already secured support agreements covering approximately 71% of its voting power, including key board members and major investors, for the asset sale and related proposals. That does not remove execution risk, but it meaningfully improves the odds that the transaction path remains intact."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "the company expects to change its name to NewBird AI and use initial capital to acquire high-performance GPU assets",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998666977449151,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...This is a rare corporate reset because it combines a divestiture, a balance-sheet event, and a strategy change into one sequence. If approved, the company expects to change its name to NewBird AI and use initial capital to acquire high-performance GPU assets. The stated long-term goal is to become a fully integrated GPU-as-a-Service and AI-native cloud solutions provider...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "set its sights on a new identity centered on AI compute infrastructure and GPU-as-a-Service",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998110150503609,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "allbirds is now at an inflection point that would have seemed unlikely only a short time ago. The company has agreed to sell its brand and footwear assets, lined up a $50 million convertible financing facility, and set its sights on a new identity centered on AI compute infrastructure and GPU-as-a-Service. The shift is not complete, but the direction is clear: a consumer brand is preparing to reintroduce itself around compute capacity, capital structure, and a very different market...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "The stated long-term goal is to become a fully integrated GPU-as-a-Service and AI-native cloud solutions provider",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9995771218286335,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...If approved, the company expects to change its name to NewBird AI and use initial capital to acquire high-performance GPU assets. The stated long-term goal is to become a fully integrated GPU-as-a-Service and AI-native cloud solutions provider. What If Demand for AI Compute Keeps Tightening?"
             }
           ],
           "confidence": 0.9,
@@ -6971,24 +7175,6 @@
           },
           "evidence": [
             {
-              "category": "social",
-              "excerpt": "emerging research and consumer concerns have raised questions about whether certain synthetic materials in the apparel could be linked to endocrine disruption, infertility, cancer and other health risks",
-              "relevance_score": 0.8471749517229872,
-              "rerank_score": 0.9999551837786929,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "According to Reuters, Attorney General Paxton said emerging research and consumer concerns have raised \u2060questions about whether certain synthetic materials in the apparel could be linked to endocrine disruption, infertility, cancer and other health risks. PFAS are associated with harmful health effects in humans and animals, according to the US Environmental Protection Agency...."
-            },
-            {
-              "category": "social",
-              "excerpt": "PFAS are associated with harmful health effects in humans and animals, according to the US Environmental Protection Agency",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999039886330952,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "According to Reuters, Attorney General Paxton said emerging research and consumer concerns have raised \u2060questions about whether certain synthetic materials in the apparel could be linked to endocrine disruption, infertility, cancer and other health risks. PFAS are associated with harmful health effects in humans and animals, according to the US Environmental Protection Agency. The Office of the Attorney General will examine Lululemon's testing protocols, restricted substances list and supply chain practices against state safety standards...."
-            },
-            {
               "category": "environmental",
               "excerpt": "The Office of the Attorney General will examine Lululemon's testing protocols, restricted substances list and supply chain practices against state safety standards.",
               "relevance_score": 1.0,
@@ -7032,6 +7218,24 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "...PFAS are associated with harmful health effects in humans and animals, according to the US Environmental Protection Agency. The Office of the Attorney General will examine Lululemon's testing protocols, restricted substances list and supply chain practices against state safety standards. \"If Lululemon has violated Texas law, it will be \u2060held accountable,\" Paxton \u2060said in his post. The company spokesperson said they are aware of the inquiry and are cooperating...."
+            },
+            {
+              "category": "social",
+              "excerpt": "emerging research and consumer concerns have raised questions about whether certain synthetic materials in the apparel could be linked to endocrine disruption, infertility, cancer and other health risks",
+              "relevance_score": 0.8471749517229872,
+              "rerank_score": 0.9999551837786929,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "According to Reuters, Attorney General Paxton said emerging research and consumer concerns have raised \u2060questions about whether certain synthetic materials in the apparel could be linked to endocrine disruption, infertility, cancer and other health risks. PFAS are associated with harmful health effects in humans and animals, according to the US Environmental Protection Agency...."
+            },
+            {
+              "category": "social",
+              "excerpt": "PFAS are associated with harmful health effects in humans and animals, according to the US Environmental Protection Agency",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999039886330952,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "According to Reuters, Attorney General Paxton said emerging research and consumer concerns have raised \u2060questions about whether certain synthetic materials in the apparel could be linked to endocrine disruption, infertility, cancer and other health risks. PFAS are associated with harmful health effects in humans and animals, according to the US Environmental Protection Agency. The Office of the Attorney General will examine Lululemon's testing protocols, restricted substances list and supply chain practices against state safety standards...."
             }
           ],
           "confidence": 0.9,
@@ -7075,6 +7279,24 @@
           },
           "evidence": [
             {
+              "category": "governance",
+              "excerpt": "The Office of the Attorney-General will examine Lululemon's testing protocols, restricted substances list and supply chain practices against state safety standards",
+              "relevance_score": 0.8807981332310977,
+              "rerank_score": 0.9999480920569034,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "PFAS are associated with harmful health effects in humans and animals, according to the US Environmental Protection Agency. The Office of the Attorney-General will examine Lululemon\u2019s testing protocols, restricted substances list and supply chain practices against state safety standards. \u201cIf Lululemon has violated Texas law, it will be held accountable,\u201d Mr Paxton said in his post...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "\"If Lululemon has violated Texas law, it will be held accountable,\" Mr Paxton said in his post",
+              "relevance_score": 0.8087412085112269,
+              "rerank_score": 0.999941124771194,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "PFAS are associated with harmful health effects in humans and animals, according to the US Environmental Protection Agency.\n\nThe Office of the Attorney-General will examine Lululemon\u2019s testing protoco..."
+            },
+            {
               "category": "environmental",
               "excerpt": "Texas Attorney-General Ken Paxton has launched an investigation into athleisure brand Lululemon over the potential presence of \"forever chemicals\" in its activewear",
               "relevance_score": 0.9218965312083877,
@@ -7100,24 +7322,6 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "PFAS are associated with harmful health effects in humans and animals, according to the US Environmental Protection Agency. The Office of the Attorney-General will examine Lululemon\u2019s testing protocols, restricted substances list and supply chain practices against state safety standards...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "The Office of the Attorney-General will examine Lululemon's testing protocols, restricted substances list and supply chain practices against state safety standards",
-              "relevance_score": 0.8807981332310977,
-              "rerank_score": 0.9999480920569034,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "PFAS are associated with harmful health effects in humans and animals, according to the US Environmental Protection Agency. The Office of the Attorney-General will examine Lululemon\u2019s testing protocols, restricted substances list and supply chain practices against state safety standards. \u201cIf Lululemon has violated Texas law, it will be held accountable,\u201d Mr Paxton said in his post...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "\"If Lululemon has violated Texas law, it will be held accountable,\" Mr Paxton said in his post",
-              "relevance_score": 0.8087412085112269,
-              "rerank_score": 0.999941124771194,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "PFAS are associated with harmful health effects in humans and animals, according to the US Environmental Protection Agency.\n\nThe Office of the Attorney-General will examine Lululemon\u2019s testing protoco..."
             }
           ],
           "confidence": 0.9,
@@ -7161,24 +7365,6 @@
           },
           "evidence": [
             {
-              "category": "environmental",
-              "excerpt": "The investigation concerns whether Lululemon's athletic apparel contains PFAS, or perfluoroalkyl and polyfluoroalkyl substances.",
-              "relevance_score": 0.9067894736977369,
-              "rerank_score": 0.9999735180455381,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "The investigation concerns whether Lululemon\u2019s athletic apparel contains PFAS, or perfluoroalkyl and polyfluoroalkyl substances.\n\nA Lululemon store is in the Westfield Graden State Plaza shopping mall..."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "These so-called 'forever chemicals' don't break down easily, and the attorney general's office said Lululemon's customers wouldn't expect their presence based on the brand's marketing, which highlights wellness and sustainability.",
-              "relevance_score": 0.875396320424334,
-              "rerank_score": 0.9998380674120739,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "A 16-year-old from Florida charged with sexually assaulting and killing stepsister on a cruise ship3 contractors cited for violations in death of worker building major ICE detention camp, or perfluoro..."
-            },
-            {
               "category": "governance",
               "excerpt": "Texas Attorney General Ken Paxton has launched a probe into Lululemon over the potential use of harmful chemicals in its clothing.",
               "relevance_score": 1.0,
@@ -7201,6 +7387,24 @@
               "excerpt": "'Americans should not have to worry if they are being deceived when trying to make healthy choices for themselves and their families,' Paxton said in a statement.",
               "relevance_score": 0.7742933096011027,
               "rerank_score": 0.9911540288607621,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "A 16-year-old from Florida charged with sexually assaulting and killing stepsister on a cruise ship3 contractors cited for violations in death of worker building major ICE detention camp, or perfluoro..."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "The investigation concerns whether Lululemon's athletic apparel contains PFAS, or perfluoroalkyl and polyfluoroalkyl substances.",
+              "relevance_score": 0.9067894736977369,
+              "rerank_score": 0.9999735180455381,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "The investigation concerns whether Lululemon\u2019s athletic apparel contains PFAS, or perfluoroalkyl and polyfluoroalkyl substances.\n\nA Lululemon store is in the Westfield Graden State Plaza shopping mall..."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "These so-called 'forever chemicals' don't break down easily, and the attorney general's office said Lululemon's customers wouldn't expect their presence based on the brand's marketing, which highlights wellness and sustainability.",
+              "relevance_score": 0.875396320424334,
+              "rerank_score": 0.9998380674120739,
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "A 16-year-old from Florida charged with sexually assaulting and killing stepsister on a cruise ship3 contractors cited for violations in death of worker building major ICE detention camp, or perfluoro..."
@@ -7246,33 +7450,6 @@
             }
           },
           "evidence": [
-            {
-              "category": "governance",
-              "excerpt": "The Office of the Attorney General will also review the company's Restricted Substances List, testing protocols, and supply chain practices to determine whether Lululemon's products comply with its stated safety standards.",
-              "relevance_score": 0.8737564088757448,
-              "rerank_score": 0.9998710645788284,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Attorney General Paxton\u2019s investigation will examine whether Lululemon\u2019s athletic apparel contains PFAS or \u201cforever chemicals\u201d that their health-conscious customers would not expect based on the brand\u2019s marketing. The Office of the Attorney General will also review the company\u2019s Restricted Substances List, testing protocols, and supply chain practices to determine whether Lululemon\u2019s products comply with its stated safety standards. Paxton said in a statement, \u201cAmericans should not have to worry if they are being deceived when trying to make healthy choices for themselves and their families.\u201d\n\n\u201cI will not allow any corporation to sell harmful, toxic materials to consumers at a premium price under the guise of wellness and sustainability,\u201d he said, promising accountability...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "Texas Attorney General Ken Paxton announced the investigation on Monday, explaining that the Lone Star State will determine if the brand \"misled consumers about the safety, quality, and health impacts of its products.\"",
-              "relevance_score": 0.8458776110527332,
-              "rerank_score": 0.9998436355249011,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "...Lululemon has come under fire in recent days over allegations of the brand\u2019s use of \u201cforever chemicals\u201d \u2014polyfluoroalkyl chemicals (PFAS) \u2014 in the clothing. PFAS have been linked to various health issues, including infertility and cancer. Texas Attorney General Ken Paxton announced the investigation on Monday, explaining that the Lone Star State will determine if the brand \u201cmisled consumers about the safety, quality, and health impacts of its products.\u201d It cites \u201cemerging research and consumer concerns\u201d over the potential presence of \u201ccertain synthetic materials and chemical compounds in their apparel that may be associated with endocrine disruption, infertility, cancer, and other health issues.\u201d\n\nPer the press release:"
-            },
-            {
-              "category": "governance",
-              "excerpt": "\"If Lululemon has violated Texas law, it will be held accountable.\"",
-              "relevance_score": 0.7925368455716,
-              "rerank_score": 0.9997253068433151,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Attorney General Paxton\u2019s investigation will examine whether Lululemon\u2019s athletic apparel contains PFAS or \u201cforever chemicals\u201d that their health-conscious customers would not expect based on the brand..."
-            },
             {
               "category": "environmental",
               "excerpt": "Texas is launching an investigation into the major athletic apparel brand Lululemon Athletica Inc. over the potential presence of \"forever chemicals\" in the apparel.",
@@ -7323,6 +7500,33 @@
               "excerpt": "\"Americans should not have to worry if they are being deceived when trying to make healthy choices for themselves and their families.\"",
               "relevance_score": 0.7977455648359276,
               "rerank_score": 0.9993354076641283,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Attorney General Paxton\u2019s investigation will examine whether Lululemon\u2019s athletic apparel contains PFAS or \u201cforever chemicals\u201d that their health-conscious customers would not expect based on the brand..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "The Office of the Attorney General will also review the company's Restricted Substances List, testing protocols, and supply chain practices to determine whether Lululemon's products comply with its stated safety standards.",
+              "relevance_score": 0.8737564088757448,
+              "rerank_score": 0.9998710645788284,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Attorney General Paxton\u2019s investigation will examine whether Lululemon\u2019s athletic apparel contains PFAS or \u201cforever chemicals\u201d that their health-conscious customers would not expect based on the brand\u2019s marketing. The Office of the Attorney General will also review the company\u2019s Restricted Substances List, testing protocols, and supply chain practices to determine whether Lululemon\u2019s products comply with its stated safety standards. Paxton said in a statement, \u201cAmericans should not have to worry if they are being deceived when trying to make healthy choices for themselves and their families.\u201d\n\n\u201cI will not allow any corporation to sell harmful, toxic materials to consumers at a premium price under the guise of wellness and sustainability,\u201d he said, promising accountability...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Texas Attorney General Ken Paxton announced the investigation on Monday, explaining that the Lone Star State will determine if the brand \"misled consumers about the safety, quality, and health impacts of its products.\"",
+              "relevance_score": 0.8458776110527332,
+              "rerank_score": 0.9998436355249011,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...Lululemon has come under fire in recent days over allegations of the brand\u2019s use of \u201cforever chemicals\u201d \u2014polyfluoroalkyl chemicals (PFAS) \u2014 in the clothing. PFAS have been linked to various health issues, including infertility and cancer. Texas Attorney General Ken Paxton announced the investigation on Monday, explaining that the Lone Star State will determine if the brand \u201cmisled consumers about the safety, quality, and health impacts of its products.\u201d It cites \u201cemerging research and consumer concerns\u201d over the potential presence of \u201ccertain synthetic materials and chemical compounds in their apparel that may be associated with endocrine disruption, infertility, cancer, and other health issues.\u201d\n\nPer the press release:"
+            },
+            {
+              "category": "governance",
+              "excerpt": "\"If Lululemon has violated Texas law, it will be held accountable.\"",
+              "relevance_score": 0.7925368455716,
+              "rerank_score": 0.9997253068433151,
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "Attorney General Paxton\u2019s investigation will examine whether Lululemon\u2019s athletic apparel contains PFAS or \u201cforever chemicals\u201d that their health-conscious customers would not expect based on the brand..."
@@ -7482,24 +7686,6 @@
           },
           "evidence": [
             {
-              "category": "social",
-              "excerpt": "The health and safety of our guests is paramount, and our products meet or exceed global regulatory, safety, and quality standards",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998626482423811,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "\u201cThe health and safety of our guests is paramount, and our products meet or exceed global regulatory, safety, and quality standards,\u201d they stated. \u201cWe require all our vendors to regularly conduct testing for restricted substances, including PFAS, by credible third-party agencies to confirm ongoing compliance.\u201d..."
-            },
-            {
-              "category": "social",
-              "excerpt": "According to Health Canada, PFAS are a group of chemicals used as surfactants, lubricants, and repellents for dirt, water, and grease. And because they don't break down easily, they stay in the environment for a long time. These chemicals can impact people's health, such as the liver, kidneys, and thyroid, as well as body weight and metabolism.",
-              "relevance_score": 0.9127040104977743,
-              "rerank_score": 0.9998223917546452,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "According to Health Canada, PFAS are a group of chemicals used as surfactants, lubricants, and repellents for dirt, water, and grease. And because they don\u2019t break down easily, they stay in the environment for a long time. These chemicals can impact people\u2019s health, such as the liver, kidneys, and thyroid, as well as body weight and metabolism. It can also affect the immune and nervous systems, and the development and reproductive system...."
-            },
-            {
               "category": "environmental",
               "excerpt": "We require all our vendors to regularly conduct testing for restricted substances, including PFAS, by credible third-party agencies to confirm ongoing compliance.",
               "relevance_score": 1.0,
@@ -7516,6 +7702,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...It can also affect the immune and nervous systems, and the development and reproductive system. In an email to Daily Hive, a lululemon spokesperson said that the company is cooperating with the investigation. They added that the company does not use PFAS in its products and that it was phased out in the 2023 fiscal year when it was used in a small percentage of water repellent products."
+            },
+            {
+              "category": "social",
+              "excerpt": "The health and safety of our guests is paramount, and our products meet or exceed global regulatory, safety, and quality standards",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998626482423811,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "\u201cThe health and safety of our guests is paramount, and our products meet or exceed global regulatory, safety, and quality standards,\u201d they stated. \u201cWe require all our vendors to regularly conduct testing for restricted substances, including PFAS, by credible third-party agencies to confirm ongoing compliance.\u201d..."
+            },
+            {
+              "category": "social",
+              "excerpt": "According to Health Canada, PFAS are a group of chemicals used as surfactants, lubricants, and repellents for dirt, water, and grease. And because they don't break down easily, they stay in the environment for a long time. These chemicals can impact people's health, such as the liver, kidneys, and thyroid, as well as body weight and metabolism.",
+              "relevance_score": 0.9127040104977743,
+              "rerank_score": 0.9998223917546452,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "According to Health Canada, PFAS are a group of chemicals used as surfactants, lubricants, and repellents for dirt, water, and grease. And because they don\u2019t break down easily, they stay in the environment for a long time. These chemicals can impact people\u2019s health, such as the liver, kidneys, and thyroid, as well as body weight and metabolism. It can also affect the immune and nervous systems, and the development and reproductive system...."
             },
             {
               "category": "governance",
@@ -7586,6 +7790,24 @@
           },
           "evidence": [
             {
+              "category": "governance",
+              "excerpt": "If Lululemon has violated Texas law, it will be held accountable",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999464277581459,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...\u201cI will not allow any corporation to sell harmful, toxic materials to consumers at a premium price under the guise of wellness and sustainability. If Lululemon has violated Texas law, it will be held accountable.\u201d A statement from a Lululemon company spokesperson to WFAA said the retailer is cooperating with the investigation and pushed back on the allegations...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Paxton's office sent a Civil Investigative Demand to Lululemon USA Inc. as part of a probe into whether the company \"has misled consumers about the safety, quality, and health impacts of its products\"",
+              "relevance_score": 0.88666373497708,
+              "rerank_score": 0.9999021916508218,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "AUSTIN, Texas \u2014 Texas Attorney General Ken Paxton has launched an investigation into athletic apparel company Lululemon over concerns about potentially harmful chemicals in its products.\n\nAccording to..."
+            },
+            {
               "category": "social",
               "excerpt": "Texas Attorney General Ken Paxton has launched an investigation into athletic apparel company Lululemon over concerns about potentially harmful chemicals in its products",
               "relevance_score": 1.0,
@@ -7620,24 +7842,6 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "\u201cAmericans should not have to worry if they are being deceived when trying to make healthy choices for themselves and their families,\u201d Paxton said. \u201cI will not allow any corporation to sell harmful, toxic materials to consumers at a premium price under the guise of wellness and sustainability. If Lululemon has violated Texas law, it will be held accountable.\u201d..."
-            },
-            {
-              "category": "governance",
-              "excerpt": "If Lululemon has violated Texas law, it will be held accountable",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999464277581459,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...\u201cI will not allow any corporation to sell harmful, toxic materials to consumers at a premium price under the guise of wellness and sustainability. If Lululemon has violated Texas law, it will be held accountable.\u201d A statement from a Lululemon company spokesperson to WFAA said the retailer is cooperating with the investigation and pushed back on the allegations...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "Paxton's office sent a Civil Investigative Demand to Lululemon USA Inc. as part of a probe into whether the company \"has misled consumers about the safety, quality, and health impacts of its products\"",
-              "relevance_score": 0.88666373497708,
-              "rerank_score": 0.9999021916508218,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "AUSTIN, Texas \u2014 Texas Attorney General Ken Paxton has launched an investigation into athletic apparel company Lululemon over concerns about potentially harmful chemicals in its products.\n\nAccording to..."
             }
           ],
           "confidence": 0.95,
@@ -8361,15 +8565,6 @@
           },
           "evidence": [
             {
-              "category": "environmental",
-              "excerpt": "The company continues to invest in sustainability initiatives, digital transformation and athlete partnerships to drive long-term growth.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998254195485182,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Under Armour has also faced corporate governance questions in the past but has strengthened its board with new independent directors possessing strong financial and retail expertise. These changes are viewed positively by some investors as supporting a potential strategic review, including possible sale or privatization scenarios, though no formal process has been announced. The company continues to invest in sustainability initiatives, digital transformation and athlete partnerships to drive long-term growth. Its connected fitness platform and apps remain part of the ecosystem, though less emphasized than in previous years...."
-            },
-            {
               "category": "governance",
               "excerpt": "Under Armour has also faced corporate governance questions in the past but has strengthened its board with new independent directors possessing strong financial and retail expertise.",
               "relevance_score": 1.0,
@@ -8386,6 +8581,15 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "Under Armour has also faced corporate governance questions in the past but has strengthened its board with new independent directors possessing strong financial and retail expertise. These changes are viewed positively by some investors as supporting a potential strategic review, including possible sale or privatization scenarios, though no formal process has been announced. The company continues to invest in sustainability initiatives, digital transformation and athlete partnerships to drive long-term growth...."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "The company continues to invest in sustainability initiatives, digital transformation and athlete partnerships to drive long-term growth.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998254195485182,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Under Armour has also faced corporate governance questions in the past but has strengthened its board with new independent directors possessing strong financial and retail expertise. These changes are viewed positively by some investors as supporting a potential strategic review, including possible sale or privatization scenarios, though no formal process has been announced. The company continues to invest in sustainability initiatives, digital transformation and athlete partnerships to drive long-term growth. Its connected fitness platform and apps remain part of the ecosystem, though less emphasized than in previous years...."
             },
             {
               "category": "digital_transformation",
@@ -8701,24 +8905,6 @@
           },
           "evidence": [
             {
-              "category": "digital_transformation",
-              "excerpt": "The brand has been investing in initiatives such as in-store foot ID analysis, where consumers can run on a treadmill and receive a detailed assessment before purchasing footwear.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998225429201426,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...This focus has translated into a product-led strategy that emphasises performance and technology. The brand has been investing in initiatives such as in-store foot ID analysis, where consumers can run on a treadmill and receive a detailed assessment before purchasing footwear. \u201cThere is not even a single brand which is making you run on a treadmill, show you the foot ID analysis, give you a physical report and then offer you the shoe,\u201d Sharma says, adding that such experiences help build trust and educate consumers...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "There is not even a single brand which is making you run on a treadmill, show you the foot ID analysis, give you a physical report and then offer you the shoe",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9996501529146825,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...The brand has been investing in initiatives such as in-store foot ID analysis, where consumers can run on a treadmill and receive a detailed assessment before purchasing footwear. \u201cThere is not even a single brand which is making you run on a treadmill, show you the foot ID analysis, give you a physical report and then offer you the shoe,\u201d Sharma says, adding that such experiences help build trust and educate consumers. Even as running leads the pack, ASICS continues to broaden its portfolio...."
-            },
-            {
               "category": "social",
               "excerpt": "We wanted to come back to the community concept of Ekiden",
               "relevance_score": 0.7584312452071451,
@@ -8744,6 +8930,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...The Japanese sportswear brand recently hosted the first edition of the ASICS Ekiden India 2026. The relay, rooted in Japan\u2019s long-standing running tradition, brings teams together to pass a tasuki, a ceremonial sash that symbolises continuity, shared purpose and teamwork. With more than 240 teams participating, each comprising four runners including at least one Japanese participant, the event served as both a sporting contest and a cultural bridge between India and Japan. For ASICS, the move is deliberate...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "The brand has been investing in initiatives such as in-store foot ID analysis, where consumers can run on a treadmill and receive a detailed assessment before purchasing footwear.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998225429201426,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...This focus has translated into a product-led strategy that emphasises performance and technology. The brand has been investing in initiatives such as in-store foot ID analysis, where consumers can run on a treadmill and receive a detailed assessment before purchasing footwear. \u201cThere is not even a single brand which is making you run on a treadmill, show you the foot ID analysis, give you a physical report and then offer you the shoe,\u201d Sharma says, adding that such experiences help build trust and educate consumers...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "There is not even a single brand which is making you run on a treadmill, show you the foot ID analysis, give you a physical report and then offer you the shoe",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9996501529146825,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...The brand has been investing in initiatives such as in-store foot ID analysis, where consumers can run on a treadmill and receive a detailed assessment before purchasing footwear. \u201cThere is not even a single brand which is making you run on a treadmill, show you the foot ID analysis, give you a physical report and then offer you the shoe,\u201d Sharma says, adding that such experiences help build trust and educate consumers. Even as running leads the pack, ASICS continues to broaden its portfolio...."
             }
           ],
           "confidence": 0.9,
@@ -9650,15 +9854,6 @@
           },
           "evidence": [
             {
-              "category": "social",
-              "excerpt": "At the close of the year, the company employed 362 people, nearly 90% in the United States. More than 200 people worked in its stores at that point, though Allbirds now has fewer than 50 retail employees.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.5448125926806884,
-              "match_method": "exact",
-              "confidence": "low",
-              "context_snippet": "...Throughout, the company failed to turn a profit. In financial filings Tuesday, Allbirds said it has \u201cincurred significant net losses since inception\u201d and expects \u201cto incur significant losses and negative cash flows from operating activities in the future.\u201d At the close of the year, the company employed 362 people, nearly 90% in the United States. More than 200 people worked in its stores at that point, though Allbirds now has fewer than 50 retail employees. The sale to AXNY is expected to close in Q2."
-            },
-            {
               "category": "governance",
               "excerpt": "Allbirds warned of 'substantial doubt about our ability to continue as a going concern' in financial filings Tuesday.",
               "relevance_score": 0.843920993350088,
@@ -9684,6 +9879,15 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...Gross margin contracted to 41% from 42.7% a year ago. The company said it has never turned a profit; net loss last year narrowed by 17% compared to 2024 but topped $77 million. Dive Insight:\n\nIt\u2019s been years since Allbirds relinquished its unicorn status, and this sale is only the latest sign that the disruption from direct-to-consumer brands has fizzled."
+            },
+            {
+              "category": "social",
+              "excerpt": "At the close of the year, the company employed 362 people, nearly 90% in the United States. More than 200 people worked in its stores at that point, though Allbirds now has fewer than 50 retail employees.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.5448125926806884,
+              "match_method": "exact",
+              "confidence": "low",
+              "context_snippet": "...Throughout, the company failed to turn a profit. In financial filings Tuesday, Allbirds said it has \u201cincurred significant net losses since inception\u201d and expects \u201cto incur significant losses and negative cash flows from operating activities in the future.\u201d At the close of the year, the company employed 362 people, nearly 90% in the United States. More than 200 people worked in its stores at that point, though Allbirds now has fewer than 50 retail employees. The sale to AXNY is expected to close in Q2."
             }
           ],
           "confidence": 0.9,
@@ -9958,15 +10162,6 @@
           },
           "evidence": [
             {
-              "category": "digital_transformation",
-              "excerpt": "the company grappled with a sluggish digital business, stubborn excess inventory and intensifying competition",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9996894516724485,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Hill, who took the helm in 2024, has looked to reset the business as the company grappled with a sluggish digital business, stubborn excess inventory and intensifying competition from Chinese sportswear brands such as Anta and Li Ning, which have deeper connections with Chinese consumers. TURNAROUND IN TURMOIL\n\nThe turnaround \"is taking longer than I would like,\" Hill said on Nike's third-quarter earnings call...."
-            },
-            {
               "category": "governance",
               "excerpt": "Nike has also lagged competition due to years of strategy missteps and lack of innovation.",
               "relevance_score": 1.0,
@@ -9992,6 +10187,15 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...\"If Nike's recovery is a marathon rather than a sprint, then the company seems to be \u2060hitting a \u200cwall,\" said Russ Mould, investment director at AJ Bell. Live Events\n\n\"Pleas for patience from CEO Elliott Hill, a Nike lifer, who returned from retirement to lead the company, are falling on deaf ears. \"\n\nMajor sportswear \u2060makers including Nike and Adidas have been hit by their heavy reliance on manufacturing hubs in Southeast Asia, leaving them exposed to steep U.S. tariffs on imports from Vietnam and other countries."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "the company grappled with a sluggish digital business, stubborn excess inventory and intensifying competition",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9996894516724485,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Hill, who took the helm in 2024, has looked to reset the business as the company grappled with a sluggish digital business, stubborn excess inventory and intensifying competition from Chinese sportswear brands such as Anta and Li Ning, which have deeper connections with Chinese consumers. TURNAROUND IN TURMOIL\n\nThe turnaround \"is taking longer than I would like,\" Hill said on Nike's third-quarter earnings call...."
             }
           ],
           "confidence": 0.9,
@@ -11150,6 +11354,15 @@
           },
           "evidence": [
             {
+              "category": "digital_transformation",
+              "excerpt": "charged with improving retail ties, clearing stale stock and speeding its digital push",
+              "relevance_score": 0.7279230562827719,
+              "rerank_score": 0.99983766422034,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "The sportswear giant earlier this year appointed 25-year company veteran Cathy Sparks as Vice President and General Manager of Greater China, succeeding long-time executive Angela Dong, charged with i..."
+            },
+            {
               "category": "governance",
               "excerpt": "Structural issues have compounded Nike's brand problems, according to two former and one current Nike China employees who spoke on condition of anonymity",
               "relevance_score": 0.8913125193198725,
@@ -11175,15 +11388,6 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "Structural issues have compounded Nike's brand problems, according to two former and one current Nike China employees \u200bwho spoke on condition of \u2060anonymity. A top-down decision-making culture blunted responsiveness to local demand, while repeated efforts to push poorly received products onto retail partners intensified inventory strains at a time of slowing consumer spending. Frequent discounting to clear excess inventory hurt Nike\u2019s brand image and its wholesale relationships, they added...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "charged with improving retail ties, clearing stale stock and speeding its digital push",
-              "relevance_score": 0.7279230562827719,
-              "rerank_score": 0.99983766422034,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "The sportswear giant earlier this year appointed 25-year company veteran Cathy Sparks as Vice President and General Manager of Greater China, succeeding long-time executive Angela Dong, charged with i..."
             }
           ],
           "confidence": 0.9,
