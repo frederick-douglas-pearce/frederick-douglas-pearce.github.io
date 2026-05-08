@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-07T14:00:40.116873+00:00",
+  "generated_at": "2026-05-08T14:00:42.072711+00:00",
   "total_articles": 640,
   "brands": [
     "361 Degrees",
@@ -42,11 +42,11 @@
   "categories": ["digital_transformation", "environmental", "governance", "social"],
   "scorecard": {
     "period_days": 14,
-    "period_start": "2026-04-23",
-    "period_end": "2026-05-07",
-    "articles_in_period": 61,
-    "articles_after_dedup": 27,
-    "duplicates_removed": 34,
+    "period_start": "2026-04-24",
+    "period_end": "2026-05-08",
+    "articles_in_period": 37,
+    "articles_after_dedup": 26,
+    "duplicates_removed": 11,
     "top_brands": [
       {
         "brand": "Anta",
@@ -134,10 +134,10 @@
         "brand": "Nike",
         "total": -1,
         "environmental": 0,
-        "social": -3,
+        "social": -2,
         "governance": -3,
-        "digital_transformation": 5,
-        "article_count": 10
+        "digital_transformation": 4,
+        "article_count": 9
       }
     ],
     "all_brand_scores": [
@@ -261,10 +261,10 @@
         "brand": "Nike",
         "total": -1,
         "environmental": 0,
-        "social": -3,
+        "social": -2,
         "governance": -3,
-        "digital_transformation": 5,
-        "article_count": 10
+        "digital_transformation": 4,
+        "article_count": 9
       }
     ]
   },
