@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-16T14:00:39.710577+00:00",
+  "generated_at": "2026-05-17T14:00:42.929877+00:00",
   "total_articles": 651,
   "brands": [
     "361 Degrees",
@@ -43,11 +43,11 @@
   "categories": ["digital_transformation", "environmental", "governance", "social"],
   "scorecard": {
     "period_days": 14,
-    "period_start": "2026-05-02",
-    "period_end": "2026-05-16",
-    "articles_in_period": 19,
-    "articles_after_dedup": 16,
-    "duplicates_removed": 3,
+    "period_start": "2026-05-03",
+    "period_end": "2026-05-17",
+    "articles_in_period": 16,
+    "articles_after_dedup": 14,
+    "duplicates_removed": 2,
     "top_brands": [
       {
         "brand": "Adidas",
@@ -122,15 +122,6 @@
     ],
     "bottom_brands": [
       {
-        "brand": "Nike",
-        "total": -5,
-        "environmental": 0,
-        "social": -1,
-        "governance": -4,
-        "digital_transformation": 0,
-        "article_count": 5
-      },
-      {
         "brand": "Lululemon",
         "total": -1,
         "environmental": 0,
@@ -138,6 +129,15 @@
         "governance": -1,
         "digital_transformation": 0,
         "article_count": 1
+      },
+      {
+        "brand": "Nike",
+        "total": -1,
+        "environmental": 0,
+        "social": 1,
+        "governance": -2,
+        "digital_transformation": 0,
+        "article_count": 3
       },
       {
         "brand": "Skechers",
@@ -248,6 +248,15 @@
         "article_count": 1
       },
       {
+        "brand": "Nike",
+        "total": -1,
+        "environmental": 0,
+        "social": 1,
+        "governance": -2,
+        "digital_transformation": 0,
+        "article_count": 3
+      },
+      {
         "brand": "Skechers",
         "total": -1,
         "environmental": 0,
@@ -264,15 +273,6 @@
         "governance": -1,
         "digital_transformation": 0,
         "article_count": 1
-      },
-      {
-        "brand": "Nike",
-        "total": -5,
-        "environmental": 0,
-        "social": -1,
-        "governance": -4,
-        "digital_transformation": 0,
-        "article_count": 5
       }
     ]
   },
