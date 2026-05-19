@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-18T14:00:42.935382+00:00",
-  "total_articles": 652,
+  "generated_at": "2026-05-19T14:00:41.696208+00:00",
+  "total_articles": 657,
   "brands": [
     "361 Degrees",
     "ASICS",
@@ -43,26 +43,16 @@
   "categories": ["digital_transformation", "environmental", "governance", "social"],
   "scorecard": {
     "period_days": 14,
-    "period_start": "2026-05-04",
-    "period_end": "2026-05-18",
-    "articles_in_period": 16,
-    "articles_after_dedup": 14,
-    "duplicates_removed": 2,
+    "period_start": "2026-05-05",
+    "period_end": "2026-05-19",
+    "articles_in_period": 18,
+    "articles_after_dedup": 11,
+    "duplicates_removed": 7,
     "top_brands": [
       {
         "brand": "Adidas",
-        "total": 4,
-        "environmental": 2,
-        "social": 2,
-        "governance": 0,
-        "digital_transformation": 0,
-        "article_count": 2,
-        "medal": "gold"
-      },
-      {
-        "brand": "Patagonia",
-        "total": 4,
-        "environmental": 2,
+        "total": 2,
+        "environmental": 0,
         "social": 2,
         "governance": 0,
         "digital_transformation": 0,
@@ -77,7 +67,7 @@
         "governance": 0,
         "digital_transformation": 0,
         "article_count": 1,
-        "medal": "silver"
+        "medal": "gold"
       },
       {
         "brand": "Xtep",
@@ -87,7 +77,7 @@
         "governance": 0,
         "digital_transformation": 0,
         "article_count": 1,
-        "medal": "silver"
+        "medal": "gold"
       },
       {
         "brand": "Yonex",
@@ -97,17 +87,7 @@
         "governance": 0,
         "digital_transformation": 0,
         "article_count": 1,
-        "medal": "silver"
-      },
-      {
-        "brand": "Columbia Sportswear",
-        "total": 1,
-        "environmental": 0,
-        "social": 0,
-        "governance": 1,
-        "digital_transformation": 0,
-        "article_count": 1,
-        "medal": "bronze"
+        "medal": "gold"
       },
       {
         "brand": "Puma",
@@ -117,7 +97,7 @@
         "governance": 1,
         "digital_transformation": 0,
         "article_count": 1,
-        "medal": "bronze"
+        "medal": "silver"
       }
     ],
     "bottom_brands": [
@@ -161,18 +141,8 @@
     "all_brand_scores": [
       {
         "brand": "Adidas",
-        "total": 4,
-        "environmental": 2,
-        "social": 2,
-        "governance": 0,
-        "digital_transformation": 0,
-        "article_count": 2,
-        "medal": "gold"
-      },
-      {
-        "brand": "Patagonia",
-        "total": 4,
-        "environmental": 2,
+        "total": 2,
+        "environmental": 0,
         "social": 2,
         "governance": 0,
         "digital_transformation": 0,
@@ -187,7 +157,7 @@
         "governance": 0,
         "digital_transformation": 0,
         "article_count": 1,
-        "medal": "silver"
+        "medal": "gold"
       },
       {
         "brand": "Xtep",
@@ -197,7 +167,7 @@
         "governance": 0,
         "digital_transformation": 0,
         "article_count": 1,
-        "medal": "silver"
+        "medal": "gold"
       },
       {
         "brand": "Yonex",
@@ -207,17 +177,7 @@
         "governance": 0,
         "digital_transformation": 0,
         "article_count": 1,
-        "medal": "silver"
-      },
-      {
-        "brand": "Columbia Sportswear",
-        "total": 1,
-        "environmental": 0,
-        "social": 0,
-        "governance": 1,
-        "digital_transformation": 0,
-        "article_count": 1,
-        "medal": "bronze"
+        "medal": "gold"
       },
       {
         "brand": "Puma",
@@ -227,7 +187,7 @@
         "governance": 1,
         "digital_transformation": 0,
         "article_count": 1,
-        "medal": "bronze"
+        "medal": "silver"
       },
       {
         "brand": "Lululemon",
@@ -268,6 +228,319 @@
     ]
   },
   "articles": [
+    {
+      "id": "d8adb946-3948-4386-9ca7-a6b16468d303",
+      "title": "Lululemon claps back at Chip Wilson after spurned settlement offer",
+      "url": "https://www.retaildive.com/news/lululemon-chip-wilson-criticism-proxy-fight-settlement/820490/",
+      "source_name": "retaildive.com",
+      "published_at": "2026-05-18T21:15:00+00:00",
+      "published_date": "2026-05-18",
+      "brands": ["Lululemon"],
+      "categories": ["governance"],
+      "brand_details": [
+        {
+          "brand": "Lululemon",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "governance",
+              "excerpt": "Wilson in December nominated former On co-CEO Marc Maurer, former ESPN marketing chief Laura Gentile and former Activision CEO Eric Hirshberg to the board. They are up against Lululemon's board nominees",
+              "relevance_score": 0.9110589208596522,
+              "rerank_score": 0.9999789621831661,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Wilson in December nominated former On co-CEO Marc Maurer, former ESPN marketing chief Laura Gentile and former Activision CEO Eric Hirshberg to the board. They are up against Lululemon\u2019s board nominees, former Levi\u2019s CEO Chip Bergh, former Unilever growth and marketing chief Esi Eggleston Bracey and current Lululemon board member Teri List. Lululemon said in proxy materials filed Monday that it offered Wilson a settlement last week that would include the election of two of his board nominees after the annual meeting, a third new director by October and other concessions...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "After months of fielding criticism from founder Chip Wilson, Lululemon's board is clapping back, calling Wilson's campaign 'the latest iteration of his long-standing personal grievances and desire to regain influence at Lululemon.'",
+              "relevance_score": 0.9108184231562623,
+              "rerank_score": 0.999955339672187,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "After months of fielding criticism from founder Chip Wilson, Lululemon\u2019s board is clapping back, calling Wilson\u2019s campaign \u201cthe latest iteration of his long-standing personal grievances and desire to regain influence at Lululemon.\u201d The retailer issued a press release Monday urging shareholders to support its board nominees at the company\u2019s annual meeting on June 25 \u2014 and not the three directors Wilson has suggested...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Lululemon said in proxy materials filed Monday that it offered Wilson a settlement last week that would include the election of two of his board nominees after the annual meeting, a third new director by October and other concessions.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998875556165098,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Wilson in December nominated former On co-CEO Marc Maurer, former ESPN marketing chief Laura Gentile and former Activision CEO Eric Hirshberg to the board. They are up against Lululemon\u2019s board nominees, former Levi\u2019s CEO Chip Bergh, former Unilever growth and marketing chief Esi Eggleston Bracey and current Lululemon board member Teri List. Lululemon said in proxy materials filed Monday that it offered Wilson a settlement last week that would include the election of two of his board nominees after the annual meeting, a third new director by October and other concessions. Wilson replied with a counterproposal, which Lululemon did not accept, that called for more favorable terms and \u201cfull expense reimbursement\u201d for his campaign against the company."
+            }
+          ],
+          "confidence": 0.95,
+          "reasoning": "This is clearly a governance issue involving a proxy fight between founder Chip Wilson and Lululemon's board over board composition and corporate control. The article details board nominee disputes, settlement negotiations, and shareholder activism - all core governance matters. Negative sentiment due to the contentious nature of the proxy battle and governance conflict."
+        }
+      ]
+    },
+    {
+      "id": "688d1368-9ca8-44b3-b38e-ff604eba756b",
+      "title": "Lululemon founder Wilson ready to reach agreement amid proxy battle",
+      "url": "https://www.933thedrive.com/2026/05/18/lululemon-founder-wilson-ready-to-reach-agreement-amid-proxy-battle/",
+      "source_name": "933thedrive.com",
+      "published_at": "2026-05-18T20:00:00+00:00",
+      "published_date": "2026-05-18",
+      "brands": ["Lululemon"],
+      "categories": ["governance"],
+      "brand_details": [
+        {
+          "brand": "Lululemon",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": 0,
+              "sentiment_label": "neutral"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "governance",
+              "excerpt": "The company tried but failed to settle its bitter proxy fight with Wilson as recently as last week",
+              "relevance_score": 0.7745795763459848,
+              "rerank_score": 0.9999380871042893,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "May 18 (Reuters) \u2013 Lululemon Athletica founder Chip Wilson said on \u200bMonday he is \u200cready to reach an agreement on the principal terms provided by \u200cthe \u200bathleisure maker.\n\nThe \u2060company tried but \u2060failed..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "The Board has not provided me with detail on where our disagreements lie right now, but as of Friday last week, we seemed to be in full agreement on the principal terms",
+              "relevance_score": 0.7805314038563114,
+              "rerank_score": 0.999378558602618,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...The \u2060company tried but \u2060failed to settle its bitter proxy fight with Wilson as \u200brecently as last week, when the \u2060apparel retailer \u2060said its founder \u200bmade escalating demands, according \u200bto a Monday regulatory \u200cfiling. \u201cThe Board has not provided me with detail on where \u2060our disagreements lie right now, but as of Friday \u2060last \u200cweek, we \u2060seemed to be \u200bin \u200cfull agreement on \u200bthe principal \u2060terms,\u201d Wilson said in a statement. (Reporting by Juveria Tabassum in Bengaluru; Editing by Shinjini \u200bGanguli)"
+            }
+          ],
+          "confidence": 0.95,
+          "reasoning": "This article is clearly about a governance issue - a proxy battle between Lululemon's founder Chip Wilson and the company's board. Proxy fights are classic corporate governance matters involving shareholder activism, board control, and corporate oversight. The sentiment is neutral as it's factual reporting on ongoing negotiations without clear positive or negative framing."
+        }
+      ]
+    },
+    {
+      "id": "0a8527a6-7ac1-4781-819e-b6801594e456",
+      "title": "Chip Wilson Issues Statement and Shares Details of Negotiations with lululemon",
+      "url": "https://www.prnewswire.com/news-releases/chip-wilson-issues-statement-and-shares-details-of-negotiations-with-lululemon-302775101.html",
+      "source_name": "prnewswire.com",
+      "published_at": "2026-05-18T18:45:00+00:00",
+      "published_date": "2026-05-18",
+      "brands": ["Lululemon"],
+      "categories": ["governance"],
+      "brand_details": [
+        {
+          "brand": "Lululemon",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": 0,
+              "sentiment_label": "neutral"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "governance",
+              "excerpt": "Dennis J. 'Chip' Wilson, together with the other Participants (as defined below), has filed a definitive proxy statement on Schedule 14A (the 'Definitive Proxy Statement') and accompanying GOLD Universal Proxy Card with the U.S. Securities and Exchange Commission",
+              "relevance_score": 0.9109287062954209,
+              "rerank_score": 0.9999470090761076,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Dennis J. \"Chip\" Wilson, together with the other Participants (as defined below), has filed a definitive proxy statement on Schedule 14A (the \"Definitive Proxy Statement\") and accompanying GOLD Univer..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Chip Wilson, Founder of lululemon athletica inc. (NASDAQ: LULU) ('lululemon' or the 'Company') and one of lululemon's largest shareholders, today released the following statement regarding recent settlement discussions with lululemon's Board of Directors",
+              "relevance_score": 0.8706018169963858,
+              "rerank_score": 0.9998791744397023,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...-- Chip Wilson, Founder of lululemon athletica inc. (NASDAQ: LULU) (\"lululemon\" or the \"Company\") and one of lululemon's largest shareholders, today released the following statement regarding recent settlement discussions with lululemon's Board of Directors (the \"Board\")."
+            },
+            {
+              "category": "governance",
+              "excerpt": "We (lululemon) choose and appoint two of your nominees to the Board after the AGM",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9997768299667544,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...\"\n\nIn a May 13 email copying Marti Morfitt, Chip Bergh proposed on behalf of the Board eight principal terms. Those terms as directly stated by Mr. Bergh are:\n\nWe (lululemon) choose and appoint two of your nominees to the Board after the AGM. We agree to one additional mutually agreed director between now and October."
+            }
+          ],
+          "confidence": 0.95,
+          "reasoning": "This is clearly about corporate governance - a proxy fight between founder Chip Wilson and Lululemon's board involving board composition, director appointments, and shareholder rights. The article details settlement negotiations regarding board seats and governance structure."
+        }
+      ]
+    },
+    {
+      "id": "c2c6df9a-c30a-4790-9341-ad5dfb0b7b7f",
+      "title": "Baystreet . ca - Lululemon Strikes Back At Founder Chip Wilson",
+      "url": "http://baystreet.ca/stockstowatch/23316/Lululemon-Strikes-Back-At-Founder-Chip-Wilson",
+      "source_name": "baystreet.ca",
+      "published_at": "2026-05-18T18:45:00+00:00",
+      "published_date": "2026-05-18",
+      "brands": ["Lululemon"],
+      "categories": ["governance"],
+      "brand_details": [
+        {
+          "brand": "Lululemon",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "governance",
+              "excerpt": "Lululemon is striking back at founder Chip Wilson, who has been a vocal critic of the Canadian company in recent years.",
+              "relevance_score": 0.9239671964283326,
+              "rerank_score": 0.9999799964547084,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Lululemon Athletica (LULU) is striking back at founder Chip Wilson, who has been a vocal critic of the Canadian company in recent years.\n\nThe Vancouver-based athletic wear maker is taking its battle w..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Lululemon's board is fighting back, urging shareholders to approve O'Neill as the new CEO, as well as new board nominees at the upcoming annual meeting set for June 25.",
+              "relevance_score": 0.9147846615155382,
+              "rerank_score": 0.9999636030517056,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Now, Lululemon\u2019s board is fighting back, urging shareholders to approve O\u2019Neill as the new CEO, as well as new board nominees at the upcoming annual meeting set for June 25.\n\nLululemon\u2019s business has ..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "The shareholder letter is Lululemon's first public response to Wilson since he launched a proxy battle against the company late last year.",
+              "relevance_score": 0.8891421002493294,
+              "rerank_score": 0.9998906998580939,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Lululemon Athletica (LULU) is striking back at founder Chip Wilson, who has been a vocal critic of the Canadian company in recent years.\n\nThe Vancouver-based athletic wear maker is taking its battle w..."
+            }
+          ],
+          "confidence": 0.95,
+          "reasoning": "This article is clearly about a governance conflict involving a proxy battle between Lululemon's founder and the current board. The proxy fight, shareholder letter, and board composition disputes are core governance issues. The negative sentiment reflects the contentious nature of this corporate governance dispute."
+        }
+      ]
+    },
+    {
+      "id": "420346b2-9e72-46df-a60b-885e1f34c4b5",
+      "title": "Lululemon Criticises Chip Wilson , Sets Proxy Vote",
+      "url": "https://www.businessoffashion.com/news/retail/lululemon-criticises-chip-wilson-sets-proxy-vote/",
+      "source_name": "businessoffashion.com",
+      "published_at": "2026-05-18T18:45:00+00:00",
+      "published_date": "2026-05-18",
+      "brands": ["Lululemon"],
+      "categories": ["governance"],
+      "brand_details": [
+        {
+          "brand": "Lululemon",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "governance",
+              "excerpt": "Lululemon Athletica Inc. rejected the overtures of founder Chip Wilson to install new board members, and the company set a shareholder vote for next month.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999601283669208,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Lululemon Athletica Inc. rejected the overtures of founder Chip Wilson to install new board members, and the company set a shareholder vote for next month. Please sign in to ensure you can read our agenda-setting intelligence, analysis and advice...."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "This is clearly a governance issue involving a proxy fight between the company and its founder over board composition. The company's rejection of Wilson's board nominees and the setting of a shareholder vote represents corporate governance conflict and board oversight matters."
+        }
+      ]
+    },
     {
       "id": "a39e8011-0d4b-4c77-b7c9-c4b8857d7f72",
       "title": "The Sneaker Market Crash : Why Nike Stock Is Down 76 % From Its Peak and Is It Time to Buy ? ",
@@ -2073,33 +2346,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "Nike refusing to bargain with us just makes us more determined, because we cannot keep living like this.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999417636290667,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...\u201cI have met with workers just like me across Asia. I have met allies in unions in the U.S. Nike refusing to bargain with us just makes us more determined, because we cannot keep living like this.\u201d The same goes for Claire Reneau, who teaches French in the Beaverton School District, \u201cright in the shadow of Nike\u2019s pristine, guarded headquarters.\u201d..."
-            },
-            {
-              "category": "governance",
-              "excerpt": "The Portland Association of Teachers says that after Oregonians voted for a wealth tax in 2012, Nike 'bullied' the Oregon legislature into calling a special session that granted the company a $2 billion tax holiday over 30 years.",
-              "relevance_score": 0.9154870658635964,
-              "rerank_score": 0.9999193447691779,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Oregon teachers also want the Swoosh to pay up. The Portland Association of Teachers says that after Oregonians voted for a wealth tax in 2012, Nike \u201cbullied\u201d the Oregon legislature into calling a special session that granted the company a $2 billion tax holiday over 30 years. Losing out on $66 million a year, it said, has sparked a \u201cfunding crisis\u201d in the public school system, undermining education statewide...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "In a rare move, the OECD accepted the complaint, offering Nike mediation, though the company ultimately declined.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9996138957217705,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...In it, they accused Nike of triggering \u201csevere human rights impacts,\u201d including layoffs and wage theft, through its pandemic-era decision to cancel or reduce orders, then ignoring requests for dialogue. In a rare move, the OECD accepted the complaint, offering Nike mediation, though the company ultimately declined."
-            },
-            {
               "category": "social",
               "excerpt": "An AFWA survey of more than 2,000 workers found they lost an average of three months' pay in 2020, leaving many who were already on the brink unable to afford food or rent without falling further into debt.",
               "relevance_score": 0.8473138378109737,
@@ -2125,6 +2371,33 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "...This is a familiar struggle for the 20 garment-sector unions that joined AFWA and GLJ in 2023 to file an international labor complaint with the OECD. In it, they accused Nike of triggering \u201csevere human rights impacts,\u201d including layoffs and wage theft, through its pandemic-era decision to cancel or reduce orders, then ignoring requests for dialogue. In a rare move, the OECD accepted the complaint, offering Nike mediation, though the company ultimately declined."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Nike refusing to bargain with us just makes us more determined, because we cannot keep living like this.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999417636290667,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...\u201cI have met with workers just like me across Asia. I have met allies in unions in the U.S. Nike refusing to bargain with us just makes us more determined, because we cannot keep living like this.\u201d The same goes for Claire Reneau, who teaches French in the Beaverton School District, \u201cright in the shadow of Nike\u2019s pristine, guarded headquarters.\u201d..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "The Portland Association of Teachers says that after Oregonians voted for a wealth tax in 2012, Nike 'bullied' the Oregon legislature into calling a special session that granted the company a $2 billion tax holiday over 30 years.",
+              "relevance_score": 0.9154870658635964,
+              "rerank_score": 0.9999193447691779,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Oregon teachers also want the Swoosh to pay up. The Portland Association of Teachers says that after Oregonians voted for a wealth tax in 2012, Nike \u201cbullied\u201d the Oregon legislature into calling a special session that granted the company a $2 billion tax holiday over 30 years. Losing out on $66 million a year, it said, has sparked a \u201cfunding crisis\u201d in the public school system, undermining education statewide...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "In a rare move, the OECD accepted the complaint, offering Nike mediation, though the company ultimately declined.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9996138957217705,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...In it, they accused Nike of triggering \u201csevere human rights impacts,\u201d including layoffs and wage theft, through its pandemic-era decision to cancel or reduce orders, then ignoring requests for dialogue. In a rare move, the OECD accepted the complaint, offering Nike mediation, though the company ultimately declined."
             }
           ],
           "confidence": 0.95,
@@ -2517,33 +2790,6 @@
           },
           "evidence": [
             {
-              "category": "digital_transformation",
-              "excerpt": "Nike designers and Dropcity's in-house team also hosted daily workshops, providing a first chance for visitors to explore the possibilities of designing using Air Lab's cutting-edge machinery",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999648696711118,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Nike designers and Dropcity's in-house team also hosted daily workshops, providing a first chance for visitors to explore the possibilities of designing using Air Lab's cutting-edge machinery. Caputo told Dezeen that he approached Lotti about collaborating on a project that would extend beyond Milan design week and leave a lasting legacy for Dropcity and Milan's design community...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "The technology displayed, including robotic arms, thermoforming machines and pneumatic cylinder kits, will become part of Dropcity's workshop facilities",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9993983407121818,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Air Lab is a permanent addition to Dropcity, a centre for architecture and design that was launched in 2024 by architect Andrea Caputo and occupies a row of 15 previously abandoned warehouse tunnels behind Milan Central Station. During the city's annual design festival, five of the arches hosted a preview exhibition called NikeAir_Lab that showcased the past, present and future of Nike Air technology through samples, swatches and machinery relating to the company's innovations. The technology displayed, including robotic arms, thermoforming machines and pneumatic cylinder kits, will become part of Dropcity's workshop facilities, which are accessible to anyone looking to develop prototypes for building elements, furniture or industrial products."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "We now have advanced machinery and industrial-grade robots that will remain here for anyone to use",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9990706850012737,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...\"We already had robotics, clay, woodworking and many others, but we were missing a component related to air as a tool to shape design today.\"\n\n\"The Air Lab is a great gift for the city of Milan,\" he added. \"We now have advanced machinery and industrial-grade robots that will remain here for anyone to use. \"\n\nCaputo began working on the concept for Dropcity in 2018, proposing a facility where like-minded people can meet to discuss and imagine better ways of practising design and architecture."
-            },
-            {
               "category": "social",
               "excerpt": "The Air Lab becoming a permanent part of Dropcity reflects our commitment to ongoing experimentation, learning and innovation, long after design week ends",
               "relevance_score": 1.0,
@@ -2569,6 +2815,33 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...\"The Air Lab initiative advances an ambitious and unique vision, proposing that design and production can leave a tangible legacy for the city of Milan and for the community of designers and architects connected to it,\" said Caputo. \"The lab will be operated by Dropcity as a civic facility, accessible to the public,\" he added."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "Nike designers and Dropcity's in-house team also hosted daily workshops, providing a first chance for visitors to explore the possibilities of designing using Air Lab's cutting-edge machinery",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999648696711118,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Nike designers and Dropcity's in-house team also hosted daily workshops, providing a first chance for visitors to explore the possibilities of designing using Air Lab's cutting-edge machinery. Caputo told Dezeen that he approached Lotti about collaborating on a project that would extend beyond Milan design week and leave a lasting legacy for Dropcity and Milan's design community...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "The technology displayed, including robotic arms, thermoforming machines and pneumatic cylinder kits, will become part of Dropcity's workshop facilities",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9993983407121818,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Air Lab is a permanent addition to Dropcity, a centre for architecture and design that was launched in 2024 by architect Andrea Caputo and occupies a row of 15 previously abandoned warehouse tunnels behind Milan Central Station. During the city's annual design festival, five of the arches hosted a preview exhibition called NikeAir_Lab that showcased the past, present and future of Nike Air technology through samples, swatches and machinery relating to the company's innovations. The technology displayed, including robotic arms, thermoforming machines and pneumatic cylinder kits, will become part of Dropcity's workshop facilities, which are accessible to anyone looking to develop prototypes for building elements, furniture or industrial products."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "We now have advanced machinery and industrial-grade robots that will remain here for anyone to use",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9990706850012737,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...\"We already had robotics, clay, woodworking and many others, but we were missing a component related to air as a tool to shape design today.\"\n\n\"The Air Lab is a great gift for the city of Milan,\" he added. \"We now have advanced machinery and industrial-grade robots that will remain here for anyone to use. \"\n\nCaputo began working on the concept for Dropcity in 2018, proposing a facility where like-minded people can meet to discuss and imagine better ways of practising design and architecture."
             }
           ],
           "confidence": 0.9,
@@ -4136,24 +4409,6 @@
           },
           "evidence": [
             {
-              "category": "digital_transformation",
-              "excerpt": "the layoffs are aimed at streamlining material, footwear, and apparel supply chains and centralizing technology operations in two hubs: Beaverton, Oregon, and the Nike India Technology Center",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9994672659532862,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...\"It is the next phase of the work already underway. \"\n\nAccording to Alagirisamy\u2019s memo, the layoffs are aimed at streamlining material, footwear, and apparel supply chains and centralizing technology operations in two hubs: Beaverton, Oregon, and the Nike India Technology Center. Nike also plans to move some Converse manufacturing and engineering operations closer to factory partners...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "using more advanced automation where it helps us work better, and building an even stronger end-to-end foundation for future growth",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9989644584772331,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...\"These changes are meant to make the company less complex and more responsive,\" Alagirisamy said. \"As we look ahead, that means simplifying parts of how we operate, using more advanced automation where it helps us work better, and building an even stronger end-to-end foundation for future growth.\"\n\nHill, who became CEO in 2024, has pledged to refocus the Nike brand on core sports, such as running and soccer, while accelerating new product launches. Also Read: Nike Shares Rebound After Filing Shows Tim Cook Bought $3 Million Stake"
-            },
-            {
               "category": "social",
               "excerpt": "In January, the company said it would cut 775 jobs as part of an automation push at distribution centers. In February 2024, Nike announced plans to reduce its workforce by about 2%, or more than 1,600 employees",
               "relevance_score": 1.0,
@@ -4179,6 +4434,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...\"\n\nAccording to Alagirisamy\u2019s memo, the layoffs are aimed at streamlining material, footwear, and apparel supply chains and centralizing technology operations in two hubs: Beaverton, Oregon, and the Nike India Technology Center. Nike also plans to move some Converse manufacturing and engineering operations closer to factory partners. Affected employees will be notified beginning Thursday, Nike added."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "the layoffs are aimed at streamlining material, footwear, and apparel supply chains and centralizing technology operations in two hubs: Beaverton, Oregon, and the Nike India Technology Center",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9994672659532862,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...\"It is the next phase of the work already underway. \"\n\nAccording to Alagirisamy\u2019s memo, the layoffs are aimed at streamlining material, footwear, and apparel supply chains and centralizing technology operations in two hubs: Beaverton, Oregon, and the Nike India Technology Center. Nike also plans to move some Converse manufacturing and engineering operations closer to factory partners...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "using more advanced automation where it helps us work better, and building an even stronger end-to-end foundation for future growth",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9989644584772331,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...\"These changes are meant to make the company less complex and more responsive,\" Alagirisamy said. \"As we look ahead, that means simplifying parts of how we operate, using more advanced automation where it helps us work better, and building an even stronger end-to-end foundation for future growth.\"\n\nHill, who became CEO in 2024, has pledged to refocus the Nike brand on core sports, such as running and soccer, while accelerating new product launches. Also Read: Nike Shares Rebound After Filing Shows Tim Cook Bought $3 Million Stake"
             }
           ],
           "confidence": 0.9,
@@ -4584,6 +4857,24 @@
               "context_snippet": "...\"Collectively, these changes will result in a reduction of approximately 1,400 roles in Global Operations, with the majority in Technology,\" Alagirisamy said in the announcement. \"These reductions are very hard for the teammates directly affected and for the teams around them, too.\""
             },
             {
+              "category": "governance",
+              "excerpt": "Chief operating officer Venkatesh Alagirisamy announced on Thursday that Nike will be undergoing 'several significant changes' under the final phase of its 'Win Now' strategy",
+              "relevance_score": 0.8674430880839108,
+              "rerank_score": 0.9999690909285028,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Nike is laying off about 1,400 people globally as the sports brand enters the final stretch of its turnaround strategy that will impact its workforce. Chief operating officer Venkatesh Alagirisamy announced on Thursday that Nike will be undergoing \"several significant changes\" under the final phase of its \"Win Now\" strategy that will impact global operations. The strategy, introduced under CEO Elliott Hill, will reshape the company's tech team, modernise its Air Manufacturing, move Converse Footwear Manufacturing and Engineering resources close to factory partners, and position materials work closer to its Footwear and Apparel Supply Chain teams...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Teammates whose roles are impacted will hear directly from their leaders and HR partners starting today, and we will work to make sure they have clear information and support through this transition",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999142390556026,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "The layoffs are expected to impact employees in the company's North America, Asia, and Europe operations, according to reports. \"Teammates whose roles are impacted will hear directly from their leaders and HR partners starting today, and we will work to make sure they have clear information and support through this transition,\" Alagirisamy said. The COO extended his gratitude to departing employees, while urging empathy among the company's broader workforce...."
+            },
+            {
               "category": "digital_transformation",
               "excerpt": "The strategy, introduced under CEO Elliott Hill, will reshape the company's tech team, modernise its Air Manufacturing",
               "relevance_score": 1.0,
@@ -4609,24 +4900,6 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "...\"To the broader team, moments like this require professionalism, empathy, and a shared commitment to one another.\"\n\nMoving towards automation\n\nThis is the second round of layoffs at Nike this year after the brand cut more than 700 employees in the US in January to speed up automation, according to a Reuters report. While this latest round of layoffs has been attributed to the company's turnaround strategy, Alagirisamy noted that the company will be using \"more advanced automation\" in the future. \"These changes are meant to make the company less complex and more responsive,\" he said."
-            },
-            {
-              "category": "governance",
-              "excerpt": "Chief operating officer Venkatesh Alagirisamy announced on Thursday that Nike will be undergoing 'several significant changes' under the final phase of its 'Win Now' strategy",
-              "relevance_score": 0.8674430880839108,
-              "rerank_score": 0.9999690909285028,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Nike is laying off about 1,400 people globally as the sports brand enters the final stretch of its turnaround strategy that will impact its workforce. Chief operating officer Venkatesh Alagirisamy announced on Thursday that Nike will be undergoing \"several significant changes\" under the final phase of its \"Win Now\" strategy that will impact global operations. The strategy, introduced under CEO Elliott Hill, will reshape the company's tech team, modernise its Air Manufacturing, move Converse Footwear Manufacturing and Engineering resources close to factory partners, and position materials work closer to its Footwear and Apparel Supply Chain teams...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "Teammates whose roles are impacted will hear directly from their leaders and HR partners starting today, and we will work to make sure they have clear information and support through this transition",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999142390556026,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "The layoffs are expected to impact employees in the company's North America, Asia, and Europe operations, according to reports. \"Teammates whose roles are impacted will hear directly from their leaders and HR partners starting today, and we will work to make sure they have clear information and support through this transition,\" Alagirisamy said. The COO extended his gratitude to departing employees, while urging empathy among the company's broader workforce...."
             }
           ],
           "confidence": 0.9,
@@ -4670,24 +4943,6 @@
           },
           "evidence": [
             {
-              "category": "social",
-              "excerpt": "On Thursday the sportswear giant announced the deletion of about 1,400 roles across its global operations",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999793782100569,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "On Thursday the sportswear giant announced the deletion of about 1,400 roles across its global operations, with a heavy concentration in technology, representing a bit under 2% of its total workforce. Management framed the move as a further step in the \"Win Now\" initiative, aimed at simplifying the organizational structure, modernizing industrial tools, reorganizing certain Converse operations and better integrating materials and supply chain functions...."
-            },
-            {
-              "category": "social",
-              "excerpt": "In January, Nike had already announced 775 job cuts at its US distribution centers as part of an automation ramp-up",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999054609651679,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Since Elliott Hill returned to lead the company in late 2024, the group has stepped up adjustments to restore more profitable growth. In January, Nike had already announced 775 job cuts at its US distribution centers as part of an automation ramp-up. Reuters noted at the time that the group employed 77,800 people as of late May 2025."
-            },
-            {
               "category": "governance",
               "excerpt": "Management framed the move as a further step in the 'Win Now' initiative, aimed at simplifying the organizational structure",
               "relevance_score": 0.792682880701682,
@@ -4722,6 +4977,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "On Thursday the sportswear giant announced the deletion of about 1,400 roles across its global operations, with a heavy concentration in technology, representing a bit under 2% of its total workforce. Management framed the move as a further step in the \"Win Now\" initiative, aimed at simplifying the organizational structure, modernizing industrial tools, reorganizing certain Converse operations and better integrating materials and supply chain functions...."
+            },
+            {
+              "category": "social",
+              "excerpt": "On Thursday the sportswear giant announced the deletion of about 1,400 roles across its global operations",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999793782100569,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "On Thursday the sportswear giant announced the deletion of about 1,400 roles across its global operations, with a heavy concentration in technology, representing a bit under 2% of its total workforce. Management framed the move as a further step in the \"Win Now\" initiative, aimed at simplifying the organizational structure, modernizing industrial tools, reorganizing certain Converse operations and better integrating materials and supply chain functions...."
+            },
+            {
+              "category": "social",
+              "excerpt": "In January, Nike had already announced 775 job cuts at its US distribution centers as part of an automation ramp-up",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999054609651679,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Since Elliott Hill returned to lead the company in late 2024, the group has stepped up adjustments to restore more profitable growth. In January, Nike had already announced 775 job cuts at its US distribution centers as part of an automation ramp-up. Reuters noted at the time that the group employed 77,800 people as of late May 2025."
             }
           ],
           "confidence": 0.9,
@@ -5109,33 +5382,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "Alagirisamy stated that the layoffs are integral to simplifying Nike's global operations",
-              "relevance_score": 0.8398723435584815,
-              "rerank_score": 0.9999720193853948,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Alagirisamy stated that the layoffs are integral to simplifying Nike\u2019s global operations. The initiative aims to enhance operational efficiency and adaptability in response to the fast-paced nature of the sports industry...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "This decision comes as part of the company's ongoing restructuring strategy, referred to as the 'Win Now' turnaround plan",
-              "relevance_score": 0.8040594989470252,
-              "rerank_score": 0.9998037619714029,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Nike Inc. is proceeding with another round of layoffs, targeting approximately 1,400 positions within its operations and technology sectors. This decision comes as part of the company\u2019s ongoing restructuring strategy, referred to as the \u201cWin Now\u201d turnaround plan. The announcement was made by Chief Operating Officer Venkatesh Alagirisamy through an internal memo...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "The announcement was made by Chief Operating Officer Venkatesh Alagirisamy through an internal memo",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9997831615335969,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...This decision comes as part of the company\u2019s ongoing restructuring strategy, referred to as the \u201cWin Now\u201d turnaround plan. The announcement was made by Chief Operating Officer Venkatesh Alagirisamy through an internal memo. Nike\u2019s Layoff Details\n\nThe 1,400 job reductions will take place across several regions, including North America, Europe, and Asia...."
-            },
-            {
               "category": "social",
               "excerpt": "Nike Inc. is proceeding with another round of layoffs, targeting approximately 1,400 positions within its operations and technology sectors",
               "relevance_score": 1.0,
@@ -5161,6 +5407,33 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...The company aims to assist them during this transition phase. Recent Financial Performance\n\nThese workforce reductions follow previous layoffs, including nearly 800 jobs announced earlier this year as Nike streamlined its U.S. distribution centers. In March, Nike reported a drastic 35% decline in net income for the third quarter of fiscal 2026, totaling $520 million, down from $794 million year-over-year...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Alagirisamy stated that the layoffs are integral to simplifying Nike's global operations",
+              "relevance_score": 0.8398723435584815,
+              "rerank_score": 0.9999720193853948,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Alagirisamy stated that the layoffs are integral to simplifying Nike\u2019s global operations. The initiative aims to enhance operational efficiency and adaptability in response to the fast-paced nature of the sports industry...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "This decision comes as part of the company's ongoing restructuring strategy, referred to as the 'Win Now' turnaround plan",
+              "relevance_score": 0.8040594989470252,
+              "rerank_score": 0.9998037619714029,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Nike Inc. is proceeding with another round of layoffs, targeting approximately 1,400 positions within its operations and technology sectors. This decision comes as part of the company\u2019s ongoing restructuring strategy, referred to as the \u201cWin Now\u201d turnaround plan. The announcement was made by Chief Operating Officer Venkatesh Alagirisamy through an internal memo...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "The announcement was made by Chief Operating Officer Venkatesh Alagirisamy through an internal memo",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9997831615335969,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...This decision comes as part of the company\u2019s ongoing restructuring strategy, referred to as the \u201cWin Now\u201d turnaround plan. The announcement was made by Chief Operating Officer Venkatesh Alagirisamy through an internal memo. Nike\u2019s Layoff Details\n\nThe 1,400 job reductions will take place across several regions, including North America, Europe, and Asia...."
             },
             {
               "category": "digital_transformation",
@@ -6133,24 +6406,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "The sportswear giant responded to the backlash by emphasizing inclusivity, saying it wants more people to 'feel welcome in running,' regardless of 'pace, experience or the distance.'",
-              "relevance_score": 0.866180635203408,
-              "rerank_score": 0.9999596053435221,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "The sportswear giant responded to the backlash by emphasizing inclusivity, saying it wants more people to \"feel welcome in running,\" regardless of \"pace, experience or the distance.\" \"During race week in Boston, we put up a series of signs to encourage runners...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "During race week in Boston, we put up a series of signs to encourage runners. One of them missed the mark. We took it down, and we'll use this moment to do better and continue showing up for all runners.",
-              "relevance_score": 0.83316762016666,
-              "rerank_score": 0.99986295894625,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "The sportswear giant responded to the backlash by emphasizing inclusivity, saying it wants more people to \"feel welcome in running,\" regardless of \"pace, experience or the distance.\" \"During race week in Boston, we put up a series of signs to encourage runners. One of them missed the mark,\" the company said. \"We took it down, and we\u2019ll use this moment to do better and continue showing up for all runners. \"\n\nSEAFOOD RESTAURANT FIRES BACK AT ANTI-AMERICAN HUFFPOST OLYMPICS ARTICLE..."
-            },
-            {
               "category": "social",
               "excerpt": "Nike is facing backlash after a now-viral Boston Marathon ad reading 'Runners welcome. Walkers tolerated.' drew criticism online for allegedly 'pace-shaming' slower participants and those with disabilities.",
               "relevance_score": 0.9269926612613476,
@@ -6176,6 +6431,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...We should be building a more inclusive community, not isolating and belittling people that are a part of it,\" running coach Amy Gougler said in a TikTok post. \"As a run-walk runner, this is offensive,\" she added. IS THIS 'TRANSPHOBIC' SHIRT..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "The sportswear giant responded to the backlash by emphasizing inclusivity, saying it wants more people to 'feel welcome in running,' regardless of 'pace, experience or the distance.'",
+              "relevance_score": 0.866180635203408,
+              "rerank_score": 0.9999596053435221,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "The sportswear giant responded to the backlash by emphasizing inclusivity, saying it wants more people to \"feel welcome in running,\" regardless of \"pace, experience or the distance.\" \"During race week in Boston, we put up a series of signs to encourage runners...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "During race week in Boston, we put up a series of signs to encourage runners. One of them missed the mark. We took it down, and we'll use this moment to do better and continue showing up for all runners.",
+              "relevance_score": 0.83316762016666,
+              "rerank_score": 0.99986295894625,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "The sportswear giant responded to the backlash by emphasizing inclusivity, saying it wants more people to \"feel welcome in running,\" regardless of \"pace, experience or the distance.\" \"During race week in Boston, we put up a series of signs to encourage runners. One of them missed the mark,\" the company said. \"We took it down, and we\u2019ll use this moment to do better and continue showing up for all runners. \"\n\nSEAFOOD RESTAURANT FIRES BACK AT ANTI-AMERICAN HUFFPOST OLYMPICS ARTICLE..."
             }
           ],
           "confidence": 0.9,
@@ -6432,15 +6705,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "As criticism spread online, Nike removed the ad and replaced it with a more neutral message: 'Boston will always remind you, movement is what matters.'",
-              "relevance_score": 0.889751655498211,
-              "rerank_score": 0.9998206728841126,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "...Walkers tolerated.\u201d Critics argued the phrasing didn\u2019t just poke fun at casual participants, but also marginalized individuals who walk due to injury, disability, or other physical limitations. As criticism spread online, Nike removed the ad and replaced it with a more neutral message: \u201cBoston will always remind you, movement is what matters.\u201d The decision to pull the ad, however, triggered a separate wave of reaction \u2014 this time aimed at Nike itself...."
-            },
-            {
               "category": "social",
               "excerpt": "Nike sparked backlash just ahead of the Boston Marathon after unveiling an ad that many interpreted as dismissive toward participants who don't run the race at full speed, but may walk instead",
               "relevance_score": 0.9252840484799132,
@@ -6457,6 +6721,15 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "Nike sparked backlash just ahead of the Boston Marathon after unveiling an ad that many interpreted as dismissive toward participants who don\u2019t run the race at full speed, but may walk instead, accord..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "As criticism spread online, Nike removed the ad and replaced it with a more neutral message: 'Boston will always remind you, movement is what matters.'",
+              "relevance_score": 0.889751655498211,
+              "rerank_score": 0.9998206728841126,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...Walkers tolerated.\u201d Critics argued the phrasing didn\u2019t just poke fun at casual participants, but also marginalized individuals who walk due to injury, disability, or other physical limitations. As criticism spread online, Nike removed the ad and replaced it with a more neutral message: \u201cBoston will always remind you, movement is what matters.\u201d The decision to pull the ad, however, triggered a separate wave of reaction \u2014 this time aimed at Nike itself...."
             }
           ],
           "confidence": 0.9,
@@ -6876,33 +7149,6 @@
           },
           "evidence": [
             {
-              "category": "environmental",
-              "excerpt": "A key Allbirds differentiator is its use of innovative materials, made from recycled and natural sources. But the company may not have appreciated that even the consumers laser-focused on the environment would want more.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999476409885695,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "A key Allbirds differentiator is its use of innovative materials, made from recycled and natural sources. But the company may not have appreciated that even the consumers laser-focused on the environment would want more. \u201cIndeed, sustainability comes way down the batting order behind factors like style, price and comfort,\u201d Saunders said...."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "The materials themselves were sustainable, but they sheared the sheep in New Zealand, they shipped the wool to Milan and had it woven. They shipped the woven wool to Korea, had it made into a shoe and shipped it to the United States",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998677796134139,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "\u201cThe materials themselves were sustainable, but they sheared the sheep in New Zealand, they shipped the wool to Milan and had it woven. They shipped the woven wool to Korea, had it made into a shoe and shipped it to the United States,\u201d Powell said in an in-person interview. \u201cBut in no way was that the issue...."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "Anyone looking closely at Allbirds' supply chain may have quibbled with its claims, given the carbon footprint",
-              "relevance_score": 0.8908393676088344,
-              "rerank_score": 0.9998501505937735,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "A key Allbirds differentiator is its use of innovative materials, made from recycled and natural sources. But the company may not have appreciated that even the consumers laser-focused on the environm..."
-            },
-            {
               "category": "governance",
               "excerpt": "Last month the conglomerate that owns Aerosoles snapped up its intellectual property and some other assets for a relatively paltry sum: under $40 million.",
               "relevance_score": 1.0,
@@ -6928,6 +7174,33 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...And the designs were pretty basic.\u201d\n\nNot performance, not fashion\n\nUltimately Allbirds didn\u2019t understand its own customer \u2014 someone interested in a sneaker to wear around town. A shoe that didn\u2019t require the performance necessary for athletics but would be stylish for various venues. This was a huge opportunity, but Allbirds focused more on growth than execution, according to Liza Amlani, principal at Retail Strategy Group."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "A key Allbirds differentiator is its use of innovative materials, made from recycled and natural sources. But the company may not have appreciated that even the consumers laser-focused on the environment would want more.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999476409885695,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "A key Allbirds differentiator is its use of innovative materials, made from recycled and natural sources. But the company may not have appreciated that even the consumers laser-focused on the environment would want more. \u201cIndeed, sustainability comes way down the batting order behind factors like style, price and comfort,\u201d Saunders said...."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "The materials themselves were sustainable, but they sheared the sheep in New Zealand, they shipped the wool to Milan and had it woven. They shipped the woven wool to Korea, had it made into a shoe and shipped it to the United States",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998677796134139,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "\u201cThe materials themselves were sustainable, but they sheared the sheep in New Zealand, they shipped the wool to Milan and had it woven. They shipped the woven wool to Korea, had it made into a shoe and shipped it to the United States,\u201d Powell said in an in-person interview. \u201cBut in no way was that the issue...."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "Anyone looking closely at Allbirds' supply chain may have quibbled with its claims, given the carbon footprint",
+              "relevance_score": 0.8908393676088344,
+              "rerank_score": 0.9998501505937735,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "A key Allbirds differentiator is its use of innovative materials, made from recycled and natural sources. But the company may not have appreciated that even the consumers laser-focused on the environm..."
             }
           ],
           "confidence": 0.9,
@@ -7152,33 +7425,6 @@
           },
           "evidence": [
             {
-              "category": "digital_transformation",
-              "excerpt": "announced on April 15 that it is pivoting to artificial intelligence (AI) and will receive $50 million in a convertible financing facility",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999386318277059,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "The deal awaits shareholder approval and is expected to close in the second quarter. Allbirds, following the sale of its assets and shoe brand, announced on April 15 that it is pivoting to artificial intelligence (AI) and will receive $50 million in a convertible financing facility. Allbirds will change its name to \u201cNewBird AI.\u201d..."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "NewBird AI is being built to help close that gap",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9997838555091942,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Enterprises, AI developers, and research organizations are unable to secure the compute resources they need to build, train, and run AI at scale,\u201d Allbirds said in its press release. \u201cNewBird AI is being built to help close that gap.\u201d"
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "The rise of AI development and adoption has created unprecedented structural demand for specialized, high-performance compute",
-              "relevance_score": 1.0,
-              "rerank_score": 0.999392087186182,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Allbirds will change its name to \u201cNewBird AI.\u201d \u201cThe rise of AI development and adoption has created unprecedented structural demand for specialized, high-performance compute that the market is struggling to meet. ... Enterprises, AI developers, and research organizations are unable to secure the compute resources they need to build, train, and run AI at scale,\u201d Allbirds said in its press release...."
-            },
-            {
               "category": "governance",
               "excerpt": "Allbirds, following the sale of its assets and shoe brand, announced on April 15 that it is pivoting to artificial intelligence (AI)",
               "relevance_score": 1.0,
@@ -7204,6 +7450,33 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "The deal awaits shareholder approval and is expected to close in the second quarter. Allbirds, following the sale of its assets and shoe brand, announced on April 15 that it is pivoting to artificial intelligence (AI) and will receive $50 million in a convertible financing facility...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "announced on April 15 that it is pivoting to artificial intelligence (AI) and will receive $50 million in a convertible financing facility",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999386318277059,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "The deal awaits shareholder approval and is expected to close in the second quarter. Allbirds, following the sale of its assets and shoe brand, announced on April 15 that it is pivoting to artificial intelligence (AI) and will receive $50 million in a convertible financing facility. Allbirds will change its name to \u201cNewBird AI.\u201d..."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "NewBird AI is being built to help close that gap",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9997838555091942,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Enterprises, AI developers, and research organizations are unable to secure the compute resources they need to build, train, and run AI at scale,\u201d Allbirds said in its press release. \u201cNewBird AI is being built to help close that gap.\u201d"
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "The rise of AI development and adoption has created unprecedented structural demand for specialized, high-performance compute",
+              "relevance_score": 1.0,
+              "rerank_score": 0.999392087186182,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Allbirds will change its name to \u201cNewBird AI.\u201d \u201cThe rise of AI development and adoption has created unprecedented structural demand for specialized, high-performance compute that the market is struggling to meet. ... Enterprises, AI developers, and research organizations are unable to secure the compute resources they need to build, train, and run AI at scale,\u201d Allbirds said in its press release...."
             }
           ],
           "confidence": 0.9,
@@ -7469,15 +7742,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "Texas Attorney General Ken Paxton has launched an investigation into the company, issuing a Civil Investigative Demand to Lululemon's US unit to examine whether it misled consumers about product safety, quality and potential health effects",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998466927571578,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Lululemon Athletica Inc claimed its products currently sold in China do not contain per \u2014 and polyfluoroalkyl substances (PFAS), amid concerns following a US investigation into the potential presence of toxic chemicals in the leisure wear maker's apparel. Texas Attorney General Ken Paxton has launched an investigation into the company, issuing a Civil Investigative Demand to Lululemon's US unit to examine whether it misled consumers about product safety, quality and potential health effects, according to a statement released on Monday. In response to inquiries, Lululemon China said that all products currently sold in the country are free of PFAS and comply with applicable laws, regulations and industry standards...."
-            },
-            {
               "category": "social",
               "excerpt": "PFAS, sometimes referred to as 'forever chemicals', have been linked in some studies to endocrine disruption, infertility and certain cancers \u2014 raising broader concerns about their use in performance apparel",
               "relevance_score": 0.8928938124391517,
@@ -7512,6 +7776,15 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "...Texas Attorney General Ken Paxton has launched an investigation into the company, issuing a Civil Investigative Demand to Lululemon's US unit to examine whether it misled consumers about product safety, quality and potential health effects, according to a statement released on Monday. In response to inquiries, Lululemon China said that all products currently sold in the country are free of PFAS and comply with applicable laws, regulations and industry standards. Its global company spokesperson said \"Lululemon does not use PFAS in its products,\" adding it phased out the substance in fiscal 2023, after limited use in durable water repellent products."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Texas Attorney General Ken Paxton has launched an investigation into the company, issuing a Civil Investigative Demand to Lululemon's US unit to examine whether it misled consumers about product safety, quality and potential health effects",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998466927571578,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Lululemon Athletica Inc claimed its products currently sold in China do not contain per \u2014 and polyfluoroalkyl substances (PFAS), amid concerns following a US investigation into the potential presence of toxic chemicals in the leisure wear maker's apparel. Texas Attorney General Ken Paxton has launched an investigation into the company, issuing a Civil Investigative Demand to Lululemon's US unit to examine whether it misled consumers about product safety, quality and potential health effects, according to a statement released on Monday. In response to inquiries, Lululemon China said that all products currently sold in the country are free of PFAS and comply with applicable laws, regulations and industry standards...."
             }
           ],
           "confidence": 0.9,
@@ -8623,33 +8896,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "Paxton's office issued a Civil Investigative Demand (CID) to Lululemon USA Inc. as part of a broader inquiry into whether the company misled consumers about the safety, quality, and health impacts of its apparel",
-              "relevance_score": 0.8868302217831145,
-              "rerank_score": 0.9999290202728698,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Texas Attorney General Ken Paxton has launched an investigation into activewear giant Lululemon amid concerns that its products may contain potentially harmful \u201cforever chemicals,\u201d according to an off..."
-            },
-            {
-              "category": "governance",
-              "excerpt": "\"I will not allow any corporation to sell harmful, toxic materials to consumers at a premium price under the guise of wellness and sustainability.\"",
-              "relevance_score": 0.8041081879524374,
-              "rerank_score": 0.9844579645316777,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Lululemon, a leading global activewear company, reported more than $11 billion in revenue in fiscal year 2025 and has built its brand around wellness, sustainability, and performance. However, emergin..."
-            },
-            {
-              "category": "governance",
-              "excerpt": "The investigation could lead to legal action if violations of Texas consumer protection laws are found",
-              "relevance_score": 1.0,
-              "rerank_score": 0.21648059135085168,
-              "match_method": "exact",
-              "confidence": "unmatched",
-              "context_snippet": "...Officials will also review the company\u2019s Restricted Substances List, testing procedures, and supply chain practices to determine whether its products meet stated safety guidelines.\n\nRECOMMENDED: Lucha libre event in East El Paso raises funds for Best Friends Forever association\n\n\u201cAmericans should not have to worry if they are being deceived when trying to make healthy choices for themselves and their families,\u201d Paxton said in a statement. \u201cI will not allow any corporation to sell harmful, toxic materials to consumers at a premium price under the guise of wellness and sustainability.\u201d The investigation could lead to legal action if violations of Texas consumer protection laws are found. Lululemon has not yet publicly responded to the announcement...."
-            },
-            {
               "category": "social",
               "excerpt": "PFAS are synthetic chemicals that have been linked in some studies to serious health risks, including hormone disruption, infertility, and certain cancers",
               "relevance_score": 1.0,
@@ -8693,6 +8939,33 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "...Paxton\u2019s office issued a Civil Investigative Demand (CID) to Lululemon USA Inc. as part of a broader inquiry into whether the company misled consumers about the safety, quality, and health impacts of its apparel. The probe will focus on the possible presence of per- and polyfluoroalkyl substances (PFAS)\u2014commonly referred to as \u201cforever chemicals\u201d\u2014in the brand\u2019s athletic wear. PFAS are synthetic chemicals that have been linked in some studies to serious health risks, including hormone disruption, infertility, and certain cancers...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Paxton's office issued a Civil Investigative Demand (CID) to Lululemon USA Inc. as part of a broader inquiry into whether the company misled consumers about the safety, quality, and health impacts of its apparel",
+              "relevance_score": 0.8868302217831145,
+              "rerank_score": 0.9999290202728698,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Texas Attorney General Ken Paxton has launched an investigation into activewear giant Lululemon amid concerns that its products may contain potentially harmful \u201cforever chemicals,\u201d according to an off..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "\"I will not allow any corporation to sell harmful, toxic materials to consumers at a premium price under the guise of wellness and sustainability.\"",
+              "relevance_score": 0.8041081879524374,
+              "rerank_score": 0.9844579645316777,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Lululemon, a leading global activewear company, reported more than $11 billion in revenue in fiscal year 2025 and has built its brand around wellness, sustainability, and performance. However, emergin..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "The investigation could lead to legal action if violations of Texas consumer protection laws are found",
+              "relevance_score": 1.0,
+              "rerank_score": 0.21648059135085168,
+              "match_method": "exact",
+              "confidence": "unmatched",
+              "context_snippet": "...Officials will also review the company\u2019s Restricted Substances List, testing procedures, and supply chain practices to determine whether its products meet stated safety guidelines.\n\nRECOMMENDED: Lucha libre event in East El Paso raises funds for Best Friends Forever association\n\n\u201cAmericans should not have to worry if they are being deceived when trying to make healthy choices for themselves and their families,\u201d Paxton said in a statement. \u201cI will not allow any corporation to sell harmful, toxic materials to consumers at a premium price under the guise of wellness and sustainability.\u201d The investigation could lead to legal action if violations of Texas consumer protection laws are found. Lululemon has not yet publicly responded to the announcement...."
             }
           ],
           "confidence": 0.95,
@@ -8736,22 +9009,22 @@
           },
           "evidence": [
             {
-              "category": "environmental",
-              "excerpt": "We require all our vendors to regularly conduct testing for restricted substances, including PFAS, by credible third-party agencies to confirm ongoing compliance.",
+              "category": "social",
+              "excerpt": "The health and safety of our guests is paramount, and our products meet or exceed global regulatory, safety, and quality standards",
               "relevance_score": 1.0,
-              "rerank_score": 0.9998783481910816,
+              "rerank_score": 0.9998626482423811,
               "match_method": "exact",
               "confidence": "high",
-              "context_snippet": "\u201cThe health and safety of our guests is paramount, and our products meet or exceed global regulatory, safety, and quality standards,\u201d they stated. \u201cWe require all our vendors to regularly conduct testing for restricted substances, including PFAS, by credible third-party agencies to confirm ongoing compliance.\u201d Daily Hive inquired about whether or not the affected products were sold in Canada, but did not receive a direct response...."
+              "context_snippet": "\u201cThe health and safety of our guests is paramount, and our products meet or exceed global regulatory, safety, and quality standards,\u201d they stated. \u201cWe require all our vendors to regularly conduct testing for restricted substances, including PFAS, by credible third-party agencies to confirm ongoing compliance.\u201d..."
             },
             {
-              "category": "environmental",
-              "excerpt": "lululemon spokesperson said that the company is cooperating with the investigation. They added that the company does not use PFAS in its products and that it was phased out in the 2023 fiscal year when it was used in a small percentage of water repellent products.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9996720688586184,
-              "match_method": "exact",
+              "category": "social",
+              "excerpt": "According to Health Canada, PFAS are a group of chemicals used as surfactants, lubricants, and repellents for dirt, water, and grease. And because they don't break down easily, they stay in the environment for a long time. These chemicals can impact people's health, such as the liver, kidneys, and thyroid, as well as body weight and metabolism.",
+              "relevance_score": 0.9127040104977743,
+              "rerank_score": 0.9998223917546452,
+              "match_method": "combined",
               "confidence": "high",
-              "context_snippet": "...It can also affect the immune and nervous systems, and the development and reproductive system. In an email to Daily Hive, a lululemon spokesperson said that the company is cooperating with the investigation. They added that the company does not use PFAS in its products and that it was phased out in the 2023 fiscal year when it was used in a small percentage of water repellent products."
+              "context_snippet": "According to Health Canada, PFAS are a group of chemicals used as surfactants, lubricants, and repellents for dirt, water, and grease. And because they don\u2019t break down easily, they stay in the environment for a long time. These chemicals can impact people\u2019s health, such as the liver, kidneys, and thyroid, as well as body weight and metabolism. It can also affect the immune and nervous systems, and the development and reproductive system...."
             },
             {
               "category": "governance",
@@ -8781,22 +9054,22 @@
               "context_snippet": "...In 2025, the company saw a five per cent increase with a revenue of US$11.1 billion. Shares fell on Monday morning after Paxton announced the investigation. He stated that lululemon will be \u201cheld accountable\u201d if the investigation finds that it violated Texas law. \u201cI will not allow any corporation to sell harmful, toxic materials to consumers at a premium price under the guise of wellness and sustainability,\u201d said Paxton."
             },
             {
-              "category": "social",
-              "excerpt": "The health and safety of our guests is paramount, and our products meet or exceed global regulatory, safety, and quality standards",
+              "category": "environmental",
+              "excerpt": "We require all our vendors to regularly conduct testing for restricted substances, including PFAS, by credible third-party agencies to confirm ongoing compliance.",
               "relevance_score": 1.0,
-              "rerank_score": 0.9998626482423811,
+              "rerank_score": 0.9998783481910816,
               "match_method": "exact",
               "confidence": "high",
-              "context_snippet": "\u201cThe health and safety of our guests is paramount, and our products meet or exceed global regulatory, safety, and quality standards,\u201d they stated. \u201cWe require all our vendors to regularly conduct testing for restricted substances, including PFAS, by credible third-party agencies to confirm ongoing compliance.\u201d..."
+              "context_snippet": "\u201cThe health and safety of our guests is paramount, and our products meet or exceed global regulatory, safety, and quality standards,\u201d they stated. \u201cWe require all our vendors to regularly conduct testing for restricted substances, including PFAS, by credible third-party agencies to confirm ongoing compliance.\u201d Daily Hive inquired about whether or not the affected products were sold in Canada, but did not receive a direct response...."
             },
             {
-              "category": "social",
-              "excerpt": "According to Health Canada, PFAS are a group of chemicals used as surfactants, lubricants, and repellents for dirt, water, and grease. And because they don't break down easily, they stay in the environment for a long time. These chemicals can impact people's health, such as the liver, kidneys, and thyroid, as well as body weight and metabolism.",
-              "relevance_score": 0.9127040104977743,
-              "rerank_score": 0.9998223917546452,
-              "match_method": "combined",
+              "category": "environmental",
+              "excerpt": "lululemon spokesperson said that the company is cooperating with the investigation. They added that the company does not use PFAS in its products and that it was phased out in the 2023 fiscal year when it was used in a small percentage of water repellent products.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9996720688586184,
+              "match_method": "exact",
               "confidence": "high",
-              "context_snippet": "According to Health Canada, PFAS are a group of chemicals used as surfactants, lubricants, and repellents for dirt, water, and grease. And because they don\u2019t break down easily, they stay in the environment for a long time. These chemicals can impact people\u2019s health, such as the liver, kidneys, and thyroid, as well as body weight and metabolism. It can also affect the immune and nervous systems, and the development and reproductive system...."
+              "context_snippet": "...It can also affect the immune and nervous systems, and the development and reproductive system. In an email to Daily Hive, a lululemon spokesperson said that the company is cooperating with the investigation. They added that the company does not use PFAS in its products and that it was phased out in the 2023 fiscal year when it was used in a small percentage of water repellent products."
             }
           ],
           "confidence": 0.9,
@@ -8840,6 +9113,24 @@
           },
           "evidence": [
             {
+              "category": "environmental",
+              "excerpt": "The investigation will focus on whether Lululemon's athletic wear contains PFAS \u2014 often referred to as \"forever chemicals\" \u2014 which some research has linked to health concerns",
+              "relevance_score": 0.8971442461681471,
+              "rerank_score": 0.9999160098872719,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "AUSTIN, Texas \u2014 Texas Attorney General Ken Paxton has launched an investigation into athletic apparel company Lululemon over concerns about potentially harmful chemicals in its products. According to a press release issued Monday, Paxton\u2019s office sent a Civil Investigative Demand to Lululemon USA Inc. as part of a probe into whether the company \u201chas misled consumers about the safety, quality, and health impacts of its products.\u201d The investigation will focus on whether Lululemon\u2019s athletic wear contains PFAS \u2014 often referred to as \u201cforever chemicals\u201d \u2014 which some research has linked to health concerns, including \u201cendocrine disruption, infertility, cancer, and other health issues,\u201d according to the release. State officials will also review Lululemon\u2019s internal policies, including its Restricted Substances List, testing protocols and supply chain practices, to determine whether its products meet the company\u2019s stated safety standards."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "I will not allow any corporation to sell harmful, toxic materials to consumers at a premium price under the guise of wellness and sustainability",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999103039855723,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "\u201cAmericans should not have to worry if they are being deceived when trying to make healthy choices for themselves and their families,\u201d Paxton said. \u201cI will not allow any corporation to sell harmful, toxic materials to consumers at a premium price under the guise of wellness and sustainability. If Lululemon has violated Texas law, it will be held accountable.\u201d..."
+            },
+            {
               "category": "governance",
               "excerpt": "If Lululemon has violated Texas law, it will be held accountable",
               "relevance_score": 1.0,
@@ -8874,24 +9165,6 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "\u201cAmericans should not have to worry if they are being deceived when trying to make healthy choices for themselves and their families,\u201d Paxton said. \u201cI will not allow any corporation to sell harmful, toxic materials to consumers at a premium price under the guise of wellness and sustainability...."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "The investigation will focus on whether Lululemon's athletic wear contains PFAS \u2014 often referred to as \"forever chemicals\" \u2014 which some research has linked to health concerns",
-              "relevance_score": 0.8971442461681471,
-              "rerank_score": 0.9999160098872719,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "AUSTIN, Texas \u2014 Texas Attorney General Ken Paxton has launched an investigation into athletic apparel company Lululemon over concerns about potentially harmful chemicals in its products. According to a press release issued Monday, Paxton\u2019s office sent a Civil Investigative Demand to Lululemon USA Inc. as part of a probe into whether the company \u201chas misled consumers about the safety, quality, and health impacts of its products.\u201d The investigation will focus on whether Lululemon\u2019s athletic wear contains PFAS \u2014 often referred to as \u201cforever chemicals\u201d \u2014 which some research has linked to health concerns, including \u201cendocrine disruption, infertility, cancer, and other health issues,\u201d according to the release. State officials will also review Lululemon\u2019s internal policies, including its Restricted Substances List, testing protocols and supply chain practices, to determine whether its products meet the company\u2019s stated safety standards."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "I will not allow any corporation to sell harmful, toxic materials to consumers at a premium price under the guise of wellness and sustainability",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999103039855723,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "\u201cAmericans should not have to worry if they are being deceived when trying to make healthy choices for themselves and their families,\u201d Paxton said. \u201cI will not allow any corporation to sell harmful, toxic materials to consumers at a premium price under the guise of wellness and sustainability. If Lululemon has violated Texas law, it will be held accountable.\u201d..."
             }
           ],
           "confidence": 0.95,
@@ -9402,6 +9675,24 @@
           },
           "evidence": [
             {
+              "category": "digital_transformation",
+              "excerpt": "the appointment of an interim leadership committee focused on 'Agile Merchandising' has successfully slashed product development cycles from 18 months to just 12, allowing the brand to respond to micro-trends with the speed of a fast-fashion retailer",
+              "relevance_score": 0.8257051104571055,
+              "rerank_score": 0.9998178961214598,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...By the start of 2026, the stock had retreated nearly 70% from its 2023 highs. However, the appointment of an interim leadership committee focused on \"Agile Merchandising\" has successfully slashed product development cycles from 18 months to just 12, allowing the brand to respond to micro-trends with the speed of a fast-fashion retailer while maintaining its premium technical positioning."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "the company can offset these costs through its new AI-driven supply chain automation",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9983260470011044,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...The retail sector in 2026 is grappling with significant tariff pressures\u2014estimated at a $380 million impact for Lululemon this year alone. Today\u2019s gains suggest that the market believes the company can offset these costs through its new AI-driven supply chain automation, but the long-term sustainability of these margins remains a point of intense debate among policy analysts and trade experts."
+            },
+            {
               "category": "governance",
               "excerpt": "The search for a successor to Calvin McDonald is reportedly in its final stages",
               "relevance_score": 1.0,
@@ -9427,24 +9718,6 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "...By the start of 2026, the stock had retreated nearly 70% from its 2023 highs. However, the appointment of an interim leadership committee focused on \"Agile Merchandising\" has successfully slashed product development cycles from 18 months to just 12, allowing the brand to respond to micro-trends with the speed of a fast-fashion retailer while maintaining its premium technical positioning."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "the appointment of an interim leadership committee focused on 'Agile Merchandising' has successfully slashed product development cycles from 18 months to just 12, allowing the brand to respond to micro-trends with the speed of a fast-fashion retailer",
-              "relevance_score": 0.8257051104571055,
-              "rerank_score": 0.9998178961214598,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "...By the start of 2026, the stock had retreated nearly 70% from its 2023 highs. However, the appointment of an interim leadership committee focused on \"Agile Merchandising\" has successfully slashed product development cycles from 18 months to just 12, allowing the brand to respond to micro-trends with the speed of a fast-fashion retailer while maintaining its premium technical positioning."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "the company can offset these costs through its new AI-driven supply chain automation",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9983260470011044,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...The retail sector in 2026 is grappling with significant tariff pressures\u2014estimated at a $380 million impact for Lululemon this year alone. Today\u2019s gains suggest that the market believes the company can offset these costs through its new AI-driven supply chain automation, but the long-term sustainability of these margins remains a point of intense debate among policy analysts and trade experts."
             }
           ],
           "confidence": 0.9,
@@ -9488,6 +9761,15 @@
           },
           "evidence": [
             {
+              "category": "digital_transformation",
+              "excerpt": "It has been reported that Nike partially leaned on AI during the design process for their latest cohort of kits.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9994408206975249,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...'Maybe when it goes on sale in four months but my god Nike has fallen off for a while now. What a shame, this might sound dumb but getting the new jersey is something I have always really looked forward too growing up, so seeing how poorly made these are makes me sad.' It has been reported that Nike partially leaned on AI during the design process for their latest cohort of kits. The sportswear giant is now said to be in conversation with the relevant federations and retailers regarding 'next steps' with the shirts."
+            },
+            {
               "category": "governance",
               "excerpt": "Nike has now acknowledged the comical flaw.",
               "relevance_score": 1.0,
@@ -9513,15 +9795,6 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "After much criticism on social media from fans who have spent bucketloads on such shirts - England's home jersey costs up to \u00a3135 on the Three Lions' website - Nike has now acknowledged the comical flaw. The company said in a statement: 'During the recent international break, we observed a minor issue with our Nike national team kits, most noticeable around the shoulder seam.\n\n'Performance is unaffected, but the overall aesthetic is not where it needs to be.' The shoulder bulge was most apparent during England's disappointing 1-0 defeat by Japan last week, with Cole Palmer's shirt riding bizarrely high at the seams...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "It has been reported that Nike partially leaned on AI during the design process for their latest cohort of kits.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9994408206975249,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...'Maybe when it goes on sale in four months but my god Nike has fallen off for a while now. What a shame, this might sound dumb but getting the new jersey is something I have always really looked forward too growing up, so seeing how poorly made these are makes me sad.' It has been reported that Nike partially leaned on AI during the design process for their latest cohort of kits. The sportswear giant is now said to be in conversation with the relevant federations and retailers regarding 'next steps' with the shirts."
             }
           ],
           "confidence": 0.9,
@@ -9615,24 +9888,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "Under Armour has also faced corporate governance questions in the past but has strengthened its board with new independent directors possessing strong financial and retail expertise.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999610881532477,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Under Armour has also faced corporate governance questions in the past but has strengthened its board with new independent directors possessing strong financial and retail expertise. These changes are viewed positively by some investors as supporting a potential strategic review, including possible sale or privatization scenarios, though no formal process has been announced...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "These changes are viewed positively by some investors as supporting a potential strategic review, including possible sale or privatization scenarios, though no formal process has been announced.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9997776135484916,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Under Armour has also faced corporate governance questions in the past but has strengthened its board with new independent directors possessing strong financial and retail expertise. These changes are viewed positively by some investors as supporting a potential strategic review, including possible sale or privatization scenarios, though no formal process has been announced. The company continues to invest in sustainability initiatives, digital transformation and athlete partnerships to drive long-term growth...."
-            },
-            {
               "category": "digital_transformation",
               "excerpt": "The company continues to invest in sustainability initiatives, digital transformation and athlete partnerships to drive long-term growth.",
               "relevance_score": 1.0,
@@ -9649,6 +9904,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...The company continues to invest in sustainability initiatives, digital transformation and athlete partnerships to drive long-term growth. Its connected fitness platform and apps remain part of the ecosystem, though less emphasized than in previous years. As of April 2026, Under Armour's path forward involves balancing near-term profitability pressures with strategic investments for future growth...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Under Armour has also faced corporate governance questions in the past but has strengthened its board with new independent directors possessing strong financial and retail expertise.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999610881532477,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Under Armour has also faced corporate governance questions in the past but has strengthened its board with new independent directors possessing strong financial and retail expertise. These changes are viewed positively by some investors as supporting a potential strategic review, including possible sale or privatization scenarios, though no formal process has been announced...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "These changes are viewed positively by some investors as supporting a potential strategic review, including possible sale or privatization scenarios, though no formal process has been announced.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9997776135484916,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Under Armour has also faced corporate governance questions in the past but has strengthened its board with new independent directors possessing strong financial and retail expertise. These changes are viewed positively by some investors as supporting a potential strategic review, including possible sale or privatization scenarios, though no formal process has been announced. The company continues to invest in sustainability initiatives, digital transformation and athlete partnerships to drive long-term growth...."
             },
             {
               "category": "environmental",
@@ -10041,6 +10314,24 @@
           },
           "evidence": [
             {
+              "category": "digital_transformation",
+              "excerpt": "A source familiar with that design process told the Guardian this week that Nike's 'computational design' is driven by performance data, and incorporates elements of AI to work alongside the company's designers as they craft a product.",
+              "relevance_score": 0.8769893173627609,
+              "rerank_score": 0.9999472903539128,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "A source familiar with that design process told the Guardian this week that Nike\u2019s \u201ccomputational design\u201d is driven by performance data, and incorporates elements of AI to work alongside the company\u2019s designers as they craft a product. A source familiar with Nike\u2019s rollout said on Tuesday that the company is now in conversation with partner federations and vendors as they weigh any next steps...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "[Aero-FIT] leverages computational design and a highly specialized, stitch-specific knitting process to help athletes stay cool",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9991905950905992,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Outdoor matches at this summer\u2019s World Cup, played in the US, Canada and Mexico, may be among the hottest ever played in tournament history, an issue ostensibly addressed through the Aero-FIT design that serves as the framework for all of its authentic World Cup kits. \u201c[Aero-FIT] leverages computational design and a highly specialized, stitch-specific knitting process to help athletes stay cool,\u201d the company\u2019 marketing material reads."
+            },
+            {
               "category": "governance",
               "excerpt": "We always hold ourselves and our products to the highest standards and this fell short.",
               "relevance_score": 1.0,
@@ -10066,24 +10357,6 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "\u201cDuring the recent international break, we observed a minor issue with our Nike national team kits, most noticeable around the shoulder seam,\u201d the company said via a spokesperson. \u201cPerformance is unaffected, but the overall aesthetic is not where it needs to be.\u201d Indeed, it\u2019s an uncharacteristic flub from the sportswear giant, who touted the design and technology of the kits upon their release...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "A source familiar with that design process told the Guardian this week that Nike's 'computational design' is driven by performance data, and incorporates elements of AI to work alongside the company's designers as they craft a product.",
-              "relevance_score": 0.8769893173627609,
-              "rerank_score": 0.9999472903539128,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "A source familiar with that design process told the Guardian this week that Nike\u2019s \u201ccomputational design\u201d is driven by performance data, and incorporates elements of AI to work alongside the company\u2019s designers as they craft a product. A source familiar with Nike\u2019s rollout said on Tuesday that the company is now in conversation with partner federations and vendors as they weigh any next steps...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "[Aero-FIT] leverages computational design and a highly specialized, stitch-specific knitting process to help athletes stay cool",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9991905950905992,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Outdoor matches at this summer\u2019s World Cup, played in the US, Canada and Mexico, may be among the hottest ever played in tournament history, an issue ostensibly addressed through the Aero-FIT design that serves as the framework for all of its authentic World Cup kits. \u201c[Aero-FIT] leverages computational design and a highly specialized, stitch-specific knitting process to help athletes stay cool,\u201d the company\u2019 marketing material reads."
             }
           ],
           "confidence": 0.9,
@@ -10229,53 +10502,6 @@
       "categories": ["governance"],
       "brand_details": [
         {
-          "brand": "Lululemon",
-          "categories": {
-            "environmental": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": true,
-              "sentiment": 1,
-              "sentiment_label": "positive"
-            },
-            "digital_transformation": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            }
-          },
-          "evidence": [
-            {
-              "category": "governance",
-              "excerpt": "Judge Subramanian's ruling last week that Nike's patent claims as a matter of law were invalid on the ground of obviousness voids the jury verdict and the fine",
-              "relevance_score": 0.9112695355363596,
-              "rerank_score": 0.9999178448891721,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "A jury verdict in March 2025 found in favor of Nike on one of its two patent infringement claims and rejected the remaining claim. Damages were awarded as a fine in the amount of $355,450 in favor of ..."
-            },
-            {
-              "category": "governance",
-              "excerpt": "filed petitions with the Patent Trial and Appeal Board (PTAB) to challenge the validity of Nike's patents",
-              "relevance_score": 0.8524200540326592,
-              "rerank_score": 0.9996266814017082,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "...The lawsuit, initially filed in January 2023, claimed that the athleisure brand\u2019s sneakers \u2014 Chargefeel Mid, Chargefeel Low, Blissfeel and Strongfeel \u2014 infringed on Nike\u2019s utility patents related to its Flyknit technology in connection with how they are manufactured and including their knitted textile and structural elements. filed petitions with the Patent Trial and Appeal Board (PTAB) to challenge the validity of Nike\u2019s patents. Judge Subramanian declined to stay the district court lawsuit pending the PTAB review."
-            }
-          ],
-          "confidence": 0.9,
-          "reasoning": "This is a governance issue involving patent litigation defense. Lululemon successfully challenged Nike's patent claims and had the court ruling in their favor, representing a positive legal outcome for the company in terms of intellectual property governance."
-        },
-        {
           "brand": "Nike",
           "categories": {
             "environmental": {
@@ -10321,6 +10547,53 @@
           ],
           "confidence": 0.9,
           "reasoning": "This is a governance issue involving patent litigation and legal compliance. Nike's patent claims were ruled invalid by the court, overturning a previous jury verdict in their favor, which represents a negative legal outcome for the company."
+        },
+        {
+          "brand": "Lululemon",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "governance",
+              "excerpt": "Judge Subramanian's ruling last week that Nike's patent claims as a matter of law were invalid on the ground of obviousness voids the jury verdict and the fine",
+              "relevance_score": 0.9112695355363596,
+              "rerank_score": 0.9999178448891721,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "A jury verdict in March 2025 found in favor of Nike on one of its two patent infringement claims and rejected the remaining claim. Damages were awarded as a fine in the amount of $355,450 in favor of ..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "filed petitions with the Patent Trial and Appeal Board (PTAB) to challenge the validity of Nike's patents",
+              "relevance_score": 0.8524200540326592,
+              "rerank_score": 0.9996266814017082,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...The lawsuit, initially filed in January 2023, claimed that the athleisure brand\u2019s sneakers \u2014 Chargefeel Mid, Chargefeel Low, Blissfeel and Strongfeel \u2014 infringed on Nike\u2019s utility patents related to its Flyknit technology in connection with how they are manufactured and including their knitted textile and structural elements. filed petitions with the Patent Trial and Appeal Board (PTAB) to challenge the validity of Nike\u2019s patents. Judge Subramanian declined to stay the district court lawsuit pending the PTAB review."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "This is a governance issue involving patent litigation defense. Lululemon successfully challenged Nike's patent claims and had the court ruling in their favor, representing a positive legal outcome for the company in terms of intellectual property governance."
         }
       ]
     },
@@ -11348,24 +11621,6 @@
           },
           "evidence": [
             {
-              "category": "social",
-              "excerpt": "awarded first place in the 'Community Impact in Sports Tourism' category",
-              "relevance_score": 0.7322107103889494,
-              "rerank_score": 0.9994145186511458,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "...Attracting more than 2,000 participants each year, the trail race showcases Cappadocia\u2019s unique landscapes while promoting sports tourism. The event was recently awarded first place in the \u201cCommunity Impact in Sports Tourism\u201d category at the inaugural UN Tourism Awards for Excellence in Sustainable Sports Tourism, organised in collaboration with the F\u00e9d\u00e9ration Internationale de l\u2019Automobile (FIA). These awards recognise initiatives that combine sustainability, innovation, and community engagement...."
-            },
-            {
-              "category": "social",
-              "excerpt": "The Cappadocia Ultra Trail stood out for its... contributions to local development",
-              "relevance_score": 0.8009177300162611,
-              "rerank_score": 0.9993783400112625,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "...These awards recognise initiatives that combine sustainability, innovation, and community engagement. The Cappadocia Ultra Trail stood out for its strong environmental awareness, contributions to local development, and its role in enhancing the region\u2019s global image."
-            },
-            {
               "category": "environmental",
               "excerpt": "The Cappadocia Ultra Trail stood out for its strong environmental awareness",
               "relevance_score": 1.0,
@@ -11382,6 +11637,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...Attracting more than 2,000 participants each year, the trail race showcases Cappadocia\u2019s unique landscapes while promoting sports tourism. The event was recently awarded first place in the \u201cCommunity Impact in Sports Tourism\u201d category at the inaugural UN Tourism Awards for Excellence in Sustainable Sports Tourism, organised in collaboration with the F\u00e9d\u00e9ration Internationale de l\u2019Automobile (FIA). These awards recognise initiatives that combine sustainability, innovation, and community engagement. The Cappadocia Ultra Trail stood out for its strong environmental awareness, contributions to local development, and its role in enhancing the region\u2019s global image."
+            },
+            {
+              "category": "social",
+              "excerpt": "awarded first place in the 'Community Impact in Sports Tourism' category",
+              "relevance_score": 0.7322107103889494,
+              "rerank_score": 0.9994145186511458,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...Attracting more than 2,000 participants each year, the trail race showcases Cappadocia\u2019s unique landscapes while promoting sports tourism. The event was recently awarded first place in the \u201cCommunity Impact in Sports Tourism\u201d category at the inaugural UN Tourism Awards for Excellence in Sustainable Sports Tourism, organised in collaboration with the F\u00e9d\u00e9ration Internationale de l\u2019Automobile (FIA). These awards recognise initiatives that combine sustainability, innovation, and community engagement...."
+            },
+            {
+              "category": "social",
+              "excerpt": "The Cappadocia Ultra Trail stood out for its... contributions to local development",
+              "relevance_score": 0.8009177300162611,
+              "rerank_score": 0.9993783400112625,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...These awards recognise initiatives that combine sustainability, innovation, and community engagement. The Cappadocia Ultra Trail stood out for its strong environmental awareness, contributions to local development, and its role in enhancing the region\u2019s global image."
             }
           ],
           "confidence": 0.9,
@@ -11789,74 +12062,6 @@
       ]
     },
     {
-      "id": "23d82ecf-d2f7-4ae4-9b8a-93abda969b11",
-      "title": "American Exchange Is Set to Acquire Allbirds for $39 Million . Here What Investors Need to Know . ",
-      "url": "https://www.fool.com/investing/2026/03/31/american-exchange-is-set-to-acquire-allbirds-for-3/?source=iedfolrf0000001",
-      "source_name": "fool.com",
-      "published_at": "2026-04-01T00:00:00+00:00",
-      "published_date": "2026-04-01",
-      "brands": ["Allbirds"],
-      "categories": ["environmental", "governance"],
-      "brand_details": [
-        {
-          "brand": "Allbirds",
-          "categories": {
-            "environmental": {
-              "applies": true,
-              "sentiment": -1,
-              "sentiment_label": "negative"
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": true,
-              "sentiment": -1,
-              "sentiment_label": "negative"
-            },
-            "digital_transformation": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            }
-          },
-          "evidence": [
-            {
-              "category": "governance",
-              "excerpt": "The company made several errors that torched the business and the stock. It expanded its product line too quickly, getting away from its core \"wool runner\" shoe and diluting the brand",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998865947818794,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "The company made several errors that torched the business and the stock. It expanded its product line too quickly, getting away from its core \"wool runner\" shoe and diluting the brand. Its focus on using sustainable materials meant that its products weren't always as durable as alternatives, and it opened brick-and-mortar stores too aggressively, eventually closing most of them...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "it opened brick-and-mortar stores too aggressively, eventually closing most of them",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9995669645904863,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...It expanded its product line too quickly, getting away from its core \"wool runner\" shoe and diluting the brand. Its focus on using sustainable materials meant that its products weren't always as durable as alternatives, and it opened brick-and-mortar stores too aggressively, eventually closing most of them. Allbirds' revenue peaked in 2022 and has steadily eroded since then as it has not had a quarter of positive revenue growth in more than three years...."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "Its focus on using sustainable materials meant that its products weren't always as durable as alternatives",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998734088682789,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...It expanded its product line too quickly, getting away from its core \"wool runner\" shoe and diluting the brand. Its focus on using sustainable materials meant that its products weren't always as durable as alternatives, and it opened brick-and-mortar stores too aggressively, eventually closing most of them. Allbirds' revenue peaked in 2022 and has steadily eroded since then as it has not had a quarter of positive revenue growth in more than three years...."
-            }
-          ],
-          "confidence": 0.9,
-          "reasoning": "Article discusses Allbirds' sustainability focus as a business weakness (Environmental negative) and multiple strategic failures including rapid expansion and brand dilution (Governance negative). This is substantive ESG content about corporate decision-making and environmental strategy trade-offs."
-        }
-      ]
-    },
-    {
       "id": "d8f3fe26-b6c4-430d-b77a-912794ff5b30",
       "title": "Allbirds , once worth $7b , sells its assets for $68m , will wind down",
       "url": "https://www.newstalkzb.co.nz/news/business/allbirds-once-worth-7b-sells-its-assets-for-68m-will-wind-down/",
@@ -11939,6 +12144,74 @@
           ],
           "confidence": 0.9,
           "reasoning": "Environmental applies neutrally as the article mentions Allbirds' sustainable positioning and use of recycled materials as factual context. Governance applies negatively due to the company dissolution, leadership changes, and cancelled earnings reporting, which represent significant governance failures and lack of transparency."
+        }
+      ]
+    },
+    {
+      "id": "23d82ecf-d2f7-4ae4-9b8a-93abda969b11",
+      "title": "American Exchange Is Set to Acquire Allbirds for $39 Million . Here What Investors Need to Know . ",
+      "url": "https://www.fool.com/investing/2026/03/31/american-exchange-is-set-to-acquire-allbirds-for-3/?source=iedfolrf0000001",
+      "source_name": "fool.com",
+      "published_at": "2026-04-01T00:00:00+00:00",
+      "published_date": "2026-04-01",
+      "brands": ["Allbirds"],
+      "categories": ["environmental", "governance"],
+      "brand_details": [
+        {
+          "brand": "Allbirds",
+          "categories": {
+            "environmental": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "governance",
+              "excerpt": "The company made several errors that torched the business and the stock. It expanded its product line too quickly, getting away from its core \"wool runner\" shoe and diluting the brand",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998865947818794,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "The company made several errors that torched the business and the stock. It expanded its product line too quickly, getting away from its core \"wool runner\" shoe and diluting the brand. Its focus on using sustainable materials meant that its products weren't always as durable as alternatives, and it opened brick-and-mortar stores too aggressively, eventually closing most of them...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "it opened brick-and-mortar stores too aggressively, eventually closing most of them",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9995669645904863,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...It expanded its product line too quickly, getting away from its core \"wool runner\" shoe and diluting the brand. Its focus on using sustainable materials meant that its products weren't always as durable as alternatives, and it opened brick-and-mortar stores too aggressively, eventually closing most of them. Allbirds' revenue peaked in 2022 and has steadily eroded since then as it has not had a quarter of positive revenue growth in more than three years...."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "Its focus on using sustainable materials meant that its products weren't always as durable as alternatives",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998734088682789,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...It expanded its product line too quickly, getting away from its core \"wool runner\" shoe and diluting the brand. Its focus on using sustainable materials meant that its products weren't always as durable as alternatives, and it opened brick-and-mortar stores too aggressively, eventually closing most of them. Allbirds' revenue peaked in 2022 and has steadily eroded since then as it has not had a quarter of positive revenue growth in more than three years...."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "Article discusses Allbirds' sustainability focus as a business weakness (Environmental negative) and multiple strategic failures including rapid expansion and brand dilution (Governance negative). This is substantive ESG content about corporate decision-making and environmental strategy trade-offs."
         }
       ]
     },
@@ -12327,6 +12600,15 @@
           },
           "evidence": [
             {
+              "category": "digital_transformation",
+              "excerpt": "charged with improving retail ties, clearing stale stock and speeding its digital push",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9982325411587114,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...After a 17% drop in the latest quarter reported in December, Chief Executive Elliott Hill described China as the \"longest road\" in the company's global turnaround, conceding the need to \"reset\" its approach. The sportswear giant earlier this year appointed 25-year company veteran Cathy Sparks as Vice President and General Manager of Greater China, succeeding long-time executive Angela Dong, charged with improving retail ties, clearing stale stock and speeding its digital push."
+            },
+            {
               "category": "governance",
               "excerpt": "The sportswear giant earlier this year appointed 25-year company veteran Cathy Sparks as Vice President and General Manager of Greater China, succeeding long-time executive Angela Dong",
               "relevance_score": 1.0,
@@ -12352,15 +12634,6 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...\"\n\nStructural issues have compounded Nike's brand problems, according to two former and one current Nike China employees who spoke on condition of anonymity. A top-down decision-making culture blunted responsiveness to local demand, while repeated efforts to push poorly received products onto retail partners intensified inventory strains at a time of slowing consumer spending. Frequent discounting to clear excess inventory hurt Nike's brand image and its wholesale relationships, they added."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "charged with improving retail ties, clearing stale stock and speeding its digital push",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9982325411587114,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...After a 17% drop in the latest quarter reported in December, Chief Executive Elliott Hill described China as the \"longest road\" in the company's global turnaround, conceding the need to \"reset\" its approach. The sportswear giant earlier this year appointed 25-year company veteran Cathy Sparks as Vice President and General Manager of Greater China, succeeding long-time executive Angela Dong, charged with improving retail ties, clearing stale stock and speeding its digital push."
             }
           ],
           "confidence": 0.9,
@@ -12617,33 +12890,6 @@
           },
           "evidence": [
             {
-              "category": "digital_transformation",
-              "excerpt": "Warehouse robotics firm Exotec has rolled out a major multi-site automation programme for sports retailer Decathlon",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999833009670988,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Warehouse robotics firm Exotec has rolled out a major multi-site automation programme for sports retailer Decathlon, as businesses across Europe look to scale up logistics efficiency and reduce operational strain. The initiative, known as Skyfleet\u00ae, spans seven logistics centres across five countries \u2014 including the UK, France and Germany \u2014 and is designed to standardise operations while improving performance and working conditions...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "Each installation includes fleets of up to 200 robots, tens of thousands of storage locations and the capacity to process thousands of order lines per hour, with full automation of both inbound and outbound flows",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998354142195262,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Each installation includes fleets of up to 200 robots, tens of thousands of storage locations and the capacity to process thousands of order lines per hour, with full automation of both inbound and outbound flows. Exotec has also integrated a range of automated equipment across the sites, including depalletisers, carton-opening systems and RFID tunnels, helping streamline intralogistics processes...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "Operations are coordinated through Exotec's Deepsky\u00ae software, which ensures what the company describes as 'seamless end-to-end operational continuity' across all sites using a shared system architecture",
-              "relevance_score": 0.8638888056597578,
-              "rerank_score": 0.999723192056302,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Each installation includes fleets of up to 200 robots, tens of thousands of storage locations and the capacity to process thousands of order lines per hour, with full automation of both inbound and ou..."
-            },
-            {
               "category": "social",
               "excerpt": "At Decathlon's Northampton site, workers who previously walked up to 10km a day now cover closer to 1km, while workplace incidents linked to order preparation have fallen significantly, from 'one per 5,000 to 1 per 10,000'.",
               "relevance_score": 0.8864228068585691,
@@ -12669,6 +12915,33 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...By standardising equipment and design choices across multiple locations, the company said it has been able to reduce costs and speed up deployment, particularly during the early performance ramp-up phase. Operations are coordinated through Exotec\u2019s Deepsky\u00ae software, which ensures what the company describes as \u201cseamless end-to-end operational continuity\u201d across all sites using a shared system architecture. The programme has also delivered notable changes for warehouse staff, with a reduction in physically demanding tasks and increased opportunities for upskilling."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "Warehouse robotics firm Exotec has rolled out a major multi-site automation programme for sports retailer Decathlon",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999833009670988,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Warehouse robotics firm Exotec has rolled out a major multi-site automation programme for sports retailer Decathlon, as businesses across Europe look to scale up logistics efficiency and reduce operational strain. The initiative, known as Skyfleet\u00ae, spans seven logistics centres across five countries \u2014 including the UK, France and Germany \u2014 and is designed to standardise operations while improving performance and working conditions...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "Each installation includes fleets of up to 200 robots, tens of thousands of storage locations and the capacity to process thousands of order lines per hour, with full automation of both inbound and outbound flows",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998354142195262,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Each installation includes fleets of up to 200 robots, tens of thousands of storage locations and the capacity to process thousands of order lines per hour, with full automation of both inbound and outbound flows. Exotec has also integrated a range of automated equipment across the sites, including depalletisers, carton-opening systems and RFID tunnels, helping streamline intralogistics processes...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "Operations are coordinated through Exotec's Deepsky\u00ae software, which ensures what the company describes as 'seamless end-to-end operational continuity' across all sites using a shared system architecture",
+              "relevance_score": 0.8638888056597578,
+              "rerank_score": 0.999723192056302,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Each installation includes fleets of up to 200 robots, tens of thousands of storage locations and the capacity to process thousands of order lines per hour, with full automation of both inbound and ou..."
             }
           ],
           "confidence": 0.9,
@@ -14546,44 +14819,6 @@
       "categories": ["digital_transformation", "environmental"],
       "brand_details": [
         {
-          "brand": "Adidas",
-          "categories": {
-            "environmental": {
-              "applies": true,
-              "sentiment": 1,
-              "sentiment_label": "positive"
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "digital_transformation": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            }
-          },
-          "evidence": [
-            {
-              "category": "environmental",
-              "excerpt": "Adidas AG \u2013 Focus on performance apparel and sustainability initiatives",
-              "relevance_score": 1.0,
-              "rerank_score": 0.999932547480326,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Geography: North America, Europe, Asia-Pacific, Rest of the World\n\nKey Players in the Outdoor Apparel Market\n\nAdidas AG \u2013 Focus on performance apparel and sustainability initiatives\n\nNike Inc. \u2013 Expanding technical apparel and smart fabric integration\n\nVF Corporation \u2013 Diverse brand portfolio with specialty outdoor offerings\n\nColumbia Sportswear Company \u2013 Innovative fabrics and global retail presence\n\nAmer Sports \u2013 Strong DTC strategy and growth in Asia-Pacific markets\n\nConclusion\n\nThe outdoor apparel market is set for steady growth, driven by rising participation in outdoor activities, health-conscious lifestyles, and the use of advanced fabrics. Sustainable materials, regulatory compliance, and the expansion of e-commerce and direct-to-consumer channels are further supporting market growth...."
-            }
-          ],
-          "confidence": 0.85,
-          "reasoning": "Adidas is specifically mentioned as having a focus on sustainability initiatives, which qualifies as Environmental ESG content"
-        },
-        {
           "brand": "Nike",
           "categories": {
             "environmental": {
@@ -14620,6 +14855,44 @@
           ],
           "confidence": 0.8,
           "reasoning": "Nike is mentioned as expanding smart fabric integration, which represents digital/technology innovation in their product offerings"
+        },
+        {
+          "brand": "Adidas",
+          "categories": {
+            "environmental": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "environmental",
+              "excerpt": "Adidas AG \u2013 Focus on performance apparel and sustainability initiatives",
+              "relevance_score": 1.0,
+              "rerank_score": 0.999932547480326,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Geography: North America, Europe, Asia-Pacific, Rest of the World\n\nKey Players in the Outdoor Apparel Market\n\nAdidas AG \u2013 Focus on performance apparel and sustainability initiatives\n\nNike Inc. \u2013 Expanding technical apparel and smart fabric integration\n\nVF Corporation \u2013 Diverse brand portfolio with specialty outdoor offerings\n\nColumbia Sportswear Company \u2013 Innovative fabrics and global retail presence\n\nAmer Sports \u2013 Strong DTC strategy and growth in Asia-Pacific markets\n\nConclusion\n\nThe outdoor apparel market is set for steady growth, driven by rising participation in outdoor activities, health-conscious lifestyles, and the use of advanced fabrics. Sustainable materials, regulatory compliance, and the expansion of e-commerce and direct-to-consumer channels are further supporting market growth...."
+            }
+          ],
+          "confidence": 0.85,
+          "reasoning": "Adidas is specifically mentioned as having a focus on sustainability initiatives, which qualifies as Environmental ESG content"
         }
       ]
     },
@@ -15262,6 +15535,15 @@
           },
           "evidence": [
             {
+              "category": "digital_transformation",
+              "excerpt": "Lululemon is continuing to enhance its security measures, including the use of advanced technology and individuals on hand to monitor potential robberies in real time",
+              "relevance_score": 1.0,
+              "rerank_score": 0.999912502509396,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...However, they added that a greater collaboration with law enforcement has already led to multiple arrests in 2026 alone. The source also stated that Lululemon is continuing to enhance its security measures, including the use of advanced technology and individuals on hand to monitor potential robberies in real time. \u201cThe safety and well-being of our people, guests, and the communities we serve is our top priority...."
+            },
+            {
               "category": "social",
               "excerpt": "Lululemon is continuing to enhance its security measures, including the use of advanced technology and individuals on hand to monitor potential robberies in real time",
               "relevance_score": 1.0,
@@ -15296,15 +15578,6 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...\u201cThe safety and well-being of our people, guests, and the communities we serve is our top priority. We take retail crime seriously and work alongside law enforcement partners to respond to incidents and support investigations,\u201d a spokesperson said. In this case, all three individuals were seen wearing dark-colored clothing and hooded sweatshirts...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "Lululemon is continuing to enhance its security measures, including the use of advanced technology and individuals on hand to monitor potential robberies in real time",
-              "relevance_score": 1.0,
-              "rerank_score": 0.999912502509396,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...However, they added that a greater collaboration with law enforcement has already led to multiple arrests in 2026 alone. The source also stated that Lululemon is continuing to enhance its security measures, including the use of advanced technology and individuals on hand to monitor potential robberies in real time. \u201cThe safety and well-being of our people, guests, and the communities we serve is our top priority...."
             }
           ],
           "confidence": 0.8,
@@ -27491,34 +27764,6 @@
           "reasoning": "This is clearly governance-related content as founder Chip Wilson directly criticizes the Board's oversight, decision-making, and governance structure. His statements about Board accountability, lack of proper committees, and focus on short-term priorities are classic governance issues. The product quality failures are attributed to governance failures rather than operational issues."
         },
         {
-          "brand": "Alo Yoga",
-          "categories": {
-            "environmental": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "digital_transformation": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            }
-          },
-          "evidence": [],
-          "confidence": 0.95,
-          "reasoning": "Alo Yoga is mentioned only as a competitor gaining market share. No ESG-related content is discussed about the company."
-        },
-        {
           "brand": "Vuori",
           "categories": {
             "environmental": {
@@ -27545,6 +27790,34 @@
           "evidence": [],
           "confidence": 0.95,
           "reasoning": "Vuori is mentioned only as a competitor gaining market share alongside Alo Yoga. No ESG-related content is discussed about the company."
+        },
+        {
+          "brand": "Alo Yoga",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [],
+          "confidence": 0.95,
+          "reasoning": "Alo Yoga is mentioned only as a competitor gaining market share. No ESG-related content is discussed about the company."
         }
       ]
     },
