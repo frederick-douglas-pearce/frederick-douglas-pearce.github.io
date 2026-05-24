@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-23T14:00:40.011374+00:00",
-  "total_articles": 662,
+  "generated_at": "2026-05-24T14:00:40.688423+00:00",
+  "total_articles": 663,
   "brands": [
     "361 Degrees",
     "ASICS",
@@ -43,12 +43,22 @@
   "categories": ["digital_transformation", "environmental", "governance", "social"],
   "scorecard": {
     "period_days": 14,
-    "period_start": "2026-05-09",
-    "period_end": "2026-05-23",
-    "articles_in_period": 22,
-    "articles_after_dedup": 15,
+    "period_start": "2026-05-10",
+    "period_end": "2026-05-24",
+    "articles_in_period": 23,
+    "articles_after_dedup": 16,
     "duplicates_removed": 7,
     "top_brands": [
+      {
+        "brand": "Adidas",
+        "total": 4,
+        "environmental": 0,
+        "social": 2,
+        "governance": 0,
+        "digital_transformation": 2,
+        "article_count": 2,
+        "medal": "gold"
+      },
       {
         "brand": "Puma",
         "total": 3,
@@ -57,7 +67,7 @@
         "governance": 1,
         "digital_transformation": 0,
         "article_count": 2,
-        "medal": "gold"
+        "medal": "silver"
       },
       {
         "brand": "ASICS",
@@ -67,17 +77,7 @@
         "governance": 0,
         "digital_transformation": 0,
         "article_count": 1,
-        "medal": "silver"
-      },
-      {
-        "brand": "Adidas",
-        "total": 2,
-        "environmental": 0,
-        "social": 2,
-        "governance": 0,
-        "digital_transformation": 0,
-        "article_count": 1,
-        "medal": "silver"
+        "medal": "bronze"
       },
       {
         "brand": "Deckers",
@@ -87,7 +87,7 @@
         "governance": 0,
         "digital_transformation": 2,
         "article_count": 1,
-        "medal": "silver"
+        "medal": "bronze"
       },
       {
         "brand": "Vuori",
@@ -97,7 +97,7 @@
         "governance": 0,
         "digital_transformation": 0,
         "article_count": 1,
-        "medal": "silver"
+        "medal": "bronze"
       },
       {
         "brand": "Xtep",
@@ -107,7 +107,7 @@
         "governance": 0,
         "digital_transformation": 0,
         "article_count": 1,
-        "medal": "silver"
+        "medal": "bronze"
       },
       {
         "brand": "Yonex",
@@ -117,7 +117,7 @@
         "governance": 0,
         "digital_transformation": 0,
         "article_count": 1,
-        "medal": "silver"
+        "medal": "bronze"
       }
     ],
     "bottom_brands": [
@@ -160,6 +160,16 @@
     ],
     "all_brand_scores": [
       {
+        "brand": "Adidas",
+        "total": 4,
+        "environmental": 0,
+        "social": 2,
+        "governance": 0,
+        "digital_transformation": 2,
+        "article_count": 2,
+        "medal": "gold"
+      },
+      {
         "brand": "Puma",
         "total": 3,
         "environmental": 2,
@@ -167,7 +177,7 @@
         "governance": 1,
         "digital_transformation": 0,
         "article_count": 2,
-        "medal": "gold"
+        "medal": "silver"
       },
       {
         "brand": "ASICS",
@@ -177,17 +187,7 @@
         "governance": 0,
         "digital_transformation": 0,
         "article_count": 1,
-        "medal": "silver"
-      },
-      {
-        "brand": "Adidas",
-        "total": 2,
-        "environmental": 0,
-        "social": 2,
-        "governance": 0,
-        "digital_transformation": 0,
-        "article_count": 1,
-        "medal": "silver"
+        "medal": "bronze"
       },
       {
         "brand": "Deckers",
@@ -197,7 +197,7 @@
         "governance": 0,
         "digital_transformation": 2,
         "article_count": 1,
-        "medal": "silver"
+        "medal": "bronze"
       },
       {
         "brand": "Vuori",
@@ -207,7 +207,7 @@
         "governance": 0,
         "digital_transformation": 0,
         "article_count": 1,
-        "medal": "silver"
+        "medal": "bronze"
       },
       {
         "brand": "Xtep",
@@ -217,7 +217,7 @@
         "governance": 0,
         "digital_transformation": 0,
         "article_count": 1,
-        "medal": "silver"
+        "medal": "bronze"
       },
       {
         "brand": "Yonex",
@@ -227,7 +227,7 @@
         "governance": 0,
         "digital_transformation": 0,
         "article_count": 1,
-        "medal": "silver"
+        "medal": "bronze"
       },
       {
         "brand": "Skechers",
@@ -268,6 +268,65 @@
     ]
   },
   "articles": [
+    {
+      "id": "f606ea70-5ff7-4017-b2d9-973b6ef85ce0",
+      "title": "WC SMART BALL NEEDS CHARGING BEFORE KICK-OFF",
+      "url": "https://theshillongtimes.com/2026/05/24/wc-smart-ball-needs-charging-before-kick-off/",
+      "source_name": "Theshillongtimes",
+      "published_at": "2026-05-23T22:41:39+00:00",
+      "published_date": "2026-05-23",
+      "brands": ["Adidas"],
+      "categories": ["digital_transformation"],
+      "brand_details": [
+        {
+          "brand": "Adidas",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            }
+          },
+          "evidence": [
+            {
+              "category": "digital_transformation",
+              "excerpt": "The ball's data will work alongside the tracking systems installed inside World Cup stadiums, where multiple cameras will create live 3D models of matches. The information will be transmitted directly to VAR officials in real time to improve the speed and accuracy of decision-making.",
+              "relevance_score": 0.8478275955785559,
+              "rerank_score": 0.9996224232687624,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "The advanced features have also made the TRIONDA the most expensive World Cup ball to date, with a reported price tag of \u00a3130.\n\nDespite the extra technology, Adidas claims players will not notice any ..."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "At the heart of the ball is a built-in 500Hz motion sensor chip capable of tracking every touch and movement in real time. The sensor records data 500 times per second, allowing officials to monitor the ball's position with extreme precision throughout matches.",
+              "relevance_score": 0.8381785873467994,
+              "rerank_score": 0.9991601612656864,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "New Delhi, May 23: The official match ball for the 2026 FIFA World Cup will need to be charged before every game, thanks to a range of advanced technology built into it by Adidas. The German sportswear giant has introduced the TRIONDA ball for the tournament to be held across the United States, Canada and Mexico, making it one of the most technologically advanced footballs ever used at a World Cup. At the heart of the ball is a built-in 500Hz motion sensor chip capable of tracking every touch and movement in real time. The sensor records data 500 times per second, allowing officials to monitor the ball\u2019s position with extreme precision throughout matches. Because of the integrated electronics, the ball operates on battery power and must be charged ahead of kick-off...."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "Article describes Adidas's innovative TRIONDA ball with advanced sensor technology for the 2026 FIFA World Cup. This represents significant digital transformation through integration of IoT sensors, real-time data transmission, and AI-powered officiating systems. The technology innovation is presented positively as enhancing accuracy and transparency in football."
+        }
+      ]
+    },
     {
       "id": "6411cdfa-ff9f-4e59-862d-58090abe28f4",
       "title": "Deckers CEO Provides Long - term Plan for Hoka , Ugg Through 2030",
@@ -4979,6 +5038,24 @@
           },
           "evidence": [
             {
+              "category": "governance",
+              "excerpt": "This move of the company is part of its ongoing 'Win Now' action plan which is aimed at streamlining operations and positions the brand for longterm profitable growth",
+              "relevance_score": 0.8201050803636162,
+              "rerank_score": 0.999876653891945,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Representative image\n\nNike has announced that it will layoff 1400 employees across its global operations team, with the majority of reductions coming from its technology division. This move of the company is part of its ongoing \u2018Win Now\u2019 action plan which is aimed at streamlining operations and positions the brand for longterm profitable growth. In a memo to the employees, chief operating officer Venkatesh Alagirisamy stressed that the job cuts are not a new direction but the next phase of work already underway...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "In a memo to the employees, chief operating officer Venkatesh Alagirisamy stressed that the job cuts are not a new direction but the next phase of work already underway",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9997868284962892,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...This move of the company is part of its ongoing \u2018Win Now\u2019 action plan which is aimed at streamlining operations and positions the brand for longterm profitable growth. In a memo to the employees, chief operating officer Venkatesh Alagirisamy stressed that the job cuts are not a new direction but the next phase of work already underway. He also outlined four important ares to focus:\n\nTechnology Modernisation: Consolidating the technology footprint, streamlining structures, and focusing on two hubs \u2014 the Philip H. Knight Campus and Nike India Technology Center...."
+            },
+            {
               "category": "social",
               "excerpt": "Nike has announced that it will layoff 1400 employees across its global operations team",
               "relevance_score": 1.0,
@@ -5004,24 +5081,6 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "Collectively, these changes will result in a reduction of approximately 1,400 roles in Global Operations, with the majority in Technology. These reductions are very hard for the teammates directly affected and for the teams around them, too. Part of doing the right thing is being direct...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "This move of the company is part of its ongoing 'Win Now' action plan which is aimed at streamlining operations and positions the brand for longterm profitable growth",
-              "relevance_score": 0.8201050803636162,
-              "rerank_score": 0.999876653891945,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Representative image\n\nNike has announced that it will layoff 1400 employees across its global operations team, with the majority of reductions coming from its technology division. This move of the company is part of its ongoing \u2018Win Now\u2019 action plan which is aimed at streamlining operations and positions the brand for longterm profitable growth. In a memo to the employees, chief operating officer Venkatesh Alagirisamy stressed that the job cuts are not a new direction but the next phase of work already underway...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "In a memo to the employees, chief operating officer Venkatesh Alagirisamy stressed that the job cuts are not a new direction but the next phase of work already underway",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9997868284962892,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...This move of the company is part of its ongoing \u2018Win Now\u2019 action plan which is aimed at streamlining operations and positions the brand for longterm profitable growth. In a memo to the employees, chief operating officer Venkatesh Alagirisamy stressed that the job cuts are not a new direction but the next phase of work already underway. He also outlined four important ares to focus:\n\nTechnology Modernisation: Consolidating the technology footprint, streamlining structures, and focusing on two hubs \u2014 the Philip H. Knight Campus and Nike India Technology Center...."
             },
             {
               "category": "digital_transformation",
@@ -5314,24 +5373,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "Management framed the move as a further step in the 'Win Now' initiative, aimed at simplifying the organizational structure",
-              "relevance_score": 0.792682880701682,
-              "rerank_score": 0.9998909080061327,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "On Thursday the sportswear giant announced the deletion of about 1,400 roles across its global operations, with a heavy concentration in technology, representing a bit under 2% of its total workforce. Management framed the move as a further step in the \"Win Now\" initiative, aimed at simplifying the organizational structure, modernizing industrial tools, reorganizing certain Converse operations and better integrating materials and supply chain functions. Since Elliott Hill returned to lead the company in late 2024, the group has stepped up adjustments to restore more profitable growth...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "Since Elliott Hill returned to lead the company in late 2024, the group has stepped up adjustments to restore more profitable growth",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9997954146838699,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "On Thursday the sportswear giant announced the deletion of about 1,400 roles across its global operations, with a heavy concentration in technology, representing a bit under 2% of its total workforce. Management framed the move as a further step in the \"Win Now\" initiative, aimed at simplifying the organizational structure, modernizing industrial tools, reorganizing certain Converse operations and better integrating materials and supply chain functions. Since Elliott Hill returned to lead the company in late 2024, the group has stepped up adjustments to restore more profitable growth. In January, Nike had already announced 775 job cuts at its US distribution centers as part of an automation ramp-up...."
-            },
-            {
               "category": "social",
               "excerpt": "On Thursday the sportswear giant announced the deletion of about 1,400 roles across its global operations",
               "relevance_score": 1.0,
@@ -5348,6 +5389,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...Since Elliott Hill returned to lead the company in late 2024, the group has stepped up adjustments to restore more profitable growth. In January, Nike had already announced 775 job cuts at its US distribution centers as part of an automation ramp-up. Reuters noted at the time that the group employed 77,800 people as of late May 2025."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Management framed the move as a further step in the 'Win Now' initiative, aimed at simplifying the organizational structure",
+              "relevance_score": 0.792682880701682,
+              "rerank_score": 0.9998909080061327,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "On Thursday the sportswear giant announced the deletion of about 1,400 roles across its global operations, with a heavy concentration in technology, representing a bit under 2% of its total workforce. Management framed the move as a further step in the \"Win Now\" initiative, aimed at simplifying the organizational structure, modernizing industrial tools, reorganizing certain Converse operations and better integrating materials and supply chain functions. Since Elliott Hill returned to lead the company in late 2024, the group has stepped up adjustments to restore more profitable growth...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Since Elliott Hill returned to lead the company in late 2024, the group has stepped up adjustments to restore more profitable growth",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9997954146838699,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "On Thursday the sportswear giant announced the deletion of about 1,400 roles across its global operations, with a heavy concentration in technology, representing a bit under 2% of its total workforce. Management framed the move as a further step in the \"Win Now\" initiative, aimed at simplifying the organizational structure, modernizing industrial tools, reorganizing certain Converse operations and better integrating materials and supply chain functions. Since Elliott Hill returned to lead the company in late 2024, the group has stepped up adjustments to restore more profitable growth. In January, Nike had already announced 775 job cuts at its US distribution centers as part of an automation ramp-up...."
             },
             {
               "category": "digital_transformation",
@@ -9484,24 +9543,6 @@
           },
           "evidence": [
             {
-              "category": "environmental",
-              "excerpt": "The investigation will focus on whether Lululemon's athletic wear contains PFAS \u2014 often referred to as \"forever chemicals\" \u2014 which some research has linked to health concerns",
-              "relevance_score": 0.8971442461681471,
-              "rerank_score": 0.9999160098872719,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "AUSTIN, Texas \u2014 Texas Attorney General Ken Paxton has launched an investigation into athletic apparel company Lululemon over concerns about potentially harmful chemicals in its products. According to a press release issued Monday, Paxton\u2019s office sent a Civil Investigative Demand to Lululemon USA Inc. as part of a probe into whether the company \u201chas misled consumers about the safety, quality, and health impacts of its products.\u201d The investigation will focus on whether Lululemon\u2019s athletic wear contains PFAS \u2014 often referred to as \u201cforever chemicals\u201d \u2014 which some research has linked to health concerns, including \u201cendocrine disruption, infertility, cancer, and other health issues,\u201d according to the release. State officials will also review Lululemon\u2019s internal policies, including its Restricted Substances List, testing protocols and supply chain practices, to determine whether its products meet the company\u2019s stated safety standards."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "I will not allow any corporation to sell harmful, toxic materials to consumers at a premium price under the guise of wellness and sustainability",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999103039855723,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "\u201cAmericans should not have to worry if they are being deceived when trying to make healthy choices for themselves and their families,\u201d Paxton said. \u201cI will not allow any corporation to sell harmful, toxic materials to consumers at a premium price under the guise of wellness and sustainability. If Lululemon has violated Texas law, it will be held accountable.\u201d..."
-            },
-            {
               "category": "governance",
               "excerpt": "If Lululemon has violated Texas law, it will be held accountable",
               "relevance_score": 1.0,
@@ -9536,6 +9577,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "\u201cAmericans should not have to worry if they are being deceived when trying to make healthy choices for themselves and their families,\u201d Paxton said. \u201cI will not allow any corporation to sell harmful, toxic materials to consumers at a premium price under the guise of wellness and sustainability...."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "The investigation will focus on whether Lululemon's athletic wear contains PFAS \u2014 often referred to as \"forever chemicals\" \u2014 which some research has linked to health concerns",
+              "relevance_score": 0.8971442461681471,
+              "rerank_score": 0.9999160098872719,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "AUSTIN, Texas \u2014 Texas Attorney General Ken Paxton has launched an investigation into athletic apparel company Lululemon over concerns about potentially harmful chemicals in its products. According to a press release issued Monday, Paxton\u2019s office sent a Civil Investigative Demand to Lululemon USA Inc. as part of a probe into whether the company \u201chas misled consumers about the safety, quality, and health impacts of its products.\u201d The investigation will focus on whether Lululemon\u2019s athletic wear contains PFAS \u2014 often referred to as \u201cforever chemicals\u201d \u2014 which some research has linked to health concerns, including \u201cendocrine disruption, infertility, cancer, and other health issues,\u201d according to the release. State officials will also review Lululemon\u2019s internal policies, including its Restricted Substances List, testing protocols and supply chain practices, to determine whether its products meet the company\u2019s stated safety standards."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "I will not allow any corporation to sell harmful, toxic materials to consumers at a premium price under the guise of wellness and sustainability",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999103039855723,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "\u201cAmericans should not have to worry if they are being deceived when trying to make healthy choices for themselves and their families,\u201d Paxton said. \u201cI will not allow any corporation to sell harmful, toxic materials to consumers at a premium price under the guise of wellness and sustainability. If Lululemon has violated Texas law, it will be held accountable.\u201d..."
             }
           ],
           "confidence": 0.95,
@@ -9579,33 +9638,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "So too were the many fans that paid up to $200 to buy the Nike jerseys, who fumed about their poor quality on social media.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9996631168965869,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Athletes weren\u2019t the only ones made to look ridiculous. So too were the many fans that paid up to $200 to buy the Nike jerseys, who fumed about their poor quality on social media. \u201cThe way the shoulders are sewn together just makes them bunch like this no matter what,\u201d one complained on Reddit...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "It's unclear how, or if, Nike will be able to redesign the kits in time.",
-              "relevance_score": 0.7701820087344559,
-              "rerank_score": 0.9994513163146443,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "\u201cDuring the recent international break, we observed a minor issue with our Nike national team kits, most noticeable around the shoulder seam,\u201d a Nike spokesperson said. \u201cPerformance is unaffected, but..."
-            },
-            {
-              "category": "governance",
-              "excerpt": "The athletic apparel maker acknowledged the shoulder bulge issue in a statement to The Guardian, but didn't address how it occurred.",
-              "relevance_score": 0.847980684307267,
-              "rerank_score": 0.999198525308893,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "...If \u201ccomputational design\u201d sounds like a euphemism for AI, you might be on to something. A source familiar with the design process told The Guardian that it involves using elements of AI to work alongside its human designers, raising the possibility that an AI tool may have been involved in the flub. The athletic apparel maker acknowledged the shoulder bulge issue in a statement to The Guardian, but didn\u2019t address how it occurred."
-            },
-            {
               "category": "digital_transformation",
               "excerpt": "A source familiar with the design process told The Guardian that it involves using elements of AI to work alongside its human designers, raising the possibility that an AI tool may have been involved in the flub.",
               "relevance_score": 1.0,
@@ -9631,6 +9663,33 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "Sign up to see the future, today\n\nCan\u2019t-miss innovations from the bleeding edge of science and tech\n\nEmail address Thank you!\n\nIs there anything about this upcoming World Cup \u2014 which will be taking pl..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "So too were the many fans that paid up to $200 to buy the Nike jerseys, who fumed about their poor quality on social media.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9996631168965869,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Athletes weren\u2019t the only ones made to look ridiculous. So too were the many fans that paid up to $200 to buy the Nike jerseys, who fumed about their poor quality on social media. \u201cThe way the shoulders are sewn together just makes them bunch like this no matter what,\u201d one complained on Reddit...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "It's unclear how, or if, Nike will be able to redesign the kits in time.",
+              "relevance_score": 0.7701820087344559,
+              "rerank_score": 0.9994513163146443,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "\u201cDuring the recent international break, we observed a minor issue with our Nike national team kits, most noticeable around the shoulder seam,\u201d a Nike spokesperson said. \u201cPerformance is unaffected, but..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "The athletic apparel maker acknowledged the shoulder bulge issue in a statement to The Guardian, but didn't address how it occurred.",
+              "relevance_score": 0.847980684307267,
+              "rerank_score": 0.999198525308893,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...If \u201ccomputational design\u201d sounds like a euphemism for AI, you might be on to something. A source familiar with the design process told The Guardian that it involves using elements of AI to work alongside its human designers, raising the possibility that an AI tool may have been involved in the flub. The athletic apparel maker acknowledged the shoulder bulge issue in a statement to The Guardian, but didn\u2019t address how it occurred."
             }
           ],
           "confidence": 0.9,
@@ -10132,15 +10191,6 @@
           },
           "evidence": [
             {
-              "category": "digital_transformation",
-              "excerpt": "It has been reported that Nike partially leaned on AI during the design process for their latest cohort of kits.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9994408206975249,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...'Maybe when it goes on sale in four months but my god Nike has fallen off for a while now. What a shame, this might sound dumb but getting the new jersey is something I have always really looked forward too growing up, so seeing how poorly made these are makes me sad.' It has been reported that Nike partially leaned on AI during the design process for their latest cohort of kits. The sportswear giant is now said to be in conversation with the relevant federations and retailers regarding 'next steps' with the shirts."
-            },
-            {
               "category": "governance",
               "excerpt": "Nike has now acknowledged the comical flaw.",
               "relevance_score": 1.0,
@@ -10166,6 +10216,15 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "After much criticism on social media from fans who have spent bucketloads on such shirts - England's home jersey costs up to \u00a3135 on the Three Lions' website - Nike has now acknowledged the comical flaw. The company said in a statement: 'During the recent international break, we observed a minor issue with our Nike national team kits, most noticeable around the shoulder seam.\n\n'Performance is unaffected, but the overall aesthetic is not where it needs to be.' The shoulder bulge was most apparent during England's disappointing 1-0 defeat by Japan last week, with Cole Palmer's shirt riding bizarrely high at the seams...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "It has been reported that Nike partially leaned on AI during the design process for their latest cohort of kits.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9994408206975249,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...'Maybe when it goes on sale in four months but my god Nike has fallen off for a while now. What a shame, this might sound dumb but getting the new jersey is something I have always really looked forward too growing up, so seeing how poorly made these are makes me sad.' It has been reported that Nike partially leaned on AI during the design process for their latest cohort of kits. The sportswear giant is now said to be in conversation with the relevant federations and retailers regarding 'next steps' with the shirts."
             }
           ],
           "confidence": 0.9,
@@ -10259,24 +10318,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "Under Armour has also faced corporate governance questions in the past but has strengthened its board with new independent directors possessing strong financial and retail expertise.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999610881532477,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Under Armour has also faced corporate governance questions in the past but has strengthened its board with new independent directors possessing strong financial and retail expertise. These changes are viewed positively by some investors as supporting a potential strategic review, including possible sale or privatization scenarios, though no formal process has been announced...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "These changes are viewed positively by some investors as supporting a potential strategic review, including possible sale or privatization scenarios, though no formal process has been announced.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9997776135484916,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Under Armour has also faced corporate governance questions in the past but has strengthened its board with new independent directors possessing strong financial and retail expertise. These changes are viewed positively by some investors as supporting a potential strategic review, including possible sale or privatization scenarios, though no formal process has been announced. The company continues to invest in sustainability initiatives, digital transformation and athlete partnerships to drive long-term growth...."
-            },
-            {
               "category": "digital_transformation",
               "excerpt": "The company continues to invest in sustainability initiatives, digital transformation and athlete partnerships to drive long-term growth.",
               "relevance_score": 1.0,
@@ -10293,6 +10334,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...The company continues to invest in sustainability initiatives, digital transformation and athlete partnerships to drive long-term growth. Its connected fitness platform and apps remain part of the ecosystem, though less emphasized than in previous years. As of April 2026, Under Armour's path forward involves balancing near-term profitability pressures with strategic investments for future growth...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Under Armour has also faced corporate governance questions in the past but has strengthened its board with new independent directors possessing strong financial and retail expertise.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999610881532477,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Under Armour has also faced corporate governance questions in the past but has strengthened its board with new independent directors possessing strong financial and retail expertise. These changes are viewed positively by some investors as supporting a potential strategic review, including possible sale or privatization scenarios, though no formal process has been announced...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "These changes are viewed positively by some investors as supporting a potential strategic review, including possible sale or privatization scenarios, though no formal process has been announced.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9997776135484916,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Under Armour has also faced corporate governance questions in the past but has strengthened its board with new independent directors possessing strong financial and retail expertise. These changes are viewed positively by some investors as supporting a potential strategic review, including possible sale or privatization scenarios, though no formal process has been announced. The company continues to invest in sustainability initiatives, digital transformation and athlete partnerships to drive long-term growth...."
             },
             {
               "category": "environmental",
@@ -10599,24 +10658,6 @@
           },
           "evidence": [
             {
-              "category": "digital_transformation",
-              "excerpt": "The brand has been investing in initiatives such as in-store foot ID analysis, where consumers can run on a treadmill and receive a detailed assessment before purchasing footwear.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998225429201426,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...This focus has translated into a product-led strategy that emphasises performance and technology. The brand has been investing in initiatives such as in-store foot ID analysis, where consumers can run on a treadmill and receive a detailed assessment before purchasing footwear. \u201cThere is not even a single brand which is making you run on a treadmill, show you the foot ID analysis, give you a physical report and then offer you the shoe,\u201d Sharma says, adding that such experiences help build trust and educate consumers...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "There is not even a single brand which is making you run on a treadmill, show you the foot ID analysis, give you a physical report and then offer you the shoe",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9996501529146825,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...The brand has been investing in initiatives such as in-store foot ID analysis, where consumers can run on a treadmill and receive a detailed assessment before purchasing footwear. \u201cThere is not even a single brand which is making you run on a treadmill, show you the foot ID analysis, give you a physical report and then offer you the shoe,\u201d Sharma says, adding that such experiences help build trust and educate consumers. Even as running leads the pack, ASICS continues to broaden its portfolio...."
-            },
-            {
               "category": "social",
               "excerpt": "We wanted to come back to the community concept of Ekiden",
               "relevance_score": 0.7584312452071451,
@@ -10642,6 +10683,24 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...The Japanese sportswear brand recently hosted the first edition of the ASICS Ekiden India 2026. The relay, rooted in Japan\u2019s long-standing running tradition, brings teams together to pass a tasuki, a ceremonial sash that symbolises continuity, shared purpose and teamwork. With more than 240 teams participating, each comprising four runners including at least one Japanese participant, the event served as both a sporting contest and a cultural bridge between India and Japan. For ASICS, the move is deliberate...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "The brand has been investing in initiatives such as in-store foot ID analysis, where consumers can run on a treadmill and receive a detailed assessment before purchasing footwear.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998225429201426,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...This focus has translated into a product-led strategy that emphasises performance and technology. The brand has been investing in initiatives such as in-store foot ID analysis, where consumers can run on a treadmill and receive a detailed assessment before purchasing footwear. \u201cThere is not even a single brand which is making you run on a treadmill, show you the foot ID analysis, give you a physical report and then offer you the shoe,\u201d Sharma says, adding that such experiences help build trust and educate consumers...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "There is not even a single brand which is making you run on a treadmill, show you the foot ID analysis, give you a physical report and then offer you the shoe",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9996501529146825,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...The brand has been investing in initiatives such as in-store foot ID analysis, where consumers can run on a treadmill and receive a detailed assessment before purchasing footwear. \u201cThere is not even a single brand which is making you run on a treadmill, show you the foot ID analysis, give you a physical report and then offer you the shoe,\u201d Sharma says, adding that such experiences help build trust and educate consumers. Even as running leads the pack, ASICS continues to broaden its portfolio...."
             }
           ],
           "confidence": 0.9,
@@ -10685,6 +10744,24 @@
           },
           "evidence": [
             {
+              "category": "digital_transformation",
+              "excerpt": "A source familiar with that design process told the Guardian this week that Nike's 'computational design' is driven by performance data, and incorporates elements of AI to work alongside the company's designers as they craft a product.",
+              "relevance_score": 0.8769893173627609,
+              "rerank_score": 0.9999472903539128,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "A source familiar with that design process told the Guardian this week that Nike\u2019s \u201ccomputational design\u201d is driven by performance data, and incorporates elements of AI to work alongside the company\u2019s designers as they craft a product. A source familiar with Nike\u2019s rollout said on Tuesday that the company is now in conversation with partner federations and vendors as they weigh any next steps...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "[Aero-FIT] leverages computational design and a highly specialized, stitch-specific knitting process to help athletes stay cool",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9991905950905992,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Outdoor matches at this summer\u2019s World Cup, played in the US, Canada and Mexico, may be among the hottest ever played in tournament history, an issue ostensibly addressed through the Aero-FIT design that serves as the framework for all of its authentic World Cup kits. \u201c[Aero-FIT] leverages computational design and a highly specialized, stitch-specific knitting process to help athletes stay cool,\u201d the company\u2019 marketing material reads."
+            },
+            {
               "category": "governance",
               "excerpt": "We always hold ourselves and our products to the highest standards and this fell short.",
               "relevance_score": 1.0,
@@ -10710,24 +10787,6 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "\u201cDuring the recent international break, we observed a minor issue with our Nike national team kits, most noticeable around the shoulder seam,\u201d the company said via a spokesperson. \u201cPerformance is unaffected, but the overall aesthetic is not where it needs to be.\u201d Indeed, it\u2019s an uncharacteristic flub from the sportswear giant, who touted the design and technology of the kits upon their release...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "A source familiar with that design process told the Guardian this week that Nike's 'computational design' is driven by performance data, and incorporates elements of AI to work alongside the company's designers as they craft a product.",
-              "relevance_score": 0.8769893173627609,
-              "rerank_score": 0.9999472903539128,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "A source familiar with that design process told the Guardian this week that Nike\u2019s \u201ccomputational design\u201d is driven by performance data, and incorporates elements of AI to work alongside the company\u2019s designers as they craft a product. A source familiar with Nike\u2019s rollout said on Tuesday that the company is now in conversation with partner federations and vendors as they weigh any next steps...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "[Aero-FIT] leverages computational design and a highly specialized, stitch-specific knitting process to help athletes stay cool",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9991905950905992,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Outdoor matches at this summer\u2019s World Cup, played in the US, Canada and Mexico, may be among the hottest ever played in tournament history, an issue ostensibly addressed through the Aero-FIT design that serves as the framework for all of its authentic World Cup kits. \u201c[Aero-FIT] leverages computational design and a highly specialized, stitch-specific knitting process to help athletes stay cool,\u201d the company\u2019 marketing material reads."
             }
           ],
           "confidence": 0.9,
@@ -10873,53 +10932,6 @@
       "categories": ["governance"],
       "brand_details": [
         {
-          "brand": "Nike",
-          "categories": {
-            "environmental": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": true,
-              "sentiment": -1,
-              "sentiment_label": "negative"
-            },
-            "digital_transformation": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            }
-          },
-          "evidence": [
-            {
-              "category": "governance",
-              "excerpt": "A jury verdict in March 2025 found in favor of Nike on one of its two patent infringement claims and rejected the remaining claim. Damages were awarded as a fine in the amount of $355,450 in favor of Nike",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999668743120964,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "A jury verdict in March 2025 found in favor of Nike on one of its two patent infringement claims and rejected the remaining claim. Damages were awarded as a fine in the amount of $355,450 in favor of Nike. Judge Subramanian\u2019s ruling last week that Nike\u2019s patent claims as a matter of law were invalid on the ground of obviousness voids the jury verdict and the fine...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "Judge Subramanian's ruling last week that Nike's patent claims as a matter of law were invalid on the ground of obviousness voids the jury verdict and the fine",
-              "relevance_score": 0.911269410519304,
-              "rerank_score": 0.9999178448891721,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "A jury verdict in March 2025 found in favor of Nike on one of its two patent infringement claims and rejected the remaining claim. Damages were awarded as a fine in the amount of $355,450 in favor of ..."
-            }
-          ],
-          "confidence": 0.9,
-          "reasoning": "This is a governance issue involving patent litigation and legal compliance. Nike's patent claims were ruled invalid by the court, overturning a previous jury verdict in their favor, which represents a negative legal outcome for the company."
-        },
-        {
           "brand": "Lululemon",
           "categories": {
             "environmental": {
@@ -10965,6 +10977,53 @@
           ],
           "confidence": 0.9,
           "reasoning": "This is a governance issue involving patent litigation defense. Lululemon successfully challenged Nike's patent claims and had the court ruling in their favor, representing a positive legal outcome for the company in terms of intellectual property governance."
+        },
+        {
+          "brand": "Nike",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "governance",
+              "excerpt": "A jury verdict in March 2025 found in favor of Nike on one of its two patent infringement claims and rejected the remaining claim. Damages were awarded as a fine in the amount of $355,450 in favor of Nike",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999668743120964,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "A jury verdict in March 2025 found in favor of Nike on one of its two patent infringement claims and rejected the remaining claim. Damages were awarded as a fine in the amount of $355,450 in favor of Nike. Judge Subramanian\u2019s ruling last week that Nike\u2019s patent claims as a matter of law were invalid on the ground of obviousness voids the jury verdict and the fine...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Judge Subramanian's ruling last week that Nike's patent claims as a matter of law were invalid on the ground of obviousness voids the jury verdict and the fine",
+              "relevance_score": 0.911269410519304,
+              "rerank_score": 0.9999178448891721,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "A jury verdict in March 2025 found in favor of Nike on one of its two patent infringement claims and rejected the remaining claim. Damages were awarded as a fine in the amount of $355,450 in favor of ..."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "This is a governance issue involving patent litigation and legal compliance. Nike's patent claims were ruled invalid by the court, overturning a previous jury verdict in their favor, which represents a negative legal outcome for the company."
         }
       ]
     },
