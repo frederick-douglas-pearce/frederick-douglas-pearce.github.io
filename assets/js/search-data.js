@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "projects-codefluent",
+        },{id: "post-anatomy-of-a-claude-code-session",
+        
+          title: "Anatomy of a Claude Code session",
+        
+        description: "Every Claude Code session writes a detailed local JSONL record of your prompts, tool calls, and token usage — here&#39;s what&#39;s in it and what it powers.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/anatomy-of-a-claude-code-session/";
+          
+        },
+      },{id: "projects-codefluent",
           title: 'CodeFluent',
           description: "Personal AI fluency analytics for Claude Code users",
           section: "Projects",handler: () => {
