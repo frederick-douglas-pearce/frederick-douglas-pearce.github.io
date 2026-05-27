@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-26T14:00:40.467468+00:00",
-  "total_articles": 664,
+  "generated_at": "2026-05-27T14:00:41.896327+00:00",
+  "total_articles": 668,
   "brands": [
     "361 Degrees",
     "ASICS",
@@ -43,22 +43,12 @@
   "categories": ["digital_transformation", "environmental", "governance", "social"],
   "scorecard": {
     "period_days": 14,
-    "period_start": "2026-05-12",
-    "period_end": "2026-05-26",
-    "articles_in_period": 19,
-    "articles_after_dedup": 14,
+    "period_start": "2026-05-13",
+    "period_end": "2026-05-27",
+    "articles_in_period": 22,
+    "articles_after_dedup": 17,
     "duplicates_removed": 5,
     "top_brands": [
-      {
-        "brand": "Adidas",
-        "total": 4,
-        "environmental": 0,
-        "social": 2,
-        "governance": 0,
-        "digital_transformation": 2,
-        "article_count": 2,
-        "medal": "gold"
-      },
       {
         "brand": "ASICS",
         "total": 2,
@@ -67,7 +57,17 @@
         "governance": 0,
         "digital_transformation": 0,
         "article_count": 1,
-        "medal": "silver"
+        "medal": "gold"
+      },
+      {
+        "brand": "Adidas",
+        "total": 2,
+        "environmental": 0,
+        "social": 0,
+        "governance": 0,
+        "digital_transformation": 2,
+        "article_count": 1,
+        "medal": "gold"
       },
       {
         "brand": "Deckers",
@@ -77,7 +77,7 @@
         "governance": 0,
         "digital_transformation": 2,
         "article_count": 1,
-        "medal": "silver"
+        "medal": "gold"
       },
       {
         "brand": "Puma",
@@ -87,7 +87,7 @@
         "governance": 0,
         "digital_transformation": 0,
         "article_count": 1,
-        "medal": "silver"
+        "medal": "gold"
       },
       {
         "brand": "Xtep",
@@ -97,7 +97,7 @@
         "governance": 0,
         "digital_transformation": 0,
         "article_count": 1,
-        "medal": "silver"
+        "medal": "gold"
       },
       {
         "brand": "Yonex",
@@ -107,40 +107,41 @@
         "governance": 0,
         "digital_transformation": 0,
         "article_count": 1,
-        "medal": "silver"
+        "medal": "gold"
       },
       {
         "brand": "Nike",
         "total": 1,
+        "environmental": 4,
+        "social": 0,
+        "governance": -4,
+        "digital_transformation": 1,
+        "article_count": 6,
+        "medal": "silver"
+      },
+      {
+        "brand": "Under Armour",
+        "total": 1,
         "environmental": 2,
         "social": 0,
-        "governance": -2,
-        "digital_transformation": 1,
-        "article_count": 3,
-        "medal": "bronze"
+        "governance": -1,
+        "digital_transformation": 0,
+        "article_count": 2,
+        "medal": "silver"
       }
     ],
     "bottom_brands": [
       {
         "brand": "Lululemon",
-        "total": -3,
+        "total": -4,
         "environmental": 0,
         "social": -1,
-        "governance": -2,
+        "governance": -3,
         "digital_transformation": 0,
-        "article_count": 2
+        "article_count": 3
       },
       {
         "brand": "Skechers",
-        "total": -1,
-        "environmental": 0,
-        "social": 0,
-        "governance": -1,
-        "digital_transformation": 0,
-        "article_count": 1
-      },
-      {
-        "brand": "Under Armour",
         "total": -1,
         "environmental": 0,
         "social": 0,
@@ -151,16 +152,6 @@
     ],
     "all_brand_scores": [
       {
-        "brand": "Adidas",
-        "total": 4,
-        "environmental": 0,
-        "social": 2,
-        "governance": 0,
-        "digital_transformation": 2,
-        "article_count": 2,
-        "medal": "gold"
-      },
-      {
         "brand": "ASICS",
         "total": 2,
         "environmental": 0,
@@ -168,7 +159,17 @@
         "governance": 0,
         "digital_transformation": 0,
         "article_count": 1,
-        "medal": "silver"
+        "medal": "gold"
+      },
+      {
+        "brand": "Adidas",
+        "total": 2,
+        "environmental": 0,
+        "social": 0,
+        "governance": 0,
+        "digital_transformation": 2,
+        "article_count": 1,
+        "medal": "gold"
       },
       {
         "brand": "Deckers",
@@ -178,7 +179,7 @@
         "governance": 0,
         "digital_transformation": 2,
         "article_count": 1,
-        "medal": "silver"
+        "medal": "gold"
       },
       {
         "brand": "Puma",
@@ -188,7 +189,7 @@
         "governance": 0,
         "digital_transformation": 0,
         "article_count": 1,
-        "medal": "silver"
+        "medal": "gold"
       },
       {
         "brand": "Xtep",
@@ -198,7 +199,7 @@
         "governance": 0,
         "digital_transformation": 0,
         "article_count": 1,
-        "medal": "silver"
+        "medal": "gold"
       },
       {
         "brand": "Yonex",
@@ -208,17 +209,27 @@
         "governance": 0,
         "digital_transformation": 0,
         "article_count": 1,
-        "medal": "silver"
+        "medal": "gold"
       },
       {
         "brand": "Nike",
         "total": 1,
+        "environmental": 4,
+        "social": 0,
+        "governance": -4,
+        "digital_transformation": 1,
+        "article_count": 6,
+        "medal": "silver"
+      },
+      {
+        "brand": "Under Armour",
+        "total": 1,
         "environmental": 2,
         "social": 0,
-        "governance": -2,
-        "digital_transformation": 1,
-        "article_count": 3,
-        "medal": "bronze"
+        "governance": -1,
+        "digital_transformation": 0,
+        "article_count": 2,
+        "medal": "silver"
       },
       {
         "brand": "Skechers",
@@ -230,26 +241,309 @@
         "article_count": 1
       },
       {
-        "brand": "Under Armour",
-        "total": -1,
-        "environmental": 0,
-        "social": 0,
-        "governance": -1,
-        "digital_transformation": 0,
-        "article_count": 1
-      },
-      {
         "brand": "Lululemon",
-        "total": -3,
+        "total": -4,
         "environmental": 0,
         "social": -1,
-        "governance": -2,
+        "governance": -3,
         "digital_transformation": 0,
-        "article_count": 2
+        "article_count": 3
       }
     ]
   },
   "articles": [
+    {
+      "id": "5e308f7e-b955-4094-9a92-0953edbcbde8",
+      "title": "Meek Mill Calls Out NIKE for Using His  Dreams & Nightmare Brand for Their Clothing :  Wassup With This ? ",
+      "url": "https://www.vice.com/en/article/meek-mill-calls-out-nike-for-using-his-dreams-nightmares-brand-for-their-clothing-wassup-with-this/",
+      "source_name": "vice.com",
+      "published_at": "2026-05-26T20:30:00+00:00",
+      "published_date": "2026-05-26",
+      "brands": ["Nike"],
+      "categories": ["governance"],
+      "brand_details": [
+        {
+          "brand": "Nike",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "governance",
+              "excerpt": "Meek Mill Claims NIKE stole His 'Dreams & Nightmares' Branding for their LeBron James Collab",
+              "relevance_score": 0.8468804289740539,
+              "rerank_score": 0.9999518804267497,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Meek Mill Claims NIKE stole His \u2018Dreams & Nightmares\u2019 Branding for their LeBron James Collab\n\nIn similar news to Meek Mill and his love for social media posting, he shared how frustrated he was that all people do is associate him with Twitter back in December 2025. \u201cThey pushing \u2018Meek\u2019s bad social media rep\u2019 narrative\u2026they never mention the change I make or real stuff I do...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "So @nike just gone take my whole brand and mash it up with LeBron \u2026 what is this \u2026 why wouldn't anybody holler at me about this?",
+              "relevance_score": 0.8510685064084457,
+              "rerank_score": 0.999785338961882,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "\u201cSo @nike just gone take my whole brand and mash it up with LeBron \u2026 what is this \u2026 why wouldn\u2019t anybody holler at me about this? I thought the sneaks was fake?..."
+            }
+          ],
+          "confidence": 0.8,
+          "reasoning": "This is a governance issue involving intellectual property ethics and corporate accountability. Meek Mill is alleging that Nike used his trademarked 'Dreams & Nightmares' branding without permission or consultation, which raises questions about Nike's business practices and respect for intellectual property rights."
+        }
+      ]
+    },
+    {
+      "id": "1cff9829-9d63-4196-83cd-de02e6461bf9",
+      "title": "Under Armour reaches 25 % SKU reduction goal",
+      "url": "https://www.retaildive.com/news/under-armour-sku-reduction-goal/820856/",
+      "source_name": "retaildive.com",
+      "published_at": "2026-05-26T18:30:00+00:00",
+      "published_date": "2026-05-26",
+      "brands": ["Under Armour"],
+      "categories": ["environmental"],
+      "brand_details": [
+        {
+          "brand": "Under Armour",
+          "categories": {
+            "environmental": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "environmental",
+              "excerpt": "Under Armour has cut 25% of its SKUs over the last two years as the retailer targets a more disciplined inventory approach",
+              "relevance_score": 1.0,
+              "rerank_score": 0.999966910557655,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Please let us know if you have feedback. Dive Brief: Under Armour has cut 25% of its SKUs over the last two years as the retailer targets a more disciplined inventory approach, President and CEO Kevin Plank said during a May 12 earnings call. The retailer expects to make further reductions, prioritizing \u201cfewer, better products\u201d that align with concentrated demand alongside a less complex supply chain, Plank told analysts...."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "prioritizing \"fewer, better products\" that align with concentrated demand alongside a less complex supply chain",
+              "relevance_score": 0.8104565457445182,
+              "rerank_score": 0.9996628024866022,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "This audio is auto-generated. Please let us know if you have feedback.\n\nDive Brief:\n\nUnder Armour has cut 25% of its SKUs over the last two years as the retailer targets a more disciplined inventory a..."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "this is not just lower inventory, but better inventory with improved quality driven by tighter buys, a more focused assortment and stronger alignment with demand",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9995221884986223,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...The retailer expects to make further reductions, prioritizing \u201cfewer, better products\u201d that align with concentrated demand alongside a less complex supply chain, Plank told analysts. \u201cImportantly, this is not just lower inventory, but better inventory with improved quality driven by tighter buys, a more focused assortment and stronger alignment with demand,\u201d Reza Taleghani, EVP and CFO, told analysts. Dive Insight:\n\nUnder Armour, like many brands, has made efforts to rethink product mixes in pursuit of a simpler supply chain and greater revenue...."
+            }
+          ],
+          "confidence": 0.8,
+          "reasoning": "Under Armour's 25% SKU reduction represents a strategic move toward operational efficiency and waste reduction. By eliminating excess product variations and focusing on 'fewer, better products' with a 'less complex supply chain,' this initiative reduces overproduction, inventory waste, and supply chain complexity - all positive environmental impacts through more sustainable business practices."
+        }
+      ]
+    },
+    {
+      "id": "c238cae5-9001-4156-a6f4-e4ec72e3bb02",
+      "title": "Heidi O\u2019Neill, the Nike veteran who knows how to turn around a struggling business",
+      "url": "https://english.elpais.com/economy-and-business/2026-05-26/heidi-oneill-the-nike-veteran-who-knows-how-to-turn-around-a-struggling-business.html",
+      "source_name": "El Pais",
+      "published_at": "2026-05-26T18:19:06+00:00",
+      "published_date": "2026-05-26",
+      "brands": ["Lululemon", "Nike"],
+      "categories": ["governance"],
+      "brand_details": [
+        {
+          "brand": "Lululemon",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "governance",
+              "excerpt": "it is engaged in a public feud with its own founder, Chip Wilson, who accuses the board of having killed the brand's creative soul",
+              "relevance_score": 0.827394418971722,
+              "rerank_score": 0.9997507434738935,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "She is replacing Calvin McDonald and inheriting a business in crisis: sales are slumping in the United States, its largest market; it is losing share to younger rivals such as Alo Yoga and Vuori; the stock has fallen by nearly half over five years; and it is engaged in a public feud with its own founder, Chip Wilson, who accuses the board of having killed the brand\u2019s creative soul. Wilson has also questioned O\u2019Neil\u2019s appointment: \u201cI genuinely hope that Heidi is the right person for Lululemon, but a near 30-year veteran of NIKE, Inc., is not the symbol of transformative, creative-first leadership that can instill shareholder confidence in today\u2019s world.\u201d"
+            },
+            {
+              "category": "governance",
+              "excerpt": "Wilson has also questioned O'Neil's appointment: 'I genuinely hope that Heidi is the right person for Lululemon, but a near 30-year veteran of NIKE, Inc., is not the symbol of transformative, creative-first leadership that can instill shareholder confidence in today's world.'",
+              "relevance_score": 0.8943044021082003,
+              "rerank_score": 0.9997093490853733,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "She is replacing Calvin McDonald and inheriting a business in crisis: sales are slumping in the United States, its largest market; it is losing share to younger rivals such as Alo Yoga and Vuori; the ..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Both brands now share the same diagnosis: cultural disconnect, a worn-out digital strategy and a fading narrative.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9996431596807518,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...When O\u2019Neill joined Nike in 1998, the Oregon brand was beginning to lose share to the athleisure trend that Lululemon was creating at the same time in Vancouver. Twenty-eight years later, the roles have reversed: it is Lululemon that is losing ground to more agile competitors, and a Nike veteran who must reinvent it. Both brands now share the same diagnosis: cultural disconnect, a worn-out digital strategy and a fading narrative. O\u2019Neill now has to lead her own comeback...."
+            }
+          ],
+          "confidence": 0.85,
+          "reasoning": "Article highlights significant governance issues at Lululemon including a public dispute between founder and board, questions about leadership appointment decisions, and strategic failures including digital strategy problems."
+        },
+        {
+          "brand": "Nike",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "governance",
+              "excerpt": "Her name is tied to the Donahoe era at Nike, marked by the company's aggressive shift toward direct-to-consumer sales. The idea was to cut out much of the middlemen \u2014 from department stores to sports chains \u2014 and sell through its own website and stores. The strategy weakened the wholesale network and left room for rivals such as Hoka and On to gain ground. It ultimately took a toll on sales.",
+              "relevance_score": 0.8589632542970669,
+              "rerank_score": 0.9994578132263656,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...The doubts have less to do with O\u2019Neill\u2019s r\u00e9sum\u00e9 than with the context she comes from. Her name is tied to the Donahoe era at Nike, marked by the company\u2019s aggressive shift toward direct-to-consumer sales. The idea was to cut out much of the middlemen \u2014 from department stores to sports chains \u2014 and sell through its own website and stores. The strategy weakened the wholesale network and left room for rivals such as Hoka and On to gain ground. It ultimately took a toll on sales. Since Elliott Hill\u2019s arrival, the historic company has been trying to correct course."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Since Elliott Hill's arrival, the historic company has been trying to correct course.",
+              "relevance_score": 0.7116306660451003,
+              "rerank_score": 0.999409498415594,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Markets reacted coolly to the news of her appointment. Lululemon Athletica\u2019s stock fell on the day of the announcement, April 23. Williams-Blair analysts called the choice \u201cout-of-left-field\u201d; BNP Par..."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "Article discusses Nike's strategic missteps under previous leadership, particularly the failed direct-to-consumer strategy that weakened wholesale relationships and hurt sales performance, requiring corrective action under new leadership."
+        }
+      ]
+    },
+    {
+      "id": "f20bd4fb-26cf-4ec4-8b3a-b414d03d600a",
+      "title": "Naomi Osaka dazzles in custom Nike couture French Open kit",
+      "url": "https://www.thebiglead.com/naomi-osaka-dazzles-in-couture-at-french-open-first-round-match/",
+      "source_name": "thebiglead.com",
+      "published_at": "2026-05-26T17:00:00+00:00",
+      "published_date": "2026-05-26",
+      "brands": ["Nike"],
+      "categories": ["environmental"],
+      "brand_details": [
+        {
+          "brand": "Nike",
+          "categories": {
+            "environmental": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "environmental",
+              "excerpt": "Naomi's custom Nike looks were designed by Kevin Germanier, the couture designer turning upcycled materials into something iconic",
+              "relevance_score": 0.8302088282635454,
+              "rerank_score": 0.9999200108360371,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "\u201cRoland Garros\u2019 best dressed just raised the bar again,\u201d Outlander Magazine wrote. \u201cNaomi\u2019s custom Nike looks were designed by Kevin Germanier, the couture designer turning upcycled materials into som..."
+            }
+          ],
+          "confidence": 0.8,
+          "reasoning": "The article mentions Nike's collaboration with designer Kevin Germanier who is specifically noted for 'turning upcycled materials into something iconic,' which represents a positive environmental initiative through sustainable material use in custom athletic wear design."
+        }
+      ]
+    },
     {
       "id": "78703b72-d8e7-42f1-9162-42cd378cd96c",
       "title": "Nike 3D - printed Air Max 1000 . 2 to Get Second Release of May",
@@ -286,6 +580,24 @@
           },
           "evidence": [
             {
+              "category": "environmental",
+              "excerpt": "Each of the 3D-printed Air Max sneakers employs Zellerfeld's TPU Zellerfoam, which is fully recyclable",
+              "relevance_score": 0.8620887844815601,
+              "rerank_score": 0.999608416327266,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...The shoe marked its first foray into 3D printing with the German specialist and has been followed up with the Air Max 95000, a futuristic take on another classic Air Max sneaker that also debuted Nike\u2019s Project Nectar tech for additive printing. The partners made another production breakthrough in January by unlocking dual-color printing on the Air Max 1000. Each of the 3D-printed Air Max sneakers employs Zellerfeld\u2019s TPU Zellerfoam, which is fully recyclable and mapped with different densities to provide a rigid sole and a more breathable and flexible upper without the need for laces."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "mapped with different densities to provide a rigid sole and a more breathable and flexible upper without the need for laces",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9945517717238068,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...The partners made another production breakthrough in January by unlocking dual-color printing on the Air Max 1000. Each of the 3D-printed Air Max sneakers employs Zellerfeld\u2019s TPU Zellerfoam, which is fully recyclable and mapped with different densities to provide a rigid sole and a more breathable and flexible upper without the need for laces."
+            },
+            {
               "category": "digital_transformation",
               "excerpt": "Nike and Zellerfeld are quickly following up with another colorway of the 3D-printed shoe",
               "relevance_score": 1.0,
@@ -311,24 +623,6 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "released the Air Max 1000, based off the original Air Max 1, with a limited release in late 2024 and has sold out every release since. The shoe marked its first foray into 3D printing with the German specialist and has been followed up with the Air Max 95000, a futuristic take on another classic Air Max sneaker that also debuted Nike\u2019s Project Nectar tech for additive printing. The partners made another production breakthrough in January by unlocking dual-color printing on the Air Max 1000. Each of the 3D-printed Air Max sneakers employs Zellerfeld\u2019s TPU Zellerfoam, which is fully recyclable and mapped with different densities to provide a rigid sole and a more breathable and flexible upper without the need for laces."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "Each of the 3D-printed Air Max sneakers employs Zellerfeld's TPU Zellerfoam, which is fully recyclable",
-              "relevance_score": 0.8620887844815601,
-              "rerank_score": 0.999608416327266,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "...The shoe marked its first foray into 3D printing with the German specialist and has been followed up with the Air Max 95000, a futuristic take on another classic Air Max sneaker that also debuted Nike\u2019s Project Nectar tech for additive printing. The partners made another production breakthrough in January by unlocking dual-color printing on the Air Max 1000. Each of the 3D-printed Air Max sneakers employs Zellerfeld\u2019s TPU Zellerfoam, which is fully recyclable and mapped with different densities to provide a rigid sole and a more breathable and flexible upper without the need for laces."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "mapped with different densities to provide a rigid sole and a more breathable and flexible upper without the need for laces",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9945517717238068,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...The partners made another production breakthrough in January by unlocking dual-color printing on the Air Max 1000. Each of the 3D-printed Air Max sneakers employs Zellerfeld\u2019s TPU Zellerfoam, which is fully recyclable and mapped with different densities to provide a rigid sole and a more breathable and flexible upper without the need for laces."
             }
           ],
           "confidence": 0.9,
@@ -1730,62 +2024,6 @@
       "categories": ["social"],
       "brand_details": [
         {
-          "brand": "Vuori",
-          "categories": {
-            "environmental": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "social": {
-              "applies": true,
-              "sentiment": 1,
-              "sentiment_label": "positive"
-            },
-            "governance": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "digital_transformation": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            }
-          },
-          "evidence": [
-            {
-              "category": "social",
-              "excerpt": "For Heifner, returning as a mentor feels like giving back to the program that gave him his start",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998002257276912,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...\u201cYou\u2019re still in school where it\u2019s OK to make mistakes, try new things and experiment,\u201d she says. For Heifner, returning as a mentor feels like giving back to the program that gave him his start \u2014 but it also pulls him out of the industry\u2019s constraints."
-            },
-            {
-              "category": "social",
-              "excerpt": "Mentored by Vuori's VP of men's design Kirk Heifner, students were tasked with creating a look for an athlete",
-              "relevance_score": 0.8695098505613486,
-              "rerank_score": 0.9995634095327433,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Indiscernible shapes draped across mannequins, severed sleeves in electric hues, deconstructed pants and endless interactions of athletic forms in morphing neon suits. Come May 16, their pieces will b..."
-            },
-            {
-              "category": "social",
-              "excerpt": "A lucky few leave the semester with job offers waiting for them after college",
-              "relevance_score": 1.0,
-              "rerank_score": 0.999357313577911,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...This program opened at the inception of Otis\u2019 fashion department in 1980. Each year, prominent designers in the field guide upperclassmen through the process of creating a runway-ready garment, refining and improving pieces through a series of fittings. A lucky few leave the semester with job offers waiting for them after college. Mentored by Vuori\u2019s VP of men\u2019s design Kirk Heifner, students were tasked with creating a look for an athlete who moves seamlessly from a workout to an art gallery...."
-            }
-          ],
-          "confidence": 0.8,
-          "reasoning": "Vuori's mentorship program through their VP of men's design represents community investment in education and talent development, qualifying as Social ESG activity through their commitment to supporting future industry professionals."
-        },
-        {
           "brand": "Nike",
           "categories": {
             "environmental": {
@@ -1840,6 +2078,62 @@
           ],
           "confidence": 0.8,
           "reasoning": "Nike's participation in the mentorship program represents community investment and educational support, qualifying as Social ESG activity through their commitment to developing future talent in the industry."
+        },
+        {
+          "brand": "Vuori",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": true,
+              "sentiment": 1,
+              "sentiment_label": "positive"
+            },
+            "governance": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "social",
+              "excerpt": "For Heifner, returning as a mentor feels like giving back to the program that gave him his start",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998002257276912,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...\u201cYou\u2019re still in school where it\u2019s OK to make mistakes, try new things and experiment,\u201d she says. For Heifner, returning as a mentor feels like giving back to the program that gave him his start \u2014 but it also pulls him out of the industry\u2019s constraints."
+            },
+            {
+              "category": "social",
+              "excerpt": "Mentored by Vuori's VP of men's design Kirk Heifner, students were tasked with creating a look for an athlete",
+              "relevance_score": 0.8695098505613486,
+              "rerank_score": 0.9995634095327433,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Indiscernible shapes draped across mannequins, severed sleeves in electric hues, deconstructed pants and endless interactions of athletic forms in morphing neon suits. Come May 16, their pieces will b..."
+            },
+            {
+              "category": "social",
+              "excerpt": "A lucky few leave the semester with job offers waiting for them after college",
+              "relevance_score": 1.0,
+              "rerank_score": 0.999357313577911,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...This program opened at the inception of Otis\u2019 fashion department in 1980. Each year, prominent designers in the field guide upperclassmen through the process of creating a runway-ready garment, refining and improving pieces through a series of fittings. A lucky few leave the semester with job offers waiting for them after college. Mentored by Vuori\u2019s VP of men\u2019s design Kirk Heifner, students were tasked with creating a look for an athlete who moves seamlessly from a workout to an art gallery...."
+            }
+          ],
+          "confidence": 0.8,
+          "reasoning": "Vuori's mentorship program through their VP of men's design represents community investment in education and talent development, qualifying as Social ESG activity through their commitment to supporting future industry professionals."
         }
       ]
     },
@@ -2264,6 +2558,15 @@
           },
           "evidence": [
             {
+              "category": "digital_transformation",
+              "excerpt": "From the ashes of its eco-friendly shoe business, it's emerging as an artificial intelligence (AI) company. A $50 million financing agreement will help it pivot into being an infrastructure-as-a-service cloud provider, similar to CoreWeave (NASDAQ: CRWV) or Nebius Group (NASDAQ: NBIS). And it comes with a fancy new name: NewBird AI.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.999000634026419,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...But Allbirds is like a phoenix. From the ashes of its eco-friendly shoe business, it's emerging as an artificial intelligence (AI) company. A $50 million financing agreement will help it pivot into being an infrastructure-as-a-service cloud provider, similar to CoreWeave (NASDAQ: CRWV) or Nebius Group (NASDAQ: NBIS). And it comes with a fancy new name: NewBird AI. Will AI create the world's first trillionaire?..."
+            },
+            {
               "category": "governance",
               "excerpt": "The venture-capital-backed direct-to-consumer shoe company was once worth $4 billion. In March, the company sold its shoe brand for less than 1% of that value, $39 million.",
               "relevance_score": 1.0,
@@ -2289,15 +2592,6 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...And not because the new competitor is a major threat to those more-established AI businesses, but because it says something about how investors are valuing them. We've seen this story before\n\nThis isn't the first time a struggling company has made a shift into a trendy business that's completely unrelated to anything it has done in the past. Allbird's rebrand calls to mind how some companies behaved during two other significant periods in recent market history."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "From the ashes of its eco-friendly shoe business, it's emerging as an artificial intelligence (AI) company. A $50 million financing agreement will help it pivot into being an infrastructure-as-a-service cloud provider, similar to CoreWeave (NASDAQ: CRWV) or Nebius Group (NASDAQ: NBIS). And it comes with a fancy new name: NewBird AI.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.999000634026419,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...But Allbirds is like a phoenix. From the ashes of its eco-friendly shoe business, it's emerging as an artificial intelligence (AI) company. A $50 million financing agreement will help it pivot into being an infrastructure-as-a-service cloud provider, similar to CoreWeave (NASDAQ: CRWV) or Nebius Group (NASDAQ: NBIS). And it comes with a fancy new name: NewBird AI. Will AI create the world's first trillionaire?..."
             }
           ],
           "confidence": 0.9,
@@ -2341,33 +2635,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "The article tracks how Cain's 2019 New York Times op-ed helped topple Salazar and shutter the Oregon Project",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999534858304084,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "The article tracks how Cain's 2019 New York Times op-ed helped topple Salazar and shutter the Oregon Project, but Cain argues that was simply \"cutting the head off a hydra.\" That's because the culture that enabled him remains, she writes...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "Cain argues that was simply \"cutting the head off a hydra.\" That's because the culture that enabled him remains",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998835617460569,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "The article tracks how Cain's 2019 New York Times op-ed helped topple Salazar and shutter the Oregon Project, but Cain argues that was simply \"cutting the head off a hydra.\" That's because the culture that enabled him remains, she writes. Mertens also follows Cain's long physical and psychological recovery, her belated diagnosis and surgery for a rare leg condition, and her shift toward medicine and research on athlete health...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "Nike settled Cain's abuse lawsuit in 2023",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998314660447235,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "That abuse allegedly included relentless pressure over her weight, isolation from her parents, help from an unqualified \"psychologist,\" and dismissed self-harm and suicidal thoughts, Cain notes. (Salazar denies wrongdoing; he and Nike settled Cain's abuse lawsuit in 2023.) \"While the media wondered what happened to Cain as her times got slower\u2014assuming she'd lost her world-class talent because, as the stereotype goes, female runners flame out once they get hips\u2014as she tells it, she was lucky to make it out alive,\" Mertens writes."
-            },
-            {
               "category": "social",
               "excerpt": "Salazar denies wrongdoing; he and Nike settled Cain's abuse lawsuit in 2023",
               "relevance_score": 1.0,
@@ -2393,6 +2660,33 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "That abuse allegedly included relentless pressure over her weight, isolation from her parents, help from an unqualified \"psychologist,\" and dismissed self-harm and suicidal thoughts, Cain notes. (Salazar denies wrongdoing; he and Nike settled Cain's abuse lawsuit in 2023.)..."
+            },
+            {
+              "category": "governance",
+              "excerpt": "The article tracks how Cain's 2019 New York Times op-ed helped topple Salazar and shutter the Oregon Project",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999534858304084,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "The article tracks how Cain's 2019 New York Times op-ed helped topple Salazar and shutter the Oregon Project, but Cain argues that was simply \"cutting the head off a hydra.\" That's because the culture that enabled him remains, she writes...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Cain argues that was simply \"cutting the head off a hydra.\" That's because the culture that enabled him remains",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998835617460569,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "The article tracks how Cain's 2019 New York Times op-ed helped topple Salazar and shutter the Oregon Project, but Cain argues that was simply \"cutting the head off a hydra.\" That's because the culture that enabled him remains, she writes. Mertens also follows Cain's long physical and psychological recovery, her belated diagnosis and surgery for a rare leg condition, and her shift toward medicine and research on athlete health...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Nike settled Cain's abuse lawsuit in 2023",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998314660447235,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "That abuse allegedly included relentless pressure over her weight, isolation from her parents, help from an unqualified \"psychologist,\" and dismissed self-harm and suicidal thoughts, Cain notes. (Salazar denies wrongdoing; he and Nike settled Cain's abuse lawsuit in 2023.) \"While the media wondered what happened to Cain as her times got slower\u2014assuming she'd lost her world-class talent because, as the stereotype goes, female runners flame out once they get hips\u2014as she tells it, she was lucky to make it out alive,\" Mertens writes."
             }
           ],
           "confidence": 0.9,
@@ -4794,51 +5088,6 @@
           },
           "evidence": [
             {
-              "category": "digital_transformation",
-              "excerpt": "the bulk of the job cuts expected to impact its technology division",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9995739980839207,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Sportswear giant Nike is set to lay off around 1,400 employees globally, with the bulk of the job cuts expected to impact its technology division. The move is part of a broader restructuring effort aimed at improving efficiency and reviving growth amid slowing sales...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "Nike has automated the logistics and fulfillment processes",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9995720692527374,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "While the layoffs account for less than 2 per cent of Nike\u2019s global workforce, they reflect a larger shift in how the company is adapting to a fast-evolving retail landscape driven by automation and digital tools. Automation and slowing sales drive cuts\n\nThese cutbacks come after other layoffs that have happened throughout the year, involving lay-offs from the distribution centers where Nike has automated the logistics and fulfillment processes. The company has also announced declining revenues in recent quarters, suggesting possible future declines in revenues, especially in vital markets like China...."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "The plan focuses on streamlining operations, modernising manufacturing processes and strengthening supply chain integration",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9993019266622845,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...The layoffs form part of the company\u2019s ongoing transformation strategy, internally referred to as \u201cWin Now\u201d. The plan focuses on streamlining operations, modernising manufacturing processes and strengthening supply chain integration. Also Read | Looking for a bank job?..."
-            },
-            {
-              "category": "social",
-              "excerpt": "Sportswear giant Nike is set to lay off around 1,400 employees globally",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999803633234374,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Sportswear giant Nike is set to lay off around 1,400 employees globally, with the bulk of the job cuts expected to impact its technology division. The move is part of a broader restructuring effort aimed at improving efficiency and reviving growth amid slowing sales...."
-            },
-            {
-              "category": "social",
-              "excerpt": "These cutbacks come after other layoffs that have happened throughout the year, involving lay-offs from the distribution centers where Nike has automated the logistics and fulfillment processes",
-              "relevance_score": 1.0,
-              "rerank_score": 0.999847951168553,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "While the layoffs account for less than 2 per cent of Nike\u2019s global workforce, they reflect a larger shift in how the company is adapting to a fast-evolving retail landscape driven by automation and digital tools. Automation and slowing sales drive cuts\n\nThese cutbacks come after other layoffs that have happened throughout the year, involving lay-offs from the distribution centers where Nike has automated the logistics and fulfillment processes. The company has also announced declining revenues in recent quarters, suggesting possible future declines in revenues, especially in vital markets like China...."
-            },
-            {
               "category": "governance",
               "excerpt": "The move is part of a broader restructuring effort aimed at improving efficiency and reviving growth amid slowing sales",
               "relevance_score": 1.0,
@@ -4864,6 +5113,51 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...Automation and slowing sales drive cuts\n\nThese cutbacks come after other layoffs that have happened throughout the year, involving lay-offs from the distribution centers where Nike has automated the logistics and fulfillment processes. The company has also announced declining revenues in recent quarters, suggesting possible future declines in revenues, especially in vital markets like China. The turnaround plan at the company will be headed by the CEO Elliott Hill, who will lead the effort in creating a smaller business structure that will be able to adapt to the needs of consumers faster. Also Read | UP..."
+            },
+            {
+              "category": "social",
+              "excerpt": "Sportswear giant Nike is set to lay off around 1,400 employees globally",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999803633234374,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Sportswear giant Nike is set to lay off around 1,400 employees globally, with the bulk of the job cuts expected to impact its technology division. The move is part of a broader restructuring effort aimed at improving efficiency and reviving growth amid slowing sales...."
+            },
+            {
+              "category": "social",
+              "excerpt": "These cutbacks come after other layoffs that have happened throughout the year, involving lay-offs from the distribution centers where Nike has automated the logistics and fulfillment processes",
+              "relevance_score": 1.0,
+              "rerank_score": 0.999847951168553,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "While the layoffs account for less than 2 per cent of Nike\u2019s global workforce, they reflect a larger shift in how the company is adapting to a fast-evolving retail landscape driven by automation and digital tools. Automation and slowing sales drive cuts\n\nThese cutbacks come after other layoffs that have happened throughout the year, involving lay-offs from the distribution centers where Nike has automated the logistics and fulfillment processes. The company has also announced declining revenues in recent quarters, suggesting possible future declines in revenues, especially in vital markets like China...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "the bulk of the job cuts expected to impact its technology division",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9995739980839207,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Sportswear giant Nike is set to lay off around 1,400 employees globally, with the bulk of the job cuts expected to impact its technology division. The move is part of a broader restructuring effort aimed at improving efficiency and reviving growth amid slowing sales...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "Nike has automated the logistics and fulfillment processes",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9995720692527374,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "While the layoffs account for less than 2 per cent of Nike\u2019s global workforce, they reflect a larger shift in how the company is adapting to a fast-evolving retail landscape driven by automation and digital tools. Automation and slowing sales drive cuts\n\nThese cutbacks come after other layoffs that have happened throughout the year, involving lay-offs from the distribution centers where Nike has automated the logistics and fulfillment processes. The company has also announced declining revenues in recent quarters, suggesting possible future declines in revenues, especially in vital markets like China...."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "The plan focuses on streamlining operations, modernising manufacturing processes and strengthening supply chain integration",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9993019266622845,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...The layoffs form part of the company\u2019s ongoing transformation strategy, internally referred to as \u201cWin Now\u201d. The plan focuses on streamlining operations, modernising manufacturing processes and strengthening supply chain integration. Also Read | Looking for a bank job?..."
             }
           ],
           "confidence": 0.9,
@@ -8883,33 +9177,6 @@
           },
           "evidence": [
             {
-              "category": "environmental",
-              "excerpt": "Lululemon flatly denies the premise of the probe. In a statement provided to multiple newsrooms, the company said it had fully phased out PFAS by early 2024",
-              "relevance_score": 1.0,
-              "rerank_score": 0.999708958658564,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...On 13 April 2026, Paxton's office issued a Civil Investigative Demand to Lululemon USA Inc., a legal instrument that compels a company to hand over documents and data before any formal lawsuit is filed. The probe centres on per- and polyfluoroalkyl substances, collectively known as PFAS or 'forever chemicals,' a class of synthetic compounds that do not break down in the human body or the natural environment. Lululemon flatly denies the premise of the probe. In a statement provided to multiple newsrooms, the company said it had fully phased out PFAS by early 2024, limiting any prior use to durable water-repellent products, which it described as a small fraction of its overall range."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "The probe centres on per- and polyfluoroalkyl substances, collectively known as PFAS or 'forever chemicals,' a class of synthetic compounds that do not break down in the human body or the natural environment.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9996994438219755,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...On 13 April 2026, Paxton's office issued a Civil Investigative Demand to Lululemon USA Inc., a legal instrument that compels a company to hand over documents and data before any formal lawsuit is filed. The probe centres on per- and polyfluoroalkyl substances, collectively known as PFAS or 'forever chemicals,' a class of synthetic compounds that do not break down in the human body or the natural environment. Lululemon flatly denies the premise of the probe...."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "Testing a Lululemon Align Highrise pant returned a reading of 32 parts per million.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9996260233131125,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Crucially, the crotch region was consistently identified as the location with the highest concentration of detectable organic fluorine across multiple garments. Testing a Lululemon Align Highrise pant returned a reading of 32 parts per million. Researchers noted the pattern suggested an intentional fabric treatment rather than accidental contamination, though the mechanism was not definitively confirmed."
-            },
-            {
               "category": "governance",
               "excerpt": "Texas Attorney General Ken Paxton has launched a formal consumer protection investigation into Lululemon, alleging the athleisure giant may have deceived health-conscious shoppers about the presence of toxic synthetic chemicals in its activewear.",
               "relevance_score": 1.0,
@@ -8935,6 +9202,33 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...'Americans should not have to worry if they are being deceived when trying to make healthy choices for themselves and their families,' Paxton said in a statement published by his office. 'I will not allow any corporation to sell harmful, toxic materials to consumers at a premium price under the guise of wellness and sustainability. If Lululemon has violated Texas law, it will be held accountable.' The investigation remains active and no formal charges have been filed."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "Lululemon flatly denies the premise of the probe. In a statement provided to multiple newsrooms, the company said it had fully phased out PFAS by early 2024",
+              "relevance_score": 1.0,
+              "rerank_score": 0.999708958658564,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...On 13 April 2026, Paxton's office issued a Civil Investigative Demand to Lululemon USA Inc., a legal instrument that compels a company to hand over documents and data before any formal lawsuit is filed. The probe centres on per- and polyfluoroalkyl substances, collectively known as PFAS or 'forever chemicals,' a class of synthetic compounds that do not break down in the human body or the natural environment. Lululemon flatly denies the premise of the probe. In a statement provided to multiple newsrooms, the company said it had fully phased out PFAS by early 2024, limiting any prior use to durable water-repellent products, which it described as a small fraction of its overall range."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "The probe centres on per- and polyfluoroalkyl substances, collectively known as PFAS or 'forever chemicals,' a class of synthetic compounds that do not break down in the human body or the natural environment.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9996994438219755,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...On 13 April 2026, Paxton's office issued a Civil Investigative Demand to Lululemon USA Inc., a legal instrument that compels a company to hand over documents and data before any formal lawsuit is filed. The probe centres on per- and polyfluoroalkyl substances, collectively known as PFAS or 'forever chemicals,' a class of synthetic compounds that do not break down in the human body or the natural environment. Lululemon flatly denies the premise of the probe...."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "Testing a Lululemon Align Highrise pant returned a reading of 32 parts per million.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9996260233131125,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Crucially, the crotch region was consistently identified as the location with the highest concentration of detectable organic fluorine across multiple garments. Testing a Lululemon Align Highrise pant returned a reading of 32 parts per million. Researchers noted the pattern suggested an intentional fabric treatment rather than accidental contamination, though the mechanism was not definitively confirmed."
             },
             {
               "category": "social",
@@ -8996,6 +9290,24 @@
           },
           "evidence": [
             {
+              "category": "social",
+              "excerpt": "emerging research and consumer concerns have raised questions about whether certain synthetic materials in the apparel could be linked to endocrine disruption, infertility, cancer and other health risks",
+              "relevance_score": 0.8471749517229872,
+              "rerank_score": 0.9999551837786929,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "According to Reuters, Attorney General Paxton said emerging research and consumer concerns have raised \u2060questions about whether certain synthetic materials in the apparel could be linked to endocrine disruption, infertility, cancer and other health risks. PFAS are associated with harmful health effects in humans and animals, according to the US Environmental Protection Agency...."
+            },
+            {
+              "category": "social",
+              "excerpt": "PFAS are associated with harmful health effects in humans and animals, according to the US Environmental Protection Agency",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999039886330952,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "According to Reuters, Attorney General Paxton said emerging research and consumer concerns have raised \u2060questions about whether certain synthetic materials in the apparel could be linked to endocrine disruption, infertility, cancer and other health risks. PFAS are associated with harmful health effects in humans and animals, according to the US Environmental Protection Agency. The Office of the Attorney General will examine Lululemon's testing protocols, restricted substances list and supply chain practices against state safety standards...."
+            },
+            {
               "category": "governance",
               "excerpt": "Texas Attorney General Ken Paxton has launched an investigation into athleisure brand Lululemon over the potential presence of \"forever chemicals\" in its activewear",
               "relevance_score": 1.0,
@@ -9039,24 +9351,6 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "Texas Attorney General Ken Paxton has launched an investigation into athleisure brand Lululemon over the potential presence of \"forever chemicals\" in its activewear, he said on Monday in a post on social-media platform X.\n\nThe probe will examine whether Lululemon's athletic apparel contains PFAS, which the brand's health-conscious customers would not expect based on its marketing, Paxton said. PFAS, or per- and polyfluoroalkyl substances, are a group of widely used materials called \"forever chemicals\" because they do \u2060not break down easily \u2060in nature. \"Lululemon does not use PFAS in its products,\" a company spokesperson said, adding it phased out the substance in fiscal 2023, after limited use in durable water repellent products."
-            },
-            {
-              "category": "social",
-              "excerpt": "emerging research and consumer concerns have raised questions about whether certain synthetic materials in the apparel could be linked to endocrine disruption, infertility, cancer and other health risks",
-              "relevance_score": 0.8471749517229872,
-              "rerank_score": 0.9999551837786929,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "According to Reuters, Attorney General Paxton said emerging research and consumer concerns have raised \u2060questions about whether certain synthetic materials in the apparel could be linked to endocrine disruption, infertility, cancer and other health risks. PFAS are associated with harmful health effects in humans and animals, according to the US Environmental Protection Agency...."
-            },
-            {
-              "category": "social",
-              "excerpt": "PFAS are associated with harmful health effects in humans and animals, according to the US Environmental Protection Agency",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999039886330952,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "According to Reuters, Attorney General Paxton said emerging research and consumer concerns have raised \u2060questions about whether certain synthetic materials in the apparel could be linked to endocrine disruption, infertility, cancer and other health risks. PFAS are associated with harmful health effects in humans and animals, according to the US Environmental Protection Agency. The Office of the Attorney General will examine Lululemon's testing protocols, restricted substances list and supply chain practices against state safety standards...."
             }
           ],
           "confidence": 0.9,
@@ -9272,33 +9566,6 @@
           },
           "evidence": [
             {
-              "category": "social",
-              "excerpt": "PFAS have been linked to various health issues, including infertility and cancer.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.99966731898317,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...Lululemon has come under fire in recent days over allegations of the brand\u2019s use of \u201cforever chemicals\u201d \u2014polyfluoroalkyl chemicals (PFAS) \u2014 in the clothing. PFAS have been linked to various health issues, including infertility and cancer. Texas Attorney General Ken Paxton announced the investigation on Monday, explaining that the Lone Star State will determine if the brand \u201cmisled consumers about the safety, quality, and health impacts of its products.\u201d..."
-            },
-            {
-              "category": "social",
-              "excerpt": "It cites \"emerging research and consumer concerns\" over the potential presence of \"certain synthetic materials and chemical compounds in their apparel that may be associated with endocrine disruption, infertility, cancer, and other health issues.\"",
-              "relevance_score": 0.7849668937526177,
-              "rerank_score": 0.9993484759990259,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Texas is launching an investigation into the major athletic apparel brand Lululemon Athletica Inc. over the potential presence of \u201cforever chemicals\u201d in the apparel.\n\nLululemon has come under fire in ..."
-            },
-            {
-              "category": "social",
-              "excerpt": "\"Americans should not have to worry if they are being deceived when trying to make healthy choices for themselves and their families.\"",
-              "relevance_score": 0.7977455648359276,
-              "rerank_score": 0.9993354076641283,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Attorney General Paxton\u2019s investigation will examine whether Lululemon\u2019s athletic apparel contains PFAS or \u201cforever chemicals\u201d that their health-conscious customers would not expect based on the brand..."
-            },
-            {
               "category": "governance",
               "excerpt": "The Office of the Attorney General will also review the company's Restricted Substances List, testing protocols, and supply chain practices to determine whether Lululemon's products comply with its stated safety standards.",
               "relevance_score": 0.8737564088757448,
@@ -9351,6 +9618,33 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "Texas is launching an investigation into the major athletic apparel brand Lululemon Athletica Inc. over the potential presence of \u201cforever chemicals\u201d in the apparel. Lululemon has come under fire in recent days over allegations of the brand\u2019s use of \u201cforever chemicals\u201d \u2014polyfluoroalkyl chemicals (PFAS) \u2014 in the clothing. PFAS have been linked to various health issues, including infertility and cancer. Texas Attorney General Ken Paxton announced the investigation on Monday, explaining that the Lone Star State will determine if the brand \u201cmisled consumers about the safety, quality, and health impacts of its products.\u201d..."
+            },
+            {
+              "category": "social",
+              "excerpt": "PFAS have been linked to various health issues, including infertility and cancer.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.99966731898317,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...Lululemon has come under fire in recent days over allegations of the brand\u2019s use of \u201cforever chemicals\u201d \u2014polyfluoroalkyl chemicals (PFAS) \u2014 in the clothing. PFAS have been linked to various health issues, including infertility and cancer. Texas Attorney General Ken Paxton announced the investigation on Monday, explaining that the Lone Star State will determine if the brand \u201cmisled consumers about the safety, quality, and health impacts of its products.\u201d..."
+            },
+            {
+              "category": "social",
+              "excerpt": "It cites \"emerging research and consumer concerns\" over the potential presence of \"certain synthetic materials and chemical compounds in their apparel that may be associated with endocrine disruption, infertility, cancer, and other health issues.\"",
+              "relevance_score": 0.7849668937526177,
+              "rerank_score": 0.9993484759990259,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Texas is launching an investigation into the major athletic apparel brand Lululemon Athletica Inc. over the potential presence of \u201cforever chemicals\u201d in the apparel.\n\nLululemon has come under fire in ..."
+            },
+            {
+              "category": "social",
+              "excerpt": "\"Americans should not have to worry if they are being deceived when trying to make healthy choices for themselves and their families.\"",
+              "relevance_score": 0.7977455648359276,
+              "rerank_score": 0.9993354076641283,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Attorney General Paxton\u2019s investigation will examine whether Lululemon\u2019s athletic apparel contains PFAS or \u201cforever chemicals\u201d that their health-conscious customers would not expect based on the brand..."
             }
           ],
           "confidence": 0.95,
@@ -9507,6 +9801,33 @@
           },
           "evidence": [
             {
+              "category": "governance",
+              "excerpt": "U.S. Attorney General Ken Paxton stated that he has launched an investigation into lululemon over the potential presence of toxic per- and polyfluoroalkyl substances (PFAS) or 'forever chemicals' in its activewear.",
+              "relevance_score": 0.9289763365436061,
+              "rerank_score": 0.9999662489700919,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Lululemon is at the centre of a U.S. investigation over allegations that it uses harmful chemicals in its products, which the company denies. On Monday, U.S. Attorney General Ken Paxton stated that he has launched an investigation into lululemon over the potential presence of toxic per- and polyfluoroalkyl substances (PFAS) or \u201cforever chemicals\u201d in its activewear. The investigation will look into whether or not PFAS is present in lululemon\u2019s athletic apparel...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "The investigation will look into whether or not PFAS is present in lululemon's athletic apparel. It will also look into the company's list of restricted substances, testing protocols, and supply chain practices to see if it's in compliance with safety standards.",
+              "relevance_score": 0.911534827478905,
+              "rerank_score": 0.9998802366283466,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "Lululemon is at the centre of a U.S. investigation over allegations that it uses harmful chemicals in its products, which the company denies. On Monday, U.S. Attorney General Ken Paxton stated that he has launched an investigation into lululemon over the potential presence of toxic per- and polyfluoroalkyl substances (PFAS) or \u201cforever chemicals\u201d in its activewear. The investigation will look into whether or not PFAS is present in lululemon\u2019s athletic apparel. It will also look into the company\u2019s list of restricted substances, testing protocols, and supply chain practices to see if it\u2019s in compliance with safety standards. \u201cAmericans should not have to worry if they are being deceived when trying to make healthy choices for themselves and their families,\u201d said Paxton."
+            },
+            {
+              "category": "governance",
+              "excerpt": "He stated that lululemon will be 'held accountable' if the investigation finds that it violated Texas law.",
+              "relevance_score": 0.863952256728096,
+              "rerank_score": 0.9997841191395498,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...In 2025, the company saw a five per cent increase with a revenue of US$11.1 billion. Shares fell on Monday morning after Paxton announced the investigation. He stated that lululemon will be \u201cheld accountable\u201d if the investigation finds that it violated Texas law. \u201cI will not allow any corporation to sell harmful, toxic materials to consumers at a premium price under the guise of wellness and sustainability,\u201d said Paxton."
+            },
+            {
               "category": "social",
               "excerpt": "The health and safety of our guests is paramount, and our products meet or exceed global regulatory, safety, and quality standards",
               "relevance_score": 1.0,
@@ -9541,33 +9862,6 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...It can also affect the immune and nervous systems, and the development and reproductive system. In an email to Daily Hive, a lululemon spokesperson said that the company is cooperating with the investigation. They added that the company does not use PFAS in its products and that it was phased out in the 2023 fiscal year when it was used in a small percentage of water repellent products."
-            },
-            {
-              "category": "governance",
-              "excerpt": "U.S. Attorney General Ken Paxton stated that he has launched an investigation into lululemon over the potential presence of toxic per- and polyfluoroalkyl substances (PFAS) or 'forever chemicals' in its activewear.",
-              "relevance_score": 0.9289763365436061,
-              "rerank_score": 0.9999662489700919,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Lululemon is at the centre of a U.S. investigation over allegations that it uses harmful chemicals in its products, which the company denies. On Monday, U.S. Attorney General Ken Paxton stated that he has launched an investigation into lululemon over the potential presence of toxic per- and polyfluoroalkyl substances (PFAS) or \u201cforever chemicals\u201d in its activewear. The investigation will look into whether or not PFAS is present in lululemon\u2019s athletic apparel...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "The investigation will look into whether or not PFAS is present in lululemon's athletic apparel. It will also look into the company's list of restricted substances, testing protocols, and supply chain practices to see if it's in compliance with safety standards.",
-              "relevance_score": 0.911534827478905,
-              "rerank_score": 0.9998802366283466,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "Lululemon is at the centre of a U.S. investigation over allegations that it uses harmful chemicals in its products, which the company denies. On Monday, U.S. Attorney General Ken Paxton stated that he has launched an investigation into lululemon over the potential presence of toxic per- and polyfluoroalkyl substances (PFAS) or \u201cforever chemicals\u201d in its activewear. The investigation will look into whether or not PFAS is present in lululemon\u2019s athletic apparel. It will also look into the company\u2019s list of restricted substances, testing protocols, and supply chain practices to see if it\u2019s in compliance with safety standards. \u201cAmericans should not have to worry if they are being deceived when trying to make healthy choices for themselves and their families,\u201d said Paxton."
-            },
-            {
-              "category": "governance",
-              "excerpt": "He stated that lululemon will be 'held accountable' if the investigation finds that it violated Texas law.",
-              "relevance_score": 0.863952256728096,
-              "rerank_score": 0.9997841191395498,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "...In 2025, the company saw a five per cent increase with a revenue of US$11.1 billion. Shares fell on Monday morning after Paxton announced the investigation. He stated that lululemon will be \u201cheld accountable\u201d if the investigation finds that it violated Texas law. \u201cI will not allow any corporation to sell harmful, toxic materials to consumers at a premium price under the guise of wellness and sustainability,\u201d said Paxton."
             }
           ],
           "confidence": 0.9,
@@ -9611,22 +9905,22 @@
           },
           "evidence": [
             {
-              "category": "environmental",
-              "excerpt": "The investigation will focus on whether Lululemon's athletic wear contains PFAS \u2014 often referred to as \"forever chemicals\" \u2014 which some research has linked to health concerns",
-              "relevance_score": 0.8971442461681471,
-              "rerank_score": 0.9999160098872719,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "AUSTIN, Texas \u2014 Texas Attorney General Ken Paxton has launched an investigation into athletic apparel company Lululemon over concerns about potentially harmful chemicals in its products. According to a press release issued Monday, Paxton\u2019s office sent a Civil Investigative Demand to Lululemon USA Inc. as part of a probe into whether the company \u201chas misled consumers about the safety, quality, and health impacts of its products.\u201d The investigation will focus on whether Lululemon\u2019s athletic wear contains PFAS \u2014 often referred to as \u201cforever chemicals\u201d \u2014 which some research has linked to health concerns, including \u201cendocrine disruption, infertility, cancer, and other health issues,\u201d according to the release. State officials will also review Lululemon\u2019s internal policies, including its Restricted Substances List, testing protocols and supply chain practices, to determine whether its products meet the company\u2019s stated safety standards."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "I will not allow any corporation to sell harmful, toxic materials to consumers at a premium price under the guise of wellness and sustainability",
+              "category": "social",
+              "excerpt": "Texas Attorney General Ken Paxton has launched an investigation into athletic apparel company Lululemon over concerns about potentially harmful chemicals in its products",
               "relevance_score": 1.0,
-              "rerank_score": 0.9999103039855723,
+              "rerank_score": 0.9999848768957011,
               "match_method": "exact",
               "confidence": "high",
-              "context_snippet": "\u201cAmericans should not have to worry if they are being deceived when trying to make healthy choices for themselves and their families,\u201d Paxton said. \u201cI will not allow any corporation to sell harmful, toxic materials to consumers at a premium price under the guise of wellness and sustainability. If Lululemon has violated Texas law, it will be held accountable.\u201d..."
+              "context_snippet": "AUSTIN, Texas \u2014 Texas Attorney General Ken Paxton has launched an investigation into athletic apparel company Lululemon over concerns about potentially harmful chemicals in its products. According to a press release issued Monday, Paxton\u2019s office sent a Civil Investigative Demand to Lululemon USA Inc. as part of a probe into whether the company \u201chas misled consumers about the safety, quality, and health impacts of its products.\u201d..."
+            },
+            {
+              "category": "social",
+              "excerpt": "Americans should not have to worry if they are being deceived when trying to make healthy choices for themselves and their families",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999039628111748,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "\u201cAmericans should not have to worry if they are being deceived when trying to make healthy choices for themselves and their families,\u201d Paxton said. \u201cI will not allow any corporation to sell harmful, toxic materials to consumers at a premium price under the guise of wellness and sustainability...."
             },
             {
               "category": "governance",
@@ -9647,22 +9941,22 @@
               "context_snippet": "AUSTIN, Texas \u2014 Texas Attorney General Ken Paxton has launched an investigation into athletic apparel company Lululemon over concerns about potentially harmful chemicals in its products.\n\nAccording to..."
             },
             {
-              "category": "social",
-              "excerpt": "Texas Attorney General Ken Paxton has launched an investigation into athletic apparel company Lululemon over concerns about potentially harmful chemicals in its products",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999848768957011,
-              "match_method": "exact",
+              "category": "environmental",
+              "excerpt": "The investigation will focus on whether Lululemon's athletic wear contains PFAS \u2014 often referred to as \"forever chemicals\" \u2014 which some research has linked to health concerns",
+              "relevance_score": 0.8971442461681471,
+              "rerank_score": 0.9999160098872719,
+              "match_method": "combined",
               "confidence": "high",
-              "context_snippet": "AUSTIN, Texas \u2014 Texas Attorney General Ken Paxton has launched an investigation into athletic apparel company Lululemon over concerns about potentially harmful chemicals in its products. According to a press release issued Monday, Paxton\u2019s office sent a Civil Investigative Demand to Lululemon USA Inc. as part of a probe into whether the company \u201chas misled consumers about the safety, quality, and health impacts of its products.\u201d..."
+              "context_snippet": "AUSTIN, Texas \u2014 Texas Attorney General Ken Paxton has launched an investigation into athletic apparel company Lululemon over concerns about potentially harmful chemicals in its products. According to a press release issued Monday, Paxton\u2019s office sent a Civil Investigative Demand to Lululemon USA Inc. as part of a probe into whether the company \u201chas misled consumers about the safety, quality, and health impacts of its products.\u201d The investigation will focus on whether Lululemon\u2019s athletic wear contains PFAS \u2014 often referred to as \u201cforever chemicals\u201d \u2014 which some research has linked to health concerns, including \u201cendocrine disruption, infertility, cancer, and other health issues,\u201d according to the release. State officials will also review Lululemon\u2019s internal policies, including its Restricted Substances List, testing protocols and supply chain practices, to determine whether its products meet the company\u2019s stated safety standards."
             },
             {
-              "category": "social",
-              "excerpt": "Americans should not have to worry if they are being deceived when trying to make healthy choices for themselves and their families",
+              "category": "environmental",
+              "excerpt": "I will not allow any corporation to sell harmful, toxic materials to consumers at a premium price under the guise of wellness and sustainability",
               "relevance_score": 1.0,
-              "rerank_score": 0.9999039628111748,
+              "rerank_score": 0.9999103039855723,
               "match_method": "exact",
               "confidence": "high",
-              "context_snippet": "\u201cAmericans should not have to worry if they are being deceived when trying to make healthy choices for themselves and their families,\u201d Paxton said. \u201cI will not allow any corporation to sell harmful, toxic materials to consumers at a premium price under the guise of wellness and sustainability...."
+              "context_snippet": "\u201cAmericans should not have to worry if they are being deceived when trying to make healthy choices for themselves and their families,\u201d Paxton said. \u201cI will not allow any corporation to sell harmful, toxic materials to consumers at a premium price under the guise of wellness and sustainability. If Lululemon has violated Texas law, it will be held accountable.\u201d..."
             }
           ],
           "confidence": 0.95,
@@ -10173,24 +10467,6 @@
           },
           "evidence": [
             {
-              "category": "digital_transformation",
-              "excerpt": "the appointment of an interim leadership committee focused on 'Agile Merchandising' has successfully slashed product development cycles from 18 months to just 12, allowing the brand to respond to micro-trends with the speed of a fast-fashion retailer",
-              "relevance_score": 0.8257051104571055,
-              "rerank_score": 0.9998178961214598,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "...By the start of 2026, the stock had retreated nearly 70% from its 2023 highs. However, the appointment of an interim leadership committee focused on \"Agile Merchandising\" has successfully slashed product development cycles from 18 months to just 12, allowing the brand to respond to micro-trends with the speed of a fast-fashion retailer while maintaining its premium technical positioning."
-            },
-            {
-              "category": "digital_transformation",
-              "excerpt": "the company can offset these costs through its new AI-driven supply chain automation",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9983260470011044,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "...The retail sector in 2026 is grappling with significant tariff pressures\u2014estimated at a $380 million impact for Lululemon this year alone. Today\u2019s gains suggest that the market believes the company can offset these costs through its new AI-driven supply chain automation, but the long-term sustainability of these margins remains a point of intense debate among policy analysts and trade experts."
-            },
-            {
               "category": "governance",
               "excerpt": "The search for a successor to Calvin McDonald is reportedly in its final stages",
               "relevance_score": 1.0,
@@ -10216,6 +10492,24 @@
               "match_method": "combined",
               "confidence": "high",
               "context_snippet": "...By the start of 2026, the stock had retreated nearly 70% from its 2023 highs. However, the appointment of an interim leadership committee focused on \"Agile Merchandising\" has successfully slashed product development cycles from 18 months to just 12, allowing the brand to respond to micro-trends with the speed of a fast-fashion retailer while maintaining its premium technical positioning."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "the appointment of an interim leadership committee focused on 'Agile Merchandising' has successfully slashed product development cycles from 18 months to just 12, allowing the brand to respond to micro-trends with the speed of a fast-fashion retailer",
+              "relevance_score": 0.8257051104571055,
+              "rerank_score": 0.9998178961214598,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "...By the start of 2026, the stock had retreated nearly 70% from its 2023 highs. However, the appointment of an interim leadership committee focused on \"Agile Merchandising\" has successfully slashed product development cycles from 18 months to just 12, allowing the brand to respond to micro-trends with the speed of a fast-fashion retailer while maintaining its premium technical positioning."
+            },
+            {
+              "category": "digital_transformation",
+              "excerpt": "the company can offset these costs through its new AI-driven supply chain automation",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9983260470011044,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "...The retail sector in 2026 is grappling with significant tariff pressures\u2014estimated at a $380 million impact for Lululemon this year alone. Today\u2019s gains suggest that the market believes the company can offset these costs through its new AI-driven supply chain automation, but the long-term sustainability of these margins remains a point of intense debate among policy analysts and trade experts."
             }
           ],
           "confidence": 0.9,
@@ -10386,33 +10680,6 @@
           },
           "evidence": [
             {
-              "category": "governance",
-              "excerpt": "Under Armour has also faced corporate governance questions in the past but has strengthened its board with new independent directors possessing strong financial and retail expertise.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999610881532477,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Under Armour has also faced corporate governance questions in the past but has strengthened its board with new independent directors possessing strong financial and retail expertise. These changes are viewed positively by some investors as supporting a potential strategic review, including possible sale or privatization scenarios, though no formal process has been announced...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "These changes are viewed positively by some investors as supporting a potential strategic review, including possible sale or privatization scenarios, though no formal process has been announced.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9997776135484916,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Under Armour has also faced corporate governance questions in the past but has strengthened its board with new independent directors possessing strong financial and retail expertise. These changes are viewed positively by some investors as supporting a potential strategic review, including possible sale or privatization scenarios, though no formal process has been announced. The company continues to invest in sustainability initiatives, digital transformation and athlete partnerships to drive long-term growth...."
-            },
-            {
-              "category": "environmental",
-              "excerpt": "The company continues to invest in sustainability initiatives, digital transformation and athlete partnerships to drive long-term growth.",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9998254195485182,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "Under Armour has also faced corporate governance questions in the past but has strengthened its board with new independent directors possessing strong financial and retail expertise. These changes are viewed positively by some investors as supporting a potential strategic review, including possible sale or privatization scenarios, though no formal process has been announced. The company continues to invest in sustainability initiatives, digital transformation and athlete partnerships to drive long-term growth. Its connected fitness platform and apps remain part of the ecosystem, though less emphasized than in previous years...."
-            },
-            {
               "category": "digital_transformation",
               "excerpt": "The company continues to invest in sustainability initiatives, digital transformation and athlete partnerships to drive long-term growth.",
               "relevance_score": 1.0,
@@ -10429,6 +10696,33 @@
               "match_method": "exact",
               "confidence": "high",
               "context_snippet": "...The company continues to invest in sustainability initiatives, digital transformation and athlete partnerships to drive long-term growth. Its connected fitness platform and apps remain part of the ecosystem, though less emphasized than in previous years. As of April 2026, Under Armour's path forward involves balancing near-term profitability pressures with strategic investments for future growth...."
+            },
+            {
+              "category": "environmental",
+              "excerpt": "The company continues to invest in sustainability initiatives, digital transformation and athlete partnerships to drive long-term growth.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9998254195485182,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Under Armour has also faced corporate governance questions in the past but has strengthened its board with new independent directors possessing strong financial and retail expertise. These changes are viewed positively by some investors as supporting a potential strategic review, including possible sale or privatization scenarios, though no formal process has been announced. The company continues to invest in sustainability initiatives, digital transformation and athlete partnerships to drive long-term growth. Its connected fitness platform and apps remain part of the ecosystem, though less emphasized than in previous years...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Under Armour has also faced corporate governance questions in the past but has strengthened its board with new independent directors possessing strong financial and retail expertise.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999610881532477,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Under Armour has also faced corporate governance questions in the past but has strengthened its board with new independent directors possessing strong financial and retail expertise. These changes are viewed positively by some investors as supporting a potential strategic review, including possible sale or privatization scenarios, though no formal process has been announced...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "These changes are viewed positively by some investors as supporting a potential strategic review, including possible sale or privatization scenarios, though no formal process has been announced.",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9997776135484916,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "Under Armour has also faced corporate governance questions in the past but has strengthened its board with new independent directors possessing strong financial and retail expertise. These changes are viewed positively by some investors as supporting a potential strategic review, including possible sale or privatization scenarios, though no formal process has been announced. The company continues to invest in sustainability initiatives, digital transformation and athlete partnerships to drive long-term growth...."
             }
           ],
           "confidence": 0.8,
@@ -11000,53 +11294,6 @@
       "categories": ["governance"],
       "brand_details": [
         {
-          "brand": "Nike",
-          "categories": {
-            "environmental": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "social": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            },
-            "governance": {
-              "applies": true,
-              "sentiment": -1,
-              "sentiment_label": "negative"
-            },
-            "digital_transformation": {
-              "applies": false,
-              "sentiment": null,
-              "sentiment_label": null
-            }
-          },
-          "evidence": [
-            {
-              "category": "governance",
-              "excerpt": "A jury verdict in March 2025 found in favor of Nike on one of its two patent infringement claims and rejected the remaining claim. Damages were awarded as a fine in the amount of $355,450 in favor of Nike",
-              "relevance_score": 1.0,
-              "rerank_score": 0.9999668743120964,
-              "match_method": "exact",
-              "confidence": "high",
-              "context_snippet": "A jury verdict in March 2025 found in favor of Nike on one of its two patent infringement claims and rejected the remaining claim. Damages were awarded as a fine in the amount of $355,450 in favor of Nike. Judge Subramanian\u2019s ruling last week that Nike\u2019s patent claims as a matter of law were invalid on the ground of obviousness voids the jury verdict and the fine...."
-            },
-            {
-              "category": "governance",
-              "excerpt": "Judge Subramanian's ruling last week that Nike's patent claims as a matter of law were invalid on the ground of obviousness voids the jury verdict and the fine",
-              "relevance_score": 0.911269410519304,
-              "rerank_score": 0.9999178448891721,
-              "match_method": "combined",
-              "confidence": "high",
-              "context_snippet": "A jury verdict in March 2025 found in favor of Nike on one of its two patent infringement claims and rejected the remaining claim. Damages were awarded as a fine in the amount of $355,450 in favor of ..."
-            }
-          ],
-          "confidence": 0.9,
-          "reasoning": "This is a governance issue involving patent litigation and legal compliance. Nike's patent claims were ruled invalid by the court, overturning a previous jury verdict in their favor, which represents a negative legal outcome for the company."
-        },
-        {
           "brand": "Lululemon",
           "categories": {
             "environmental": {
@@ -11092,6 +11339,53 @@
           ],
           "confidence": 0.9,
           "reasoning": "This is a governance issue involving patent litigation defense. Lululemon successfully challenged Nike's patent claims and had the court ruling in their favor, representing a positive legal outcome for the company in terms of intellectual property governance."
+        },
+        {
+          "brand": "Nike",
+          "categories": {
+            "environmental": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "social": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            },
+            "governance": {
+              "applies": true,
+              "sentiment": -1,
+              "sentiment_label": "negative"
+            },
+            "digital_transformation": {
+              "applies": false,
+              "sentiment": null,
+              "sentiment_label": null
+            }
+          },
+          "evidence": [
+            {
+              "category": "governance",
+              "excerpt": "A jury verdict in March 2025 found in favor of Nike on one of its two patent infringement claims and rejected the remaining claim. Damages were awarded as a fine in the amount of $355,450 in favor of Nike",
+              "relevance_score": 1.0,
+              "rerank_score": 0.9999668743120964,
+              "match_method": "exact",
+              "confidence": "high",
+              "context_snippet": "A jury verdict in March 2025 found in favor of Nike on one of its two patent infringement claims and rejected the remaining claim. Damages were awarded as a fine in the amount of $355,450 in favor of Nike. Judge Subramanian\u2019s ruling last week that Nike\u2019s patent claims as a matter of law were invalid on the ground of obviousness voids the jury verdict and the fine...."
+            },
+            {
+              "category": "governance",
+              "excerpt": "Judge Subramanian's ruling last week that Nike's patent claims as a matter of law were invalid on the ground of obviousness voids the jury verdict and the fine",
+              "relevance_score": 0.911269410519304,
+              "rerank_score": 0.9999178448891721,
+              "match_method": "combined",
+              "confidence": "high",
+              "context_snippet": "A jury verdict in March 2025 found in favor of Nike on one of its two patent infringement claims and rejected the remaining claim. Damages were awarded as a fine in the amount of $355,450 in favor of ..."
+            }
+          ],
+          "confidence": 0.9,
+          "reasoning": "This is a governance issue involving patent litigation and legal compliance. Nike's patent claims were ruled invalid by the court, overturning a previous jury verdict in their favor, which represents a negative legal outcome for the company."
         }
       ]
     },
