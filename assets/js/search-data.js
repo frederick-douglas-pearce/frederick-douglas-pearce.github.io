@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "post-anatomy-of-a-claude-code-session",
+        },{id: "post-reading-a-claude-code-session-line-by-line",
+        
+          title: "Reading a Claude Code session, line by line",
+        
+        description: "Part 2 of the anatomy series. Every type of line in a session JSONL, the snake_case/camelCase split that reveals two layers (API content wrapped in Claude Code&#39;s bookkeeping), and why tool results live inside user messages.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/reading-a-claude-code-session-line-by-line/";
+          
+        },
+      },{id: "post-anatomy-of-a-claude-code-session",
         
           title: "Anatomy of a Claude Code session",
         
