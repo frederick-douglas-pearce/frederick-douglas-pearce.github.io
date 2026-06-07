@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T14:00:45.154329+00:00",
+  "generated_at": "2026-06-07T14:00:43.835273+00:00",
   "total_articles": 694,
   "brands": [
     "361 Degrees",
@@ -43,20 +43,20 @@
   "categories": ["digital_transformation", "environmental", "governance", "social"],
   "scorecard": {
     "period_days": 14,
-    "period_start": "2026-05-23",
-    "period_end": "2026-06-06",
-    "articles_in_period": 32,
-    "articles_after_dedup": 24,
+    "period_start": "2026-05-24",
+    "period_end": "2026-06-07",
+    "articles_in_period": 30,
+    "articles_after_dedup": 22,
     "duplicates_removed": 8,
     "top_brands": [
       {
         "brand": "Nike",
-        "total": 18,
-        "environmental": 8,
+        "total": 14,
+        "environmental": 6,
         "social": 8,
         "governance": 0,
-        "digital_transformation": 2,
-        "article_count": 10,
+        "digital_transformation": 0,
+        "article_count": 9,
         "medal": "gold"
       },
       {
@@ -88,16 +88,6 @@
         "digital_transformation": 2,
         "article_count": 1,
         "medal": "silver"
-      },
-      {
-        "brand": "Adidas",
-        "total": 2,
-        "environmental": 0,
-        "social": 0,
-        "governance": 0,
-        "digital_transformation": 2,
-        "article_count": 1,
-        "medal": "bronze"
       },
       {
         "brand": "New Balance",
@@ -129,12 +119,12 @@
     "all_brand_scores": [
       {
         "brand": "Nike",
-        "total": 18,
-        "environmental": 8,
+        "total": 14,
+        "environmental": 6,
         "social": 8,
         "governance": 0,
-        "digital_transformation": 2,
-        "article_count": 10,
+        "digital_transformation": 0,
+        "article_count": 9,
         "medal": "gold"
       },
       {
@@ -166,16 +156,6 @@
         "digital_transformation": 2,
         "article_count": 1,
         "medal": "silver"
-      },
-      {
-        "brand": "Adidas",
-        "total": 2,
-        "environmental": 0,
-        "social": 0,
-        "governance": 0,
-        "digital_transformation": 2,
-        "article_count": 1,
-        "medal": "bronze"
       },
       {
         "brand": "New Balance",
