@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "post-reading-a-claude-code-session-line-by-line",
+        },{id: "post-how-often-does-claude-retry-a-tool-call",
+        
+          title: "How often does Claude retry a tool call?",
+        
+        description: "The session JSONL&#39;s tool_use_id pairing key (introduced in Part 2) lets you measure how often Claude retries after a tool error — and the answer is different by tool, which is where it gets interesting.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/how-often-does-claude-retry-a-tool-call/";
+          
+        },
+      },{id: "post-reading-a-claude-code-session-line-by-line",
         
           title: "Reading a Claude Code session, line by line",
         
