@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'jekyll'
 
 # Security updates - minimum versions to address vulnerabilities
-gem 'nokogiri', '>= 1.19.1'    # CVE patches for libxml2
+gem 'nokogiri', '>= 1.19.3'    # CVE patches for libxml2; >=1.19.3 fixes ReDoS + XSLT leak (GHSA-c4rq-3m3g-8wgx, GHSA-v2fc-qm4h-8hqv)
 gem 'rexml', '>= 3.4.2'        # DoS vulnerability fix
 gem 'uri', '>= 1.0.4'          # Credential leakage fix
 gem 'activesupport', '>= 8.0.4.1' # DoS, XSS, and ReDoS fixes
@@ -33,7 +33,7 @@ end
 
 # Gems for development or external data fetching (outside :jekyll_plugins)
 group :other_plugins do
-    gem 'css_parser'
+    gem 'css_parser', '~> 1.22'  # >=1.22.0 fixes HTTPS MITM cert validation (GHSA-ff6c-w6qf-7xqc); pinned to 1.x to avoid 3.x breakage
     gem 'feedjira'
     gem 'httparty', '>= 0.24.0'  # SSRF vulnerability fix
     gem 'observer'       # used by jekyll-scholar
