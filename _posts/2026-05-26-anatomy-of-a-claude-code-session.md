@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Anatomy of a Claude Code session"
-date: 2026-05-26 12:00:00-0800
+date: 2026-05-26 00:00:00-0800
 description: "Every Claude Code session writes a detailed local JSONL record of your prompts, tool calls, and token usage — here's what's in it and what it powers."
 categories: ["foundation"]
 tags: ["claude-code", "agent-sdk", "jsonl", "sessions"]
@@ -252,3 +252,7 @@ This is Part 1 of an ongoing series. Part 2 goes field by field: the full messag
 If you want to get into the field-level detail before Part 2 lands, the [reference documentation at `reference/data-dictionary.md`](https://github.com/frederick-douglas-pearce/claude-code-sessions/blob/main/reference/data-dictionary.md) is being populated alongside this post series. It's the canonical home for format documentation as this repo matures.
 
 Let's connect if this resonates.
+
+---
+
+_Drafted with Claude Code (verified against v2.1.150). The ideas, claims, and any errors are mine._

@@ -51,9 +51,19 @@ This is the line type with the richest internal structure, because everything th
     "model": "claude-sonnet-4-6",
     "content": [
       { "type": "text", "text": "I'll read the file." },
-      { "type": "tool_use", "id": "toolu_synthetic_001", "name": "Read", "input": { "file_path": "/home/dev/example-project/src/main.py" } }
+      {
+        "type": "tool_use",
+        "id": "toolu_synthetic_001",
+        "name": "Read",
+        "input": { "file_path": "/home/dev/example-project/src/main.py" }
+      }
     ],
-    "usage": { "input_tokens": 18, "output_tokens": 35, "cache_creation_input_tokens": 0, "cache_read_input_tokens": 1240 },
+    "usage": {
+      "input_tokens": 18,
+      "output_tokens": 35,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1240
+    },
     "stop_reason": "tool_use"
   }
 }
@@ -105,7 +115,13 @@ A `user` line carries one of two payload shapes:
   "type": "user",
   "message": {
     "role": "user",
-    "content": [{ "type": "tool_result", "tool_use_id": "toolu_synthetic_001", "content": "def main():\n    print('Hello, world!')\n" }]
+    "content": [
+      {
+        "type": "tool_result",
+        "tool_use_id": "toolu_synthetic_001",
+        "content": "def main():\n    print('Hello, world!')\n"
+      }
+    ]
   }
 }
 ```
@@ -129,7 +145,13 @@ Here's the part that surprises readers who think they've figured the format out:
   "type": "user",
   "message": {
     "role": "user",
-    "content": [{ "type": "tool_result", "tool_use_id": "toolu_synthetic_002", "content": "Drafted acceptance criteria for issue #5..." }]
+    "content": [
+      {
+        "type": "tool_result",
+        "tool_use_id": "toolu_synthetic_002",
+        "content": "Drafted acceptance criteria for issue #5..."
+      }
+    ]
   },
   "toolUseResult": {
     "status": "success",
@@ -264,3 +286,7 @@ If you want to look ahead, [`reference/subagent-traces.md`](https://github.com/f
 The synthetic fixtures referenced throughout this post are in [`fixtures/synthetic/`](https://github.com/frederick-douglas-pearce/claude-code-sessions/tree/main/fixtures/synthetic). If you want to run the `jq` snippets without using a real session, those files are valid JSONL by design and contain the structural patterns described here.
 
 If there's a line type or a behavior I didn't cover that you've seen in your own sessions, I'd love to know — that's exactly the kind of thing that updates the reference docs and refines later posts.
+
+---
+
+_Drafted with Claude Code (verified against v2.1.150). The ideas, claims, and any errors are mine._
