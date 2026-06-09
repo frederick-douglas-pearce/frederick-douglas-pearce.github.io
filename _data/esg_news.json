@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07T14:00:43.835273+00:00",
+  "generated_at": "2026-06-09T14:00:45.404474+00:00",
   "total_articles": 694,
   "brands": [
     "361 Degrees",
@@ -43,8 +43,8 @@
   "categories": ["digital_transformation", "environmental", "governance", "social"],
   "scorecard": {
     "period_days": 14,
-    "period_start": "2026-05-24",
-    "period_end": "2026-06-07",
+    "period_start": "2026-05-26",
+    "period_end": "2026-06-09",
     "articles_in_period": 30,
     "articles_after_dedup": 22,
     "duplicates_removed": 8,
