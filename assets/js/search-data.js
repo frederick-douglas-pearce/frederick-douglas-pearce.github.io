@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "post-how-often-does-claude-retry-a-tool-call",
+        },{id: "post-inside-the-subagent-trace-file",
+        
+          title: "Inside the subagent trace file",
+        
+        description: "Part 3 of the anatomy series. When Claude Code delegates to a subagent, the parent session records only a rollup — the subagent&#39;s real work lives in a separate trace file. Where it is, how it links back, and why isSidechain is the field that matters.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/inside-the-subagent-trace-file/";
+          
+        },
+      },{id: "post-how-often-does-claude-retry-a-tool-call",
         
           title: "How often does Claude retry a tool call?",
         
