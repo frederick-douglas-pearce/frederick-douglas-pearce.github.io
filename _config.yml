@@ -86,8 +86,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Fred's Data blog # blog_name will be displayed in your blog page
-blog_description: Interesting things I've learned on my data science journey.
+blog_name: Ground Truth # blog_name will be displayed in your blog page
+blog_description: Working well with AI — by learning from its data.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
