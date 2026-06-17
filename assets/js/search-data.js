@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-blog",
           title: "blog",
-          description: "Fred&#39;s Data blog - insights and lessons learned on the journey from Earth science to data science.",
+          description: "Ground Truth — working well with AI by learning from its data.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/blog/";
