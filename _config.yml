@@ -28,6 +28,13 @@ back_to_top: true # set to false to disable the back to top button
 # Theme
 # -----------------------------------------------------------------------------
 
+# github-readme-stats host for the repositories page cards.
+# Default is the public instance, which is heavily rate-limited and often
+# renders broken "Maximum retries exceeded" cards. Self-host your own free
+# instance (https://github.com/anuraghazra/github-readme-stats#deploy-on-your-own-vercel-instance)
+# and set the URL here (no trailing slash) for reliable cards.
+repo_stats_host: https://github-readme-stats.vercel.app
+
 # repo color theme
 repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
@@ -176,7 +183,6 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/repositories.md
   - purgecss.config.js
   - README.md
   - readme_preview/

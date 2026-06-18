@@ -4,7 +4,16 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
+  # Flagship / current work
+  - frederick-douglas-pearce/codefluent
+  - frederick-douglas-pearce/sportswear-esg-news-classifier
+  - frederick-douglas-pearce/agentfluent
+  - frederick-douglas-pearce/claude-code-sessions
+  - frederick-douglas-pearce/claude-code-data-collective
+  # Data science / ML portfolio
+  - frederick-douglas-pearce/e-commerce-fraud-detection
+  - frederick-douglas-pearce/predict-housing-prices
+  - frederick-douglas-pearce/BRFSS-diabetes-2024
+  - frederick-douglas-pearce/509_Report_Analysis
   - frederick-douglas-pearce/complex_numbers_clock
   - frederick-douglas-pearce/us-presidential-vote-analysis
-  - frederick-douglas-pearce/509_Report_Analysis
-  - frederick-douglas-pearce/predict-housling-prices
