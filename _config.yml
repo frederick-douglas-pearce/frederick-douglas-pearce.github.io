@@ -246,7 +246,7 @@ jekyll-archives:
       tags: "/blog/:type/:name/"
       categories: "/blog/:type/:name/"
 display_tags: [] # tags to display on the front page of the blog
-display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
+display_categories: ["foundation", "analysis"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
