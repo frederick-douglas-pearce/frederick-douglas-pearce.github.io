@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "post-inside-the-subagent-trace-file",
+        },{id: "post-what-launched-this-turn-subagents-mcp-tools-and-skills",
+        
+          title: "What launched this turn? Subagents, MCP tools, and Skills",
+        
+        description: "A short aside off Part 3. Every assistant line can carry a record of how it came to exist — which subagent ran it, which MCP tool it routed through, which Skill it ran under. The attribution* fields, what each one records, and the one that is not the sidechain signal it looks like.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/what-launched-this-turn/";
+          
+        },
+      },{id: "post-inside-the-subagent-trace-file",
         
           title: "Inside the subagent trace file",
         
