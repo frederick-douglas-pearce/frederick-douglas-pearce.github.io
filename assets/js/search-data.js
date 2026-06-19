@@ -37,6 +37,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
+        },{id: "nav-repositories",
+          title: "repositories",
+          description: "A selection of my open-source projects and data science work on GitHub.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/repositories/";
+          },
         },{id: "post-what-launched-this-turn-subagents-mcp-tools-and-skills",
         
           title: "What launched this turn? Subagents, MCP tools, and Skills",
