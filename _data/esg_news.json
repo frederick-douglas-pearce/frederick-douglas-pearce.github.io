@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T14:00:44.231182+00:00",
+  "generated_at": "2026-06-19T14:00:43.164810+00:00",
   "total_articles": 706,
   "brands": [
     "361 Degrees",
@@ -44,11 +44,11 @@
   "categories": ["digital_transformation", "environmental", "governance", "social"],
   "scorecard": {
     "period_days": 14,
-    "period_start": "2026-06-04",
-    "period_end": "2026-06-18",
-    "articles_in_period": 20,
-    "articles_after_dedup": 16,
-    "duplicates_removed": 4,
+    "period_start": "2026-06-05",
+    "period_end": "2026-06-19",
+    "articles_in_period": 13,
+    "articles_after_dedup": 11,
+    "duplicates_removed": 2,
     "top_brands": [
       {
         "brand": "Decathlon",
@@ -61,26 +61,6 @@
         "medal": "gold"
       },
       {
-        "brand": "Nike",
-        "total": 3,
-        "environmental": 0,
-        "social": 3,
-        "governance": 1,
-        "digital_transformation": -1,
-        "article_count": 5,
-        "medal": "silver"
-      },
-      {
-        "brand": "Puma",
-        "total": 2,
-        "environmental": 0,
-        "social": 0,
-        "governance": 2,
-        "digital_transformation": 0,
-        "article_count": 2,
-        "medal": "bronze"
-      },
-      {
         "brand": "Yonex",
         "total": 2,
         "environmental": 0,
@@ -88,13 +68,54 @@
         "governance": 0,
         "digital_transformation": 0,
         "article_count": 1,
+        "medal": "silver"
+      },
+      {
+        "brand": "ASICS",
+        "total": 1,
+        "environmental": 0,
+        "social": 0,
+        "governance": 1,
+        "digital_transformation": 0,
+        "article_count": 1,
+        "medal": "bronze"
+      },
+      {
+        "brand": "Allbirds",
+        "total": 1,
+        "environmental": 0,
+        "social": 0,
+        "governance": 0,
+        "digital_transformation": 1,
+        "article_count": 2,
+        "medal": "bronze"
+      },
+      {
+        "brand": "Anta",
+        "total": 1,
+        "environmental": 0,
+        "social": 0,
+        "governance": 1,
+        "digital_transformation": 0,
+        "article_count": 1,
+        "medal": "bronze"
+      },
+      {
+        "brand": "Puma",
+        "total": 1,
+        "environmental": 0,
+        "social": 0,
+        "governance": 1,
+        "digital_transformation": 0,
+        "article_count": 1,
         "medal": "bronze"
       }
     ],
     "bottom_brands": [
-      { "brand": "Lululemon", "total": -5, "environmental": -1, "social": -1, "governance": -3, "digital_transformation": 0, "article_count": 3 },
       { "brand": "Arc'teryx", "total": -2, "environmental": -1, "social": -1, "governance": 0, "digital_transformation": 0, "article_count": 1 },
-      { "brand": "Deckers", "total": -1, "environmental": 0, "social": 0, "governance": -1, "digital_transformation": 0, "article_count": 1 }
+      { "brand": "Lululemon", "total": -2, "environmental": 0, "social": -1, "governance": -1, "digital_transformation": 0, "article_count": 1 },
+      { "brand": "Deckers", "total": -1, "environmental": 0, "social": 0, "governance": -1, "digital_transformation": 0, "article_count": 1 },
+      { "brand": "Nike", "total": -1, "environmental": 0, "social": 1, "governance": -1, "digital_transformation": -1, "article_count": 3 }
     ],
     "all_brand_scores": [
       {
@@ -108,26 +129,6 @@
         "medal": "gold"
       },
       {
-        "brand": "Nike",
-        "total": 3,
-        "environmental": 0,
-        "social": 3,
-        "governance": 1,
-        "digital_transformation": -1,
-        "article_count": 5,
-        "medal": "silver"
-      },
-      {
-        "brand": "Puma",
-        "total": 2,
-        "environmental": 0,
-        "social": 0,
-        "governance": 2,
-        "digital_transformation": 0,
-        "article_count": 2,
-        "medal": "bronze"
-      },
-      {
         "brand": "Yonex",
         "total": 2,
         "environmental": 0,
@@ -135,14 +136,52 @@
         "governance": 0,
         "digital_transformation": 0,
         "article_count": 1,
+        "medal": "silver"
+      },
+      {
+        "brand": "ASICS",
+        "total": 1,
+        "environmental": 0,
+        "social": 0,
+        "governance": 1,
+        "digital_transformation": 0,
+        "article_count": 1,
         "medal": "bronze"
       },
-      { "brand": "ASICS", "total": 1, "environmental": 0, "social": 0, "governance": 1, "digital_transformation": 0, "article_count": 1 },
-      { "brand": "Allbirds", "total": 1, "environmental": 0, "social": 0, "governance": 0, "digital_transformation": 1, "article_count": 2 },
-      { "brand": "Anta", "total": 1, "environmental": 0, "social": 0, "governance": 1, "digital_transformation": 0, "article_count": 1 },
+      {
+        "brand": "Allbirds",
+        "total": 1,
+        "environmental": 0,
+        "social": 0,
+        "governance": 0,
+        "digital_transformation": 1,
+        "article_count": 2,
+        "medal": "bronze"
+      },
+      {
+        "brand": "Anta",
+        "total": 1,
+        "environmental": 0,
+        "social": 0,
+        "governance": 1,
+        "digital_transformation": 0,
+        "article_count": 1,
+        "medal": "bronze"
+      },
+      {
+        "brand": "Puma",
+        "total": 1,
+        "environmental": 0,
+        "social": 0,
+        "governance": 1,
+        "digital_transformation": 0,
+        "article_count": 1,
+        "medal": "bronze"
+      },
       { "brand": "Deckers", "total": -1, "environmental": 0, "social": 0, "governance": -1, "digital_transformation": 0, "article_count": 1 },
+      { "brand": "Nike", "total": -1, "environmental": 0, "social": 1, "governance": -1, "digital_transformation": -1, "article_count": 3 },
       { "brand": "Arc'teryx", "total": -2, "environmental": -1, "social": -1, "governance": 0, "digital_transformation": 0, "article_count": 1 },
-      { "brand": "Lululemon", "total": -5, "environmental": -1, "social": -1, "governance": -3, "digital_transformation": 0, "article_count": 3 }
+      { "brand": "Lululemon", "total": -2, "environmental": 0, "social": -1, "governance": -1, "digital_transformation": 0, "article_count": 1 }
     ]
   },
   "articles": [
