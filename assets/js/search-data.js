@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repositories/";
           },
-        },{id: "post-what-launched-this-turn-subagents-mcp-tools-and-skills",
+        },{id: "post-token-accounting-is-harder-than-it-looks",
+        
+          title: "Token accounting is harder than it looks",
+        
+        description: "Part 4 of the anatomy series. The four token kinds, the subagent double-count trap, and why turning session JSONL into accurate cost figures needs model identity, service_tier, and an external pricing table rather than a single sum.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/token-accounting-is-harder-than-it-looks/";
+          
+        },
+      },{id: "post-what-launched-this-turn-subagents-mcp-tools-and-skills",
         
           title: "What launched this turn? Subagents, MCP tools, and Skills",
         
