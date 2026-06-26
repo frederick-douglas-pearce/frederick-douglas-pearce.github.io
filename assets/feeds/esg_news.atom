@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://frederick-douglas-pearce.github.io/esg-news/</id>
   <title>ESG Sportswear News</title>
-  <updated>2026-06-25T14:01:32.748872+00:00</updated>
+  <updated>2026-06-26T14:01:31.944194+00:00</updated>
   <author>
     <name>ESG News Classifier</name>
     <uri>https://frederick-douglas-pearce.github.io</uri>
@@ -159,9 +159,9 @@
     <updated>2025-09-30T04:00:00+00:00</updated>
     <link href="https://www.bbc.com/news/articles/cewnje717rqo"/>
     <summary>Brands: Adidas, Nike, Puma | Categories: Social | Source: bbc.com</summary>
+    <category term="Nike" label="Nike"/>
     <category term="Puma" label="Puma"/>
     <category term="Adidas" label="Adidas"/>
-    <category term="Nike" label="Nike"/>
     <category term="social" label="Social"/>
     <published>2025-09-30T04:00:00+00:00</published>
   </entry>
@@ -944,8 +944,8 @@
     <updated>2025-11-24T22:15:00+00:00</updated>
     <link href="https://www.cnbc.com/2025/11/24/allbirds-hm-zara-use-recycled-yarn-from-circa-backed-by-patagonia.html"/>
     <summary>Brands: Allbirds, Patagonia | Categories: Environmental, Governance | Source: cnbc.com</summary>
-    <category term="Patagonia" label="Patagonia"/>
     <category term="Allbirds" label="Allbirds"/>
+    <category term="Patagonia" label="Patagonia"/>
     <category term="governance" label="Governance"/>
     <category term="environmental" label="Environmental"/>
     <published>2025-11-24T22:15:00+00:00</published>
@@ -2899,8 +2899,8 @@
     <updated>2026-01-27T01:01:11+00:00</updated>
     <link href="https://www.cityam.com/anta-sports-to-acquire-29-stake-in-puma-further-strengthening-globalization-strategy/"/>
     <summary>Brands: Anta, Puma | Categories: Governance | Source: City A.m.</summary>
-    <category term="Puma" label="Puma"/>
     <category term="Anta" label="Anta"/>
+    <category term="Puma" label="Puma"/>
     <category term="governance" label="Governance"/>
     <published>2026-01-27T01:01:11+00:00</published>
   </entry>
@@ -2910,8 +2910,8 @@
     <updated>2026-01-27T01:47:25+00:00</updated>
     <link href="https://www.thehindu.com/business/chinas-anta-sports-muscles-in-with-18-billion-move-for-291-puma-stake/article70555014.ece"/>
     <summary>Brands: Anta, Puma | Categories: Governance | Source: The Hindu</summary>
-    <category term="Puma" label="Puma"/>
     <category term="Anta" label="Anta"/>
+    <category term="Puma" label="Puma"/>
     <category term="governance" label="Governance"/>
     <published>2026-01-27T01:47:25+00:00</published>
   </entry>
@@ -2921,8 +2921,8 @@
     <updated>2026-01-27T01:48:36+00:00</updated>
     <link href="https://www.cnbctv18.com/market/china-anta-sports-to-a-cquire-29-percent-stake-in-puma-for-1-8-billion-ws-l-19833404.htm"/>
     <summary>Brands: Anta, Puma | Categories: Governance | Source: Cnbctv18</summary>
-    <category term="Puma" label="Puma"/>
     <category term="Anta" label="Anta"/>
+    <category term="Puma" label="Puma"/>
     <category term="governance" label="Governance"/>
     <published>2026-01-27T01:48:36+00:00</published>
   </entry>
@@ -2932,8 +2932,8 @@
     <updated>2026-01-27T05:45:00+00:00</updated>
     <link href="https://www.bssnews.net/business/355111"/>
     <summary>Brands: Anta, Puma | Categories: Governance | Source: bssnews.net</summary>
-    <category term="Puma" label="Puma"/>
     <category term="Anta" label="Anta"/>
+    <category term="Puma" label="Puma"/>
     <category term="governance" label="Governance"/>
     <published>2026-01-27T05:45:00+00:00</published>
   </entry>
@@ -2943,8 +2943,8 @@
     <updated>2026-01-27T06:17:00+00:00</updated>
     <link href="https://www.thestar.com.my/business/business-news/2026/01/27/chinese-sportswear-firm-to-secure-major-stake-in-puma"/>
     <summary>Brands: Anta, Puma | Categories: Governance | Source: The Star</summary>
-    <category term="Puma" label="Puma"/>
     <category term="Anta" label="Anta"/>
+    <category term="Puma" label="Puma"/>
     <category term="governance" label="Governance"/>
     <published>2026-01-27T06:17:00+00:00</published>
   </entry>
@@ -2954,8 +2954,8 @@
     <updated>2026-01-27T07:14:14+00:00</updated>
     <link href="https://www.newsbytesapp.com/news/business/chinese-firm-buys-29-majority-stake-in-puma-for-1-8b/story"/>
     <summary>Brands: Anta, Puma | Categories: Governance | Source: Newsbytes</summary>
-    <category term="Puma" label="Puma"/>
     <category term="Anta" label="Anta"/>
+    <category term="Puma" label="Puma"/>
     <category term="governance" label="Governance"/>
     <published>2026-01-27T07:14:14+00:00</published>
   </entry>
@@ -3048,8 +3048,8 @@
     <updated>2026-01-27T20:15:00+00:00</updated>
     <link href="https://www.webwire.com/ViewPressRel.asp?aId=349704"/>
     <summary>Brands: Anta, Puma | Categories: Governance | Source: webwire.com</summary>
-    <category term="Puma" label="Puma"/>
     <category term="Anta" label="Anta"/>
+    <category term="Puma" label="Puma"/>
     <category term="governance" label="Governance"/>
     <published>2026-01-27T20:15:00+00:00</published>
   </entry>
@@ -3059,8 +3059,8 @@
     <updated>2026-01-27T21:26:00+00:00</updated>
     <link href="https://www.qatar-tribune.com/article/216500/business/chinas-anta-sports-buys-18-bn-stake-to-become-top-puma-shareholder"/>
     <summary>Brands: Anta, Puma | Categories: Governance | Source: Qatar Tribune</summary>
-    <category term="Puma" label="Puma"/>
     <category term="Anta" label="Anta"/>
+    <category term="Puma" label="Puma"/>
     <category term="governance" label="Governance"/>
     <published>2026-01-27T21:26:00+00:00</published>
   </entry>
@@ -3080,8 +3080,8 @@
     <updated>2026-01-27T22:30:00+00:00</updated>
     <link href="http://www.sanantoniopost.com/news/278834152/chinese-firm-to-become-top-shareholder-at-puma"/>
     <summary>Brands: Anta, Puma | Categories: Governance | Source: sanantoniopost.com</summary>
-    <category term="Puma" label="Puma"/>
     <category term="Anta" label="Anta"/>
+    <category term="Puma" label="Puma"/>
     <category term="governance" label="Governance"/>
     <published>2026-01-27T22:30:00+00:00</published>
   </entry>
@@ -3102,8 +3102,8 @@
     <updated>2026-01-28T00:00:00+00:00</updated>
     <link href="https://kathmandupost.com/world/2026/01/28/puma-s-long-slide-the-rise-and-fall-of-a-german-sports-icon"/>
     <summary>Brands: Anta, Puma | Categories: Governance, Social | Source: Kathmandupost</summary>
-    <category term="Puma" label="Puma"/>
     <category term="Anta" label="Anta"/>
+    <category term="Puma" label="Puma"/>
     <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
     <published>2026-01-28T00:00:00+00:00</published>
@@ -3114,8 +3114,8 @@
     <updated>2026-01-28T06:15:00+00:00</updated>
     <link href="http://www.china.org.cn/2026-01/28/content_118303702.shtml"/>
     <summary>Brands: Anta, Puma | Categories: Governance | Source: china.org.cn</summary>
-    <category term="Puma" label="Puma"/>
     <category term="Anta" label="Anta"/>
+    <category term="Puma" label="Puma"/>
     <category term="governance" label="Governance"/>
     <published>2026-01-28T06:15:00+00:00</published>
   </entry>
@@ -3125,10 +3125,10 @@
     <updated>2026-01-28T18:12:47+00:00</updated>
     <link href="https://www.business-standard.com/world-news/puma-long-slide-as-rivals-adidas-and-anta-loom-126012801732_1.html"/>
     <summary>Brands: Adidas, Anta, Nike, Puma | Categories: Governance | Source: Business Standard</summary>
-    <category term="Puma" label="Puma"/>
-    <category term="Adidas" label="Adidas"/>
     <category term="Anta" label="Anta"/>
     <category term="Nike" label="Nike"/>
+    <category term="Puma" label="Puma"/>
+    <category term="Adidas" label="Adidas"/>
     <category term="governance" label="Governance"/>
     <published>2026-01-28T18:12:47+00:00</published>
   </entry>
@@ -3138,8 +3138,8 @@
     <updated>2026-01-28T18:20:41+00:00</updated>
     <link href="https://www.tekedia.com/antas-29-puma-stake-sparks-market-rally-as-first-abu-dhabi-bank-records-22-profit/"/>
     <summary>Brands: Anta, Puma | Categories: Governance | Source: Tekedia</summary>
-    <category term="Puma" label="Puma"/>
     <category term="Anta" label="Anta"/>
+    <category term="Puma" label="Puma"/>
     <category term="governance" label="Governance"/>
     <published>2026-01-28T18:20:41+00:00</published>
   </entry>
@@ -3212,9 +3212,9 @@
     <updated>2026-01-31T03:30:00+00:00</updated>
     <link href="https://www.zerohedge.com/markets/leader-turned-follower-lululemons-see-through-tights-fiasco-exposes-brand-drift"/>
     <summary>Brands: Alo Yoga, Lululemon, Vuori | Categories: Governance | Source: zerohedge.com</summary>
+    <category term="Vuori" label="Vuori"/>
     <category term="Lululemon" label="Lululemon"/>
     <category term="Alo Yoga" label="Alo Yoga"/>
-    <category term="Vuori" label="Vuori"/>
     <category term="governance" label="Governance"/>
     <published>2026-01-31T03:30:00+00:00</published>
   </entry>
@@ -3407,8 +3407,8 @@
     <updated>2026-02-03T23:00:00+00:00</updated>
     <link href="https://www.malaymail.com/news/money/2026/02/04/pinaults-puma-exit-how-an-anti-embarrassment-clause-sealed-the-anta-deal/207887"/>
     <summary>Brands: Anta, Puma | Categories: Governance | Source: Malay Mail</summary>
-    <category term="Puma" label="Puma"/>
     <category term="Anta" label="Anta"/>
+    <category term="Puma" label="Puma"/>
     <category term="governance" label="Governance"/>
     <published>2026-02-03T23:00:00+00:00</published>
   </entry>
@@ -3440,8 +3440,8 @@
     <updated>2026-02-04T10:30:00+00:00</updated>
     <link href="https://finance.yahoo.com/news/anta-debut-permanent-us-flagship-100128413.html"/>
     <summary>Brands: Anta, Puma | Categories: Governance, Social | Source: finance.yahoo.com</summary>
-    <category term="Puma" label="Puma"/>
     <category term="Anta" label="Anta"/>
+    <category term="Puma" label="Puma"/>
     <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
     <published>2026-02-04T10:30:00+00:00</published>
@@ -3738,16 +3738,6 @@
     <published>2026-02-05T20:30:00+00:00</published>
   </entry>
   <entry>
-    <id>6d41ee5c-d2a3-48ac-b750-d1f45c87f344</id>
-    <title>Nike introduces inflatable jacket for Team united states at Milan Cortina Olympics</title>
-    <updated>2026-02-05T22:00:00+00:00</updated>
-    <link href="https://www.wdsu.com/article/inflatable-jacket-team-usa-milan-cortina-olympics/69500840"/>
-    <summary>Brands: Nike | Categories: Digital Transformation | Source: wdsu.com</summary>
-    <category term="Nike" label="Nike"/>
-    <category term="digital_transformation" label="Digital Transformation"/>
-    <published>2026-02-05T22:00:00+00:00</published>
-  </entry>
-  <entry>
     <id>e99e7f41-9f69-45e4-82fb-90dcd5f9b9c5</id>
     <title>Trump Admin Accuses Nike Of Discriminating Against White Employees</title>
     <updated>2026-02-05T22:00:00+00:00</updated>
@@ -3756,6 +3746,16 @@
     <category term="Nike" label="Nike"/>
     <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <published>2026-02-05T22:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>6d41ee5c-d2a3-48ac-b750-d1f45c87f344</id>
+    <title>Nike introduces inflatable jacket for Team united states at Milan Cortina Olympics</title>
+    <updated>2026-02-05T22:00:00+00:00</updated>
+    <link href="https://www.wdsu.com/article/inflatable-jacket-team-usa-milan-cortina-olympics/69500840"/>
+    <summary>Brands: Nike | Categories: Digital Transformation | Source: wdsu.com</summary>
+    <category term="Nike" label="Nike"/>
+    <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-02-05T22:00:00+00:00</published>
   </entry>
   <entry>
@@ -3872,10 +3872,10 @@
     <updated>2026-02-06T14:00:00+00:00</updated>
     <link href="https://www.firstpost.com/business/nike-adidas-face-new-rival-china-anta-takes-stake-puma-13977026.html"/>
     <summary>Brands: Adidas, Anta, Nike, Puma | Categories: Governance | Source: firstpost.com</summary>
-    <category term="Puma" label="Puma"/>
-    <category term="Adidas" label="Adidas"/>
     <category term="Anta" label="Anta"/>
     <category term="Nike" label="Nike"/>
+    <category term="Puma" label="Puma"/>
+    <category term="Adidas" label="Adidas"/>
     <category term="governance" label="Governance"/>
     <published>2026-02-06T14:00:00+00:00</published>
   </entry>
@@ -3916,10 +3916,10 @@
     <updated>2026-02-09T01:05:00+00:00</updated>
     <link href="https://www.straitstimes.com/business/with-puma-stake-chinas-anta-seeks-to-enter-the-arena-with-nike-and-adidas"/>
     <summary>Brands: Adidas, Anta, Nike, Puma | Categories: Governance | Source: Straitstimes</summary>
-    <category term="Puma" label="Puma"/>
-    <category term="Adidas" label="Adidas"/>
     <category term="Anta" label="Anta"/>
     <category term="Nike" label="Nike"/>
+    <category term="Puma" label="Puma"/>
+    <category term="Adidas" label="Adidas"/>
     <category term="governance" label="Governance"/>
     <published>2026-02-09T01:05:00+00:00</published>
   </entry>
@@ -4336,8 +4336,8 @@
     <updated>2026-02-14T09:35:12+00:00</updated>
     <link href="https://www.webpronews.com/how-adidas-rewrote-the-digital-playbook-inside-the-sportswear-giants-radical-shift-from-stadium-sponsorships-to-screen-first-strategy/"/>
     <summary>Brands: Adidas, Nike | Categories: Digital Transformation | Source: Webpronews</summary>
-    <category term="Adidas" label="Adidas"/>
     <category term="Nike" label="Nike"/>
+    <category term="Adidas" label="Adidas"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-02-14T09:35:12+00:00</published>
   </entry>
@@ -4563,9 +4563,9 @@
     <updated>2026-02-26T18:58:33+00:00</updated>
     <link href="https://wwd.com/footwear-news/shoe-industry-news/nike-adidas-puma-sneaker-market-annual-growth-rate-1238630391/"/>
     <summary>Brands: Adidas, Nike, Puma | Categories: Digital Transformation, Environmental | Source: Footwear News</summary>
+    <category term="Nike" label="Nike"/>
     <category term="Puma" label="Puma"/>
     <category term="Adidas" label="Adidas"/>
-    <category term="Nike" label="Nike"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <category term="environmental" label="Environmental"/>
     <published>2026-02-26T18:58:33+00:00</published>
@@ -4576,8 +4576,8 @@
     <updated>2026-02-26T19:00:08+00:00</updated>
     <link href="http://economictimes.indiatimes.com/news/international/business/puma-expects-another-annual-loss-cancels-dividend-in-turnaround-drive/articleshow/128824476.cms"/>
     <summary>Brands: Anta, Puma | Categories: Governance | Source: The Economic Times</summary>
-    <category term="Puma" label="Puma"/>
     <category term="Anta" label="Anta"/>
+    <category term="Puma" label="Puma"/>
     <category term="governance" label="Governance"/>
     <published>2026-02-26T19:00:08+00:00</published>
   </entry>
@@ -4744,9 +4744,9 @@
     <updated>2026-03-05T16:43:00+00:00</updated>
     <link href="https://www.globenewswire.com/fr/news-release/2026/03/05/3250456/28124/en/North-America-Golf-Apparel-Market-Report-2025-2033-by-Product-Distribution-Channel-and-Company-Analysis.html"/>
     <summary>Brands: Adidas, Nike, Under Armour | Categories: Environmental, Governance | Source: Globenewswire_fr</summary>
-    <category term="Adidas" label="Adidas"/>
     <category term="Under Armour" label="Under Armour"/>
     <category term="Nike" label="Nike"/>
+    <category term="Adidas" label="Adidas"/>
     <category term="governance" label="Governance"/>
     <category term="environmental" label="Environmental"/>
     <published>2026-03-05T16:43:00+00:00</published>
@@ -4942,10 +4942,10 @@
     <updated>2026-03-17T08:02:37+00:00</updated>
     <link href="https://www.manilatimes.net/2026/03/17/tmt-newswire/plentisoft/outdoor-apparel-market-size-to-reach-22907-bn-by-2031-with-559-cagr-says-mordor-intelligence/2301436"/>
     <summary>Brands: Adidas, Nike | Categories: Digital Transformation, Environmental | Source: The Manila Times</summary>
-    <category term="Adidas" label="Adidas"/>
     <category term="Nike" label="Nike"/>
-    <category term="digital_transformation" label="Digital Transformation"/>
+    <category term="Adidas" label="Adidas"/>
     <category term="environmental" label="Environmental"/>
+    <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-03-17T08:02:37+00:00</published>
   </entry>
   <entry>
@@ -5360,22 +5360,22 @@
     <published>2026-03-31T22:30:00+00:00</published>
   </entry>
   <entry>
-    <id>d8f3fe26-b6c4-430d-b77a-912794ff5b30</id>
-    <title>Allbirds , once worth $7b , sells its assets for $68m , will wind down</title>
+    <id>23d82ecf-d2f7-4ae4-9b8a-93abda969b11</id>
+    <title>American Exchange Is Set to Acquire Allbirds for $39 Million . Here What Investors Need to Know . </title>
     <updated>2026-04-01T00:00:00+00:00</updated>
-    <link href="https://www.newstalkzb.co.nz/news/business/allbirds-once-worth-7b-sells-its-assets-for-68m-will-wind-down/"/>
-    <summary>Brands: Allbirds | Categories: Environmental, Governance | Source: newstalkzb.co.nz</summary>
+    <link href="https://www.fool.com/investing/2026/03/31/american-exchange-is-set-to-acquire-allbirds-for-3/?source=iedfolrf0000001"/>
+    <summary>Brands: Allbirds | Categories: Environmental, Governance | Source: fool.com</summary>
     <category term="Allbirds" label="Allbirds"/>
     <category term="governance" label="Governance"/>
     <category term="environmental" label="Environmental"/>
     <published>2026-04-01T00:00:00+00:00</published>
   </entry>
   <entry>
-    <id>23d82ecf-d2f7-4ae4-9b8a-93abda969b11</id>
-    <title>American Exchange Is Set to Acquire Allbirds for $39 Million . Here What Investors Need to Know . </title>
+    <id>d8f3fe26-b6c4-430d-b77a-912794ff5b30</id>
+    <title>Allbirds , once worth $7b , sells its assets for $68m , will wind down</title>
     <updated>2026-04-01T00:00:00+00:00</updated>
-    <link href="https://www.fool.com/investing/2026/03/31/american-exchange-is-set-to-acquire-allbirds-for-3/?source=iedfolrf0000001"/>
-    <summary>Brands: Allbirds | Categories: Environmental, Governance | Source: fool.com</summary>
+    <link href="https://www.newstalkzb.co.nz/news/business/allbirds-once-worth-7b-sells-its-assets-for-68m-will-wind-down/"/>
+    <summary>Brands: Allbirds | Categories: Environmental, Governance | Source: newstalkzb.co.nz</summary>
     <category term="Allbirds" label="Allbirds"/>
     <category term="governance" label="Governance"/>
     <category term="environmental" label="Environmental"/>
@@ -5605,8 +5605,8 @@
     <updated>2026-04-06T20:14:48+00:00</updated>
     <link href="https://wwd.com/footwear-news/shoe-industry-news/nike-ruling-verdict-patent-dispute-lululemon-flyknit-1238888179/"/>
     <summary>Brands: Lululemon, Nike | Categories: Governance | Source: Footwear News</summary>
-    <category term="Lululemon" label="Lululemon"/>
     <category term="Nike" label="Nike"/>
+    <category term="Lululemon" label="Lululemon"/>
     <category term="governance" label="Governance"/>
     <published>2026-04-06T20:14:48+00:00</published>
   </entry>
@@ -5912,16 +5912,6 @@
     <published>2026-04-15T11:15:00+00:00</published>
   </entry>
   <entry>
-    <id>98d55971-3679-431b-904d-ad4ab4da832d</id>
-    <title>The North Face latest camping gear ditches zips and it actually makes sense</title>
-    <updated>2026-04-15T13:00:00+00:00</updated>
-    <link href="https://www.t3.com/active/outdoors/the-north-face-universal-collection-launch-0426"/>
-    <summary>Brands: The North Face | Categories: Social | Source: t3.com</summary>
-    <category term="The North Face" label="The North Face"/>
-    <category term="social" label="Social"/>
-    <published>2026-04-15T13:00:00+00:00</published>
-  </entry>
-  <entry>
     <id>f68b7756-8b23-4a5e-bdc8-b27b408d466b</id>
     <title>Lululemon Under Pressure as Texas Questions the Gap Between Marketing and PFAS Claims</title>
     <updated>2026-04-15T13:00:00+00:00</updated>
@@ -5930,6 +5920,16 @@
     <category term="Lululemon" label="Lululemon"/>
     <category term="governance" label="Governance"/>
     <category term="environmental" label="Environmental"/>
+    <published>2026-04-15T13:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>98d55971-3679-431b-904d-ad4ab4da832d</id>
+    <title>The North Face latest camping gear ditches zips and it actually makes sense</title>
+    <updated>2026-04-15T13:00:00+00:00</updated>
+    <link href="https://www.t3.com/active/outdoors/the-north-face-universal-collection-launch-0426"/>
+    <summary>Brands: The North Face | Categories: Social | Source: t3.com</summary>
+    <category term="The North Face" label="The North Face"/>
+    <category term="social" label="Social"/>
     <published>2026-04-15T13:00:00+00:00</published>
   </entry>
   <entry>
@@ -6622,8 +6622,8 @@
     <updated>2026-04-27T16:37:00+00:00</updated>
     <link href="https://kuwaittimes.com/article/42886/business/sawes-record-boosts-adidas-in-supershoe-race-with-nike/"/>
     <summary>Brands: Adidas, Nike | Categories: Digital Transformation, Governance | Source: Kuwait Times</summary>
-    <category term="Adidas" label="Adidas"/>
     <category term="Nike" label="Nike"/>
+    <category term="Adidas" label="Adidas"/>
     <category term="governance" label="Governance"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-04-27T16:37:00+00:00</published>
@@ -6972,16 +6972,6 @@
     <published>2026-05-17T21:30:00+00:00</published>
   </entry>
   <entry>
-    <id>420346b2-9e72-46df-a60b-885e1f34c4b5</id>
-    <title>Lululemon Criticises Chip Wilson , Sets Proxy Vote</title>
-    <updated>2026-05-18T18:45:00+00:00</updated>
-    <link href="https://www.businessoffashion.com/news/retail/lululemon-criticises-chip-wilson-sets-proxy-vote/"/>
-    <summary>Brands: Lululemon | Categories: Governance | Source: businessoffashion.com</summary>
-    <category term="Lululemon" label="Lululemon"/>
-    <category term="governance" label="Governance"/>
-    <published>2026-05-18T18:45:00+00:00</published>
-  </entry>
-  <entry>
     <id>0a8527a6-7ac1-4781-819e-b6801594e456</id>
     <title>Chip Wilson Issues Statement and Shares Details of Negotiations with lululemon</title>
     <updated>2026-05-18T18:45:00+00:00</updated>
@@ -6997,6 +6987,16 @@
     <updated>2026-05-18T18:45:00+00:00</updated>
     <link href="http://baystreet.ca/stockstowatch/23316/Lululemon-Strikes-Back-At-Founder-Chip-Wilson"/>
     <summary>Brands: Lululemon | Categories: Governance | Source: baystreet.ca</summary>
+    <category term="Lululemon" label="Lululemon"/>
+    <category term="governance" label="Governance"/>
+    <published>2026-05-18T18:45:00+00:00</published>
+  </entry>
+  <entry>
+    <id>420346b2-9e72-46df-a60b-885e1f34c4b5</id>
+    <title>Lululemon Criticises Chip Wilson , Sets Proxy Vote</title>
+    <updated>2026-05-18T18:45:00+00:00</updated>
+    <link href="https://www.businessoffashion.com/news/retail/lululemon-criticises-chip-wilson-sets-proxy-vote/"/>
+    <summary>Brands: Lululemon | Categories: Governance | Source: businessoffashion.com</summary>
     <category term="Lululemon" label="Lululemon"/>
     <category term="governance" label="Governance"/>
     <published>2026-05-18T18:45:00+00:00</published>
@@ -7109,8 +7109,8 @@
     <updated>2026-05-26T18:19:06+00:00</updated>
     <link href="https://english.elpais.com/economy-and-business/2026-05-26/heidi-oneill-the-nike-veteran-who-knows-how-to-turn-around-a-struggling-business.html"/>
     <summary>Brands: Lululemon, Nike | Categories: Governance | Source: El Pais</summary>
-    <category term="Lululemon" label="Lululemon"/>
     <category term="Nike" label="Nike"/>
+    <category term="Lululemon" label="Lululemon"/>
     <category term="governance" label="Governance"/>
     <published>2026-05-26T18:19:06+00:00</published>
   </entry>
@@ -7364,16 +7364,6 @@
     <published>2026-06-04T23:06:35+00:00</published>
   </entry>
   <entry>
-    <id>05e8ef12-39b5-47db-a590-95249f1debe0</id>
-    <title>Lululemon Flubbed the Quarter , and the Founder Wont Say a Bad Word</title>
-    <updated>2026-06-05T11:15:00+00:00</updated>
-    <link href="https://www.fool.com/investing/2026/06/05/lululemon-flubbed-the-quarter-and-the-founder-wont-say-a-bad-word/?source=iedfolrf0000001"/>
-    <summary>Brands: Lululemon | Categories: Governance | Source: fool.com</summary>
-    <category term="Lululemon" label="Lululemon"/>
-    <category term="governance" label="Governance"/>
-    <published>2026-06-05T11:15:00+00:00</published>
-  </entry>
-  <entry>
     <id>8ff7fb41-3e7f-45eb-9b70-4cc68a66ba6c</id>
     <title>Ad of the Day : Nike upstages Adidas World Cup</title>
     <updated>2026-06-05T11:15:00+00:00</updated>
@@ -7381,6 +7371,16 @@
     <summary>Brands: Nike | Categories: Social | Source: thedrum.com</summary>
     <category term="Nike" label="Nike"/>
     <category term="social" label="Social"/>
+    <published>2026-06-05T11:15:00+00:00</published>
+  </entry>
+  <entry>
+    <id>05e8ef12-39b5-47db-a590-95249f1debe0</id>
+    <title>Lululemon Flubbed the Quarter , and the Founder Wont Say a Bad Word</title>
+    <updated>2026-06-05T11:15:00+00:00</updated>
+    <link href="https://www.fool.com/investing/2026/06/05/lululemon-flubbed-the-quarter-and-the-founder-wont-say-a-bad-word/?source=iedfolrf0000001"/>
+    <summary>Brands: Lululemon | Categories: Governance | Source: fool.com</summary>
+    <category term="Lululemon" label="Lululemon"/>
+    <category term="governance" label="Governance"/>
     <published>2026-06-05T11:15:00+00:00</published>
   </entry>
   <entry>
@@ -7420,8 +7420,8 @@
     <updated>2026-06-09T15:48:41+00:00</updated>
     <link href="https://www.cnbctv18.com/business/competition-commission-clears-anta-sports-proposal-to-acquire-29-per-cent-stake-in-puma-19922478.htm"/>
     <summary>Brands: Anta, Puma | Categories: Governance | Source: Cnbctv18</summary>
-    <category term="Puma" label="Puma"/>
     <category term="Anta" label="Anta"/>
+    <category term="Puma" label="Puma"/>
     <category term="governance" label="Governance"/>
     <published>2026-06-09T15:48:41+00:00</published>
   </entry>
@@ -7472,8 +7472,8 @@
     <updated>2026-06-17T12:22:57+00:00</updated>
     <link href="https://ca.news.yahoo.com/lululemon-faces-backlash-china-using-122257718.html"/>
     <summary>Brands: Arc'teryx, Lululemon | Categories: Environmental, Governance, Social | Source: Yahoo! News</summary>
-    <category term="Lululemon" label="Lululemon"/>
     <category term="Arc'teryx" label="Arc'teryx"/>
+    <category term="Lululemon" label="Lululemon"/>
     <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
     <category term="environmental" label="Environmental"/>
@@ -7593,9 +7593,9 @@
     <updated>2026-06-23T12:50:31+00:00</updated>
     <link href="https://sgbonline.com/study-adidas-scores-high-for-sustainability-perception/"/>
     <summary>Brands: Adidas, Nike, The North Face | Categories: Environmental | Source: Sgb Online</summary>
-    <category term="The North Face" label="The North Face"/>
-    <category term="Adidas" label="Adidas"/>
     <category term="Nike" label="Nike"/>
+    <category term="Adidas" label="Adidas"/>
+    <category term="The North Face" label="The North Face"/>
     <category term="environmental" label="Environmental"/>
     <published>2026-06-23T12:50:31+00:00</published>
   </entry>
@@ -7605,9 +7605,9 @@
     <updated>2026-06-23T12:50:31+00:00</updated>
     <link href="https://sgbonline.com/study-adidas-scores-high-for-sustainability-credentials/"/>
     <summary>Brands: Adidas, Nike, The North Face | Categories: Environmental | Source: Sgb Online</summary>
-    <category term="The North Face" label="The North Face"/>
-    <category term="Adidas" label="Adidas"/>
     <category term="Nike" label="Nike"/>
+    <category term="Adidas" label="Adidas"/>
+    <category term="The North Face" label="The North Face"/>
     <category term="environmental" label="Environmental"/>
     <published>2026-06-23T12:50:31+00:00</published>
   </entry>
@@ -7653,5 +7653,46 @@
     <category term="ASICS" label="ASICS"/>
     <category term="social" label="Social"/>
     <published>2026-06-25T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>9e973f0c-458b-4d3d-bf2a-55f3e3439149</id>
+    <title>Nike Shares Dip as Sportswear Giant Faces Headwinds in Competitive Retail Landscape</title>
+    <updated>2026-06-25T04:34:26+00:00</updated>
+    <link href="https://www.ibtimes.com.au/nike-market-challenges-strategic-adjustments-1871274"/>
+    <summary>Brands: Nike | Categories: Environmental | Source: International Business Times</summary>
+    <category term="Nike" label="Nike"/>
+    <category term="environmental" label="Environmental"/>
+    <published>2026-06-25T04:34:26+00:00</published>
+  </entry>
+  <entry>
+    <id>3ee4c63a-ede8-4081-8f69-3c376ab6f287</id>
+    <title>Under Armour clothes from sweatshop supplier banned after abuse and suicides</title>
+    <updated>2026-06-25T05:00:00+00:00</updated>
+    <link href="https://inews.co.uk/news/business/under-armour-clothes-from-sweatshop-supplier-banned-4497529"/>
+    <summary>Brands: Under Armour | Categories: Governance, Social | Source: Inews</summary>
+    <category term="Under Armour" label="Under Armour"/>
+    <category term="social" label="Social"/>
+    <category term="governance" label="Governance"/>
+    <published>2026-06-25T05:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>9cf11336-fc52-4186-a398-cd26e4b65cdb</id>
+    <title>ASICS backs grassroots tennis through Rohan Bopanna Tennis Academy alliance</title>
+    <updated>2026-06-25T12:30:00+00:00</updated>
+    <link href="https://sportsmintmedia.com/asics-backs-grassroots-tennis-through-rohan-bopanna-tennis-academy-alliance/"/>
+    <summary>Brands: ASICS | Categories: Social | Source: Sportsmint Media</summary>
+    <category term="ASICS" label="ASICS"/>
+    <category term="social" label="Social"/>
+    <published>2026-06-25T12:30:00+00:00</published>
+  </entry>
+  <entry>
+    <id>7dccbf22-de0e-4e60-acb5-f562b551fafc</id>
+    <title>Rick Owens Just Surprise-Launched an Adidas Collab—With Built-in Air Con</title>
+    <updated>2026-06-25T17:07:10+00:00</updated>
+    <link href="https://us.headtopics.com/news/rick-owens-just-surprise-launched-an-adidas-collab-with-84918038"/>
+    <summary>Brands: Adidas | Categories: Environmental | Source: Headtopics</summary>
+    <category term="Adidas" label="Adidas"/>
+    <category term="environmental" label="Environmental"/>
+    <published>2026-06-25T17:07:10+00:00</published>
   </entry>
 </feed>
