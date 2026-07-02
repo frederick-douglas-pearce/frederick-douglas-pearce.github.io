@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T14:01:28.429126+00:00",
+  "generated_at": "2026-07-02T14:01:27.301142+00:00",
   "total_articles": 730,
   "brands": [
     "361 Degrees",
@@ -44,11 +44,11 @@
   "categories": ["digital_transformation", "environmental", "governance", "social"],
   "scorecard": {
     "period_days": 14,
-    "period_start": "2026-06-17",
-    "period_end": "2026-07-01",
-    "articles_in_period": 29,
-    "articles_after_dedup": 20,
-    "duplicates_removed": 9,
+    "period_start": "2026-06-18",
+    "period_end": "2026-07-02",
+    "articles_in_period": 24,
+    "articles_after_dedup": 18,
+    "duplicates_removed": 6,
     "top_brands": [
       {
         "brand": "Adidas",
@@ -71,16 +71,6 @@
         "medal": "silver"
       },
       {
-        "brand": "Decathlon",
-        "total": 4,
-        "environmental": 0,
-        "social": 2,
-        "governance": 2,
-        "digital_transformation": 0,
-        "article_count": 1,
-        "medal": "silver"
-      },
-      {
         "brand": "Nike",
         "total": 3,
         "environmental": 4,
@@ -92,8 +82,7 @@
       }
     ],
     "bottom_brands": [
-      { "brand": "Lululemon", "total": -3, "environmental": -1, "social": -2, "governance": 0, "digital_transformation": 0, "article_count": 3 },
-      { "brand": "Allbirds", "total": -1, "environmental": -1, "social": 0, "governance": -1, "digital_transformation": 1, "article_count": 3 }
+      { "brand": "Lululemon", "total": -3, "environmental": -1, "social": -2, "governance": 0, "digital_transformation": 0, "article_count": 3 }
     ],
     "all_brand_scores": [
       {
@@ -117,16 +106,6 @@
         "medal": "silver"
       },
       {
-        "brand": "Decathlon",
-        "total": 4,
-        "environmental": 0,
-        "social": 2,
-        "governance": 2,
-        "digital_transformation": 0,
-        "article_count": 1,
-        "medal": "silver"
-      },
-      {
         "brand": "Nike",
         "total": 3,
         "environmental": 4,
@@ -138,9 +117,9 @@
       },
       { "brand": "ASICS", "total": 2, "environmental": 0, "social": 2, "governance": 0, "digital_transformation": 0, "article_count": 1 },
       { "brand": "The North Face", "total": 2, "environmental": 2, "social": 0, "governance": 0, "digital_transformation": 0, "article_count": 1 },
+      { "brand": "Allbirds", "total": 0, "environmental": -1, "social": 0, "governance": 0, "digital_transformation": 1, "article_count": 2 },
       { "brand": "Puma", "total": 0, "environmental": 1, "social": -1, "governance": 0, "digital_transformation": 0, "article_count": 1 },
       { "brand": "Under Armour", "total": 0, "environmental": 0, "social": 1, "governance": -1, "digital_transformation": 0, "article_count": 2 },
-      { "brand": "Allbirds", "total": -1, "environmental": -1, "social": 0, "governance": -1, "digital_transformation": 1, "article_count": 3 },
       { "brand": "Lululemon", "total": -3, "environmental": -1, "social": -2, "governance": 0, "digital_transformation": 0, "article_count": 3 }
     ]
   },
