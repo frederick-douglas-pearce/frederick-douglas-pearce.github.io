@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T14:01:27.301142+00:00",
+  "generated_at": "2026-07-03T14:01:27.209414+00:00",
   "total_articles": 730,
   "brands": [
     "361 Degrees",
@@ -44,22 +44,12 @@
   "categories": ["digital_transformation", "environmental", "governance", "social"],
   "scorecard": {
     "period_days": 14,
-    "period_start": "2026-06-18",
-    "period_end": "2026-07-02",
-    "articles_in_period": 24,
-    "articles_after_dedup": 18,
+    "period_start": "2026-06-19",
+    "period_end": "2026-07-03",
+    "articles_in_period": 21,
+    "articles_after_dedup": 15,
     "duplicates_removed": 6,
     "top_brands": [
-      {
-        "brand": "Adidas",
-        "total": 6,
-        "environmental": 3,
-        "social": 0,
-        "governance": 1,
-        "digital_transformation": 2,
-        "article_count": 4,
-        "medal": "gold"
-      },
       {
         "brand": "Anta",
         "total": 4,
@@ -68,7 +58,7 @@
         "governance": 2,
         "digital_transformation": 0,
         "article_count": 1,
-        "medal": "silver"
+        "medal": "gold"
       },
       {
         "brand": "Nike",
@@ -78,23 +68,53 @@
         "governance": -2,
         "digital_transformation": 0,
         "article_count": 5,
+        "medal": "silver"
+      },
+      {
+        "brand": "ASICS",
+        "total": 2,
+        "environmental": 0,
+        "social": 2,
+        "governance": 0,
+        "digital_transformation": 0,
+        "article_count": 1,
+        "medal": "bronze"
+      },
+      {
+        "brand": "Adidas",
+        "total": 2,
+        "environmental": 3,
+        "social": 0,
+        "governance": -1,
+        "digital_transformation": 0,
+        "article_count": 3,
+        "medal": "bronze"
+      },
+      {
+        "brand": "Allbirds",
+        "total": 2,
+        "environmental": 0,
+        "social": 0,
+        "governance": 1,
+        "digital_transformation": 1,
+        "article_count": 1,
+        "medal": "bronze"
+      },
+      {
+        "brand": "The North Face",
+        "total": 2,
+        "environmental": 2,
+        "social": 0,
+        "governance": 0,
+        "digital_transformation": 0,
+        "article_count": 1,
         "medal": "bronze"
       }
     ],
     "bottom_brands": [
-      { "brand": "Lululemon", "total": -3, "environmental": -1, "social": -2, "governance": 0, "digital_transformation": 0, "article_count": 3 }
+      { "brand": "Lululemon", "total": -2, "environmental": -1, "social": -1, "governance": 0, "digital_transformation": 0, "article_count": 2 }
     ],
     "all_brand_scores": [
-      {
-        "brand": "Adidas",
-        "total": 6,
-        "environmental": 3,
-        "social": 0,
-        "governance": 1,
-        "digital_transformation": 2,
-        "article_count": 4,
-        "medal": "gold"
-      },
       {
         "brand": "Anta",
         "total": 4,
@@ -103,7 +123,7 @@
         "governance": 2,
         "digital_transformation": 0,
         "article_count": 1,
-        "medal": "silver"
+        "medal": "gold"
       },
       {
         "brand": "Nike",
@@ -113,14 +133,51 @@
         "governance": -2,
         "digital_transformation": 0,
         "article_count": 5,
+        "medal": "silver"
+      },
+      {
+        "brand": "ASICS",
+        "total": 2,
+        "environmental": 0,
+        "social": 2,
+        "governance": 0,
+        "digital_transformation": 0,
+        "article_count": 1,
         "medal": "bronze"
       },
-      { "brand": "ASICS", "total": 2, "environmental": 0, "social": 2, "governance": 0, "digital_transformation": 0, "article_count": 1 },
-      { "brand": "The North Face", "total": 2, "environmental": 2, "social": 0, "governance": 0, "digital_transformation": 0, "article_count": 1 },
-      { "brand": "Allbirds", "total": 0, "environmental": -1, "social": 0, "governance": 0, "digital_transformation": 1, "article_count": 2 },
+      {
+        "brand": "Adidas",
+        "total": 2,
+        "environmental": 3,
+        "social": 0,
+        "governance": -1,
+        "digital_transformation": 0,
+        "article_count": 3,
+        "medal": "bronze"
+      },
+      {
+        "brand": "Allbirds",
+        "total": 2,
+        "environmental": 0,
+        "social": 0,
+        "governance": 1,
+        "digital_transformation": 1,
+        "article_count": 1,
+        "medal": "bronze"
+      },
+      {
+        "brand": "The North Face",
+        "total": 2,
+        "environmental": 2,
+        "social": 0,
+        "governance": 0,
+        "digital_transformation": 0,
+        "article_count": 1,
+        "medal": "bronze"
+      },
       { "brand": "Puma", "total": 0, "environmental": 1, "social": -1, "governance": 0, "digital_transformation": 0, "article_count": 1 },
       { "brand": "Under Armour", "total": 0, "environmental": 0, "social": 1, "governance": -1, "digital_transformation": 0, "article_count": 2 },
-      { "brand": "Lululemon", "total": -3, "environmental": -1, "social": -2, "governance": 0, "digital_transformation": 0, "article_count": 3 }
+      { "brand": "Lululemon", "total": -2, "environmental": -1, "social": -1, "governance": 0, "digital_transformation": 0, "article_count": 2 }
     ]
   },
   "articles": [
