@@ -3,7 +3,7 @@ layout: page
 title: CodeFluent
 description: Personal AI fluency analytics for Claude Code users
 img: assets/img/codefluent_fluency.png
-importance: 1
+importance: 2
 category: work
 ---
 
