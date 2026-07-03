@@ -110,7 +110,12 @@ ninja.data = [{
             window.location.href = "/blog/2026/anatomy-of-a-claude-code-session/";
           
         },
-      },{id: "projects-codefluent",
+      },{id: "projects-agentfluent",
+          title: 'AgentFluent',
+          description: "Local-first agent analytics with behavior-to-improvement diagnostics for Claude Code and the Agent SDK",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/agentfluent/";
+            },},{id: "projects-codefluent",
           title: 'CodeFluent',
           description: "Personal AI fluency analytics for Claude Code users",
           section: "Projects",handler: () => {
