@@ -112,11 +112,13 @@ jobs:
   # "Deployment failed, try again later." errors. Only the publish is
   # retried — the build never re-runs. Transient errors fast-fail in seconds,
   # so a normal retry recovers in well under a minute; the per-attempt timeout
-  # is a safety cap, not a value normal deploys hit. The pathological ceiling
-  # (3 x 300s timeout + 30s + 60s ≈ 16.5 min) only occurs if every attempt
+  # is a safety cap, not a value normal deploys hit. The 6-min cap covers the
+  # full observed history of the publish step (median ~7s, p95 ~278s, max
+  # ~323s over 40 runs), so a slow-but-healthy deploy succeeds on attempt 1
+  # rather than being killed and retried. The pathological ceiling
+  # (3 x 360s timeout + 30s + 60s ≈ 18.5 min) only occurs if every attempt
   # runs to the full cap — i.e. a sustained Pages outage, when the daily SLA
-  # is unmeetable regardless. The generous per-attempt cap lets a slow-but-
-  # healthy deploy succeed on attempt 1 rather than being killed and retried.
+  # is unmeetable regardless.
   deploy:
     needs: build
     # Never deploy from a PR; PRs only validate the build job above.
@@ -141,7 +143,7 @@ jobs:
         continue-on-error: true
         uses: actions/deploy-pages@v4
         with:
-          timeout: 300000 # 5 min cap per attempt (default is 10 min)
+          timeout: 360000 # 6 min cap per attempt (default is 10 min); covers observed p100 (~323s)
 
       # Attempt 2 — after a 30s backoff, only if attempt 1 failed.
       - name: Backoff before attempt 2 ⏳
@@ -153,7 +155,7 @@ jobs:
         continue-on-error: true
         uses: actions/deploy-pages@v4
         with:
-          timeout: 300000
+          timeout: 360000
 
       # Attempt 3 (final) — after a 60s backoff. Not continue-on-error, so a
       # genuine, persistent failure still fails the job and surfaces loudly.
@@ -165,4 +167,4 @@ jobs:
         if: steps.deploy1.outcome == 'failure' && steps.deploy2.outcome == 'failure'
         uses: actions/deploy-pages@v4
         with:
-          timeout: 300000
+          timeout: 360000
