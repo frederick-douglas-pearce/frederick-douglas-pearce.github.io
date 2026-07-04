@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - "assets/**"
+      - "_data/**"
       - "_sass/**"
       - "_scripts/**"
       - "**.bib"
@@ -36,6 +37,7 @@ on:
       - main
     paths:
       - "assets/**"
+      - "_data/**"
       - "_sass/**"
       - "_scripts/**"
       - "**.bib"
@@ -61,11 +63,13 @@ on:
       - "!README.md"
   workflow_dispatch:
 
+# Least privilege at the top; the deploy job widens to what Pages needs.
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  deploy:
+  # Build the Jekyll site and hand it off as a Pages artifact.
+  build:
     # available images: https://github.com/actions/runner-images#available-images
     runs-on: ubuntu-latest
     steps:
@@ -99,8 +103,68 @@ jobs:
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
-      - name: Deploy 🚀
-        if: github.event_name != 'pull_request'
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Upload Pages artifact 📦
+        uses: actions/upload-pages-artifact@v3
         with:
-          folder: _site
+          path: _site
+
+  # Publish the artifact to GitHub Pages, retrying transient
+  # "Deployment failed, try again later." errors. Only the publish is
+  # retried — the build never re-runs. Transient errors fast-fail in seconds,
+  # so a normal retry recovers in well under a minute; the per-attempt timeout
+  # is a safety cap, not a value normal deploys hit. The 6-min cap covers the
+  # full observed history of the publish step (median ~7s, p95 ~278s, max
+  # ~323s over 40 runs), so a slow-but-healthy deploy succeeds on attempt 1
+  # rather than being killed and retried. The pathological ceiling
+  # (3 x 360s timeout + 30s + 60s ≈ 18.5 min) only occurs if every attempt
+  # runs to the full cap — i.e. a sustained Pages outage, when the daily SLA
+  # is unmeetable regardless.
+  deploy:
+    needs: build
+    # Never deploy from a PR; PRs only validate the build job above.
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    # Serialize deploys and never cancel an in-flight publish, so a retrying
+    # run can't be killed by the next push (and vice versa). Scoped to this
+    # job so PR build runs don't share the group.
+    concurrency:
+      group: "pages"
+      cancel-in-progress: false
+    permissions:
+      pages: write # to deploy to Pages
+      id-token: write # to verify the deployment originates from this workflow
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy1.outputs.page_url || steps.deploy2.outputs.page_url || steps.deploy3.outputs.page_url }}
+    steps:
+      # Attempt 1 — most deploys succeed here.
+      - name: Deploy to GitHub Pages (attempt 1) 🚀
+        id: deploy1
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+        with:
+          timeout: 360000 # 6 min cap per attempt (default is 10 min); covers observed p100 (~323s)
+
+      # Attempt 2 — after a 30s backoff, only if attempt 1 failed.
+      - name: Backoff before attempt 2 ⏳
+        if: steps.deploy1.outcome == 'failure'
+        run: sleep 30
+      - name: Deploy to GitHub Pages (attempt 2) 🚀
+        id: deploy2
+        if: steps.deploy1.outcome == 'failure'
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+        with:
+          timeout: 360000
+
+      # Attempt 3 (final) — after a 60s backoff. Not continue-on-error, so a
+      # genuine, persistent failure still fails the job and surfaces loudly.
+      - name: Backoff before attempt 3 ⏳
+        if: steps.deploy1.outcome == 'failure' && steps.deploy2.outcome == 'failure'
+        run: sleep 60
+      - name: Deploy to GitHub Pages (attempt 3, final) 🚀
+        id: deploy3
+        if: steps.deploy1.outcome == 'failure' && steps.deploy2.outcome == 'failure'
+        uses: actions/deploy-pages@v4
+        with:
+          timeout: 360000
