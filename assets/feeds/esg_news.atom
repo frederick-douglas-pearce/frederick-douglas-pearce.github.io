@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://frederick-douglas-pearce.github.io/esg-news/</id>
   <title>ESG Sportswear News</title>
-  <updated>2026-07-14T14:01:35.238132+00:00</updated>
+  <updated>2026-07-15T14:01:35.448426+00:00</updated>
   <author>
     <name>ESG News Classifier</name>
     <uri>https://frederick-douglas-pearce.github.io</uri>
@@ -83,9 +83,9 @@
     <link href="https://www.textileworld.com/textile-world/2025/09/purpose-driven-and-material-innovation-xpore-teams-up-with-patagonia-and-industry-leaders-at-from-material-science-to-mission-2025-circular-economy-forum/"/>
     <summary>Brands: Patagonia | Categories: Environmental, Governance, Social | Source: textileworld.com</summary>
     <category term="Patagonia" label="Patagonia"/>
+    <category term="governance" label="Governance"/>
     <category term="social" label="Social"/>
     <category term="environmental" label="Environmental"/>
-    <category term="governance" label="Governance"/>
     <published>2025-09-23T18:30:00+00:00</published>
   </entry>
   <entry>
@@ -95,8 +95,8 @@
     <link href="https://www.klcc.org/economy-business/2025-09-23/in-oregon-100-000-fee-for-h-1b-skilled-worker-visas-could-hit-nike-the-hardest"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: klcc.org</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2025-09-23T19:15:00+00:00</published>
   </entry>
   <entry>
@@ -116,8 +116,8 @@
     <link href="https://northdallasgazette.com/2025/09/24/timberland-recognizes-authenticity-while-making-an-unapologetic-commitment-to-the-future-with-advice-of-an-icon-campaign/"/>
     <summary>Brands: Timberland | Categories: Governance, Social | Source: northdallasgazette.com</summary>
     <category term="Timberland" label="Timberland"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2025-09-24T23:15:00+00:00</published>
   </entry>
   <entry>
@@ -127,8 +127,8 @@
     <link href="https://www.letsrun.com/forum/flat_read.php?thread=13794307&amp;t=1758769700"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: letsrun.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2025-09-25T08:15:00+00:00</published>
   </entry>
   <entry>
@@ -138,8 +138,8 @@
     <link href="https://www.cityam.com/new-balance-arena-atalanta-strike-stadium-naming-rights-deal/"/>
     <summary>Brands: New Balance | Categories: Governance, Social | Source: cityam.com</summary>
     <category term="New Balance" label="New Balance"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2025-09-25T13:45:00+00:00</published>
   </entry>
   <entry>
@@ -149,8 +149,8 @@
     <link href="https://finance.yahoo.com/news/nike-marketing-plans-focus-ahead-101338156.html"/>
     <summary>Brands: Nike | Categories: Environmental, Governance | Source: finance.yahoo.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2025-09-29T10:45:00+00:00</published>
   </entry>
   <entry>
@@ -160,8 +160,8 @@
     <link href="https://www.bbc.com/news/articles/cewnje717rqo"/>
     <summary>Brands: Adidas, Nike, Puma | Categories: Social | Source: bbc.com</summary>
     <category term="Adidas" label="Adidas"/>
-    <category term="Nike" label="Nike"/>
     <category term="Puma" label="Puma"/>
+    <category term="Nike" label="Nike"/>
     <category term="social" label="Social"/>
     <published>2025-09-30T04:00:00+00:00</published>
   </entry>
@@ -172,8 +172,8 @@
     <link href="https://www.theweek.in/leisure/lifestyle/2025/09/30/how-climate-friendly-is-your-fashion-report-ranks-worlds-largest-fashion-brands-on-transparency.html"/>
     <summary>Brands: Reebok | Categories: Environmental, Governance | Source: theweek.in</summary>
     <category term="Reebok" label="Reebok"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2025-09-30T11:30:00+00:00</published>
   </entry>
   <entry>
@@ -193,8 +193,8 @@
     <link href="https://www.cnbc.com/2025/09/30/nike-nke-q1-2026-earnings.html"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: cnbc.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2025-09-30T16:30:00+00:00</published>
   </entry>
   <entry>
@@ -204,8 +204,8 @@
     <link href="https://www.webpronews.com/nike-q1-revenue-hits-11-7b-beats-estimates-despite-eps-decline/"/>
     <summary>Brands: Nike | Categories: Digital Transformation, Governance, Social | Source: webpronews.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2025-09-30T23:45:00+00:00</published>
   </entry>
@@ -216,8 +216,8 @@
     <link href="https://www.bnnbloomberg.ca/business/company-news/2025/10/01/nike-rebound-gains-momentum-as-china-tariffs-cast-a-cloud/"/>
     <summary>Brands: Nike | Categories: Digital Transformation, Environmental, Governance | Source: bnnbloomberg.ca</summary>
     <category term="Nike" label="Nike"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2025-10-01T14:00:00+00:00</published>
   </entry>
@@ -228,8 +228,8 @@
     <link href="https://www.cnn.com/2025/10/01/business/nike-earnings-tariff-china"/>
     <summary>Brands: Nike | Categories: Environmental, Governance | Source: cnn.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2025-10-01T17:00:00+00:00</published>
   </entry>
   <entry>
@@ -260,8 +260,8 @@
     <link href="https://www.fool.com/investing/2025/10/02/after-returning-to-top-line-growth-is-it-time-to-b/?source=iedfolrf0000001"/>
     <summary>Brands: Nike | Categories: Digital Transformation, Environmental, Governance | Source: fool.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2025-10-02T22:00:00+00:00</published>
   </entry>
@@ -272,8 +272,8 @@
     <link href="https://www.marketscreener.com/news/nike-q1fy26-earnings-call-official-transcript-ce7d5bddd98ffe22"/>
     <summary>Brands: Nike | Categories: Digital Transformation, Governance, Social | Source: marketscreener.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2025-10-06T20:00:00+00:00</published>
   </entry>
@@ -294,8 +294,8 @@
     <link href="https://www.adgully.com/post/7643/puma-appoints-thomas-john-as-vice-president-people-organization"/>
     <summary>Brands: Puma | Categories: Governance, Social | Source: adgully.com</summary>
     <category term="Puma" label="Puma"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2025-10-09T06:30:00+00:00</published>
   </entry>
   <entry>
@@ -328,8 +328,8 @@
     <link href="https://www.castanetkamloops.net/news/Business/577085/Lululemon-responds-to-blast-from-founder-Chip-Wilson"/>
     <summary>Brands: Lululemon | Categories: Digital Transformation, Governance, Social | Source: castanetkamloops.net</summary>
     <category term="Lululemon" label="Lululemon"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2025-10-09T21:00:00+00:00</published>
   </entry>
@@ -340,8 +340,8 @@
     <link href="https://www.businessinsider.com/nike-ceo-elliott-hill-one-year-report-card-2025-10"/>
     <summary>Brands: Nike | Categories: Digital Transformation, Governance, Social | Source: businessinsider.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2025-10-14T11:30:00+00:00</published>
   </entry>
@@ -362,8 +362,8 @@
     <link href="https://www.oregonlive.com/business/2025/10/nike-renames-corporate-campus-after-co-founder-phil-knight.html"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: oregonlive.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2025-10-14T21:45:00+00:00</published>
   </entry>
   <entry>
@@ -395,8 +395,8 @@
     <link href="https://portlandtribune.com/2025/10/16/nike-world-headquarters-near-beaverton-now-bears-name-of-co-founder-phil-knight/"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: portlandtribune.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2025-10-16T20:45:00+00:00</published>
   </entry>
   <entry>
@@ -406,8 +406,8 @@
     <link href="https://www.dailymail.co.uk/lifestyle/fashion/article-14989519/adidas-Oaxaca-mexico.html"/>
     <summary>Brands: Adidas | Categories: Governance, Social | Source: dailymail.co.uk</summary>
     <category term="Adidas" label="Adidas"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2025-10-21T13:15:00+00:00</published>
   </entry>
   <entry>
@@ -417,9 +417,9 @@
     <link href="https://www.digitaljournal.com/business/adidas-hikes-profit-forecast-as-contains-us-tariff-impact/article"/>
     <summary>Brands: Adidas | Categories: Environmental, Governance, Social | Source: digitaljournal.com</summary>
     <category term="Adidas" label="Adidas"/>
+    <category term="governance" label="Governance"/>
     <category term="social" label="Social"/>
     <category term="environmental" label="Environmental"/>
-    <category term="governance" label="Governance"/>
     <published>2025-10-21T21:00:00+00:00</published>
   </entry>
   <entry>
@@ -439,9 +439,9 @@
     <link href="https://wwd.com/fashion-news/activewear/nike-innovation-criticism-olympics-shoes-mind-1238321423/"/>
     <summary>Brands: Nike | Categories: Digital Transformation, Environmental, Governance, Social | Source: wwd.com</summary>
     <category term="Nike" label="Nike"/>
+    <category term="governance" label="Governance"/>
     <category term="social" label="Social"/>
     <category term="environmental" label="Environmental"/>
-    <category term="governance" label="Governance"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2025-10-23T13:45:00+00:00</published>
   </entry>
@@ -484,8 +484,8 @@
     <link href="https://rollingout.com/2025/10/23/deckers-outdoor-beats-q3-earnings/"/>
     <summary>Brands: Deckers | Categories: Digital Transformation, Environmental, Governance | Source: rollingout.com</summary>
     <category term="Deckers" label="Deckers"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2025-10-23T21:45:00+00:00</published>
   </entry>
@@ -518,8 +518,8 @@
     <link href="https://www.techradar.com/computing/websites-apps/adidas-running"/>
     <summary>Brands: Adidas | Categories: Digital Transformation, Governance, Social | Source: techradar.com</summary>
     <category term="Adidas" label="Adidas"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2025-10-26T19:15:00+00:00</published>
   </entry>
@@ -551,8 +551,8 @@
     <link href="https://bestmediainfo.com/mediainfo/mediainfo-marketing/karthik-balagopalan-steps-down-as-managing-director-of-puma-india-10599922"/>
     <summary>Brands: Puma | Categories: Governance, Social | Source: bestmediainfo.com</summary>
     <category term="Puma" label="Puma"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2025-10-28T07:30:00+00:00</published>
   </entry>
   <entry>
@@ -606,9 +606,9 @@
     <link href="https://finance.yahoo.com/news/adidas-north-america-sales-hit-122459248.html"/>
     <summary>Brands: Adidas | Categories: Environmental, Governance, Social | Source: finance.yahoo.com</summary>
     <category term="Adidas" label="Adidas"/>
+    <category term="governance" label="Governance"/>
     <category term="social" label="Social"/>
     <category term="environmental" label="Environmental"/>
-    <category term="governance" label="Governance"/>
     <published>2025-10-29T13:00:00+00:00</published>
   </entry>
   <entry>
@@ -618,9 +618,9 @@
     <link href="https://www.bnnbloomberg.ca/business/2025/10/29/adidas-sales-decline-in-north-america-as-yeezy-impact-and-tariffs-bite/"/>
     <summary>Brands: Adidas | Categories: Environmental, Governance, Social | Source: bnnbloomberg.ca</summary>
     <category term="Adidas" label="Adidas"/>
+    <category term="governance" label="Governance"/>
     <category term="social" label="Social"/>
     <category term="environmental" label="Environmental"/>
-    <category term="governance" label="Governance"/>
     <published>2025-10-29T13:45:00+00:00</published>
   </entry>
   <entry>
@@ -661,8 +661,8 @@
     <link href="https://wwd.com/footwear-news/sneaker-news/supreme-timberland-6-inch-premium-waterproof-boot-patchwork-logo-release-date-1238335748/"/>
     <summary>Brands: Timberland | Categories: Environmental, Governance | Source: wwd.com</summary>
     <category term="Timberland" label="Timberland"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2025-11-04T20:30:00+00:00</published>
   </entry>
   <entry>
@@ -672,8 +672,8 @@
     <link href="https://www.thenational.scot/news/25608027.decathlon-closing-scottish-store-nearest-130-miles-away/"/>
     <summary>Brands: Decathlon | Categories: Governance, Social | Source: thenational.scot</summary>
     <category term="Decathlon" label="Decathlon"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2025-11-09T18:45:00+00:00</published>
   </entry>
   <entry>
@@ -683,8 +683,8 @@
     <link href="https://wwd.com/footwear-news/shoe-industry-news/brooks-running-dan-sheridan-innovation-running-shoes-1238342374/"/>
     <summary>Brands: Brooks Running | Categories: Digital Transformation, Governance, Social | Source: wwd.com</summary>
     <category term="Brooks Running" label="Brooks Running"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2025-11-11T00:45:00+00:00</published>
   </entry>
@@ -705,8 +705,8 @@
     <link href="https://www.thehindubusinessline.com/companies/nike-partners-with-ester-loop-infinite-to-source-circular-polyester-from-india/article70265432.ece"/>
     <summary>Brands: Nike | Categories: Environmental, Governance | Source: thehindubusinessline.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2025-11-11T05:15:00+00:00</published>
   </entry>
   <entry>
@@ -716,8 +716,8 @@
     <link href="https://www.businessoffashion.com/news/sustainability/nike-double-down-on-recycled-fibres-with-multiyear-offtake-agreements-hm-syre-loop/"/>
     <summary>Brands: Nike | Categories: Environmental, Governance | Source: businessoffashion.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2025-11-11T14:45:00+00:00</published>
   </entry>
   <entry>
@@ -750,8 +750,8 @@
     <link href="https://www.nzherald.co.nz/business/companies/retail/allbirds-faces-tough-turnaround-as-sales-slide-and-cash-reserves-drop/premium/D5H23CPXKNAIDEZSH22FYYT4OQ/"/>
     <summary>Brands: Allbirds | Categories: Environmental, Governance | Source: nzherald.co.nz</summary>
     <category term="Allbirds" label="Allbirds"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2025-11-12T02:30:00+00:00</published>
   </entry>
   <entry>
@@ -761,20 +761,9 @@
     <link href="https://www.manilatimes.net/2025/11/12/tmt-newswire/pr-newswire/salomons-decade-long-investment-in-chinese-trail-running-culminates-in-dominant-tsaigu-trail-2025-victory/2221829"/>
     <summary>Brands: Salomon | Categories: Governance, Social | Source: manilatimes.net</summary>
     <category term="Salomon" label="Salomon"/>
+    <category term="governance" label="Governance"/>
     <category term="social" label="Social"/>
-    <category term="governance" label="Governance"/>
     <published>2025-11-12T12:00:00+00:00</published>
-  </entry>
-  <entry>
-    <id>e0f62996-fd95-40ee-ae98-6855edb84784</id>
-    <title>Syre , Nike partner to scale circular polyester</title>
-    <updated>2025-11-12T13:00:00+00:00</updated>
-    <link href="https://www.just-style.com/news/syre-nike-partner-to-scale-circular-polyester/"/>
-    <summary>Brands: Nike | Categories: Environmental, Governance | Source: just-style.com</summary>
-    <category term="Nike" label="Nike"/>
-    <category term="environmental" label="Environmental"/>
-    <category term="governance" label="Governance"/>
-    <published>2025-11-12T13:00:00+00:00</published>
   </entry>
   <entry>
     <id>880608a0-aea9-40ff-b812-618af1a1a681</id>
@@ -788,15 +777,26 @@
     <published>2025-11-12T13:00:00+00:00</published>
   </entry>
   <entry>
+    <id>e0f62996-fd95-40ee-ae98-6855edb84784</id>
+    <title>Syre , Nike partner to scale circular polyester</title>
+    <updated>2025-11-12T13:00:00+00:00</updated>
+    <link href="https://www.just-style.com/news/syre-nike-partner-to-scale-circular-polyester/"/>
+    <summary>Brands: Nike | Categories: Environmental, Governance | Source: just-style.com</summary>
+    <category term="Nike" label="Nike"/>
+    <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
+    <published>2025-11-12T13:00:00+00:00</published>
+  </entry>
+  <entry>
     <id>25aaf19b-8f46-456e-9f09-bc970c9e01c2</id>
     <title>Patagonia Playbook for Environmental Activism</title>
     <updated>2025-11-12T19:45:00+00:00</updated>
     <link href="https://www.motherjones.com/sponsored/patagonias-playbook-for-environmental-activism/"/>
     <summary>Brands: Patagonia | Categories: Digital Transformation, Environmental, Governance, Social | Source: motherjones.com</summary>
     <category term="Patagonia" label="Patagonia"/>
+    <category term="governance" label="Governance"/>
     <category term="social" label="Social"/>
     <category term="environmental" label="Environmental"/>
-    <category term="governance" label="Governance"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2025-11-12T19:45:00+00:00</published>
   </entry>
@@ -848,8 +848,8 @@
     <link href="https://www.menshealth.com/fitness/a69384105/vuori-ceo-joe-kudla-interview-workout/"/>
     <summary>Brands: Vuori | Categories: Governance, Social | Source: menshealth.com</summary>
     <category term="Vuori" label="Vuori"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2025-11-17T15:30:00+00:00</published>
   </entry>
   <entry>
@@ -859,8 +859,8 @@
     <link href="https://www.fool.com/investing/2025/11/18/nike-and-apple-shares-went-public-45-years-ago/?source=iedfolrf0000001"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: fool.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2025-11-18T12:45:00+00:00</published>
   </entry>
   <entry>
@@ -881,8 +881,8 @@
     <link href="https://dailyhive.com/vancouver/lululemon-unveils-canada-athletes-wear-2026-olympics-italy"/>
     <summary>Brands: Lululemon | Categories: Governance, Social | Source: dailyhive.com</summary>
     <category term="Lululemon" label="Lululemon"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2025-11-18T19:15:00+00:00</published>
   </entry>
   <entry>
@@ -902,8 +902,8 @@
     <link href="https://www.napaneeguide.com:443/life/fashion-beauty/lululemon-team-canada-olympic-milano-cortina-2026-games"/>
     <summary>Brands: Lululemon | Categories: Governance, Social | Source: napaneeguide.com</summary>
     <category term="Lululemon" label="Lululemon"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2025-11-18T21:00:00+00:00</published>
   </entry>
   <entry>
@@ -913,8 +913,8 @@
     <link href="https://www.theglobeandmail.com/life/style/article-lululemon-unveils-team-canadas-new-olympic-and-paralympic-uniforms-in/"/>
     <summary>Brands: Lululemon | Categories: Governance, Social | Source: theglobeandmail.com</summary>
     <category term="Lululemon" label="Lululemon"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2025-11-19T01:00:00+00:00</published>
   </entry>
   <entry>
@@ -934,8 +934,8 @@
     <link href="https://finance.yahoo.com/news/sinking-48-lululemon-buying-opportunity-094100819.html"/>
     <summary>Brands: Lululemon | Categories: Governance, Social | Source: finance.yahoo.com</summary>
     <category term="Lululemon" label="Lululemon"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2025-11-21T20:00:00+00:00</published>
   </entry>
   <entry>
@@ -944,10 +944,10 @@
     <updated>2025-11-24T22:15:00+00:00</updated>
     <link href="https://www.cnbc.com/2025/11/24/allbirds-hm-zara-use-recycled-yarn-from-circa-backed-by-patagonia.html"/>
     <summary>Brands: Allbirds, Patagonia | Categories: Environmental, Governance | Source: cnbc.com</summary>
-    <category term="Patagonia" label="Patagonia"/>
     <category term="Allbirds" label="Allbirds"/>
-    <category term="environmental" label="Environmental"/>
+    <category term="Patagonia" label="Patagonia"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2025-11-24T22:15:00+00:00</published>
   </entry>
   <entry>
@@ -967,8 +967,8 @@
     <link href="https://www.retaildive.com/news/lululemon-general-manager-north-america-carla-anderson/806363/"/>
     <summary>Brands: Lululemon | Categories: Digital Transformation, Governance, Social | Source: retaildive.com</summary>
     <category term="Lululemon" label="Lululemon"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2025-11-25T17:30:00+00:00</published>
   </entry>
@@ -989,8 +989,8 @@
     <link href="https://www.bizcommunity.com/article/somerset-mall-welcomes-new-balance-ucc-retail-concept-063495a"/>
     <summary>Brands: New Balance | Categories: Governance, Social | Source: bizcommunity.com</summary>
     <category term="New Balance" label="New Balance"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2025-11-26T09:00:00+00:00</published>
   </entry>
   <entry>
@@ -1000,8 +1000,8 @@
     <link href="https://www.dailymail.co.uk/yourmoney/article-15342265/lululemon-founder-chip-wilson-mocks-losses.html"/>
     <summary>Brands: Lululemon | Categories: Governance, Social | Source: dailymail.co.uk</summary>
     <category term="Lululemon" label="Lululemon"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2025-12-01T20:30:00+00:00</published>
   </entry>
   <entry>
@@ -1011,8 +1011,8 @@
     <link href="https://wwd.com/footwear-news/shoe-industry-news/puma-suitors-challenge-turnaround-inititiatives-artemis-1238365540/"/>
     <summary>Brands: Puma | Categories: Digital Transformation, Governance, Social | Source: wwd.com</summary>
     <category term="Puma" label="Puma"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2025-12-01T23:30:00+00:00</published>
   </entry>
@@ -1023,9 +1023,9 @@
     <link href="https://www.yahoo.com/news/articles/patagonia-paradox-successes-contradictions-founder-040001948.html"/>
     <summary>Brands: Patagonia | Categories: Environmental, Governance, Social | Source: yahoo.com</summary>
     <category term="Patagonia" label="Patagonia"/>
+    <category term="governance" label="Governance"/>
     <category term="social" label="Social"/>
     <category term="environmental" label="Environmental"/>
-    <category term="governance" label="Governance"/>
     <published>2025-12-02T04:30:00+00:00</published>
   </entry>
   <entry>
@@ -1056,9 +1056,9 @@
     <link href="https://wwd.com/footwear-news/shoe-features/new-balance-miu-miu-collaboration-of-year-fnaas-2025-1238338839/"/>
     <summary>Brands: New Balance | Categories: Environmental, Governance, Social | Source: wwd.com</summary>
     <category term="New Balance" label="New Balance"/>
+    <category term="governance" label="Governance"/>
     <category term="social" label="Social"/>
     <category term="environmental" label="Environmental"/>
-    <category term="governance" label="Governance"/>
     <published>2025-12-02T14:45:00+00:00</published>
   </entry>
   <entry>
@@ -1068,8 +1068,8 @@
     <link href="https://madamenoire.com/1572770/ahmaud-arbery-legacy-wanda-cooper-jones-adidias/"/>
     <summary>Brands: Adidas | Categories: Governance, Social | Source: madamenoire.com</summary>
     <category term="Adidas" label="Adidas"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2025-12-02T21:00:00+00:00</published>
   </entry>
   <entry>
@@ -1079,9 +1079,9 @@
     <link href="https://www.deseret.com/business/2025/12/01/patagonia-biography-yvon-chouinard-david-gelles-succession-outdoor-gear/"/>
     <summary>Brands: Patagonia | Categories: Environmental, Governance, Social | Source: deseret.com</summary>
     <category term="Patagonia" label="Patagonia"/>
+    <category term="governance" label="Governance"/>
     <category term="social" label="Social"/>
     <category term="environmental" label="Environmental"/>
-    <category term="governance" label="Governance"/>
     <published>2025-12-02T23:15:00+00:00</published>
   </entry>
   <entry>
@@ -1113,8 +1113,8 @@
     <link href="https://www.theguardian.com/media/2025/dec/03/nike-superdry-and-lacoste-ads-banned-in-uk-over-misleading-green-claims"/>
     <summary>Brands: Nike | Categories: Environmental, Governance | Source: theguardian.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2025-12-03T01:00:00+00:00</published>
   </entry>
   <entry>
@@ -1124,8 +1124,8 @@
     <link href="https://www.hamhigh.co.uk/news/national/25668232.nike-superdry-lacoste-ads-banned-exaggerating-sustainability-claims/"/>
     <summary>Brands: Nike | Categories: Environmental, Governance | Source: hamhigh.co.uk</summary>
     <category term="Nike" label="Nike"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2025-12-03T01:45:00+00:00</published>
   </entry>
   <entry>
@@ -1135,8 +1135,8 @@
     <link href="https://finance.yahoo.com/news/nike-shakes-leadership-scraps-tech-101553931.html"/>
     <summary>Brands: Nike | Categories: Digital Transformation, Environmental, Governance | Source: finance.yahoo.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2025-12-03T10:45:00+00:00</published>
   </entry>
@@ -1147,8 +1147,8 @@
     <link href="https://www.businessgreen.com/news/4522726/asa-raps-nike-superdry-lacoste-misleading-sustainability-claims"/>
     <summary>Brands: Nike | Categories: Environmental, Governance | Source: businessgreen.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2025-12-03T13:15:00+00:00</published>
   </entry>
   <entry>
@@ -1168,8 +1168,8 @@
     <link href="https://www.bbc.com/news/articles/ckgm79djr9yo"/>
     <summary>Brands: Nike | Categories: Environmental, Governance | Source: bbc.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2025-12-03T14:30:00+00:00</published>
   </entry>
   <entry>
@@ -1179,8 +1179,8 @@
     <link href="https://www.retaildive.com/news/nike-cuts-chief-technology-commercial-officer-roles-leadership-overhaul/806913/"/>
     <summary>Brands: Nike | Categories: Digital Transformation, Governance, Social | Source: retaildive.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2025-12-03T21:00:00+00:00</published>
   </entry>
@@ -1191,8 +1191,8 @@
     <link href="https://www.marketscreener.com/news/adidas-defeats-appeal-of-lawsuit-over-imploded-ye-partnership-ce7d51ded18cf620"/>
     <summary>Brands: Adidas | Categories: Governance, Social | Source: marketscreener.com</summary>
     <category term="Adidas" label="Adidas"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2025-12-03T21:15:00+00:00</published>
   </entry>
   <entry>
@@ -1202,8 +1202,8 @@
     <link href="https://www.yahoo.com/news/articles/sustainable-not-quite-says-asa-205252522.html"/>
     <summary>Brands: Nike | Categories: Environmental, Governance | Source: yahoo.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2025-12-03T21:30:00+00:00</published>
   </entry>
   <entry>
@@ -1244,8 +1244,8 @@
     <link href="https://wwd.com/business-news/retail/gymshark-u-s-flagship-noho-1238422517/"/>
     <summary>Brands: Gymshark | Categories: Digital Transformation, Governance, Social | Source: wwd.com</summary>
     <category term="Gymshark" label="Gymshark"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2025-12-11T20:45:00+00:00</published>
   </entry>
@@ -1266,8 +1266,8 @@
     <link href="https://www.businessoffashion.com/articles/retail/lululemon-calvin-mcdonald-exit/"/>
     <summary>Brands: Lululemon | Categories: Governance, Social | Source: businessoffashion.com</summary>
     <category term="Lululemon" label="Lululemon"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2025-12-12T03:45:00+00:00</published>
   </entry>
   <entry>
@@ -1301,16 +1301,6 @@
     <published>2025-12-12T20:30:00+00:00</published>
   </entry>
   <entry>
-    <id>7d991a4e-5968-4a89-8b62-73c02e86f4af</id>
-    <title>Lululemon founder decries brand  erosion  as CEO prepares to exit</title>
-    <updated>2025-12-12T21:00:00+00:00</updated>
-    <link href="https://www.retaildive.com/news/lululemon-founder-chip-wilson-brand-erosion-ceo-calvin-mcdonald-exits/807787/"/>
-    <summary>Brands: Lululemon | Categories: Governance | Source: retaildive.com</summary>
-    <category term="Lululemon" label="Lululemon"/>
-    <category term="governance" label="Governance"/>
-    <published>2025-12-12T21:00:00+00:00</published>
-  </entry>
-  <entry>
     <id>c8a750e4-dc5b-4dc0-b792-1ae610e6ecaa</id>
     <title>Why is Lululemon CEO Calvin McDonald stepping down ? </title>
     <updated>2025-12-12T21:00:00+00:00</updated>
@@ -1319,6 +1309,16 @@
     <category term="Lululemon" label="Lululemon"/>
     <category term="governance" label="Governance"/>
     <category term="digital_transformation" label="Digital Transformation"/>
+    <published>2025-12-12T21:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>7d991a4e-5968-4a89-8b62-73c02e86f4af</id>
+    <title>Lululemon founder decries brand  erosion  as CEO prepares to exit</title>
+    <updated>2025-12-12T21:00:00+00:00</updated>
+    <link href="https://www.retaildive.com/news/lululemon-founder-chip-wilson-brand-erosion-ceo-calvin-mcdonald-exits/807787/"/>
+    <summary>Brands: Lululemon | Categories: Governance | Source: retaildive.com</summary>
+    <category term="Lululemon" label="Lululemon"/>
+    <category term="governance" label="Governance"/>
     <published>2025-12-12T21:00:00+00:00</published>
   </entry>
   <entry>
@@ -1390,8 +1390,8 @@
     <link href="https://wwd.com/footwear-news/shoe-industry-news/scott-mellin-salomon-global-chief-brand-officer-exits-1238425638/"/>
     <summary>Brands: Salomon | Categories: Governance, Social | Source: wwd.com</summary>
     <category term="Salomon" label="Salomon"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2025-12-15T20:00:00+00:00</published>
   </entry>
   <entry>
@@ -1401,8 +1401,8 @@
     <link href="https://www.si.com/fannation/sneakers/interviews/hellen-obiri-reflects-4-record-breaking-years-on-running"/>
     <summary>Brands: On Running | Categories: Governance, Social | Source: Si</summary>
     <category term="On Running" label="On Running"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2025-12-16T17:04:29+00:00</published>
   </entry>
   <entry>
@@ -1433,8 +1433,8 @@
     <link href="https://www.letsrun.com/forum/flat_read.php?thread=13942888"/>
     <summary>Brands: Diadora | Categories: Governance, Social | Source: letsrun.com</summary>
     <category term="Diadora" label="Diadora"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2025-12-17T09:15:00+00:00</published>
   </entry>
   <entry>
@@ -1474,8 +1474,8 @@
     <link href="https://insideretail.asia/2025/12/18/big-marketing-push-by-nike-is-unlikely-to-boost-earnings-just-yet/"/>
     <summary>Brands: Nike | Categories: Environmental, Governance | Source: insideretail.asia</summary>
     <category term="Nike" label="Nike"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2025-12-18T01:30:00+00:00</published>
   </entry>
   <entry>
@@ -1485,8 +1485,8 @@
     <link href="https://menafn.com/1110496909/Nikes-Earnings-Test-3-Things-Investors-Need-To-See-For-A-Real-Turnaround"/>
     <summary>Brands: Nike | Categories: Digital Transformation, Governance, Social | Source: Menafn</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2025-12-18T05:00:44+00:00</published>
   </entry>
@@ -1541,21 +1541,21 @@
     <published>2025-12-18T10:30:00+00:00</published>
   </entry>
   <entry>
-    <id>ba0dd219-3164-4f6d-b5fb-eae91b468a61</id>
-    <title>Elliott Management Takes $1 Billion Stake In Lululemon , Proposes Former Ralph Lauren Executive As New CEO : Report</title>
-    <updated>2025-12-18T11:15:00+00:00</updated>
-    <link href="https://biztoc.com/x/8fce0e4f800e2714"/>
-    <summary>Brands: Lululemon | Categories: Governance | Source: biztoc.com</summary>
-    <category term="Lululemon" label="Lululemon"/>
-    <category term="governance" label="Governance"/>
-    <published>2025-12-18T11:15:00+00:00</published>
-  </entry>
-  <entry>
     <id>2ac5f313-c0b3-4756-966b-228adf98baaa</id>
     <title>Trending tickers : BP , Oracle , Micron , Lululemon</title>
     <updated>2025-12-18T11:15:00+00:00</updated>
     <link href="https://www.aol.co.uk/articles/trending-tickers-bp-oracle-micron-095841359.html"/>
     <summary>Brands: Lululemon | Categories: Governance | Source: aol.co.uk</summary>
+    <category term="Lululemon" label="Lululemon"/>
+    <category term="governance" label="Governance"/>
+    <published>2025-12-18T11:15:00+00:00</published>
+  </entry>
+  <entry>
+    <id>ba0dd219-3164-4f6d-b5fb-eae91b468a61</id>
+    <title>Elliott Management Takes $1 Billion Stake In Lululemon , Proposes Former Ralph Lauren Executive As New CEO : Report</title>
+    <updated>2025-12-18T11:15:00+00:00</updated>
+    <link href="https://biztoc.com/x/8fce0e4f800e2714"/>
+    <summary>Brands: Lululemon | Categories: Governance | Source: biztoc.com</summary>
     <category term="Lululemon" label="Lululemon"/>
     <category term="governance" label="Governance"/>
     <published>2025-12-18T11:15:00+00:00</published>
@@ -1618,8 +1618,8 @@
     <link href="http://www.shangbao.com.ph/jjxw/2025/12-18/190576.shtml"/>
     <summary>Brands: Adidas | Categories: Governance, Social | Source: shangbao.com.ph</summary>
     <category term="Adidas" label="Adidas"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2025-12-18T16:00:00+00:00</published>
   </entry>
   <entry>
@@ -1673,6 +1673,16 @@
     <published>2025-12-18T18:45:00+00:00</published>
   </entry>
   <entry>
+    <id>64dcc6e2-88fe-493c-8c32-e5dde595640a</id>
+    <title>Lululemon Is Doubling Down on International Growth</title>
+    <updated>2025-12-18T20:00:00+00:00</updated>
+    <link href="https://finance.yahoo.com/news/lululemon-doubling-down-international-growth-193000032.html"/>
+    <summary>Brands: Lululemon | Categories: Governance | Source: finance.yahoo.com</summary>
+    <category term="Lululemon" label="Lululemon"/>
+    <category term="governance" label="Governance"/>
+    <published>2025-12-18T20:00:00+00:00</published>
+  </entry>
+  <entry>
     <id>f920aed0-f69c-4b47-9a57-e8234c5ff166</id>
     <title>ASICS to build 1st overseas research lab in US with University of Michigan</title>
     <updated>2025-12-18T20:00:00+00:00</updated>
@@ -1681,16 +1691,6 @@
     <category term="ASICS" label="ASICS"/>
     <category term="governance" label="Governance"/>
     <category term="digital_transformation" label="Digital Transformation"/>
-    <published>2025-12-18T20:00:00+00:00</published>
-  </entry>
-  <entry>
-    <id>64dcc6e2-88fe-493c-8c32-e5dde595640a</id>
-    <title>Lululemon Is Doubling Down on International Growth</title>
-    <updated>2025-12-18T20:00:00+00:00</updated>
-    <link href="https://finance.yahoo.com/news/lululemon-doubling-down-international-growth-193000032.html"/>
-    <summary>Brands: Lululemon | Categories: Governance | Source: finance.yahoo.com</summary>
-    <category term="Lululemon" label="Lululemon"/>
-    <category term="governance" label="Governance"/>
     <published>2025-12-18T20:00:00+00:00</published>
   </entry>
   <entry>
@@ -1743,8 +1743,8 @@
     <link href="https://www.morningstar.com/news/dow-jones/2025121810148/nike-sales-tick-up-in-2q-china-weakness-persists-update"/>
     <summary>Brands: Nike | Categories: Environmental, Governance | Source: morningstar.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2025-12-19T00:30:00+00:00</published>
   </entry>
   <entry>
@@ -1754,8 +1754,8 @@
     <link href="https://economictimes.indiatimes.com/news/international/us/nike-stock-fell-10-today-after-earnings-why-tariffs-and-falling-margins-spooked-nke-investors/articleshow/126067281.cms"/>
     <summary>Brands: Nike | Categories: Environmental, Governance | Source: The Economic Times</summary>
     <category term="Nike" label="Nike"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2025-12-19T00:51:52+00:00</published>
   </entry>
   <entry>
@@ -1765,8 +1765,8 @@
     <link href="https://wwd.com/business-news/financial/activist-elliott-lululemon-jane-nielson-ceo-candidate-1238429663/"/>
     <summary>Brands: Lululemon | Categories: Digital Transformation, Governance, Social | Source: wwd.com</summary>
     <category term="Lululemon" label="Lululemon"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2025-12-19T02:00:00+00:00</published>
   </entry>
@@ -1787,9 +1787,9 @@
     <updated>2025-12-19T03:30:00+00:00</updated>
     <link href="https://www.marketscreener.com/news/nike-s-china-conundrum-deepens-as-turnaround-stagnates-ce7d50ddd98af022"/>
     <summary>Brands: Anta, Li-Ning, Nike | Categories: Digital Transformation, Governance | Source: marketscreener.com</summary>
-    <category term="Nike" label="Nike"/>
     <category term="Li-Ning" label="Li-Ning"/>
     <category term="Anta" label="Anta"/>
+    <category term="Nike" label="Nike"/>
     <category term="governance" label="Governance"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2025-12-19T03:30:00+00:00</published>
@@ -1822,8 +1822,8 @@
     <link href="https://www.channelafrica.co.za/channelafrica/news/nikes-china-conundrum-deepens-as-turnaround-stagnates/"/>
     <summary>Brands: Nike | Categories: Environmental, Governance | Source: channelafrica.co.za</summary>
     <category term="Nike" label="Nike"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2025-12-19T08:00:00+00:00</published>
   </entry>
   <entry>
@@ -1874,9 +1874,9 @@
     <updated>2025-12-19T12:44:31+00:00</updated>
     <link href="https://www.cp24.com/news/money/2025/12/19/nikes-china-conundrum-deepens-as-turnaround-stagnates-shares-slump/"/>
     <summary>Brands: Anta, Li-Ning, Nike | Categories: Digital Transformation, Governance | Source: Cp24</summary>
-    <category term="Nike" label="Nike"/>
     <category term="Li-Ning" label="Li-Ning"/>
     <category term="Anta" label="Anta"/>
+    <category term="Nike" label="Nike"/>
     <category term="governance" label="Governance"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2025-12-19T12:44:31+00:00</published>
@@ -1899,8 +1899,8 @@
     <link href="https://www.marketscreener.com/news/nike-q2fy26-earnings-call-official-transcript-ce7d50ddde81f122"/>
     <summary>Brands: Nike | Categories: Digital Transformation, Governance, Social | Source: marketscreener.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2025-12-19T19:15:00+00:00</published>
   </entry>
@@ -1911,8 +1911,8 @@
     <link href="https://www.webwire.com/ViewPressRel.asp?aId=348271"/>
     <summary>Brands: ASICS | Categories: Digital Transformation, Governance, Social | Source: webwire.com</summary>
     <category term="ASICS" label="ASICS"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2025-12-19T19:30:00+00:00</published>
   </entry>
@@ -1923,8 +1923,8 @@
     <link href="https://www.webpronews.com/nikes-middle-innings-push-hills-win-now-gambit-targets-sports-glory-amid-china-drag/"/>
     <summary>Brands: Nike | Categories: Digital Transformation, Environmental, Governance | Source: Webpronews</summary>
     <category term="Nike" label="Nike"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2025-12-19T21:40:59+00:00</published>
   </entry>
@@ -1956,8 +1956,8 @@
     <link href="http://africa.chinadaily.com.cn/a/202512/20/WS6945df7da310d6866eb2f97e.html"/>
     <summary>Brands: Lululemon | Categories: Governance, Social | Source: africa.chinadaily.com.cn</summary>
     <category term="Lululemon" label="Lululemon"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2025-12-20T02:45:00+00:00</published>
   </entry>
   <entry>
@@ -1978,8 +1978,8 @@
     <link href="https://www.dailycardinal.com/article/2025/12/wisconsins-new-104-5-million-under-armour-deal-could-help-launch-athletics-into-nil-era"/>
     <summary>Brands: Under Armour | Categories: Governance, Social | Source: dailycardinal.com</summary>
     <category term="Under Armour" label="Under Armour"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2025-12-21T00:30:00+00:00</published>
   </entry>
   <entry>
@@ -2033,9 +2033,9 @@
     <link href="https://www.zawya.com/en/press-release/companies-news/asics-signs-partnership-agreement-for-the5th-asian-para-games-2026-aichi-nagoya-m5rszo01"/>
     <summary>Brands: ASICS | Categories: Environmental, Governance, Social | Source: Zawya</summary>
     <category term="ASICS" label="ASICS"/>
+    <category term="governance" label="Governance"/>
     <category term="social" label="Social"/>
     <category term="environmental" label="Environmental"/>
-    <category term="governance" label="Governance"/>
     <published>2025-12-23T10:22:24+00:00</published>
   </entry>
   <entry>
@@ -2045,8 +2045,8 @@
     <link href="https://www.afaqs.com/marketing/mumbai-marathon-helped-build-brand-presence-before-india-launch-asics-md-10941759"/>
     <summary>Brands: ASICS | Categories: Digital Transformation, Governance, Social | Source: afaqs.com</summary>
     <category term="ASICS" label="ASICS"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2025-12-24T02:00:00+00:00</published>
   </entry>
@@ -2057,8 +2057,8 @@
     <link href="https://www.retaildetail.eu/news/leisure/decathlon-acquires-german-bike-leasing-company/"/>
     <summary>Brands: Decathlon | Categories: Environmental, Governance | Source: retaildetail.eu</summary>
     <category term="Decathlon" label="Decathlon"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2025-12-24T11:30:00+00:00</published>
   </entry>
   <entry>
@@ -2068,8 +2068,8 @@
     <link href="https://www.themarysue.com/lululemon-louisiana-pants-exchange/"/>
     <summary>Brands: Lululemon | Categories: Governance, Social | Source: themarysue.com</summary>
     <category term="Lululemon" label="Lululemon"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2025-12-24T18:00:00+00:00</published>
   </entry>
   <entry>
@@ -2131,8 +2131,8 @@
     <link href="https://www.zerohedge.com/markets/amid-nikes-worst-drawdown-late-70s-ubs-flags-emerging-bullish-signals"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: zerohedge.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2025-12-26T19:30:00+00:00</published>
   </entry>
   <entry>
@@ -2153,8 +2153,8 @@
     <link href="https://www.themarysue.com/lululemon-leggings-polka-dot/"/>
     <summary>Brands: Lululemon | Categories: Environmental, Governance | Source: themarysue.com</summary>
     <category term="Lululemon" label="Lululemon"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2025-12-27T02:15:00+00:00</published>
   </entry>
   <entry>
@@ -2164,8 +2164,8 @@
     <link href="https://www.yardbarker.com/nba/articles/report_stephen_curry_and_under_armour_disagreement_over_curry_13_led_to_split/s1_17730_43252315"/>
     <summary>Brands: Under Armour | Categories: Governance, Social | Source: yardbarker.com</summary>
     <category term="Under Armour" label="Under Armour"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2025-12-27T04:00:00+00:00</published>
   </entry>
   <entry>
@@ -2380,16 +2380,6 @@
     <published>2025-12-31T00:00:00+00:00</published>
   </entry>
   <entry>
-    <id>2dd6820c-744b-4f39-85bc-cc314ca68595</id>
-    <title>Thousands brave a rainy lululemon  Run with the Rose in annual pre - Rose Parade 5K – Whittier Daily News</title>
-    <updated>2026-01-01T20:15:00+00:00</updated>
-    <link href="https://www.whittierdailynews.com/2026/01/01/thousands-brave-a-rainy-lululemon-run-with-the-roses-in-annual-pre-rose-parade-5k/"/>
-    <summary>Brands: Lululemon | Categories: Social | Source: whittierdailynews.com</summary>
-    <category term="Lululemon" label="Lululemon"/>
-    <category term="social" label="Social"/>
-    <published>2026-01-01T20:15:00+00:00</published>
-  </entry>
-  <entry>
     <id>ad6d6966-bb75-4fb7-ac6d-b19ee28e616b</id>
     <title>Where Will Lululemon Stock Be When the Dust Settles ? </title>
     <updated>2026-01-01T20:15:00+00:00</updated>
@@ -2400,14 +2390,24 @@
     <published>2026-01-01T20:15:00+00:00</published>
   </entry>
   <entry>
+    <id>2dd6820c-744b-4f39-85bc-cc314ca68595</id>
+    <title>Thousands brave a rainy lululemon  Run with the Rose in annual pre - Rose Parade 5K – Whittier Daily News</title>
+    <updated>2026-01-01T20:15:00+00:00</updated>
+    <link href="https://www.whittierdailynews.com/2026/01/01/thousands-brave-a-rainy-lululemon-run-with-the-roses-in-annual-pre-rose-parade-5k/"/>
+    <summary>Brands: Lululemon | Categories: Social | Source: whittierdailynews.com</summary>
+    <category term="Lululemon" label="Lululemon"/>
+    <category term="social" label="Social"/>
+    <published>2026-01-01T20:15:00+00:00</published>
+  </entry>
+  <entry>
     <id>e1a06710-ebee-40bd-81d4-c97fc49baf82</id>
     <title>Judge Denies Nike Motion For Dismissal From Assault , Battery Suit</title>
     <updated>2026-01-02T00:00:00+00:00</updated>
     <link href="https://mynewsla.com/crime/2026/01/01/judge-denies-nikes-motion-for-dismissal-from-assault-battery-suit-2/"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: mynewsla.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-01-02T00:00:00+00:00</published>
   </entry>
   <entry>
@@ -2447,8 +2447,8 @@
     <link href="https://nltimes.nl/2026/01/04/dutch-court-upholds-firing-armour-manager-eu650-bag-untagged-clothing"/>
     <summary>Brands: Under Armour | Categories: Governance, Social | Source: nltimes.nl</summary>
     <category term="Under Armour" label="Under Armour"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-01-04T18:00:00+00:00</published>
   </entry>
   <entry>
@@ -2478,8 +2478,8 @@
     <link href="https://www.koreatimes.co.kr/business/companies/20260107/head-of-hokas-korean-distributor-resigns-over-alleged-assault-against-subcontractor"/>
     <summary>Brands: Hoka | Categories: Governance, Social | Source: The Korea Times</summary>
     <category term="Hoka" label="Hoka"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-01-07T05:47:03+00:00</published>
   </entry>
   <entry>
@@ -2582,8 +2582,8 @@
     <link href="https://www.indiatimes.com/trending/did-nike-take-inspiration-from-india-new-neuroscience-shoes-spark-originality-debate-over-similarities-with-indian-acupressure-footwear/articleshow/126486024.html"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: indiatimes.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-01-12T19:00:00+00:00</published>
   </entry>
   <entry>
@@ -2625,8 +2625,8 @@
     <link href="https://www.oregonlive.com/business/2026/01/march-trial-scheduled-in-long-running-nike-sex-discrimination-lawsuit.html"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: oregonlive.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-01-16T15:15:00+00:00</published>
   </entry>
   <entry>
@@ -2666,8 +2666,8 @@
     <link href="https://www.dailymail.co.uk/sport/nba/article-15482103/lebron-james-nike-martin-luther-king-shoe.html"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: Mail Online</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-01-20T23:12:57+00:00</published>
   </entry>
   <entry>
@@ -2677,8 +2677,8 @@
     <link href="http://www.hngn.com/articles/269374/20260121/lululemon-suspends-online-sales-get-low-line-north-america-after-complaints.htm"/>
     <summary>Brands: Lululemon | Categories: Governance, Social | Source: hngn.com</summary>
     <category term="Lululemon" label="Lululemon"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-01-21T13:00:00+00:00</published>
   </entry>
   <entry>
@@ -2688,8 +2688,8 @@
     <link href="https://www.thetimes.com/life-style/fashion/article/lululmon-see-through-leggings-get-low-collection-halts-sales-2nncr5b9l"/>
     <summary>Brands: Lululemon | Categories: Governance, Social | Source: thetimes.com</summary>
     <category term="Lululemon" label="Lululemon"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-01-22T23:15:00+00:00</published>
   </entry>
   <entry>
@@ -2730,8 +2730,8 @@
     <link href="https://www.fox13news.com/news/lululemon-halts-sales-leggings-see-through-claims"/>
     <summary>Brands: Lululemon | Categories: Governance, Social | Source: fox13news.com</summary>
     <category term="Lululemon" label="Lululemon"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-01-23T03:45:00+00:00</published>
   </entry>
   <entry>
@@ -2740,10 +2740,10 @@
     <updated>2026-01-23T23:45:27+00:00</updated>
     <link href="https://us.headtopics.com/news/nike-and-under-armour-s-potential-ransomware-attacks-what-78798004"/>
     <summary>Brands: Nike, Under Armour | Categories: Digital Transformation, Governance, Social | Source: Headtopics</summary>
-    <category term="Nike" label="Nike"/>
     <category term="Under Armour" label="Under Armour"/>
-    <category term="social" label="Social"/>
+    <category term="Nike" label="Nike"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-01-23T23:45:27+00:00</published>
   </entry>
@@ -2754,8 +2754,8 @@
     <link href="https://www.out.com/drag/patagonia-pattie-gonia-lawsuit"/>
     <summary>Brands: Patagonia | Categories: Governance, Social | Source: out.com</summary>
     <category term="Patagonia" label="Patagonia"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-01-24T03:00:00+00:00</published>
   </entry>
   <entry>
@@ -2805,8 +2805,8 @@
     <link href="https://www.nbcboston.com/entertainment/entertainment-news/kanye-west-apology-antisemitic-comments/3884541/"/>
     <summary>Brands: Adidas | Categories: Governance, Social | Source: Necn</summary>
     <category term="Adidas" label="Adidas"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-01-26T06:33:15+00:00</published>
   </entry>
   <entry>
@@ -2825,8 +2825,8 @@
     <updated>2026-01-26T13:22:57+00:00</updated>
     <link href="https://platodata.ai/nike-data-breach-claims-surface-as-worldleaks-leaks-1-4tb-of-files-online/"/>
     <summary>Brands: Nike, Under Armour | Categories: Governance | Source: Plato Data Intelligence</summary>
-    <category term="Nike" label="Nike"/>
     <category term="Under Armour" label="Under Armour"/>
+    <category term="Nike" label="Nike"/>
     <category term="governance" label="Governance"/>
     <published>2026-01-26T13:22:57+00:00</published>
   </entry>
@@ -2846,8 +2846,8 @@
     <updated>2026-01-26T15:30:00+00:00</updated>
     <link href="https://www.theregister.com/2026/01/26/data_thieves_claim_nike_data_haul/"/>
     <summary>Brands: Nike, Under Armour | Categories: Digital Transformation, Governance | Source: theregister.com</summary>
-    <category term="Nike" label="Nike"/>
     <category term="Under Armour" label="Under Armour"/>
+    <category term="Nike" label="Nike"/>
     <category term="governance" label="Governance"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-01-26T15:30:00+00:00</published>
@@ -2859,8 +2859,8 @@
     <link href="https://www.lgbtqnation.com/2026/01/patagonia-sues-drag-performer-pattie-gonia-for-trademark-infringement/"/>
     <summary>Brands: Patagonia | Categories: Environmental, Governance | Source: lgbtqnation.com</summary>
     <category term="Patagonia" label="Patagonia"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2026-01-26T17:15:00+00:00</published>
   </entry>
   <entry>
@@ -2910,8 +2910,8 @@
     <updated>2026-01-27T01:47:25+00:00</updated>
     <link href="https://www.thehindu.com/business/chinas-anta-sports-muscles-in-with-18-billion-move-for-291-puma-stake/article70555014.ece"/>
     <summary>Brands: Anta, Puma | Categories: Governance | Source: The Hindu</summary>
-    <category term="Anta" label="Anta"/>
     <category term="Puma" label="Puma"/>
+    <category term="Anta" label="Anta"/>
     <category term="governance" label="Governance"/>
     <published>2026-01-27T01:47:25+00:00</published>
   </entry>
@@ -2921,8 +2921,8 @@
     <updated>2026-01-27T01:48:36+00:00</updated>
     <link href="https://www.cnbctv18.com/market/china-anta-sports-to-a-cquire-29-percent-stake-in-puma-for-1-8-billion-ws-l-19833404.htm"/>
     <summary>Brands: Anta, Puma | Categories: Governance | Source: Cnbctv18</summary>
-    <category term="Anta" label="Anta"/>
     <category term="Puma" label="Puma"/>
+    <category term="Anta" label="Anta"/>
     <category term="governance" label="Governance"/>
     <published>2026-01-27T01:48:36+00:00</published>
   </entry>
@@ -2932,8 +2932,8 @@
     <updated>2026-01-27T05:45:00+00:00</updated>
     <link href="https://www.bssnews.net/business/355111"/>
     <summary>Brands: Anta, Puma | Categories: Governance | Source: bssnews.net</summary>
-    <category term="Anta" label="Anta"/>
     <category term="Puma" label="Puma"/>
+    <category term="Anta" label="Anta"/>
     <category term="governance" label="Governance"/>
     <published>2026-01-27T05:45:00+00:00</published>
   </entry>
@@ -2943,8 +2943,8 @@
     <updated>2026-01-27T06:17:00+00:00</updated>
     <link href="https://www.thestar.com.my/business/business-news/2026/01/27/chinese-sportswear-firm-to-secure-major-stake-in-puma"/>
     <summary>Brands: Anta, Puma | Categories: Governance | Source: The Star</summary>
-    <category term="Anta" label="Anta"/>
     <category term="Puma" label="Puma"/>
+    <category term="Anta" label="Anta"/>
     <category term="governance" label="Governance"/>
     <published>2026-01-27T06:17:00+00:00</published>
   </entry>
@@ -2954,8 +2954,8 @@
     <updated>2026-01-27T07:14:14+00:00</updated>
     <link href="https://www.newsbytesapp.com/news/business/chinese-firm-buys-29-majority-stake-in-puma-for-1-8b/story"/>
     <summary>Brands: Anta, Puma | Categories: Governance | Source: Newsbytes</summary>
-    <category term="Anta" label="Anta"/>
     <category term="Puma" label="Puma"/>
+    <category term="Anta" label="Anta"/>
     <category term="governance" label="Governance"/>
     <published>2026-01-27T07:14:14+00:00</published>
   </entry>
@@ -3028,8 +3028,8 @@
     <link href="https://toronto.citynews.ca/2026/01/27/lululemon-cuts-100-part-time-jobs-in-customer-care-division/"/>
     <summary>Brands: Lululemon | Categories: Governance, Social | Source: toronto.citynews.ca</summary>
     <category term="Lululemon" label="Lululemon"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-01-27T16:30:00+00:00</published>
   </entry>
   <entry>
@@ -3059,10 +3059,21 @@
     <updated>2026-01-27T21:26:00+00:00</updated>
     <link href="https://www.qatar-tribune.com/article/216500/business/chinas-anta-sports-buys-18-bn-stake-to-become-top-puma-shareholder"/>
     <summary>Brands: Anta, Puma | Categories: Governance | Source: Qatar Tribune</summary>
-    <category term="Anta" label="Anta"/>
     <category term="Puma" label="Puma"/>
+    <category term="Anta" label="Anta"/>
     <category term="governance" label="Governance"/>
     <published>2026-01-27T21:26:00+00:00</published>
+  </entry>
+  <entry>
+    <id>e13a8255-023c-4fad-8ca6-ed5c9f9824b8</id>
+    <title>Chinese firm to become top shareholder at Puma</title>
+    <updated>2026-01-27T22:30:00+00:00</updated>
+    <link href="http://www.sanantoniopost.com/news/278834152/chinese-firm-to-become-top-shareholder-at-puma"/>
+    <summary>Brands: Anta, Puma | Categories: Governance | Source: sanantoniopost.com</summary>
+    <category term="Puma" label="Puma"/>
+    <category term="Anta" label="Anta"/>
+    <category term="governance" label="Governance"/>
+    <published>2026-01-27T22:30:00+00:00</published>
   </entry>
   <entry>
     <id>f7fc03ee-1877-4c9b-987b-15641b206c52</id>
@@ -3072,17 +3083,6 @@
     <summary>Brands: Adidas | Categories: Social | Source: wwd.com</summary>
     <category term="Adidas" label="Adidas"/>
     <category term="social" label="Social"/>
-    <published>2026-01-27T22:30:00+00:00</published>
-  </entry>
-  <entry>
-    <id>e13a8255-023c-4fad-8ca6-ed5c9f9824b8</id>
-    <title>Chinese firm to become top shareholder at Puma</title>
-    <updated>2026-01-27T22:30:00+00:00</updated>
-    <link href="http://www.sanantoniopost.com/news/278834152/chinese-firm-to-become-top-shareholder-at-puma"/>
-    <summary>Brands: Anta, Puma | Categories: Governance | Source: sanantoniopost.com</summary>
-    <category term="Anta" label="Anta"/>
-    <category term="Puma" label="Puma"/>
-    <category term="governance" label="Governance"/>
     <published>2026-01-27T22:30:00+00:00</published>
   </entry>
   <entry>
@@ -3104,8 +3104,8 @@
     <summary>Brands: Anta, Puma | Categories: Governance, Social | Source: Kathmandupost</summary>
     <category term="Puma" label="Puma"/>
     <category term="Anta" label="Anta"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-01-28T00:00:00+00:00</published>
   </entry>
   <entry>
@@ -3125,10 +3125,10 @@
     <updated>2026-01-28T18:12:47+00:00</updated>
     <link href="https://www.business-standard.com/world-news/puma-long-slide-as-rivals-adidas-and-anta-loom-126012801732_1.html"/>
     <summary>Brands: Adidas, Anta, Nike, Puma | Categories: Governance | Source: Business Standard</summary>
-    <category term="Anta" label="Anta"/>
     <category term="Adidas" label="Adidas"/>
-    <category term="Nike" label="Nike"/>
     <category term="Puma" label="Puma"/>
+    <category term="Anta" label="Anta"/>
+    <category term="Nike" label="Nike"/>
     <category term="governance" label="Governance"/>
     <published>2026-01-28T18:12:47+00:00</published>
   </entry>
@@ -3160,8 +3160,8 @@
     <link href="https://wwd.com/business-news/retail/eddie-bauer-bankruptcy-stores-authentic-brands-group-catalyst-1238530739/"/>
     <summary>Brands: Eddie Bauer | Categories: Governance, Social | Source: wwd.com</summary>
     <category term="Eddie Bauer" label="Eddie Bauer"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-01-30T00:00:00+00:00</published>
   </entry>
   <entry>
@@ -3191,8 +3191,8 @@
     <link href="https://www.proactiveinvestors.com/companies/news/1086596/lululemon-price-target-slashed-on-outgoing-ceo-s-final-day-1086596.html"/>
     <summary>Brands: Lululemon | Categories: Governance, Social | Source: proactiveinvestors.com</summary>
     <category term="Lululemon" label="Lululemon"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-01-30T18:30:00+00:00</published>
   </entry>
   <entry>
@@ -3245,8 +3245,8 @@
     <link href="https://www.scmp.com/news/hong-kong/law-and-crime/article/3342005/adidas-concerned-after-woman-complains-fitting-room-opened-twice-mong-kok-shop"/>
     <summary>Brands: Adidas | Categories: Governance, Social | Source: South China Morning Post</summary>
     <category term="Adidas" label="Adidas"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-01T11:45:22+00:00</published>
   </entry>
   <entry>
@@ -3266,8 +3266,8 @@
     <link href="https://www.propublica.org/article/nike-factory-worker-rights-indonesia-advocate"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: propublica.org</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-02T01:45:00+00:00</published>
   </entry>
   <entry>
@@ -3297,8 +3297,8 @@
     <link href="https://www.oregonlive.com/opinion/2026/02/readers-respond-nikes-manufacturing-record-reflects-progress-and-ongoing-improvement.html"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: oregonlive.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-02T19:15:00+00:00</published>
   </entry>
   <entry>
@@ -3318,21 +3318,10 @@
     <link href="https://q1057.com/local-retail-news-eddie-bauer/"/>
     <summary>Brands: Eddie Bauer | Categories: Digital Transformation, Governance, Social | Source: q1057.com</summary>
     <category term="Eddie Bauer" label="Eddie Bauer"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-02-03T14:15:00+00:00</published>
-  </entry>
-  <entry>
-    <id>b087c9ab-15bd-4375-b7ac-8f5abe425efd</id>
-    <title>Retail Challenges Ahead : Eddie Bauer Closes North America Stores</title>
-    <updated>2026-02-03T15:15:00+00:00</updated>
-    <link href="https://river967.com/eddie-bauer-store-closures/"/>
-    <summary>Brands: Eddie Bauer | Categories: Governance, Social | Source: river967.com</summary>
-    <category term="Eddie Bauer" label="Eddie Bauer"/>
-    <category term="social" label="Social"/>
-    <category term="governance" label="Governance"/>
-    <published>2026-02-03T15:15:00+00:00</published>
   </entry>
   <entry>
     <id>f7a8b5ed-896d-4ab8-911c-fbc770951148</id>
@@ -3341,8 +3330,19 @@
     <link href="https://www.midnorthmonitor.com:443/news/eddie-bauer-to-close-north-american-stores"/>
     <summary>Brands: Eddie Bauer | Categories: Governance, Social | Source: midnorthmonitor.com</summary>
     <category term="Eddie Bauer" label="Eddie Bauer"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
+    <published>2026-02-03T15:15:00+00:00</published>
+  </entry>
+  <entry>
+    <id>b087c9ab-15bd-4375-b7ac-8f5abe425efd</id>
+    <title>Retail Challenges Ahead : Eddie Bauer Closes North America Stores</title>
+    <updated>2026-02-03T15:15:00+00:00</updated>
+    <link href="https://river967.com/eddie-bauer-store-closures/"/>
+    <summary>Brands: Eddie Bauer | Categories: Governance, Social | Source: river967.com</summary>
+    <category term="Eddie Bauer" label="Eddie Bauer"/>
+    <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-03T15:15:00+00:00</published>
   </entry>
   <entry>
@@ -3352,8 +3352,8 @@
     <link href="https://mynorthwest.com/local/seattle-eddie-bauer-bankruptcy-filing/4197718"/>
     <summary>Brands: Eddie Bauer | Categories: Digital Transformation, Governance, Social | Source: mynorthwest.com</summary>
     <category term="Eddie Bauer" label="Eddie Bauer"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-02-03T20:15:00+00:00</published>
   </entry>
@@ -3364,8 +3364,8 @@
     <link href="https://b1027.com/ixp/485/p/eddie-bauer-stores-closing/"/>
     <summary>Brands: Eddie Bauer | Categories: Digital Transformation, Governance, Social | Source: b1027.com</summary>
     <category term="Eddie Bauer" label="Eddie Bauer"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-02-03T21:30:00+00:00</published>
   </entry>
@@ -3386,8 +3386,8 @@
     <link href="https://finance.yahoo.com/news/most-us-eddie-bauer-stores-124200683.html"/>
     <summary>Brands: Eddie Bauer | Categories: Governance, Social | Source: finance.yahoo.com</summary>
     <category term="Eddie Bauer" label="Eddie Bauer"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-03T21:30:00+00:00</published>
   </entry>
   <entry>
@@ -3397,8 +3397,8 @@
     <link href="http://www.chronline.com/stories/trial-rescheduled-in-nike-sex-discrimination-case,395848"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: chronline.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-03T22:30:00+00:00</published>
   </entry>
   <entry>
@@ -3407,8 +3407,8 @@
     <updated>2026-02-03T23:00:00+00:00</updated>
     <link href="https://www.malaymail.com/news/money/2026/02/04/pinaults-puma-exit-how-an-anti-embarrassment-clause-sealed-the-anta-deal/207887"/>
     <summary>Brands: Anta, Puma | Categories: Governance | Source: Malay Mail</summary>
-    <category term="Anta" label="Anta"/>
     <category term="Puma" label="Puma"/>
+    <category term="Anta" label="Anta"/>
     <category term="governance" label="Governance"/>
     <published>2026-02-03T23:00:00+00:00</published>
   </entry>
@@ -3429,8 +3429,8 @@
     <link href="https://kpq.com/ixp/1137/p/outdoor-clothing-store-closures/"/>
     <summary>Brands: Eddie Bauer | Categories: Digital Transformation, Governance, Social | Source: kpq.com</summary>
     <category term="Eddie Bauer" label="Eddie Bauer"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-02-04T02:45:00+00:00</published>
   </entry>
@@ -3440,10 +3440,10 @@
     <updated>2026-02-04T10:30:00+00:00</updated>
     <link href="https://finance.yahoo.com/news/anta-debut-permanent-us-flagship-100128413.html"/>
     <summary>Brands: Anta, Puma | Categories: Governance, Social | Source: finance.yahoo.com</summary>
-    <category term="Anta" label="Anta"/>
     <category term="Puma" label="Puma"/>
-    <category term="social" label="Social"/>
+    <category term="Anta" label="Anta"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-04T10:30:00+00:00</published>
   </entry>
   <entry>
@@ -3473,8 +3473,8 @@
     <link href="https://www.insidermonkey.com/blog/columbia-sportswear-company-nasdaqcolm-q4-2025-earnings-call-transcript-1688567/"/>
     <summary>Brands: Columbia Sportswear | Categories: Environmental, Governance | Source: Insider Trading</summary>
     <category term="Columbia Sportswear" label="Columbia Sportswear"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2026-02-04T13:07:38+00:00</published>
   </entry>
   <entry>
@@ -3504,8 +3504,8 @@
     <link href="https://nypost.com/2026/02/04/business/eddie-bauer-may-close-north-america-stores-as-catalyst-brands-eyes-bankruptcy/"/>
     <summary>Brands: Eddie Bauer | Categories: Governance, Social | Source: nypost.com</summary>
     <category term="Eddie Bauer" label="Eddie Bauer"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-04T19:45:00+00:00</published>
   </entry>
   <entry>
@@ -3515,8 +3515,8 @@
     <link href="https://www.marketscreener.com/news/nike-facing-us-probe-over-alleged-discrimination-against-white-workers-ce7e5adad18bf527"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: marketscreener.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-04T20:30:00+00:00</published>
   </entry>
   <entry>
@@ -3526,8 +3526,8 @@
     <link href="https://www.ktvu.com/news/eddie-bauer-expected-close-all-stores-north-america-corporate-parent-eyes-bankruptcy"/>
     <summary>Brands: Eddie Bauer | Categories: Governance, Social | Source: ktvu.com</summary>
     <category term="Eddie Bauer" label="Eddie Bauer"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-04T20:30:00+00:00</published>
   </entry>
   <entry>
@@ -3537,8 +3537,8 @@
     <link href="https://www.kptv.com/2026/02/04/us-government-investigates-nike-over-claims-it-discriminated-against-white-workers/"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: kptv.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-04T22:00:00+00:00</published>
   </entry>
   <entry>
@@ -3548,8 +3548,8 @@
     <link href="https://www.foxbusiness.com/markets/nikes-diversity-initiatives-under-eeoc-scrutiny-alleged-discrimination-against-white-workers"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: foxbusiness.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-04T23:30:00+00:00</published>
   </entry>
   <entry>
@@ -3559,8 +3559,8 @@
     <link href="https://dailycaller.com/2026/02/04/admin-investigating-nike-allegedly-discriminating-white-employees/"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: dailycaller.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-05T00:00:00+00:00</published>
   </entry>
   <entry>
@@ -3570,8 +3570,8 @@
     <link href="https://wwd.com/footwear-news/shoe-industry-news/nike-eeoc-allegations-dei-discrimination-1238538978/"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: wwd.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-05T00:30:00+00:00</published>
   </entry>
   <entry>
@@ -3581,8 +3581,8 @@
     <link href="https://nypost.com/2026/02/04/business/nike-under-fed-scrutiny-for-dei-initiatives-that-allegedly-discriminated-against-white-workers/"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: nypost.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-05T01:15:00+00:00</published>
   </entry>
   <entry>
@@ -3592,8 +3592,8 @@
     <link href="https://www.ky3.com/2026/02/04/nike-being-investigated-over-claims-it-discriminated-against-white-workers/"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: ky3.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-05T01:15:00+00:00</published>
   </entry>
   <entry>
@@ -3603,8 +3603,8 @@
     <link href="https://www.upi.com/Top_News/US/2026/02/04/nike-discrimination/4801770250043/"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: upi.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-05T01:45:00+00:00</published>
   </entry>
   <entry>
@@ -3614,8 +3614,8 @@
     <link href="https://www.newser.com/story/383173/feds-accuse-nike-of-discrimination-against-white-workers.html"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: Newser</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-05T02:00:00+00:00</published>
   </entry>
   <entry>
@@ -3625,8 +3625,8 @@
     <link href="https://www.newsx.com/world/nike-faces-eeoc-scrutiny-over-alleged-discrimination-against-white-employees-a-surprising-and-unusual-escalation-can-shoe-giant-recover-its-reputation-161947/"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: newsx.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-05T02:15:00+00:00</published>
   </entry>
   <entry>
@@ -3636,20 +3636,9 @@
     <link href="https://www.philstar.com/business/2026/02/05/2505950/trump-administration-probes-nike-alleged-anti-white-hiring-bias"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: philstar.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-05T02:15:00+00:00</published>
-  </entry>
-  <entry>
-    <id>3b0ff5c2-f3a1-45ee-9936-f8dcd0d272f6</id>
-    <title>EEOC investigating Nike over alleged discrimination against White workers</title>
-    <updated>2026-02-05T02:45:00+00:00</updated>
-    <link href="https://www.wcbi.com/eeoc-investigating-nike-over-alleged-discrimination-against-white-workers/"/>
-    <summary>Brands: Nike | Categories: Governance, Social | Source: wcbi.com</summary>
-    <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
-    <category term="governance" label="Governance"/>
-    <published>2026-02-05T02:45:00+00:00</published>
   </entry>
   <entry>
     <id>1b532911-f92c-4e56-8337-cae08e5c0127</id>
@@ -3658,8 +3647,19 @@
     <link href="https://www.businessoffashion.com/news/workplace-talent/nike-discrimination-white-workers/"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: businessoffashion.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
+    <published>2026-02-05T02:45:00+00:00</published>
+  </entry>
+  <entry>
+    <id>3b0ff5c2-f3a1-45ee-9936-f8dcd0d272f6</id>
+    <title>EEOC investigating Nike over alleged discrimination against White workers</title>
+    <updated>2026-02-05T02:45:00+00:00</updated>
+    <link href="https://www.wcbi.com/eeoc-investigating-nike-over-alleged-discrimination-against-white-workers/"/>
+    <summary>Brands: Nike | Categories: Governance, Social | Source: wcbi.com</summary>
+    <category term="Nike" label="Nike"/>
+    <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-05T02:45:00+00:00</published>
   </entry>
   <entry>
@@ -3669,8 +3669,8 @@
     <link href="https://www.watoday.com.au/world/north-america/nike-faces-probe-over-claims-of-dei-related-discrimination-against-white-workers-20260205-p5nzw7.html"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: watoday.com.au</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-05T04:15:00+00:00</published>
   </entry>
   <entry>
@@ -3680,8 +3680,8 @@
     <link href="https://www.fox7austin.com/news/nikes-diversity-initiatives-under-eeoc-scrutiny-alleged-discrimination-against-white-workers"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: fox7austin.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-05T04:30:00+00:00</published>
   </entry>
   <entry>
@@ -3691,8 +3691,8 @@
     <link href="https://www.sgvtribune.com/2026/02/04/nike-discrimination-complaint/"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: sgvtribune.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-05T04:30:00+00:00</published>
   </entry>
   <entry>
@@ -3702,8 +3702,8 @@
     <link href="https://www.npr.org/2026/02/05/g-s1-108780/nike-federal-probe-discrimination-white-workers"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: Npr</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-05T06:59:54+00:00</published>
   </entry>
   <entry>
@@ -3713,8 +3713,8 @@
     <link href="https://www.washingtonexaminer.com/watch/2495897/"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: washingtonexaminer.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-05T17:15:00+00:00</published>
   </entry>
   <entry>
@@ -3744,8 +3744,8 @@
     <link href="https://www.wbls.com/news/trump-admin-accuses-nike-of-discriminating-against-white-employees/"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: wbls.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-05T22:00:00+00:00</published>
   </entry>
   <entry>
@@ -3765,8 +3765,8 @@
     <link href="https://wwd.com/footwear-news/shoe-industry-news/nike-eeoc-trump-administration-dei-reverse-discrimination-1238544670/"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: wwd.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-06T00:00:00+00:00</published>
   </entry>
   <entry>
@@ -3786,8 +3786,8 @@
     <link href="https://legalinsurrection.com/2026/02/feds-investigating-nike-for-allegedly-discriminating-against-white-employees/"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: legalinsurrection.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-06T01:15:00+00:00</published>
   </entry>
   <entry>
@@ -3797,8 +3797,8 @@
     <link href="https://newsone.com/6822934/eeoc-investigates-nike-over-anti-white-discrimination-claims/"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: newsone.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-06T01:45:00+00:00</published>
   </entry>
   <entry>
@@ -3808,8 +3808,8 @@
     <link href="https://ktbb.com/post/?p=1478135"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: ktbb.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-06T02:45:00+00:00</published>
   </entry>
   <entry>
@@ -3819,8 +3819,8 @@
     <link href="https://www.zerohedge.com/political/federal-agency-seeks-investigate-nike-alleged-bias-against-white-employees"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: zerohedge.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-06T03:00:00+00:00</published>
   </entry>
   <entry>
@@ -3830,8 +3830,8 @@
     <link href="https://www.wntxradio.com/syndicated-article/?id=1657725"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: wntxradio.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-06T03:45:00+00:00</published>
   </entry>
   <entry>
@@ -3851,8 +3851,8 @@
     <link href="https://www.oann.com/newsroom/the-equal-employment-opportunity-launches-probe-into-nike-for-alleged-discrimination-against-white-employees/"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: oann.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-06T09:15:00+00:00</published>
   </entry>
   <entry>
@@ -3862,8 +3862,8 @@
     <link href="https://www.scmp.com/news/hong-kong/society/article/3342715/adidas-says-sorry-over-fitting-room-incident-hong-kong-vows-privacy-review"/>
     <summary>Brands: Adidas | Categories: Governance, Social | Source: South China Morning Post</summary>
     <category term="Adidas" label="Adidas"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-06T13:45:25+00:00</published>
   </entry>
   <entry>
@@ -3872,10 +3872,10 @@
     <updated>2026-02-06T14:00:00+00:00</updated>
     <link href="https://www.firstpost.com/business/nike-adidas-face-new-rival-china-anta-takes-stake-puma-13977026.html"/>
     <summary>Brands: Adidas, Anta, Nike, Puma | Categories: Governance | Source: firstpost.com</summary>
-    <category term="Puma" label="Puma"/>
     <category term="Adidas" label="Adidas"/>
-    <category term="Nike" label="Nike"/>
+    <category term="Puma" label="Puma"/>
     <category term="Anta" label="Anta"/>
+    <category term="Nike" label="Nike"/>
     <category term="governance" label="Governance"/>
     <published>2026-02-06T14:00:00+00:00</published>
   </entry>
@@ -3886,8 +3886,8 @@
     <link href="https://pjmedia.com/catherinesalgado/2026/02/06/feds-investigate-nike-for-racial-discrimination-n4949218"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: pjmedia.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-07T07:30:00+00:00</published>
   </entry>
   <entry>
@@ -3916,10 +3916,10 @@
     <updated>2026-02-09T01:05:00+00:00</updated>
     <link href="https://www.straitstimes.com/business/with-puma-stake-chinas-anta-seeks-to-enter-the-arena-with-nike-and-adidas"/>
     <summary>Brands: Adidas, Anta, Nike, Puma | Categories: Governance | Source: Straitstimes</summary>
-    <category term="Puma" label="Puma"/>
     <category term="Adidas" label="Adidas"/>
-    <category term="Nike" label="Nike"/>
+    <category term="Puma" label="Puma"/>
     <category term="Anta" label="Anta"/>
+    <category term="Nike" label="Nike"/>
     <category term="governance" label="Governance"/>
     <published>2026-02-09T01:05:00+00:00</published>
   </entry>
@@ -3964,17 +3964,6 @@
     <published>2026-02-09T15:30:00+00:00</published>
   </entry>
   <entry>
-    <id>328df0ff-d8bd-44df-b875-eb132e21c2a8</id>
-    <title>Eddie Bauer to file for court protection in Canada on heels of U . S . </title>
-    <updated>2026-02-09T16:15:00+00:00</updated>
-    <link href="https://www.bnnbloomberg.ca/business/company-news/2026/02/09/eddie-bauer-looks-for-buyer-to-file-for-court-protection-in-canada-on-heels-of-us/"/>
-    <summary>Brands: Eddie Bauer | Categories: Governance, Social | Source: bnnbloomberg.ca</summary>
-    <category term="Eddie Bauer" label="Eddie Bauer"/>
-    <category term="social" label="Social"/>
-    <category term="governance" label="Governance"/>
-    <published>2026-02-09T16:15:00+00:00</published>
-  </entry>
-  <entry>
     <id>e23ff4fa-a5d5-4d85-a5bf-0673cd8727df</id>
     <title>Eddie Bauer files Chapter 11</title>
     <updated>2026-02-09T16:15:00+00:00</updated>
@@ -3985,14 +3974,25 @@
     <published>2026-02-09T16:15:00+00:00</published>
   </entry>
   <entry>
+    <id>328df0ff-d8bd-44df-b875-eb132e21c2a8</id>
+    <title>Eddie Bauer to file for court protection in Canada on heels of U . S . </title>
+    <updated>2026-02-09T16:15:00+00:00</updated>
+    <link href="https://www.bnnbloomberg.ca/business/company-news/2026/02/09/eddie-bauer-looks-for-buyer-to-file-for-court-protection-in-canada-on-heels-of-us/"/>
+    <summary>Brands: Eddie Bauer | Categories: Governance, Social | Source: bnnbloomberg.ca</summary>
+    <category term="Eddie Bauer" label="Eddie Bauer"/>
+    <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
+    <published>2026-02-09T16:15:00+00:00</published>
+  </entry>
+  <entry>
     <id>db1d7bb3-f66f-4b93-b447-bf44d4036fe1</id>
     <title>Eddie Bauer Files for Bankruptcy as Inflation , Tariffs Impact Profits</title>
     <updated>2026-02-09T18:00:00+00:00</updated>
     <link href="https://commercialobserver.com/2026/02/eddie-bauer-chapter-11-bankruptcy-inflation-tariffs/"/>
     <summary>Brands: Eddie Bauer | Categories: Governance, Social | Source: commercialobserver.com</summary>
     <category term="Eddie Bauer" label="Eddie Bauer"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-09T18:00:00+00:00</published>
   </entry>
   <entry>
@@ -4022,8 +4022,8 @@
     <link href="https://www.dailymail.co.uk/yourmoney/article-15543259/eddie-bauer-bankruptcy-store-closures.html"/>
     <summary>Brands: Eddie Bauer | Categories: Digital Transformation, Governance, Social | Source: dailymail.co.uk</summary>
     <category term="Eddie Bauer" label="Eddie Bauer"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-02-09T19:45:00+00:00</published>
   </entry>
@@ -4044,19 +4044,9 @@
     <link href="https://www.wcbi.com/eddie-bauers-retail-operator-declares-bankruptcy/"/>
     <summary>Brands: Eddie Bauer | Categories: Governance, Social | Source: wcbi.com</summary>
     <category term="Eddie Bauer" label="Eddie Bauer"/>
+    <category term="governance" label="Governance"/>
     <category term="social" label="Social"/>
-    <category term="governance" label="Governance"/>
     <published>2026-02-09T21:00:00+00:00</published>
-  </entry>
-  <entry>
-    <id>4ed1934b-1cf6-4218-b49a-ca20af099264</id>
-    <title>PR News | Reevemark Works Eddie Bauer  Fire Sale  </title>
-    <updated>2026-02-09T21:30:00+00:00</updated>
-    <link href="https://www.odwyerpr.com/story/public/24273/2026-02-09/reevemark-works-eddie-bauers-fire-sale.html"/>
-    <summary>Brands: Eddie Bauer | Categories: Governance | Source: odwyerpr.com</summary>
-    <category term="Eddie Bauer" label="Eddie Bauer"/>
-    <category term="governance" label="Governance"/>
-    <published>2026-02-09T21:30:00+00:00</published>
   </entry>
   <entry>
     <id>6b7849b2-482c-4f89-b00a-96207283e9f8</id>
@@ -4069,14 +4059,24 @@
     <published>2026-02-09T21:30:00+00:00</published>
   </entry>
   <entry>
+    <id>4ed1934b-1cf6-4218-b49a-ca20af099264</id>
+    <title>PR News | Reevemark Works Eddie Bauer  Fire Sale  </title>
+    <updated>2026-02-09T21:30:00+00:00</updated>
+    <link href="https://www.odwyerpr.com/story/public/24273/2026-02-09/reevemark-works-eddie-bauers-fire-sale.html"/>
+    <summary>Brands: Eddie Bauer | Categories: Governance | Source: odwyerpr.com</summary>
+    <category term="Eddie Bauer" label="Eddie Bauer"/>
+    <category term="governance" label="Governance"/>
+    <published>2026-02-09T21:30:00+00:00</published>
+  </entry>
+  <entry>
     <id>999511f7-3de3-4abd-8230-9dc62cc59632</id>
     <title>From Mountain Peaks to Chapter 11 : Eddie Bauer Bankruptcy Signals a Reckoning for Heritage Outdoor Brands</title>
     <updated>2026-02-09T23:15:00+00:00</updated>
     <link href="https://www.webpronews.com/from-mountain-peaks-to-chapter-11-eddie-bauers-bankruptcy-signals-a-reckoning-for-heritage-outdoor-brands/"/>
     <summary>Brands: Eddie Bauer | Categories: Governance, Social | Source: webpronews.com</summary>
     <category term="Eddie Bauer" label="Eddie Bauer"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-09T23:15:00+00:00</published>
   </entry>
   <entry>
@@ -4085,8 +4085,8 @@
     <updated>2026-02-10T00:30:00+00:00</updated>
     <link href="https://www.oregonlive.com/business/2026/02/layoffs-expected-at-nikes-converse-brand.html"/>
     <summary>Brands: Converse, Nike | Categories: Social | Source: oregonlive.com</summary>
-    <category term="Nike" label="Nike"/>
     <category term="Converse" label="Converse"/>
+    <category term="Nike" label="Nike"/>
     <category term="social" label="Social"/>
     <published>2026-02-10T00:30:00+00:00</published>
   </entry>
@@ -4096,8 +4096,8 @@
     <updated>2026-02-10T01:45:00+00:00</updated>
     <link href="https://www.fool.com/investing/2026/02/09/nike-owned-converse-may-be-about-to-make-deep-cuts/"/>
     <summary>Brands: Converse, Nike | Categories: Social | Source: fool.com</summary>
-    <category term="Nike" label="Nike"/>
     <category term="Converse" label="Converse"/>
+    <category term="Nike" label="Nike"/>
     <category term="social" label="Social"/>
     <published>2026-02-10T01:45:00+00:00</published>
   </entry>
@@ -4108,8 +4108,8 @@
     <link href="https://www.oregonlive.com/business/2026/02/eddie-bauer-to-close-seattle-headquarters-lay-off-60.html"/>
     <summary>Brands: Eddie Bauer | Categories: Governance, Social | Source: oregonlive.com</summary>
     <category term="Eddie Bauer" label="Eddie Bauer"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-10T03:45:00+00:00</published>
   </entry>
   <entry>
@@ -4118,10 +4118,10 @@
     <updated>2026-02-11T07:54:34+00:00</updated>
     <link href="https://www.timesnownews.com/business-economy/companies/nike-owned-converse-to-lay-off-several-employees-shift-to-remote-work-all-you-need-to-know-article-153594994"/>
     <summary>Brands: Converse, Nike | Categories: Digital Transformation, Governance, Social | Source: Times Now News</summary>
-    <category term="Nike" label="Nike"/>
     <category term="Converse" label="Converse"/>
-    <category term="social" label="Social"/>
+    <category term="Nike" label="Nike"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-02-11T07:54:34+00:00</published>
   </entry>
@@ -4152,8 +4152,8 @@
     <link href="https://ca.news.yahoo.com/move-former-eddie-bauer-store-131500866.html"/>
     <summary>Brands: Eddie Bauer | Categories: Governance, Social | Source: Yahoo! News</summary>
     <category term="Eddie Bauer" label="Eddie Bauer"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-11T13:15:00+00:00</published>
   </entry>
   <entry>
@@ -4162,8 +4162,8 @@
     <updated>2026-02-11T15:00:00+00:00</updated>
     <link href="https://www.retaildetail.eu/news/fashion/nike-cuts-jobs-at-sneaker-brand-converse/"/>
     <summary>Brands: Converse, Nike | Categories: Social | Source: retaildetail.eu</summary>
-    <category term="Nike" label="Nike"/>
     <category term="Converse" label="Converse"/>
+    <category term="Nike" label="Nike"/>
     <category term="social" label="Social"/>
     <published>2026-02-11T15:00:00+00:00</published>
   </entry>
@@ -4174,8 +4174,8 @@
     <link href="https://www.jdsupra.com/legalnews/eeoc-targets-nike-s-dei-programs-in-9372494/"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: jdsupra.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-11T19:45:00+00:00</published>
   </entry>
   <entry>
@@ -4195,8 +4195,8 @@
     <link href="https://finance.yahoo.com/news/220m-eddie-bauer-owe-authentic-203356418.html"/>
     <summary>Brands: Eddie Bauer | Categories: Governance, Social | Source: finance.yahoo.com</summary>
     <category term="Eddie Bauer" label="Eddie Bauer"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-12T08:45:00+00:00</published>
   </entry>
   <entry>
@@ -4227,8 +4227,8 @@
     <link href="https://witl.com/eddie-bauer-closing-michigan-stores/"/>
     <summary>Brands: Eddie Bauer | Categories: Governance, Social | Source: witl.com</summary>
     <category term="Eddie Bauer" label="Eddie Bauer"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-12T14:30:00+00:00</published>
   </entry>
   <entry>
@@ -4248,8 +4248,8 @@
     <link href="https://www.jdsupra.com/legalnews/eeoc-sues-nike-over-potential-reverse-7216784/"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: jdsupra.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-12T18:30:00+00:00</published>
   </entry>
   <entry>
@@ -4268,10 +4268,10 @@
     <updated>2026-02-13T01:00:00+00:00</updated>
     <link href="https://www.marketscreener.com/news/nike-owned-converse-to-realign-operations-and-trim-corporate-workforce-source-says-ce7e5ad3de8bf725"/>
     <summary>Brands: Converse, Nike | Categories: Digital Transformation, Governance, Social | Source: marketscreener.com</summary>
-    <category term="Nike" label="Nike"/>
     <category term="Converse" label="Converse"/>
-    <category term="social" label="Social"/>
+    <category term="Nike" label="Nike"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-02-13T01:00:00+00:00</published>
   </entry>
@@ -4291,10 +4291,10 @@
     <updated>2026-02-13T16:10:00+00:00</updated>
     <link href="https://www.manilatimes.net/2026/02/14/business/foreign-business/nike-owned-converse-to-realign-operations-and-trim-corporate-workforce/2277893"/>
     <summary>Brands: Converse, Nike | Categories: Digital Transformation, Governance, Social | Source: The Manila Times</summary>
-    <category term="Nike" label="Nike"/>
     <category term="Converse" label="Converse"/>
-    <category term="social" label="Social"/>
+    <category term="Nike" label="Nike"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-02-13T16:10:00+00:00</published>
   </entry>
@@ -4324,10 +4324,10 @@
     <updated>2026-02-14T05:16:50+00:00</updated>
     <link href="https://ca.finance.yahoo.com/news/nike-reshapes-converse-job-cuts-051650245.html"/>
     <summary>Brands: Converse, Nike | Categories: Governance, Social | Source: Yahoo! News</summary>
-    <category term="Nike" label="Nike"/>
     <category term="Converse" label="Converse"/>
-    <category term="social" label="Social"/>
+    <category term="Nike" label="Nike"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-14T05:16:50+00:00</published>
   </entry>
   <entry>
@@ -4409,8 +4409,8 @@
     <link href="https://fox56.com/news/local/wilkes-barre-eddie-bauer-store-to-close-after-bankruptcy-filing"/>
     <summary>Brands: Eddie Bauer | Categories: Governance, Social | Source: fox56.com</summary>
     <category term="Eddie Bauer" label="Eddie Bauer"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-17T21:30:00+00:00</published>
   </entry>
   <entry>
@@ -4532,8 +4532,8 @@
     <link href="https://1019therock.com/eddie-bauer-maine-store-closures/"/>
     <summary>Brands: Eddie Bauer | Categories: Governance, Social | Source: 1019therock.com</summary>
     <category term="Eddie Bauer" label="Eddie Bauer"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-25T21:15:00+00:00</published>
   </entry>
   <entry>
@@ -4543,8 +4543,8 @@
     <link href="https://wwd.com/business-news/financial/https-wwd-com-business-news-financial-puma-q4-2025-sales-down-8-percent-1238627501/"/>
     <summary>Brands: Puma | Categories: Governance, Social | Source: wwd.com</summary>
     <category term="Puma" label="Puma"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-26T13:00:00+00:00</published>
   </entry>
   <entry>
@@ -4564,8 +4564,8 @@
     <link href="https://wwd.com/footwear-news/shoe-industry-news/nike-adidas-puma-sneaker-market-annual-growth-rate-1238630391/"/>
     <summary>Brands: Adidas, Nike, Puma | Categories: Digital Transformation, Environmental | Source: Footwear News</summary>
     <category term="Adidas" label="Adidas"/>
-    <category term="Nike" label="Nike"/>
     <category term="Puma" label="Puma"/>
+    <category term="Nike" label="Nike"/>
     <category term="environmental" label="Environmental"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-02-26T18:58:33+00:00</published>
@@ -4576,8 +4576,8 @@
     <updated>2026-02-26T19:00:08+00:00</updated>
     <link href="http://economictimes.indiatimes.com/news/international/business/puma-expects-another-annual-loss-cancels-dividend-in-turnaround-drive/articleshow/128824476.cms"/>
     <summary>Brands: Anta, Puma | Categories: Governance | Source: The Economic Times</summary>
-    <category term="Anta" label="Anta"/>
     <category term="Puma" label="Puma"/>
+    <category term="Anta" label="Anta"/>
     <category term="governance" label="Governance"/>
     <published>2026-02-26T19:00:08+00:00</published>
   </entry>
@@ -4588,8 +4588,8 @@
     <link href="https://www.themirror.com/lifestyle/shopping/eddie-bauer-bankruptcy-gift-cards-1707613"/>
     <summary>Brands: Eddie Bauer | Categories: Governance, Social | Source: The Mirror Us</summary>
     <category term="Eddie Bauer" label="Eddie Bauer"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-02-26T19:52:37+00:00</published>
   </entry>
   <entry>
@@ -4639,8 +4639,8 @@
     <link href="https://www.propublica.org/article/nike-jobs-indonesia-living-wages"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: propublica.org</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-03-03T11:30:00+00:00</published>
   </entry>
   <entry>
@@ -4650,8 +4650,8 @@
     <link href="https://www.textileworld.com/textile-world/knitting-apparel/2026/03/former-the-north-face-and-boardriders-executive-arne-arens-joins-unspun-as-ceo-to-accelerate-the-shift-from-offshore-overproduction-to-u-s-based-manufacturing/"/>
     <summary>Brands: The North Face | Categories: Digital Transformation, Environmental, Governance | Source: textileworld.com</summary>
     <category term="The North Face" label="The North Face"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-03-03T21:45:00+00:00</published>
   </entry>
@@ -4692,8 +4692,8 @@
     <link href="https://timesofindia.indiatimes.com/business/international-business/adidas-shares-slide-after-weak-2026-outlook-company-says-middle-east-war-impact-unclear/articleshow/129028980.cms"/>
     <summary>Brands: Adidas | Categories: Governance, Social | Source: The Times Of India</summary>
     <category term="Adidas" label="Adidas"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-03-04T13:17:19+00:00</published>
   </entry>
   <entry>
@@ -4703,8 +4703,8 @@
     <link href="https://www.manilatimes.net/2026/03/04/business/adidas-shares-slump-on-outlook-mideast-war-impact-uncertain/2293178"/>
     <summary>Brands: Adidas | Categories: Governance, Social | Source: The Manila Times</summary>
     <category term="Adidas" label="Adidas"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-03-04T13:23:49+00:00</published>
   </entry>
   <entry>
@@ -4724,8 +4724,8 @@
     <link href="https://www.freemalaysiatoday.com/category/business/2026/03/05/adidas-shares-slump-on-outlook-mideast-war-casts-shadow"/>
     <summary>Brands: Adidas | Categories: Governance, Social | Source: freemalaysiatoday.com</summary>
     <category term="Adidas" label="Adidas"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-03-04T21:30:00+00:00</published>
   </entry>
   <entry>
@@ -4745,10 +4745,10 @@
     <link href="https://www.globenewswire.com/fr/news-release/2026/03/05/3250456/28124/en/North-America-Golf-Apparel-Market-Report-2025-2033-by-Product-Distribution-Channel-and-Company-Analysis.html"/>
     <summary>Brands: Adidas, Nike, Under Armour | Categories: Environmental, Governance | Source: Globenewswire_fr</summary>
     <category term="Adidas" label="Adidas"/>
-    <category term="Nike" label="Nike"/>
     <category term="Under Armour" label="Under Armour"/>
-    <category term="environmental" label="Environmental"/>
+    <category term="Nike" label="Nike"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2026-03-05T16:43:00+00:00</published>
   </entry>
   <entry>
@@ -4778,8 +4778,8 @@
     <link href="https://www.fox969.com/2026/03/07/eddie-bauer-closing-170-stores-amid-bankruptcy-including-7-in-wisconsin/"/>
     <summary>Brands: Eddie Bauer | Categories: Governance, Social | Source: fox969.com</summary>
     <category term="Eddie Bauer" label="Eddie Bauer"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-03-07T20:15:00+00:00</published>
   </entry>
   <entry>
@@ -4799,8 +4799,8 @@
     <link href="https://finance.yahoo.com/news/eddie-bauer-gift-cards-expire-034531576.html"/>
     <summary>Brands: Eddie Bauer | Categories: Governance, Social | Source: finance.yahoo.com</summary>
     <category term="Eddie Bauer" label="Eddie Bauer"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-03-08T05:00:00+00:00</published>
   </entry>
   <entry>
@@ -4840,8 +4840,8 @@
     <link href="https://www.amny.com/news/lululemon-shoplifting-crew-l-train-03122026/"/>
     <summary>Brands: Lululemon | Categories: Digital Transformation, Governance, Social | Source: Amny</summary>
     <category term="Lululemon" label="Lululemon"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-03-12T17:15:46+00:00</published>
   </entry>
@@ -4942,8 +4942,8 @@
     <updated>2026-03-17T08:02:37+00:00</updated>
     <link href="https://www.manilatimes.net/2026/03/17/tmt-newswire/plentisoft/outdoor-apparel-market-size-to-reach-22907-bn-by-2031-with-559-cagr-says-mordor-intelligence/2301436"/>
     <summary>Brands: Adidas, Nike | Categories: Digital Transformation, Environmental | Source: The Manila Times</summary>
-    <category term="Nike" label="Nike"/>
     <category term="Adidas" label="Adidas"/>
+    <category term="Nike" label="Nike"/>
     <category term="environmental" label="Environmental"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-03-17T08:02:37+00:00</published>
@@ -4955,9 +4955,9 @@
     <link href="https://markets.financialcontent.com/stocks/article/finterra-2026-3-17-lululemon-lulu-at-the-crossroads-a-2026-deep-dive-research-feature"/>
     <summary>Brands: Lululemon | Categories: Digital Transformation, Environmental, Governance, Social | Source: markets.financialcontent.com</summary>
     <category term="Lululemon" label="Lululemon"/>
+    <category term="governance" label="Governance"/>
     <category term="social" label="Social"/>
     <category term="environmental" label="Environmental"/>
-    <category term="governance" label="Governance"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-03-17T14:30:00+00:00</published>
   </entry>
@@ -4968,8 +4968,8 @@
     <link href="https://www.whio.com/news/trending/nearly-200-eddie-bauer-stores-expected-close/7YOL44BTCJA7PDGOPHMJWIZNIM/"/>
     <summary>Brands: Eddie Bauer | Categories: Governance, Social | Source: whio.com</summary>
     <category term="Eddie Bauer" label="Eddie Bauer"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-03-17T15:15:00+00:00</published>
   </entry>
   <entry>
@@ -5180,8 +5180,8 @@
     <link href="https://insideretail.asia/2026/03/24/what-is-nike-really-selling-with-its-virgil-abloh-drop/"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: insideretail.asia</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-03-25T07:15:00+00:00</published>
   </entry>
   <entry>
@@ -5366,8 +5366,8 @@
     <link href="https://www.newstalkzb.co.nz/news/business/allbirds-once-worth-7b-sells-its-assets-for-68m-will-wind-down/"/>
     <summary>Brands: Allbirds | Categories: Environmental, Governance | Source: newstalkzb.co.nz</summary>
     <category term="Allbirds" label="Allbirds"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2026-04-01T00:00:00+00:00</published>
   </entry>
   <entry>
@@ -5377,8 +5377,8 @@
     <link href="https://www.fool.com/investing/2026/03/31/american-exchange-is-set-to-acquire-allbirds-for-3/?source=iedfolrf0000001"/>
     <summary>Brands: Allbirds | Categories: Environmental, Governance | Source: fool.com</summary>
     <category term="Allbirds" label="Allbirds"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2026-04-01T00:00:00+00:00</published>
   </entry>
   <entry>
@@ -5418,8 +5418,8 @@
     <link href="https://www.globaltimes.cn/page/202604/1358028.shtml"/>
     <summary>Brands: Patagonia | Categories: Environmental, Governance | Source: globaltimes.cn</summary>
     <category term="Patagonia" label="Patagonia"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2026-04-01T10:30:00+00:00</published>
   </entry>
   <entry>
@@ -5476,17 +5476,6 @@
     <published>2026-04-01T15:00:00+00:00</published>
   </entry>
   <entry>
-    <id>dd56c235-fe91-4592-8473-6444d411aae2</id>
-    <title>Nike sued after customer personal information was exposed</title>
-    <updated>2026-04-01T16:15:00+00:00</updated>
-    <link href="https://kyma.com/dsw-living/consumer/2026/04/01/nike-sued-after-customers-personal-information-was-exposed/"/>
-    <summary>Brands: Nike | Categories: Digital Transformation, Governance | Source: kyma.com</summary>
-    <category term="Nike" label="Nike"/>
-    <category term="governance" label="Governance"/>
-    <category term="digital_transformation" label="Digital Transformation"/>
-    <published>2026-04-01T16:15:00+00:00</published>
-  </entry>
-  <entry>
     <id>20cde66f-bdbb-4e5e-8edf-f72bb7635681</id>
     <title>Nike Resets Digital Strategy with Strong Push on AI and Technology Transformation</title>
     <updated>2026-04-01T16:15:00+00:00</updated>
@@ -5494,6 +5483,17 @@
     <summary>Brands: Nike | Categories: Digital Transformation, Social | Source: infotechlead.com</summary>
     <category term="Nike" label="Nike"/>
     <category term="social" label="Social"/>
+    <category term="digital_transformation" label="Digital Transformation"/>
+    <published>2026-04-01T16:15:00+00:00</published>
+  </entry>
+  <entry>
+    <id>dd56c235-fe91-4592-8473-6444d411aae2</id>
+    <title>Nike sued after customer personal information was exposed</title>
+    <updated>2026-04-01T16:15:00+00:00</updated>
+    <link href="https://kyma.com/dsw-living/consumer/2026/04/01/nike-sued-after-customers-personal-information-was-exposed/"/>
+    <summary>Brands: Nike | Categories: Digital Transformation, Governance | Source: kyma.com</summary>
+    <category term="Nike" label="Nike"/>
+    <category term="governance" label="Governance"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-04-01T16:15:00+00:00</published>
   </entry>
@@ -5514,8 +5514,8 @@
     <link href="https://www.retaildive.com/news/aerosoles-owner-buy-allbirds-39-million/816188/"/>
     <summary>Brands: Allbirds | Categories: Governance, Social | Source: retaildive.com</summary>
     <category term="Allbirds" label="Allbirds"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-04-01T18:30:00+00:00</published>
   </entry>
   <entry>
@@ -5605,8 +5605,8 @@
     <updated>2026-04-06T20:14:48+00:00</updated>
     <link href="https://wwd.com/footwear-news/shoe-industry-news/nike-ruling-verdict-patent-dispute-lululemon-flyknit-1238888179/"/>
     <summary>Brands: Lululemon, Nike | Categories: Governance | Source: Footwear News</summary>
-    <category term="Nike" label="Nike"/>
     <category term="Lululemon" label="Lululemon"/>
+    <category term="Nike" label="Nike"/>
     <category term="governance" label="Governance"/>
     <published>2026-04-06T20:14:48+00:00</published>
   </entry>
@@ -5699,8 +5699,8 @@
     <link href="https://www.ibtimes.com.au/under-armour-stock-jumps-47-627-turnaround-momentum-builds-april-2026-1865994"/>
     <summary>Brands: Under Armour | Categories: Digital Transformation, Environmental, Governance | Source: International Business Times</summary>
     <category term="Under Armour" label="Under Armour"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-04-10T05:07:43+00:00</published>
   </entry>
@@ -5814,9 +5814,9 @@
     <link href="https://www.kagstv.com/article/news/local/texas/texas-ag-ken-paxton-investigating-lululemon-over-potentially-harmful-chemicals-in-its-products/287-7c257954-b83f-46e6-9c1f-d35df8541f16"/>
     <summary>Brands: Lululemon | Categories: Environmental, Governance, Social | Source: kagstv.com</summary>
     <category term="Lululemon" label="Lululemon"/>
+    <category term="governance" label="Governance"/>
     <category term="social" label="Social"/>
     <category term="environmental" label="Environmental"/>
-    <category term="governance" label="Governance"/>
     <published>2026-04-13T20:00:00+00:00</published>
   </entry>
   <entry>
@@ -5826,9 +5826,9 @@
     <link href="https://dailyhive.com/canada/lululemon-investigation-alleged-toxic-chemicals"/>
     <summary>Brands: Lululemon | Categories: Environmental, Governance, Social | Source: dailyhive.com</summary>
     <category term="Lululemon" label="Lululemon"/>
+    <category term="governance" label="Governance"/>
     <category term="social" label="Social"/>
     <category term="environmental" label="Environmental"/>
-    <category term="governance" label="Governance"/>
     <published>2026-04-13T20:30:00+00:00</published>
   </entry>
   <entry>
@@ -5838,9 +5838,9 @@
     <link href="https://wchstv.com/news/nation-world/texas-attorney-general-launches-investigation-into-lululemon-over-chemical-concerns"/>
     <summary>Brands: Lululemon | Categories: Environmental, Governance, Social | Source: wchstv.com</summary>
     <category term="Lululemon" label="Lululemon"/>
+    <category term="governance" label="Governance"/>
     <category term="social" label="Social"/>
     <category term="environmental" label="Environmental"/>
-    <category term="governance" label="Governance"/>
     <published>2026-04-13T21:15:00+00:00</published>
   </entry>
   <entry>
@@ -5850,9 +5850,9 @@
     <link href="https://www.breitbart.com/politics/2026/04/13/texas-launches-investigation-into-lululemon-over-potential-presence-of-forever-chemicals-in-apparel/"/>
     <summary>Brands: Lululemon | Categories: Environmental, Governance, Social | Source: breitbart.com</summary>
     <category term="Lululemon" label="Lululemon"/>
+    <category term="governance" label="Governance"/>
     <category term="social" label="Social"/>
     <category term="environmental" label="Environmental"/>
-    <category term="governance" label="Governance"/>
     <published>2026-04-13T21:30:00+00:00</published>
   </entry>
   <entry>
@@ -5862,8 +5862,8 @@
     <link href="https://us.headtopics.com/news/texas-attorney-general-launches-probe-into-lululemon-s-82179042"/>
     <summary>Brands: Lululemon | Categories: Environmental, Governance</summary>
     <category term="Lululemon" label="Lululemon"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2026-04-13T22:06:53+00:00</published>
   </entry>
   <entry>
@@ -5873,8 +5873,8 @@
     <link href="https://www.straitstimes.com/world/texas-attorney-general-probes-lululemon-over-potential-forever-chemicals-in-its-activewear"/>
     <summary>Brands: Lululemon | Categories: Environmental, Governance | Source: straitstimes.com</summary>
     <category term="Lululemon" label="Lululemon"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2026-04-14T04:45:00+00:00</published>
   </entry>
   <entry>
@@ -5884,9 +5884,9 @@
     <link href="https://english.aawsat.com/fashion/5262072-texas-attorney-general-probes-lululemon-over-potential-forever-chemicals"/>
     <summary>Brands: Lululemon | Categories: Environmental, Governance, Social | Source: english.aawsat.com</summary>
     <category term="Lululemon" label="Lululemon"/>
+    <category term="governance" label="Governance"/>
     <category term="social" label="Social"/>
     <category term="environmental" label="Environmental"/>
-    <category term="governance" label="Governance"/>
     <published>2026-04-14T08:15:00+00:00</published>
   </entry>
   <entry>
@@ -5896,9 +5896,9 @@
     <link href="https://www.ibtimes.co.uk/texas-ag-investigates-lululemon-toxic-chemicals-1791642"/>
     <summary>Brands: Lululemon | Categories: Environmental, Governance, Social | Source: ibtimes.co.uk</summary>
     <category term="Lululemon" label="Lululemon"/>
+    <category term="governance" label="Governance"/>
     <category term="social" label="Social"/>
     <category term="environmental" label="Environmental"/>
-    <category term="governance" label="Governance"/>
     <published>2026-04-14T15:30:00+00:00</published>
   </entry>
   <entry>
@@ -5912,17 +5912,6 @@
     <published>2026-04-15T11:15:00+00:00</published>
   </entry>
   <entry>
-    <id>f68b7756-8b23-4a5e-bdc8-b27b408d466b</id>
-    <title>Lululemon Under Pressure as Texas Questions the Gap Between Marketing and PFAS Claims</title>
-    <updated>2026-04-15T13:00:00+00:00</updated>
-    <link href="https://www.el-balad.com/16913743"/>
-    <summary>Brands: Lululemon | Categories: Environmental, Governance | Source: el-balad.com</summary>
-    <category term="Lululemon" label="Lululemon"/>
-    <category term="environmental" label="Environmental"/>
-    <category term="governance" label="Governance"/>
-    <published>2026-04-15T13:00:00+00:00</published>
-  </entry>
-  <entry>
     <id>98d55971-3679-431b-904d-ad4ab4da832d</id>
     <title>The North Face latest camping gear ditches zips and it actually makes sense</title>
     <updated>2026-04-15T13:00:00+00:00</updated>
@@ -5930,6 +5919,17 @@
     <summary>Brands: The North Face | Categories: Social | Source: t3.com</summary>
     <category term="The North Face" label="The North Face"/>
     <category term="social" label="Social"/>
+    <published>2026-04-15T13:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>f68b7756-8b23-4a5e-bdc8-b27b408d466b</id>
+    <title>Lululemon Under Pressure as Texas Questions the Gap Between Marketing and PFAS Claims</title>
+    <updated>2026-04-15T13:00:00+00:00</updated>
+    <link href="https://www.el-balad.com/16913743"/>
+    <summary>Brands: Lululemon | Categories: Environmental, Governance | Source: el-balad.com</summary>
+    <category term="Lululemon" label="Lululemon"/>
+    <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2026-04-15T13:00:00+00:00</published>
   </entry>
   <entry>
@@ -5970,8 +5970,8 @@
     <link href="https://www.nytimes.com/athletic/7197713/2026/04/15/lawsuit-adidas-gender-discrimination-whistleblower/"/>
     <summary>Brands: Adidas | Categories: Governance, Social | Source: Theathleticuk</summary>
     <category term="Adidas" label="Adidas"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-04-15T19:51:54+00:00</published>
   </entry>
   <entry>
@@ -5981,9 +5981,9 @@
     <link href="http://africa.chinadaily.com.cn/a/202604/16/WS69e038e3a310d6866eb43b53.html"/>
     <summary>Brands: Lululemon | Categories: Environmental, Governance, Social | Source: africa.chinadaily.com.cn</summary>
     <category term="Lululemon" label="Lululemon"/>
+    <category term="governance" label="Governance"/>
     <category term="social" label="Social"/>
     <category term="environmental" label="Environmental"/>
-    <category term="governance" label="Governance"/>
     <published>2026-04-16T02:45:00+00:00</published>
   </entry>
   <entry>
@@ -6013,8 +6013,8 @@
     <link href="https://www.wgbh.org/news/local/2026-04-17/nike-takes-down-controversial-sign-on-newbury-street-ahead-of-boston-marathon"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: wgbh.org</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-04-17T20:15:00+00:00</published>
   </entry>
   <entry>
@@ -6035,8 +6035,8 @@
     <link href="https://runningmagazine.ca/sections/runs-races/nike-removes-controversial-boston-marathon-sign/"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: runningmagazine.ca</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-04-17T23:30:00+00:00</published>
   </entry>
   <entry>
@@ -6046,8 +6046,8 @@
     <link href="https://wwd.com/footwear-news/shoe-industry-news/adidas-lindsay-gregg-gender-discrimination-retaliation-1238919692/"/>
     <summary>Brands: Adidas | Categories: Governance, Social | Source: wwd.com</summary>
     <category term="Adidas" label="Adidas"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-04-18T01:00:00+00:00</published>
   </entry>
   <entry>
@@ -6057,8 +6057,8 @@
     <link href="https://www.retaildive.com/news/allbirds-downfall-sale-newbird-ai-pivot-eating-crow/817828/"/>
     <summary>Brands: Allbirds | Categories: Environmental, Governance | Source: retaildive.com</summary>
     <category term="Allbirds" label="Allbirds"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2026-04-20T14:15:00+00:00</published>
   </entry>
   <entry>
@@ -6068,8 +6068,8 @@
     <link href="https://www.thetimes.com/uk/transport/article/nike-accused-shaming-parkrun-walkers-ad-campaign-bgtvflgsw"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: The Times</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-04-20T17:56:04+00:00</published>
   </entry>
   <entry>
@@ -6079,8 +6079,8 @@
     <link href="https://www.breitbart.com/sports/2026/04/20/nike-pulls-walkers-tolerated-ad-amid-accusations-of-pace-shaming-ahead-of-boston-marathon/"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: Brietbart</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-04-20T18:29:14+00:00</published>
   </entry>
   <entry>
@@ -6110,8 +6110,8 @@
     <link href="https://www.dailymail.com/news/article-15749831/Nike-accused-shaming-Parkrun-walkers.html"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: dailymail.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-04-21T02:45:00+00:00</published>
   </entry>
   <entry>
@@ -6121,8 +6121,8 @@
     <link href="https://www.ktsa.com/nike-withdraws-boston-marathon-advertisement-amid-pace-shaming-controversy/"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: ktsa.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-04-21T14:15:00+00:00</published>
   </entry>
   <entry>
@@ -6163,8 +6163,8 @@
     <link href="https://www.foxnews.com/media/nike-criticized-walking-back-boston-marathon-ad-following-pace-shaming-backlash"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: Fox News</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-04-21T18:08:16+00:00</published>
   </entry>
   <entry>
@@ -6198,21 +6198,21 @@
     <published>2026-04-23T12:59:56+00:00</published>
   </entry>
   <entry>
-    <id>3963cc34-23b9-44e8-bc03-b5b1ba2dffd1</id>
-    <title>Lulu stock : Lululemon shares sink after CEO from Nike unimpressed</title>
-    <updated>2026-04-23T15:15:00+00:00</updated>
-    <link href="https://www.bnnbloomberg.ca/business/2026/04/23/lululemon-sinks-after-new-ceo-hire-from-nike-fails-to-impress-investors/"/>
-    <summary>Brands: Lululemon | Categories: Governance | Source: bnnbloomberg.ca</summary>
-    <category term="Lululemon" label="Lululemon"/>
-    <category term="governance" label="Governance"/>
-    <published>2026-04-23T15:15:00+00:00</published>
-  </entry>
-  <entry>
     <id>7cd32ebc-6322-4f38-a530-1a39e031d807</id>
     <title>Lululemon Athletica New CEO Pick Triggers Transition Jitters , Stock Slides - Lululemon Athletica ( NASDAQ : </title>
     <updated>2026-04-23T15:15:00+00:00</updated>
     <link href="https://www.benzinga.com/trading-ideas/movers/26/04/52003063/lululemon-athletica-new-ceo-pick-triggers-transition-jitters-stock-slides"/>
     <summary>Brands: Lululemon | Categories: Governance | Source: benzinga.com</summary>
+    <category term="Lululemon" label="Lululemon"/>
+    <category term="governance" label="Governance"/>
+    <published>2026-04-23T15:15:00+00:00</published>
+  </entry>
+  <entry>
+    <id>3963cc34-23b9-44e8-bc03-b5b1ba2dffd1</id>
+    <title>Lulu stock : Lululemon shares sink after CEO from Nike unimpressed</title>
+    <updated>2026-04-23T15:15:00+00:00</updated>
+    <link href="https://www.bnnbloomberg.ca/business/2026/04/23/lululemon-sinks-after-new-ceo-hire-from-nike-fails-to-impress-investors/"/>
+    <summary>Brands: Lululemon | Categories: Governance | Source: bnnbloomberg.ca</summary>
     <category term="Lululemon" label="Lululemon"/>
     <category term="governance" label="Governance"/>
     <published>2026-04-23T15:15:00+00:00</published>
@@ -6264,8 +6264,8 @@
     <link href="https://www.businessinsider.com/read-memo-nike-reduces-workforce-1-400-roles-tech-shifts-2026-4"/>
     <summary>Brands: Nike | Categories: Digital Transformation, Governance, Social | Source: Business Insider</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-04-23T23:01:37+00:00</published>
   </entry>
@@ -6296,8 +6296,8 @@
     <link href="https://www.deccanherald.com/business/companies/struggling-nike-will-cut-around-1400-jobs-in-efficiency-push-3979033"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: Deccan Herald</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-04-24T00:48:37+00:00</published>
   </entry>
   <entry>
@@ -6307,8 +6307,8 @@
     <link href="https://www.el-balad.com/16922054"/>
     <summary>Brands: Nike | Categories: Digital Transformation, Governance, Social | Source: el-balad.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-04-24T04:45:00+00:00</published>
   </entry>
@@ -6330,8 +6330,8 @@
     <link href="https://www.independent.co.uk/bulletin/news/nike-layoffs-job-cuts-profits-sales-b2964088.html"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: The Independent</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-04-24T05:45:27+00:00</published>
   </entry>
   <entry>
@@ -6341,8 +6341,8 @@
     <link href="https://www.independent.co.uk/us/money/nike-layoffs-job-cuts-sales-slump-b2964035.html"/>
     <summary>Brands: Nike | Categories: Digital Transformation, Governance, Social | Source: independent.co.uk</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-04-24T07:00:00+00:00</published>
   </entry>
@@ -6363,8 +6363,8 @@
     <link href="https://www.hcamag.com/us/specialization/change-management/nike-to-lay-off-about-1400-people-under-global-restructuring/572944"/>
     <summary>Brands: Nike | Categories: Digital Transformation, Governance, Social | Source: hcamag.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-04-24T08:15:00+00:00</published>
   </entry>
@@ -6375,22 +6375,10 @@
     <link href="https://www.marketscreener.com/news/nike-slashes-headcount-again-to-accelerate-turnaround-ce7f59ded081f72d"/>
     <summary>Brands: Nike | Categories: Digital Transformation, Governance, Social | Source: marketscreener.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-04-24T08:15:00+00:00</published>
-  </entry>
-  <entry>
-    <id>a8e23af2-7e44-49c3-a410-df7e55f087e2</id>
-    <title>Nike to lay off 1400 , majority cuts to be in technology team ; COO Venkatesh Alagirisamy says in memo : This is not a new … </title>
-    <updated>2026-04-24T09:00:00+00:00</updated>
-    <link href="https://timesofindia.indiatimes.com/technology/tech-news/nike-to-lay-off-1400-majority-cuts-to-be-in-technology-team-coo-venkatesh-alagirisamy-says-in-memo-this-is-not-a-new-/articleshow/130487559.cms"/>
-    <summary>Brands: Nike | Categories: Digital Transformation, Governance, Social | Source: timesofindia.indiatimes.com</summary>
-    <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
-    <category term="governance" label="Governance"/>
-    <category term="digital_transformation" label="Digital Transformation"/>
-    <published>2026-04-24T09:00:00+00:00</published>
   </entry>
   <entry>
     <id>27fc2c53-7a18-483d-9816-d0b5ada82875</id>
@@ -6413,14 +6401,26 @@
     <published>2026-04-24T09:00:00+00:00</published>
   </entry>
   <entry>
+    <id>a8e23af2-7e44-49c3-a410-df7e55f087e2</id>
+    <title>Nike to lay off 1400 , majority cuts to be in technology team ; COO Venkatesh Alagirisamy says in memo : This is not a new … </title>
+    <updated>2026-04-24T09:00:00+00:00</updated>
+    <link href="https://timesofindia.indiatimes.com/technology/tech-news/nike-to-lay-off-1400-majority-cuts-to-be-in-technology-team-coo-venkatesh-alagirisamy-says-in-memo-this-is-not-a-new-/articleshow/130487559.cms"/>
+    <summary>Brands: Nike | Categories: Digital Transformation, Governance, Social | Source: timesofindia.indiatimes.com</summary>
+    <category term="Nike" label="Nike"/>
+    <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
+    <category term="digital_transformation" label="Digital Transformation"/>
+    <published>2026-04-24T09:00:00+00:00</published>
+  </entry>
+  <entry>
     <id>1c253011-dcae-4e58-ac39-9de3c05ffe13</id>
     <title>Nike reorganises global operations , with about 1 , 400 roles affected worldwide</title>
     <updated>2026-04-24T09:30:00+00:00</updated>
     <link href="https://www.humanresourcesonline.net/nike-reorganises-global-operations-with-about-1-400-roles-affected-worldwide"/>
     <summary>Brands: Nike | Categories: Digital Transformation, Governance, Social | Source: humanresourcesonline.net</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-04-24T09:30:00+00:00</published>
   </entry>
@@ -6442,8 +6442,8 @@
     <link href="https://newseisamay.com/business/industry/nike-cuts-1400-jobs-globally-tech-teams-bear-the-brunt-6c51395e-5205-4eea-9699-f8282726841a.cms"/>
     <summary>Brands: Nike | Categories: Digital Transformation, Governance, Social | Source: Newseisamay</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-04-24T11:01:46+00:00</published>
   </entry>
@@ -6498,25 +6498,25 @@
     <published>2026-04-24T20:37:05+00:00</published>
   </entry>
   <entry>
-    <id>2f9e828a-c05d-4009-818b-cfba92b02122</id>
-    <title>Nike to lay off 1 , 400 workers worldwide , including from Beaverton headquarters</title>
-    <updated>2026-04-25T00:15:00+00:00</updated>
-    <link href="https://www.kptv.com/2026/04/24/nike-lay-off-1400-workers-worldwide-including-beaverton-headquarters/"/>
-    <summary>Brands: Nike | Categories: Governance, Social | Source: kptv.com</summary>
-    <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
-    <category term="governance" label="Governance"/>
-    <published>2026-04-25T00:15:00+00:00</published>
-  </entry>
-  <entry>
     <id>77da484d-fe1e-4bac-9b9a-90d7ed5dc654</id>
     <title>Nike to cut 1 , 400 jobs - ABC Columbia</title>
     <updated>2026-04-25T00:15:00+00:00</updated>
     <link href="https://www.abccolumbia.com/2026/04/24/nike-to-cut-1400-jobs/"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: abccolumbia.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
+    <published>2026-04-25T00:15:00+00:00</published>
+  </entry>
+  <entry>
+    <id>2f9e828a-c05d-4009-818b-cfba92b02122</id>
+    <title>Nike to lay off 1 , 400 workers worldwide , including from Beaverton headquarters</title>
+    <updated>2026-04-25T00:15:00+00:00</updated>
+    <link href="https://www.kptv.com/2026/04/24/nike-lay-off-1400-workers-worldwide-including-beaverton-headquarters/"/>
+    <summary>Brands: Nike | Categories: Governance, Social | Source: kptv.com</summary>
+    <category term="Nike" label="Nike"/>
+    <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-04-25T00:15:00+00:00</published>
   </entry>
   <entry>
@@ -6536,22 +6536,10 @@
     <link href="https://www.newstribune.com/news/2026/apr/25/struggling-nike-to-cut-around-1400-jobs-in/"/>
     <summary>Brands: Nike | Categories: Digital Transformation, Governance, Social | Source: newstribune.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-04-25T11:30:00+00:00</published>
-  </entry>
-  <entry>
-    <id>222641a6-6d2d-46c1-ac0c-994f6418df13</id>
-    <title>Nike Unveils Latest Round : 1 , 400 Job Cuts Announced</title>
-    <updated>2026-04-25T22:45:00+00:00</updated>
-    <link href="https://www.el-balad.com/16924027"/>
-    <summary>Brands: Nike | Categories: Digital Transformation, Governance, Social | Source: el-balad.com</summary>
-    <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
-    <category term="governance" label="Governance"/>
-    <category term="digital_transformation" label="Digital Transformation"/>
-    <published>2026-04-25T22:45:00+00:00</published>
   </entry>
   <entry>
     <id>f75771c6-d9a8-409c-a304-c3ea69149dc0</id>
@@ -6561,6 +6549,18 @@
     <summary>Brands: Brooks Running | Categories: Environmental | Source: shopping.yahoo.com</summary>
     <category term="Brooks Running" label="Brooks Running"/>
     <category term="environmental" label="Environmental"/>
+    <published>2026-04-25T22:45:00+00:00</published>
+  </entry>
+  <entry>
+    <id>222641a6-6d2d-46c1-ac0c-994f6418df13</id>
+    <title>Nike Unveils Latest Round : 1 , 400 Job Cuts Announced</title>
+    <updated>2026-04-25T22:45:00+00:00</updated>
+    <link href="https://www.el-balad.com/16924027"/>
+    <summary>Brands: Nike | Categories: Digital Transformation, Governance, Social | Source: el-balad.com</summary>
+    <category term="Nike" label="Nike"/>
+    <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
+    <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-04-25T22:45:00+00:00</published>
   </entry>
   <entry>
@@ -6601,8 +6601,8 @@
     <link href="https://www.just-style.com/news/nike-to-streamline-operations-with-supply-chain-shake-up/"/>
     <summary>Brands: Nike | Categories: Digital Transformation, Governance, Social | Source: just-style.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-04-27T15:00:00+00:00</published>
   </entry>
@@ -6677,8 +6677,8 @@
     <link href="https://www.dailymail.com/sport/othersports/article-15773943/abby-steiner-sues-puma-mercedes-massachusetts.html"/>
     <summary>Brands: Puma | Categories: Governance, Social | Source: Mail Online</summary>
     <category term="Puma" label="Puma"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-04-29T16:05:32+00:00</published>
   </entry>
   <entry>
@@ -6718,8 +6718,8 @@
     <link href="https://wwd.com/footwear-news/shoe-industry-news/nike-just-sign-it-oregon-teachers-asian-arment-workers-1238934700/"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: Footwear News</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-04-30T12:42:24+00:00</published>
   </entry>
   <entry>
@@ -6769,8 +6769,8 @@
     <link href="https://www.fool.com/investing/2026/05/03/why-nike-stock-lost-16-in-april/"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: Fool</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-05-03T04:30:00+00:00</published>
   </entry>
   <entry>
@@ -6780,8 +6780,8 @@
     <link href="https://finance.yahoo.com/markets/stocks/articles/nike-slashes-1-400-more-103500902.html"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: finance.yahoo.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-05-03T11:00:00+00:00</published>
   </entry>
   <entry>
@@ -6791,8 +6791,8 @@
     <link href="https://www.newser.com/story/388156/she-helped-bring-down-an-elite-nike-coach-now-renewal.html"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: newser.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-05-03T13:30:00+00:00</published>
   </entry>
   <entry>
@@ -6844,8 +6844,8 @@
     <link href="https://finance.yahoo.com/markets/stocks/articles/nike-down-32-under-investigation-113500675.html"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: Yahoo! News</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-05-06T11:35:00+00:00</published>
   </entry>
   <entry>
@@ -6855,8 +6855,8 @@
     <link href="https://www.dailymail.com/news/article-15805803/nike-lawsuit-discriminating-white-job-applicants.html"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: Mail Online</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-05-10T20:29:04+00:00</published>
   </entry>
   <entry>
@@ -6865,8 +6865,8 @@
     <updated>2026-05-11T11:07:04+00:00</updated>
     <link href="https://us.headtopics.com/news/the-otis-college-of-art-and-design-students-designing-83218179"/>
     <summary>Brands: Nike, Vuori | Categories: Social | Source: Headtopics</summary>
-    <category term="Nike" label="Nike"/>
     <category term="Vuori" label="Vuori"/>
+    <category term="Nike" label="Nike"/>
     <category term="social" label="Social"/>
     <published>2026-05-11T11:07:04+00:00</published>
   </entry>
@@ -6972,21 +6972,21 @@
     <published>2026-05-17T21:30:00+00:00</published>
   </entry>
   <entry>
-    <id>c2c6df9a-c30a-4790-9341-ad5dfb0b7b7f</id>
-    <title>Baystreet . ca - Lululemon Strikes Back At Founder Chip Wilson</title>
-    <updated>2026-05-18T18:45:00+00:00</updated>
-    <link href="http://baystreet.ca/stockstowatch/23316/Lululemon-Strikes-Back-At-Founder-Chip-Wilson"/>
-    <summary>Brands: Lululemon | Categories: Governance | Source: baystreet.ca</summary>
-    <category term="Lululemon" label="Lululemon"/>
-    <category term="governance" label="Governance"/>
-    <published>2026-05-18T18:45:00+00:00</published>
-  </entry>
-  <entry>
     <id>420346b2-9e72-46df-a60b-885e1f34c4b5</id>
     <title>Lululemon Criticises Chip Wilson , Sets Proxy Vote</title>
     <updated>2026-05-18T18:45:00+00:00</updated>
     <link href="https://www.businessoffashion.com/news/retail/lululemon-criticises-chip-wilson-sets-proxy-vote/"/>
     <summary>Brands: Lululemon | Categories: Governance | Source: businessoffashion.com</summary>
+    <category term="Lululemon" label="Lululemon"/>
+    <category term="governance" label="Governance"/>
+    <published>2026-05-18T18:45:00+00:00</published>
+  </entry>
+  <entry>
+    <id>c2c6df9a-c30a-4790-9341-ad5dfb0b7b7f</id>
+    <title>Baystreet . ca - Lululemon Strikes Back At Founder Chip Wilson</title>
+    <updated>2026-05-18T18:45:00+00:00</updated>
+    <link href="http://baystreet.ca/stockstowatch/23316/Lululemon-Strikes-Back-At-Founder-Chip-Wilson"/>
+    <summary>Brands: Lululemon | Categories: Governance | Source: baystreet.ca</summary>
     <category term="Lululemon" label="Lululemon"/>
     <category term="governance" label="Governance"/>
     <published>2026-05-18T18:45:00+00:00</published>
@@ -7038,8 +7038,8 @@
     <link href="https://observer.com/2026/05/lululemon-founder-chip-wilson-boardroom-fight/"/>
     <summary>Brands: Lululemon | Categories: Governance, Social | Source: observer.com</summary>
     <category term="Lululemon" label="Lululemon"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-05-20T17:15:00+00:00</published>
   </entry>
   <entry>
@@ -7254,8 +7254,8 @@
     <link href="https://www.justjared.com/2026/06/02/stephen-curry-signs-deal-with-controversial-chinese-apparel-company-li-ning-banned-from-u-s/"/>
     <summary>Brands: Li-Ning | Categories: Governance, Social | Source: Just Jared</summary>
     <category term="Li-Ning" label="Li-Ning"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-06-02T17:39:29+00:00</published>
   </entry>
   <entry>
@@ -7265,8 +7265,8 @@
     <link href="https://www.dailymail.com/sport/nba/article-15868927/Stephen-Curry-labeled-communist-ex-NBA-rival-Chinese.html"/>
     <summary>Brands: Li-Ning | Categories: Governance, Social | Source: Mail Online</summary>
     <category term="Li-Ning" label="Li-Ning"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-06-02T23:03:24+00:00</published>
   </entry>
   <entry>
@@ -7276,8 +7276,8 @@
     <link href="https://www.yardbarker.com/nba/articles/steph_currys_bitter_nba_rival_is_accusing_him_of_being_a_communist/s1_17759_43914977"/>
     <summary>Brands: Li-Ning | Categories: Governance, Social | Source: Yardbarker</summary>
     <category term="Li-Ning" label="Li-Ning"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-06-03T20:12:28+00:00</published>
   </entry>
   <entry>
@@ -7287,8 +7287,8 @@
     <link href="https://www.brisbanetimes.com.au/business/consumer-affairs/why-clothing-giant-patagonia-is-suing-a-drag-queen-20260603-p603f1.html"/>
     <summary>Brands: Patagonia | Categories: Governance, Social | Source: brisbanetimes.com.au</summary>
     <category term="Patagonia" label="Patagonia"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-06-03T23:15:00+00:00</published>
   </entry>
   <entry>
@@ -7298,8 +7298,8 @@
     <link href="https://nypost.com/2026/06/03/us-news/patagonia-drags-performer-pattie-gonia-to-trial-for-trademark-claims/"/>
     <summary>Brands: Patagonia | Categories: Governance, Social | Source: nypost.com</summary>
     <category term="Patagonia" label="Patagonia"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-06-03T23:30:00+00:00</published>
   </entry>
   <entry>
@@ -7364,16 +7364,6 @@
     <published>2026-06-04T23:06:35+00:00</published>
   </entry>
   <entry>
-    <id>05e8ef12-39b5-47db-a590-95249f1debe0</id>
-    <title>Lululemon Flubbed the Quarter , and the Founder Wont Say a Bad Word</title>
-    <updated>2026-06-05T11:15:00+00:00</updated>
-    <link href="https://www.fool.com/investing/2026/06/05/lululemon-flubbed-the-quarter-and-the-founder-wont-say-a-bad-word/?source=iedfolrf0000001"/>
-    <summary>Brands: Lululemon | Categories: Governance | Source: fool.com</summary>
-    <category term="Lululemon" label="Lululemon"/>
-    <category term="governance" label="Governance"/>
-    <published>2026-06-05T11:15:00+00:00</published>
-  </entry>
-  <entry>
     <id>8ff7fb41-3e7f-45eb-9b70-4cc68a66ba6c</id>
     <title>Ad of the Day : Nike upstages Adidas World Cup</title>
     <updated>2026-06-05T11:15:00+00:00</updated>
@@ -7384,14 +7374,24 @@
     <published>2026-06-05T11:15:00+00:00</published>
   </entry>
   <entry>
+    <id>05e8ef12-39b5-47db-a590-95249f1debe0</id>
+    <title>Lululemon Flubbed the Quarter , and the Founder Wont Say a Bad Word</title>
+    <updated>2026-06-05T11:15:00+00:00</updated>
+    <link href="https://www.fool.com/investing/2026/06/05/lululemon-flubbed-the-quarter-and-the-founder-wont-say-a-bad-word/?source=iedfolrf0000001"/>
+    <summary>Brands: Lululemon | Categories: Governance | Source: fool.com</summary>
+    <category term="Lululemon" label="Lululemon"/>
+    <category term="governance" label="Governance"/>
+    <published>2026-06-05T11:15:00+00:00</published>
+  </entry>
+  <entry>
     <id>644934dd-3cd6-44a0-b553-e07946d85db1</id>
     <title>Lululemon shares slump after bleak sales update amid spat with founder</title>
     <updated>2026-06-05T12:19:13+00:00</updated>
     <link href="https://www.dailymail.com/money/markets/article-15876903/Lululemon-shares-slump-bleak-sales-update-amid-spat-founder-leggings-fiasco.html"/>
     <summary>Brands: Lululemon | Categories: Environmental, Governance | Source: Mail Online</summary>
     <category term="Lululemon" label="Lululemon"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2026-06-05T12:19:13+00:00</published>
   </entry>
   <entry>
@@ -7474,9 +7474,9 @@
     <summary>Brands: Arc'teryx, Lululemon | Categories: Environmental, Governance, Social | Source: Yahoo! News</summary>
     <category term="Lululemon" label="Lululemon"/>
     <category term="Arc'teryx" label="Arc'teryx"/>
+    <category term="governance" label="Governance"/>
     <category term="social" label="Social"/>
     <category term="environmental" label="Environmental"/>
-    <category term="governance" label="Governance"/>
     <published>2026-06-17T12:22:57+00:00</published>
   </entry>
   <entry>
@@ -7491,6 +7491,17 @@
     <published>2026-06-17T18:45:00+00:00</published>
   </entry>
   <entry>
+    <id>ea304c54-960b-4a88-a14e-64ea132dc2d1</id>
+    <title>Decathlon Strengthens Its Value - Sharing Model and Launches the Decathlon Seed</title>
+    <updated>2026-06-17T19:15:00+00:00</updated>
+    <link href="https://www.webwire.com/ViewPressRel.asp?aId=356402"/>
+    <summary>Brands: Decathlon | Categories: Governance, Social | Source: webwire.com</summary>
+    <category term="Decathlon" label="Decathlon"/>
+    <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
+    <published>2026-06-17T19:15:00+00:00</published>
+  </entry>
+  <entry>
     <id>c4f1b564-34ac-4c85-96d5-8763fb142146</id>
     <title>Allbirds becomes Smartbird , names new CEO amid AI shift</title>
     <updated>2026-06-17T19:15:00+00:00</updated>
@@ -7499,17 +7510,6 @@
     <category term="Allbirds" label="Allbirds"/>
     <category term="governance" label="Governance"/>
     <category term="digital_transformation" label="Digital Transformation"/>
-    <published>2026-06-17T19:15:00+00:00</published>
-  </entry>
-  <entry>
-    <id>ea304c54-960b-4a88-a14e-64ea132dc2d1</id>
-    <title>Decathlon Strengthens Its Value - Sharing Model and Launches the Decathlon Seed</title>
-    <updated>2026-06-17T19:15:00+00:00</updated>
-    <link href="https://www.webwire.com/ViewPressRel.asp?aId=356402"/>
-    <summary>Brands: Decathlon | Categories: Governance, Social | Source: webwire.com</summary>
-    <category term="Decathlon" label="Decathlon"/>
-    <category term="social" label="Social"/>
-    <category term="governance" label="Governance"/>
     <published>2026-06-17T19:15:00+00:00</published>
   </entry>
   <entry>
@@ -7561,8 +7561,8 @@
     <link href="https://techcrunch.com/2026/06/19/the-ceo-of-allbirds-new-ai-biz-has-a-plan-but-no-employees/"/>
     <summary>Brands: Allbirds | Categories: Environmental, Governance | Source: Tech Crunch</summary>
     <category term="Allbirds" label="Allbirds"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2026-06-19T13:00:00+00:00</published>
   </entry>
   <entry>
@@ -7593,9 +7593,9 @@
     <updated>2026-06-23T12:50:31+00:00</updated>
     <link href="https://sgbonline.com/study-adidas-scores-high-for-sustainability-credentials/"/>
     <summary>Brands: Adidas, Nike, The North Face | Categories: Environmental | Source: Sgb Online</summary>
-    <category term="Nike" label="Nike"/>
-    <category term="The North Face" label="The North Face"/>
     <category term="Adidas" label="Adidas"/>
+    <category term="The North Face" label="The North Face"/>
+    <category term="Nike" label="Nike"/>
     <category term="environmental" label="Environmental"/>
     <published>2026-06-23T12:50:31+00:00</published>
   </entry>
@@ -7606,8 +7606,8 @@
     <link href="https://sgbonline.com/study-adidas-scores-high-for-sustainability-perception/"/>
     <summary>Brands: Adidas, Nike, The North Face | Categories: Environmental | Source: Sgb Online</summary>
     <category term="Adidas" label="Adidas"/>
-    <category term="Nike" label="Nike"/>
     <category term="The North Face" label="The North Face"/>
+    <category term="Nike" label="Nike"/>
     <category term="environmental" label="Environmental"/>
     <published>2026-06-23T12:50:31+00:00</published>
   </entry>
@@ -7618,9 +7618,9 @@
     <link href="https://www.womenshealthmag.com/fitness/a71664439/lululemon-activewear-pfas/"/>
     <summary>Brands: Lululemon | Categories: Environmental, Governance, Social | Source: womenshealthmag.com</summary>
     <category term="Lululemon" label="Lululemon"/>
+    <category term="governance" label="Governance"/>
     <category term="social" label="Social"/>
     <category term="environmental" label="Environmental"/>
-    <category term="governance" label="Governance"/>
     <published>2026-06-23T17:45:00+00:00</published>
   </entry>
   <entry>
@@ -7630,8 +7630,8 @@
     <link href="https://www.cityam.com/adidas-calvin-klein-and-uniqlo-ads-banned-over-greenwashing/"/>
     <summary>Brands: Adidas | Categories: Environmental, Governance | Source: City A.m.</summary>
     <category term="Adidas" label="Adidas"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2026-06-23T23:01:00+00:00</published>
   </entry>
   <entry>
@@ -7671,8 +7671,8 @@
     <link href="https://inews.co.uk/news/business/under-armour-clothes-from-sweatshop-supplier-banned-4497529"/>
     <summary>Brands: Under Armour | Categories: Governance, Social | Source: Inews</summary>
     <category term="Under Armour" label="Under Armour"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-06-25T05:00:00+00:00</published>
   </entry>
   <entry>
@@ -7742,8 +7742,8 @@
     <link href="https://english.elpais.com/economy-and-business/2026-06-29/nike-stumbles-in-its-bid-to-get-back-on-track-we-are-a-brand-built-on-victory-but-victory-must-be-earned.html"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: El Pais</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-06-29T06:06:01+00:00</published>
   </entry>
   <entry>
@@ -7773,8 +7773,8 @@
     <link href="https://www.prnewswire.com/apac/news-releases/anta-groups-hemin-foundation-releases-2025-annual-report-rmb-2-billion-donation-funded-public-tertiary-hospital-to-open-within-the-year-302813889.html"/>
     <summary>Brands: Anta | Categories: Governance, Social | Source: Pr Newswire Apac</summary>
     <category term="Anta" label="Anta"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-06-30T00:59:00+00:00</published>
   </entry>
   <entry>
@@ -7826,8 +7826,8 @@
     <link href="https://fortune.com/2026/07/04/nike-earnings-elliott-hill-nascent-comeback/"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: Fortune</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-07-04T07:00:00+00:00</published>
   </entry>
   <entry>
@@ -7837,8 +7837,8 @@
     <link href="https://ng.shotoe.com/kanye-west-st_4539/news/adidas-cuts-ties-with-kanye-west-over-antisemitic-comments-sn_3953067/"/>
     <summary>Brands: Adidas | Categories: Governance, Social | Source: Shotoe Nigeria</summary>
     <category term="Adidas" label="Adidas"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-07-05T00:00:00+00:00</published>
   </entry>
   <entry>
@@ -7848,8 +7848,8 @@
     <link href="https://economictimes.indiatimes.com/news/new-updates/asics-ordered-to-pay-rs-10000-compensation-and-refund-rs-6499-to-cusomter-after-shoes-develop-sole-defect/articleshow/132198646.cms"/>
     <summary>Brands: ASICS | Categories: Governance, Social | Source: economictimes.indiatimes.com</summary>
     <category term="ASICS" label="ASICS"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-07-05T17:30:00+00:00</published>
   </entry>
   <entry>
@@ -7879,8 +7879,8 @@
     <link href="https://www.thehindubusinessline.com/news/adidas-expands-india-sourcing-with-new-evervan-kothari-plant-set-to-add-capacity/article71187905.ece"/>
     <summary>Brands: Adidas | Categories: Governance, Social | Source: The Hindu - Business Line</summary>
     <category term="Adidas" label="Adidas"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-07-06T15:47:56+00:00</published>
   </entry>
   <entry>
@@ -7900,8 +7900,8 @@
     <link href="https://sgbonline.com/exec-athleta-parent-levi-strauss-co-shuttering-kentucky-dc/"/>
     <summary>Brands: Athleta | Categories: Governance, Social | Source: Sgb Online</summary>
     <category term="Athleta" label="Athleta"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-07-08T12:29:28+00:00</published>
   </entry>
   <entry>
@@ -7961,8 +7961,8 @@
     <link href="https://tdpelmedia.com/nikes-comeback-is-falling-apart-as-costly-blunders-and-fierce-rivals-push-the-sportswear-giant-deeper-into-trouble/"/>
     <summary>Brands: Nike | Categories: Governance, Social | Source: Event Coverage</summary>
     <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-07-11T09:08:23+00:00</published>
   </entry>
   <entry>
@@ -7984,5 +7984,15 @@
     <category term="Puma" label="Puma"/>
     <category term="governance" label="Governance"/>
     <published>2026-07-13T21:06:46+00:00</published>
+  </entry>
+  <entry>
+    <id>2f543b14-9d17-4f69-8fb6-c9ddea8ae259</id>
+    <title>Inside Rollers’ P20 million Diadora partnership</title>
+    <updated>2026-07-14T12:44:52+00:00</updated>
+    <link href="https://weekendpost.co.bw/inside-rollers-p20-million-diadora-partnership/"/>
+    <summary>Brands: Diadora | Categories: Social | Source: Weekend Post</summary>
+    <category term="Diadora" label="Diadora"/>
+    <category term="social" label="Social"/>
+    <published>2026-07-14T12:44:52+00:00</published>
   </entry>
 </feed>
