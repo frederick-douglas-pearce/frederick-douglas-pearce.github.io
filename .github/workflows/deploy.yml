@@ -74,7 +74,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
@@ -82,7 +82,7 @@ jobs:
       - name: Install dependencies 💎
         run: bundle install --jobs 4
       - name: Setup Python 🐍
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.13"
           cache: "pip" # caching pip dependencies
@@ -104,7 +104,7 @@ jobs:
           npm install -g purgecss
           purgecss -c purgecss.config.js
       - name: Upload Pages artifact 📦
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: _site
 
@@ -141,7 +141,7 @@ jobs:
       - name: Deploy to GitHub Pages (attempt 1) 🚀
         id: deploy1
         continue-on-error: true
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
         with:
           timeout: 360000 # 6 min cap per attempt (default is 10 min); covers observed p100 (~323s)
 
@@ -153,7 +153,7 @@ jobs:
         id: deploy2
         if: steps.deploy1.outcome == 'failure'
         continue-on-error: true
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
         with:
           timeout: 360000
 
@@ -165,6 +165,6 @@ jobs:
       - name: Deploy to GitHub Pages (attempt 3, final) 🚀
         id: deploy3
         if: steps.deploy1.outcome == 'failure' && steps.deploy2.outcome == 'failure'
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
         with:
           timeout: 360000
