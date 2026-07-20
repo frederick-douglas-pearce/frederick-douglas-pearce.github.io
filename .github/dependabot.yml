@@ -1,0 +1,33 @@
+version: 2
+
+# Dependencies are pinned exactly so CI behaviour cannot change without a
+# commit. Dependabot is what keeps that from going stale: upgrades arrive as
+# reviewable PRs instead of silently at run time.
+#
+# Updates are grouped so each ecosystem opens one PR per week rather than one
+# per package.
+updates:
+  # prettier + @shopify/prettier-plugin-liquid, consumed by prettier.yml via
+  # npm ci. A bump here may require reformatting; the PR's own Prettier check
+  # will say so.
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      npm:
+        patterns:
+          - "*"
+
+  # Action versions in .github/workflows/. Does not cover tools installed
+  # inside run: steps — see the pinned prettier in prettier-html.yml.
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      actions:
+        patterns:
+          - "*"

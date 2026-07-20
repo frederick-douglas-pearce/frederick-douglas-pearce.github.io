@@ -19,7 +19,11 @@ jobs:
         uses: actions/setup-node@v4
 
       - name: Install Prettier
-        run: npm install -g prettier
+        # Pinned so formatting cannot change under us between manual runs. This
+        # job checks out gh-pages, which has no package.json, so it cannot use
+        # npm ci like the prettier.yml check does. Keep this version in step
+        # with the prettier pin in package.json on main.
+        run: npm install -g prettier@3.9.5
 
       - name: Check for Prettier
         run: npx prettier --version || echo "Prettier not found"
