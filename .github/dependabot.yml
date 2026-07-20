@@ -1,0 +1,33 @@
+version: 2
+
+# Dependencies are pinned exactly so CI behaviour cannot change without a
+# commit. Dependabot is what keeps that from going stale: upgrades arrive as
+# reviewable PRs instead of silently at run time.
+#
+# Monthly and grouped, deliberately. A prettier bump usually lands as a failing
+# PR that needs a reformat commit, so these are chores to be batched, not
+# notifications to be chased.
+updates:
+  # prettier + @shopify/prettier-plugin-liquid, consumed by prettier.yml via
+  # npm ci. A bump may require reformatting; the PR's own Prettier check says so.
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: monthly
+    groups:
+      npm:
+        patterns:
+          - "*"
+
+  # Action versions in .github/workflows/. Covers tags and SHA pins that carry
+  # a trailing version comment; it cannot bump a branch ref such as @main, so
+  # actions here should be pinned to a tag or a commented SHA to stay tracked.
+  # Does not cover tools installed inside run: steps.
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: monthly
+    groups:
+      actions:
+        patterns:
+          - "*"
