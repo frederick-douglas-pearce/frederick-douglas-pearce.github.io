@@ -35,46 +35,17 @@
     opacity="0.5"
   />
 
-  <!-- Name -->
-  <text
-    x="792"
-    y="120"
-    text-anchor="middle"
-    font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
-    font-size="64"
-    font-weight="700"
-    fill="#ffffff"
-    letter-spacing="2"
-  >
-    Frederick Douglas Pearce
-  </text>
-
   <!-- Tagline -->
   <text
     x="792"
-    y="180"
+    y="150"
     text-anchor="middle"
     font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
-    font-size="28"
+    font-size="40"
     font-weight="300"
     fill="#ffffff"
-    fill-opacity="0.85"
-    letter-spacing="4"
+    letter-spacing="6"
   >
-    FROM ROCKS TO ROWS
-  </text>
-
-  <!-- Subtitle -->
-  <text
-    x="792"
-    y="225"
-    text-anchor="middle"
-    font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
-    font-size="22"
-    font-weight="300"
-    fill="#ffffff"
-    fill-opacity="0.85"
-  >
-    Machine Learning &#x2022; Data Science &#x2022; Earth Science
+    Data. AI. Human.
   </text>
 </svg>
