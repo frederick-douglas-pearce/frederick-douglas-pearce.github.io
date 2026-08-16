@@ -14,3 +14,4 @@ vendor
 .playwright-mcp/
 .env
 assets/orcid_publications.bib
+a11y-baseline.json
