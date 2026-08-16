@@ -1446,3 +1446,84 @@ figure.cover {
     color: #23212d !important;
   }
 }
+
+// Badge and button contrast
+//
+// The Bootstrap/MDB contextual colours are tuned for decoration, not for
+// carrying white text at badge size (0.75rem), and four of them miss 4.5:1.
+// bg-success was the worst ratio anywhere on the site at 2.23:1 — effectively
+// unreadable with low vision.
+//
+// Each fill keeps its hue and saturation and is darkened only until it clears
+// the threshold, so "success" is still green and "danger" is still red. The
+// utilities carry !important upstream, so these have to as well.
+//
+//   fill           before  after   (against #ffffff text)
+//   bg-success     2.23    4.71
+//   bg-primary     3.56    4.69
+//   bg-secondary   3.83    4.64
+//   bg-danger      3.58    4.66
+.badge {
+  &.bg-success {
+    background-color: #008636 !important;
+  }
+
+  &.bg-primary,
+  &.btn-primary {
+    background-color: #1b6cf2 !important;
+  }
+
+  &.bg-secondary {
+    background-color: #9f53c6 !important;
+  }
+
+  &.bg-danger {
+    background-color: #ea0015 !important;
+  }
+}
+
+.btn-primary {
+  background-color: #1b6cf2 !important;
+  border-color: #1b6cf2 !important;
+}
+
+// The outline buttons use the same hues as *text* rather than as a fill, so
+// they need a value per theme — one that works on white cannot work on the
+// dark backgrounds and vice versa. The dark values are tuned against
+// $code-bg-color-dark (#2c3237), the lightest surface they appear on, so they
+// clear on the darker ones with room to spare.
+//
+// MDB declares these with !important and repeats the same colour across
+// :hover/:focus/:active, so the override has to match on both counts or the
+// interactive states snap back to the failing value.
+@mixin outline-button-colors($primary, $secondary) {
+  .btn-outline-primary {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:focus,
+    &.active {
+      color: $primary !important;
+    }
+  }
+
+  .btn-outline-secondary {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:focus,
+    &.active {
+      color: $secondary !important;
+    }
+  }
+}
+
+html[data-theme="light"] {
+  @include outline-button-colors(#1b6cf2, #9f53c6); // 4.69 / 4.64 on #ffffff
+}
+
+html[data-theme="dark"] {
+  @include outline-button-colors(#649bf6, #bc87d7); // 4.67 / 4.69 on #2c3237
+}
