@@ -178,6 +178,13 @@ ul.task-list input[type="checkbox"] {
     color: var(--global-text-color);
   }
 
+  // Card titles on the project pages were <h5> under an <h2>, which skips two
+  // levels. They are <h3> now — the size that made <h5> attractive is pinned
+  // here instead, so choosing the right level costs nothing visually.
+  h3.card-title {
+    font-size: 1.25rem;
+  }
+
   .card-body {
     padding: 1.25rem 1.25rem 1.25rem 1.25rem;
   }

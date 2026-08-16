@@ -35,7 +35,7 @@ The pipeline processes transactions through five integrated stages:
     <div class="col-12">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">Feature Engineering</h5>
+                <h3 class="card-title">Feature Engineering</h3>
                 <p class="card-text mb-0">Custom sklearn-compatible transformer generates 30 features from 15 raw inputs: timezone-aware temporal features, amount deviations, user behavior metrics, geographic risk indicators, and security composite scores.</p>
             </div>
         </div>
@@ -46,7 +46,7 @@ The pipeline processes transactions through five integrated stages:
     <div class="col-md-6 mb-3 mb-md-0">
         <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title">Model Inference</h5>
+                <h3 class="card-title">Model Inference</h3>
                 <p class="card-text mb-0">XGBoost classifier with tuned hyperparameters generates fraud probability scores with P95 latency under 40ms.</p>
             </div>
         </div>
@@ -54,7 +54,7 @@ The pipeline processes transactions through five integrated stages:
     <div class="col-md-6">
         <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title">Threshold Strategies</h5>
+                <h3 class="card-title">Threshold Strategies</h3>
                 <p class="card-text mb-0">Five configurable strategies enable precision-recall trade-offs for different business requirements.</p>
             </div>
         </div>
@@ -65,7 +65,7 @@ The pipeline processes transactions through five integrated stages:
     <div class="col-md-6 mb-3 mb-md-0">
         <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title">SHAP Explainability</h5>
+                <h3 class="card-title">SHAP Explainability</h3>
                 <p class="card-text mb-0">TreeSHAP explanations show top risk contributors for each prediction, enabling transparent fraud decisions.</p>
             </div>
         </div>
@@ -73,7 +73,7 @@ The pipeline processes transactions through five integrated stages:
     <div class="col-md-6">
         <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title">Deployment</h5>
+                <h3 class="card-title">Deployment</h3>
                 <p class="card-text mb-0">FastAPI service containerized with Docker, deployed on Google Cloud Run with auto-scaling.</p>
             </div>
         </div>

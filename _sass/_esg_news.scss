@@ -16,6 +16,7 @@
   .scorecard-title {
     margin-bottom: 0.5rem;
     font-weight: 600;
+    font-size: 1.75rem; // was h3; pinned so the level change is invisible
   }
 
   .scorecard-section-title {
@@ -146,6 +147,7 @@
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid var(--global-divider-color);
+    font-size: 1.25rem; // was h5
   }
 
   .form-select {
@@ -169,8 +171,8 @@
   padding-top: 1rem;
   border-top: 1px solid var(--global-divider-color);
 
-  h6 {
-    font-size: 0.85rem;
+  .legend-title {
+    font-size: 0.85rem; // was h6
     margin-bottom: 0.75rem;
     color: var(--global-text-color-light);
   }
@@ -426,7 +428,7 @@ html[data-theme="dark"] {
     flex-wrap: wrap;
     gap: 0.5rem;
 
-    h6 {
+    .legend-title {
       width: 100%;
     }
 
