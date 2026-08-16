@@ -32,6 +32,41 @@ $grey-color-light: color.adjust($grey-color, $lightness: 40%);
 $grey-color-dark: #1c1c1d;
 $grey-900: #212529;
 
+// Muted text (bylines, tag rows, icons) cannot be one value: $grey-color is
+// 3.84:1 on white and 4.43:1 on $grey-color-dark, so it misses 4.5:1 in both
+// directions, and lightening it to pass on dark makes light worse. Split per
+// theme instead — see _themes.scss.
+//
+//               on #ffffff   on #1c1c1d   on $grey-900
+//   #828282       3.84 ✗       4.43 ✗        4.01 ✗
+//   #707070       4.95 ✓       3.44 ✗        3.12 ✗
+//   #8a8a8a       3.45 ✗       4.93 ✓        4.47 ✗
+//   #909090       3.19 ✗       5.33 ✓        4.83 ✓
+//
+// The dark value is #909090 rather than the ~#8a8a8a that clears the page
+// background alone: muted text also lands on cards ($grey-900), where #8a8a8a
+// misses by 0.03 and so has no room at all.
+$grey-color-on-light: #707070;
+$grey-color-on-dark: #909090;
+
+// The dark theme has surfaces *lighter* than the page, and a light-grey text
+// loses contrast on each one. $grey-color-on-dark is tuned for the page and
+// cards; it does not clear the panels built on $code-bg-color-dark:
+//
+//                          $code-bg-color-dark   .evidence-item
+//                                #2c3237            #32383d
+//   #909090                       4.06 ✗             3.72 ✗
+//   #a1a1a1                       5.02 ✓             4.60 ✓
+//
+// (#32383d is $code-bg-color-dark with the .evidence-item rgba(255,255,255,
+// 0.03) overlay composited in — the darkest text-bearing surface on the site.)
+//
+// Rather than pull the site-wide muted grey brighter for the sake of a couple
+// of panels — which would flatten it against body text everywhere — the panels
+// get their own slightly lighter value. Exposed as
+// --global-text-color-light-on-panel; see _themes.scss.
+$grey-color-on-dark-panel: #a1a1a1;
+
 $white-color: #ffffff !default;
 $black-color: #000000 !default;
 
