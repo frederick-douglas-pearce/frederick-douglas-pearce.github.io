@@ -49,6 +49,73 @@ table.table a {
   }
 }
 
+// Inline links in running text
+//
+// WCAG 1.4.1: a link sitting inside a block of text must not be distinguished
+// from that text by colour alone. Underline-on-hover — the al-folio default —
+// is exactly the pattern that fails, because at rest there is no non-colour
+// cue at all. So the underline is always on, and hover *strengthens* it rather
+// than introducing it.
+//
+// The offset is not cosmetic: a flush underline collides with the descenders
+// in g, p, y and is measurably harder to read.
+@mixin prose-underline {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  // currentColor rather than --global-theme-color, so the underline tracks
+  // whatever the link colour actually is — prose links use the accent, but
+  // footer links are white on a dark bar and a teal underline there looks wrong.
+  text-decoration-color: color-mix(in srgb, currentColor 45%, transparent);
+  transition:
+    text-decoration-thickness 0.1s ease,
+    text-decoration-color 0.1s ease;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: currentColor;
+  }
+}
+
+// Deliberately *not* a blanket `a { text-decoration: underline }`. The rule
+// only concerns links embedded in prose; the navbar, tab bar, buttons, badges,
+// card titles and CV chrome are already-identifiable UI affordances and are
+// left alone.
+//
+// Scoped by child combinator rather than descendant, so that a link which *is*
+// a heading (`li > h3 > a.post-title` in the blog listing) or an icon-only
+// control (`div.contact-icons > a > i`) does not match — only links sitting in
+// the text flow of a paragraph, list item, quote or caption do.
+.post-content,
+.post > article,
+footer .container {
+  p,
+  li,
+  blockquote,
+  dd,
+  figcaption {
+    > a,
+    > strong > a,
+    > em > a,
+    > b > a,
+    > i > a,
+    > code > a {
+      &:not(.btn):not(.btncv):not(.badge):not(.page-link):not(.post-title):not(.anchor):not(:has(img, svg, picture)) {
+        @include prose-underline;
+      }
+    }
+  }
+}
+
+// The footer credit line is loose text directly inside .container, so its links
+// have no block-level parent to hang the rule off. Matches both footer variants
+// — site.footer_fixed picks .fixed-bottom or .sticky-bottom.
+footer .container > a:not(:has(img, svg, picture)) {
+  @include prose-underline;
+}
+
 .table-dark {
   background-color: transparent;
   &.table-bordered {
