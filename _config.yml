@@ -173,6 +173,7 @@ exclude:
   - CONTRIBUTING.md
   - CUSTOMIZE.md
   - Dockerfile
+  - doc/
   - docker-compose.yml
   - docker-compose-slim.yml
   - FAQ.md
