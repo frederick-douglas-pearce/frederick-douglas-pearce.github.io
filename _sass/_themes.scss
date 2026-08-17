@@ -9,14 +9,17 @@
   --global-bg-color: #{$white-color};
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #{$black-color};
-  --global-text-color-light: #{$grey-color};
+  --global-text-color-light: #{$grey-color-on-light};
+  // Light-theme panels are barely tinted, so muted text needs no adjustment
+  // there; the variable exists so components can use it in both themes.
+  --global-text-color-light-on-panel: #{$grey-color-on-light};
   --global-theme-color: #{$teal-color};
   --global-hover-color: #{$teal-color};
   --global-hover-text-color: #{$white-color};
   --global-footer-bg-color: #{$grey-color-dark};
   --global-footer-text-color: #{$grey-color-light};
   --global-footer-link-color: #{$white-color};
-  --global-distill-app-color: #{$grey-color};
+  --global-distill-app-color: #{$grey-color-on-light};
   --global-divider-color: rgba(0, 0, 0, 0.1);
   --global-card-bg-color: #{$white-color};
   --global-highlight-color: #{$red-color-dark};
@@ -81,7 +84,10 @@ html[data-theme="dark"] {
   --global-bg-color: #{$grey-color-dark};
   --global-code-bg-color: #{$code-bg-color-dark};
   --global-text-color: #{$grey-color-light};
-  --global-text-color-light: #{$grey-color};
+  --global-text-color-light: #{$grey-color-on-dark};
+  // For muted text on panels built from $code-bg-color-dark, which is lighter
+  // than the page and so needs a lighter grey again.
+  --global-text-color-light-on-panel: #{$grey-color-on-dark-panel};
   --global-theme-color: #{$cyan-color};
   --global-hover-color: #{$cyan-color};
   --global-hover-text-color: #{$white-color};

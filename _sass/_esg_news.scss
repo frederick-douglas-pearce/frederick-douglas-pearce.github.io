@@ -172,7 +172,9 @@
   h6 {
     font-size: 0.85rem;
     margin-bottom: 0.75rem;
-    color: var(--global-text-color-light);
+    // -on-panel, not the plain muted grey: the sidebar is painted with
+    // --global-code-bg-color, which in the dark theme is lighter than the page.
+    color: var(--global-text-color-light-on-panel);
   }
 
   .legend-item {
@@ -188,7 +190,7 @@
     .legend-label {
       margin-left: 0.5rem;
       font-size: 0.8rem;
-      color: var(--global-text-color-light);
+      color: var(--global-text-color-light-on-panel);
     }
   }
 }
@@ -282,7 +284,10 @@
   .evidence-excerpt {
     padding: 0.5rem;
     font-style: italic;
-    color: var(--global-text-color-light);
+    // .evidence-item stacks a white overlay on --global-code-bg-color, making
+    // this the lightest surface any muted text sits on. axe never caught it
+    // because evidence blocks are collapsed on load and so never audited.
+    color: var(--global-text-color-light-on-panel);
   }
 
   .evidence-list {
