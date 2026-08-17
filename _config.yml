@@ -28,11 +28,19 @@ back_to_top: true # set to false to disable the back to top button
 # Theme
 # -----------------------------------------------------------------------------
 
+# Render the /repositories/ cards from github-readme-stats. OFF since
+# 17 Aug 2026: the public instance returns 503 DEPLOYMENT_PAUSED (an
+# account-level Vercel pause, not rate limiting), so every card was serving as a
+# broken image. The page falls back to a plain link list while epic #54 replaces
+# the cards with natively rendered HTML.
+#
+# Do not flip this back on — the fix is #56, not a working upstream instance.
+# Self-hosting our own instance was considered and rejected in #54; the keys
+# below are removed by #60 once nothing reads them.
+repo_stats_cards: false
+
 # github-readme-stats host for the repositories page cards.
-# Default is the public instance, which is heavily rate-limited and often
-# renders broken "Maximum retries exceeded" cards. Self-host your own free
-# instance (https://github.com/anuraghazra/github-readme-stats#deploy-on-your-own-vercel-instance)
-# and set the URL here (no trailing slash) for reliable cards.
+# Unused while repo_stats_cards is false.
 repo_stats_host: https://github-readme-stats.vercel.app
 
 # repo color theme
