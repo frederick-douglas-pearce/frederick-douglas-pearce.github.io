@@ -984,6 +984,14 @@ pre {
     margin-bottom: 0;
     padding: 0;
   }
+
+  // assets/js/scrollable_code.js puts horizontally scrolling code blocks into
+  // the tab order so their content is reachable without a mouse. Anything in
+  // the tab order needs a visible focus indicator.
+  &[tabindex="0"]:focus-visible {
+    outline: 2px solid var(--global-theme-color);
+    outline-offset: 2px;
+  }
 }
 
 code {
