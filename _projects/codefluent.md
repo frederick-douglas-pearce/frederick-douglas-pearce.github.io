@@ -34,7 +34,7 @@ CodeFluent reads your local Claude Code session data, scores your prompting beha
     <div class="col-12">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">Session Parsing</h5>
+                <h3 class="card-title">Session Parsing</h3>
                 <p class="card-text mb-0">Parses JSONL session files from <code>~/.claude/projects/</code> to extract user prompts and metadata including plan mode usage, tool diversity, and thinking count.</p>
             </div>
         </div>
@@ -45,7 +45,7 @@ CodeFluent reads your local Claude Code session data, scores your prompting beha
     <div class="col-md-6 mb-3 mb-md-0">
         <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title">Fluency Scoring</h5>
+                <h3 class="card-title">Fluency Scoring</h3>
                 <p class="card-text mb-0">Sends prompts to Claude Sonnet for behavioral scoring against Anthropic's 4D AI Fluency Framework, with results cached locally to avoid re-scoring.</p>
             </div>
         </div>
@@ -53,7 +53,7 @@ CodeFluent reads your local Claude Code session data, scores your prompting beha
     <div class="col-md-6">
         <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title">Config Analysis</h5>
+                <h3 class="card-title">Config Analysis</h3>
                 <p class="card-text mb-0">Scores CLAUDE.md project configuration separately, merging with session scores via <code>session OR config</code> logic for effective behavior calculation.</p>
             </div>
         </div>
@@ -64,7 +64,7 @@ CodeFluent reads your local Claude Code session data, scores your prompting beha
     <div class="col-md-6 mb-3 mb-md-0">
         <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title">Usage Tracking</h5>
+                <h3 class="card-title">Usage Tracking</h3>
                 <p class="card-text mb-0">Integrates <a href="https://github.com/ryoppippi/ccusage">ccusage</a> to read Claude Code session history and export token/cost data with cache read/creation/input/output breakdown.</p>
             </div>
         </div>
@@ -72,7 +72,7 @@ CodeFluent reads your local Claude Code session data, scores your prompting beha
     <div class="col-md-6">
         <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title">GitHub Integration</h5>
+                <h3 class="card-title">GitHub Integration</h3>
                 <p class="card-text mb-0">Uses the <code>gh</code> CLI to pull repo context and open issues, generating targeted Claude Code prompts scoped to your current workspace.</p>
             </div>
         </div>
@@ -83,7 +83,7 @@ CodeFluent reads your local Claude Code session data, scores your prompting beha
     <div class="col-12">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">Prompt Optimization</h5>
+                <h3 class="card-title">Prompt Optimization</h3>
                 <p class="card-text mb-0">Analyzes any prompt against the 11 fluency behaviors, factors in your CLAUDE.md config (scoring on demand if not cached), then generates an optimized version that incorporates only the missing behaviors not already covered by project conventions.</p>
             </div>
         </div>

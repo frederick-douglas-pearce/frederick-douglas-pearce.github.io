@@ -46,7 +46,7 @@ The pipeline consists of six integrated phases:
     <div class="col-12">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">Data Collection</h5>
+                <h3 class="card-title">Data Collection</h3>
                 <p class="card-text mb-0">Automated collection from NewsData.io and GDELT APIs, with intelligent scraping and language detection.</p>
             </div>
         </div>
@@ -57,7 +57,7 @@ The pipeline consists of six integrated phases:
     <div class="col-md-6 mb-3 mb-md-0">
         <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title">LLM Labeling</h5>
+                <h3 class="card-title">LLM Labeling</h3>
                 <p class="card-text mb-0">Claude Sonnet classifies articles into ESG categories with evidence extraction and sentiment analysis.</p>
             </div>
         </div>
@@ -65,7 +65,7 @@ The pipeline consists of six integrated phases:
     <div class="col-md-6">
         <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title">ML Pre-filters</h5>
+                <h3 class="card-title">ML Pre-filters</h3>
                 <p class="card-text mb-0">Random Forest (FP) and Logistic Regression (EP) classifiers reduce API costs by 40%.</p>
             </div>
         </div>
@@ -76,7 +76,7 @@ The pipeline consists of six integrated phases:
     <div class="col-md-6 mb-3 mb-md-0">
         <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title">MLOps</h5>
+                <h3 class="card-title">MLOps</h3>
                 <p class="card-text mb-0">MLflow tracking, Evidently drift monitoring, and automated retraining pipeline.</p>
             </div>
         </div>
@@ -84,7 +84,7 @@ The pipeline consists of six integrated phases:
     <div class="col-md-6">
         <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title">Deployment</h5>
+                <h3 class="card-title">Deployment</h3>
                 <p class="card-text mb-0">Docker containers on Google Cloud Run with CI/CD via GitHub Actions.</p>
             </div>
         </div>

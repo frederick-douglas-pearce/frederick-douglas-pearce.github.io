@@ -35,7 +35,7 @@ Every recommendation lands on one of three axes, so you can prioritize by what m
     <div class="col-12">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title"><code>analyze</code></h5>
+                <h3 class="card-title"><code>analyze</code></h3>
                 <p class="card-text mb-0">Produces token, cost, and behavior metrics for a project — a per-model cost breakdown, an Agent Invocations table, and behavior diagnostics across metadata, trace, and aggregate layers. A Top-N priority-fixes summary ranks findings by a composite <code>priority_score</code>, and an Offload Candidates section proposes moving repeating tool-use clusters onto cheaper-tier models.</p>
             </div>
         </div>
@@ -46,7 +46,7 @@ Every recommendation lands on one of three axes, so you can prioritize by what m
     <div class="col-md-6 mb-3 mb-md-0">
         <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title"><code>config-check</code></h5>
+                <h3 class="card-title"><code>config-check</code></h3>
                 <p class="card-text mb-0">Walks <code>~/.claude/agents/*.md</code> and <code>./.claude/agents/*.md</code>, parses each agent's frontmatter and body, and scores against a 4-dimension rubric — description trigger quality, tool access, model selection, and prompt completeness — with ranked recommendations per agent.</p>
             </div>
         </div>
@@ -54,7 +54,7 @@ Every recommendation lands on one of three axes, so you can prioritize by what m
     <div class="col-md-6">
         <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title"><code>diff</code></h5>
+                <h3 class="card-title"><code>diff</code></h3>
                 <p class="card-text mb-0">Compares two <code>analyze --json</code> snapshots and surfaces new, resolved, and persisting recommendations plus token / cost / invocation deltas. <code>--fail-on</code> gates exit code 3 on new findings, so <code>diff</code> slots into a PR check the same way a test runner does.</p>
             </div>
         </div>
@@ -65,7 +65,7 @@ Every recommendation lands on one of three axes, so you can prioritize by what m
     <div class="col-md-6 mb-3 mb-md-0">
         <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title"><code>report</code></h5>
+                <h3 class="card-title"><code>report</code></h3>
                 <p class="card-text mb-0">Renders an <code>analyze --json</code> snapshot as a Markdown document — the same Summary / Token / Diagnostics / Offload sections — in a form you can paste into a PR comment, attach as a CI artifact, or commit alongside a prompt change as a review trail.</p>
             </div>
         </div>
@@ -73,7 +73,7 @@ Every recommendation lands on one of three axes, so you can prioritize by what m
     <div class="col-md-6">
         <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title"><code>list</code></h5>
+                <h3 class="card-title"><code>list</code></h3>
                 <p class="card-text mb-0">Discovers every Claude Code / Agent SDK project under <code>~/.claude/projects/</code>, with session counts, total size, and last-modified timestamps. Pass <code>--project</code> to drill into one project's individual session files.</p>
             </div>
         </div>

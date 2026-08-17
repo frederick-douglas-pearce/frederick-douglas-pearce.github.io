@@ -59,7 +59,7 @@ Two centuries of American elections were never documented the way a modern one i
     <div class="col-12">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">An empty cell is never bare</h5>
+                <h3 class="card-title">An empty cell is never bare</h3>
                 <p class="card-text mb-0">Every state-year carries a <code>pv_status</code> — <code>popular_vote</code>, <code>legislature_chosen</code>, or <code>not_participating</code>. So 1860 South Carolina (its legislature appointed the electors) and 1860 New York both show a null popular vote, and the two nulls mean different things. The database refuses a fourth "unknown" value, because an unknown bucket is where an unresolved gap sits quietly forever.</p>
             </div>
         </div>
@@ -70,7 +70,7 @@ Two centuries of American elections were never documented the way a modern one i
     <div class="col-md-6 mb-3 mb-md-0">
         <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title">Cast and appointed stay two numbers</h5>
+                <h3 class="card-title">Cast and appointed stay two numbers</h3>
                 <p class="card-text mb-0">The Twelfth Amendment sets the threshold on electors <em>appointed</em>, not votes <em>cast</em>. In 2000 one DC elector handed in a blank ballot — 537 cast against 538 appointed — and the bar did not move. In 1872 electors cast 300 votes for Grant and Congress counted 286. The API reports both, plus the denominator, rather than collapsing them.</p>
             </div>
         </div>
@@ -78,7 +78,7 @@ Two centuries of American elections were never documented the way a modern one i
     <div class="col-md-6">
         <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title">Two sources cover each other</h5>
+                <h3 class="card-title">Two sources cover each other</h3>
                 <p class="card-text mb-0">In 1864, eleven states took no part. The Archives lists all 36 states with a dash in every column; the popular-vote source lists 25 and explains the rest in a sentence of prose no parser will read. Exactly eleven states hold a zero allotment in the electoral record — which is how the absences in the other source get verified instead of inferred.</p>
             </div>
         </div>
@@ -89,7 +89,7 @@ Two centuries of American elections were never documented the way a modern one i
     <div class="col-md-6 mb-3 mb-md-0">
         <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title">Which states belong in the denominator</h5>
+                <h3 class="card-title">Which states belong in the denominator</h3>
                 <p class="card-text mb-0">In 1824, six states appointed electors by legislature and held no popular vote at all. Drop them and Jackson holds 99 of 190 — a majority, elected outright. Keep them and it is 99 of 261, no majority, and the House chose Adams. Treating "held no popular vote" as "doesn't count" manufactures a constitutional majority that never existed.</p>
             </div>
         </div>
@@ -97,7 +97,7 @@ Two centuries of American elections were never documented the way a modern one i
     <div class="col-md-6">
         <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title">One person, three correct spellings</h5>
+                <h3 class="card-title">One person, three correct spellings</h3>
                 <p class="card-text mb-0">Bob Dole and Robert Dole; "STROM THURMOND" and J. Strom Thurmond; John C. Fremont and Frémont. Each source is right inside its own document, and none of them agree. A curated per-source reconciliation map onto one canonical name is decided once and reused everywhere, so "how many times has this person run" is answerable at all.</p>
             </div>
         </div>
@@ -114,7 +114,7 @@ The pipeline moves from two incompatible public records to one queryable surface
     <div class="col-12">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">Electoral College Ingestion</h5>
+                <h3 class="card-title">Electoral College Ingestion</h3>
                 <p class="card-text mb-0">Scrapes every US presidential election from 1824 to the present from the <a href="https://www.archives.gov/electoral-college/results">National Archives</a> into a star-schema warehouse in Postgres — state and candidate dimensions over a votes fact. The two contested Reconstruction elections are modeled rather than smoothed: 1868 carries Georgia's nine disputed electoral votes flagged as <code>disputed</code>, and 1872 synthesizes the cast-then-rejected votes the Archives table omits. An optional local HTML corpus lets the whole spine rebuild with zero network requests.</p>
             </div>
         </div>
@@ -125,7 +125,7 @@ The pipeline moves from two incompatible public records to one queryable surface
     <div class="col-md-6 mb-3 mb-md-0">
         <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title">Popular-Vote Reconciliation</h5>
+                <h3 class="card-title">Popular-Vote Reconciliation</h3>
                 <p class="card-text mb-0">Ingests two independent sources — the <a href="https://electionlab.mit.edu/">MIT Election Lab</a> 1976–2024 dataset and the historical <a href="https://www.presidency.ucsb.edu/">UCSB American Presidency Project</a> pages — onto the same candidate and state keys as the electoral spine, behind a shared set of contracts so neither source's quirks leak into the model.</p>
             </div>
         </div>
@@ -133,7 +133,7 @@ The pipeline moves from two incompatible public records to one queryable surface
     <div class="col-md-6">
         <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title">The Join Seam</h5>
+                <h3 class="card-title">The Join Seam</h3>
                 <p class="card-text mb-0">Two views join the resolved popular vote back onto the electoral spine: one full analysis surface, and one license-clean public subset defined independently as "redistributable only," so non-redistributable rows cannot reach the public artifact by accident. A two-way check on every load asserts that a no-popular-vote state has exactly zero vote rows and a popular-vote state has at least one.</p>
             </div>
         </div>
@@ -144,7 +144,7 @@ The pipeline moves from two incompatible public records to one queryable surface
     <div class="col-md-6 mb-3 mb-md-0">
         <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title">Freeze, Don't Serve</h5>
+                <h3 class="card-title">Freeze, Don't Serve</h3>
                 <p class="card-text mb-0">A historical dataset doesn't change between elections, so nothing needs to stay running. A build step materializes the public view into an immutable read-only SQLite snapshot; the API imports no database driver at all, enforced by a test. Postgres is the source of truth at build time and stopped at serve time.</p>
             </div>
         </div>
@@ -152,7 +152,7 @@ The pipeline moves from two incompatible public records to one queryable surface
     <div class="col-md-6">
         <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title">Deployment</h5>
+                <h3 class="card-title">Deployment</h3>
                 <p class="card-text mb-0">A ~150 MB cloud-agnostic container with the snapshot <em>baked in</em>, so image version equals data version and there is no artifact/code skew. Google Cloud Run scales it to zero and caps it at one instance; Cloudflare fronts it for edge caching, rate limiting, and bot protection. A keyless GitHub Actions deploy purges the edge cache by version after cutover.</p>
             </div>
         </div>

@@ -26,7 +26,7 @@ enable_math: false
 
   <!-- Sportswear Sustainability Scorecard -->
   <div id="scorecard-section" class="mb-4">
-    <h3 class="scorecard-title text-center">Sportswear Sustainability Scorecard</h3>
+    <h2 class="scorecard-title text-center">Sportswear Sustainability Scorecard</h2>
     <p class="text-muted small text-center">
       Based on {{ site.data.esg_news.scorecard.articles_after_dedup }} unique articles from {{ site.data.esg_news.scorecard.period_start }} to {{ site.data.esg_news.scorecard.period_end }}
       {% if site.data.esg_news.scorecard.duplicates_removed > 0 %}
@@ -37,7 +37,7 @@ enable_math: false
     <div class="row">
       <!-- Top Performers -->
       <div class="col-md-6 mb-3">
-        <h5 class="scorecard-section-title text-center">Top Performers</h5>
+        <h3 class="scorecard-section-title text-center">Top Performers</h3>
         <div id="top-brands">
           {% if site.data.esg_news.scorecard.top_brands.size > 0 %}
             {% for brand in site.data.esg_news.scorecard.top_brands %}
@@ -75,7 +75,7 @@ enable_math: false
 
       <!-- Back of the Pack -->
       <div class="col-md-6 mb-3">
-        <h5 class="scorecard-section-title text-center">Back of the Pack</h5>
+        <h3 class="scorecard-section-title text-center">Back of the Pack</h3>
         <div id="bottom-brands">
           {% if site.data.esg_news.scorecard.bottom_brands.size > 0 %}
             {% for brand in site.data.esg_news.scorecard.bottom_brands %}
@@ -126,7 +126,7 @@ enable_math: false
     <!-- Left Sidebar - Filters -->
     <div class="col-lg-3 col-md-4">
       <div class="esg-news-sidebar">
-        <h5 class="sidebar-title">Filters</h5>
+        <h2 class="sidebar-title">Filters</h2>
 
         <div class="filter-group mb-3">
           <label for="brandFilter" class="form-label"><strong>Brand</strong></label>
@@ -184,7 +184,7 @@ enable_math: false
 
         <!-- Sentiment Legend -->
         <div class="sentiment-legend mt-4">
-          <h6>Sentiment Key</h6>
+          <h3 class="legend-title">Sentiment Key</h3>
           <div class="legend-item">
             <span class="badge bg-success">Category +</span>
             <span class="legend-label">Positive</span>
@@ -223,9 +223,9 @@ enable_math: false
           </div>
 
           <div class="card-body">
-            <h5 class="card-title">
+            <h2 class="card-title">
               <a href="{{ article.url }}" target="_blank" rel="noopener">{{ article.title }}</a>
-            </h5>
+            </h2>
 
             <div class="esg-category-badges mb-2">
               {% for bd in article.brand_details %}
