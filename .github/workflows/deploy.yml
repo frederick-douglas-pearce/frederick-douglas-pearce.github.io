@@ -60,6 +60,14 @@ jobs:
   build:
     # available images: https://github.com/actions/runner-images#available-images
     runs-on: ubuntu-latest
+    # Observed 4.6-5.7 min over the last 15 runs, so this is ~3.5x headroom, not
+    # a value a healthy build approaches. It exists because the default is 6
+    # HOURS: on 2026-08-18 `apt-get update` in a sibling workflow stalled against
+    # a degraded azure.archive.ubuntu.com mirror and sat there for 47 min looking
+    # alive. A hang here is worse than there, because the deploy job below holds
+    # the "pages" concurrency group — a stall would queue the next day's 14:01
+    # UTC ESG deploy behind it. Fail fast and let the rerun handle it.
+    timeout-minutes: 20
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v7
@@ -121,6 +129,14 @@ jobs:
     # Never deploy from a PR; PRs only validate the build job above.
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
+    # Deliberately larger than the build job's, and NOT 20: the retry ladder
+    # below has a documented pathological ceiling of 3 x 360s + 30s + 60s
+    # ~= 18.5 min when every attempt runs to its full cap. A tighter timeout
+    # would kill a legitimately-retrying publish, which is the exact failure
+    # this ladder exists to survive. 25 clears that ceiling with margin while
+    # still bounding the 6-hour default. If the per-attempt timeout or the
+    # backoffs change, recompute this.
+    timeout-minutes: 25
     # Serialize deploys and never cancel an in-flight publish, so a retrying
     # run can't be killed by the next push (and vice versa). Scoped to this
     # job so PR build runs don't share the group.
