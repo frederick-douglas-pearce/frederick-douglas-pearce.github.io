@@ -102,7 +102,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Ground Truth # blog_name will be displayed in your blog page
-blog_description: Working well with AI — by learning from its data.
+blog_description: What the source data actually says.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -258,7 +258,12 @@ jekyll-archives:
       tags: "/blog/:type/:name/"
       categories: "/blog/:type/:name/"
 display_tags: [] # tags to display on the front page of the blog
-display_categories: ["foundation", "analysis"] # these categories will be displayed on the front page of your blog
+# One category per series, so these chips are the blog's series filter. Kind of
+# post (foundation, analysis, …) and subject live on the tags axis instead.
+# Both values are set upstream: posts sync byte-for-byte from claude-code-sessions
+# and us-presidential-vote-analysis, so a new series needs its category added there
+# first, then listed here.
+display_categories: ["claude-code-sessions", "us-presidential-vote"]
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar

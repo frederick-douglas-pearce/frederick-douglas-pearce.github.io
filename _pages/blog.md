@@ -2,7 +2,7 @@
 layout: default
 permalink: /blog/
 title: blog
-description: Ground Truth — working well with AI by learning from its data.
+description: Ground Truth — what the source data actually says.
 nav: true
 nav_order: 1
 pagination:
