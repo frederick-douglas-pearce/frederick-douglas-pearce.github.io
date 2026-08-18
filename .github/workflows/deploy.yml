@@ -74,13 +74,22 @@ jobs:
         with:
           python-version: "3.13"
           cache: "pip" # caching pip dependencies
-      - name: Update _config.yml ⚙️
-        uses: fjogeleit/yaml-update-action@dffe9a5223d84653c13374032382f6bb5de8e5ef # v0.17.0
-        with:
-          commitChange: false
-          valueFile: "_config.yml"
-          propertyPath: "giscus.repo"
-          value: ${{ github.repository }}
+      # No "Update _config.yml" step here on purpose. Upstream al-folio rewrites
+      # giscus.repo to ${{ github.repository }} at build time, because the
+      # template ships a placeholder and every fork has a different repo name.
+      # This repo hardcodes its own name at _config.yml:120, so that step wrote
+      # the value that was already there — a no-op.
+      #
+      # It was removed because it was not free: it pulled a third-party action
+      # into the deploy path, and on 2026-08-17 that download 429'd three times
+      # against GitHub's action CDN and failed the whole deploy during "Set up
+      # job", before any of this workflow's own steps ran. The publish-step
+      # retry ladder below cannot help there — it only wraps the Pages publish.
+      # That outage missed the 14:01 UTC ESG feed deploy.
+      #
+      # Tradeoff: renaming or transferring this repo now requires editing
+      # giscus.repo by hand. A custom domain does NOT — giscus keys off the
+      # repository, not the site URL.
       - name: Install and Build 🔧
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
