@@ -1,4 +1,4 @@
-# DRAFT for human review — not filed on GitHub
+# Activity stream epic — FILED as #66 (issues #67–#75)
 
 > **⚠️ READ [REVISION 2](#revision-2--architect-review-incorporated) FIRST (bottom of file).**
 > An architect review verified every claim in this draft against the codebase. It found one
@@ -10,8 +10,7 @@ Epic + separate issues for restoring and extending the al-folio "news" feature a
 merged **Activity stream** at `/activity/`. Phased **Option C (MVP) → Option D (goal)**.
 
 House style: separate issues that *reference* the epic; the epic body lists them as a
-checklist of `#NN`. Issue numbers below are placeholders (`C1`…`D4`); replace with real
-`#NN` at filing and update the cross-references. Nothing here uses GitHub's native
+checklist of `#NN`. Filed 2026-08-18: epic #66, issues #67–#75. Placeholders have been resolved to real numbers. Nothing here uses GitHub's native
 sub-issue feature.
 
 Suggested labels: reuse `enhancement`, `accessibility`; create a new `activity` label
@@ -26,8 +25,8 @@ Suggested labels: reuse `enhancement`, `accessibility`; create a new `activity` 
 Tracking issue for restoring al-folio's dormant `news` feature as a single **typed
 Activity stream**, and extending it to auto-pull GitHub Releases.
 
-The work is split across nine independent issues — **C1, C2, C3, C4, C5** (Phase C, the
-MVP) and **D1, D2, D3, D4** (Phase D, the goal) — each closable on its own. This epic
+The work is split across nine independent issues — **#67, #68, #69, #70, #71** (Phase C, the
+MVP) and **#73, #74, #75, #72** (Phase D, the goal) — each closable on its own. This epic
 holds the shared context and the order to work them in; it stays open until they are all
 resolved.
 
@@ -107,9 +106,9 @@ Two mechanics replace it, and they compose (both are specced in Phase D):
   polish the few that matter.
 
 **(a) is the default, (b) is the override.** This also means the release backfill is
-**automatic**: the Releases API returns all historical releases, so D1's fetch backfills
+**automatic**: the Releases API returns all historical releases, so #73's fetch backfills
 the 16 minor+ releases with no hand-authoring. The only hand-written backfill is
-non-release **milestones**, which are seeded as `_news` items in Phase C (see C5).
+non-release **milestones**, which are seeded as `_news` items in Phase C (see #71).
 
 ## Hard constraints and known traps (baked into the issues below)
 
@@ -123,7 +122,7 @@ non-release **milestones**, which are seeded as `_news` items in Phase C (see C5
   `deploy.yml`**, even though `_data/**` is in its `paths:` filter — GitHub suppresses
   workflow-triggered workflow runs. It needs an explicit `workflow_dispatch`. The **same
   latent bug already exists in `.github/workflows/schedule-posts.txt`**; fix both together
-  (D4).
+  (#72).
 - **Accessibility — this repo closed a 2303→0 audit (epic #46); regressions are not
   acceptable.** The dormant includes carry latent defects that must be fixed as part of
   restoring them:
@@ -141,7 +140,7 @@ non-release **milestones**, which are seeded as `_news` items in Phase C (see C5
   CodeFluent, AgentFluent, possibly ESG series to the current 2), ~2.7 minor+ releases/month,
   ~1–2 hand-written/month. A naive `sort: date | reverse` makes the stream ~60% blog — a
   worse duplicate of `/blog/`, which already has series filters. **Phase D needs per-source
-  caps/floors or interleaving, not a plain date sort** (D3). Deferred to D because that is
+  caps/floors or interleaving, not a plain date sort** (#75). Deferred to D because that is
   the phase where a third source actually exists.
 - **Release filtering: minor-or-greater only.** Verified last-6-month volume: agentfluent
   12 (v0.1.0→v0.11.0), codefluent 9 (v0.2.0→v1.2.1) = 21 total, **16 minor+**. Patches
@@ -152,33 +151,33 @@ non-release **milestones**, which are seeded as `_news` items in Phase C (see C5
 ## Issue list
 
 Phase C (MVP — merge the two existing sources):
-- [ ] C1 — Restore the `_news` collection and stand up the `/activity/` page (retire `/news/`)
-- [ ] C2 — Restore the navbar dropdown; group publications + repositories + activity; fix the duplicate-ID trap
-- [ ] C3 — Build the merged, typed Activity stream include (a11y-correct)
-- [ ] C4 — Wire the stream into the about page below the bio and enable it
-- [ ] C5 — Backfill hand-written historical milestones as `_news` entries
+- [ ] #67 — Restore the `_news` collection and stand up the `/activity/` page (retire `/news/`)
+- [ ] #68 — Restore the navbar dropdown; group publications + repositories + activity; fix the duplicate-ID trap
+- [ ] #69 — Build the merged, typed Activity stream include (a11y-correct)
+- [ ] #70 — Wire the stream into the about page below the bio and enable it
+- [ ] #71 — Backfill hand-written historical milestones as `_news` entries
 
 Phase D (goal — add GitHub Releases as a third source):
-- [ ] D1 — Scheduled workflow: fetch + filter + derive release summaries → commit `_data/activity.json`
-- [ ] D2 — Manual override file `_data/release_summaries.yml` (`repo@tag` → one-liner)
-- [ ] D3 — Integrate releases as the third source with interleaving / per-source caps
-- [ ] D4 — Fix the `GITHUB_TOKEN`-won't-trigger-deploy bug (activity workflow + `schedule-posts.txt`)
+- [ ] #73 — Scheduled workflow: fetch + filter + derive release summaries → commit `_data/activity.json`
+- [ ] #74 — Manual override file `_data/release_summaries.yml` (`repo@tag` → one-liner)
+- [ ] #75 — Integrate releases as the third source with interleaving / per-source caps
+- [ ] #72 — Fix the `GITHUB_TOKEN`-won't-trigger-deploy bug (activity workflow + `schedule-posts.txt`)
 
 ## Priority order
 
-The MVP is **C1 → C2/C3 in parallel → C4 → C5**. Ship Phase C before starting D.
+The MVP is **#67 → #68/#69 in parallel → #70 → #71**. Ship Phase C before starting D.
 
 | Order | Issue | Phase | Why here |
 | --- | --- | --- | --- |
-| 1 | C1 | C | Foundation — re-adds the collection and the page. Nothing else renders without it. |
-| 2 | C3 | C | The visible deliverable: the merged typed stream. Can be built in parallel with C2. |
-| 3 | C2 | C | Restores nav access + frees navbar room for the planned consulting tab. Parallel with C3. |
-| 4 | C4 | C | Turns the stream on where it matters (about page, below bio). Needs C3. |
-| 5 | C5 | C | Seeds hand-written milestones so the stream isn't empty on launch. Needs C1. |
-| 6 | D4 | D | Unblocks correct auto-deploy for D1 and fixes an existing latent bug. Do before/with D1. |
-| 7 | D1 | D | The Releases data pipeline — the whole point of Phase D. |
-| 8 | D2 | D | Override layer on top of D1's schema. Small. |
-| 9 | D3 | D | Merges releases into the stream with balance logic. Needs D1 + C3. |
+| 1 | #67 | C | Foundation — re-adds the collection and the page. Nothing else renders without it. |
+| 2 | #69 | C | The visible deliverable: the merged typed stream. Can be built in parallel with #68. |
+| 3 | #68 | C | Restores nav access + frees navbar room for the planned consulting tab. Parallel with #69. |
+| 4 | #70 | C | Turns the stream on where it matters (about page, below bio). Needs #69. |
+| 5 | #71 | C | Seeds hand-written milestones so the stream isn't empty on launch. Needs #67. |
+| 6 | #72 | D | Unblocks correct auto-deploy for #73 and fixes an existing latent bug. Do before/with #73. |
+| 7 | #73 | D | The Releases data pipeline — the whole point of Phase D. |
+| 8 | #74 | D | Override layer on top of #73's schema. Small. |
+| 9 | #75 | D | Merges releases into the stream with balance logic. Needs #73 + #69. |
 
 ## Out of scope
 
@@ -188,11 +187,11 @@ The MVP is **C1 → C2/C3 in parallel → C4 → C5**. Ship Phase C before start
   false`; do not wire it into the about page in parallel. (Its latent `tabindex` defect is
   noted for whenever it is finally deleted, but deletion is not in this epic.)
 - **Hand-authoring release summaries upstream.** Not viable under release-please (see
-  above). Replaced by derive-with-override (D1/D2).
+  above). Replaced by derive-with-override (#73/#74).
 - **Sources beyond posts / news / releases.** No stars, commits, PR/issue activity, or
   social feeds. The stream is intentionally editorial + release-driven.
 - **Interleaving logic in Phase C.** With only two sources and a small backlog, plain date
-  sort is fine for the MVP; the balance problem only bites once releases land (D3).
+  sort is fine for the MVP; the balance problem only bites once releases land (#75).
 
 ## Acceptance criteria — epic done
 
@@ -219,9 +218,9 @@ The MVP is **C1 → C2/C3 in parallel → C4 → C5**. Ship Phase C before start
    `jekyll-archives-v2`). Options: (a) add the plugin, (b) keep `_pages/news.md` as a
    meta-refresh/`<link rel="canonical">` stub pointing at `/activity/`, (c) delete the page
    outright and let the old URL 404. Recommendation: (b) — no new dependency, preserves the
-   URL. **Needs a decision in C1.**
+   URL. **Needs a decision in #67.**
 2. **Dropdown label.** What is the parent menu called? ("Portfolio", "Work", "More"…) The
-   children are publications / repositories / activity. **Needs a decision in C2.**
+   children are publications / repositories / activity. **Needs a decision in #68.**
 3. **Does `projects` also move under the dropdown?** The decision names publications +
    repositories + activity. `projects` (nav_order 2) and `repositories` (nav_order 5) are
    distinct top-level items today. If `projects` stays top-level, the post-change navbar is
@@ -230,19 +229,19 @@ The MVP is **C1 → C2/C3 in parallel → C4 → C5**. Ship Phase C before start
 4. **Type labels + visual treatment.** Proposed row types: **Post**, **Note**, **Release**.
    Confirm the labels and whether type is shown as a text badge, an icon, or a colour. Badge
    colours must come from existing SCSS tokens (no new hardcoded colour — see #53).
-5. **Milestone backlog for C5.** C5 needs the actual list of historical milestones to seed
+5. **Milestone backlog for #71.** #71 needs the actual list of historical milestones to seed
    (what events, what dates, one line each). Fred to supply, or approve a first draft.
-6. **D3 balance policy — deferred but will need numbers.** Per-source caps vs floors vs
+6. **#75 balance policy — deferred but will need numbers.** Per-source caps vs floors vs
    interleave, and the actual limits (e.g. "max 3 consecutive posts", "≥1 release visible in
-   the top 10"). Not needed until D3; flagging so it isn't forgotten.
+   the top 10"). Not needed until #75; flagging so it isn't forgotten.
 
 ---
 
 # ISSUE SPECS (draft bodies — file each as a separate issue referencing the epic)
 
-## C1 — Restore the `_news` collection and stand up `/activity/` (retire `/news/`)
+## #67 — Restore the `_news` collection and stand up `/activity/` (retire `/news/`)
 
-**Phase:** C (MVP). **Size:** S. **Prerequisite for:** C2, C3, C4, C5.
+**Phase:** C (MVP). **Size:** S. **Prerequisite for:** #68, #69, #70, #71.
 
 **Problem.** The `news` collection was removed from `_config.yml` in `10182f9`, so `_news/`
 is inert and the about-page block has nothing to read. The desired page lives at
@@ -252,9 +251,9 @@ is inert and the about-page block has nothing to read. The desired page lives at
 **Scope.**
 - Re-add the collection to `_config.yml`, keeping the internal name `news` (the template
   expects it): `news: {defaults: {layout: post}, output: true}` (match upstream; confirm the
-  `layout` value against what C3's include renders).
+  `layout` value against what #69's include renders).
 - Create `_pages/activity.md` with `permalink: /activity/`, a page title, and the block that
-  C3's include will drive. No `nav:` here (nav is handled by the dropdown in C2).
+  #69's include will drive. No `nav:` here (nav is handled by the dropdown in #68).
 - Retire `/news/`: implement the redirect chosen in Open Question 1.
 - Ensure `sitemap.xml` ends up with `/activity/` and does not advertise a dead `/news/`.
 
@@ -267,13 +266,13 @@ is inert and the about-page block has nothing to read. The desired page lives at
 - [ ] `sitemap.xml` contains `/activity/` and not a live dead `/news/`.
 - [ ] Prettier `--check` passes; `deploy.yml` `paths:` still matches the changed files.
 
-**Dependencies.** None. Blocks C2–C5.
+**Dependencies.** None. Blocks #68–#71.
 
 ---
 
-## C2 — Restore the navbar dropdown; group publications + repositories + activity; fix the duplicate-ID trap
+## #68 — Restore the navbar dropdown; group publications + repositories + activity; fix the duplicate-ID trap
 
-**Phase:** C (MVP). **Size:** M. **Depends on:** C1 (the `/activity/` page must exist to
+**Phase:** C (MVP). **Size:** M. **Depends on:** #67 (the `/activity/` page must exist to
 link). **Prerequisite for:** none (but part of the MVP definition of done).
 
 **Problem.** The navbar is at 5 items and a consulting tab is planned. al-folio's dropdown
@@ -313,13 +312,13 @@ emit a duplicate ID (axe violation) the moment a second dropdown ever exists.
       `navbarDropdown`; axe shows no duplicate-id violation on any page.
 - [ ] Renders correctly in both themes.
 
-**Dependencies.** C1.
+**Dependencies.** #67.
 
 ---
 
-## C3 — Build the merged, typed Activity stream include (a11y-correct)
+## #69 — Build the merged, typed Activity stream include (a11y-correct)
 
-**Phase:** C (MVP). **Size:** L. **Depends on:** C1. **Can run in parallel with C2.**
+**Phase:** C (MVP). **Size:** L. **Depends on:** #67. **Can run in parallel with #68.**
 
 **Problem.** al-folio's `news.liquid` renders only the `_news` collection, as a layout
 table, with a keyboard-inaccessible scroll container, and reads `page.announcements.*` where
@@ -331,7 +330,7 @@ a11y defects rather than inheriting them.
 - New include (e.g. `_includes/activity.liquid`) driven from the `/activity/` page and,
   later, the about page. Merge `site.posts` and the `news` collection into one list sorted by
   date descending.
-- Each row is **typed**: Post vs Note (Release added in D3). Type shown per Open Question 4,
+- Each row is **typed**: Post vs Note (Release added in #75). Type shown per Open Question 4,
   using existing SCSS tokens only.
   - Posts link to the post URL and show series/category where available; Notes render their
     one-line body inline. Do not modify `_posts/` content.
@@ -340,7 +339,7 @@ a11y defects rather than inheriting them.
 - If a scroll container is kept, it must have `tabindex="0"` and an accessible name.
 - Style all **4 dark-mode surfaces**; no new hardcoded colours.
 - Resolve the `page.announcements.*` vs `site.announcements.*` variable so the enable-gate
-  works from the page front matter used in C1/C4.
+  works from the page front matter used in #67/#70.
 
 **Acceptance criteria.**
 - [ ] `/activity/` renders a single merged stream of posts + notes, newest first, each row
@@ -352,20 +351,20 @@ a11y defects rather than inheriting them.
 - [ ] No build-time external request; reads only local collections/data.
 - [ ] axe violations on `/activity/` do not exceed the pre-change baseline.
 
-**Dependencies.** C1. Parallelizable with C2.
+**Dependencies.** #67. Parallelizable with #68.
 
 ---
 
-## C4 — Wire the stream into the about page below the bio and enable it
+## #70 — Wire the stream into the about page below the bio and enable it
 
-**Phase:** C (MVP). **Size:** S. **Depends on:** C3 (and C1).
+**Phase:** C (MVP). **Size:** S. **Depends on:** #69 (and #67).
 
 **Problem.** `_layouts/about.liquid` already has the block in the right spot (below the bio),
-gated on `page.announcements.enabled` — currently `false`. We need the merged stream (C3),
+gated on `page.announcements.enabled` — currently `false`. We need the merged stream (#69),
 not the old `news.liquid`, wired there and turned on.
 
 **Scope.**
-- Point the about-page block at C3's include and enable it via the about page front matter.
+- Point the about-page block at #69's include and enable it via the about page front matter.
 - Keep `latest_posts.enabled: false` — the merged stream supersedes it (do not enable both).
 - Decide/confirm how many items show on the about page vs the full `/activity/` page (e.g. a
   top-N on about, full list on `/activity/`).
@@ -377,18 +376,18 @@ not the old `news.liquid`, wired there and turned on.
 - [ ] About page renders correctly in both themes; axe not worse than baseline.
 - [ ] About page makes no build-time external request.
 
-**Dependencies.** C3, C1.
+**Dependencies.** #69, #67.
 
 ---
 
-## C5 — Backfill hand-written historical milestones as `_news` entries
+## #71 — Backfill hand-written historical milestones as `_news` entries
 
-**Phase:** C (MVP). **Size:** S–M (depends on how many milestones). **Depends on:** C1;
-best verified after C3.
+**Phase:** C (MVP). **Size:** S–M (depends on how many milestones). **Depends on:** #67;
+best verified after #69.
 
 **Problem.** On launch the stream should not be empty of editorial content. Historical
 **milestones** (non-release events worth noting) need to be seeded as `_news` entries.
-**Releases are NOT backfilled here** — D1's fetch pulls all historical releases from the API
+**Releases are NOT backfilled here** — #73's fetch pulls all historical releases from the API
 automatically; hand-writing them would duplicate and drift.
 
 **Scope.**
@@ -399,22 +398,22 @@ automatically; hand-writing them would duplicate and drift.
 **Acceptance criteria.**
 - [ ] Each agreed milestone appears as a dated Note row in the stream, in correct
       chronological position relative to posts.
-- [ ] No release is hand-authored as a Note (avoids duplication with D1).
+- [ ] No release is hand-authored as a Note (avoids duplication with #73).
 - [ ] Prettier passes on the new files.
 
-**Dependencies.** C1. Blocked on Open Question 5 (the milestone list) before authoring.
+**Dependencies.** #67. Blocked on Open Question 5 (the milestone list) before authoring.
 
 ---
 
-## D1 — Scheduled workflow: fetch + filter + derive release summaries → commit `_data/activity.json`
+## #73 — Scheduled workflow: fetch + filter + derive release summaries → commit `_data/activity.json`
 
-**Phase:** D (goal). **Size:** L. **Depends on:** D4's dispatch pattern. **Prerequisite
-for:** D2, D3.
+**Phase:** D (goal). **Size:** L. **Depends on:** #72's dispatch pattern. **Prerequisite
+for:** #74, #75.
 
 **Problem.** Release rows need tag + summary, from data that must be present locally at build
 time (no build-time API calls — the `/repositories/` outage in #54 is the cautionary tale).
 release-please makes upstream release bodies machine-written, so summaries must be **derived**
-(with a manual override in D2).
+(with a manual override in #74).
 
 **Scope.**
 - A scheduled GitHub Actions workflow (mirror the `_data/esg_news.json` external-data
@@ -431,7 +430,7 @@ release-please makes upstream release bodies machine-written, so summaries must 
   comment — a generated `_data/` file (`esg_news.json`) has broken the prettier `check` job
   before.
 - The commit of `_data/activity.json` must **explicitly `workflow_dispatch` the deploy**
-  (see D4) — a `GITHUB_TOKEN` push to `_data/**` does not trigger `deploy.yml` on its own.
+  (see #72) — a `GITHUB_TOKEN` push to `_data/**` does not trigger `deploy.yml` on its own.
 - **Graceful degradation:** a failed fetch must never blank or shorten the existing
   `activity.json` (keep last-good; stale-but-present beats fresh-but-blank).
 
@@ -446,13 +445,13 @@ release-please makes upstream release bodies machine-written, so summaries must 
 - [ ] Committing the file triggers a deploy (via explicit dispatch), verified end to end.
 - [ ] Prettier `check` passes (file is stable or ignored).
 
-**Dependencies.** D4 (dispatch pattern). Feeds D2, D3.
+**Dependencies.** #72 (dispatch pattern). Feeds #74, #75.
 
 ---
 
-## D2 — Manual override file `_data/release_summaries.yml` (`repo@tag` → one-liner)
+## #74 — Manual override file `_data/release_summaries.yml` (`repo@tag` → one-liner)
 
-**Phase:** D (goal). **Size:** S. **Depends on:** D1 (schema).
+**Phase:** D (goal). **Size:** S. **Depends on:** #73 (schema).
 
 **Problem.** Derived summaries are good but not always ideal; some releases deserve a
 hand-polished line. release-please prevents editing the upstream body, so the override lives
@@ -466,27 +465,27 @@ in the site repo.
 - [ ] A `repo@tag` entry in `release_summaries.yml` replaces the derived summary for that
       release in the stream.
 - [ ] Absence of a key falls back cleanly to the derived summary.
-- [ ] Keys are case-consistent with D1's output (guard the case-sensitivity trap that bit
+- [ ] Keys are case-consistent with #73's output (guard the case-sensitivity trap that bit
       #54's card lookups).
 
-**Dependencies.** D1.
+**Dependencies.** #73.
 
 ---
 
-## D3 — Integrate releases as the third source with interleaving / per-source caps
+## #75 — Integrate releases as the third source with interleaving / per-source caps
 
-**Phase:** D (goal). **Size:** M. **Depends on:** D1 (data) and C3 (the stream include).
+**Phase:** D (goal). **Size:** M. **Depends on:** #73 (data) and #69 (the stream include).
 
 **Problem.** Adding releases makes three sources. At projected volume (~60% posts under naive
 date sort) the stream becomes a worse duplicate of `/blog/`. It needs balance logic, not a
 plain `sort: date | reverse`.
 
 **Scope.**
-- Add Release rows (type = Release) to C3's stream, showing tag + summary (override-aware,
-  D2), linking to the release URL.
+- Add Release rows (type = Release) to #69's stream, showing tag + summary (override-aware,
+  #74), linking to the release URL.
 - Apply the agreed balance policy (Open Question 6): per-source caps/floors or interleaving so
   posts don't crowd out releases and notes.
-- Preserve all a11y properties from C3.
+- Preserve all a11y properties from #69.
 
 **Acceptance criteria.**
 - [ ] Release rows appear in the stream, typed, with tag + summary + link.
@@ -495,24 +494,24 @@ plain `sort: date | reverse`.
 - [ ] Reads only `_data/activity.json` + local collections; no build-time API call.
 - [ ] Both themes correct; axe not worse than baseline.
 
-**Dependencies.** D1, C3. Blocked on Open Question 6 (balance numbers) before final tuning.
+**Dependencies.** #73, #69. Blocked on Open Question 6 (balance numbers) before final tuning.
 
 ---
 
-## D4 — Fix the `GITHUB_TOKEN`-won't-trigger-deploy bug (activity workflow + `schedule-posts.txt`)
+## #72 — Fix the `GITHUB_TOKEN`-won't-trigger-deploy bug (activity workflow + `schedule-posts.txt`)
 
-**Phase:** D (goal). **Size:** S. **Prerequisite for:** D1 (shares the fix).
+**Phase:** D (goal). **Size:** S. **Prerequisite for:** #73 (shares the fix).
 
 **Problem.** A workflow that pushes `_data/**` with the default `GITHUB_TOKEN` does **not**
 trigger `deploy.yml`, despite `_data/**` being in its `paths:` filter — GitHub suppresses
 workflow-triggered workflow runs. This latent bug already exists in
-`.github/workflows/schedule-posts.txt`; D1 would reproduce it. It fails **green** (the commit
+`.github/workflows/schedule-posts.txt`; #73 would reproduce it. It fails **green** (the commit
 lands, no deploy runs), so it's easy to miss.
 
 **Scope.**
 - Establish the correct pattern: after committing generated `_data/`, explicitly dispatch
   `deploy.yml` (`workflow_dispatch`) — or another mechanism that reliably triggers the deploy.
-- Apply it to the new activity workflow (D1) and fix the existing `schedule-posts.txt`.
+- Apply it to the new activity workflow (#73) and fix the existing `schedule-posts.txt`.
 
 **Acceptance criteria.**
 - [ ] A commit made by the activity workflow triggers a deploy, verified end to end.
@@ -521,7 +520,7 @@ lands, no deploy runs), so it's easy to miss.
 - [ ] The pattern is documented inline so future data-committing workflows don't re-introduce
       the bug.
 
-**Dependencies.** None. Should land before/with D1.
+**Dependencies.** None. Should land before/with #73.
 
 ---
 ---
@@ -540,8 +539,8 @@ against the actual files; `file:line` references are real.
 | — | Note-page indexing (new) | **`sitemap: false`, keep in search.** |
 | 3 | Does `projects` move under the dropdown? | **No** — stays top-level. |
 | 4 | Type labels | **Post / Note / Release.** Treatment still open (badge vs icon vs colour). |
-| 5 | Milestone list for C5 | **Draft below — needs Fred's review.** |
-| 6 | D3 balance policy | Still deferred to D3. |
+| 5 | Milestone list for #71 | **Draft below — needs Fred's review.** |
+| 6 | #75 balance policy | Still deferred to #75. |
 
 ### Why meta-refresh, definitively
 Zero-delay meta refresh is **not** a WCAG 2.2.1 violation — SC 2.2.1 fails *timed* refreshes
@@ -551,12 +550,12 @@ plugin **also** emits a meta-refresh stub. Same mechanism, extra dependency. Han
 
 ## Factual error in the body above — delete it
 
-**C3's problem statement is wrong** where it says `news.liquid` "reads `page.announcements.*`
+**#69's problem statement is wrong** where it says `news.liquid` "reads `page.announcements.*`
 where newer upstream uses `site.announcements.*`." In *this* repo `_includes/news.liquid`
 reads **`site.news`** for data (lines 2, 11); only the *config* (`limit`, `scrollable`) reads
 `page.announcements.*`, and `_layouts/about.liquid:44` already gates on
 `page.announcements.enabled` with the block present at `_pages/about.md:17-21`. There is no
-migration to perform. **Strike that line from C3's scope.**
+migration to perform. **Strike that line from #69's scope.**
 
 ## Verified mechanics (build on these with confidence)
 
@@ -570,7 +569,7 @@ migration to perform. **Strike that line from C3's scope.**
 - **Mixed timezones sort correctly.** Posts carry explicit offsets (`…-0800`), news items use
   `…-0400`; Liquid `sort` compares Ruby `Time` instants. Every item has a date, so no nil-sort
   hazard.
-- **`workflow_dispatch` is already declared on `deploy.yml:52`** — D4 has no hidden
+- **`workflow_dispatch` is already declared on `deploy.yml:52`** — #72 has no hidden
   prerequisite.
 - **Dropdown children are declared by literal `permalink` strings** (`header.liquid:97`), so
   child pages need no `nav:`. Removing `nav`/`nav_order` from publications/repositories is
@@ -579,20 +578,20 @@ migration to perform. **Strike that line from C3's scope.**
 - **Search survives the navbar change.** `_scripts/search.liquid.js:21-38` re-adds dropdown
   children under a "Dropdown" section — they move from "Navigation" to "Dropdown", not out.
 
-## Unflagged side-effects — both land in C1
+## Unflagged side-effects — both land in #67
 
 Re-adding the collection with `output: true` makes **every** `_news` item, including inline
 one-liners, render a standalone `layout: post` page. Two consequences:
 
 1. **Sitemap leak.** jekyll-sitemap includes every output document not marked
-   `sitemap: false`. C5's milestones would each become a thin indexed page.
+   `sitemap: false`. #71's milestones would each become a thin indexed page.
    **→ Set `sitemap: false` in the collection defaults.**
 2. **Search index.** `_scripts/search.liquid.js:81-102` loops `site.collections` generically
    for any label != `posts`, and already handles `item.inline`. Notes enter ninja-keys
    automatically — **desired**, per decision — but the section renders as **"News"**.
    **→ Relabel that section to "Activity".**
 
-Resulting C1 config:
+Resulting #67 config:
 ```yaml
 collections:
   news:
@@ -611,47 +610,47 @@ construction.
 
 ## Issue-scope corrections
 
-### C1 — add three things
+### #67 — add three things
 - Collection defaults per the block above (`sitemap: false`).
 - The meta-refresh stub at `_pages/news.md` **must itself carry `sitemap: false`** — it is a
   live 200 page and would otherwise stay in the sitemap, contradicting this epic's own
   acceptance criterion.
 - **`_pages/activity.md` `title:` must be exactly `activity`** (lowercase, case-sensitive).
-  C2's active-state propagation compares `page.title == child.title`
+  #68's active-state propagation compares `page.title == child.title`
   (`header.liquid:71-73, 96`). A capitalised title silently breaks parent highlighting.
-  Cross-reference this constraint in both C1 and C2.
+  Cross-reference this constraint in both #67 and #68.
 
-### C2 — the duplicate-ID fix is a *pair*, not one attribute
+### #68 — the duplicate-ID fix is a *pair*, not one attribute
 The hardcoded id appears **twice**: `id="navbarDropdown"` (`header.liquid:79`) **and**
 `aria-labelledby="navbarDropdown"` (`header.liquid:90`). Deriving the id per page (e.g.
 `navbarDropdown-{{ p.title | slugify }}`) is sufficient for uniqueness **only if
 `aria-labelledby` uses the identical derived value** — otherwise you trade a duplicate-id
 violation for a broken ARIA reference, which is worse.
 
-### C3 — two interface constraints, or C4 and D3 become rewrites
+### #69 — two interface constraints, or #70 and #75 become rewrites
 This is the most important structural finding.
 1. **Isolate the ordering seam.** Structure the include as (a) build the ordered item list,
-   then (b) render each typed row. D3 then swaps only (a) and adds a Release branch to (b).
-   **This is what lets C3 ship before the D3 balance policy is decided** — the unknown policy
+   then (b) render each typed row. #75 then swaps only (a) and adds a Release branch to (b).
+   **This is what lets #69 ship before the #75 balance policy is decided** — the unknown policy
    plugs into a known seam.
-2. **C3 owns the `limit` param**, not C4. Today's `news.liquid` already has this shape
-   (`include.limit` + `page.announcements.limit`). C4 then merely supplies `limit=5` on about
-   and nothing on `/activity/`. If C4 has to add the param later, that's an interface change
+2. **#69 owns the `limit` param**, not #70. Today's `news.liquid` already has this shape
+   (`include.limit` + `page.announcements.limit`). #70 then merely supplies `limit=5` on about
+   and nothing on `/activity/`. If #70 has to add the param later, that's an interface change
    across two issues.
 
-Note the composition: when D3's per-source caps and C4's top-N both exist, they compose (cap
+Note the composition: when #75's per-source caps and #70's top-N both exist, they compose (cap
 per source, *then* take N). That composition lives in the single ordering seam.
 
-**Re-size C3 upward.** There is **no** `.news`/`.news-title` SCSS anywhere in `_sass/` (only
+**Re-size #69 upward.** There is **no** `.news`/`.news-title` SCSS anywhere in `_sass/` (only
 `.newsletter-*`); the current table rides entirely on Bootstrap table classes. Moving to a
 semantic list is **greenfield styling across all 4 dark surfaces**, not a restyle.
 
-### C4 — add the hardcoded-path fix
+### #70 — add the hardcoded-path fix
 `_layouts/about.liquid:44-48` hardcodes `/news/` in **both** the heading link and the include
-(`{% include news.liquid limit=true %}`). C4 must repoint the include to `activity.liquid`
+(`{% include news.liquid limit=true %}`). #70 must repoint the include to `activity.liquid`
 **and** change the heading href to `/activity/`. Currently unstated.
 
-### D1 — fail-closed on partial failure
+### #73 — fail-closed on partial failure
 "Never blank or shorten" is achievable but not via regenerate-and-commit. Mechanism:
 fetch each repo to a temp file (`set -eo pipefail`) → validate it parses as JSON **and** is a
 non-empty array (**treat `[]` as failure**, not a legitimate empty result) → only then
@@ -664,7 +663,7 @@ last-good. At ~2.7 releases/month a one-day-stale stream is a non-event, and per
 is more code and more ways to get the merge key wrong. **The AC must specify the partial
 case**, or it isn't testing the risky path.
 
-### D2 — override resolves at **render time**
+### #74 — override resolves at **render time**
 `_data/activity.json` holds only the *derived* summary; the stream prefers
 `site.data.release_summaries['repo@tag']` at build time when the key exists. Why:
 - **Feedback loop.** Editing `release_summaries.yml` is a normal human push to `_data/**`,
@@ -676,14 +675,14 @@ case**, or it isn't testing the risky path.
   filtered-out patch) is a harmless no-op; fetch-time would silently drop overrides for
   anything the fetch filtered or missed.
 
-### D4 — three corrections
+### #72 — three corrections
 - **`workflow_dispatch` already exists** (`deploy.yml:52`). No unstated prerequisite.
 - **`schedule-posts.txt` is inert** — it is a `.txt`, not a `.yml`, so it is not a live
   workflow. Its default-token `git push` (line 39) *would* hit this bug if activated.
   Dormant, not an active bug. Fine to fix preemptively; describe it accurately.
 - **The ESG precedent is a counter-example for triggering, not a model.**
   `_data/esg_news.json` deploys correctly *because* an **external cron** pushes it — a
-  non-`GITHUB_TOKEN` actor, which is exactly why it never needed a dispatch. D1 runs *inside*
+  non-`GITHUB_TOKEN` actor, which is exactly why it never needed a dispatch. #73 runs *inside*
   Actions with the default token and therefore does. ESG remains a valid precedent for
   **data-locality** (fetch → commit local → build reads local) and for the `.prettierignore`
   treatment. State this explicitly so nobody copies the ESG pattern and is surprised.
@@ -699,7 +698,7 @@ workflows.
 - **"sitemap contains `/activity/` and not a live dead `/news/`"** — unsatisfiable by the
   chosen meta-refresh stub unless `sitemap: false` is added. As written the mechanism and the
   AC contradict each other.
-- **D1 "a simulated fetch failure leaves the prior `activity.json` intact"** — must specify
+- **#73 "a simulated fetch failure leaves the prior `activity.json` intact"** — must specify
   the **partial** failure (one repo down); the all-down case is trivial and misses the risk.
 - **"axe violations do not exceed the pre-change baseline" on `/activity/`** — `/activity/`
   is a brand-new URL with no baseline. This can only mean **zero violations on the new page**;
@@ -707,14 +706,14 @@ workflows.
 
 ## Sequencing verdict
 
-The C→D seam is **correct**, and the dependency graph holds — *conditional on C3's two
-interface constraints above*. Without them, D3 and C4 become edits to C3's interface and the
-seam leaks. Minor note: C2 technically builds without C1 (a child permalink pointing at a
+The C→D seam is **correct**, and the dependency graph holds — *conditional on #69's two
+interface constraints above*. Without them, #75 and #70 become edits to #69's interface and the
+seam leaks. Minor note: #68 technically builds without #67 (a child permalink pointing at a
 not-yet-existing page just 404s; the build won't fail), but the given order is cleaner.
 
-## C5 milestone backfill — APPROVED (Fred, 2026-08-18)
+## #71 milestone backfill — APPROVED (Fred, 2026-08-18)
 
-Dates from repo creation via the GitHub API. **No release is hand-authored here** — D1
+Dates from repo creation via the GitHub API. **No release is hand-authored here** — #73
 backfills all 16 minor+ releases automatically, so anything pegged to a release tag would
 render twice.
 
@@ -728,15 +727,15 @@ render twice.
 | 2026-07-23 | Extracted claude-code-loop from AgentFluent as a reusable Claude Code plugin. |
 
 ### Three rows were dropped from the draft, all for the same reason
-D1 renders every **minor-or-greater** release, so any milestone pegged to one duplicates it:
+#73 renders every **minor-or-greater** release, so any milestone pegged to one duplicates it:
 
-- ~~2026-03-09 — CodeFluent's first public release (`v0.2.0`)~~ → D1 renders `codefluent v0.2.0`.
-- ~~2026-04-17 — AgentFluent's first public release (`v0.1.0`)~~ → D1 renders `agentfluent v0.1.0`.
-- ~~2026-04-29 — CodeFluent reached `v1.0`~~ → D1 renders `codefluent v1.0.0`. **This row was
+- ~~2026-03-09 — CodeFluent's first public release (`v0.2.0`)~~ → #73 renders `codefluent v0.2.0`.
+- ~~2026-04-17 — AgentFluent's first public release (`v0.1.0`)~~ → #73 renders `agentfluent v0.1.0`.
+- ~~2026-04-29 — CodeFluent reached `v1.0`~~ → #73 renders `codefluent v1.0.0`. **This row was
   also factually wrong**: `v1.0.0` shipped **2026-03-25T09:09:31Z**; 2026-04-29 is `v1.2.0`.
 
-The surviving rows are all repo-creation / launch events, which D1 never emits. **Rule for
-future notes: if it has a release tag, let D1 render it — don't write a Note.**
+The surviving rows are all repo-creation / launch events, which #73 never emits. **Rule for
+future notes: if it has a release tag, let #73 render it — don't write a Note.**
 
 ### Excluded by decision (Fred, 2026-08-18)
 - **Anthropic AI Fluency Framework certification** — hold until *completed*, then add as a
@@ -748,7 +747,7 @@ future notes: if it has a release tag, let D1 render it — don't write a Note.*
 
 - **Type treatment** (Q4): badge / icon / colour for Post · Note · Release. Colours must come
   from existing SCSS tokens — no new hardcoded values (see #53). Candidate for a design pass
-  before C3 is built.
+  before #69 is built.
 - **Milestone list** (Q5): review the draft table above.
-- **D3 balance policy** (Q6): per-source caps vs floors vs interleave, and the numbers.
-  Not needed until D3.
+- **#75 balance policy** (Q6): per-source caps vs floors vs interleave, and the numbers.
+  Not needed until #75.
