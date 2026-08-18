@@ -121,7 +121,7 @@ jobs:
   # full observed history of the publish step (median ~7s, p95 ~278s, max
   # ~323s over 40 runs), so a slow-but-healthy deploy succeeds on attempt 1
   # rather than being killed and retried. The pathological ceiling
-  # (3 x 360s timeout + 30s + 60s ≈ 18.5 min) only occurs if every attempt
+  # (3 x 360s timeout + 30s + 60s = 19.5 min) only occurs if every attempt
   # runs to the full cap — i.e. a sustained Pages outage, when the daily SLA
   # is unmeetable regardless.
   deploy:
@@ -130,12 +130,16 @@ jobs:
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     # Deliberately larger than the build job's, and NOT 20: the retry ladder
-    # below has a documented pathological ceiling of 3 x 360s + 30s + 60s
-    # ~= 18.5 min when every attempt runs to its full cap. A tighter timeout
-    # would kill a legitimately-retrying publish, which is the exact failure
-    # this ladder exists to survive. 25 clears that ceiling with margin while
-    # still bounding the 6-hour default. If the per-attempt timeout or the
-    # backoffs change, recompute this.
+    # below has a pathological ceiling of 3 x 360s + 30s + 60s = 19.5 min when
+    # every attempt runs to its full cap. A tighter timeout would kill a
+    # legitimately-retrying publish, which is the exact failure this ladder
+    # exists to survive. 25 leaves 5.5 min of margin over that ceiling while
+    # still bounding the 6-hour default. Recompute if the per-attempt cap or
+    # either backoff changes.
+    #
+    # Safe despite the concurrency group below: timeout-minutes measures
+    # execution time on the runner, not time spent queued waiting for the
+    # group, so a deploy held behind another does not burn its budget.
     timeout-minutes: 25
     # Serialize deploys and never cancel an in-flight publish, so a retrying
     # run can't be killed by the next push (and vice versa). Scoped to this
