@@ -784,8 +784,16 @@ footer.sticky-bottom {
     margin-bottom: 10px;
   }
 
+  // Painted in --global-divider-color, the same value as its own underline.
+  // That is a rule colour, not a text colour: it composites to #e6e6e6 on
+  // white (1.24:1) and is #424246 on the dark page (1.70:1), so "work" and
+  // "research" were very nearly invisible in both themes. They are real
+  // section headings — each is also the target of the /projects/#work
+  // anchor — so they get the muted text grey and only the border keeps the
+  // divider colour. h2.bibliography on /publications/ has the same bug and
+  // gets the same fix.
   h2.category {
-    color: var(--global-divider-color);
+    color: var(--global-text-color-light);
     border-bottom: 1px solid var(--global-divider-color);
     padding-top: 0.5rem;
     margin-top: 2rem;
@@ -815,8 +823,10 @@ footer.sticky-bottom {
     }
   }
 
+  // Same divider-colour-as-text bug as h2.category above; these are the year
+  // headings that group the bibliography.
   h2.bibliography {
-    color: var(--global-divider-color);
+    color: var(--global-text-color-light);
     border-top: 1px solid var(--global-divider-color);
     padding-top: 1rem;
     margin-top: 2rem;
@@ -1607,4 +1617,36 @@ html[data-theme="light"] {
 
 html[data-theme="dark"] {
   @include outline-button-colors(#649bf6, #bc87d7); // 4.67 / 4.69 on #2c3237
+}
+
+// Muted text from Bootstrap and MDB
+//
+// Both vendors hardcode a mid-grey for de-emphasised text and neither follows
+// the theme, so both fail on every dark surface they land on:
+//
+//   .text-muted            #6c757d  3.63 on the page, 3.28 on cards,
+//                                   2.76 on the scorecard panel
+//   .card .card-text       #747373  3.26 on cards
+//
+// Point them at the same theme-aware greys #40 introduced, which already carry
+// the per-surface reasoning. The two /esg-news/ panels are painted with
+// --global-code-bg-color, lighter than the page in the dark theme, so muted
+// text inside them needs the -on-panel value — the same split their sidebar
+// legend and evidence blocks already use. That also covers #resultsCount,
+// which axe never sees because it is empty until the filter script fills it.
+//
+// .text-muted is a Bootstrap utility declared with !important, so the override
+// has to be too. .card-text is not, but MDB scopes it three classes deep
+// (.card .card-body .card-text), so the override matches that specificity.
+.text-muted {
+  color: var(--global-text-color-light) !important;
+}
+
+#scorecard-section .text-muted,
+.esg-news-sidebar .text-muted {
+  color: var(--global-text-color-light-on-panel) !important;
+}
+
+.card .card-body .card-text {
+  color: var(--global-text-color-light);
 }
