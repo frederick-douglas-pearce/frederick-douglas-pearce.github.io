@@ -154,6 +154,14 @@ newsletter:
 # -----------------------------------------------------------------------------
 
 collections:
+  # Internal name stays `news` (the Activity templates and the search index read
+  # `site.news`); the user-facing section is Activity. Per-collection `defaults:`
+  # is inert in this Jekyll version -- `layout` and `sitemap` for notes are set
+  # in the top-level `defaults:` block below.
+  news:
+    output: true
+    # Notes live under /activity/, not the retired /news/ prefix.
+    permalink: /activity/:path/
   projects:
     output: true
 
@@ -225,6 +233,16 @@ defaults:
   - scope:
       path: "assets"
     values:
+      sitemap: false
+  # Notes in the `news` collection (see Activity, /activity/). `output: true`
+  # renders every note as a standalone page, including one-line `inline: true`
+  # ones; keeping them out of the sitemap avoids indexing a pile of thin pages.
+  # They stay in ctrl-K search, which reads `site.collections` directly.
+  - scope:
+      path: ""
+      type: news
+    values:
+      layout: post
       sitemap: false
 
 sass:
