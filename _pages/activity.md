@@ -6,4 +6,4 @@ description: Posts, notes and releases from Frederick Douglas Pearce — a runni
 nav: false
 ---
 
-{% include news.liquid %}
+{% include activity.liquid %}
