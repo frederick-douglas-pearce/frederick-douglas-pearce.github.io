@@ -3,8 +3,6 @@ layout: page
 permalink: /repositories/
 title: repositories
 description: A selection of my open-source projects and data science work on GitHub.
-nav: true
-nav_order: 5
 ---
 
 {% comment %}

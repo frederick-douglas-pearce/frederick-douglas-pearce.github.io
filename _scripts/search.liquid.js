@@ -26,9 +26,18 @@ ninja.data = [
             {
               {%- assign title = child.title | escape | strip -%}
               {%- if child.permalink contains "/blog/" -%}{%- assign url = "/blog/" -%} {%- else -%}{%- assign url = child.permalink -%}{%- endif -%}
+              {%- comment -%}
+                Children are declared by literal permalink, so they carry no description of
+                their own. Fall back to the target page's front-matter `description` rather
+                than restating it in the dropdown declaration -- otherwise moving a page under
+                a dropdown silently empties its search result. An explicit `description:` on
+                the child still wins.
+              {%- endcomment -%}
+              {%- assign child_page = site.pages | where: "permalink", child.permalink | first -%}
+              {%- assign description = child.description | default: child_page.description -%}
               id: "dropdown-{{ title | slugify }}",
               title: "{{ title | truncatewords: 13 }}",
-              description: "{{ child.description | strip_html | strip_newlines | escape | strip }}",
+              description: "{{ description | strip_html | strip_newlines | escape | strip }}",
               section: "Dropdown",
               handler: () => {
                 window.location.href = "{{ url | relative_url }}";
