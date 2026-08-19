@@ -1,0 +1,108 @@
+// Activity stream — the merged posts + notes list rendered by
+// `_includes/activity.liquid` on /activity/ and on the about page.
+//
+// Greenfield: there was never a `.news` / `.news-title` rule in this repo, so
+// nothing here is a restyle. All colours come from the theme variables in
+// `_themes.scss`, which keeps the component correct on every dark surface
+// (page #1c1c1d, card #212529, panel #2c3237, evidence item #32383d) rather
+// than only on the page background.
+
+.activity-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.activity-item {
+  display: grid;
+  // Single column below the breakpoint so the row stacks instead of squeezing
+  // the title into a sliver, which is what the old 20%/80% table did.
+  grid-template-columns: 1fr;
+  gap: 0.15rem 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--global-divider-color);
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  @media (min-width: 576px) {
+    grid-template-columns: minmax(10.5rem, max-content) 1fr;
+    align-items: baseline;
+  }
+}
+
+.activity-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.activity-date {
+  color: var(--global-text-color-light);
+  font-size: 0.9rem;
+}
+
+// The type badge is real text, not a colour cue: the label reads the same to a
+// screen reader, in high-contrast mode, and to anyone who cannot separate the
+// two hues.
+.activity-type {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.1rem 0.45rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--global-divider-color);
+  color: var(--global-text-color-light);
+}
+
+.activity-type--post {
+  border-color: var(--global-theme-color);
+  color: var(--global-theme-color);
+}
+
+.activity-body {
+  min-width: 0;
+}
+
+.activity-title {
+  color: var(--global-text-color);
+  font-weight: 500;
+
+  &:hover {
+    color: var(--global-theme-color);
+  }
+}
+
+.activity-note {
+  margin: 0;
+  color: var(--global-text-color);
+
+  // Inline notes are one-liners, but they carry markdown, so keep long links
+  // from pushing the row wider than the viewport.
+  overflow-wrap: anywhere;
+}
+
+.activity-series {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0;
+  margin: 0.15rem 0 0;
+  font-size: 0.8rem;
+
+  a {
+    color: var(--global-text-color-light);
+
+    &:hover {
+      color: var(--global-theme-color);
+    }
+  }
+}
+
+.activity-empty {
+  color: var(--global-text-color-light);
+}

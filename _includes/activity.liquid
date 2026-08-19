@@ -1,0 +1,96 @@
+{%- comment -%}
+  Activity — one merged, reverse-chronological, typed stream of blog posts and
+  notes (the `news` collection). Rendered on /activity/ and on the about page.
+
+  Interface:
+    include.limit — maximum rows to render. Omit for the full stream.
+
+  The structure is deliberately two-part:
+
+    (a) the ordering seam — produces `activity_items`, and nothing else
+    (b) the render loop   — one branch per item type
+
+  #75 replaces (a) wholesale (per-source caps and interleaving) and adds a
+  Release branch to (b). Keep sorting and limiting out of the render loop so
+  that stays an addition rather than a rewrite.
+
+  `item.collection` is the type discriminator: it exposes the label string,
+  `"posts"` or `"news"`. `inline` is consulted only within the Note branch.
+
+  There is no scroll container. Upstream's `<div class="table-responsive"
+  style="max-height:60vw">` was a WCAG 2.1.1 failure (a scrollable region with
+  no keyboard access); the about page bounds its own height with `limit`
+  instead, and /activity/ is a full-length page like /blog/.
+{%- endcomment -%}
+
+{%- comment -%} (a) Ordering seam. {%- endcomment -%}
+{%- assign activity_items = site.posts | concat: site.news | sort: 'date' | reverse -%}
+{%- if include.limit and activity_items.size > include.limit -%}
+  {%- assign activity_items = activity_items | slice: 0, include.limit -%}
+{%- endif -%}
+
+{%- comment -%} (b) Render loop. {%- endcomment -%}
+<div class="activity">
+  {%- if activity_items.size > 0 -%}
+    <ul class="activity-list">
+      {%- for item in activity_items -%}
+        {%- if item.collection == 'news' -%}
+          {%- assign item_type = 'note' -%}
+          {%- assign item_type_label = 'Note' -%}
+        {%- else -%}
+          {%- assign item_type = 'post' -%}
+          {%- assign item_type_label = 'Post' -%}
+        {%- endif -%}
+
+        {%- comment -%} Match the site's existing link convention (see latest_posts.liquid). {%- endcomment -%}
+        {%- assign item_external = false -%}
+        {%- if item.redirect == blank -%}
+          {%- assign item_href = item.url | relative_url -%}
+        {%- elsif item.redirect contains '://' -%}
+          {%- assign item_href = item.redirect -%}
+          {%- assign item_external = true -%}
+        {%- else -%}
+          {%- assign item_href = item.redirect | relative_url -%}
+        {%- endif -%}
+
+        <li class="activity-item activity-item--{{ item_type }}">
+          <div class="activity-meta">
+            <time class="activity-date" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: '%b %-d, %Y' }}</time>
+            <span class="activity-type activity-type--{{ item_type }}">{{ item_type_label }}</span>
+          </div>
+          <div class="activity-body">
+            {%- if item_type == 'note' and item.inline -%}
+              <p class="activity-note">{{ item.content | remove: '<p>' | remove: '</p>' | emojify }}</p>
+            {%- else -%}
+              <a
+                class="activity-title"
+                href="{{ item_href }}"
+                {% if item_external %}
+                  target="_blank" rel="noopener noreferrer"
+                {% endif %}
+              >
+                {{- item.title -}}
+                {%- if item_external -%}
+                  <span class="sr-only"> (opens in a new tab)</span>
+                {%- endif -%}
+              </a>
+              {%- if item_type == 'post' and item.categories.size > 0 -%}
+                <ul class="activity-series">
+                  {%- for category in item.categories -%}
+                    <li>
+                      <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">
+                        <i class="fa-solid fa-tag fa-sm" aria-hidden="true"></i> {{ category }}
+                      </a>
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              {%- endif -%}
+            {%- endif -%}
+          </div>
+        </li>
+      {%- endfor -%}
+    </ul>
+  {%- else -%}
+    <p class="activity-empty">Nothing here yet.</p>
+  {%- endif -%}
+</div>
