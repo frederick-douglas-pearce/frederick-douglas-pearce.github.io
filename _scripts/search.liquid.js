@@ -80,6 +80,15 @@ ninja.data = [
   {%- endif -%}
   {%- for collection in site.collections -%}
     {%- if collection.label != 'posts' -%}
+      {%- comment -%}
+        The `news` collection keeps its internal name (templates read `site.news`),
+        but it is surfaced to readers as Activity — see /activity/.
+      {%- endcomment -%}
+      {%- if collection.label == 'news' -%}
+        {%- assign section_label = 'Activity' -%}
+      {%- else -%}
+        {%- assign section_label = collection.label | capitalize -%}
+      {%- endif -%}
       {%- for item in collection.docs -%}
         {
           {%- if item.inline -%}
@@ -90,7 +99,7 @@ ninja.data = [
           id: "{{ collection.label }}-{{ title | slugify }}",
           title: '{{ title | escape | emojify | truncatewords: 13 }}',
           description: "{{ item.description | strip_html | strip_newlines | escape | strip }}",
-          section: "{{ collection.label | capitalize }}",
+          section: "{{ section_label }}",
           {%- unless item.inline -%}
             handler: () => {
               window.location.href = "{{ item.url | relative_url }}";
