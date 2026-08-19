@@ -40,12 +40,12 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
-    <!-- News -->
-    {% if page.announcements and page.announcements.enabled %}
+    <!-- Activity -->
+    {% if page.activity and page.activity.enabled %}
       <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        <a href="{{ '/activity/' | relative_url }}" style="color: inherit">activity</a>
       </h2>
-      {% include news.liquid limit=true %}
+      {% include activity.liquid limit=page.activity.limit %}
     {% endif %}
 
     <!-- Latest posts -->
