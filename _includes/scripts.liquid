@@ -266,12 +266,17 @@
 
   The script URL is site.umami_analytics_src so the hosted tier's retention and
   ad-blocker limits stay a one-line config change; see _config.yml.
+
+  data-domains keeps local builds out of the dashboard: the tracker ships in
+  every build, so without it the a11y audit -- which drives a real browser over
+  the whole sitemap in two themes -- posts its page loads as real traffic.
 {% endcomment %}
 {% if site.enable_umami_analytics %}
   <script
     defer
     src="{{ site.umami_analytics_src | default: 'https://cloud.umami.is/script.js' }}"
     data-website-id="{{ site.umami_analytics }}"
+    data-domains="{{ site.umami_analytics_domains }}"
   ></script>
 {% endif %}
 
