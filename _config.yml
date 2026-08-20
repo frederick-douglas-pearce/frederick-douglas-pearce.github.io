@@ -93,6 +93,14 @@ og_image: /assets/img/og_banner.png # The site-wide (default for all links) Open
 # Analytics and search engine verification
 # -----------------------------------------------------------------------------
 
+# The four keys below are unused upstream al-folio defaults, kept on purpose:
+# their blocks are inert while the matching enable_* toggles are false, and
+# leaving them byte-identical to upstream keeps this group and the analytics
+# region of _includes/scripts.liquid merging cleanly. #86 weighed pruning them
+# (GA4 was positively rejected in epic #88) and decided against it -- there is
+# no defect to fix, and a partial prune is worse than either end state. Do not
+# delete one without the other three, their toggles, and their _scripts sidecar.
+#
 # For Google Analytics, see https://support.google.com/analytics/answer/10447272?hl=en&ref_topic=14088998&sjid=5129943941510317771-SA#zippy=%2Cgoogle-sites
 # and follow the instructions for Google Sites. You will need to create a Google Analytics property and copy the Google tag ID.
 google_analytics: # your Google Analytics measurement ID (format: G-XXXXXXXXXX)
@@ -438,6 +446,8 @@ lazy_loading_images: true # enables lazy loading of images (recommended)
 # Optional Features
 # -----------------------------------------------------------------------------
 
+# The four disabled providers below are kept deliberately; see the note above
+# the matching *_analytics keys and #86 before pruning any of them.
 enable_google_analytics: false # enables google analytics
 enable_cronitor_analytics: false # enables cronitor RUM analytics
 enable_pirsch_analytics: false # enables Pirsch analytics (https://pirsch.io/)
