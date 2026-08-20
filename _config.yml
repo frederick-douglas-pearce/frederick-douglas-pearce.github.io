@@ -14,7 +14,14 @@ footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: data science, Earth science, Python, portfolio-website # add your own keywords or leave empty
+# Deliberately empty (#85). _includes/metadata.liquid:43-44 emits
+# <meta name="keywords"> only when `page.keywords or site.keywords` is set, so
+# clearing this key drops the tag site-wide without diverging the template from
+# upstream al-folio. Google has ignored the keywords meta tag since 2009 and
+# Bing treats it at best as a spam signal, so it was pure dead weight. Do not
+# repopulate it; per-page `keywords:` front matter still works if a future need
+# ever appears.
+keywords:
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: mountain_trend_v0.svg # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 

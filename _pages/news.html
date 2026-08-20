@@ -1,4 +1,9 @@
 ---
+# Redirect stub for the old /news/ URL. Deliberately carries no `description:`
+# (#85): `layout: none` means _includes/metadata.liquid never runs for this
+# page, so a description would emit nowhere, and the hand-written <head> below
+# is already `noindex` + `sitemap: false` -- there is no search result for a
+# description to improve.
 layout: none
 permalink: /news/
 sitemap: false
