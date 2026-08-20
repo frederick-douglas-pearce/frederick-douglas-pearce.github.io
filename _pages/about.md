@@ -3,6 +3,13 @@ layout: about
 title: about
 permalink: /
 subtitle: "From Earth Science to AI Engineering — Scientific rigor, production ML, human-centered AI"
+# Hand-written for the search result, not shown on the page -- the `about`
+# layout renders `subtitle`, never `description`. This feeds only the metadata:
+# <meta name="description">, og:/twitter:description, and the WebSite JSON-LD
+# (_includes/metadata.liquid). Without it the homepage -- the highest-value page
+# for search -- falls back to the generic site-wide `description` in _config.yml.
+# Keep it under ~155 characters so Google does not truncate it in the SERP.
+description: "ML and AI engineer in Portland, OR with an MIT PhD, building production AI systems that turn hard-to-quantify questions into accountable decisions."
 
 profile:
   align: right
