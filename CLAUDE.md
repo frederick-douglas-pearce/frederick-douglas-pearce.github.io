@@ -95,6 +95,20 @@ The blog's name and subheading (`Ground Truth` / "What the source data actually 
 live in **two** places that must change together: `blog_description` in `_config.yml` (the
 visible `<h2>`) and `description` in `_pages/blog.md` (meta/OG/JSON-LD).
 
+## Marketing and social drafts
+
+Links to this site posted anywhere off-site carry UTM parameters. The taxonomy — the
+closed `utm_source`/`utm_medium` vocabularies, per-post `utm_campaign` keying, and the
+standing-placement table — lives in [`doc/utm-conventions.md`](doc/utm-conventions.md),
+which is the single source of truth.
+
+The `marketer` subagent that drafts the LinkedIn/X/dev.to posts is defined at
+`~/.claude/agents/marketer.md` — **user-global, outside this repo, shared with other
+projects** — so it carries only a generic "apply the convention the site documents" rule
+and none of the values above. **Any delegation to it must name `doc/utm-conventions.md`
+in the prompt**, or it has no way to find them. Tagging is a one-way door: a link posted
+untagged cannot be attributed after the fact.
+
 ## Activity stream
 
 `_includes/activity.liquid` renders one merged, typed, reverse-chronological stream of
