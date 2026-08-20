@@ -107,6 +107,18 @@ umami_analytics: 62937af2-8c10-446c-b7d9-9429a0dd1bbe # your Umami website ID (f
 # Self-hosting or proxying the script from our own domain defeats both. Point
 # this at that host when it exists; do not edit _includes/scripts.liquid.
 umami_analytics_src: https://cloud.umami.is/script.js # Umami tracker script URL
+#
+# Hostnames Umami will collect from, comma-separated. Anything else -- a local
+# build, the a11y audit driving a real browser over the whole sitemap, a fork --
+# loads the script and sends nothing. Without this the audit alone posts ~86
+# pageviews from localhost into the dashboard.
+#
+# Deliberately a literal, not derived from site.url: _config_local.yml overrides
+# url to localhost for local builds, so deriving it would whitelist exactly the
+# host we are trying to exclude. Compared against location.hostname, which has
+# no port -- do not put ports here. Blanking this value turns the filter off
+# (the tracker treats empty as "no filter"), it does not stop collection.
+umami_analytics_domains: frederick-douglas-pearce.github.io # hostnames to collect from
 
 # For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
 google_site_verification: # your google-site-verification ID (Google Search Console)
