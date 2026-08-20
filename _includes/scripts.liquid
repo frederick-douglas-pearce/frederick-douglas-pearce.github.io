@@ -257,6 +257,23 @@
   <script defer src="{{ '/assets/js/open-panel-analytics-setup.js' | relative_url }}"></script>
   <script async defer src="https://openpanel.dev/op1.js"></script>
 {% endif %}
+{% comment %}
+  Umami — the analytics provider actually in use. Modelled on the Pirsch block
+  above, not the GA4/Cronitor/Openpanel ones: those each pull an
+  assets/js/*-analytics-setup.js that does not exist in this repo, and are inert
+  only because they are disabled. This tag is self-contained — attributes only,
+  no sidecar JS, no inline script for jekyll-terser to parse.
+
+  The script URL is site.umami_analytics_src so the hosted tier's retention and
+  ad-blocker limits stay a one-line config change; see _config.yml.
+{% endcomment %}
+{% if site.enable_umami_analytics %}
+  <script
+    defer
+    src="{{ site.umami_analytics_src | default: 'https://cloud.umami.is/script.js' }}"
+    data-website-id="{{ site.umami_analytics }}"
+  ></script>
+{% endif %}
 
 {% if site.enable_progressbar %}
   <!-- Scrolling Progress Bar -->
