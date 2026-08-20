@@ -93,6 +93,21 @@ cronitor_analytics: # cronitor RUM analytics site ID (format: XXXXXXXXX)
 pirsch_analytics: # your Pirsch analytics site ID (length 32 characters)
 openpanel_analytics: # your Openpanel analytics client ID (format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)
 
+# Umami Cloud (https://cloud.umami.is) — the analytics provider actually in use;
+# every other key in this group is an unused upstream default. The website ID is
+# not a secret: it ships in the page HTML for every visitor.
+umami_analytics: 62937af2-8c10-446c-b7d9-9429a0dd1bbe # your Umami website ID (format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)
+#
+# The tracker source is a config key, not a template constant, because both known
+# limits of the hosted free tier are fixed by moving this one value:
+#   1. 6-month retention — no year-over-year comparison, history ages out.
+#   2. cloud.umami.is is on EasyPrivacy, so ad blockers drop some hits. Read the
+#      numbers as a floor, not a census. Umami is blocked far less than GA4,
+#      which is why it was chosen over it (#88), but it is not immune.
+# Self-hosting or proxying the script from our own domain defeats both. Point
+# this at that host when it exists; do not edit _includes/scripts.liquid.
+umami_analytics_src: https://cloud.umami.is/script.js # Umami tracker script URL
+
 # For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
 google_site_verification: # your google-site-verification ID (Google Search Console)
 bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
@@ -404,6 +419,7 @@ enable_google_analytics: false # enables google analytics
 enable_cronitor_analytics: false # enables cronitor RUM analytics
 enable_pirsch_analytics: false # enables Pirsch analytics (https://pirsch.io/)
 enable_openpanel_analytics: false # enables Openpanel analytics (https://openpanel.dev/)
+enable_umami_analytics: true # enables Umami analytics (https://umami.is/) — cookieless, no consent banner needed; see /privacy/
 enable_google_verification: false # enables google site verification
 enable_bing_verification: false # enables bing site verification
 enable_masonry: true # enables automatic project cards arrangement
