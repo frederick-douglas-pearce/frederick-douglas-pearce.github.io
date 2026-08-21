@@ -136,6 +136,13 @@ to declare the dropdown. Child pages therefore carry no `nav:` of their own, and
   `scope: {path: "", type: <label>}`. The symptom of getting this wrong is a document
   rendering with no layout and appearing in `sitemap.xml` despite `sitemap: false` — with
   no build-time warning.
+- **Half of `/assets/js/` is generated, and its source is `_scripts/`.** Those files carry
+  front matter with a `permalink:` under `/assets/js/`, and `include: ["_pages", "_scripts"]`
+  in `_config.yml` is what publishes them — so a template referencing
+  `/assets/js/foo-setup.js` can be perfectly correct with nothing of that name in
+  `assets/js/`. Check the built `_site/assets/js/` or `_scripts/`, not the source
+  `assets/js/`, before concluding a reference is dead. Getting this backwards produced a
+  phantom "these three analytics blocks 404" finding that reached three issue bodies (#86).
 - `_plugins/*.rb` are local Ruby plugins (cache-busting, third-party CDN vendoring,
   citation fetching, `{% details %}`). `download-3rd-party.rb` fetches the libraries listed
   in `_config.yml` into `assets/libs/` at build time, so a first build needs network.

@@ -259,10 +259,21 @@
 {% endif %}
 {% comment %}
   Umami — the analytics provider actually in use. Modelled on the Pirsch block
-  above, not the GA4/Cronitor/Openpanel ones: those each pull an
-  assets/js/*-analytics-setup.js that does not exist in this repo, and are inert
-  only because they are disabled. This tag is self-contained — attributes only,
-  no sidecar JS, no inline script for jekyll-terser to parse.
+  above rather than the GA4/Cronitor/Openpanel ones because of tag *shape*, not
+  because anything is wrong with those three: Pirsch and Umami are both
+  self-contained external tags configured entirely by data-* attributes, while
+  the other three are the two-file kind that also pulls a sidecar
+  assets/js/*-analytics-setup.js. Copying a two-file provider would have meant
+  adding a fourth setup script for no reason. (Those sidecars are real and do
+  build -- they are generated from _scripts/, which _config.yml `include:`s and
+  which renders each one to its front-matter permalink under /assets/js/. An
+  earlier round of this work looked only in assets/js/, concluded the files were
+  missing, and recorded a 404 hazard that does not exist; see #86.)
+
+  All four upstream provider blocks are deliberately left in place, here and in
+  distill_scripts.liquid: they are inert while their toggles are false, they are
+  byte-identical to al-folio, and keeping them keeps this region merging cleanly
+  from upstream. #86 decided that; do not prune them piecemeal.
 
   The script URL is site.umami_analytics_src so the hosted tier's retention and
   ad-blocker limits stay a one-line config change; see _config.yml.
