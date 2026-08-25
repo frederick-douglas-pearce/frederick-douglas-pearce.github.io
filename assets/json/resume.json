@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Frederick Douglas Pearce",
-    "label": "Data Scientist, Earth Scientist",
+    "label": "Senior ML & AI Engineer | Data Scientist | PhD",
     "image": "",
     "email": "frederick.douglas.pearce@gmail.com",
     "phone": "(505) 310-5628",
     "url": "https://frederick-douglas-pearce.github.io/",
-    "summary": "An experienced Data Scientist with a PhD in Geophysics from MIT.",
+    "summary": "Senior ML and AI engineer with a PhD in Geophysics from MIT and 15+ years of production experience across Earth science research, federal healthcare analytics, cybersecurity, and applied AI. Builds end-to-end systems — data collection and modeling through deployment, evaluation, and monitoring — that turn complex organizational questions into practical, cost-effective solutions. Creator of the AI Fluency Suite (AgentFluent + CodeFluent), open-source tools for evaluating AI agent quality and human-AI collaboration.",
     "location": {
       "address": "",
       "postalCode": "OR 97212",
@@ -29,13 +29,17 @@
   },
   "work": [
     {
-      "name": "Freelance (Part-time)",
-      "position": "Data Scientist",
+      "name": "Freelance (Remote)",
+      "position": "Freelance AI Engineer / Machine Learning Engineer / Data Scientist",
       "url": "https://frederick-douglas-pearce.github.io/",
       "startDate": "2022-06-01",
-      "endDate": "2025-07-01",
-      "summary": "Supporting startups in analytics and reporting tasks, developing my own startup idea, and building personal projects using Python and SQL",
-      "highlights": ["Legal Tech", "US Politics", "Time Series Analysis"]
+      "endDate": "",
+      "summary": "Design, build, and deploy production software, machine learning, and agent-based AI solutions spanning LLM evaluation, autonomous agents, analytics, data engineering, and intelligent automation using Python, SQL, and modern cloud technologies.",
+      "highlights": [
+        "Built and published the AI Fluency Suite (AgentFluent + CodeFluent), open-source tools for evaluating AI agent quality and human-AI collaboration effectiveness",
+        "Shipped production ML services on Google Cloud Run with CI/CD and full test coverage: a sportswear ESG news classifier with a live sustainability scorecard, an e-commerce fraud detection API, and a public U.S. presidential voting data API",
+        "Earlier client work: legal tech analytics, political data analysis, startup analytics and reporting"
+      ]
     },
     {
       "name": "Portland State University Foundation",
@@ -61,7 +65,8 @@
         "Validated accuracy of data and reports, including implementation of automated data checks and reviews of production SQL and Python code",
         "Presented sprint deliverables to program leadership, and gathered feedback for bug fixes and new features",
         "Trained external teams and potential customers on data model, metric definitions, and use of platform tools for self-service analytics",
-        "Member of hiring team for over 1 year: conducted dozens of phone screens and technical interviews, plus I created a technical interview for a BI role"
+        "Member of hiring team for over 1 year: conducted dozens of phone screens and technical interviews, plus I created a technical interview for a BI role",
+        "Tech: Python, SQL, PostgreSQL, Redshift, Jupyter Notebooks, Superset, Git, GitHub"
       ]
     },
     {
@@ -70,13 +75,14 @@
       "url": "",
       "startDate": "2015-09-01",
       "endDate": "2016-05-01",
-      "summary": "As Tripwire's first data science-related hire, my work began with many a conversation across different groups to understand the data challenges the company faced. Then I leveraged their existing tech stack (Python, Elasticsearch, Logstash, Kibana) to deliver novel tools for visualizing and analyzing data from Tripwire Enterprise, their flagship product, including",
+      "summary": "Developed security analytics, anomaly detection, and visualization solutions using Python and the Elastic Stack as Tripwire's first data science hire, transforming raw security event data into actionable product insights.",
       "highlights": [
         "Compelling visualizations of filtered and/or aggregated event data along side insightful analytics (matplotlib)",
         "Over two dozen security data features engineered with standard (e.g. FFT) and new (e.g. Block analytics) methods",
         "An anomaly detector that successfully flagged “unusual” security events",
         "A movie simulation of flagging anomalies in real-time data streams as POC for the marketing and product teams",
-        "High-level presentations and demos of visualization and analytics results, including at R&D All-Hands"
+        "High-level presentations and demos of visualization and analytics results, including at R&D All-Hands",
+        "Tech: Python, Elasticsearch, Logstash, Kibana, NumPy, Matplotlib"
       ]
     },
     {
@@ -93,9 +99,11 @@
         "Developed a preprocessing pipeline to generate receiver functions from array data with unprecedented fidelity and accuracy, while expanding the number of earthquakes available for imaging (i.e. it made lower signal-to-noise EQs viable for imaging)",
         "Derived analytical expressions for receiver function imaging of 3D, dipping interfaces with multiple layers to power a Common Conversion Point imaging algorithm",
         "Managed and quality controlled over a dozen big (TB+) data sets, 6+ for publication",
-        "Developed 12+ data processing workflows combining signal processing (e.g. Filtering, FFT, PCA), and machine learning (e.g. Linear Regression, Genetic Algorithm), etc.",
+        "Developed 12+ data processing workflows combining signal processing (FFT, PCA, adaptive filtering) and machine learning (linear regression, genetic algorithms) — early applications of quantitative ML methods to geophysical inverse problems",
         "Trained research teams to apply seismic imaging workflows on their own datasets, resulting in several peer-reviewed publications",
-        "Presented over twenty times at conferences and universities, including invited talks for the Tectonics Observatory Brownbag Seminar at Caltech in July of 2011 and the Department Seminar at the University of Oregon in January of 2011"
+        "Developed an automated multichannel alignment pipeline (Appendix B of PhD thesis) replacing a manual qualitative process with an iterative, convergence-based automated system — a direct precursor to modern MLOps thinking",
+        "Presented over twenty times at conferences and universities, including invited talks for the Tectonics Observatory Brownbag Seminar at Caltech in July of 2011 and the Department Seminar at the University of Oregon in January of 2011",
+        "Tech: MATLAB, Python, Signal Processing (FFT, PCA, Filtering), Linear Regression, Genetic Algorithms, Distributed Computing, Seismic Imaging"
       ]
     },
     {
@@ -120,7 +128,85 @@
       "summary": "Performed field experiments and data analysis to measure soil hysteresis effects on local resonance modes induced by a large vibrator truck, with application to designing strong ground motion resistant structures.",
       "highlights": [
         "Developed and coded novel signal processing methods for extracting quantitative measures of nonlinear soil behavior from large (>GB), experimental data sets",
-        "Wrote publication (Johnson et al., JGR 2009) and presented research findings at 6+ meetings and conferences"
+        "Wrote publication (Johnson et al., JGR 2009) and presented research findings at 6+ meetings and conferences",
+        "Tech: MATLAB, Signal Processing, Large-scale data analysis (>GB datasets)"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "AgentFluent",
+      "url": "/projects/agentfluent/",
+      "startDate": "2026-04-01",
+      "endDate": "",
+      "summary": "Local-first Python CLI on PyPI that analyzes Claude Code and Claude Agent SDK session traces to diagnose agent configuration quality and recommend improvements.",
+      "highlights": [
+        "Created deterministic evaluation pipelines that correlate prompt design, tool selection, model configuration, retry behavior, token usage, and execution errors with actionable optimization recommendations",
+        "Scores every recommendation on one of three diagnostic axes — cost (token spend, model selection trade-offs), speed, and quality (mid-flight user corrections, file rework density, reviewer-caught rate) — exposing per-recommendation axis_scores and primary_axis in the JSON envelope so a CI rule can gate on a single dimension",
+        "Enhanced quality diagnostics with opt-in git and GitHub enrichment layers that correlate session behavior to downstream CI failure rates, PR review density, and feat-to-fix commit proximity",
+        "Implemented rolling baseline regression detection, structured JSON outputs, CI/CD integration, automated versioning, and quality gates using GitHub Actions, mypy, pytest, ruff, and release-please",
+        "Designed a privacy-first, zero-cost architecture that runs locally with no outbound network calls unless GitHub enrichment is explicitly opted into, enabling enterprise-safe agent evaluation, monitoring, and continuous improvement",
+        "Extracted the supervised dev-loop engine powering AgentFluent's own development into a standalone Claude Code marketplace plugin, making the same structured, human-gated development loop available to any project",
+        "Tech: Python, Pydantic, PyYAML, pytest, mypy, ruff, GitHub Actions, Loop Engineering"
+      ]
+    },
+    {
+      "name": "CodeFluent",
+      "url": "/projects/codefluent/",
+      "startDate": "2026-02-01",
+      "endDate": "",
+      "summary": "VS Code extension and FastAPI web application that analyzes Claude Code session data to measure human-AI collaboration quality against published Anthropic research benchmarks.",
+      "highlights": [
+        "Designed LLM-based behavioral evaluation pipelines that score 11 AI fluency behaviors, 6 coding interaction patterns, and project configuration maturity while detecting policy enforcement gaps within CLAUDE.md workflows",
+        "Implemented personalized coaching that generates optimized prompts, identifies missing collaboration behaviors, and correlates fluency scores with token consumption, cache utilization, and development cost",
+        "Architected cross-platform Python and TypeScript services with persistent caching, structured JSON parsing, GitHub CLI integration, and comprehensive automated testing exceeding 1,650 unit and integration tests",
+        "Built a production-ready analytics platform that turns raw Claude Code conversations into actionable engineering insights through interactive visualizations, research-backed scoring models, and repository-specific recommendations",
+        "Tech: Python, FastAPI, VS Code Extension API, Claude API, Chart.js, pytest, TypeScript"
+      ]
+    },
+    {
+      "name": "Sportswear ESG News Classifier",
+      "url": "/projects/esg_classifier/",
+      "startDate": "2025-12-01",
+      "endDate": "",
+      "summary": "Fully autonomous production ML pipeline monitoring ESG news for 50+ global sportswear brands, publishing a live Sustainability Scorecard and interactive dashboard.",
+      "highlights": [
+        "Architected and deployed an autonomous production ML pipeline that monitors ESG news for 50+ global sportswear brands, classifies articles through a hybrid ML and LLM workflow, and publishes a live Sustainability Scorecard with evidence-backed rankings, sentiment analysis, and searchable dashboards",
+        "Built a two-stage classification pipeline using Random Forest (F2: 0.974) and Logistic Regression (F2: 0.931) pre-filters ahead of Claude-based ESG classification, reducing inference costs by 20-30% while preserving high recall for relevant content",
+        "Created a RAG pipeline with OpenAI embeddings, PostgreSQL, and pgvector to retrieve supporting article passages for every ESG classification, providing traceable evidence instead of opaque model outputs",
+        "Automated end-to-end operations with Python orchestration for news collection, drift detection, model evaluation, website publishing, and health reporting, replacing 5-10 hours of weekly manual effort at an operating cost of about $0.15/day",
+        "Deployed and maintained production infrastructure using FastAPI, Docker, Google Cloud Run, MLflow model registry, Evidently AI, GitHub Actions CI/CD, and a 900+ test suite supporting continuous delivery and monitored model performance",
+        "Tech: Python, Claude API, OpenAI Embeddings, scikit-learn, Jupyter, FastAPI, Docker, Google Cloud Run, PostgreSQL, pgvector, MLflow, Evidently AI, GitHub Actions"
+      ]
+    },
+    {
+      "name": "E-Commerce Fraud Detection",
+      "url": "/projects/fraud_detection/",
+      "startDate": "2025-10-01",
+      "endDate": "2026-01-01",
+      "summary": "Production-grade fraud detection REST API combining feature engineering, model training, explainability, automated testing, and cloud-native deployment (ML Zoomcamp capstone).",
+      "highlights": [
+        "Built a production-grade fraud detection service combining feature engineering, model training, explainability, automated testing, and cloud-native REST APIs to evaluate real-time payment transactions with configurable business risk thresholds",
+        "Developed an XGBoost classifier achieving 0.87 PR-AUC with 73% precision at 83% recall on a 299K transaction dataset with a 44:1 class imbalance, transforming 15 raw fields into 30 domain-specific behavioral and transaction features",
+        "Implemented five configurable decision threshold strategies and TreeSHAP-based prediction explanations, enabling fraud teams to balance false positives against fraud losses while providing transparent, analyst-ready decision rationale",
+        "Designed and deployed a FastAPI service with Pydantic validation, multi-stage Docker containers, and Google Cloud Run auto-scaling, sustaining 25 requests/second at under 70ms server-side P99 latency under Locust load testing",
+        "Validated production reliability through a 448 test suite covering preprocessing, feature engineering, model inference, explainability, API endpoints, and integration workflows",
+        "Tech: Python, XGBoost, scikit-learn, Jupyter, FastAPI, Docker, Google Cloud Run, SHAP, Pydantic, Pytest, Locust"
+      ]
+    },
+    {
+      "name": "US Presidential Election Analysis",
+      "url": "/projects/us_presidential_vote_analysis/",
+      "startDate": "2021-12-01",
+      "endDate": "",
+      "summary": "Multi-source ETL pipeline and public REST API serving U.S. Electoral College and popular vote data from 1824 to present, live at api.us-presidential-election-center.org.",
+      "highlights": [
+        "Built a multi-source ETL pipeline ingesting U.S. Electoral College and popular vote data from the National Archives (web scraping), MIT Election Lab (CC0 dataset), and UCSB American Presidency Project, reconciling sources onto shared candidate and state keys in a PostgreSQL star schema warehouse spanning elections from 1824 to present",
+        "Designed a read-only SQLite snapshot architecture that fully decouples the API serve path from the live database — the Docker container serves requests with Postgres stopped, eliminating runtime database dependencies and enabling scale-to-zero Cloud Run deployments within the free tier",
+        "Deployed a public FastAPI REST API (api.us-presidential-election-center.org) fronted by Cloudflare for CDN caching, rate limiting, and bot protection; implemented keyless CI/CD via Workload Identity Federation GitHub Actions with version-based cache invalidation on cutover",
+        "Implemented rigorous data licensing compliance: MIT Election Lab data served under CC0 1.0, non-redistributable UCSB data excluded from the public API, with provenance metadata embedded in every response envelope",
+        "Publishes the 'Counted, Not Assumed' blog series documenting two centuries of presidential election data from primary sources, supported by an automated cross-repo publishing pipeline with fail-closed OG card validation and validate-all-then-write atomicity guarantees",
+        "Tech: Python, FastAPI, PostgreSQL, SQLite, Docker, Google Cloud Run, Cloudflare, GitHub Actions, BeautifulSoup, pandas, geopandas, uv"
       ]
     }
   ],
@@ -131,8 +217,8 @@
       "url": "https://www.mit.edu/",
       "area": "Geophysics",
       "studyType": "PhD",
-      "startDate": "2005-01-01",
-      "endDate": "2014-01-01"
+      "startDate": "2005-09-01",
+      "endDate": "2015-02-01"
     },
     {
       "institution": "Massachusetts Institute of Technology",
@@ -177,34 +263,75 @@
       "icon": "",
       "keywords": [
         "Feature Engineering",
-        "Supervised (e.g. Regression, Classificaiton)",
+        "Supervised (e.g. Regression, Classification)",
         "Unsupervised (e.g. Clustering, Anomaly Detection)",
-        "Hyperparameter tuning",
+        "Hyperparameter Tuning",
+        "XGBoost",
+        "Random Forest",
         "Convolutional Neural Networks",
         "scikit-learn",
         "Keras",
         "PyTorch",
-        "LLMs",
-        "Prompt Engineering"
+        "MLflow (Experiment Tracking & Model Registry)",
+        "Evidently AI (Drift Detection)",
+        "SHAP / LIME (Explainability)"
+      ]
+    },
+    {
+      "name": "AI & LLM Engineering",
+      "level": "Expert",
+      "icon": "",
+      "keywords": [
+        "Large Language Models (LLMs)",
+        "Agentic AI",
+        "RAG (Retrieval-Augmented Generation)",
+        "LLM-as-Judge",
+        "Prompt Engineering",
+        "Loop Engineering"
       ]
     },
     {
       "name": "Programming",
       "level": "Expert",
       "icon": "",
-      "keywords": ["Python (e.g. numpy, pandas, geopandas, matplotlib, seaborn, scipy)", "SQL", "MATLAB", "git"]
+      "keywords": [
+        "Python (numpy, pandas, geopandas, matplotlib, seaborn, scipy, FastAPI, Pydantic, Pytest, scikit-learn)",
+        "TypeScript (VS Code Extension API)",
+        "SQL",
+        "MATLAB",
+        "git"
+      ]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "level": "Expert",
+      "icon": "",
+      "keywords": [
+        "Google Cloud Run",
+        "Docker",
+        "GitHub Actions",
+        "CI/CD",
+        "Cloudflare (CDN, Workers, Rate Limiting)",
+        "Workload Identity Federation"
+      ]
     },
     {
       "name": "Databases",
       "level": "Expert",
       "icon": "",
-      "keywords": ["PostgreSQL", "PostGIS", "Redshift", "Elasticsearch"]
+      "keywords": ["PostgreSQL", "pgvector", "SQLite", "PostGIS", "Redshift", "Elasticsearch"]
     },
     {
-      "name": "Project Managament",
+      "name": "Tools",
       "level": "Expert",
       "icon": "",
-      "keywords": ["Scrum", "Kanban", "Jira", "Confluence", "Github", "User Stories"]
+      "keywords": ["Claude Code", "Claude Agent SDK", "Claude API", "Jupyter Notebooks", "VS Code", "uv", "Superset"]
+    },
+    {
+      "name": "Project Management",
+      "level": "Expert",
+      "icon": "",
+      "keywords": ["Scrum", "Kanban", "Jira", "Confluence", "GitHub", "User Stories"]
     },
     {
       "name": "Geophysics",
@@ -224,6 +351,13 @@
     }
   ],
   "certificates": [
+    {
+      "name": "Machine Learning Zoomcamp",
+      "date": "2026-02-01",
+      "issuer": "DataTalksClub",
+      "url": "https://certificate.datatalks.club/ml-zoomcamp/2025/73634973e0db563854696276f5f5a74ba16c4d6b.pdf",
+      "icon": ""
+    },
     {
       "name": "Scrum Master Specialization",
       "date": "2024-07-01",
@@ -271,13 +405,27 @@
   ],
   "volunteer": [
     {
+      "organization": "DataTalksClub — Machine Learning Zoomcamp",
+      "location": "Remote",
+      "position": "AI Engineer (Volunteer)",
+      "url": "https://github.com/DataTalksClub/faq",
+      "startDate": "2025-10-01",
+      "endDate": "2025-10-01",
+      "summary": "Built a RAG-based GitHub automation system to triage FAQ submissions for DataTalksClub's open-source ML course community.",
+      "highlights": [
+        "Designed an agentic workflow using RAG to classify incoming GitHub issues as NEW, UPDATE, or DUPLICATE, auto-generating formatted pull requests or closing duplicates with contextual comments",
+        "Implemented a production-ready system with Pydantic-structured LLM outputs, 153 tests, and autonomous deployment via GitHub Actions, eliminating the manual PR review bottleneck for course maintainers",
+        "Tech: Python, OpenAI API, RAG, GitHub Actions, Pydantic, pytest"
+      ]
+    },
+    {
       "organization": "AgilePDX",
       "location": "Portland, OR",
       "position": "Scrum Master",
       "url": "",
       "startDate": "2024-06-01",
       "endDate": "2024-10-01",
-      "summary": "Volunteer Scrum Master for AI & Agility Speaker Series. Identified potential speakers, sent cold emails to invite potential speakers, and handled scheduling and logistics.",
+      "summary": "Co-organized AgilePDX's AI & Agility Speaker Series, a new program exploring how AI enhances team performance, streamlines processes, and improves product outcomes. Responsible for speaker identification, prioritization, outreach communications, and presentation logistics across a four-month run.",
       "highlights": []
     },
     {
@@ -291,9 +439,9 @@
       "highlights": []
     },
     {
-      "organization": "Data Scientist, Subject Matter Expert",
+      "organization": "Hack Oregon",
       "location": "Portland, OR",
-      "position": "Hack Oregon",
+      "position": "Data Scientist, Subject Matter Expert",
       "url": "",
       "startDate": "2018-03-01",
       "endDate": "2018-07-01",
@@ -327,7 +475,7 @@
       "url": "",
       "startDate": "2010-12-01",
       "endDate": "2010-12-01",
-      "summary": "Chair for session entitled \"The Formation and Deformation of the Mediterranean Basins, Continental Margins, and Arcs II”.",
+      "summary": "Chair for session entitled \"The Formation and Deformation of the Mediterranean Basins, Continental Margins, and Arcs II\".",
       "highlights": []
     },
     {
