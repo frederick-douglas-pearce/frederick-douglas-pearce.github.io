@@ -31,11 +31,11 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm an ML and AI engineer and data scientist with a PhD from MIT who has been driven to understand how the world works since childhood: drawn to the patterns hiding in data, skilled at building the systems to distill them, and committed to bridging the gap between technical know-how and the people it informs. That drive has led from imaging subducting tectonic plates to understand the forces that shape the Earth and drive damaging earthquakes, through building the data foundation behind the U.S. healthcare system's shift from pay-for-quantity to pay-for-quality, to deploying autonomous AI pipelines that evaluate the sustainability efforts of global sportswear brands. The domain changes, but the approach hasn't: find a hard, ambiguous question, build a system that answers it honestly, and communicate what it means to the people who need to act on it.
+I'm an ML and AI engineer and data scientist with a PhD from MIT who has a lifelong drive to understand how the world works: drawn to the patterns hiding in data, skilled at building the systems that distill signal from noise, and committed to bridging the gap between technical know-how and the people it informs. That drive has led from imaging subducting tectonic plates to understand the forces that shape the Earth and drive damaging earthquakes, through building the data foundation behind the U.S. healthcare system's shift from pay-for-quantity to pay-for-quality, to deploying autonomous AI pipelines that evaluate the sustainability efforts of global sportswear brands. The domain changes, but the approach hasn't: find a hard, ambiguous question, build a system that answers it honestly, and communicate results that matter to the people who have to act on them.
 
-The emergence of AI coding tools, and Claude Code in particular, poured fuel on my problem-solving fire. I've been building with it daily since the day it launched, and what started as curiosity about a new tool quickly became something more: a focused effort to understand not just how to use AI effectively, but how to measure whether it is being used well. That question has produced several production systems, and recently led me to complete Anthropic's AI Fluency Framework certification, a formal grounding in the research behind what effective human-AI collaboration actually looks like.
+The emergence of AI coding tools, and Claude Code in particular, poured fuel on my problem-solving fire. I've been building with it daily since soon after it launched, and what started as curiosity about a new tool quickly became something more: a focused effort to understand not just how to use AI effectively, but how to measure whether it is being used well. That question has produced several production systems, and recently led me to complete Anthropic's AI Fluency Framework certification, a formal grounding in the research behind what effective human-AI collaboration actually looks like.
 
-The project at the center of that commitment is the AI Fluency Suite, two complementary open-source tools for evaluating AI effectiveness at both layers of the engagement stack: autonomous agents and the humans collaborating with them. [AgentFluent]({{ '/projects/agentfluent/' | relative_url }}) (PyPI-published, v1.1) works with both Claude Code and the Claude Agent SDK, scoring agent configuration against Anthropic's documented best practices and correlating observed behavior (e.g. retry loops, tool errors, token spend) back to specific gaps with prioritized recommendations. [CodeFluent]({{ '/projects/codefluent/' | relative_url }}) (VS Code extension and web app) evaluates both collaboration quality and project configuration: scoring 11 fluency behaviors and 6 coding interaction patterns against Anthropic's published research, while helping users discover and activate the full range of Claude Code features that make collaboration more effective.
+The project at the center of that commitment is the AI Fluency Suite, two complementary open-source tools for evaluating AI effectiveness at both layers of the engagement stack: autonomous agents and the humans collaborating with them. [AgentFluent]({{ '/projects/agentfluent/' | relative_url }}) (PyPI-published, v1.1) works with both Claude Code and the Claude Agent SDK, scoring agent configuration against Anthropic's documented best practices across four dimensions (i.e. description, tools, model, and prompt) and correlating observed behavior (e.g. retry loops, tool errors, token spend) back to specific gaps with prioritized recommendations. The table below is `agentfluent config-check` grading the five agents in my own Claude Code setup — a 0–100 score for each, broken out by dimension, with the recommendations still open on each one.
 
 <div class="row mt-4 mb-4">
   <div class="col-12">
@@ -45,10 +45,12 @@ The project at the center of that commitment is the AI Fluency Suite, two comple
       class="img-fluid rounded z-depth-1"
       zoomable=true
       alt="Terminal table titled Agent Configuration Scores, listing five agents -- architect, marketer, pm, anthropic-research and candidate-verifier -- each scored from 90 to 100 out of 100, broken out across description, tools, model and prompt columns, with a count of outstanding recommendations for each."
-      caption="<code>agentfluent config-check</code> scoring each agent's configuration across description, tools, model, and prompt — and counting what is left to fix."
+      caption="<code>agentfluent config-check</code>, run against my own agent definitions."
     %}
   </div>
 </div>
+
+[CodeFluent]({{ '/projects/codefluent/' | relative_url }}) (VS Code extension and web app) evaluates both human-AI conversation quality and project configuration: scoring 11 fluency behaviors and 6 coding interaction patterns against Anthropic's published research, while helping users discover and activate the full range of Claude Code features that make collaboration more effective.
 
 The [Sportswear ESG News Classifier]({{ '/projects/esg_classifier/' | relative_url }}) is a fully automated production AI and ML pipeline monitoring ESG news for 50+ global sportswear brands. A hybrid architecture, two ML pre-filter classifiers ahead of Claude-based ESG scoring, cuts inference costs by roughly 10% while preserving recall, and a RAG pipeline with OpenAI embeddings and pgvector retrieves article passages as traceable evidence for every classification. The pipeline runs autonomously at roughly $0.15/day, publishing a live [Sustainability Scorecard]({{ '/esg-news/' | relative_url }}) to this site.
 
@@ -61,7 +63,7 @@ The [Sportswear ESG News Classifier]({{ '/projects/esg_classifier/' | relative_u
       sizes="(min-width: 930px) 900px, 95vw"
       zoomable=true
       alt="The Sustainability Scorecard, ranking global sportswear brands by an overall ESG score alongside separate environmental, social, governance and digital transformation columns derived from classified news coverage."
-      caption="The live Sustainability Scorecard — 50+ global sportswear brands, scored daily from classified news coverage."
+      caption="The Sustainability Scorecard, republished daily as new coverage is classified."
     %}
   </div>
 </div>
