@@ -47,8 +47,13 @@
       "url": "",
       "startDate": "2021-02-01",
       "endDate": "2021-06-01",
-      "summary": "Member of data and IT team focused on University fundraising efforts through report development and data modeling for diverse business groups",
-      "highlights": ["Fundraising", "Blackbaud CRM", "MS SQL Server", "SSRS"]
+      "summary": "Completed end-to-end training on Blackbaud CRM and developed working knowledge of the Foundation’s donor data environment, including MS SQL Server, SSRS, and SSIS.",
+      "highlights": [
+        "Modified existing SQL queries and SSRS reports to add filters showing each fundraiser’s quarterly/campaign results against established fundraising goals, giving the VP of Development visibility into performance by individual and fundraising unit",
+        "Validated report outputs and underlying data to ensure accurate, reliable results and delivered the reporting solution ahead of deadline, providing actionable intelligence to prioritize fundraising follow-up and help drive progress toward organizational goals",
+        "Initiated Python-based RFM donor segmentation to analyze donor recency, frequency, and monetary value, establishing an early framework for more targeted donor analysis",
+        "Tech: Blackbaud CRM, MS SQL Server, SSRS, SSIS, Python"
+      ]
     },
     {
       "name": "Semanticbits",
@@ -147,7 +152,7 @@
         "Implemented rolling baseline regression detection, structured JSON outputs, CI/CD integration, automated versioning, and quality gates using GitHub Actions, mypy, pytest, ruff, and release-please",
         "Designed a privacy-first, zero-cost architecture that runs locally with no outbound network calls unless GitHub enrichment is explicitly opted into, enabling enterprise-safe agent evaluation, monitoring, and continuous improvement",
         "Extracted the supervised dev-loop engine powering AgentFluent's own development into a standalone Claude Code marketplace plugin, making the same structured, human-gated development loop available to any project",
-        "Tech: Python, Pydantic, PyYAML, pytest, mypy, ruff, GitHub Actions, Loop Engineering"
+        "Tech: Claude Code, Claude Agent SDK, Python, NLP, Clustering, Pydantic, PyYAML, pytest, mypy, ruff, GitHub Actions, Loop Engineering"
       ]
     },
     {
@@ -172,7 +177,7 @@
       "summary": "Fully autonomous production ML pipeline monitoring ESG news for 50+ global sportswear brands, publishing a live Sustainability Scorecard and interactive dashboard.",
       "highlights": [
         "Architected and deployed an autonomous production ML pipeline that monitors ESG news for 50+ global sportswear brands, classifies articles through a hybrid ML and LLM workflow, and publishes a live Sustainability Scorecard with evidence-backed rankings, sentiment analysis, and searchable dashboards",
-        "Built a two-stage classification pipeline using Random Forest (F2: 0.974) and Logistic Regression (F2: 0.931) pre-filters ahead of Claude-based ESG classification, reducing inference costs by 20-30% while preserving high recall for relevant content",
+        "Built a two-stage classification pipeline using a Random Forest (F2: 0.974) pre-filter ahead of LLM-as-Judge ESG classification, reducing inference costs by 10% while preserving high recall to capture all relevant content",
         "Created a RAG pipeline with OpenAI embeddings, PostgreSQL, and pgvector to retrieve supporting article passages for every ESG classification, providing traceable evidence instead of opaque model outputs",
         "Automated end-to-end operations with Python orchestration for news collection, drift detection, model evaluation, website publishing, and health reporting, replacing 5-10 hours of weekly manual effort at an operating cost of about $0.15/day",
         "Deployed and maintained production infrastructure using FastAPI, Docker, Google Cloud Run, MLflow model registry, Evidently AI, GitHub Actions CI/CD, and a 900+ test suite supporting continuous delivery and monitored model performance",
@@ -351,6 +356,13 @@
     }
   ],
   "certificates": [
+    {
+      "name": "AI Fluency Framework",
+      "date": "2026-09-01",
+      "issuer": "Anthropic",
+      "url": "",
+      "icon": ""
+    },
     {
       "name": "Machine Learning Zoomcamp",
       "date": "2026-02-01",
