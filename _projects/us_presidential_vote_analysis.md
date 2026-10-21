@@ -3,7 +3,7 @@ layout: page
 title: US Presidential Election Analysis
 description: A cleanly joined Electoral College and popular-vote record, 1824–2024, served as a public API
 img: assets/img/usvote_api_2000.svg
-importance: 3
+importance: 4
 category: work
 ---
 

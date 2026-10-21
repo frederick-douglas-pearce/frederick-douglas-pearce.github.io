@@ -3,7 +3,7 @@ layout: page
 title: E-Commerce Fraud Detection
 description: Real-time fraud detection with XGBoost and SHAP explainability
 img: assets/img/fraud_detection_final_centered.png
-importance: 5
+importance: 6
 category: work
 ---
 
