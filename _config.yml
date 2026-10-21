@@ -324,10 +324,12 @@ jekyll-archives:
 display_tags: [] # tags to display on the front page of the blog
 # One category per series, so these chips are the blog's series filter. Kind of
 # post (foundation, analysis, …) and subject live on the tags axis instead.
-# Both values are set upstream: posts sync byte-for-byte from claude-code-sessions
-# and us-presidential-vote-analysis, so a new series needs its category added there
-# first, then listed here.
-display_categories: ["claude-code-sessions", "us-presidential-vote"]
+# Every value is set upstream: posts sync byte-for-byte from claude-code-sessions,
+# us-presidential-vote-analysis and claude-code-loop. A series can be listed here
+# before its first post lands: _pages/blog.md only renders a chip for a category
+# that has posts, so an early entry stays hidden instead of linking to an archive
+# page jekyll-archives never generated.
+display_categories: ["claude-code-sessions", "us-presidential-vote", "claude-code-loop"]
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar

@@ -30,7 +30,16 @@ pagination:
   </div>
   {% endif %}
 
-{% if site.display_tags and site.display_tags.size > 0 or site.display_categories and site.display_categories.size > 0 %}
+{% comment %}
+Local divergence: only chip a listed category once a post carries it. Upstream
+renders every display_categories entry, so listing a series before its first post
+syncs would link to /blog/category/<name>/, which jekyll-archives never generated.
+With this filter a series can be listed ahead of its first post and the chip appears
+on the build that publishes it.
+{% endcomment %}
+{% assign live_categories = site.display_categories | where_exp: "category", "site.categories[category]" %}
+
+{% if site.display_tags and site.display_tags.size > 0 or live_categories.size > 0 %}
 
   <div class="tag-category-list">
     <ul class="p-0 m-0">
@@ -42,10 +51,10 @@ pagination:
           <li class="separator" aria-hidden="true">&bull;</li>
         {% endunless %}
       {% endfor %}
-      {% if site.display_categories.size > 0 and site.display_tags.size > 0 %}
+      {% if live_categories.size > 0 and site.display_tags.size > 0 %}
         <li class="separator" aria-hidden="true">&bull;</li>
       {% endif %}
-      {% for category in site.display_categories %}
+      {% for category in live_categories %}
         <li>
           <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
         </li>

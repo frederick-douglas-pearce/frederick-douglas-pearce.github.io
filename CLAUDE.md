@@ -80,16 +80,18 @@ bump it in `claude-code-sessions` and `us-presidential-vote-analysis` too.
 
 ## Blog taxonomy: `categories` means _series_
 
-One category per publishing repo (`claude-code-sessions`, `us-presidential-vote`); kind of
-post and subject live on **tags**. The chips on `/blog/` are `display_categories` in
-`_config.yml`, so that list _is_ the series filter — `jekyll-archives` generates
-`/blog/category/<name>/` with no custom code.
+One category per publishing repo (`claude-code-sessions`, `us-presidential-vote`,
+`claude-code-loop`); kind of post and subject live on **tags**. The chips on `/blog/` are
+`display_categories` in `_config.yml`, so that list _is_ the series filter —
+`jekyll-archives` generates `/blog/category/<name>/` with no custom code.
 
-Adding a series is order-dependent: set `categories:` on the posts **upstream** → wait for
-the `chore(sync)` commit to land → _then_ add the value to `display_categories`. Doing it
-in the other order ships a chip pointing at an archive page Jekyll never generated, and CI
-will not catch it (the build check has no link check; `broken-links-site.yml` only runs
-post-deploy).
+Add a new series to `display_categories` **before** its first post syncs. The chip loop in
+`_pages/blog.md` renders only categories that have posts, so an early entry stays hidden
+and the chip appears on the build that publishes the first post. Adding it afterwards
+leaves a window where the series is live with no chip, and nothing reports that: a post
+with an unlisted category builds and publishes normally. (Before #100 the loop rendered
+every entry, so listing early linked to an archive page Jekyll never generated. That is
+why older notes say to add the entry after the sync.)
 
 The blog's name and subheading (`Ground Truth` / "What the source data actually says.")
 live in **two** places that must change together: `blog_description` in `_config.yml` (the
