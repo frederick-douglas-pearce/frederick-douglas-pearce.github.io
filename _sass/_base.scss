@@ -1220,10 +1220,16 @@ nav[data-toggle="toc"] {
   }
 }
 
+// The card is not wrapped in a link (see the comment in _pages/blog.md, #109):
+// the title's stretched-link covers it, so hover is keyed on the card.
 .featured-posts {
-  a {
+  .card {
     color: var(--global-text-color-light);
-    text-decoration: none;
+
+    .card-title a {
+      color: inherit;
+      text-decoration: none;
+    }
 
     .card-text {
       overflow: hidden;
@@ -1238,6 +1244,14 @@ nav[data-toggle="toc"] {
         color: var(--global-theme-color);
       }
     }
+  }
+
+  // Lift the year link above the stretched-link overlay so it stays clickable.
+  .featured-year {
+    position: relative;
+    z-index: 2;
+    color: inherit;
+    text-decoration: none;
   }
 
   .post-meta {

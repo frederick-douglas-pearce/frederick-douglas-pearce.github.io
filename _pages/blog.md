@@ -83,17 +83,23 @@ display_tags gives nil.size, which is falsy, rather than gating the categories.
 <div class="container featured-posts">
 {% assign is_even = featured_posts.size | modulo: 2 %}
 <div class="row row-cols-{% if featured_posts.size <= 2 or is_even == 0 %}2{% else %}3{% endif %}">
+{% comment %}
+Diverges from upstream al-folio, which wraps the whole card in a link to the
+post. The year link below would then sit inside it, and a link inside a link
+makes the browser split the outer one into empty, unnamed links (axe
+link-name, #109). Instead the title is the card's only post link, and
+stretched-link extends its click area over the card.
+{% endcomment %}
 {% for post in featured_posts %}
 <div class="col mb-4">
-<a href="{{ post.url | relative_url }}">
 <div class="card hoverable">
 <div class="row g-0">
 <div class="col-md-12">
 <div class="card-body">
 <div class="float-right">
-<i class="fa-solid fa-thumbtack fa-xs"></i>
+<i class="fa-solid fa-thumbtack fa-xs" aria-hidden="true"></i>
 </div>
-<h3 class="card-title">{{ post.title }}</h3>
+<h3 class="card-title"><a href="{{ post.url | relative_url }}" class="stretched-link">{{ post.title }}</a></h3>
 <p class="card-text">{{ post.description }}</p>
 
                     {% if post.external_source == blank %}
@@ -105,14 +111,13 @@ display_tags gives nil.size, which is falsy, rather than gating the categories.
 
                     <p class="post-meta">
                       {{ read_time }} min read &nbsp; &middot; &nbsp;
-                      <a href="{{ year | prepend: '/blog/' | relative_url }}">
-                        <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
+                      <a href="{{ year | prepend: '/blog/' | relative_url }}" class="featured-year">
+                        <i class="fa-solid fa-calendar fa-sm" aria-hidden="true"></i> {{ year }} </a>
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-          </a>
         </div>
       {% endfor %}
       </div>
