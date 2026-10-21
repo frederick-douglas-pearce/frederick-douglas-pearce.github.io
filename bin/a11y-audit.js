@@ -75,7 +75,13 @@ async function fetchSitemap(site) {
   const res = await fetch(new URL("sitemap.xml", site));
   if (!res.ok) throw new Error(`sitemap.xml returned ${res.status}`);
   const xml = await res.text();
-  const urls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1].trim());
+  // The sitemap's <loc> entries are absolute production URLs even in a local
+  // build, so re-root each path on `site`; otherwise --site would audit the
+  // deployed pages instead of the local ones.
+  const urls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => {
+    const loc = new URL(m[1].trim());
+    return new URL(loc.pathname + loc.search, site).href;
+  });
   if (urls.length === 0) throw new Error("sitemap.xml contained no <loc> entries");
   return urls.sort();
 }
