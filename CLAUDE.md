@@ -57,9 +57,10 @@ npx prettier . --write
 ```
 
 The pin (`prettier` + `@shopify/prettier-plugin-liquid` in `package.json`) is exact on
-purpose: the two upstream repos that publish posts here run the _same_ pinned gate, and a
+purpose: the upstream repos that publish posts here run the _same_ pinned gate, and a
 caret range lets them drift and pass upstream while failing here. If you bump the pin,
-bump it in `claude-code-sessions` and `us-presidential-vote-analysis` too.
+bump it in `claude-code-sessions` and `us-presidential-vote-analysis` too, and in
+`claude-code-loop` once its publishing pipeline (claude-code-loop#177) exists.
 
 `.prettierignore` excludes vendored/minified assets and `_data/esg_news.json` — see below.
 
@@ -67,10 +68,10 @@ bump it in `claude-code-sessions` and `us-presidential-vote-analysis` too.
 
 1. **`_posts/` is written by external syncs**, not authored here. Commits are titled
    `chore(sync): publish posts from <repo>@<sha>`, from `claude-code-sessions` and
-   `us-presidential-vote-analysis`. Post bodies are copied byte-for-byte, so **editing a
-   post here is reverted on the next sync** — fix it upstream. Both publishers write into
-   the same `_posts/` namespace and cannot see each other; slug collisions are prevented
-   only by operator convention.
+   `us-presidential-vote-analysis`, with `claude-code-loop` to follow (claude-code-loop#177).
+   Post bodies are copied byte-for-byte, so **editing a post here is reverted on the next
+   sync** — fix it upstream. All publishers write into the same `_posts/` namespace and
+   cannot see each other; slug collisions are prevented only by operator convention.
 2. **`_data/esg_news.json` is pushed by an external cron** (~14:01 UTC daily), feeding
    `/esg-news/`. It is machine-generated, nobody hand-formats it, and it is in
    `.prettierignore` because a change in either the generator's or Prettier's JSON
@@ -80,16 +81,18 @@ bump it in `claude-code-sessions` and `us-presidential-vote-analysis` too.
 
 ## Blog taxonomy: `categories` means _series_
 
-One category per publishing repo (`claude-code-sessions`, `us-presidential-vote`); kind of
-post and subject live on **tags**. The chips on `/blog/` are `display_categories` in
-`_config.yml`, so that list _is_ the series filter — `jekyll-archives` generates
-`/blog/category/<name>/` with no custom code.
+One category per publishing repo (`claude-code-sessions`, `us-presidential-vote`,
+`claude-code-loop`); kind of post and subject live on **tags**. The chips on `/blog/` are
+`display_categories` in `_config.yml`, so that list _is_ the series filter —
+`jekyll-archives` generates `/blog/category/<name>/` with no custom code.
 
-Adding a series is order-dependent: set `categories:` on the posts **upstream** → wait for
-the `chore(sync)` commit to land → _then_ add the value to `display_categories`. Doing it
-in the other order ships a chip pointing at an archive page Jekyll never generated, and CI
-will not catch it (the build check has no link check; `broken-links-site.yml` only runs
-post-deploy).
+Add a new series to `display_categories` **before** its first post syncs. The chip loop in
+`_pages/blog.md` renders only categories that have posts, so an early entry stays hidden
+and the chip appears on the build that publishes the first post. Adding it afterwards
+leaves a window where the series is live with no chip, and nothing reports that: a post
+with an unlisted category builds and publishes normally. (Before #100 the loop rendered
+every entry, so listing early linked to an archive page Jekyll never generated. That is
+why older notes say to add the entry after the sync.)
 
 The blog's name and subheading (`Ground Truth` / "What the source data actually says.")
 live in **two** places that must change together: `blog_description` in `_config.yml` (the
