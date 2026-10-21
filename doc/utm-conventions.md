@@ -20,24 +20,25 @@ no later work can fill.
 
 ## The parameters
 
-| Parameter      | Required | Value                                                                | Notes                                                               |
-| -------------- | -------- | -------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| `utm_source`   | yes      | the platform: `linkedin`, `devto`, `x`, `github`, `newsletter`       | Closed vocabulary — see below. Add values deliberately, not ad hoc. |
-| `utm_medium`   | yes      | `social` for posts; `referral` for a link placed in a profile or bio | Two values. Resist growing this.                                    |
-| `utm_campaign` | yes      | the individual post slug, e.g. `222-votes-away`                      | Keyed per post, not per series — see below.                         |
-| `utm_content`  | no       | distinguishes two links to this site within the same post            | Use only when a single post carries more than one link.             |
+| Parameter      | Required | Value                                                                    | Notes                                                               |
+| -------------- | -------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------- |
+| `utm_source`   | yes      | the platform: `linkedin`, `devto`, `medium`, `x`, `github`, `newsletter` | Closed vocabulary — see below. Add values deliberately, not ad hoc. |
+| `utm_medium`   | yes      | `social` for posts; `referral` for a link placed in a profile or bio     | Two values. Resist growing this.                                    |
+| `utm_campaign` | yes      | the individual post slug, e.g. `222-votes-away`                          | Keyed per post, not per series — see below.                         |
+| `utm_content`  | no       | distinguishes two links to this site within the same post                | Use only when a single post carries more than one link.             |
 
 `utm_term` is unused. It exists for paid-search keywords; nothing here is paid search.
 
 ### `utm_source` — closed vocabulary
 
-| Value        | Where                                                      |
-| ------------ | ---------------------------------------------------------- |
-| `linkedin`   | LinkedIn posts, comments, and the LinkedIn profile itself  |
-| `devto`      | dev.to articles and TIL posts                              |
-| `x`          | X / Twitter posts and threads                              |
-| `github`     | GitHub profile README, repo READMEs, issue and PR comments |
-| `newsletter` | any email newsletter placement                             |
+| Value        | Where                                                       |
+| ------------ | ----------------------------------------------------------- |
+| `linkedin`   | LinkedIn posts, comments, and the LinkedIn profile itself   |
+| `devto`      | dev.to articles and TIL posts                               |
+| `medium`     | Medium articles, including imports of a post from this site |
+| `x`          | X / Twitter posts and threads                               |
+| `github`     | GitHub profile README, repo READMEs, issue and PR comments  |
+| `newsletter` | any email newsletter placement                              |
 
 The vocabulary is closed on purpose. Two spellings of the same platform (`dev.to` and
 `devto`, `twitter` and `x`) split one channel into two rows in the dashboard, and nothing
