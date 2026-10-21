@@ -57,9 +57,10 @@ npx prettier . --write
 ```
 
 The pin (`prettier` + `@shopify/prettier-plugin-liquid` in `package.json`) is exact on
-purpose: the two upstream repos that publish posts here run the _same_ pinned gate, and a
+purpose: the upstream repos that publish posts here run the _same_ pinned gate, and a
 caret range lets them drift and pass upstream while failing here. If you bump the pin,
-bump it in `claude-code-sessions` and `us-presidential-vote-analysis` too.
+bump it in `claude-code-sessions` and `us-presidential-vote-analysis` too, and in
+`claude-code-loop` once its publishing pipeline (claude-code-loop#177) exists.
 
 `.prettierignore` excludes vendored/minified assets and `_data/esg_news.json` — see below.
 
@@ -67,10 +68,10 @@ bump it in `claude-code-sessions` and `us-presidential-vote-analysis` too.
 
 1. **`_posts/` is written by external syncs**, not authored here. Commits are titled
    `chore(sync): publish posts from <repo>@<sha>`, from `claude-code-sessions` and
-   `us-presidential-vote-analysis`. Post bodies are copied byte-for-byte, so **editing a
-   post here is reverted on the next sync** — fix it upstream. Both publishers write into
-   the same `_posts/` namespace and cannot see each other; slug collisions are prevented
-   only by operator convention.
+   `us-presidential-vote-analysis`, with `claude-code-loop` to follow (claude-code-loop#177).
+   Post bodies are copied byte-for-byte, so **editing a post here is reverted on the next
+   sync** — fix it upstream. All publishers write into the same `_posts/` namespace and
+   cannot see each other; slug collisions are prevented only by operator convention.
 2. **`_data/esg_news.json` is pushed by an external cron** (~14:01 UTC daily), feeding
    `/esg-news/`. It is machine-generated, nobody hand-formats it, and it is in
    `.prettierignore` because a change in either the generator's or Prettier's JSON

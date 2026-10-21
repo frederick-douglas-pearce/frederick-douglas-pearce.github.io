@@ -37,9 +37,19 @@ syncs would link to /blog/category/<name>/, which jekyll-archives never generate
 With this filter a series can be listed ahead of its first post and the chip appears
 on the build that publishes it.
 {% endcomment %}
-{% assign live_categories = site.display_categories | where_exp: "category", "site.categories[category]" %}
+{% comment %}
+Test `.size > 0`, not truthiness: Jekyll builds site.categories with a default
+proc, so a key any Ruby code has looked up holds [], which Liquid treats as true.
+_plugins/display-categories-check.rb fails the build if a listed name differs
+from the posts' spelling, since this exact-match filter would hide that chip.
+{% endcomment %}
+{% assign live_categories = site.display_categories | where_exp: "category", "site.categories[category].size > 0" %}
 
-{% if site.display_tags and site.display_tags.size > 0 or live_categories.size > 0 %}
+{% comment %}
+Liquid evaluates and/or right to left, so these are plain size tests: a missing
+display_tags gives nil.size, which is falsy, rather than gating the categories.
+{% endcomment %}
+{% if site.display_tags.size > 0 or live_categories.size > 0 %}
 
   <div class="tag-category-list">
     <ul class="p-0 m-0">

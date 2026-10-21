@@ -64,9 +64,9 @@ one at a time either way, the finer grain costs nothing at authoring time and bu
 question that the coarser grain cannot answer.
 
 This deliberately does **not** mirror the blog category taxonomy, where `categories:`
-names the publishing series (`claude-code-sessions`, `us-presidential-vote`). That
-asymmetry is intended, not an oversight: categories group posts for readers, campaigns
-separate them for measurement.
+names the publishing series (`claude-code-sessions`, `us-presidential-vote`,
+`claude-code-loop`). That asymmetry is intended, not an oversight: categories group posts
+for readers, campaigns separate them for measurement.
 
 **Deriving the value.** No post sets a `slug:` override, so the campaign value is exactly
 the filename slug — the `_posts/YYYY-MM-DD-<slug>.md` basename with the date prefix
