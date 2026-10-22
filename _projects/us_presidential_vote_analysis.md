@@ -3,6 +3,7 @@ layout: page
 title: US Presidential Election Analysis
 description: A cleanly joined Electoral College and popular-vote record, 1824–2024, served as a public API
 img: assets/img/usvote_api_2000.svg
+og_image: https://frederick-douglas-pearce.github.io/assets/img/us_presidential_vote_analysis-og.png
 importance: 4
 category: work
 ---

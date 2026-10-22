@@ -3,6 +3,7 @@ layout: page
 title: claude-code-loop
 description: A Claude Code plugin that works an issue backlog like a small dev team, one gated issue at a time
 img: assets/img/claude_code_loop_ledger.svg
+og_image: https://frederick-douglas-pearce.github.io/assets/img/claude-code-loop-og.png
 importance: 2
 category: work
 ---

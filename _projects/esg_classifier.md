@@ -3,6 +3,7 @@ layout: page
 title: Sportswear ESG News Classifier
 description: Multi-label text classification for sportswear brand ESG news
 img: assets/img/sportswear_scorecard_snapshot_081526.png
+og_image: https://frederick-douglas-pearce.github.io/assets/img/esg_classifier-og.png
 importance: 5
 category: work
 ---

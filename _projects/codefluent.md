@@ -3,6 +3,8 @@ layout: page
 title: CodeFluent
 description: Personal AI fluency analytics for Claude Code users
 img: assets/img/codefluent_fluency.png
+og_image: https://frederick-douglas-pearce.github.io/assets/img/codefluent-og.png
+og_card_img: assets/img/codefluent_optimizer.png
 importance: 3
 category: work
 ---

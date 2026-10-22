@@ -112,6 +112,14 @@ and none of the values above. **Any delegation to it must name `doc/utm-conventi
 in the prompt**, or it has no way to find them. Tagging is a one-way door: a link posted
 untagged cannot be attributed after the fact.
 
+Share-card images come from `og_image:` front matter (an absolute URL), else the site
+banner. Post cards are rendered upstream with the post. Project cards are rendered here by
+`bin/og-project-cards.js` from each `_projects/*.md` front matter; re-run it after
+changing a project's `title`, `description` or `img`, and add `og_image:` to a new
+project. `og_card_img:` overrides `img` on the card only, for an image that doesn't read
+at 1200×630. Social platforms cache a card per URL, so fix a card _before_ the link is
+first posted.
+
 ## Activity stream
 
 `_includes/activity.liquid` renders one merged, typed, reverse-chronological stream of

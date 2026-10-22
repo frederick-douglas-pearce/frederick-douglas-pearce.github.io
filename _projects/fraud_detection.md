@@ -3,6 +3,7 @@ layout: page
 title: E-Commerce Fraud Detection
 description: Real-time fraud detection with XGBoost and SHAP explainability
 img: assets/img/fraud_detection_final_centered.png
+og_image: https://frederick-douglas-pearce.github.io/assets/img/fraud_detection-og.png
 importance: 6
 category: work
 ---
