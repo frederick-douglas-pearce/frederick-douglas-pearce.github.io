@@ -29,18 +29,14 @@ no later work can fill.
 
 `utm_term` is unused. It exists for paid-search keywords; nothing here is paid search.
 
-### LinkedIn takes `utm_source` only
+### On LinkedIn, the link goes in a comment
 
-Every LinkedIn link carries **one** parameter: `?utm_source=linkedin`. The `&` between
-parameters has been corrupted on LinkedIn (see "Verifying a tag landed"), and a link
-with no `&` has nothing to corrupt. This is the single exception to the "Required" column above.
-
-Little is lost. For a post, `utm_campaign` is the post slug, which is the landing page
-Umami already records, and `utm_medium` is always `social`. To read a LinkedIn
-campaign, filter Umami on source `linkedin` and read the pages. What is lost is
-`utm_content`: two links in one LinkedIn post cannot be told apart, so a CV visit from
-a LinkedIn post is attributed to LinkedIn but not to the post that drove it. Accept
-that rather than build around it.
+Put the tagged link in a **comment** on the LinkedIn post, not in the post text.
+LinkedIn converts a link in the post text to an `lnkd.in` short link when the post is
+published, and that conversion is where the only tagged LinkedIn links so far were
+damaged (#114). A link in a comment is not shortened and stays exactly as pasted, with
+all its parameters (verified in #114). The tags themselves are unchanged: LinkedIn
+links carry the full set, like every other platform.
 
 ### `utm_source` — closed vocabulary
 
@@ -94,7 +90,7 @@ key on. Use a stable placement name instead, and keep it in this table:
 
 | Placement                        | `utm_source` | `utm_medium` | `utm_campaign` |
 | -------------------------------- | ------------ | ------------ | -------------- |
-| LinkedIn profile "Website" field | `linkedin`   | —            | —              |
+| LinkedIn profile "Website" field | `linkedin`   | `referral`   | `profile`      |
 | GitHub profile README            | `github`     | `referral`   | `profile`      |
 | Email signature                  | `newsletter` | `referral`   | `signature`    |
 | Talk slides / speaker bio        | `newsletter` | `referral`   | `talk-<event>` |
@@ -102,34 +98,29 @@ key on. Use a stable placement name instead, and keep it in this table:
 The campaign name stays constant for the life of the placement. Re-keying it on a whim
 splits one long-running trickle into unrelated rows.
 
-The LinkedIn profile link is `utm_source` only, like every LinkedIn link. It points at
-the homepage, which is what separates it from a post's link in Umami.
-
 ## Worked examples
 
-**A LinkedIn post about a specific blog post** — source only; the landing page is the
-campaign:
+**A LinkedIn post about a specific blog post** — `social`, campaign is the post slug,
+posted in a comment on the post:
 
 ```
-https://frederick-douglas-pearce.github.io/blog/2026/222-votes-away/?utm_source=linkedin
+https://frederick-douglas-pearce.github.io/blog/2026/222-votes-away/?utm_source=linkedin&utm_medium=social&utm_campaign=222-votes-away
 ```
 
-**A dev.to article linking the same series' other post** — full tags, campaign is the
-post slug:
+**A dev.to article linking the same series' other post** — same shape, different source:
 
 ```
 https://frederick-douglas-pearce.github.io/blog/2026/inside-the-subagent-trace-file/?utm_source=devto&utm_medium=social&utm_campaign=inside-the-subagent-trace-file
 ```
 
-**An X post that links both the post and the CV** — `utm_content` separates the two
-links, which share a campaign because they belong to the same post:
+**A LinkedIn post that links both the post and the CV** — `utm_content` separates the two
+links, which share a campaign because they belong to the same post. Both go in the
+comment:
 
 ```
-https://frederick-douglas-pearce.github.io/blog/2026/what-launched-this-turn/?utm_source=x&utm_medium=social&utm_campaign=what-launched-this-turn&utm_content=post
-https://frederick-douglas-pearce.github.io/cv/?utm_source=x&utm_medium=social&utm_campaign=what-launched-this-turn&utm_content=cv
+https://frederick-douglas-pearce.github.io/blog/2026/what-launched-this-turn/?utm_source=linkedin&utm_medium=social&utm_campaign=what-launched-this-turn&utm_content=post
+https://frederick-douglas-pearce.github.io/cv/?utm_source=linkedin&utm_medium=social&utm_campaign=what-launched-this-turn&utm_content=cv
 ```
-
-On LinkedIn the same two links are both `?utm_source=linkedin`.
 
 **A standing link in the GitHub profile README** — `referral`, placement-keyed campaign:
 
@@ -160,10 +151,9 @@ file by path.** See the "Marketing and social drafts" section of `CLAUDE.md`.
 
 ## Verifying a tag landed
 
-Check **every** link, **after** it is published, by clicking it **from the live post** —
-not from the draft. A correct draft proves nothing: the first tagged links that reached
-Umami (#87, Oct 2026) were drafted correctly and still arrived broken, because the
-platform altered them after they were pasted.
+Check **every** link, **after** it is published, by clicking it **from the live post**
+(or comment), not from the draft. A correct draft proves nothing: the first tagged links
+that reached Umami (#87, Oct 2026) were drafted correctly and still arrived broken.
 
 The check is the browser's address bar on the page the click lands on. It must show
 the full query string, with plain `&` between parameters, every value lowercase, and
@@ -175,19 +165,15 @@ unattributed.
 Failures seen so far, each of which fails silently (the visit is recorded, the
 attribution is not):
 
-- **`amp;` in place of `&`** (LinkedIn, Oct 2026, #114). LinkedIn's `lnkd.in` short
-  link resolved a correct link to
+- **`amp;` in place of `&`** (LinkedIn post text, Oct 2026, #114). The draft link was
+  correct, but the post's `lnkd.in` short link resolved to
   `?utm_source=linkedinamp;utm_medium=socialamp;utm_campaign=…`, so Umami recorded one
-  garbage `utm_source` with no medium or campaign. The draft was correct, so the damage
-  happened between the paste and LinkedIn storing the link. Whether LinkedIn or the
-  paste caused it is unconfirmed. Either way, a link with no `&` has nothing to break,
-  which is why LinkedIn links carry `utm_source` only (see "LinkedIn takes `utm_source`
-  only").
-- **LinkedIn freezes a link at publication.** Each link becomes an `lnkd.in` short link
-  when the post is published. In #114, two edits to the post left the short link
-  pointing at the original target, so treat a broken LinkedIn link as unfixable in
-  place. Add the correct link in a comment
-  instead.
+  garbage `utm_source` with no medium or campaign. Whether the paste or LinkedIn's
+  shortening caused it is unconfirmed. Putting the link in a comment avoids the
+  shortening either way.
+- **LinkedIn post links are frozen at publication.** In #114, two edits to the post
+  left its `lnkd.in` short link pointing at the original target. A broken link in a
+  LinkedIn post cannot be fixed in place; add the correct link in a comment instead.
 - **A misspelled parameter _name_** (`utm_camapign`). Ignored entirely.
 
 ## Out of scope
