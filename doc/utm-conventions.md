@@ -29,6 +29,21 @@ no later work can fill.
 
 `utm_term` is unused. It exists for paid-search keywords; nothing here is paid search.
 
+### On LinkedIn, the link goes in a comment
+
+Put the tagged link in a **comment** on the LinkedIn post, not in the post text.
+LinkedIn converts a link in the post text to an `lnkd.in` short link when the post is
+published, and that conversion is where the only tagged LinkedIn links so far were
+damaged (#114). A link in a comment is not shortened and stays exactly as pasted, with
+all its parameters (verified in #114). The tags themselves are unchanged: LinkedIn
+links carry the full set, like every other platform.
+
+**Preview cards are never tagged.** A LinkedIn link-preview card links to the page's
+canonical URL (its `og:url`) with no query string, whatever link produced the card.
+Card clicks arrive with `linkedin.com` as the referrer but no UTM tags, so Umami credits
+them to LinkedIn and the landing page shows which post, but they never appear under a
+campaign. Read LinkedIn's total as tagged visits plus untagged `linkedin.com` referrals.
+
 ### `utm_source` — closed vocabulary
 
 | Value        | Where                                                       |
@@ -91,7 +106,8 @@ splits one long-running trickle into unrelated rows.
 
 ## Worked examples
 
-**A LinkedIn post about a specific blog post** — `social`, campaign is the post slug:
+**A LinkedIn post about a specific blog post** — `social`, campaign is the post slug,
+posted in a comment on the post:
 
 ```
 https://frederick-douglas-pearce.github.io/blog/2026/222-votes-away/?utm_source=linkedin&utm_medium=social&utm_campaign=222-votes-away
@@ -104,7 +120,8 @@ https://frederick-douglas-pearce.github.io/blog/2026/inside-the-subagent-trace-f
 ```
 
 **A LinkedIn post that links both the post and the CV** — `utm_content` separates the two
-links, which share a campaign because they belong to the same post:
+links, which share a campaign because they belong to the same post. Both go in the
+comment:
 
 ```
 https://frederick-douglas-pearce.github.io/blog/2026/what-launched-this-turn/?utm_source=linkedin&utm_medium=social&utm_campaign=what-launched-this-turn&utm_content=post
@@ -140,10 +157,30 @@ file by path.** See the "Marketing and social drafts" section of `CLAUDE.md`.
 
 ## Verifying a tag landed
 
-Once Umami is live (#83), open one tagged link in a browser and confirm it resolves to
-the expected source / medium / campaign in the dashboard. Do this once, on the first
-tagged link; a typo in the parameter _name_ (`utm_camapign`) fails silently — the visit
-is recorded, the attribution is not.
+Check **every** link, **after** it is published, by clicking it **from the live post**
+(or comment), not from the draft. A correct draft proves nothing: the first tagged links
+that reached Umami (#87, Oct 2026) were drafted correctly and still arrived broken.
+
+The check is the browser's address bar on the page the click lands on. It must show
+the full query string, with plain `&` between parameters, every value lowercase, and
+nothing missing. Umami cannot serve as the check from your own browser: own-traffic
+exclusion (`localStorage` `umami.disabled`, see #83) means your click is never
+recorded. If a link is wrong, fix it at once — every click before the fix is
+unattributed.
+
+Failures seen so far, each of which fails silently (the visit is recorded, the
+attribution is not):
+
+- **`amp;` in place of `&`** (LinkedIn post text, Oct 2026, #114). The draft link was
+  correct, but the post's `lnkd.in` short link resolved to
+  `?utm_source=linkedinamp;utm_medium=socialamp;utm_campaign=…`, so Umami recorded one
+  garbage `utm_source` with no medium or campaign. Whether the paste or LinkedIn's
+  shortening caused it is unconfirmed. Putting the link in a comment avoids the
+  shortening either way.
+- **LinkedIn post links are frozen at publication.** In #114, two edits to the post
+  left its `lnkd.in` short link pointing at the original target. A broken link in a
+  LinkedIn post cannot be fixed in place; add the correct link in a comment instead.
+- **A misspelled parameter _name_** (`utm_camapign`). Ignored entirely.
 
 ## Out of scope
 
@@ -151,3 +188,7 @@ is recorded, the attribution is not.
 is pre-convention. Editing a live post's link does not recover the clicks it already
 received, and it makes the post's own history inconsistent for no gain. Note the cut-off
 and move on.
+
+This does not cover a **broken** tag on a post made under the convention. Fix that as
+soon as it is found (see "Verifying a tag landed"): the post is still collecting clicks,
+and every one before the fix is lost.
