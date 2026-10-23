@@ -29,6 +29,19 @@ no later work can fill.
 
 `utm_term` is unused. It exists for paid-search keywords; nothing here is paid search.
 
+### LinkedIn takes `utm_source` only
+
+Every LinkedIn link carries **one** parameter: `?utm_source=linkedin`. LinkedIn corrupts
+the `&` between parameters (see "Verifying a tag landed"), so a link with no `&` is the
+only one that survives. This is the single exception to the "Required" column above.
+
+Little is lost. For a post, `utm_campaign` is the post slug, which is the landing page
+Umami already records, and `utm_medium` is always `social`. To read a LinkedIn
+campaign, filter Umami on source `linkedin` and read the pages. What is lost is
+`utm_content`: two links in one LinkedIn post cannot be told apart, so a CV visit from
+a LinkedIn post is attributed to LinkedIn but not to the post that drove it. Accept
+that rather than build around it.
+
 ### `utm_source` — closed vocabulary
 
 | Value        | Where                                                       |
@@ -81,7 +94,7 @@ key on. Use a stable placement name instead, and keep it in this table:
 
 | Placement                        | `utm_source` | `utm_medium` | `utm_campaign` |
 | -------------------------------- | ------------ | ------------ | -------------- |
-| LinkedIn profile "Website" field | `linkedin`   | `referral`   | `profile`      |
+| LinkedIn profile "Website" field | `linkedin`   | —            | —              |
 | GitHub profile README            | `github`     | `referral`   | `profile`      |
 | Email signature                  | `newsletter` | `referral`   | `signature`    |
 | Talk slides / speaker bio        | `newsletter` | `referral`   | `talk-<event>` |
@@ -89,27 +102,34 @@ key on. Use a stable placement name instead, and keep it in this table:
 The campaign name stays constant for the life of the placement. Re-keying it on a whim
 splits one long-running trickle into unrelated rows.
 
+The LinkedIn profile link is `utm_source` only, like every LinkedIn link. It points at
+the homepage, which is what separates it from a post's link in Umami.
+
 ## Worked examples
 
-**A LinkedIn post about a specific blog post** — `social`, campaign is the post slug:
+**A LinkedIn post about a specific blog post** — source only; the landing page is the
+campaign:
 
 ```
-https://frederick-douglas-pearce.github.io/blog/2026/222-votes-away/?utm_source=linkedin&utm_medium=social&utm_campaign=222-votes-away
+https://frederick-douglas-pearce.github.io/blog/2026/222-votes-away/?utm_source=linkedin
 ```
 
-**A dev.to article linking the same series' other post** — same shape, different source:
+**A dev.to article linking the same series' other post** — full tags, campaign is the
+post slug:
 
 ```
 https://frederick-douglas-pearce.github.io/blog/2026/inside-the-subagent-trace-file/?utm_source=devto&utm_medium=social&utm_campaign=inside-the-subagent-trace-file
 ```
 
-**A LinkedIn post that links both the post and the CV** — `utm_content` separates the two
+**An X post that links both the post and the CV** — `utm_content` separates the two
 links, which share a campaign because they belong to the same post:
 
 ```
-https://frederick-douglas-pearce.github.io/blog/2026/what-launched-this-turn/?utm_source=linkedin&utm_medium=social&utm_campaign=what-launched-this-turn&utm_content=post
-https://frederick-douglas-pearce.github.io/cv/?utm_source=linkedin&utm_medium=social&utm_campaign=what-launched-this-turn&utm_content=cv
+https://frederick-douglas-pearce.github.io/blog/2026/what-launched-this-turn/?utm_source=x&utm_medium=social&utm_campaign=what-launched-this-turn&utm_content=post
+https://frederick-douglas-pearce.github.io/cv/?utm_source=x&utm_medium=social&utm_campaign=what-launched-this-turn&utm_content=cv
 ```
+
+On LinkedIn the same two links are both `?utm_source=linkedin`.
 
 **A standing link in the GitHub profile README** — `referral`, placement-keyed campaign:
 
@@ -140,10 +160,29 @@ file by path.** See the "Marketing and social drafts" section of `CLAUDE.md`.
 
 ## Verifying a tag landed
 
-Once Umami is live (#83), open one tagged link in a browser and confirm it resolves to
-the expected source / medium / campaign in the dashboard. Do this once, on the first
-tagged link; a typo in the parameter _name_ (`utm_camapign`) fails silently — the visit
-is recorded, the attribution is not.
+Check **every** link, **after** it is published, by clicking it **from the live post** —
+not from the draft. A correct draft proves nothing: the first tagged links that reached
+Umami (#87, Oct 2026) were drafted correctly and still arrived broken, because the
+platform altered them after they were pasted.
+
+The check is the browser's address bar on the page the click lands on. It must show
+the full query string, with plain `&` between parameters, every value lowercase, and
+nothing missing. Umami cannot serve as the check from your own browser: own-traffic
+exclusion (`localStorage` `umami.disabled`, see #83) means your click is never
+recorded. If a link is wrong, edit the post at once — every click before the fix is
+unattributed.
+
+Failures seen so far, each of which fails silently (the visit is recorded, the
+attribution is not):
+
+- **`amp;` in place of `&`** (LinkedIn, Oct 2026, #114). LinkedIn's `lnkd.in` short
+  link resolved a correct link to
+  `?utm_source=linkedinamp;utm_medium=socialamp;utm_campaign=…`, so Umami recorded one
+  garbage `utm_source` with no medium or campaign. LinkedIn does this itself:
+  re-pasting the link from plain text into the edited post broke it the same way. That
+  is why LinkedIn links carry `utm_source` only (see "LinkedIn takes `utm_source`
+  only").
+- **A misspelled parameter _name_** (`utm_camapign`). Ignored entirely.
 
 ## Out of scope
 
@@ -151,3 +190,7 @@ is recorded, the attribution is not.
 is pre-convention. Editing a live post's link does not recover the clicks it already
 received, and it makes the post's own history inconsistent for no gain. Note the cut-off
 and move on.
+
+This does not cover a **broken** tag on a post made under the convention. Fix that as
+soon as it is found (see "Verifying a tag landed"): the post is still collecting clicks,
+and every one before the fix is lost.
