@@ -31,9 +31,9 @@ no later work can fill.
 
 ### LinkedIn takes `utm_source` only
 
-Every LinkedIn link carries **one** parameter: `?utm_source=linkedin`. LinkedIn corrupts
-the `&` between parameters (see "Verifying a tag landed"), so a link with no `&` is the
-only one that survives. This is the single exception to the "Required" column above.
+Every LinkedIn link carries **one** parameter: `?utm_source=linkedin`. The `&` between
+parameters has been corrupted on LinkedIn (see "Verifying a tag landed"), and a link
+with no `&` has nothing to corrupt. This is the single exception to the "Required" column above.
 
 Little is lost. For a post, `utm_campaign` is the post slug, which is the landing page
 Umami already records, and `utm_medium` is always `social`. To read a LinkedIn
@@ -169,7 +169,7 @@ The check is the browser's address bar on the page the click lands on. It must s
 the full query string, with plain `&` between parameters, every value lowercase, and
 nothing missing. Umami cannot serve as the check from your own browser: own-traffic
 exclusion (`localStorage` `umami.disabled`, see #83) means your click is never
-recorded. If a link is wrong, edit the post at once — every click before the fix is
+recorded. If a link is wrong, fix it at once — every click before the fix is
 unattributed.
 
 Failures seen so far, each of which fails silently (the visit is recorded, the
@@ -178,10 +178,16 @@ attribution is not):
 - **`amp;` in place of `&`** (LinkedIn, Oct 2026, #114). LinkedIn's `lnkd.in` short
   link resolved a correct link to
   `?utm_source=linkedinamp;utm_medium=socialamp;utm_campaign=…`, so Umami recorded one
-  garbage `utm_source` with no medium or campaign. LinkedIn does this itself:
-  re-pasting the link from plain text into the edited post broke it the same way. That
-  is why LinkedIn links carry `utm_source` only (see "LinkedIn takes `utm_source`
+  garbage `utm_source` with no medium or campaign. The draft was correct, so the damage
+  happened between the paste and LinkedIn storing the link. Whether LinkedIn or the
+  paste caused it is unconfirmed. Either way, a link with no `&` has nothing to break,
+  which is why LinkedIn links carry `utm_source` only (see "LinkedIn takes `utm_source`
   only").
+- **LinkedIn freezes a link at publication.** Each link becomes an `lnkd.in` short link
+  when the post is published. In #114, two edits to the post left the short link
+  pointing at the original target, so treat a broken LinkedIn link as unfixable in
+  place. Add the correct link in a comment
+  instead.
 - **A misspelled parameter _name_** (`utm_camapign`). Ignored entirely.
 
 ## Out of scope
