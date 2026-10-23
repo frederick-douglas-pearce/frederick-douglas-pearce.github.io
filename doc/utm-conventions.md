@@ -38,6 +38,12 @@ damaged (#114). A link in a comment is not shortened and stays exactly as pasted
 all its parameters (verified in #114). The tags themselves are unchanged: LinkedIn
 links carry the full set, like every other platform.
 
+**Preview cards are never tagged.** A LinkedIn link-preview card links to the page's
+canonical URL (its `og:url`) with no query string, whatever link produced the card.
+Card clicks arrive with `linkedin.com` as the referrer but no UTM tags, so Umami credits
+them to LinkedIn and the landing page shows which post, but they never appear under a
+campaign. Read LinkedIn's total as tagged visits plus untagged `linkedin.com` referrals.
+
 ### `utm_source` — closed vocabulary
 
 | Value        | Where                                                       |
