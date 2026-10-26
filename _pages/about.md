@@ -70,7 +70,20 @@ The [Sportswear ESG News Classifier]({{ '/projects/esg_classifier/' | relative_u
   </div>
 </div>
 
-The [US Presidential Voting Data API]({{ '/projects/us_presidential_vote_analysis/' | relative_url }}) takes a different angle: two centuries of Electoral College and popular vote data, reconciled from primary sources into a live public API. Most people have a general sense of how U.S. presidential elections work, but the historical record tells a more nuanced story, including how often the two measures have diverged and what a more balanced approach to determining the winner might look like. The project is as much a data journalism exercise as an engineering one, and exactly the kind of question I have always been drawn to.
+The [US Presidential Voting Data API]({{ '/projects/us_presidential_vote_analysis/' | relative_url }}) takes a different angle: two centuries of Electoral College and popular vote data, reconciled from primary sources into a live [public API](https://api.us-presidential-election-center.org/docs) and a [data explorer](https://explore.us-presidential-election-center.org/) for browsing it by election or by state. Most people have a general sense of how U.S. presidential elections work, but the historical record tells a more nuanced story, including how often the two measures have diverged and what a more balanced approach to determining the winner might look like. The project is as much a data journalism exercise as an engineering one, and exactly the kind of question I have always been drawn to.
+
+<div class="row mt-4 mb-4">
+  <div class="col-12">
+    {%
+      include figure.liquid
+      path="assets/img/usvote_api_2000.svg"
+      class="img-fluid rounded z-depth-1"
+      zoomable=true
+      alt="Terminal output of a curl request to the API's 2000 election summary: George W. Bush with 271 electoral votes and 50,456,169 popular votes took office; Albert Gore Jr. with 266 electoral votes and 50,996,062 popular votes did not. A note below reads that 271 of 538 electors were appointed and the runner-up led the popular vote by 539,893, followed by the response's coverage and license provenance."
+      caption="The API's summary of 2000, one of five elections where the Electoral College and the popular vote disagreed."
+    %}
+  </div>
+</div>
 
 Translating my projects into accessible writing is a core part of the mission. The [blog]({{ '/blog/' | relative_url }}) carries three active series: [one documenting the Claude Code session format]({{ '/blog/category/claude-code-sessions/' | relative_url }}) powering the AI Fluency Suite; ["Counted, Not Assumed,"]({{ '/blog/category/us-presidential-vote/' | relative_url }}) which examines what the presidential election data actually shows when you go back to the primary sources; and ["A Cross-Functional Team of One,"]({{ '/blog/category/claude-code-loop/' | relative_url }}) on giving coding agents the structure human teams rely on, with claude-code-loop as the working example.
 
