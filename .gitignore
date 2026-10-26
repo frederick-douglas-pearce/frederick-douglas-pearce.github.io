@@ -16,3 +16,6 @@ vendor
 assets/orcid_publications.bib
 a11y-baseline.json
 .claude/settings.local.json
+
+# dev-loop ledger (local working state, never committed)
+.claude/loop/
