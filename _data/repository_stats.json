@@ -1,0 +1,196 @@
+{
+  "_generated_by": "bin/repo-stats.js — do not edit by hand",
+  "generated_at": "2026-10-27T04:33:50Z",
+  "language_colors": {
+    "HTML": "#e34c26",
+    "Jupyter Notebook": "#DA5B0B",
+    "Python": "#3572A5",
+    "TypeScript": "#3178c6"
+  },
+  "repos": {
+    "frederick-douglas-pearce/codefluent": {
+      "full_name": "frederick-douglas-pearce/codefluent",
+      "owner": "frederick-douglas-pearce",
+      "description": "Open-source VS Code extension and web app that scores how effectively you collaborate with Claude Code, grounded in Anthropic's AI Fluency Research.",
+      "language": "TypeScript",
+      "language_color": "#3178c6",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "pushed_at": "2026-07-26T14:12:43Z",
+      "topics": [
+        "ai-fluency",
+        "claude-code",
+        "developer-tools",
+        "llm",
+        "python",
+        "vscode-extension"
+      ],
+      "homepage": null,
+      "archived": false
+    },
+    "frederick-douglas-pearce/sportswear-esg-news-classifier": {
+      "full_name": "frederick-douglas-pearce/sportswear-esg-news-classifier",
+      "owner": "frederick-douglas-pearce",
+      "description": "End-to-end, production ML pipeline (Cloud Run + CI/CD) that classifies ESG news for 50+ sportswear brands using an LLM-as-judge, with ML pre-filters and a daily-updated scorecard.",
+      "language": "HTML",
+      "language_color": "#e34c26",
+      "stargazers_count": 3,
+      "forks_count": 0,
+      "pushed_at": "2026-10-26T07:11:13Z",
+      "topics": [
+        "esg",
+        "google-cloud-run",
+        "llm-as-judge",
+        "machine-learning",
+        "mlops",
+        "nlp",
+        "text-classification"
+      ],
+      "homepage": null,
+      "archived": false
+    },
+    "frederick-douglas-pearce/agentfluent": {
+      "full_name": "frederick-douglas-pearce/agentfluent",
+      "owner": "frederick-douglas-pearce",
+      "description": "Local-first agent analytics with prompt diagnostics",
+      "language": "Python",
+      "language_color": "#3572A5",
+      "stargazers_count": 2,
+      "forks_count": 1,
+      "pushed_at": "2026-09-04T02:24:42Z",
+      "topics": [],
+      "homepage": null,
+      "archived": false
+    },
+    "frederick-douglas-pearce/claude-code-loop": {
+      "full_name": "frederick-douglas-pearce/claude-code-loop",
+      "owner": "frederick-douglas-pearce",
+      "description": "Reusable Claude Code plugin: a supervised dev-loop engine (one routed backlog issue per invocation, human gates, durable ledger). Extracted from AgentFluent.",
+      "language": "Python",
+      "language_color": "#3572A5",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "pushed_at": "2026-10-21T10:20:20Z",
+      "topics": [],
+      "homepage": null,
+      "archived": false
+    },
+    "frederick-douglas-pearce/claude-code-sessions": {
+      "full_name": "frederick-douglas-pearce/claude-code-sessions",
+      "owner": "frederick-douglas-pearce",
+      "description": "Canonical public reference for Claude Code's JSONL session data format — posts, reference docs, and security tooling for working with session data safely.",
+      "language": "Python",
+      "language_color": "#3572A5",
+      "stargazers_count": 2,
+      "forks_count": 0,
+      "pushed_at": "2026-10-21T07:11:44Z",
+      "topics": [],
+      "homepage": null,
+      "archived": false
+    },
+    "frederick-douglas-pearce/claude-code-data-collective": {
+      "full_name": "frederick-douglas-pearce/claude-code-data-collective",
+      "owner": "frederick-douglas-pearce",
+      "description": "Curated, sanitized public corpus of Claude Code session data. Downstream of claude-code-sessions.",
+      "language": "Python",
+      "language_color": "#3572A5",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "pushed_at": "2026-06-21T07:36:39Z",
+      "topics": [
+        "claude-code",
+        "dataset",
+        "jsonl",
+        "llm-agents",
+        "sanitization"
+      ],
+      "homepage": null,
+      "archived": false
+    },
+    "frederick-douglas-pearce/e-commerce-fraud-detection": {
+      "full_name": "frederick-douglas-pearce/e-commerce-fraud-detection",
+      "owner": "frederick-douglas-pearce",
+      "description": "Real-time e-commerce fraud detection: 30 engineered features, an optimized XGBoost classifier, and SHAP explainability tuned to minimize false positives.",
+      "language": "Jupyter Notebook",
+      "language_color": "#DA5B0B",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "pushed_at": "2025-12-12T08:01:23Z",
+      "topics": [
+        "explainable-ai",
+        "feature-engineering",
+        "fraud-detection",
+        "machine-learning",
+        "shap",
+        "xgboost"
+      ],
+      "homepage": null,
+      "archived": false
+    },
+    "frederick-douglas-pearce/predict-housing-prices": {
+      "full_name": "frederick-douglas-pearce/predict-housing-prices",
+      "owner": "frederick-douglas-pearce",
+      "description": "Predict housing prices by applying regression kriging to housing attributes, satellite images, etc.",
+      "language": "Jupyter Notebook",
+      "language_color": "#DA5B0B",
+      "stargazers_count": 2,
+      "forks_count": 1,
+      "pushed_at": "2021-09-15T01:55:54Z",
+      "topics": [],
+      "homepage": null,
+      "archived": false
+    },
+    "frederick-douglas-pearce/BRFSS-diabetes-2024": {
+      "full_name": "frederick-douglas-pearce/BRFSS-diabetes-2024",
+      "owner": "frederick-douglas-pearce",
+      "description": "This project applies machine learning to predict diabetes risk based on the Behavioral Risk Factor Surveillance System (BRFSS) survey data for 2024, and serves as the midterm project for the DataTalksClub Machine-Learning-Zoomcamp course.",
+      "language": "Jupyter Notebook",
+      "language_color": "#DA5B0B",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "pushed_at": "2025-11-11T06:18:26Z",
+      "topics": [],
+      "homepage": null,
+      "archived": false
+    },
+    "frederick-douglas-pearce/509_Report_Analysis": {
+      "full_name": "frederick-douglas-pearce/509_Report_Analysis",
+      "owner": "frederick-douglas-pearce",
+      "description": "Repo to download 509 reports, extract relevant data from PDFs, and analyze/visualize the data for trends, stats, etc",
+      "language": "Jupyter Notebook",
+      "language_color": "#DA5B0B",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "pushed_at": "2025-04-02T07:23:45Z",
+      "topics": [],
+      "homepage": null,
+      "archived": false
+    },
+    "frederick-douglas-pearce/complex_numbers_clock": {
+      "full_name": "frederick-douglas-pearce/complex_numbers_clock",
+      "owner": "frederick-douglas-pearce",
+      "description": "This project creates images and video of an analogue clock to use as an intro to complex numbers",
+      "language": "Jupyter Notebook",
+      "language_color": "#DA5B0B",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "pushed_at": "2026-04-09T08:52:51Z",
+      "topics": [],
+      "homepage": null,
+      "archived": false
+    },
+    "frederick-douglas-pearce/us-presidential-vote-analysis": {
+      "full_name": "frederick-douglas-pearce/us-presidential-vote-analysis",
+      "owner": "frederick-douglas-pearce",
+      "description": "This project analyzes historical US Presidential Election data to better understand the relationship between the Electoral College Vote results and the Popular Vote results.",
+      "language": "Python",
+      "language_color": "#3572A5",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "pushed_at": "2026-10-26T11:25:55Z",
+      "topics": [],
+      "homepage": null,
+      "archived": false
+    }
+  }
+}
