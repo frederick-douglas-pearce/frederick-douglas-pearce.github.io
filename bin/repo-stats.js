@@ -1,11 +1,14 @@
 #!/usr/bin/env node
 /**
- * Fetch the /repositories/ page's repo facts from the GitHub API at build time.
+ * Fetch the /repositories/ page's repo facts from the GitHub API into a
+ * committed data file.
  *
  * Reads the curated `github_repos` list from _data/repositories.yml, preserving
  * its order, fetches each repo from api.github.com, and writes
- * _data/repository_stats.json for the page to render as native HTML. The page
- * no longer depends on a third-party image service at load time (epic #54).
+ * _data/repository_stats.json. It runs by hand (and, once #59 lands, on a
+ * schedule), never inside the Jekyll build, so a GitHub API failure cannot fail
+ * a deploy. #56 renders the page's cards as native HTML from this file, which
+ * ends the page's dependence on a third-party image service (epic #54).
  * Curation stays hand-edited: this script never changes repositories.yml.
  *
  *   node bin/repo-stats.js
@@ -14,7 +17,7 @@
  *   --input <path>   curated list   (default: _data/repositories.yml)
  *   --out <path>     output file    (default: _data/repository_stats.json)
  *   --no-auth        ignore every token source and run unauthenticated
- *   --help           print this usage
+ *   --help           print the usage and options
  *
  * Adding a repo to the page: add its `owner/name` to `github_repos` in
  * _data/repositories.yml, at the position it should appear, then run this
@@ -23,22 +26,25 @@
  * Auth and rate limits. One pass is one request per curated repo (~12), plus
  * one to raw.githubusercontent.com, which is not API quota. That fits the
  * 60/hr unauthenticated limit, so no PAT is needed for local use. A token
- * is used when one is available, taken from the first of: GITHUB_TOKEN (set
- * in Actions, 5,000/hr), GH_TOKEN, or `gh auth token` if the gh CLI is
- * installed and logged in. A logged-in gh supplies a token silently, so pass
- * --no-auth to exercise the unauthenticated path. The script logs which
- * source it used, and never logs the token.
+ * is used when one is available, taken from the first of: GITHUB_TOKEN,
+ * GH_TOKEN, or `gh auth token` if the gh CLI is installed and logged in. In
+ * Actions, GITHUB_TOKEN is not in the environment unless the step maps it
+ * (`env: GITHUB_TOKEN: ${{ github.token }}`); it allows 1,000 requests/hr per
+ * repository. A logged-in gh supplies a token silently, so pass --no-auth to
+ * exercise the unauthenticated path. The script logs which source it used and
+ * never logs the token; a token that is not printable ASCII is rejected by
+ * naming its source only.
  *
  * Output. Repos are keyed by the exact string from repositories.yml, never by
  * the API's `full_name`: Ruby hash keys are case-sensitive and GitHub names are
  * not, so a casing mismatch would be a silent blank card. Look a repo up as
  * `site.data.repository_stats.repos[repo]`. Language colors come from
  * linguist's languages.yml (the REST API returns the language name, not its
- * color). They are keyed by language name in `language_colors`, so a display
- * override can pick the color of the language it shows. The output is JSON
- * rather than YAML because a raw control or line-separator character in a
- * description can make Ruby's YAML parser reject the file, which would fail the
- * whole site build.
+ * color). `language_colors` is keyed by language name and covers only the
+ * languages GitHub detects for the listed repos. The output is JSON rather than
+ * YAML because a raw control or line-separator character in a description can
+ * make Ruby's YAML parser reject the file, which would fail the whole site
+ * build.
  *
  * Failure policy. Everything is validated before anything is written, so a
  * failed run leaves the existing file untouched. A run whose data matches the
@@ -46,15 +52,16 @@
  * `generated_at` means "data last changed at". A curated repo that returns 404
  * or is not public fails the run: a dead repo on a portfolio page is a
  * curation problem, and a human must remove it from repositories.yml. A
- * transient failure (5xx, network, rate limit) also fails the run, with its
- * own exit code. That tells a scheduled job to retry rather than ask a human
- * to edit the curation.
+ * transient failure (5xx, network error, timeout, rate limit, unreadable
+ * response) also fails the run, with its own exit code, which tells a scheduled
+ * job to retry rather than ask a human to edit the curation. Every error line
+ * is followed by the action that resolves it.
  *
  * Exit codes: 0 written or unchanged; 1 permanent failure (404, not public,
- * token rejected, validation); 75 transient failures only; 2 usage error.
+ * bad token, validation); 75 transient failures only; 2 usage error.
  *
  * REPO_STATS_API_BASE overrides https://api.github.com. It exists only to
- * exercise the transient path against an unreachable host.
+ * exercise failure paths against a local stub or an unreachable host.
  */
 
 const fs = require("fs");
@@ -66,22 +73,38 @@ const API_BASE = process.env.REPO_STATS_API_BASE || "https://api.github.com";
 const LINGUIST_TAG = "v9.7.0";
 const LINGUIST_URL = `https://raw.githubusercontent.com/github-linguist/linguist/${LINGUIST_TAG}/lib/linguist/languages.yml`;
 const ATTEMPTS = 3;
+const REQUEST_TIMEOUT_MS = 15000;
+const GH_TIMEOUT_MS = 5000;
 const EXIT_PERMANENT = 1;
 const EXIT_USAGE = 2;
 const EXIT_TRANSIENT = 75;
 
 const REPO_PATTERN = /^[\w.-]+\/[\w.-]+$/;
 const COLOR_PATTERN = /^#[0-9a-fA-F]{6}$/;
+const TOKEN_PATTERN = /^[\x21-\x7e]+$/;
+
+const RETRY = "re-run later";
+const REMOVE_REPO = "remove it from _data/repositories.yml";
+const CHECK_SCRIPT = "re-run; if it persists, the API response format changed and bin/repo-stats.js needs updating";
+
+const USAGE = `usage: node bin/repo-stats.js [--input <path>] [--out <path>] [--no-auth]
+
+  --input <path>   curated list   (default: _data/repositories.yml)
+  --out <path>     output file    (default: _data/repository_stats.json)
+  --no-auth        ignore every token source and run unauthenticated
+  --help           print this usage`;
 
 class UsageError extends Error {}
 
-// A failure attributable to one subject (a repo, or linguist), classified so
-// the exit code can tell a human-must-act failure from a retry-later one.
+// A failure attributable to one subject (a repo, linguist, or an input),
+// carrying its class and the action that resolves it, so every error the run
+// prints says whether to retry or what a human must change.
 class Failure extends Error {
-  constructor(subject, transient, message) {
+  constructor(subject, transient, message, action) {
     super(message);
     this.subject = subject;
     this.transient = transient;
+    this.action = action;
   }
 }
 
@@ -93,21 +116,42 @@ function parseArgs(argv) {
     else if (flag === "--help") opts.help = true;
     else if (flag === "--input" || flag === "--out") {
       const value = argv[++i];
-      if (!value) throw new UsageError(`${flag} needs a value`);
+      if (!value || value.startsWith("--")) throw new UsageError(`${flag} needs a path`);
       opts[flag.slice(2)] = value;
     } else throw new UsageError(`unknown option: ${flag}`);
   }
   return opts;
 }
 
+function checkApiBase() {
+  let url;
+  try {
+    url = new URL(API_BASE);
+  } catch {
+    throw new UsageError(`REPO_STATS_API_BASE is not a URL: ${API_BASE}`);
+  }
+  if (url.protocol !== "https:" && url.protocol !== "http:") throw new UsageError(`REPO_STATS_API_BASE must be http(s): ${API_BASE}`);
+}
+
 // A strict reader for the one list this script needs, so it carries no YAML
 // dependency. It fails on anything it does not understand rather than
-// guessing, because a silently dropped line is a repo silently missing from the
-// page.
+// guessing, because a silently dropped or truncated line is a repo silently
+// missing from the page.
 function readCurated(file) {
-  const lines = fs.readFileSync(file, "utf8").split(/\r?\n/);
-  const start = lines.findIndex((l) => /^github_repos:\s*(#.*)?$/.test(l));
-  if (start < 0) throw new Failure(file, false, "no top-level `github_repos:` key");
+  let source;
+  try {
+    source = fs.readFileSync(file, "utf8");
+  } catch (err) {
+    throw new Failure(file, false, `cannot read the curated list (${err.code || err.name})`, "pass the right --input path");
+  }
+  const lines = source.split(/\r?\n/);
+  const isKey = (l) => /^github_repos:\s*(#.*)?$/.test(l);
+  const start = lines.findIndex(isKey);
+  const fix = "fix _data/repositories.yml";
+  if (start < 0) throw new Failure(file, false, "no top-level `github_repos:` key", fix);
+  // YAML keeps the last of a duplicated key, so reading the first would
+  // fetch a list the page never shows.
+  if (lines.findLastIndex(isKey) !== start) throw new Failure(file, false, "`github_repos:` appears more than once", fix);
 
   const repos = [];
   const seen = new Map();
@@ -118,27 +162,45 @@ function readCurated(file) {
     if (/^[^\s#-]/.test(line)) break;
     const text = line.trim();
     if (text === "" || text.startsWith("#")) continue;
-    const m = /^-\s+(["']?)([^"'#\s]+)\1\s*(#.*)?$/.exec(text);
-    if (!m) throw new Failure(file, false, `line ${n + 1}: not a list item: ${text}`);
+    // As in YAML, `#` starts a comment only after whitespace, so `a/b#c` is
+    // one value (and fails REPO_PATTERN), never `a/b` plus a comment.
+    const m = /^-\s+(["']?)([^"'\s]+)\1(?:\s+#.*)?$/.exec(text);
+    if (!m) throw new Failure(file, false, `line ${n + 1}: not a list item: ${text}`, fix);
     const repo = m[2];
-    if (!REPO_PATTERN.test(repo)) throw new Failure(file, false, `line ${n + 1}: not an owner/name: ${repo}`);
+    if (!REPO_PATTERN.test(repo)) throw new Failure(file, false, `line ${n + 1}: not an owner/name: ${repo}`, fix);
     const folded = repo.toLowerCase();
-    if (seen.has(folded)) throw new Failure(file, false, `line ${n + 1}: ${repo} duplicates line ${seen.get(folded)}`);
+    if (seen.has(folded)) throw new Failure(file, false, `line ${n + 1}: ${repo} duplicates line ${seen.get(folded)}`, fix);
     seen.set(folded, n + 1);
     repos.push(repo);
   }
-  if (repos.length === 0) throw new Failure(file, false, "`github_repos` lists no repos");
+  if (repos.length === 0) throw new Failure(file, false, "`github_repos` lists no repos", fix);
   return repos;
+}
+
+// Rejecting a malformed token here is what keeps it out of the logs: fetch
+// quotes an invalid header value, token included, in the error it throws.
+function checkToken(token, source) {
+  const trimmed = token.trim();
+  if (!TOKEN_PATTERN.test(trimmed)) {
+    throw new Failure(source, false, "token contains whitespace or non-ASCII characters", `fix or unset the token in ${source}`);
+  }
+  return { token: trimmed, source };
 }
 
 function resolveAuth(noAuth) {
   if (noAuth) return { token: null, source: "none (--no-auth)" };
-  if (process.env.GITHUB_TOKEN) return { token: process.env.GITHUB_TOKEN, source: "GITHUB_TOKEN" };
-  if (process.env.GH_TOKEN) return { token: process.env.GH_TOKEN, source: "GH_TOKEN" };
+  if (process.env.GITHUB_TOKEN) return checkToken(process.env.GITHUB_TOKEN, "GITHUB_TOKEN");
+  if (process.env.GH_TOKEN) return checkToken(process.env.GH_TOKEN, "GH_TOKEN");
   try {
-    const token = execFileSync("gh", ["auth", "token"], { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim();
-    if (token) return { token, source: "gh auth token" };
-  } catch {
+    const token = execFileSync("gh", ["auth", "token"], {
+      encoding: "utf8",
+      stdio: ["ignore", "pipe", "ignore"],
+      timeout: GH_TIMEOUT_MS,
+    });
+    if (token.trim()) return checkToken(token, "gh auth token");
+  } catch (err) {
+    if (err instanceof Failure) throw err;
+    if (err.code === "ETIMEDOUT") return { token: null, source: "none (gh auth token timed out)" };
     // gh missing or logged out: fall through to unauthenticated.
   }
   return { token: null, source: "none (no token found)" };
@@ -146,31 +208,68 @@ function resolveAuth(noAuth) {
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-// GET with in-run retries for the failures that are worth retrying at once:
-// network errors and 5xx. Every other response is returned for the caller to
-// classify.
+// GET with in-run retries for the failures worth retrying at once: network
+// errors, timeouts and 5xx. Every other response is returned for the caller
+// to classify. The timeout signal also bounds reading the body. Only the
+// error's code or name is reported, never its message, which can quote
+// request headers.
 async function get(subject, url, headers) {
   let last;
   for (let attempt = 1; attempt <= ATTEMPTS; attempt++) {
     try {
-      const res = await fetch(url, { headers, redirect: "follow" });
+      const res = await fetch(url, { headers, redirect: "follow", signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS) });
       if (res.status < 500) return res;
       last = `HTTP ${res.status}`;
     } catch (err) {
-      last = `network error: ${err.cause?.code || err.cause?.message || err.message}`;
+      last = `network error: ${err.cause?.code || err.cause?.name || err.name}`;
     }
     if (attempt < ATTEMPTS) await sleep(1000 * attempt);
   }
-  throw new Failure(subject, true, `transient: ${last} after ${ATTEMPTS} attempts; retry later`);
+  throw new Failure(subject, true, `transient: ${last} after ${ATTEMPTS} attempts`, RETRY);
+}
+
+// A body that fails to arrive or parse is a bad response, not a bad repo.
+async function readBody(subject, res, kind) {
+  try {
+    return kind === "json" ? await res.json() : await res.text();
+  } catch (err) {
+    throw new Failure(subject, true, `transient: unreadable response body (${err.cause?.code || err.name})`, RETRY);
+  }
+}
+
+// 429 is a rate limit by definition; a 403 is one when its headers or body say
+// so. GitHub sends `retry-after` only sometimes.
+async function rateLimitFailure(subject, res) {
+  if (res.status === 429) return new Failure(subject, true, "transient: rate limited (HTTP 429)", RETRY);
+  if (res.status !== 403) return null;
+  if (res.headers.get("x-ratelimit-remaining") === "0") {
+    const reset = Number(res.headers.get("x-ratelimit-reset"));
+    const at = reset ? new Date(reset * 1000).toISOString() : "the next hour";
+    return new Failure(subject, true, `transient: API rate limit exhausted (resets ${at})`, RETRY);
+  }
+  const body = await readBody(subject, res, "text");
+  if (res.headers.get("retry-after") || /secondary rate limit|abuse/i.test(body)) {
+    return new Failure(subject, true, "transient: secondary rate limit (HTTP 403)", RETRY);
+  }
+  return null;
 }
 
 async function fetchLanguageColors() {
   const res = await get("linguist", LINGUIST_URL, { "User-Agent": "repo-stats" });
-  if (!res.ok) throw new Failure("linguist", false, `${LINGUIST_URL} returned HTTP ${res.status}`);
+  const limited = await rateLimitFailure("linguist", res);
+  if (limited) throw limited;
+  if (res.status === 408) throw new Failure("linguist", true, "transient: HTTP 408", RETRY);
+  if (!res.ok)
+    throw new Failure(
+      "linguist",
+      false,
+      `${LINGUIST_URL} returned HTTP ${res.status}`,
+      "check LINGUIST_TAG in bin/repo-stats.js names a real linguist release"
+    );
   const colors = new Map();
   let current = null;
   let count = 0;
-  for (const line of (await res.text()).split("\n")) {
+  for (const line of (await readBody("linguist", res, "text")).split("\n")) {
     const key = /^([^\s#-][^:]*):\s*$/.exec(line);
     if (key) {
       current = key[1];
@@ -181,61 +280,68 @@ async function fetchLanguageColors() {
     const color = /^ {2}color: "(#[0-9a-fA-F]{6})"\s*$/.exec(line);
     if (current && color) colors.set(current, color[1]);
   }
-  // linguist lists 800+ languages; far fewer means the file's format changed
-  // under this scan, not that the languages went away.
+  // linguist lists 800+ languages. The tag is immutable, so far fewer usually
+  // means a bad response (an error or captive-portal page), not a new format.
   if (count < 300 || colors.size < 300) {
-    throw new Failure("linguist", false, `parsed only ${count} languages and ${colors.size} colors from ${LINGUIST_TAG}; has the format changed?`);
+    throw new Failure(
+      "linguist",
+      true,
+      `transient: response does not look like languages.yml (${count} languages, ${colors.size} colors)`,
+      `${RETRY}; if it persists after a LINGUIST_TAG bump, the file's format changed and the scan in bin/repo-stats.js needs updating`
+    );
   }
   return colors;
-}
-
-function classifyRateLimit(repo, res, body) {
-  if (res.headers.get("x-ratelimit-remaining") === "0") {
-    const reset = Number(res.headers.get("x-ratelimit-reset"));
-    const at = reset ? new Date(reset * 1000).toISOString() : "the next hour";
-    return new Failure(repo, true, `transient: API rate limit exhausted (resets ${at}); retry later`);
-  }
-  if (res.headers.get("retry-after") || /secondary rate limit/i.test(body)) {
-    return new Failure(repo, true, "transient: secondary rate limit; retry later");
-  }
-  return null;
 }
 
 async function fetchRepo(repo, headers, authSource) {
   const res = await get(repo, `${API_BASE}/repos/${repo}`, headers);
   if (res.status === 404) {
-    return new Failure(repo, false, "returned 404 (deleted, made private, or the name reused). A human must remove it from _data/repositories.yml");
+    return new Failure(repo, false, "returned 404 (deleted, made private, or the name reused)", REMOVE_REPO);
   }
-  if (res.status === 401) return new Failure(repo, false, `token rejected (HTTP 401); the token came from ${authSource}`);
-  if (res.status === 403 || res.status === 429) {
-    const limited = classifyRateLimit(repo, res, await res.text());
-    if (limited) return limited;
+  if (res.status === 401) return new Failure(repo, false, "token rejected (HTTP 401)", `fix or unset the token in ${authSource}`);
+  const limited = await rateLimitFailure(repo, res);
+  if (limited) return limited;
+  if (res.status === 408) return new Failure(repo, true, "transient: HTTP 408", RETRY);
+  if (!res.ok) return new Failure(repo, false, `returned HTTP ${res.status}`, `check https://github.com/${repo} is reachable, then ${RETRY}`);
+  const data = await readBody(repo, res, "json");
+  if (data === null || typeof data !== "object" || Array.isArray(data)) {
+    return new Failure(repo, true, "transient: response is not a JSON object", RETRY);
   }
-  if (!res.ok) return new Failure(repo, false, `returned HTTP ${res.status}`);
-  return res.json();
+  return data;
 }
 
 const nonEmpty = (v) => typeof v === "string" && v.trim() !== "";
 const count = (v) => Number.isInteger(v) && v >= 0;
 
 // Validate one API response and project it to the fields the page uses, in a
-// fixed order. `colors` is null when linguist itself failed, in which case
-// color checks are skipped rather than reported as a missing language.
+// fixed order. Each problem carries the action that fixes it. `colors` is null
+// when linguist itself failed, in which case color checks are skipped rather
+// than reported as a missing language.
 function shapeRepo(repo, d, colors) {
   const problems = [];
+  const add = (message, action) => problems.push({ message, action });
+  if (d.visibility === undefined) {
+    add("response has no visibility field", CHECK_SCRIPT);
+    return { problems };
+  }
   if (d.private === true || d.visibility !== "public") {
-    return { problems: ["is not public. A human must remove it from _data/repositories.yml"] };
+    add("is not public", REMOVE_REPO);
+    return { problems };
   }
   const color = colors && nonEmpty(d.language) ? colors.get(d.language) : undefined;
-  if (!nonEmpty(d.full_name)) problems.push("missing full_name");
-  if (!nonEmpty(d.owner?.login)) problems.push("missing owner");
-  if (!nonEmpty(d.description)) problems.push("has no description; add one on GitHub");
-  if (!nonEmpty(d.language)) problems.push("has no detected language");
-  else if (colors && !(color && COLOR_PATTERN.test(color))) problems.push(`language "${d.language}" has no color in linguist ${LINGUIST_TAG}`);
-  if (!count(d.stargazers_count)) problems.push("missing stargazers_count");
-  if (!count(d.forks_count)) problems.push("missing forks_count");
+  if (!nonEmpty(d.full_name)) add("missing full_name", CHECK_SCRIPT);
+  if (!nonEmpty(d.owner?.login)) add("missing owner", CHECK_SCRIPT);
+  if (!nonEmpty(d.description)) add("has no description", `add one on GitHub, or ${REMOVE_REPO}`);
+  if (!nonEmpty(d.language)) add("has no detected language", `push code GitHub can detect a language for, or ${REMOVE_REPO}`);
+  else if (colors && !(color && COLOR_PATTERN.test(color))) {
+    add(`language "${d.language}" has no color in linguist ${LINGUIST_TAG}`, "bump LINGUIST_TAG in bin/repo-stats.js to a release that has it");
+  }
+  if (!count(d.stargazers_count)) add("missing stargazers_count", CHECK_SCRIPT);
+  if (!count(d.forks_count)) add("missing forks_count", CHECK_SCRIPT);
   const homepage = nonEmpty(d.homepage) ? d.homepage.trim() : null;
-  if (homepage !== null && !/^https?:\/\/\S+$/i.test(homepage)) problems.push(`homepage is not an http(s) URL: ${homepage}`);
+  if (homepage !== null && !/^https?:\/\/\S+$/i.test(homepage)) {
+    add(`homepage is not an http(s) URL: ${homepage}`, "on GitHub, set the repo's website to a full http(s):// URL or clear it");
+  }
   if (problems.length) return { problems };
 
   return {
@@ -269,8 +375,9 @@ function sameData(file, next) {
 }
 
 function writeAtomically(file, text) {
-  // A dotfile with a non-data extension, so Jekyll never reads a partial one.
-  const tmp = path.join(path.dirname(file), `.${path.basename(file)}.tmp`);
+  // A dotfile with a non-data extension, so Jekyll never reads a partial one,
+  // and per-process so concurrent runs cannot rename each other's.
+  const tmp = path.join(path.dirname(file), `.${path.basename(file)}.${process.pid}.tmp`);
   try {
     fs.writeFileSync(tmp, text);
     fs.renameSync(tmp, file);
@@ -279,12 +386,18 @@ function writeAtomically(file, text) {
   }
 }
 
+function report(failure) {
+  console.error(`error: ${failure.subject}: ${failure.message}`);
+  console.error(`  action: ${failure.action}`);
+}
+
 async function main() {
   const opts = parseArgs(process.argv);
   if (opts.help) {
-    console.log("usage: node bin/repo-stats.js [--input <path>] [--out <path>] [--no-auth]");
+    console.log(USAGE);
     return 0;
   }
+  checkApiBase();
 
   const repos = readCurated(opts.input);
   const auth = resolveAuth(opts.noAuth);
@@ -321,7 +434,7 @@ async function main() {
     }
     const { problems, entry } = shapeRepo(repo, data, colors);
     if (problems.length) {
-      failures.push(new Failure(repo, false, problems.join("; ")));
+      failures.push(new Failure(repo, false, problems.map((p) => p.message).join("; "), [...new Set(problems.map((p) => p.action))].join("; ")));
       continue;
     }
     if (entry.full_name !== repo) {
@@ -332,7 +445,7 @@ async function main() {
   }
 
   if (failures.length) {
-    for (const f of failures) console.error(`error: ${f.subject}: ${f.message}`);
+    failures.forEach(report);
     const transientOnly = failures.every((f) => f.transient);
     console.error(`${opts.out} left unchanged (${transientOnly ? "transient" : "permanent"} failure).`);
     return transientOnly ? EXIT_TRANSIENT : EXIT_PERMANENT;
@@ -362,9 +475,10 @@ main().then(
   (err) => {
     if (err instanceof UsageError) {
       console.error(`usage error: ${err.message}`);
+      console.error(USAGE);
       process.exitCode = EXIT_USAGE;
     } else if (err instanceof Failure) {
-      console.error(`error: ${err.subject}: ${err.message}`);
+      report(err);
       process.exitCode = err.transient ? EXIT_TRANSIENT : EXIT_PERMANENT;
     } else {
       console.error(`unexpected error: ${err.stack || err}`);
