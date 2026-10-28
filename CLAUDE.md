@@ -62,7 +62,8 @@ caret range lets them drift and pass upstream while failing here. If you bump th
 bump it in `claude-code-sessions` and `us-presidential-vote-analysis` too, and in
 `claude-code-loop` once its publishing pipeline (claude-code-loop#177) exists.
 
-`.prettierignore` excludes vendored/minified assets and `_data/esg_news.json` — see below.
+`.prettierignore` excludes vendored/minified assets and the two generated data files,
+`_data/esg_news.json` and `_data/repository_stats.json` — see below.
 
 ## Content comes from three places, and two of them are not this repo
 
@@ -78,6 +79,10 @@ bump it in `claude-code-sessions` and `us-presidential-vote-analysis` too, and i
    serialization would otherwise fail the check on `main` every morning.
 3. **Everything else** — `_pages/`, `_news/`, `_projects/`, `_books/`,
    `_bibliography/papers.bib`, `_sass/`, `_includes/` — is authored here normally.
+   The exception is `_data/repository_stats.json`, which is generated here by
+   `bin/repo-stats.js` from the curated `github_repos` list in `_data/repositories.yml`.
+   Never hand-edit it: after changing that list, re-run the script and commit both files. It
+   is in `.prettierignore` because its layout is `JSON.stringify`'s, not Prettier's.
 
 ## Blog taxonomy: `categories` means _series_
 
