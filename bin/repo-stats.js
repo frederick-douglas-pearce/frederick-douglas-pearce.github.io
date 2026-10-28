@@ -7,7 +7,7 @@
  * its order, fetches each repo from api.github.com, and writes
  * _data/repository_stats.json. It runs by hand (and, once #59 lands, on a
  * schedule), never inside the Jekyll build, so a GitHub API failure cannot fail
- * a deploy. #56 renders the page's cards as native HTML from this file, which
+ * a deploy. #56 will render the page's cards as native HTML from this file, which
  * ends the page's dependence on a third-party image service (epic #54).
  * Curation stays hand-edited: this script never changes repositories.yml.
  *
@@ -31,7 +31,9 @@
  * Actions, GITHUB_TOKEN is not in the environment unless the step maps it
  * (`env: GITHUB_TOKEN: ${{ github.token }}`); it allows 1,000 requests/hr per
  * repository. A logged-in gh supplies a token silently, so pass --no-auth to
- * exercise the unauthenticated path. The script logs which source it used and
+ * exercise the unauthenticated path. With REPO_STATS_API_BASE set, every token
+ * source is ignored, so a token never goes to anything but api.github.com. The
+ * script logs which source it used and
  * never logs the token; a token that is not printable ASCII is rejected by
  * naming its source only.
  *
@@ -55,20 +57,23 @@
  * transient failure (5xx, network error, timeout, rate limit, unreadable
  * response) also fails the run, with its own exit code, which tells a scheduled
  * job to retry rather than ask a human to edit the curation. Every error line
- * is followed by the action that resolves it.
+ * is followed by the action that resolves it, except an unexpected exception,
+ * which is a bug in this script and prints its stack.
  *
  * Exit codes: 0 written or unchanged; 1 permanent failure (404, not public,
  * bad token, validation); 75 transient failures only; 2 usage error.
  *
  * REPO_STATS_API_BASE overrides https://api.github.com. It exists only to
- * exercise failure paths against a local stub or an unreachable host.
+ * exercise failure paths against a local stub or an unreachable host, and a
+ * run with it set is always unauthenticated.
  */
 
 const fs = require("fs");
 const path = require("path");
 const { execFileSync } = require("child_process");
 
-const API_BASE = process.env.REPO_STATS_API_BASE || "https://api.github.com";
+const API_OVERRIDDEN = Boolean(process.env.REPO_STATS_API_BASE);
+const API_BASE = API_OVERRIDDEN ? process.env.REPO_STATS_API_BASE : "https://api.github.com";
 // Pinned so colors only change when this constant does.
 const LINGUIST_TAG = "v9.7.0";
 const LINGUIST_URL = `https://raw.githubusercontent.com/github-linguist/linguist/${LINGUIST_TAG}/lib/linguist/languages.yml`;
@@ -131,6 +136,8 @@ function checkApiBase() {
     throw new UsageError(`REPO_STATS_API_BASE is not a URL: ${API_BASE}`);
   }
   if (url.protocol !== "https:" && url.protocol !== "http:") throw new UsageError(`REPO_STATS_API_BASE must be http(s): ${API_BASE}`);
+  // fetch refuses a URL with credentials in it; say so now rather than retry.
+  if (url.username || url.password) throw new UsageError("REPO_STATS_API_BASE must not contain a username or password");
 }
 
 // A strict reader for the one list this script needs, so it carries no YAML
@@ -189,6 +196,8 @@ function checkToken(token, source) {
 
 function resolveAuth(noAuth) {
   if (noAuth) return { token: null, source: "none (--no-auth)" };
+  // An overridden API base is a stub or test host: never send it a real token.
+  if (API_OVERRIDDEN) return { token: null, source: "none (REPO_STATS_API_BASE set)" };
   if (process.env.GITHUB_TOKEN) return checkToken(process.env.GITHUB_TOKEN, "GITHUB_TOKEN");
   if (process.env.GH_TOKEN) return checkToken(process.env.GH_TOKEN, "GH_TOKEN");
   try {
@@ -334,7 +343,10 @@ function shapeRepo(repo, d, colors) {
   if (!nonEmpty(d.description)) add("has no description", `add one on GitHub, or ${REMOVE_REPO}`);
   if (!nonEmpty(d.language)) add("has no detected language", `push code GitHub can detect a language for, or ${REMOVE_REPO}`);
   else if (colors && !(color && COLOR_PATTERN.test(color))) {
-    add(`language "${d.language}" has no color in linguist ${LINGUIST_TAG}`, "bump LINGUIST_TAG in bin/repo-stats.js to a release that has it");
+    add(
+      `language "${d.language}" has no color in linguist ${LINGUIST_TAG}`,
+      `if a newer linguist release gives it a color, bump LINGUIST_TAG in bin/repo-stats.js; otherwise ${REMOVE_REPO} (colorless languages are unsupported until #56)`
+    );
   }
   if (!count(d.stargazers_count)) add("missing stargazers_count", CHECK_SCRIPT);
   if (!count(d.forks_count)) add("missing forks_count", CHECK_SCRIPT);
@@ -463,7 +475,11 @@ async function main() {
     console.log(`${opts.out} unchanged.`);
     return 0;
   }
-  writeAtomically(opts.out, JSON.stringify(output, null, 2) + "\n");
+  try {
+    writeAtomically(opts.out, JSON.stringify(output, null, 2) + "\n");
+  } catch (err) {
+    throw new Failure(opts.out, false, `cannot write (${err.code || err.name})`, "pass an --out path in an existing, writable directory");
+  }
   console.log(`wrote ${opts.out} (${repos.length} repos, ${languages.length} languages).`);
   return 0;
 }
