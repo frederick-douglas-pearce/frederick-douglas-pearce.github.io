@@ -33,9 +33,8 @@
  * repository. A logged-in gh supplies a token silently, so pass --no-auth to
  * exercise the unauthenticated path. With REPO_STATS_API_BASE set, every token
  * source is ignored, so a token never goes to anything but api.github.com. The
- * script logs which source it used and
- * never logs the token; a token that is not printable ASCII is rejected by
- * naming its source only.
+ * script logs which source it used and never logs the token; a token that is
+ * not printable ASCII is rejected by naming its source only.
  *
  * Output. Repos are keyed by the exact string from repositories.yml, never by
  * the API's `full_name`: Ruby hash keys are case-sensitive and GitHub names are
@@ -302,12 +301,15 @@ async function fetchLanguageColors() {
   return colors;
 }
 
-async function fetchRepo(repo, headers, authSource) {
+async function fetchRepo(repo, headers, auth) {
   const res = await get(repo, `${API_BASE}/repos/${repo}`, headers);
   if (res.status === 404) {
     return new Failure(repo, false, "returned 404 (deleted, made private, or the name reused)", REMOVE_REPO);
   }
-  if (res.status === 401) return new Failure(repo, false, "token rejected (HTTP 401)", `fix or unset the token in ${authSource}`);
+  if (res.status === 401) {
+    if (auth.token) return new Failure(repo, false, "token rejected (HTTP 401)", `fix or unset the token in ${auth.source}`);
+    return new Failure(repo, false, "HTTP 401 on an unauthenticated request", API_OVERRIDDEN ? "check REPO_STATS_API_BASE" : CHECK_SCRIPT);
+  }
   const limited = await rateLimitFailure(repo, res);
   if (limited) return limited;
   if (res.status === 408) return new Failure(repo, true, "transient: HTTP 408", RETRY);
@@ -435,7 +437,7 @@ async function main() {
   for (const repo of repos) {
     let data;
     try {
-      data = await fetchRepo(repo, headers, auth.source);
+      data = await fetchRepo(repo, headers, auth);
     } catch (err) {
       if (!(err instanceof Failure)) throw err;
       data = err;
