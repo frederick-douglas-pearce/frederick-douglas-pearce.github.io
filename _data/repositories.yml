@@ -18,3 +18,19 @@ github_repos:
   - frederick-douglas-pearce/509_Report_Analysis
   - frederick-douglas-pearce/complex_numbers_clock
   - frederick-douglas-pearce/us-presidential-vote-analysis
+
+# Corrects the language a repo card shows when GitHub's detected one misdescribes
+# the work, keyed by the same owner/name as github_repos. Repos not listed show
+# GitHub's language. The card's dot takes the displayed language's color from
+# language_colors in repository_stats.json and is left out when there is none;
+# until #122 lands, bin/repo-stats.js does not read this map, so pick a language
+# that file already colors.
+repo_language_overrides:
+  # GitHub reports HTML for an ML pipeline.
+  frederick-douglas-pearce/sportswear-esg-news-classifier: Python
+  # Python in notebooks; "Jupyter Notebook" is the format, not the language.
+  frederick-douglas-pearce/e-commerce-fraud-detection: Python
+  frederick-douglas-pearce/predict-housing-prices: Python
+  frederick-douglas-pearce/BRFSS-diabetes-2024: Python
+  frederick-douglas-pearce/509_Report_Analysis: Python
+  frederick-douglas-pearce/complex_numbers_clock: Python
