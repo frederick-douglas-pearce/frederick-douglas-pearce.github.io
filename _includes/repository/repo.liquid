@@ -1,3 +1,14 @@
+{% comment %}
+  One native repo card for /repositories/ (epic #54). Facts come from
+  _data/repository_stats.json, written by bin/repo-stats.js; the language label
+  can be corrected per repo in repo_language_overrides in
+  _data/repositories.yml. Look repos up with a bracketed variable key: the key
+  contains "/" and ".", which dot notation would split.
+
+  Stars and forks show only above 1: a lone star reads as weak on a portfolio
+  page (#56). A repo missing from the stats file, e.g. one curated before the
+  next script run, renders its name and link only.
+{% endcomment %}
 {% assign repo_url = include.repository | split: '/' %}
 {% if site.data.repositories.github_users contains repo_url.first %}
   {% assign show_owner = false %}
@@ -5,43 +16,51 @@
   {% assign show_owner = true %}
 {% endif %}
 
-{% assign lang = site.lang | split: '-' | first %}
-
-{% case lang %}
-  {% when 'pt' %}
-    {% assign lang = site.lang %}
-
-  {% when 'zh' %}
-    {% assign lang_last = site.lang | split: '-' | last %}
-    {% case lang_last %}
-      {% when 'cn', 'sg', 'my', 'hans' %}
-        {% assign lang = 'cn' %}
-      {% when 'tw', 'hk', 'mo', 'hant' %}
-        {% assign lang = 'zh-tw' %}
-    {% endcase %}
-
-    {% comment %} Add a new language using when... if needed {% endcomment %}
-    {% comment %} If you still encounter language-display issues, check the available locale codes in github-readme-stats (different from ISO-639 standard used in your website) {% endcomment %}
-    {% comment %} https://github.com/anuraghazra/github-readme-stats?tab=readme-ov-file#available-locales {% endcomment %}
-{% endcase %}
-
 {% if site.data.repositories.repo_description_lines_max %}
   {% assign max_lines = site.data.repositories.repo_description_lines_max %}
 {% else %}
   {% assign max_lines = 2 %}
 {% endif %}
 
-<div class="repo p-2 text-center">
-  <a href="https://github.com/{{ include.repository }}">
-    <img
-      class="only-light w-100"
-      alt="{{ include.repository }}"
-      src="{{ site.repo_stats_host | default: 'https://github-readme-stats.vercel.app' }}/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_light }}&locale={{ lang }}&show_owner={{ show_owner }}&description_lines_count={{ max_lines }}"
-    >
-    <img
-      class="only-dark w-100"
-      alt="{{ include.repository }}"
-      src="{{ site.repo_stats_host | default: 'https://github-readme-stats.vercel.app' }}/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_dark }}&locale={{ lang }}&show_owner={{ show_owner }}&description_lines_count={{ max_lines }}"
-    >
-  </a>
-</div>
+{% assign stats = site.data.repository_stats.repos[include.repository] %}
+
+<article class="repo repo-card p-2">
+  <h3 class="repo-name">
+    <a href="https://github.com/{{ include.repository | escape }}">
+      {%- if show_owner -%}
+        {{ include.repository | escape }}
+      {%- else -%}
+        {{ repo_url.last | escape }}
+      {%- endif -%}
+    </a>
+  </h3>
+  {% if stats %}
+    {% assign language = site.data.repositories.repo_language_overrides[include.repository] | default: stats.language %}
+    {% assign language_color = site.data.repository_stats.language_colors[language] %}
+    <p class="repo-description" style="--repo-description-lines: {{ max_lines }}">{{ stats.description | escape }}</p>
+    {% if language or stats.stargazers_count > 1 or stats.forks_count > 1 %}
+      <ul class="repo-meta">
+        {% if language %}
+          <li>
+            {%- if language_color -%}
+              <span class="repo-language-color" style="--repo-language-color: {{ language_color }}" aria-hidden="true"></span>
+            {%- endif -%}
+            {{ language | escape }}
+          </li>
+        {% endif %}
+        {% if stats.stargazers_count > 1 %}
+          <li>
+            <i class="fa-solid fa-star" aria-hidden="true"></i> {{ stats.stargazers_count -}}
+            <span class="sr-only"> stars</span>
+          </li>
+        {% endif %}
+        {% if stats.forks_count > 1 %}
+          <li>
+            <i class="fa-solid fa-code-fork" aria-hidden="true"></i> {{ stats.forks_count -}}
+            <span class="sr-only"> forks</span>
+          </li>
+        {% endif %}
+      </ul>
+    {% endif %}
+  {% endif %}
+</article>

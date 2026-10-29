@@ -618,6 +618,37 @@ footer.sticky-bottom {
   }
 }
 
+// Only what the native card's markup needs to work (#56). Its look, colors and
+// theme surfaces are #57's, which replaces the .repo rule above.
+.repo-description {
+  // Visual clamp only: screen readers still get the whole description.
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--repo-description-lines, 2);
+  line-clamp: var(--repo-description-lines, 2);
+  overflow: hidden;
+}
+
+.repo-meta {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+}
+
+// The dot's color is data (GitHub's color for the language), set inline.
+.repo-language-color {
+  display: inline-block;
+  width: 0.75em;
+  height: 0.75em;
+  margin-right: 0.35em;
+  border-radius: 50%;
+  background-color: var(--repo-language-color);
+}
+
 // Blog
 
 .header-bar {

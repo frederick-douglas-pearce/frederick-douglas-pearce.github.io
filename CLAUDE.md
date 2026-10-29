@@ -11,9 +11,9 @@ kramdown, Liquid), deployed to GitHub Pages from `main` by `.github/workflows/de
 Because it is a theme fork, most files are upstream. Local divergences are the interesting
 part, and they are documented in comments at the point of divergence — read the header
 comment of a `_includes/*.liquid`, a workflow, or a `_config.yml` block before changing it.
-Several of those comments record a decision _not_ to do the obvious thing (see
-`repo_stats_cards` in `_config.yml`, the removed "Update \_config.yml" step in `deploy.yml`,
-the missing scroll container in `activity.liquid`). Don't undo them without reading why.
+Several of those comments record a decision _not_ to do the obvious thing (see the removed
+"Update \_config.yml" step in `deploy.yml`, the missing scroll container in
+`activity.liquid`). Don't undo them without reading why.
 
 ## Build and dev commands
 
