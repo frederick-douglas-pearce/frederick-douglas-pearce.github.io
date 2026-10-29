@@ -36,9 +36,9 @@ back_to_top: true # set to false to disable the back to top button
 # -----------------------------------------------------------------------------
 
 # github-readme-stats host and themes. The /repositories/ cards are native HTML
-# since #56 (epic #54), so only repo_user.liquid and repo_trophies.liquid still
-# read these, and /repositories/ includes neither. #60 removes them. Self-hosting
-# an instance was considered and rejected in #54.
+# since #56 (epic #54), so only repo_user.liquid still reads these keys, and no
+# page includes it. #60 removes them. Self-hosting an instance was considered and
+# rejected in #54.
 repo_stats_host: https://github-readme-stats.vercel.app
 
 # repo color theme

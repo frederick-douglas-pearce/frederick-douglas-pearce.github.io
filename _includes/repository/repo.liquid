@@ -2,11 +2,11 @@
   One native repo card for /repositories/ (epic #54). Facts come from
   _data/repository_stats.json, written by bin/repo-stats.js; the language label
   can be corrected per repo in repo_language_overrides in
-  _data/repositories.yml. Look repos up with a bracketed variable key: the key
-  contains "/" and ".", which dot notation would split.
+  _data/repositories.yml. Look repos up with a bracketed variable key, as
+  _layouts/bib.liquid does: dot notation cannot take a variable key.
 
   Stars and forks show only above 1: a lone star reads as weak on a portfolio
-  page (#56). A repo missing from the stats file, e.g. one curated before the
+  page (#56 leaves the threshold open; the owner chose above 1 in #123). A repo missing from the stats file, e.g. one curated before the
   next script run, renders its name and link only.
 {% endcomment %}
 {% assign repo_url = include.repository | split: '/' %}

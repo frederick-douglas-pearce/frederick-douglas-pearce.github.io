@@ -620,6 +620,12 @@ footer.sticky-bottom {
 
 // Only what the native card's markup needs to work (#56). Its look, colors and
 // theme surfaces are #57's, which replaces the .repo rule above.
+// Lets a long unbroken name (e.g. complex_numbers_clock) wrap, so the page does
+// not scroll sideways at 320 CSS px (WCAG 1.4.10).
+.repo-name {
+  overflow-wrap: anywhere;
+}
+
 .repo-description {
   // Visual clamp only: screen readers still get the whole description.
   display: -webkit-box;
