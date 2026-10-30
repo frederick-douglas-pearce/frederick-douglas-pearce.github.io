@@ -17,15 +17,9 @@
   {% assign show_owner = true %}
 {% endif %}
 
-{% if site.data.repositories.repo_description_lines_max %}
-  {% assign max_lines = site.data.repositories.repo_description_lines_max %}
-{% else %}
-  {% assign max_lines = 2 %}
-{% endif %}
-
 {% assign stats = site.data.repository_stats.repos[include.repository] %}
 
-<article class="repo repo-card p-2">
+<article class="repo-card">
   <h3 class="repo-name">
     <a href="https://github.com/{{ include.repository | escape }}">
       {%- if show_owner -%}
@@ -38,7 +32,7 @@
   {% if stats %}
     {% assign language = site.data.repositories.repo_language_overrides[include.repository] | default: stats.language %}
     {% assign language_color = site.data.repository_stats.language_colors[language] %}
-    <p class="repo-description" style="--repo-description-lines: {{ max_lines }}">{{ stats.description | escape }}</p>
+    <p class="repo-description">{{ stats.description | escape }}</p>
     {% if language or stats.stargazers_count > 1 or stats.forks_count > 1 %}
       <ul class="repo-meta">
         {% if language %}
