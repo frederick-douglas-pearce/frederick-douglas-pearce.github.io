@@ -645,8 +645,9 @@ footer.sticky-bottom {
   border: 1px solid var(--global-divider-color);
   border-radius: 4px;
 
-  // Focus only, not hover: just the name is a link, so a whole-card hover
-  // would suggest a click target that isn't there.
+  // Focus only, not hover: one element is a link (a repo card's name, the
+  // profile summary's profile link), so a whole-card hover would suggest a
+  // click target that isn't there.
   &:focus-within {
     border-color: var(--global-theme-color);
   }
@@ -709,16 +710,19 @@ footer.sticky-bottom {
   border-radius: 50%;
 }
 
-// min-width: 0 lets a long bio or link wrap instead of widening the card.
+// min-width: 0 lets the column shrink, and overflow-wrap: anywhere breaks an
+// unbroken link or bio word, as .repo-name does, so the page does not scroll
+// sideways at 320 CSS px (WCAG 1.4.10).
 .repo-profile-text {
   min-width: 0;
+  overflow-wrap: anywhere;
 
   > :last-child {
     margin-bottom: 0;
   }
 }
 
-// The footnote under the stars figure: muted, like the meta row, and at its size.
+// The star note under the meta row: muted, like the meta row, and at its size.
 .repo-note {
   font-size: 0.875rem;
   color: var(--global-text-color-light);

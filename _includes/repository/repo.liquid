@@ -7,10 +7,10 @@
 
   Stars and forks show only above 1: a lone star reads as weak on a portfolio
   page (#56 leaves the threshold open; the owner chose above 1 in #123). The
-  profile summary's stars footnote (repo_user.liquid) describes this threshold;
-  change both together. A repo
-  missing from the stats file, e.g. one curated before the next script run,
-  renders its name and link only.
+  profile summary (repo_user.liquid) assumes this threshold twice, in its
+  `stars == 1` count of hidden stars and in its star note's wording; change all
+  three together. A repo missing from the stats file, e.g. one curated before
+  the next script run, renders its name and link only.
 {% endcomment %}
 {% assign repo_url = include.repository | split: '/' %}
 {% if site.data.repositories.github_users contains repo_url.first %}

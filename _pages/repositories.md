@@ -28,12 +28,11 @@ inside a block element so kramdown passes the include's HTML through as is.
 {% endfor %}
 {% endif %}
 
-{% for user in site.data.repositories.github_users %}
-
 <div class="repo-profiles">
-  {% include repository/repo_user.liquid username=user %}
+  {% for user in site.data.repositories.github_users %}
+    {% include repository/repo_user.liquid username=user %}
+  {% endfor %}
 </div>
-{% endfor %}
 
 {% if site.data.repositories.github_repos %}
 

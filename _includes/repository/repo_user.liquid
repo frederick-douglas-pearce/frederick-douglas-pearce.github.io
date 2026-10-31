@@ -9,35 +9,32 @@
   commit/PR/issue totals (extra API surface, and misleading for work spread over
   orgs and private repos), per #58.
 
-  The stars figure is summed here from the same repos entries the grid reads,
-  over the curated repos this user owns (the owner test is repo.liquid's), so it
-  cannot disagree with the cards. Cards show stars only above 1 (repo.liquid), so
-  when a curated repo has exactly one star the card figures add up to less, and
-  a footnote says why.
+  The stars figure is summed over every repo in github_repos, from the same
+  repos entries the grid reads, so it is the total of the cards below. It
+  assumes one curated user: with more, each summary would repeat the page total,
+  and the figure should move out of the per-user card. Cards show stars only
+  above 1 (repo.liquid), so the star note counts the repos at exactly 1, whose
+  stars are in the total but on no card; with none, there is no note. The
+  marker is aria-hidden and the note names the figure, so it reads on its own.
 
-  The avatar is decorative (alt="") because the name heading sits beside it,
-  and stays outside the link so no link is left without a name. A user missing
-  from the stats file, e.g. one curated before the next script run, renders its
-  login and profile link only.
+  The avatar is decorative (alt="") because the name heading sits beside it. A
+  user missing from the stats file, e.g. one curated before the next script
+  run, renders its login and profile link only.
 {% endcomment %}
 {% assign login = include.username %}
 {% assign profile = site.data.repository_stats.users[login] %}
-{% assign id = 'repo-profile-' | append: login | escape %}
 
 {% assign total_stars = 0 %}
 {% assign hidden_stars = 0 %}
 {% for repo in site.data.repositories.github_repos %}
-  {% assign owner = repo | split: '/' | first %}
-  {% if owner == login %}
-    {% assign stars = site.data.repository_stats.repos[repo].stargazers_count | default: 0 %}
-    {% assign total_stars = total_stars | plus: stars %}
-    {% if stars == 1 %}
-      {% assign hidden_stars = hidden_stars | plus: 1 %}
-    {% endif %}
+  {% assign stars = site.data.repository_stats.repos[repo].stargazers_count | default: 0 %}
+  {% assign total_stars = total_stars | plus: stars %}
+  {% if stars == 1 %}
+    {% assign hidden_stars = hidden_stars | plus: 1 %}
   {% endif %}
 {% endfor %}
 
-<section class="repo-card repo-profile" aria-labelledby="{{ id }}">
+<section class="repo-card repo-profile">
   {% if profile %}
     {% if profile.avatar_url contains '?' %}
       {% assign size_sep = '&' %}
@@ -53,7 +50,7 @@
     >
   {% endif %}
   <div class="repo-profile-text">
-    <h2 class="repo-name" id="{{ id }}">{{ profile.name | default: login | escape }}</h2>
+    <h2 class="repo-name">{{ profile.name | default: login | escape }}</h2>
     {% if profile.bio %}
       <p class="repo-description">{{ profile.bio | escape }}</p>
     {% endif %}
@@ -72,7 +69,7 @@
           {% if total_stars == 1 %}star{% else %}stars{% endif %}
           across the repositories below
           {%- if hidden_stars > 0 -%}
-            <a class="repo-footnote-ref" href="#{{ id }}-stars-note"><sup>*</sup><span class="sr-only"> (see note on stars)</span></a>
+            <span aria-hidden="true">*</span>
           {%- endif -%}
         </li>
       {% endif %}
@@ -81,9 +78,14 @@
       </li>
     </ul>
     {% if profile and hidden_stars > 0 %}
-      <p class="repo-note" id="{{ id }}-stars-note">
+      <p class="repo-note">
         <span aria-hidden="true">*</span>
-        A card below shows its stars only when it has more than one, so the card figures add up to less than this total.
+        The {{ total_stars }} includes {{ hidden_stars }}
+        {% if hidden_stars == 1 -%}
+          repository with one star, which its card doesn't show.
+        {%- else -%}
+          repositories with one star each, which their cards don't show.
+        {%- endif %}
       </p>
     {% endif %}
   </div>

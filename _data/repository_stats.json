@@ -1,6 +1,6 @@
 {
   "_generated_by": "bin/repo-stats.js — do not edit by hand",
-  "generated_at": "2026-10-31T03:11:24Z",
+  "generated_at": "2026-10-31T04:28:05Z",
   "language_colors": {
     "HTML": "#e34c26",
     "Jupyter Notebook": "#DA5B0B",
@@ -36,7 +36,7 @@
       "language_color": "#e34c26",
       "stargazers_count": 3,
       "forks_count": 0,
-      "pushed_at": "2026-10-31T03:02:52Z",
+      "pushed_at": "2026-10-31T04:26:41Z",
       "topics": [
         "esg",
         "google-cloud-run",
@@ -70,7 +70,7 @@
       "language_color": "#3572A5",
       "stargazers_count": 1,
       "forks_count": 0,
-      "pushed_at": "2026-10-31T03:02:21Z",
+      "pushed_at": "2026-10-31T03:37:34Z",
       "topics": [],
       "homepage": null,
       "archived": false
@@ -187,7 +187,7 @@
       "language_color": "#3572A5",
       "stargazers_count": 1,
       "forks_count": 0,
-      "pushed_at": "2026-10-31T02:44:11Z",
+      "pushed_at": "2026-10-31T03:32:50Z",
       "topics": [],
       "homepage": null,
       "archived": false
@@ -196,7 +196,7 @@
   "users": {
     "frederick-douglas-pearce": {
       "login": "frederick-douglas-pearce",
-      "name": "Fred Pearce",
+      "name": "Frederick Douglas Pearce",
       "bio": "Data Scientist, Earth Researcher, and life-long learner. I love digging in to datasets, figuring out what insights can be gained, and communicating results!",
       "avatar_url": "https://avatars.githubusercontent.com/u/19784733?v=4",
       "public_repos": 26,
