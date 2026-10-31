@@ -612,10 +612,10 @@ footer.sticky-bottom {
 
 // Repositories
 
-// Only the image-era includes still use .repo: repo_user.liquid (no caller;
-// #58 replaces it) and repo_trophies.liquid (gated off by repo_trophies.enabled
-// and out of scope in #54 and #60). No issue schedules this rule's deletion;
-// delete it once neither include uses it. The native cards below do not.
+// Only the image-era repo_trophies.liquid still uses .repo (gated off by
+// repo_trophies.enabled and out of scope in #54 and #60). No issue schedules
+// this rule's deletion; delete it once that include no longer uses it. The
+// native cards and profile summary below do not.
 @media (min-width: 768px) {
   .repo {
     max-width: 50%;
@@ -638,7 +638,7 @@ footer.sticky-bottom {
 // The card paints --global-card-bg-color: #ffffff in light (the same as the
 // page, so the border is the only boundary) and $grey-900 in dark, the "cards"
 // surface in _variables.scss, where --global-text-color-light clears 4.5:1.
-// Nothing here is repo-specific, so #58's profile summary can reuse it.
+// Nothing here is repo-specific; the profile summary (.repo-profile) reuses it.
 .repo-card {
   padding: 1rem;
   background-color: var(--global-card-bg-color);
@@ -686,6 +686,42 @@ footer.sticky-bottom {
     margin-right: 1rem;
     color: var(--global-text-color-light);
   }
+}
+
+// The profile summary above the grid (#58): the avatar beside the text, on the
+// same card surface and tokens as the repo cards.
+.repo-profile {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+
+  // Below 576px the text column beside the avatar gets too narrow to read, so
+  // the avatar sits above it.
+  @media (max-width: 575.98px) {
+    flex-direction: column;
+  }
+}
+
+// Fixed size so the text column never squeezes it.
+.repo-profile-avatar {
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+
+// min-width: 0 lets a long bio or link wrap instead of widening the card.
+.repo-profile-text {
+  min-width: 0;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+// The footnote under the stars figure: muted, like the meta row, and at its size.
+.repo-note {
+  font-size: 0.875rem;
+  color: var(--global-text-color-light);
 }
 
 // The dot's color is data (GitHub's color for the language), set inline.

@@ -1,34 +1,90 @@
-{% assign lang = site.lang | split: '-' | first %}
+{% comment %}
+  The native profile summary above the /repositories/ grid (#58), one per user
+  in github_users. Profile facts come from users in
+  _data/repository_stats.json, written by bin/repo-stats.js; the profile link is
+  built from the curated login, as repo.liquid builds repo links.
 
-{% case lang %}
-  {% when 'pt' %}
-    {% assign lang = site.lang %}
+  It replaces github-readme-stats' aggregate card and deliberately leaves out
+  that card's letter rank (a formula with no external meaning) and its lifetime
+  commit/PR/issue totals (extra API surface, and misleading for work spread over
+  orgs and private repos), per #58.
 
-  {% when 'zh' %}
-    {% assign lang_last = site.lang | split: '-' | last %}
-    {% case lang_last %}
-      {% when 'cn', 'sg', 'my', 'hans' %}
-        {% assign lang = 'cn' %}
-      {% when 'tw', 'hk', 'mo', 'hant' %}
-        {% assign lang = 'zh-tw' %}
-    {% endcase %}
+  The stars figure is summed here from the same repos entries the grid reads,
+  over the curated repos this user owns (the owner test is repo.liquid's), so it
+  cannot disagree with the cards. Cards show stars only above 1 (repo.liquid), so
+  when a curated repo has exactly one star the card figures add up to less, and
+  a footnote says why.
 
-    {% comment %} Add a new language using when... if needed {% endcomment %}
-    {% comment %} If you still encounter language-display issues, check the available locale codes in github-readme-stats (different from ISO-639 standard used in your website) {% endcomment %}
-    {% comment %} https://github.com/anuraghazra/github-readme-stats?tab=readme-ov-file#available-locales {% endcomment %}
-{% endcase %}
+  The avatar is decorative (alt="") because the name heading sits beside it,
+  and stays outside the link so no link is left without a name. A user missing
+  from the stats file, e.g. one curated before the next script run, renders its
+  login and profile link only.
+{% endcomment %}
+{% assign login = include.username %}
+{% assign profile = site.data.repository_stats.users[login] %}
+{% assign id = 'repo-profile-' | append: login | escape %}
 
-<div class="repo p-2 text-center">
-  <a href="https://github.com/{{ include.username }}">
+{% assign total_stars = 0 %}
+{% assign hidden_stars = 0 %}
+{% for repo in site.data.repositories.github_repos %}
+  {% assign owner = repo | split: '/' | first %}
+  {% if owner == login %}
+    {% assign stars = site.data.repository_stats.repos[repo].stargazers_count | default: 0 %}
+    {% assign total_stars = total_stars | plus: stars %}
+    {% if stars == 1 %}
+      {% assign hidden_stars = hidden_stars | plus: 1 %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+<section class="repo-card repo-profile" aria-labelledby="{{ id }}">
+  {% if profile %}
+    {% if profile.avatar_url contains '?' %}
+      {% assign size_sep = '&' %}
+    {% else %}
+      {% assign size_sep = '?' %}
+    {% endif %}
     <img
-      class="only-light w-100"
-      alt="{{ include.username }}"
-      src="{{ site.repo_stats_host | default: 'https://github-readme-stats.vercel.app' }}/api/?username={{ include.username }}&theme={{ site.repo_theme_light }}&locale={{ lang }}&show_icons=true"
+      class="repo-profile-avatar"
+      src="{{ profile.avatar_url | append: size_sep | append: 's=128' | escape }}"
+      alt=""
+      width="64"
+      height="64"
     >
-    <img
-      class="only-dark w-100"
-      alt="{{ include.username }}"
-      src="{{ site.repo_stats_host | default: 'https://github-readme-stats.vercel.app' }}/api/?username={{ include.username }}&theme={{ site.repo_theme_dark }}&locale={{ lang }}&show_icons=true"
-    >
-  </a>
-</div>
+  {% endif %}
+  <div class="repo-profile-text">
+    <h2 class="repo-name" id="{{ id }}">{{ profile.name | default: login | escape }}</h2>
+    {% if profile.bio %}
+      <p class="repo-description">{{ profile.bio | escape }}</p>
+    {% endif %}
+    <ul class="repo-meta">
+      {% if profile %}
+        <li>
+          {{ profile.public_repos }} public
+          {% if profile.public_repos == 1 %}repository{% else %}repositories{% endif %}
+        </li>
+        <li>
+          {{ profile.followers }}
+          {% if profile.followers == 1 %}follower{% else %}followers{% endif %}
+        </li>
+        <li>
+          {{ total_stars }}
+          {% if total_stars == 1 %}star{% else %}stars{% endif %}
+          across the repositories below
+          {%- if hidden_stars > 0 -%}
+            <a class="repo-footnote-ref" href="#{{ id }}-stars-note"><sup>*</sup><span class="sr-only"> (see note on stars)</span></a>
+          {%- endif -%}
+        </li>
+      {% endif %}
+      <li>
+        <a href="https://github.com/{{ login | escape }}">github.com/{{ login | escape }}</a>
+      </li>
+    </ul>
+    {% if profile and hidden_stars > 0 %}
+      <p class="repo-note" id="{{ id }}-stars-note">
+        <span aria-hidden="true">*</span>
+        A card below shows its stars only when it has more than one, so the card figures add up to less than this total.
+      </p>
+    {% endif %}
+  </div>
+</section>

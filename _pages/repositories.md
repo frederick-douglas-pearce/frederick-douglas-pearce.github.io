@@ -6,11 +6,11 @@ description: A selection of my open-source projects and data science work on Git
 ---
 
 {% comment %}
-The repo cards are native HTML rendered from _data/repository_stats.json
-(epic #54), not images from github-readme-stats, whose public instance went
-down on 17 Aug 2026. The aggregate "GitHub users" card that used to sit above
-the grid is left out until #58 replaces it natively; the profile link below
-stands in for it.
+The profile summary and repo cards are native HTML rendered from
+_data/repository_stats.json (epic #54), not images from github-readme-stats,
+whose public instance went down on 17 Aug 2026. The summary (#58) replaces that
+service's aggregate "GitHub users" card and carries the profile link. Each sits
+inside a block element so kramdown passes the include's HTML through as is.
 {% endcomment %}
 
 {% if site.repo_trophies.enabled %}
@@ -28,6 +28,13 @@ stands in for it.
 {% endfor %}
 {% endif %}
 
+{% for user in site.data.repositories.github_users %}
+
+<div class="repo-profiles">
+  {% include repository/repo_user.liquid username=user %}
+</div>
+{% endfor %}
+
 {% if site.data.repositories.github_repos %}
 
 ## GitHub Repositories
@@ -38,11 +45,3 @@ stands in for it.
   {% endfor %}
 </div>
 {% endif %}
-
-{% for user in site.data.repositories.github_users %}
-
-<p>
-  Full profile:
-  <a href="https://github.com/{{ user }}">github.com/{{ user }}</a>
-</p>
-{% endfor %}
