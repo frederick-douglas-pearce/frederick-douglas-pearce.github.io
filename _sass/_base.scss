@@ -612,9 +612,10 @@ footer.sticky-bottom {
 
 // Repositories
 
-// Only the image-era includes still use .repo: repo_trophies.liquid (disabled)
-// and repo_user.liquid (no caller; #58 replaces it). #60 deletes this rule with
-// them. The native cards below do not use it.
+// Only the image-era includes still use .repo: repo_user.liquid (no caller;
+// #58 replaces it) and repo_trophies.liquid (gated off by repo_trophies.enabled
+// and out of scope in #54 and #60). No issue schedules this rule's deletion;
+// delete it once neither include uses it. The native cards below do not.
 @media (min-width: 768px) {
   .repo {
     max-width: 50%;
@@ -639,8 +640,6 @@ footer.sticky-bottom {
 // surface in _variables.scss, where --global-text-color-light clears 4.5:1.
 // Nothing here is repo-specific, so #58's profile summary can reuse it.
 .repo-card {
-  display: flex;
-  flex-direction: column;
   padding: 1rem;
   background-color: var(--global-card-bg-color);
   border: 1px solid var(--global-divider-color);
@@ -650,6 +649,12 @@ footer.sticky-bottom {
   // would suggest a click target that isn't there.
   &:focus-within {
     border-color: var(--global-theme-color);
+  }
+
+  // Keeps the bottom gap equal to the padding whichever element ends the card
+  // (a repo with no stats ends on its name).
+  > :last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -662,18 +667,16 @@ footer.sticky-bottom {
 }
 
 // Shown in full, never clamped: a clamp hid the rest from sighted keyboard and
-// zoom users (#57), and the grid keeps rows aligned without one.
+// zoom users (#57).
 .repo-description {
-  color: var(--global-text-color);
   margin-bottom: 0.75rem;
 }
 
-// Pinned to the bottom of the card, so it lines up across a row.
+// Sits right under its own description rather than at the bottom of the card:
+// pinned, a short card's row ended up nearer the next card's name (#57).
 .repo-meta {
   list-style: none;
   padding-left: 0;
-  margin-top: auto;
-  margin-bottom: 0;
   font-size: 0.875rem;
 
   // On the li, not the ul: a global rule colors every li directly, so the
