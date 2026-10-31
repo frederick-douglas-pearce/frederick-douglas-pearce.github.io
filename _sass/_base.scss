@@ -612,37 +612,79 @@ footer.sticky-bottom {
 
 // Repositories
 
+// Only the image-era includes still use .repo: repo_user.liquid (no caller;
+// #58 replaces it) and repo_trophies.liquid (gated off by repo_trophies.enabled
+// and out of scope in #54 and #60). No issue schedules this rule's deletion;
+// delete it once neither include uses it. The native cards below do not.
 @media (min-width: 768px) {
   .repo {
     max-width: 50%;
   }
 }
 
-// Only what the native card's markup needs to work (#56). Its look, colors and
-// theme surfaces are #57's, which replaces the .repo rule above.
+// One column below 768px, two from there up. Cards in a row stretch to the
+// tallest, and minmax(0, 1fr) stops a long name from widening its column.
+.repo-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+// The card paints --global-card-bg-color: #ffffff in light (the same as the
+// page, so the border is the only boundary) and $grey-900 in dark, the "cards"
+// surface in _variables.scss, where --global-text-color-light clears 4.5:1.
+// Nothing here is repo-specific, so #58's profile summary can reuse it.
+.repo-card {
+  padding: 1rem;
+  background-color: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 4px;
+
+  // Focus only, not hover: just the name is a link, so a whole-card hover
+  // would suggest a click target that isn't there.
+  &:focus-within {
+    border-color: var(--global-theme-color);
+  }
+
+  // Keeps the bottom gap equal to the padding whichever element ends the card
+  // (a repo with no stats ends on its name).
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
 
 // Lets a long unbroken name (e.g. complex_numbers_clock) wrap, so the page does
 // not scroll sideways at 320 CSS px (WCAG 1.4.10).
 .repo-name {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
   overflow-wrap: anywhere;
 }
 
+// Shown in full, never clamped: a clamp hid the rest from sighted keyboard and
+// zoom users (#57).
 .repo-description {
-  // Visual clamp only: screen readers still get the whole description.
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: var(--repo-description-lines, 2);
-  line-clamp: var(--repo-description-lines, 2);
-  overflow: hidden;
+  margin-bottom: 0.75rem;
 }
 
+// Sits right under its own description rather than at the bottom of the card:
+// pinned, a short card's row ended up nearer the next card's name (#57).
 .repo-meta {
   list-style: none;
   padding-left: 0;
+  font-size: 0.875rem;
 
+  // On the li, not the ul: a global rule colors every li directly, so the
+  // muted color would not inherit. The icons inherit it from the li.
   li {
     display: inline-block;
     margin-right: 1rem;
+    color: var(--global-text-color-light);
   }
 }
 
