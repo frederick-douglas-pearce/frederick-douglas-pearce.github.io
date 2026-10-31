@@ -1,15 +1,16 @@
 #!/usr/bin/env node
 /**
- * Fetch the /repositories/ page's repo facts from the GitHub API into a
- * committed data file.
+ * Fetch the /repositories/ page's repo and profile facts from the GitHub API
+ * into a committed data file.
  *
- * Reads the curated `github_repos` list from _data/repositories.yml, preserving
- * its order, fetches each repo from api.github.com, and writes
- * _data/repository_stats.json. It runs by hand (and, once #59 lands, on a
- * schedule), never inside the Jekyll build, so a GitHub API failure cannot fail
- * a deploy. #56 will render the page's cards as native HTML from this file, which
- * ends the page's dependence on a third-party image service (epic #54).
- * Curation stays hand-edited: this script never changes repositories.yml.
+ * Reads the curated `github_repos` and `github_users` lists from
+ * _data/repositories.yml, preserving their order, fetches each repo and user
+ * from api.github.com, and writes _data/repository_stats.json. It runs by hand
+ * (and, once #59 lands, on a schedule), never inside the Jekyll build, so a
+ * GitHub API failure cannot fail a deploy. #56 will render the page's cards as
+ * native HTML from this file, which ends the page's dependence on a third-party
+ * image service (epic #54). Curation stays hand-edited: this script never
+ * changes repositories.yml.
  *
  *   node bin/repo-stats.js
  *
@@ -21,31 +22,36 @@
  *
  * Adding a repo to the page: add its `owner/name` to `github_repos` in
  * _data/repositories.yml, at the position it should appear, then run this
- * script and commit both files. Removing one is the same edit in reverse.
+ * script and commit both files. Removing one is the same edit in reverse. A
+ * user in `github_users` is added or removed the same way; that list must keep
+ * at least one entry.
  *
- * Auth and rate limits. One pass is one request per curated repo (~12), plus
- * one to raw.githubusercontent.com, which is not API quota. That fits the
- * 60/hr unauthenticated limit, so no PAT is needed for local use. A token
- * is used when one is available, taken from the first of: GITHUB_TOKEN,
- * GH_TOKEN, or `gh auth token` if the gh CLI is installed and logged in. In
- * Actions, GITHUB_TOKEN is not in the environment unless the step maps it
- * (`env: GITHUB_TOKEN: ${{ github.token }}`); it allows 1,000 requests/hr per
- * repository. A logged-in gh supplies a token silently, so pass --no-auth to
- * exercise the unauthenticated path. With REPO_STATS_API_BASE set, every token
- * source is ignored, so a token never goes to anything but api.github.com. The
- * script logs which source it used and never logs the token; a token that is
- * not printable ASCII is rejected by naming its source only.
+ * Auth and rate limits. One pass is one request per curated repo (~12) and per
+ * curated user (1), plus one to raw.githubusercontent.com, which is not API
+ * quota. That fits the 60/hr unauthenticated limit, so no PAT is needed for
+ * local use. A token is used when one is available, taken from the first of:
+ * GITHUB_TOKEN, GH_TOKEN, or `gh auth token` if the gh CLI is installed and
+ * logged in. In Actions, GITHUB_TOKEN is not in the environment unless the step
+ * maps it (`env: GITHUB_TOKEN: ${{ github.token }}`); it allows 1,000
+ * requests/hr per repository. A logged-in gh supplies a token silently, so pass
+ * --no-auth to exercise the unauthenticated path. With REPO_STATS_API_BASE set,
+ * every token source is ignored, so a token never goes to anything but
+ * api.github.com. The script logs which source it used and never logs the
+ * token; a token that is not printable ASCII is rejected by naming its source
+ * only.
  *
  * Output. Repos are keyed by the exact string from repositories.yml, never by
  * the API's `full_name`: Ruby hash keys are case-sensitive and GitHub names are
  * not, so a casing mismatch would be a silent blank card. Look a repo up as
- * `site.data.repository_stats.repos[repo]`. Language colors come from
- * linguist's languages.yml (the REST API returns the language name, not its
- * color). `language_colors` is keyed by language name and covers only the
- * languages GitHub detects for the listed repos. The output is JSON rather than
- * YAML because a raw control or line-separator character in a description can
- * make Ruby's YAML parser reject the file, which would fail the whole site
- * build.
+ * `site.data.repository_stats.repos[repo]`. Users are keyed the same way, by
+ * the curated login, under `users` (`site.data.repository_stats.users[user]`)
+ * for the profile summary (#58); a blank name or bio is written as null.
+ * Language colors come from linguist's languages.yml (the REST API returns the
+ * language name, not its color). `language_colors` is keyed by language name
+ * and covers only the languages GitHub detects for the listed repos. The output
+ * is JSON rather than YAML because a raw control or line-separator character in
+ * a description can make Ruby's YAML parser reject the file, which would fail
+ * the whole site build.
  *
  * Failure policy. Everything is validated before anything is written, so a
  * failed run leaves the existing file untouched. A run whose data matches the
@@ -53,14 +59,22 @@
  * `generated_at` means "data last changed at". A curated repo that returns 404
  * or is not public fails the run: a dead repo on a portfolio page is a
  * curation problem, and a human must remove it from repositories.yml. A
- * transient failure (5xx, network error, timeout, rate limit, unreadable
- * response) also fails the run, with its own exit code, which tells a scheduled
- * job to retry rather than ask a human to edit the curation. Every error line
- * is followed by the action that resolves it, except an unexpected exception,
- * which is a bug in this script and prints its stack.
+ * curated user fails the run when it returns 404 (deleted, suspended, or
+ * renamed: update the login or remove it) or is not a personal account
+ * (remove it). A user response with no `type`, a login that differs beyond
+ * case from the curated one, or an avatar URL that is not plain https on
+ * avatars.githubusercontent.com also fails, as an API-format problem rather
+ * than a curation one. Both lists must be non-empty
+ * block lists: a missing, empty or flow-form list fails rather than silently
+ * dropping what the page shows. A transient failure (5xx, network error,
+ * timeout, rate limit, unreadable response) also fails the run, with its own
+ * exit code, which tells a scheduled job to retry rather than ask a human to
+ * edit the curation. Every error line is followed by the action that resolves
+ * it, except an unexpected exception, which is a bug in this script and prints
+ * its stack.
  *
  * Exit codes: 0 written or unchanged; 1 permanent failure (404, not public,
- * bad token, validation); 75 transient failures only; 2 usage error.
+ * not a user, bad token, validation); 75 transient failures only; 2 usage error.
  *
  * REPO_STATS_API_BASE overrides https://api.github.com. It exists only to
  * exercise failure paths against a local stub or an unreachable host, and a
@@ -84,11 +98,16 @@ const EXIT_USAGE = 2;
 const EXIT_TRANSIENT = 75;
 
 const REPO_PATTERN = /^[\w.-]+\/[\w.-]+$/;
+const LOGIN_PATTERN = /^[A-Za-z0-9](?:[A-Za-z0-9-]{0,38})$/;
 const COLOR_PATTERN = /^#[0-9a-fA-F]{6}$/;
 const TOKEN_PATTERN = /^[\x21-\x7e]+$/;
 
 const RETRY = "re-run later";
 const REMOVE_REPO = "remove it from _data/repositories.yml";
+const REMOVE_USER = "remove it from github_users in _data/repositories.yml";
+// A renamed repo redirects, so its 404 is never a rename; a renamed user 404s.
+const REPO_GONE = { why: "deleted, made private, or the name reused", action: REMOVE_REPO };
+const USER_GONE = { why: "deleted, renamed, or suspended", action: `update it to the account's current login, or ${REMOVE_USER}` };
 const CHECK_SCRIPT = "re-run; if it persists, the API response format changed and bin/repo-stats.js needs updating";
 
 const USAGE = `usage: node bin/repo-stats.js [--input <path>] [--out <path>] [--no-auth]
@@ -100,7 +119,7 @@ const USAGE = `usage: node bin/repo-stats.js [--input <path>] [--out <path>] [--
 
 class UsageError extends Error {}
 
-// A failure attributable to one subject (a repo, linguist, or an input),
+// A failure attributable to one subject (a repo, a user, linguist, or an input),
 // carrying its class and the action that resolves it, so every error the run
 // prints says whether to retry or what a human must change.
 class Failure extends Error {
@@ -139,27 +158,37 @@ function checkApiBase() {
   if (url.username || url.password) throw new UsageError("REPO_STATS_API_BASE must not contain a username or password");
 }
 
-// A strict reader for the one list this script needs, so it carries no YAML
+// A strict reader for the two lists this script needs, so it carries no YAML
 // dependency. It fails on anything it does not understand rather than
-// guessing, because a silently dropped or truncated line is a repo silently
-// missing from the page.
-function readCurated(file) {
-  let source;
+// guessing, because a silently dropped or truncated line is a repo or user
+// silently missing from the page.
+function readSource(file) {
   try {
-    source = fs.readFileSync(file, "utf8");
+    return fs.readFileSync(file, "utf8").split(/\r?\n/);
   } catch (err) {
     throw new Failure(file, false, `cannot read the curated list (${err.code || err.name})`, "pass the right --input path");
   }
-  const lines = source.split(/\r?\n/);
-  const isKey = (l) => /^github_repos:\s*(#.*)?$/.test(l);
-  const start = lines.findIndex(isKey);
-  const fix = "fix _data/repositories.yml";
-  if (start < 0) throw new Failure(file, false, "no top-level `github_repos:` key", fix);
-  // YAML keeps the last of a duplicated key, so reading the first would
-  // fetch a list the page never shows.
-  if (lines.findLastIndex(isKey) !== start) throw new Failure(file, false, "`github_repos:` appears more than once", fix);
+}
 
-  const repos = [];
+// Finds the line a top-level block starts on. The start must be the bare key,
+// but the duplicate check is loose, so a second copy written quoted or in flow
+// form (`"key":`, `key: [a]`) is caught too: YAML keeps the last of a
+// duplicated key, so reading the first would fetch a list the page never shows.
+function findBlock(file, lines, key) {
+  const fix = "fix _data/repositories.yml";
+  const start = lines.findIndex((l) => new RegExp(`^${key}:\\s*(#.*)?$`).test(l));
+  const anyCopy = new RegExp(`^["']?${key}["']?\\s*:`);
+  if (start < 0) throw new Failure(file, false, `no top-level \`${key}:\` key starting a block list`, fix);
+  if (lines.filter((l) => anyCopy.test(l)).length > 1) throw new Failure(file, false, `\`${key}:\` appears more than once`, fix);
+  return start;
+}
+
+// Reads the block list under `key`, each item matching `pattern` (`what`
+// names it in errors). An empty or missing list fails: both lists drive the page.
+function readList(file, lines, key, pattern, what) {
+  const fix = "fix _data/repositories.yml";
+  const start = findBlock(file, lines, key);
+  const items = [];
   const seen = new Map();
   for (let n = start + 1; n < lines.length; n++) {
     const line = lines[n];
@@ -169,18 +198,19 @@ function readCurated(file) {
     const text = line.trim();
     if (text === "" || text.startsWith("#")) continue;
     // As in YAML, `#` starts a comment only after whitespace, so `a/b#c` is
-    // one value (and fails REPO_PATTERN), never `a/b` plus a comment.
+    // one value (and fails the pattern), never `a/b` plus a comment.
     const m = /^-\s+(["']?)([^"'\s]+)\1(?:\s+#.*)?$/.exec(text);
     if (!m) throw new Failure(file, false, `line ${n + 1}: not a list item: ${text}`, fix);
-    const repo = m[2];
-    if (!REPO_PATTERN.test(repo)) throw new Failure(file, false, `line ${n + 1}: not an owner/name: ${repo}`, fix);
-    const folded = repo.toLowerCase();
-    if (seen.has(folded)) throw new Failure(file, false, `line ${n + 1}: ${repo} duplicates line ${seen.get(folded)}`, fix);
+    const item = m[2];
+    if (!pattern.test(item)) throw new Failure(file, false, `line ${n + 1}: not ${what}: ${item}`, fix);
+    // GitHub names are case-insensitive, so two spellings are one repo or user.
+    const folded = item.toLowerCase();
+    if (seen.has(folded)) throw new Failure(file, false, `line ${n + 1}: ${item} duplicates line ${seen.get(folded)}`, fix);
     seen.set(folded, n + 1);
-    repos.push(repo);
+    items.push(item);
   }
-  if (repos.length === 0) throw new Failure(file, false, "`github_repos` lists no repos", fix);
-  return repos;
+  if (items.length === 0) throw new Failure(file, false, `\`${key}\` lists nothing`, fix);
+  return items;
 }
 
 // Rejecting a malformed token here is what keeps it out of the logs: fetch
@@ -236,7 +266,7 @@ async function get(subject, url, headers) {
   throw new Failure(subject, true, `transient: ${last} after ${ATTEMPTS} attempts`, RETRY);
 }
 
-// A body that fails to arrive or parse is a bad response, not a bad repo.
+// A body that fails to arrive or parse is a bad response, not a bad repo or user.
 async function readBody(subject, res, kind) {
   try {
     return kind === "json" ? await res.json() : await res.text();
@@ -301,22 +331,24 @@ async function fetchLanguageColors() {
   return colors;
 }
 
-async function fetchRepo(repo, headers, auth) {
-  const res = await get(repo, `${API_BASE}/repos/${repo}`, headers);
+// GET one API object, classifying every failure. `subject` is the curated repo
+// or user; `gone` says why such a subject returns 404 and what resolves it.
+async function fetchJson(subject, url, headers, auth, gone) {
+  const res = await get(subject, url, headers);
   if (res.status === 404) {
-    return new Failure(repo, false, "returned 404 (deleted, made private, or the name reused)", REMOVE_REPO);
+    return new Failure(subject, false, `returned 404 (${gone.why})`, gone.action);
   }
   if (res.status === 401) {
-    if (auth.token) return new Failure(repo, false, "token rejected (HTTP 401)", `fix or unset the token in ${auth.source}`);
-    return new Failure(repo, false, "HTTP 401 on an unauthenticated request", API_OVERRIDDEN ? "check REPO_STATS_API_BASE" : CHECK_SCRIPT);
+    if (auth.token) return new Failure(subject, false, "token rejected (HTTP 401)", `fix or unset the token in ${auth.source}`);
+    return new Failure(subject, false, "HTTP 401 on an unauthenticated request", API_OVERRIDDEN ? "check REPO_STATS_API_BASE" : CHECK_SCRIPT);
   }
-  const limited = await rateLimitFailure(repo, res);
+  const limited = await rateLimitFailure(subject, res);
   if (limited) return limited;
-  if (res.status === 408) return new Failure(repo, true, "transient: HTTP 408", RETRY);
-  if (!res.ok) return new Failure(repo, false, `returned HTTP ${res.status}`, `check https://github.com/${repo} is reachable, then ${RETRY}`);
-  const data = await readBody(repo, res, "json");
+  if (res.status === 408) return new Failure(subject, true, "transient: HTTP 408", RETRY);
+  if (!res.ok) return new Failure(subject, false, `returned HTTP ${res.status}`, `check https://github.com/${subject} is reachable, then ${RETRY}`);
+  const data = await readBody(subject, res, "json");
   if (data === null || typeof data !== "object" || Array.isArray(data)) {
-    return new Failure(repo, true, "transient: response is not a JSON object", RETRY);
+    return new Failure(subject, true, "transient: response is not a JSON object", RETRY);
   }
   return data;
 }
@@ -376,6 +408,54 @@ function shapeRepo(repo, d, colors) {
   };
 }
 
+// A trimmed string, or null for a missing or blank one, so the template's
+// `if` sees an absent field rather than an empty string (which Liquid treats as
+// true).
+const optional = (v) => (nonEmpty(v) ? v.trim() : null);
+
+// Validate one /users response and project it to the fields the profile summary
+// uses. The profile link is built from the curated login, never from the API.
+function shapeUser(login, d) {
+  const problems = [];
+  const add = (message, action) => problems.push({ message, action });
+  if (!nonEmpty(d.login)) add("missing login", CHECK_SCRIPT);
+  // The section summarizes a person's profile; an organization is a curation mistake.
+  if (d.type == null) add("response has no type field", CHECK_SCRIPT);
+  else if (d.type !== "User") add(`is a GitHub ${d.type}, not a user`, REMOVE_USER);
+  let avatar = null;
+  try {
+    avatar = new URL(d.avatar_url);
+  } catch {
+    // reported below
+  }
+  // It becomes an img src, so pin it to GitHub's avatar host.
+  if (
+    !avatar ||
+    avatar.protocol !== "https:" ||
+    avatar.hostname !== "avatars.githubusercontent.com" ||
+    avatar.port !== "" ||
+    avatar.username ||
+    avatar.password
+  ) {
+    add(`avatar_url is not an https://avatars.githubusercontent.com URL: ${d.avatar_url}`, CHECK_SCRIPT);
+  }
+  if (!count(d.public_repos)) add("missing public_repos", CHECK_SCRIPT);
+  if (!count(d.followers)) add("missing followers", CHECK_SCRIPT);
+  if (problems.length) return { problems };
+
+  return {
+    problems,
+    entry: {
+      login: d.login,
+      name: optional(d.name),
+      bio: optional(d.bio),
+      avatar_url: avatar.href,
+      public_repos: d.public_repos,
+      followers: d.followers,
+    },
+  };
+}
+
 // Compare everything but `generated_at`, so an unchanged run writes nothing.
 function sameData(file, next) {
   let prev;
@@ -413,9 +493,11 @@ async function main() {
   }
   checkApiBase();
 
-  const repos = readCurated(opts.input);
+  const lines = readSource(opts.input);
+  const repos = readList(opts.input, lines, "github_repos", REPO_PATTERN, "an owner/name");
+  const users = readList(opts.input, lines, "github_users", LOGIN_PATTERN, "a GitHub login");
   const auth = resolveAuth(opts.noAuth);
-  console.log(`${repos.length} curated repos; auth: ${auth.source}`);
+  console.log(`${repos.length} curated repos, ${users.length} users; auth: ${auth.source}`);
 
   const headers = {
     Accept: "application/vnd.github+json",
@@ -437,7 +519,7 @@ async function main() {
   for (const repo of repos) {
     let data;
     try {
-      data = await fetchRepo(repo, headers, auth);
+      data = await fetchJson(repo, `${API_BASE}/repos/${repo}`, headers, auth, REPO_GONE);
     } catch (err) {
       if (!(err instanceof Failure)) throw err;
       data = err;
@@ -458,6 +540,36 @@ async function main() {
     entries[repo] = entry;
   }
 
+  const profiles = {};
+  for (const login of users) {
+    let data;
+    try {
+      data = await fetchJson(login, `${API_BASE}/users/${login}`, headers, auth, USER_GONE);
+    } catch (err) {
+      if (!(err instanceof Failure)) throw err;
+      data = err;
+    }
+    if (data instanceof Failure) {
+      failures.push(data);
+      continue;
+    }
+    const { problems, entry } = shapeUser(login, data);
+    if (problems.length) {
+      failures.push(new Failure(login, false, problems.map((p) => p.message).join("; "), [...new Set(problems.map((p) => p.action))].join("; ")));
+      continue;
+    }
+    // A renamed user 404s rather than redirecting, so a login that differs
+    // beyond case means the response is not for the user asked about.
+    if (entry.login.toLowerCase() !== login.toLowerCase()) {
+      failures.push(new Failure(login, false, `API returned login ${entry.login}`, CHECK_SCRIPT));
+      continue;
+    }
+    if (entry.login !== login) {
+      console.error(`warning: ${login} differs only in case from ${entry.login}; update _data/repositories.yml`);
+    }
+    profiles[login] = entry;
+  }
+
   if (failures.length) {
     failures.forEach(report);
     const transientOnly = failures.every((f) => f.transient);
@@ -471,6 +583,7 @@ async function main() {
     generated_at: new Date().toISOString().replace(/\.\d{3}Z$/, "Z"),
     language_colors: Object.fromEntries(languages.map((l) => [l, colors.get(l)])),
     repos: entries,
+    users: profiles,
   };
 
   if (sameData(opts.out, output)) {
@@ -482,7 +595,7 @@ async function main() {
   } catch (err) {
     throw new Failure(opts.out, false, `cannot write (${err.code || err.name})`, "pass an --out path in an existing, writable directory");
   }
-  console.log(`wrote ${opts.out} (${repos.length} repos, ${languages.length} languages).`);
+  console.log(`wrote ${opts.out} (${repos.length} repos, ${users.length} users, ${languages.length} languages).`);
   return 0;
 }
 
