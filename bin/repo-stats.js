@@ -58,9 +58,13 @@
  * existing file, ignoring `generated_at`, also leaves it untouched, so
  * `generated_at` means "data last changed at". A curated repo that returns 404
  * or is not public fails the run: a dead repo on a portfolio page is a
- * curation problem, and a human must remove it from repositories.yml. The
- * same holds for a curated user that returns 404, is not a personal account,
- * or has an avatar URL off GitHub's avatar host. Both lists must be non-empty
+ * curation problem, and a human must remove it from repositories.yml. A
+ * curated user fails the run when it returns 404 (deleted, suspended, or
+ * renamed: update the login or remove it) or is not a personal account
+ * (remove it). A user response with no `type`, a login that differs beyond
+ * case from the curated one, or an avatar URL that is not plain https on
+ * avatars.githubusercontent.com also fails, as an API-format problem rather
+ * than a curation one. Both lists must be non-empty
  * block lists: a missing, empty or flow-form list fails rather than silently
  * dropping what the page shows. A transient failure (5xx, network error,
  * timeout, rate limit, unreadable response) also fails the run, with its own
