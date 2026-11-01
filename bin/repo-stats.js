@@ -25,8 +25,10 @@
  * script and commit both files. Removing one is the same edit in reverse, plus
  * removing its `repo_language_overrides` entry if it has one, or the run fails.
  * A user in `github_users` is added or removed the same way; that list must
- * keep at least one entry. Adding or changing an override also needs a run, so
- * that its language gets a color.
+ * keep at least one entry. Adding or changing an override also needs a run,
+ * which validates it and gives its language a color; commit the data file too
+ * if the run rewrote it (a language already in `language_colors` changes
+ * nothing).
  *
  * Auth and rate limits. One pass is one request per curated repo (~12) and per
  * curated user (1), plus one to raw.githubusercontent.com, which is not API
@@ -69,21 +71,27 @@
  * replaces that language on the card, so a stale LINGUIST_TAG cannot fail runs
  * over a language the page never shows. Every override key must be spelled
  * exactly as in `github_repos`, and every value exactly as linguist spells the
- * language, because the card matches both case-sensitively. A
- * curated user fails the run when it returns 404 (deleted, suspended, or
- * renamed: update the login or remove it) or is not a personal account
- * (remove it). A user response with no `type`, a login that differs beyond
- * case from the curated one, or an avatar URL that is not plain https on
- * avatars.githubusercontent.com also fails, as an API-format problem rather
- * than a curation one. Both lists must be non-empty
- * block lists: a missing, empty or flow-form list fails rather than silently
- * dropping what the page shows. The override map may be absent or empty, but a
- * flow-form one fails for the same reason. A transient failure (5xx, network error,
- * timeout, rate limit, unreadable response) also fails the run, with its own
- * exit code, which tells a scheduled job to retry rather than ask a human to
- * edit the curation. Every error line is followed by the action that resolves
- * it, except an unexpected exception, which is a bug in this script and prints
- * its stack.
+ * language, because the card matches both case-sensitively. A curated user
+ * fails the run when it returns 404 (deleted, suspended, or renamed: update
+ * the login or remove it) or is not a personal account (remove it). A user
+ * response with no `type`, a repo response whose `language` is neither a
+ * string nor null, a login that differs beyond case from the curated one, or
+ * an avatar URL that is not plain https on avatars.githubusercontent.com also
+ * fails, as an API-format problem rather than a curation one. Both lists must
+ * be non-empty block lists: a missing, empty or flow-form list fails rather
+ * than silently dropping what the page shows. The override map may be absent
+ * or empty, but a flow-form one fails for the same reason. So does any other
+ * top-level line, since a form of the map this reader does not recognize
+ * would otherwise read as no map while Jekyll still applies it. A transient
+ * failure (5xx, network error, timeout, rate limit, unreadable response) also
+ * fails the run, with its own exit code, which tells a scheduled job to retry
+ * rather than ask a human to edit the curation. Override keys are checked
+ * before any request, so a bad key always exits 1. Override values and
+ * detected languages are checked against linguist, so while linguist is
+ * unreachable those checks are skipped: a bad value then exits 75 with the
+ * linguist error, and exits 1 on the first run linguist answers. Every error
+ * line is followed by the action that resolves it, except an unexpected
+ * exception, which is a bug in this script and prints its stack.
  *
  * Exit codes: 0 written or unchanged; 1 permanent failure (404, not public,
  * not a user, bad token, validation); 75 transient failures only; 2 usage error.
@@ -182,7 +190,7 @@ function readSource(file) {
   }
   // An editor's byte-order mark would hide the key on line 1 from findBlock;
   // Jekyll ignores it.
-  return text.replace(/^﻿/, "").split(/\r?\n/);
+  return text.replace(/^\uFEFF/, "").split(/\r?\n/);
 }
 
 // Finds the line a top-level block starts on, or -1 for an `optional` block
@@ -234,11 +242,14 @@ function readList(file, lines, key, pattern, what) {
   return items;
 }
 
-// One `owner/name: Language` entry. Jekyll reads this map with Psych, so only
-// lines both parsers read the same way are accepted: a quoted key or value may
-// not contain a quote character or `\`; a plain one does not start with a YAML
-// indicator, and its value may hold spaces and `'` (`Cap'n Proto`) but not
-// `: `, and keeps a `#` with no whitespace before it (`C#`).
+// One `owner/name: Language` entry, in a subset of what Jekyll's YAML reader
+// (SafeYAML, on Psych) accepts: a quoted key or value may not contain a quote
+// character or `\`; a plain value does not start with a YAML indicator, may
+// hold spaces and `'` (`Cap'n Proto`) but not `: `, and keeps a `#` with no
+// whitespace before it (`C#`); a plain key is held to owner/name characters by
+// REPO_PATTERN in readMap. A plain value SafeYAML would read as a boolean,
+// null, number or date (`yes`, `~`, `123`) passes this pattern and is rejected
+// only by checkOverrideLanguages, because no linguist name is such a scalar.
 const MAP_ENTRY =
   /^(?:"([^"'\\]+)"|'([^"'\\]+)'|([^\s"'#:][^\s:]*)): +(?:"([^"'\\]+)"|'([^"'\\]+)'|([^\s\-?:,[\]{}#&*!|>'"%@`](?:[^:#\t]|:(?! |$)|(?<! )#)*?)) *(?: #.*)?$/;
 
@@ -278,6 +289,30 @@ function readMap(file, lines, key) {
     entries.set(repo, { language, line: n + 1 });
   }
   return entries;
+}
+
+// The file may hold only the three bare block starts at the top level (plus
+// comments, column-0 list items, and a `---` before the first key). Any other
+// top-level line fails: an anchored, tagged, explicit (`? key`), merged or
+// escaped spelling of a key would otherwise read here as an absent map while
+// Jekyll still applies it, and content after a `...` document end would be
+// read here and ignored by Jekyll.
+function checkTopLevel(file, lines) {
+  const keys = /^(?:github_users|github_repos|repo_language_overrides):\s*(#.*)?$/;
+  let seenKey = false;
+  lines.forEach((line, n) => {
+    if (!/^[^\s#]/.test(line) || /^-(\s|$)/.test(line)) return;
+    if (keys.test(line)) seenKey = true;
+    else if (!seenKey && /^---\s*(#.*)?$/.test(line)) return;
+    else {
+      throw new Failure(
+        file,
+        false,
+        `line ${n + 1}: only github_users, github_repos and repo_language_overrides may appear at the top level, each as a bare key: ${line}`,
+        "fix _data/repositories.yml"
+      );
+    }
+  });
 }
 
 // An override key the card cannot match is an override that silently does
@@ -402,7 +437,9 @@ async function rateLimitFailure(subject, res) {
 // it has none. This decides whether a language exists, not just its color.
 // The scan reads unquoted top-level keys and 2-space `color: "#rrggbb"` lines,
 // which at v9.7.0 covers every key (none is quoted or contains `:`) and every
-// color line (692 of 692); recheck both after a LINGUIST_TAG bump.
+// color line (692 of 692). MAP_ENTRY also relies on no language name, unquoted,
+// being a YAML 1.1 boolean, null, number or date. Recheck all three after a
+// LINGUIST_TAG bump.
 async function fetchLinguist() {
   const res = await get("linguist", LINGUIST_URL, { "User-Agent": "repo-stats" });
   const limited = await rateLimitFailure("linguist", res);
@@ -469,8 +506,9 @@ const count = (v) => Number.isInteger(v) && v >= 0;
 
 // Validate one API response and project it to the fields the page uses, in a
 // fixed order. Each problem carries the action that fixes it. `linguist` is
-// null when linguist itself failed, in which case language checks are skipped
-// rather than reported as an unknown language. `override` is the repo's
+// null when linguist itself failed, in which case only the is-it-listed check
+// is skipped, rather than reported as an unknown language; a missing detected
+// language is still checked. `override` is the repo's
 // repo_language_overrides value, if any: the card shows it instead of the
 // detected language, so a blank or unknown detected language does not fail.
 function shapeRepo(repo, d, linguist, override) {
@@ -485,11 +523,13 @@ function shapeRepo(repo, d, linguist, override) {
     add("is not public", REMOVE_REPO);
     return { problems };
   }
-  const language = nonEmpty(d.language) ? d.language : null;
+  const typed = d.language === null || typeof d.language === "string";
+  const language = typed && nonEmpty(d.language) ? d.language : null;
   if (!nonEmpty(d.full_name)) add("missing full_name", CHECK_SCRIPT);
   if (!nonEmpty(d.owner?.login)) add("missing owner", CHECK_SCRIPT);
   if (!nonEmpty(d.description)) add("has no description", `add one on GitHub, or ${REMOVE_REPO}`);
-  if (language === null) {
+  if (!typed) add("response language is neither a string nor null", CHECK_SCRIPT);
+  else if (language === null) {
     if (override === undefined) {
       add("has no detected language", `push code GitHub can detect a language for, add it to repo_language_overrides, or ${REMOVE_REPO}`);
     }
@@ -620,6 +660,7 @@ async function main() {
   const repos = readList(opts.input, lines, "github_repos", REPO_PATTERN, "an owner/name");
   const users = readList(opts.input, lines, "github_users", LOGIN_PATTERN, "a GitHub login");
   const overrides = readMap(opts.input, lines, "repo_language_overrides");
+  checkTopLevel(opts.input, lines);
   checkOverrideKeys(opts.input, overrides, repos);
   const auth = resolveAuth(opts.noAuth);
   console.log(`${repos.length} curated repos, ${users.length} users, ${overrides.size} language overrides; auth: ${auth.source}`);

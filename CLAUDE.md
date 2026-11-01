@@ -82,8 +82,9 @@ bump it in `claude-code-sessions` and `us-presidential-vote-analysis` too, and i
    The exception is `_data/repository_stats.json`, which is generated here by
    `bin/repo-stats.js` from the curated `github_repos` and `github_users` lists and the
    `repo_language_overrides` map in `_data/repositories.yml`. Never hand-edit it: after
-   changing either list or the override map, re-run the script and commit both files. It
-   is in `.prettierignore` because its layout is `JSON.stringify`'s, not Prettier's.
+   changing either list or the override map, re-run the script (it validates the map too)
+   and commit the data file along with `repositories.yml` if the run rewrote it. It is in
+   `.prettierignore` because its layout is `JSON.stringify`'s, not Prettier's.
 
 ## Blog taxonomy: `categories` means _series_
 
