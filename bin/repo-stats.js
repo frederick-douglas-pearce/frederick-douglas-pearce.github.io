@@ -3,14 +3,14 @@
  * Fetch the /repositories/ page's repo and profile facts from the GitHub API
  * into a committed data file.
  *
- * Reads the curated `github_repos` and `github_users` lists from
- * _data/repositories.yml, preserving their order, fetches each repo and user
- * from api.github.com, and writes _data/repository_stats.json. It runs by hand
- * (and, once #59 lands, on a schedule), never inside the Jekyll build, so a
- * GitHub API failure cannot fail a deploy. #56 will render the page's cards as
- * native HTML from this file, which ends the page's dependence on a third-party
- * image service (epic #54). Curation stays hand-edited: this script never
- * changes repositories.yml.
+ * Reads the curated `github_repos` and `github_users` lists and the
+ * `repo_language_overrides` map from _data/repositories.yml, preserving list
+ * order, fetches each repo and user from api.github.com, and writes
+ * _data/repository_stats.json. It runs by hand (and, once #59 lands, on a
+ * schedule), never inside the Jekyll build, so a GitHub API failure cannot fail
+ * a deploy. The page's cards render as native HTML from this file (#56), with
+ * no third-party image service (epic #54). Curation stays hand-edited: this
+ * script never changes repositories.yml.
  *
  *   node bin/repo-stats.js
  *
@@ -22,9 +22,11 @@
  *
  * Adding a repo to the page: add its `owner/name` to `github_repos` in
  * _data/repositories.yml, at the position it should appear, then run this
- * script and commit both files. Removing one is the same edit in reverse. A
- * user in `github_users` is added or removed the same way; that list must keep
- * at least one entry.
+ * script and commit both files. Removing one is the same edit in reverse, plus
+ * removing its `repo_language_overrides` entry if it has one, or the run fails.
+ * A user in `github_users` is added or removed the same way; that list must
+ * keep at least one entry. Adding or changing an override also needs a run, so
+ * that its language gets a color.
  *
  * Auth and rate limits. One pass is one request per curated repo (~12) and per
  * curated user (1), plus one to raw.githubusercontent.com, which is not API
@@ -48,7 +50,10 @@
  * for the profile summary (#58); a blank name or bio is written as null.
  * Language colors come from linguist's languages.yml (the REST API returns the
  * language name, not its color). `language_colors` is keyed by language name
- * and covers only the languages GitHub detects for the listed repos. The output
+ * and covers each repo's detected language and each override value, when
+ * linguist gives it a color. A language linguist lists without a color is left
+ * out, and a card showing it gets no dot. Repos carry no color of their own:
+ * the card looks its displayed language up in `language_colors`. The output
  * is JSON rather than YAML because a raw control or line-separator character in
  * a description can make Ruby's YAML parser reject the file, which would fail
  * the whole site build.
@@ -58,7 +63,13 @@
  * existing file, ignoring `generated_at`, also leaves it untouched, so
  * `generated_at` means "data last changed at". A curated repo that returns 404
  * or is not public fails the run: a dead repo on a portfolio page is a
- * curation problem, and a human must remove it from repositories.yml. A
+ * curation problem, and a human must remove it from repositories.yml. A repo
+ * with no detected language fails unless it has an override. One whose
+ * language linguist does not list fails too, but only warns when an override
+ * replaces that language on the card, so a stale LINGUIST_TAG cannot fail runs
+ * over a language the page never shows. Every override key must be spelled
+ * exactly as in `github_repos`, and every value exactly as linguist spells the
+ * language, because the card matches both case-sensitively. A
  * curated user fails the run when it returns 404 (deleted, suspended, or
  * renamed: update the login or remove it) or is not a personal account
  * (remove it). A user response with no `type`, a login that differs beyond
@@ -66,7 +77,8 @@
  * avatars.githubusercontent.com also fails, as an API-format problem rather
  * than a curation one. Both lists must be non-empty
  * block lists: a missing, empty or flow-form list fails rather than silently
- * dropping what the page shows. A transient failure (5xx, network error,
+ * dropping what the page shows. The override map may be absent or empty, but a
+ * flow-form one fails for the same reason. A transient failure (5xx, network error,
  * timeout, rate limit, unreadable response) also fails the run, with its own
  * exit code, which tells a scheduled job to retry rather than ask a human to
  * edit the curation. Every error line is followed by the action that resolves
@@ -99,7 +111,6 @@ const EXIT_TRANSIENT = 75;
 
 const REPO_PATTERN = /^[\w.-]+\/[\w.-]+$/;
 const LOGIN_PATTERN = /^[A-Za-z0-9](?:[A-Za-z0-9-]{0,38})$/;
-const COLOR_PATTERN = /^#[0-9a-fA-F]{6}$/;
 const TOKEN_PATTERN = /^[\x21-\x7e]+$/;
 
 const RETRY = "re-run later";
@@ -158,28 +169,38 @@ function checkApiBase() {
   if (url.username || url.password) throw new UsageError("REPO_STATS_API_BASE must not contain a username or password");
 }
 
-// A strict reader for the two lists this script needs, so it carries no YAML
-// dependency. It fails on anything it does not understand rather than
+// A strict reader for the three blocks this script needs, so it carries no
+// YAML dependency. It fails on anything it does not understand rather than
 // guessing, because a silently dropped or truncated line is a repo or user
 // silently missing from the page.
 function readSource(file) {
+  let text;
   try {
-    return fs.readFileSync(file, "utf8").split(/\r?\n/);
+    text = fs.readFileSync(file, "utf8");
   } catch (err) {
     throw new Failure(file, false, `cannot read the curated list (${err.code || err.name})`, "pass the right --input path");
   }
+  // An editor's byte-order mark would hide the key on line 1 from findBlock;
+  // Jekyll ignores it.
+  return text.replace(/^﻿/, "").split(/\r?\n/);
 }
 
-// Finds the line a top-level block starts on. The start must be the bare key,
-// but the duplicate check is loose, so a second copy written quoted or in flow
-// form (`"key":`, `key: [a]`) is caught too: YAML keeps the last of a
-// duplicated key, so reading the first would fetch a list the page never shows.
-function findBlock(file, lines, key) {
+// Finds the line a top-level block starts on, or -1 for an `optional` block
+// with no copy at all. The start must be the bare key, but the duplicate check
+// is loose, so a second copy written quoted or in flow form (`"key":`,
+// `key: [a]`) is caught too: YAML keeps the last of a duplicated key, so
+// reading the first would fetch a list the page never shows. `shape` names the
+// block in errors.
+function findBlock(file, lines, key, { shape = "block list", optional = false } = {}) {
   const fix = "fix _data/repositories.yml";
   const start = lines.findIndex((l) => new RegExp(`^${key}:\\s*(#.*)?$`).test(l));
   const anyCopy = new RegExp(`^["']?${key}["']?\\s*:`);
-  if (start < 0) throw new Failure(file, false, `no top-level \`${key}:\` key starting a block list`, fix);
-  if (lines.filter((l) => anyCopy.test(l)).length > 1) throw new Failure(file, false, `\`${key}:\` appears more than once`, fix);
+  const copies = lines.filter((l) => anyCopy.test(l)).length;
+  if (start < 0) {
+    if (optional && copies === 0) return -1;
+    throw new Failure(file, false, `no top-level \`${key}:\` key starting a ${shape}`, fix);
+  }
+  if (copies > 1) throw new Failure(file, false, `\`${key}:\` appears more than once`, fix);
   return start;
 }
 
@@ -211,6 +232,91 @@ function readList(file, lines, key, pattern, what) {
   }
   if (items.length === 0) throw new Failure(file, false, `\`${key}\` lists nothing`, fix);
   return items;
+}
+
+// One `owner/name: Language` entry. Jekyll reads this map with Psych, so only
+// lines both parsers read the same way are accepted: a quoted key or value may
+// not contain a quote character or `\`; a plain one does not start with a YAML
+// indicator, and its value may hold spaces and `'` (`Cap'n Proto`) but not
+// `: `, and keeps a `#` with no whitespace before it (`C#`).
+const MAP_ENTRY =
+  /^(?:"([^"'\\]+)"|'([^"'\\]+)'|([^\s"'#:][^\s:]*)): +(?:"([^"'\\]+)"|'([^"'\\]+)'|([^\s\-?:,[\]{}#&*!|>'"%@`](?:[^:#\t]|:(?! |$)|(?<! )#)*?)) *(?: #.*)?$/;
+
+// Reads the block mapping under `key` into owner/name → { language, line }. An
+// absent or empty block is no entries: the map only corrects some cards. Every
+// entry must share the first one's indent, since Psych would nest or reject a
+// line indented differently.
+function readMap(file, lines, key) {
+  const fix = "fix _data/repositories.yml";
+  const entries = new Map();
+  const start = findBlock(file, lines, key, { shape: "block mapping", optional: true });
+  if (start < 0) return entries;
+  const seen = new Map();
+  let indent = null;
+  for (let n = start + 1; n < lines.length; n++) {
+    const line = lines[n];
+    if (/^[^\s#-]/.test(line)) break;
+    const text = line.trim();
+    if (text === "" || text.startsWith("#")) continue;
+    const lead = /^ */.exec(line)[0];
+    if (lead === "") throw new Failure(file, false, `line ${n + 1}: not a mapping entry: ${text}`, fix);
+    if (indent === null) indent = lead;
+    else if (lead !== indent) {
+      throw new Failure(file, false, `line ${n + 1}: indented ${lead.length} spaces, not ${indent.length} like the first entry`, fix);
+    }
+    const m = MAP_ENTRY.exec(line.slice(lead.length));
+    if (!m) {
+      const why = /^[^\s:]+:\s*(#.*)?$/.test(text) ? "has no language" : "not a mapping entry";
+      throw new Failure(file, false, `line ${n + 1}: ${why}: ${text}`, fix);
+    }
+    const repo = m[1] ?? m[2] ?? m[3];
+    const language = m[4] ?? m[5] ?? m[6];
+    if (!REPO_PATTERN.test(repo)) throw new Failure(file, false, `line ${n + 1}: not an owner/name: ${repo}`, fix);
+    const folded = repo.toLowerCase();
+    if (seen.has(folded)) throw new Failure(file, false, `line ${n + 1}: ${repo} duplicates line ${seen.get(folded)}`, fix);
+    seen.set(folded, n + 1);
+    entries.set(repo, { language, line: n + 1 });
+  }
+  return entries;
+}
+
+// An override key the card cannot match is an override that silently does
+// nothing, so it fails here, before any request, as a curation error.
+function checkOverrideKeys(file, overrides, repos) {
+  const curated = new Map(repos.map((r) => [r.toLowerCase(), r]));
+  for (const [repo, { line }] of overrides) {
+    const match = curated.get(repo.toLowerCase());
+    if (match === repo) continue;
+    if (match) {
+      throw new Failure(
+        file,
+        false,
+        `line ${line}: override key ${repo} differs only in case from ${match} in github_repos`,
+        `change the key to ${match}`
+      );
+    }
+    throw new Failure(file, false, `line ${line}: override key ${repo} is not in github_repos`, "fix the key, or remove the override");
+  }
+}
+
+// Override values need linguist, so they are checked once it is read. Returns
+// one Failure per value linguist does not list.
+function checkOverrideLanguages(file, overrides, linguist) {
+  const byFolded = new Map([...linguist.keys()].map((l) => [l.toLowerCase(), l]));
+  const failures = [];
+  for (const [repo, { language, line }] of overrides) {
+    if (linguist.has(language)) continue;
+    const near = byFolded.get(language.toLowerCase());
+    failures.push(
+      new Failure(
+        file,
+        false,
+        `line ${line}: override for ${repo}: "${language}" is not a language linguist ${LINGUIST_TAG} lists${near ? ` (it lists "${near}")` : ""}`,
+        near ? `write it as "${near}"` : "use linguist's exact language name, or bump LINGUIST_TAG in bin/repo-stats.js if a newer release lists it"
+      )
+    );
+  }
+  return failures;
 }
 
 // Rejecting a malformed token here is what keeps it out of the logs: fetch
@@ -292,7 +398,12 @@ async function rateLimitFailure(subject, res) {
   return null;
 }
 
-async function fetchLanguageColors() {
+// Returns every language linguist lists, mapped to its color or to null when
+// it has none. This decides whether a language exists, not just its color.
+// The scan reads unquoted top-level keys and 2-space `color: "#rrggbb"` lines,
+// which at v9.7.0 covers every key (none is quoted or contains `:`) and every
+// color line (692 of 692); recheck both after a LINGUIST_TAG bump.
+async function fetchLinguist() {
   const res = await get("linguist", LINGUIST_URL, { "User-Agent": "repo-stats" });
   const limited = await rateLimitFailure("linguist", res);
   if (limited) throw limited;
@@ -304,31 +415,31 @@ async function fetchLanguageColors() {
       `${LINGUIST_URL} returned HTTP ${res.status}`,
       "check LINGUIST_TAG in bin/repo-stats.js names a real linguist release"
     );
-  const colors = new Map();
+  const languages = new Map();
   let current = null;
-  let count = 0;
   for (const line of (await readBody("linguist", res, "text")).split("\n")) {
     const key = /^([^\s#-][^:]*):\s*$/.exec(line);
     if (key) {
       current = key[1];
-      count++;
+      languages.set(current, null);
       continue;
     }
     // Only a 2-space-indented color directly under the current language.
     const color = /^ {2}color: "(#[0-9a-fA-F]{6})"\s*$/.exec(line);
-    if (current && color) colors.set(current, color[1]);
+    if (current && color) languages.set(current, color[1]);
   }
   // linguist lists 800+ languages. The tag is immutable, so far fewer usually
   // means a bad response (an error or captive-portal page), not a new format.
-  if (count < 300 || colors.size < 300) {
+  const colored = [...languages.values()].filter(Boolean).length;
+  if (languages.size < 300 || colored < 300) {
     throw new Failure(
       "linguist",
       true,
-      `transient: response does not look like languages.yml (${count} languages, ${colors.size} colors)`,
+      `transient: response does not look like languages.yml (${languages.size} languages, ${colored} colors)`,
       `${RETRY}; if it persists after a LINGUIST_TAG bump, the file's format changed and the scan in bin/repo-stats.js needs updating`
     );
   }
-  return colors;
+  return languages;
 }
 
 // GET one API object, classifying every failure. `subject` is the curated repo
@@ -357,11 +468,14 @@ const nonEmpty = (v) => typeof v === "string" && v.trim() !== "";
 const count = (v) => Number.isInteger(v) && v >= 0;
 
 // Validate one API response and project it to the fields the page uses, in a
-// fixed order. Each problem carries the action that fixes it. `colors` is null
-// when linguist itself failed, in which case color checks are skipped rather
-// than reported as a missing language.
-function shapeRepo(repo, d, colors) {
+// fixed order. Each problem carries the action that fixes it. `linguist` is
+// null when linguist itself failed, in which case language checks are skipped
+// rather than reported as an unknown language. `override` is the repo's
+// repo_language_overrides value, if any: the card shows it instead of the
+// detected language, so a blank or unknown detected language does not fail.
+function shapeRepo(repo, d, linguist, override) {
   const problems = [];
+  const warnings = [];
   const add = (message, action) => problems.push({ message, action });
   if (d.visibility === undefined) {
     add("response has no visibility field", CHECK_SCRIPT);
@@ -371,16 +485,25 @@ function shapeRepo(repo, d, colors) {
     add("is not public", REMOVE_REPO);
     return { problems };
   }
-  const color = colors && nonEmpty(d.language) ? colors.get(d.language) : undefined;
+  const language = nonEmpty(d.language) ? d.language : null;
   if (!nonEmpty(d.full_name)) add("missing full_name", CHECK_SCRIPT);
   if (!nonEmpty(d.owner?.login)) add("missing owner", CHECK_SCRIPT);
   if (!nonEmpty(d.description)) add("has no description", `add one on GitHub, or ${REMOVE_REPO}`);
-  if (!nonEmpty(d.language)) add("has no detected language", `push code GitHub can detect a language for, or ${REMOVE_REPO}`);
-  else if (colors && !(color && COLOR_PATTERN.test(color))) {
-    add(
-      `language "${d.language}" has no color in linguist ${LINGUIST_TAG}`,
-      `if a newer linguist release gives it a color, bump LINGUIST_TAG in bin/repo-stats.js; otherwise ${REMOVE_REPO} (colorless languages are unsupported until #56)`
-    );
+  if (language === null) {
+    if (override === undefined) {
+      add("has no detected language", `push code GitHub can detect a language for, add it to repo_language_overrides, or ${REMOVE_REPO}`);
+    }
+  } else if (linguist && !linguist.has(language)) {
+    if (override === undefined) {
+      add(
+        `language "${language}" is not in linguist ${LINGUIST_TAG}`,
+        `bump LINGUIST_TAG in bin/repo-stats.js to a release that lists it, add the repo to repo_language_overrides, or ${REMOVE_REPO}`
+      );
+    } else {
+      warnings.push(
+        `language "${language}" is not in linguist ${LINGUIST_TAG} (the card shows its override, ${override}); bump LINGUIST_TAG in bin/repo-stats.js`
+      );
+    }
   }
   if (!count(d.stargazers_count)) add("missing stargazers_count", CHECK_SCRIPT);
   if (!count(d.forks_count)) add("missing forks_count", CHECK_SCRIPT);
@@ -392,12 +515,12 @@ function shapeRepo(repo, d, colors) {
 
   return {
     problems,
+    warnings,
     entry: {
       full_name: d.full_name,
       owner: d.owner.login,
       description: d.description,
-      language: d.language,
-      language_color: color ?? null,
+      language,
       stargazers_count: d.stargazers_count,
       forks_count: d.forks_count,
       pushed_at: d.pushed_at ?? null,
@@ -496,8 +619,10 @@ async function main() {
   const lines = readSource(opts.input);
   const repos = readList(opts.input, lines, "github_repos", REPO_PATTERN, "an owner/name");
   const users = readList(opts.input, lines, "github_users", LOGIN_PATTERN, "a GitHub login");
+  const overrides = readMap(opts.input, lines, "repo_language_overrides");
+  checkOverrideKeys(opts.input, overrides, repos);
   const auth = resolveAuth(opts.noAuth);
-  console.log(`${repos.length} curated repos, ${users.length} users; auth: ${auth.source}`);
+  console.log(`${repos.length} curated repos, ${users.length} users, ${overrides.size} language overrides; auth: ${auth.source}`);
 
   const headers = {
     Accept: "application/vnd.github+json",
@@ -507,13 +632,14 @@ async function main() {
   if (auth.token) headers.Authorization = `Bearer ${auth.token}`;
 
   const failures = [];
-  let colors = null;
+  let linguist = null;
   try {
-    colors = await fetchLanguageColors();
+    linguist = await fetchLinguist();
   } catch (err) {
     if (!(err instanceof Failure)) throw err;
     failures.push(err);
   }
+  if (linguist) failures.push(...checkOverrideLanguages(opts.input, overrides, linguist));
 
   const entries = {};
   for (const repo of repos) {
@@ -528,11 +654,12 @@ async function main() {
       failures.push(data);
       continue;
     }
-    const { problems, entry } = shapeRepo(repo, data, colors);
+    const { problems, warnings, entry } = shapeRepo(repo, data, linguist, overrides.get(repo)?.language);
     if (problems.length) {
       failures.push(new Failure(repo, false, problems.map((p) => p.message).join("; "), [...new Set(problems.map((p) => p.action))].join("; ")));
       continue;
     }
+    for (const w of warnings) console.error(`warning: ${repo}: ${w}`);
     if (entry.full_name !== repo) {
       const kind = entry.full_name.toLowerCase() === repo.toLowerCase() ? "differs only in case from" : "was renamed or transferred to";
       console.error(`warning: ${repo} ${kind} ${entry.full_name}; update _data/repositories.yml`);
@@ -577,11 +704,15 @@ async function main() {
     return transientOnly ? EXIT_TRANSIENT : EXIT_PERMANENT;
   }
 
-  const languages = [...new Set(Object.values(entries).map((e) => e.language))].sort();
+  // Detected languages of overridden repos stay in, so a card whose override is
+  // removed before the next run still finds its color. A null, unknown or
+  // colorless language has no color to write.
+  const shown = [...Object.values(entries).map((e) => e.language), ...[...overrides.values()].map((o) => o.language)];
+  const languages = [...new Set(shown)].filter((l) => l !== null && linguist.get(l)).sort();
   const output = {
     _generated_by: "bin/repo-stats.js — do not edit by hand",
     generated_at: new Date().toISOString().replace(/\.\d{3}Z$/, "Z"),
-    language_colors: Object.fromEntries(languages.map((l) => [l, colors.get(l)])),
+    language_colors: Object.fromEntries(languages.map((l) => [l, linguist.get(l)])),
     repos: entries,
     users: profiles,
   };
@@ -595,7 +726,7 @@ async function main() {
   } catch (err) {
     throw new Failure(opts.out, false, `cannot write (${err.code || err.name})`, "pass an --out path in an existing, writable directory");
   }
-  console.log(`wrote ${opts.out} (${repos.length} repos, ${users.length} users, ${languages.length} languages).`);
+  console.log(`wrote ${opts.out} (${repos.length} repos, ${users.length} users, ${languages.length} colored languages).`);
   return 0;
 }
 

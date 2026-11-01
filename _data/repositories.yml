@@ -19,10 +19,11 @@ github_repos:
 
 # Corrects the language a repo card shows when GitHub's detected one misdescribes
 # the work, keyed by the same owner/name as github_repos. Repos not listed show
-# GitHub's language. The card's dot takes the displayed language's color from
-# language_colors in repository_stats.json and is left out when there is none;
-# until #122 lands, bin/repo-stats.js does not read this map, so pick a language
-# that file already colors.
+# GitHub's language. Each value must be a language name exactly as linguist
+# spells it; bin/repo-stats.js checks both keys and values, so re-run it after
+# changing this map. The card's dot takes the displayed language's color from
+# language_colors in repository_stats.json and is left out for a language
+# linguist gives no color.
 repo_language_overrides:
   # GitHub reports HTML for an ML pipeline.
   frederick-douglas-pearce/sportswear-esg-news-classifier: Python
