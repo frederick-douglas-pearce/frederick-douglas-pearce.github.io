@@ -27,8 +27,7 @@
  * A user in `github_users` is added or removed the same way; that list must
  * keep at least one entry. Adding or changing an override also needs a run,
  * which validates it and gives its language a color; commit the data file too
- * if the run rewrote it (a language already in `language_colors` changes
- * nothing).
+ * if the run rewrote it.
  *
  * Auth and rate limits. One pass is one request per curated repo (~12) and per
  * curated user (1), plus one to raw.githubusercontent.com, which is not API
@@ -190,7 +189,26 @@ function readSource(file) {
   }
   // An editor's byte-order mark would hide the key on line 1 from findBlock;
   // Jekyll ignores it.
-  return text.replace(/^\uFEFF/, "").split(/\r?\n/);
+  const lines = text.replace(/^\uFEFF/, "").split(/\r?\n/);
+  // YAML also breaks lines on a lone CR, NEL, LS and PS. A line holding one is
+  // two lines to Jekyll, so a comment line could hide a key or an entry from
+  // every reader here while Jekyll applies it.
+  const n = lines.findIndex((l) => /[\r\u0085\u2028\u2029]/.test(l));
+  if (n >= 0) {
+    const code = lines[n]
+      .match(/[\r\u0085\u2028\u2029]/)[0]
+      .charCodeAt(0)
+      .toString(16)
+      .toUpperCase()
+      .padStart(4, "0");
+    throw new Failure(
+      file,
+      false,
+      `line ${n + 1}: contains U+${code}, which YAML reads as a line break`,
+      "remove it, or convert the line endings to LF"
+    );
+  }
+  return lines;
 }
 
 // Finds the line a top-level block starts on, or -1 for an `optional` block
@@ -291,27 +309,28 @@ function readMap(file, lines, key) {
   return entries;
 }
 
-// The file may hold only the three bare block starts at the top level (plus
-// comments, column-0 list items, and a `---` before the first key). Any other
-// top-level line fails: an anchored, tagged, explicit (`? key`), merged or
-// escaped spelling of a key would otherwise read here as an absent map while
-// Jekyll still applies it, and content after a `...` document end would be
-// read here and ignored by Jekyll.
+// The file may hold only the three bare block starts at the top level, plus
+// comments, column-0 list items, and `---` as the first line that is not blank
+// or a comment. Any other top-level line fails: an anchored, tagged, explicit
+// (`? key`), merged or escaped spelling of a key would otherwise read here as
+// an absent map while Jekyll still applies it, and content after a `...`
+// document end or a later `---` would be read here and ignored by Jekyll,
+// which reads only the first document.
 function checkTopLevel(file, lines) {
   const keys = /^(?:github_users|github_repos|repo_language_overrides):\s*(#.*)?$/;
-  let seenKey = false;
+  let first = true;
   lines.forEach((line, n) => {
-    if (!/^[^\s#]/.test(line) || /^-(\s|$)/.test(line)) return;
-    if (keys.test(line)) seenKey = true;
-    else if (!seenKey && /^---\s*(#.*)?$/.test(line)) return;
-    else {
-      throw new Failure(
-        file,
-        false,
-        `line ${n + 1}: only github_users, github_repos and repo_language_overrides may appear at the top level, each as a bare key: ${line}`,
-        "fix _data/repositories.yml"
-      );
-    }
+    if (/^\s*(#.*)?$/.test(line)) return;
+    const isFirst = first;
+    first = false;
+    if (!/^[^\s#]/.test(line) || /^-(\s|$)/.test(line) || keys.test(line)) return;
+    if (isFirst && /^---\s*(#.*)?$/.test(line)) return;
+    throw new Failure(
+      file,
+      false,
+      `line ${n + 1}: only github_users, github_repos and repo_language_overrides may appear at the top level, each as a bare key: ${line}`,
+      "fix _data/repositories.yml"
+    );
   });
 }
 
