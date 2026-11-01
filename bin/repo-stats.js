@@ -26,8 +26,8 @@
  * removing its `repo_language_overrides` entry if it has one, or the run fails.
  * A user in `github_users` is added or removed the same way; that list must
  * keep at least one entry. Adding or changing an override also needs a run,
- * which validates it and gives its language a color; commit the data file too
- * if the run rewrote it.
+ * which validates it and, when linguist gives its language a color, adds that
+ * color to `language_colors`; commit the data file too if the run rewrote it.
  *
  * Auth and rate limits. One pass is one request per curated repo (~12) and per
  * curated user (1), plus one to raw.githubusercontent.com, which is not API
@@ -190,9 +190,10 @@ function readSource(file) {
   // An editor's byte-order mark would hide the key on line 1 from findBlock;
   // Jekyll ignores it.
   const lines = text.replace(/^\uFEFF/, "").split(/\r?\n/);
-  // YAML also breaks lines on a lone CR, NEL, LS and PS. A line holding one is
-  // two lines to Jekyll, so a comment line could hide a key or an entry from
-  // every reader here while Jekyll applies it.
+  // YAML 1.1 (libyaml, which Jekyll's Psych uses) also breaks lines on a lone
+  // CR, NEL, LS and PS. A line holding one is two lines to Jekyll, so a comment
+  // line could hide a key or an entry from every reader here while Jekyll
+  // applies it.
   const n = lines.findIndex((l) => /[\r\u0085\u2028\u2029]/.test(l));
   if (n >= 0) {
     const code = lines[n]
@@ -204,7 +205,7 @@ function readSource(file) {
     throw new Failure(
       file,
       false,
-      `line ${n + 1}: contains U+${code}, which YAML reads as a line break`,
+      `line ${n + 1}: contains U+${code}, which Jekyll's YAML reader treats as a line break`,
       "remove it, or convert the line endings to LF"
     );
   }
