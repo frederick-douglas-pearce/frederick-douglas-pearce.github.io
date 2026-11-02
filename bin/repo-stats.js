@@ -6,9 +6,9 @@
  * Reads the curated `github_repos` and `github_users` lists and the
  * `repo_language_overrides` map from _data/repositories.yml, preserving list
  * order, fetches each repo and user from api.github.com, and writes
- * _data/repository_stats.json. It runs by hand (and, once #59 lands, on a
- * schedule), never inside the Jekyll build, so a GitHub API failure cannot fail
- * a deploy. The page's cards render as native HTML from this file (#56), with
+ * _data/repository_stats.json. It runs by hand and weekly from
+ * .github/workflows/repo-stats.yml (#59), never inside the Jekyll build, so a
+ * GitHub API failure cannot fail a deploy. The page's cards render as native HTML from this file (#56), with
  * no third-party image service (epic #54). Curation stays hand-edited: this
  * script never changes repositories.yml.
  *
@@ -94,6 +94,9 @@
  *
  * Exit codes: 0 written or unchanged; 1 permanent failure (404, not public,
  * not a user, bad token, validation); 75 transient failures only; 2 usage error.
+ * bin/repo-stats-refresh.sh, which the weekly workflow runs, branches on these
+ * codes and turns the `error:`/`action:`/`warning:` stderr lines into Actions
+ * annotations, so keep that format.
  *
  * REPO_STATS_API_BASE overrides https://api.github.com. It exists only to
  * exercise failure paths against a local stub or an unreachable host, and a

@@ -1,0 +1,58 @@
+name: Refresh repo stats
+
+# Weekly refresh of _data/repository_stats.json for /repositories/ (#59). The
+# work, including why the deploy is dispatched explicitly instead of left to
+# deploy.yml's _data/** path filter, is in bin/repo-stats-refresh.sh.
+
+on:
+  schedule:
+    # Monday 03:17 UTC, well clear of the daily ~14:01 UTC ESG deploy. A
+    # refresh with changes dispatches deploy.yml, whose deploy job holds the
+    # "pages" concurrency group for up to its 25-min cap after a build of up to
+    # 20 min. GitHub can also start scheduled runs late under load. Running ~10¾
+    # hours earlier means a refresh-triggered deploy can never be queued ahead
+    # of the ESG one. The odd minute avoids top-of-the-hour schedule congestion.
+    - cron: "17 3 * * 1"
+  # The manual fallback: re-running after a transient failure, and keeping the
+  # refresh alive if GitHub ever disables the schedule.
+  workflow_dispatch:
+
+# Least privilege at the top; the job widens to exactly what it needs. Job
+# permissions replace the repo default (write), so this list is load-bearing.
+permissions:
+  contents: read
+
+jobs:
+  refresh:
+    # Only main's copy of this workflow may run with a token that pushes to
+    # main, so a dispatch against another branch does nothing.
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    # bin/repo-stats.js makes 14 sequential requests (linguist, 12 repos, 1
+    # user), each up to ~48s in the worst case (3 x 15s timeout + 1s + 2s
+    # backoff), so ~11.2 min before it can exit 75 and name what failed, plus
+    # up to 40s of dispatch backoff. Recompute if the curated lists grow.
+    timeout-minutes: 20
+    permissions:
+      contents: write # push the regenerated data file
+      actions: write # dispatch deploy.yml
+    concurrency:
+      group: repo-stats-refresh
+      cancel-in-progress: false
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v7
+        with:
+          # Load-bearing: a re-run of a scheduled run would otherwise check out
+          # the original commit, and a push rejected because main moved would be
+          # rejected again.
+          ref: main
+      - name: Setup Node.js ⚙️
+        uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+      - name: Refresh, check, commit and deploy 🔄
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ github.token }}
+        run: bin/repo-stats-refresh.sh
