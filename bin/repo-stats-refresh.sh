@@ -17,10 +17,11 @@
 #      leaves the file untouched on failure or when the data is unchanged. Its
 #      stderr lines (`error:` / `  action:`, `warning:`, `usage error:`,
 #      `unexpected error:`) become Actions annotations, so that format is an
-#      interface. Exit 1 with at least one `error:` line means a human must do
-#      what each error's action says. Exit 1 with an `unexpected error:` line,
-#      or with no `error:` line at all (a crash before its error handling ran,
-#      such as a SyntaxError), means it crashed, which is a bug in it. Exit 75
+#      interface. Exit 1 with at least one `error:` line and no `unexpected
+#      error:` line means a human must do what each error's action says. Exit 1
+#      with an `unexpected error:` line, or with no `error:` line at all (a
+#      crash before its error handling ran, such as a SyntaxError), means it
+#      crashed, which is a bug in it. Exit 75
 #      (transient) means re-run; anything else is a usage error or a bug.
 #   2. Only the stats file may change.
 #   3. Guardrail, on every run, so it also checks the file the site is already
@@ -128,8 +129,9 @@ fi
 if ((code != 0)); then
   case $code in
     1)
-      # Every exit 1 bin/repo-stats.js reports itself prints an error: line,
-      # so one without any is a crash that never reached its error handling.
+      # A permanent failure bin/repo-stats.js reports prints an error: line,
+      # and a crash its handlers catch prints unexpected error:. An exit 1 with
+      # neither crashed before its handlers ran.
       if ((crashed || reported == 0)); then
         verdict="bin/repo-stats.js crashed (exit 1), which is a bug in it; see the stack trace in this step's log. Nothing was committed and the site keeps its current data."
       else
@@ -199,7 +201,10 @@ if ((rc == 3)); then
   fail "guardrail: $DATA does not hold exactly the curated repos and users as non-empty entries, so nothing was committed. Either bin/repo-stats.js read $INPUT differently from Ruby's Psych, or it dropped, added or blanked an entry; both are bugs in bin/repo-stats.js. The problems are listed in the annotations and the step summary." 1 "${problems[@]}"
 fi
 if ((rc != 0)) || ! grep -Eq '^guardrail: ok [0-9]+ repos [0-9]+ users$' <<<"$ok"; then
-  fail "guardrail could not run (ruby exit $rc, or no ok line), so nothing was committed. Ruby is missing or crashed on the runner; this is a bug in this script or the runner image, not in the data." 1 "${crash[@]}"
+  if ((${#crash[@]})); then
+    fail "guardrail could not read $INPUT or $DATA (the error is listed in the annotations and the step summary), so nothing was committed. A YAML error in $INPUT is a curation fix there that bin/repo-stats.js's reader let through; a JSON error in $DATA is a bug in bin/repo-stats.js." 1 "${crash[@]}"
+  fi
+  fail "guardrail could not run (ruby exit $rc, or no ok line), so nothing was committed. Ruby is missing or crashed on the runner; this is a bug in this script or the runner image, not in the data."
 fi
 echo "$ok"
 
