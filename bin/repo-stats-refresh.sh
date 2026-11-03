@@ -17,10 +17,11 @@
 #      leaves the file untouched on failure or when the data is unchanged. Its
 #      stderr lines (`error:` / `  action:`, `warning:`, `usage error:`,
 #      `unexpected error:`) become Actions annotations, so that format is an
-#      interface. Exit 1 means a human must do what each error's action says,
-#      unless an `unexpected error:` line shows the script crashed, which is a
-#      bug in it. Exit 75 (transient) means re-run; anything else is a usage
-#      error or a bug.
+#      interface. Exit 1 with at least one `error:` line means a human must do
+#      what each error's action says. Exit 1 with an `unexpected error:` line,
+#      or with no `error:` line at all (a crash before its error handling ran,
+#      such as a SyntaxError), means it crashed, which is a bug in it. Exit 75
+#      (transient) means re-run; anything else is a usage error or a bug.
 #   2. Only the stats file may change.
 #   3. Guardrail, on every run, so it also checks the file the site is already
 #      serving. The curated lists, read with Ruby's Psych (the parser under
@@ -57,10 +58,17 @@ summary() {
   if [[ -n "${GITHUB_STEP_SUMMARY:-}" ]]; then printf '%s\n\n' "$1" >>"$GITHUB_STEP_SUMMARY"; fi
 }
 
+# fail <verdict> [code] [item...]: the verdict annotation goes first, because
+# Actions shows only the first few error annotations of a step, then one per
+# item. The step summary keeps the verdict and the full list.
 fail() {
-  echo "::error::$(esc "$1")"
-  summary "**Failed:** $1"
-  exit "${2:-1}"
+  local verdict=$1 code=${2:-1} item
+  if (($# >= 2)); then shift 2; else shift; fi
+  echo "::error::$(esc "$verdict")"
+  for item in "$@"; do echo "::error::$(esc "$item")"; done
+  summary "**Failed:** $verdict"
+  if (($#)); then summary "$(printf -- '- %s\n' "$@")"; fi
+  exit "$code"
 }
 
 if [[ "${GITHUB_ACTIONS:-}" != "true" ]]; then
@@ -87,11 +95,13 @@ echo "::$token::"
 errors=()
 warnings=()
 crashed=0
+reported=0
 pending=""
 while IFS= read -r line || [[ -n $line ]]; do
   case $line in
     "warning: "*) warnings+=("${line#warning: }") ;;
     "error: "*)
+      reported=$((reported + 1))
       if [[ -n $pending ]]; then errors+=("$pending"); fi
       pending=${line#error: }
       ;;
@@ -118,7 +128,9 @@ fi
 if ((code != 0)); then
   case $code in
     1)
-      if ((crashed)); then
+      # Every exit 1 bin/repo-stats.js reports itself prints an error: line,
+      # so one without any is a crash that never reached its error handling.
+      if ((crashed || reported == 0)); then
         verdict="bin/repo-stats.js crashed (exit 1), which is a bug in it; see the stack trace in this step's log. Nothing was committed and the site keeps its current data."
       else
         verdict="bin/repo-stats.js failed permanently (exit 1), so nothing was committed and the site keeps its current data. Do what each error's action says. Most are curation fixes in _data/repositories.yml (then run node bin/repo-stats.js and commit both files); a fix on GitHub needs only a re-run of this workflow; a token, API-format, linguist or write failure needs a change to the workflow or to bin/repo-stats.js."
@@ -127,14 +139,7 @@ if ((code != 0)); then
     75) verdict="bin/repo-stats.js hit transient errors only (exit 75), so nothing was committed and the site keeps its current data. Re-run this workflow (Actions, Refresh repo stats, Run workflow)." ;;
     *) verdict="bin/repo-stats.js exited $code, which is a usage error or a bug in it or in this script. Nothing was committed." ;;
   esac
-  # The verdict goes first: Actions shows only the first few error annotations
-  # of a step, and an outage fails every request. The step summary keeps the
-  # full list.
-  echo "::error::$(esc "$verdict")"
-  for e in "${errors[@]}"; do echo "::error::$(esc "$e")"; done
-  summary "**Failed:** $verdict"
-  if ((${#errors[@]})); then summary "$(printf -- '- %s\n' "${errors[@]}")"; fi
-  exit "$code"
+  fail "$verdict" "$code" "${errors[@]}"
 fi
 
 # 2. Only the stats file may change.
@@ -145,9 +150,11 @@ fi
 
 # 3. Guardrail: set equality, read independently of bin/repo-stats.js. It must
 # print its sentinel line: a Ruby that exits 0 without running proves nothing.
+# Ruby prints plain one-line results and no workflow commands; this script
+# escapes and annotates them, so nothing from the data reaches the log raw.
 rc=0
 guard=$(ruby -ryaml -rjson -e '
-  esc = ->(s) { s.gsub("%", "%25").gsub("\r", "%0D").gsub("\n", "%0A") }
+  one_line = ->(s) { s.to_s.gsub(/[\r\n]/, " ") }
   begin
     input, out = ARGV
     curated = YAML.safe_load(File.read(input))
@@ -165,26 +172,36 @@ guard=$(ruby -ryaml -rjson -e '
         problems << "#{out}: #{key} is not an object"
         next
       end
-      (want - got.keys).each { |n| problems << "#{out}: curated #{n} is missing from #{key}" }
-      (got.keys - want).each { |n| problems << "#{out}: #{key} has #{n}, which is not in #{list}" }
-      got.each { |n, v| problems << "#{out}: #{key} entry #{n} is not a non-empty object" unless v.is_a?(Hash) && !v.empty? }
+      (want - got.keys).each { |n| problems << "#{out}: curated #{n.inspect} is missing from #{key}" }
+      (got.keys - want).each { |n| problems << "#{out}: #{key} has #{n.inspect}, which is not in #{list}" }
+      got.each { |n, v| problems << "#{out}: #{key} entry #{n.inspect} is not a non-empty object" unless v.is_a?(Hash) && !v.empty? }
       counts[key] = got.size
     end
-    problems.each { |p| puts "::error::" + esc.(p) }
+    problems.each { |p| puts "problem: " + one_line.(p) }
     exit 3 unless problems.empty?
     puts "guardrail: ok #{counts["repos"]} repos #{counts["users"]} users"
   rescue StandardError => e
-    puts "::error::" + esc.("guardrail could not run: #{e.class}: #{e.message}")
+    puts "could not run: " + one_line.("#{e.class}: #{e.message}")
     exit 4
   end
 ' "$INPUT" "$DATA") || rc=$?
-printf '%s\n' "$guard"
+problems=()
+crash=()
+ok=""
+while IFS= read -r line; do
+  case $line in
+    "problem: "*) problems+=("${line#problem: }") ;;
+    "could not run: "*) crash+=("guardrail could not run: ${line#could not run: }") ;;
+    "guardrail: ok "*) ok=$line ;;
+  esac
+done <<<"$guard"
 if ((rc == 3)); then
-  fail "guardrail: $DATA does not hold exactly the curated repos and users as non-empty entries, so nothing was committed. Either bin/repo-stats.js read $INPUT differently from Ruby's Psych, or it dropped, added or blanked an entry; both are bugs in bin/repo-stats.js. See the errors above."
+  fail "guardrail: $DATA does not hold exactly the curated repos and users as non-empty entries, so nothing was committed. Either bin/repo-stats.js read $INPUT differently from Ruby's Psych, or it dropped, added or blanked an entry; both are bugs in bin/repo-stats.js. The problems are listed in the annotations and the step summary." 1 "${problems[@]}"
 fi
-if ((rc != 0)) || ! grep -Eq '^guardrail: ok [0-9]+ repos [0-9]+ users$' <<<"$guard"; then
-  fail "guardrail could not run (ruby exit $rc, or no ok line), so nothing was committed. Ruby is missing or crashed on the runner; this is a bug in this script or the runner image, not in the data."
+if ((rc != 0)) || ! grep -Eq '^guardrail: ok [0-9]+ repos [0-9]+ users$' <<<"$ok"; then
+  fail "guardrail could not run (ruby exit $rc, or no ok line), so nothing was committed. Ruby is missing or crashed on the runner; this is a bug in this script or the runner image, not in the data." 1 "${crash[@]}"
 fi
+echo "$ok"
 
 # 4. No change, no commit, no deploy.
 if [[ -z $status ]]; then
@@ -203,10 +220,10 @@ if ! git push origin HEAD:main; then
   # The client can report failure after the remote took the update. A re-run
   # would then find nothing to do and never dispatch, so check main first.
   if ! remote=$(git ls-remote origin refs/heads/main); then
-    fail "push of $sha reported failure, and git ls-remote failed too, so whether main has it is unknown. If main's head is $sha, run: gh workflow run deploy.yml --ref main. If not, re-run this workflow."
+    fail "push of $sha reported failure, and git ls-remote failed too, so whether main has it is unknown. If main contains $sha, run: gh workflow run deploy.yml --ref main. If not, re-run this workflow."
   fi
   if [[ ${remote%%[[:space:]]*} != "$sha" ]]; then
-    fail "push of $sha to main was rejected, most likely because main moved during the run. main does not have $sha. Re-run this workflow; it checks out the new main."
+    fail "push of $sha to main failed and main's head is not $sha. Most likely the push was rejected because main moved during the run; rarely, it landed and another push landed on top. Re-run this workflow; it checks out the new main. If the re-run reports unchanged, main already has the data: run gh workflow run deploy.yml --ref main if no deploy has run since."
   fi
   echo "push of $sha reported failure, but main has it; dispatching the deploy."
 fi

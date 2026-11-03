@@ -97,8 +97,10 @@
  * bin/repo-stats-refresh.sh, which the weekly workflow runs, branches on these
  * codes and turns the `error:`/`action:`, `warning:`, `usage error:` and
  * `unexpected error:` stderr lines into Actions annotations, so keep that
- * format. It tells a crash from a permanent failure by the `unexpected error:`
- * line, since both exit 1.
+ * format. Both a crash and a permanent failure exit 1, so it reads exit 1 as a
+ * permanent failure only when at least one `error:` line and no `unexpected
+ * error:` line was printed; a crash before main()'s handlers run (a
+ * SyntaxError, say) prints neither.
  *
  * REPO_STATS_API_BASE overrides https://api.github.com. It exists only to
  * exercise failure paths against a local stub or an unreachable host, and a
