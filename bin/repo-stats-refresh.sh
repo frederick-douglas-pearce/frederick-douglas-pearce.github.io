@@ -21,8 +21,8 @@
 #      error:` line means a human must do what each error's action says. Exit 1
 #      with an `unexpected error:` line, or with no `error:` line at all (a
 #      crash before its error handling ran, such as a SyntaxError), means it
-#      crashed, which is a bug in it. Exit 75
-#      (transient) means re-run; anything else is a usage error or a bug.
+#      crashed, which is a bug in it. Exit 75 (transient) means re-run;
+#      anything else is a usage error or a bug.
 #   2. Only the stats file may change.
 #   3. Guardrail, on every run, so it also checks the file the site is already
 #      serving. The curated lists, read with Ruby's Psych (the parser under
@@ -193,7 +193,7 @@ ok=""
 while IFS= read -r line; do
   case $line in
     "problem: "*) problems+=("${line#problem: }") ;;
-    "could not run: "*) crash+=("guardrail could not run: ${line#could not run: }") ;;
+    "could not run: "*) crash+=("guardrail raised: ${line#could not run: }") ;;
     "guardrail: ok "*) ok=$line ;;
   esac
 done <<<"$guard"
@@ -202,7 +202,7 @@ if ((rc == 3)); then
 fi
 if ((rc != 0)) || ! grep -Eq '^guardrail: ok [0-9]+ repos [0-9]+ users$' <<<"$ok"; then
   if ((${#crash[@]})); then
-    fail "guardrail could not read $INPUT or $DATA (the error is listed in the annotations and the step summary), so nothing was committed. A YAML error in $INPUT is a curation fix there that bin/repo-stats.js's reader let through; a JSON error in $DATA is a bug in bin/repo-stats.js." 1 "${crash[@]}"
+    fail "guardrail raised an exception reading $INPUT or $DATA (class and message are listed in the annotations and the step summary), so nothing was committed. A Psych::SyntaxError is a curation fix in $INPUT that bin/repo-stats.js's reader let through; a JSON::ParserError is a bug in bin/repo-stats.js; any other class (for example Psych::DisallowedClass, for a value safe_load refuses but Jekyll's SafeYAML accepts, or a NoMethodError) is a bug in this script's guardrail." 1 "${crash[@]}"
   fi
   fail "guardrail could not run (ruby exit $rc, or no ok line), so nothing was committed. Ruby is missing or crashed on the runner; this is a bug in this script or the runner image, not in the data."
 fi
