@@ -1,6 +1,6 @@
 {
   "_generated_by": "bin/repo-stats.js — do not edit by hand",
-  "generated_at": "2026-11-01T09:13:26Z",
+  "generated_at": "2026-11-03T03:01:57Z",
   "language_colors": {
     "HTML": "#e34c26",
     "Jupyter Notebook": "#DA5B0B",
@@ -33,8 +33,8 @@
       "description": "End-to-end, production ML pipeline (Cloud Run + CI/CD) that classifies ESG news for 50+ sportswear brands using an LLM-as-judge, with ML pre-filters and a daily-updated scorecard.",
       "language": "HTML",
       "stargazers_count": 3,
-      "forks_count": 0,
-      "pushed_at": "2026-10-31T07:57:36Z",
+      "forks_count": 1,
+      "pushed_at": "2026-11-03T00:24:09Z",
       "topics": [
         "esg",
         "google-cloud-run",
@@ -66,7 +66,7 @@
       "language": "Python",
       "stargazers_count": 1,
       "forks_count": 0,
-      "pushed_at": "2026-11-01T09:42:14Z",
+      "pushed_at": "2026-11-03T02:24:34Z",
       "topics": [],
       "homepage": null,
       "archived": false
@@ -175,7 +175,7 @@
       "language": "Python",
       "stargazers_count": 1,
       "forks_count": 0,
-      "pushed_at": "2026-10-31T07:31:01Z",
+      "pushed_at": "2026-11-03T02:44:32Z",
       "topics": [],
       "homepage": null,
       "archived": false
