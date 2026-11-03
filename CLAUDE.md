@@ -83,8 +83,11 @@ bump it in `claude-code-sessions` and `us-presidential-vote-analysis` too, and i
    `bin/repo-stats.js` from the curated `github_repos` and `github_users` lists and the
    `repo_language_overrides` map in `_data/repositories.yml`. Never hand-edit it: after
    changing either list or the override map, re-run the script (it validates the map too)
-   and commit the data file along with `repositories.yml` if the run rewrote it. It is in
-   `.prettierignore` because its layout is `JSON.stringify`'s, not Prettier's.
+   and commit the data file along with `repositories.yml` if the run rewrote it. Don't
+   leave that to the weekly refresh (`.github/workflows/repo-stats.yml`, which runs
+   `bin/repo-stats-refresh.sh`, commits as `github-actions` and dispatches the deploy):
+   until it runs, a new repo's card has no data. It is in `.prettierignore` because its
+   layout is `JSON.stringify`'s, not Prettier's.
 
 ## Blog taxonomy: `categories` means _series_
 
@@ -214,7 +217,8 @@ change a per-attempt cap or backoff.
 An in-Actions push using the default `GITHUB_TOKEN` does **not** trigger `deploy.yml`;
 a workflow that commits content must dispatch the deploy explicitly.
 `.github/workflows/schedule-posts.txt` (disabled — note the `.txt` extension) has this
-latent bug.
+latent bug. `bin/repo-stats-refresh.sh` (run by `repo-stats.yml`) does the dispatch: it
+pushes, then runs `gh workflow run deploy.yml --ref main` with `actions: write`.
 
 ## Issue tracking
 
