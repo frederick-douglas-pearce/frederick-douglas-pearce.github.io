@@ -6,26 +6,33 @@ name: Refresh repo stats
 
 on:
   schedule:
-    # Monday 03:17 UTC, well clear of the daily ~14:01 UTC ESG deploy. A
+    # Monday 03:17 UTC, well clear of the daily ESG deploy, which follows the
+    # ESG push at 07:01 Pacific (14:01 UTC in summer, 15:01 UTC in winter). A
     # refresh with changes dispatches deploy.yml, whose deploy job holds the
     # "pages" concurrency group for up to its 25-min cap after a build of up to
-    # 20 min. GitHub can also start scheduled runs late under load. Running ~10¾
-    # hours earlier means a refresh-triggered deploy can never be queued ahead
-    # of the ESG one. The odd minute avoids top-of-the-hour schedule congestion.
+    # 20 min. GitHub can also start scheduled runs late under load. Starting
+    # 10¾-11¾ hours earlier means a scheduled refresh's deploy cannot be queued
+    # ahead of the ESG one. A manual run can be: avoid dispatching one in the
+    # ~45 min before the ESG push. The odd minute avoids top-of-the-hour
+    # schedule congestion.
     - cron: "17 3 * * 1"
   # The manual fallback: re-running after a transient failure, and keeping the
   # refresh alive if GitHub ever disables the schedule.
   workflow_dispatch:
 
-# Least privilege at the top; the job widens to exactly what it needs. Job
-# permissions replace the repo default (write), so this list is load-bearing.
+# Least privilege at the top: this block replaces the repo default (write) for
+# any job without its own. A job's block replaces this one rather than adding
+# to it, and every scope it leaves out becomes none, so the refresh job's list
+# below must name everything it needs.
 permissions:
   contents: read
 
 jobs:
   refresh:
-    # Only main's copy of this workflow may run with a token that pushes to
-    # main, so a dispatch against another branch does nothing.
+    # Skip a dispatch against any branch but main, so an unmodified copy of
+    # this file on a feature branch cannot push to main by accident. A branch
+    # that edits this line still runs as written: it guards against mistakes
+    # and is not a security boundary.
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     # bin/repo-stats.js makes 14 sequential requests (linguist, 12 repos, 1

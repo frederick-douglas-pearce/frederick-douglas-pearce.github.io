@@ -216,10 +216,9 @@ change a per-attempt cap or backoff.
 
 An in-Actions push using the default `GITHUB_TOKEN` does **not** trigger `deploy.yml`;
 a workflow that commits content must dispatch the deploy explicitly.
-`bin/repo-stats-refresh.sh` (run by `repo-stats.yml`) is the working example: it pushes, then
-runs `gh workflow run deploy.yml --ref main` with `actions: write`.
 `.github/workflows/schedule-posts.txt` (disabled — note the `.txt` extension) has this
-latent bug.
+latent bug. `bin/repo-stats-refresh.sh` (run by `repo-stats.yml`) does the dispatch: it
+pushes, then runs `gh workflow run deploy.yml --ref main` with `actions: write`.
 
 ## Issue tracking
 
