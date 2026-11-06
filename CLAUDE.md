@@ -213,17 +213,22 @@ effective ~14:01 UTC SLA, which is why the timeouts and the concurrency group ar
 way the comments in `deploy.yml` describe — recompute the job `timeout-minutes` if you
 change a per-attempt cap, a backoff or the landed check.
 
-`actions/deploy-pages` names each Pages deployment after the commit SHA, which decides how a
-failed publish is retried (#131). If `create()` fails, no deployment exists, and the job
-retries the same commit twice (30s/60s). If a deployment was created and then failed or hung,
-the action cancels it, and every retry, rerun or dispatch at that commit gets the canceled one
-back. So the job instead checks the live `/build-version.txt` stamp, and if the build isn't
-there, the `redeploy` job (`bin/pages-redeploy.sh`) pushes an empty commit and dispatches a
-fresh deploy with `fallback=true`. If that fails too, recover by hand the same way: branch
-off `origin/main`, `git commit --allow-empty`, `git push origin HEAD:main`, then
+A failed publish is retried at the same commit first and under a new one only after that
+(#131). The job makes up to three attempts, 30s and then 60s apart, each capped at 6 min.
+That recovered 3 of the 4 hangs on record. If all three fail, the job checks the live
+`/build-version.txt` stamp (a canceled deployment can still finish). If the build isn't
+there, the job fails and the `redeploy` job (`bin/pages-redeploy.sh`) takes over. Pages
+names each deployment after the commit SHA, and on 2026-11-05 every attempt and a rerun 3.5 h
+later kept getting the canceled one back. So `redeploy` pushes an empty commit, dispatches a
+fresh deploy with `fallback=true`, and opens a `deploy-fallback` issue that @-mentions the
+owner. The fallback run's `report` job comments the result there and closes the issue on
+success. The label is load-bearing: `report` finds the issue by it. An open
+`deploy-fallback` issue means the site may still be stale. Recover by hand the same way:
+branch off `origin/main`, `git commit --allow-empty`, `git push origin HEAD:main`, then
 `gh workflow run deploy.yml --ref main`. The dispatch is needed because an empty commit
 doesn't match the `paths:` filter. **Rerunning the failed run does not help.** The `drill`
-dispatch input forces the hang path to test all this. Run it only off-hours.
+dispatch input exercises the whole path, and its procedure is in the comment on that input.
+Run it only off-hours.
 
 An in-Actions push using the default `GITHUB_TOKEN` does **not** trigger `deploy.yml`;
 a workflow that commits content must dispatch the deploy explicitly.
