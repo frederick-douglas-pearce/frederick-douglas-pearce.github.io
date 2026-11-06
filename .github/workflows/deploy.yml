@@ -281,7 +281,7 @@ jobs:
         run: |
           recipe="branch off origin/main, git commit --allow-empty, git push origin HEAD:main, then gh workflow run deploy.yml --ref main (the dispatch is needed: an empty commit does not match the paths filter)"
           if [[ $REF == refs/heads/main && $FALLBACK != true ]]; then
-            next="The redeploy job will push an empty commit, dispatch a fresh deploy and open a deploy-fallback issue. If it fails: $recipe."
+            next="The redeploy job will push an empty commit on top of this one (or, if main has moved, use main's newer head), dispatch a fresh deploy and open a deploy-fallback issue. If it fails: $recipe."
           else
             next="No redeploy runs here (this run is itself the fallback, or not on main). To recover by hand: $recipe."
           fi
@@ -308,8 +308,9 @@ jobs:
   # The new-identity fallback (#131). It runs when the deploy job failed, on
   # main, and not inside a run that is itself a fallback (the loop guard). The
   # deploy job fails when the landed check found the site without this build,
-  # but also when no attempt created a deployment, or on a setup, OIDC or
-  # runner failure. Each of those is a new commit and a fresh build a few
+  # but also when no attempt returned a deployment URL to check (one may still
+  # have been created: the accepted AC2 exception above), or on a setup, OIDC
+  # or runner failure. Each of those is a new commit and a fresh build a few
   # minutes later, at most once, which would also have recovered the
   # 2026-08-17 setup 429. A failed build skips deploy, so it never gets here:
   # a new commit would rebuild the same broken tree. failure() is needed
@@ -369,6 +370,8 @@ jobs:
             gh issue comment "$issue" --body "The fallback deploy succeeded: $RUN_URL deployed $GITHUB_SHA. Closing; reopen to investigate further."
             gh issue close "$issue" --reason completed
           else
-            gh issue comment "$issue" --body "The fallback deploy did not succeed (deploy job: $RESULT): $RUN_URL. The site is still on an older build. To recover by hand: branch off origin/main, git commit --allow-empty, git push origin HEAD:main, then gh workflow run deploy.yml --ref main. A rerun of either run does not help."
+            rerun=""
+            if [[ $RESULT == failure ]]; then rerun=" A rerun of either run does not help."; fi
+            gh issue comment "$issue" --body "The fallback deploy did not succeed (deploy job: $RESULT): $RUN_URL. The site may not be serving this build: compare the live /build-version.txt with main's head before recovering by hand (a newer push's deploy may have replaced this one). To recover by hand: branch off origin/main, git commit --allow-empty, git push origin HEAD:main, then gh workflow run deploy.yml --ref main.$rerun"
             echo "::error::The fallback deploy did not succeed (deploy job: $RESULT); commented on deploy-fallback issue #$issue."
           fi

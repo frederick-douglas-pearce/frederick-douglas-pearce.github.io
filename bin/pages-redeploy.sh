@@ -30,9 +30,12 @@
 #      a newer head is not guaranteed a deploy of its own (deploy.yml's paths
 #      filter skips some commits, and an Actions push triggers nothing), and a
 #      redundant deploy is harmless.
-#   4. Open a deploy-fallback issue on every path past the two entry guards
-#      (outside Actions, off main), success or failure, so the
-#      owner is emailed and the history shows how often this happens. The
+#   4. Open a deploy-fallback issue on every path this script itself handles
+#      past the two entry guards (outside Actions, off main): success, or a
+#      fail() verdict. An unexpected failure (a failed checkout step, an
+#      unexpected git error, an unbound variable, the job's 5-min timeout)
+#      opens none, and the red run is the only signal. Otherwise the owner is
+#      emailed and the history shows how often this happens. The
 #      dispatched run's report job comments its result there and closes it on
 #      success.
 #
