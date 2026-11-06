@@ -370,8 +370,6 @@ jobs:
             gh issue comment "$issue" --body "The fallback deploy succeeded: $RUN_URL deployed $GITHUB_SHA. Closing; reopen to investigate further."
             gh issue close "$issue" --reason completed
           else
-            rerun=""
-            if [[ $RESULT == failure ]]; then rerun=" A rerun of either run does not help."; fi
-            gh issue comment "$issue" --body "The fallback deploy did not succeed (deploy job: $RESULT): $RUN_URL. The site may not be serving this build: compare the live /build-version.txt with main's head before recovering by hand (a newer push's deploy may have replaced this one). To recover by hand: branch off origin/main, git commit --allow-empty, git push origin HEAD:main, then gh workflow run deploy.yml --ref main.$rerun"
+            gh issue comment "$issue" --body "The fallback deploy did not succeed (deploy job: $RESULT): $RUN_URL. The site may not be serving this build: compare the live /build-version.txt with main's head before recovering by hand (a newer push's deploy may have replaced this one). To recover by hand: branch off origin/main, git commit --allow-empty, git push origin HEAD:main, then gh workflow run deploy.yml --ref main. If this run's deploy attempts hung or read back a cancel, a same-commit rerun is unlikely to help (it did not on 2026-11-05); if the deploy job failed before its attempts (setup, OIDC), rerun this run."
             echo "::error::The fallback deploy did not succeed (deploy job: $RESULT); commented on deploy-fallback issue #$issue."
           fi

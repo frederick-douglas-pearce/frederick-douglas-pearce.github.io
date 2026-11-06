@@ -72,7 +72,7 @@ repo=${GITHUB_REPOSITORY:-frederick-douglas-pearce/frederick-douglas-pearce.gith
 owner=${GITHUB_REPOSITORY_OWNER:-${repo%%/*}}
 failed_run="$server/$repo/actions/runs/${GITHUB_RUN_ID:-unknown}"
 deploys="$server/$repo/actions/workflows/deploy.yml"
-manual="To recover by hand: branch off origin/main, git commit --allow-empty, git push origin HEAD:main, then gh workflow run deploy.yml --ref main (an empty commit does not match deploy.yml's paths filter, so the dispatch is needed). Rerunning the failed run does not help."
+manual="To recover by hand: branch off origin/main, git commit --allow-empty, git push origin HEAD:main, then gh workflow run deploy.yml --ref main (an empty commit does not match deploy.yml's paths filter, so the dispatch is needed). A same-commit rerun is unlikely to help after a hang (it did not on 2026-11-05); the recipe always works."
 
 # notify <outcome line>: open the deploy-fallback issue. A failure here is a
 # warning, not a failed job: the redeploy itself already happened or failed,

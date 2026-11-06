@@ -226,7 +226,7 @@ success. The label is load-bearing: `report` finds the issue by it. An open
 `deploy-fallback` issue means the site may still be stale. Recover by hand the same way:
 branch off `origin/main`, `git commit --allow-empty`, `git push origin HEAD:main`, then
 `gh workflow run deploy.yml --ref main`. The dispatch is needed because an empty commit
-doesn't match the `paths:` filter. **Rerunning the failed run does not help.** The `drill`
+doesn't match the `paths:` filter. **A same-commit rerun did not help on 2026-11-05; use the recipe.** The `drill`
 dispatch input exercises the whole path, and its procedure is in the comment on that input.
 Run it only off-hours.
 
