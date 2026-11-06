@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 #
 # The redeploy job's fallback, run by .github/workflows/deploy.yml (#131) after
-# its deploy job failed for STUCK_SHA, which means three attempts at that commit
-# and the landed check all failed. It gives the same content a new deployment
+# its deploy job failed for STUCK_SHA on main, for any reason: usually three
+# failed attempts at that commit and a not-landed stamp check, but also a
+# setup, OIDC or runner failure (see the redeploy job's comment in
+# deploy.yml). It gives the same content a new deployment
 # identity (an empty commit on top of STUCK_SHA), dispatches deploy.yml with
 # fallback=true, and opens a deploy-fallback issue that @-mentions the owner.
 # It pushes to main, so it refuses to run outside Actions or off main.
@@ -28,7 +30,8 @@
 #      a newer head is not guaranteed a deploy of its own (deploy.yml's paths
 #      filter skips some commits, and an Actions push triggers nothing), and a
 #      redundant deploy is harmless.
-#   4. Open a deploy-fallback issue on every path, success or failure, so the
+#   4. Open a deploy-fallback issue on every path past the two entry guards
+#      (outside Actions, off main), success or failure, so the
 #      owner is emailed and the history shows how often this happens. The
 #      dispatched run's report job comments its result there and closes it on
 #      success.
@@ -73,7 +76,7 @@ manual="To recover by hand: branch off origin/main, git commit --allow-empty, gi
 # and the deploy run is red either way.
 notify() {
   local body
-  body="@$owner the Pages deploy of \`$stuck\` failed after three attempts at that commit and the landed check, so the redeploy fallback ran (#131).
+  body="@$owner the deploy job for \`$stuck\` failed (every attempt at that commit and the landed check, or a setup, OIDC or runner failure; the failed run shows which step), so the redeploy fallback ran (#131).
 
 - Failed run: $failed_run
 - What redeploy did: $1
@@ -107,7 +110,7 @@ fi
 git config user.name "github-actions"
 git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 git commit --quiet --allow-empty -m "chore: redeploy $short after stuck Pages deployment [fallback]" \
-  -m "The deploy of $stuck failed after three attempts at that commit, so this empty commit gives the same content a new Pages deployment. Pushed by the redeploy job in .github/workflows/deploy.yml (#131)."
+  -m "The deploy job for $stuck failed, so this empty commit gives the same content a new Pages deployment. Pushed by the redeploy job in .github/workflows/deploy.yml (#131)."
 sha=$(git rev-parse HEAD)
 
 # 2. Push, never forcing.

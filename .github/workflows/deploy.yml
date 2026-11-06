@@ -56,8 +56,8 @@ on:
       # Set by the redeploy job below (bin/pages-redeploy.sh), and by hand
       # only for the drill. A run started with it never runs redeploy again,
       # so a hang that survives the new commit fails red once instead of
-      # looping, and its report job comments the outcome on the deploy-fallback
-      # issue.
+      # looping. Unless it is a drill, its report job comments the outcome on
+      # the deploy-fallback issue.
       fallback:
         description: "Internal: set by the redeploy fallback (by hand only for the drill)"
         type: boolean
@@ -177,12 +177,13 @@ jobs:
   # 3. Otherwise the job fails, and the redeploy job below gives the same
   #    content a new commit.
   #
-  # Time to live: a hang a retry recovers, ~9.5-11 min. A hang like
-  # 2026-11-05's, ~21-28 min (two attempts to their caps and the third read
-  # back canceled, ~14.5 min, then redeploy, a full build of 5-12 min and the
-  # publish), and up to ~35 min if all three hang to the cap. Both miss the
-  # daily ESG SLA, and that is accepted: the alternative waited on a human, ~4 h
-  # on 2026-11-05.
+  # Time to live, counted from the push: a hang a retry recovers, ~14.5-16.5
+  # min (measured 14.5, 16.4 and 16.6 on the three above). A hang like
+  # 2026-11-05's, ~25-34 min: the first build (~4-6 min), two attempts to
+  # their caps and the third read back canceled (~14.5 min), then redeploy, a
+  # second full build of 5-12 min and the publish. Up to ~40 min if all three
+  # hang to the cap. Both miss the daily ESG SLA, and that is accepted: the
+  # alternative waited on a human, ~4 h on 2026-11-05.
   deploy:
     needs: build
     # Never deploy from a PR; PRs only validate the build job above.
@@ -221,10 +222,12 @@ jobs:
     steps:
       # Each attempt has a 7-min step cap over the action's 6-min one: the
       # action's poll interval backs off to 30s, so it can overshoot its cap
-      # by up to ~30s, and the step cap also bounds a hung create(). Whether a
-      # step that hits its cap reports outcome failure or cancelled is not
-      # verified here, so the conditions below accept both. A run that is
-      # canceled as a whole skips these steps anyway (no always()).
+      # by up to ~30s, and the step cap also bounds a hung create(). A step
+      # that hits its cap reports outcome failure (actions/runner
+      # StepsRunner.cs RunStepAsync sets TaskResult.Failed on a step timeout;
+      # only canceling the job sets Canceled). The conditions also accept
+      # cancelled, which is harmless: a run canceled as a whole skips these
+      # steps anyway (no always()).
       - name: Deploy to GitHub Pages (attempt 1) 🚀
         id: deploy1
         continue-on-error: true
@@ -262,8 +265,12 @@ jobs:
 
       # Runs only when no attempt succeeded, and decides the job. Only an exact
       # match with this commit counts as landed. Any other stamp (older,
-      # newer, missing or unreadable) means not landed, which costs at most one
-      # redundant redeploy and never a missed one.
+      # newer, missing or unreadable), or no deployment URL to fetch it from
+      # (no attempt's create() returned), means not landed, which costs at most
+      # one redundant redeploy and never a missed one. The no-URL case is an
+      # accepted exception to "a late landing is never redone" (#131): a
+      # create() that hung or errored may still have created a deployment
+      # that lands later.
       - name: Check whether the site has this build 🔎
         if: steps.deploy1.outcome != 'success' && steps.deploy2.outcome != 'success' && steps.deploy3.outcome != 'success'
         env:
@@ -279,7 +286,7 @@ jobs:
             next="No redeploy runs here (this run is itself the fallback, or not on main). To recover by hand: $recipe."
           fi
           if [[ -z $PAGE_URL ]]; then
-            echo "::error::No attempt created a Pages deployment, so nothing can have landed. $next"
+            echo "::error::No attempt returned a deployment URL, so the landed check cannot run; treated as not landed (at most one redundant redeploy). $next"
             exit 1
           fi
           for try in 1 2 3; do
@@ -287,8 +294,8 @@ jobs:
               "${PAGE_URL%/}/build-version.txt?run=${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}-${try}" || true)
             if [[ $live == "$GITHUB_SHA" ]]; then
               if [[ $DRILL == true ]]; then
-                echo "::notice::Drill: the live stamp already matches $GITHUB_SHA (likely an earlier deploy of this commit); ignoring it to exercise the not-landed path."
-                break
+                echo "::error::Drill: the live stamp matches $GITHUB_SHA (likely an earlier deploy of this commit) and is ignored by design, so this is treated as not landed to exercise the fallback. $next"
+                exit 1
               fi
               echo "::notice::The live site already serves $GITHUB_SHA (live build-version.txt matches), so nothing is redone."
               exit 0
