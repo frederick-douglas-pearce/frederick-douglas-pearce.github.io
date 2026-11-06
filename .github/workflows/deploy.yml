@@ -52,8 +52,37 @@ on:
       - "!INSTALL.md"
       - "!README.md"
   workflow_dispatch:
+    inputs:
+      # Set by the redeploy job below (bin/pages-redeploy.sh), and by hand
+      # only for the drill. A run started with it never runs redeploy again,
+      # so a hang that survives the new commit fails red once instead of
+      # looping. Unless it is a drill, its report job comments the outcome on
+      # the deploy-fallback issue.
+      fallback:
+        description: "Internal: set by the redeploy fallback (by hand only for the drill)"
+        type: boolean
+        default: false
+      # Forces the hang path on purpose, to exercise the fallback end to end
+      # (#131). Every attempt gets a 1 ms timeout and a 1 ms poll interval, so
+      # deploy-pages creates the deployment, times out right after its first
+      # status poll and cancels it, the state a real hang leaves. (With the
+      # default 5s poll interval a healthy deploy, median ~7s, could report
+      # success first.) The landed check also ignores a match, which could be
+      # an earlier deploy's stamp. Procedure, on main and off-hours (never in
+      # the ~45 min before the ESG push at 07:01 Pacific, 14:01 UTC in summer,
+      # 15:01 UTC in winter): push an empty commit to main, then dispatch
+      # (a) drill + fallback: deploy fails, redeploy and report are skipped,
+      # no commit;
+      # (b) drill alone: redeploy pushes a commit, opens a deploy-fallback
+      # issue, and the dispatched run deploys it and closes the issue.
+      drill:
+        description: "Drill: force every attempt to time out and exercise the redeploy fallback"
+        type: boolean
+        default: false
 
-# Least privilege at the top; the deploy job widens to what Pages needs.
+# Least privilege at the top; the deploy job widens to what Pages needs, the
+# redeploy job to what a commit, a dispatch and an issue need, and the report
+# job to issues only.
 permissions:
   contents: read
 
@@ -110,34 +139,66 @@ jobs:
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
+      # Build stamp: the deploy job's landed check fetches it from the live
+      # site to tell whether this commit's build is what Pages serves. The
+      # Pages status API cannot tell it: on 2026-11-05 it returned an empty
+      # status throughout a hang and after the cancel.
+      - name: Stamp the build 🏷️
+        run: echo "$GITHUB_SHA" > _site/build-version.txt
       - name: Upload Pages artifact 📦
         uses: actions/upload-pages-artifact@v5
         with:
           path: _site
 
-  # Publish the artifact to GitHub Pages, retrying transient
-  # "Deployment failed, try again later." errors. Only the publish is
-  # retried — the build never re-runs. Transient errors fast-fail in seconds,
-  # so a normal retry recovers in well under a minute; the per-attempt timeout
-  # is a safety cap, not a value normal deploys hit. The 6-min cap covers the
-  # full observed history of the publish step (median ~7s, p95 ~278s, max
-  # ~323s over 40 runs), so a slow-but-healthy deploy succeeds on attempt 1
-  # rather than being killed and retried. The pathological ceiling
-  # (3 x 360s timeout + 30s + 60s = 19.5 min) only occurs if every attempt
-  # runs to the full cap — i.e. a sustained Pages outage, when the daily SLA
-  # is unmeetable regardless.
+  # Publish the artifact to GitHub Pages, retrying on the same commit first
+  # and under a new one only when that fails (#25, #131).
+  #
+  # Since PR #26 (2026-07-04) the retries engaged on 5 of 207 non-PR runs.
+  # One was a create() HTTP 500 that attempt 2 recovered (run 38409795380).
+  # Four were hangs: the deployment sat in deployment_queued or updating_pages
+  # until the 6-min cap, and the action canceled it. Three recovered at the
+  # same commit: runs 30160854989 and 31108716653 on attempt 2 (deploy-pages
+  # v4), and 32145772232 on attempt 3 (v5), 60s after attempt 2 read the
+  # cancel back as "Deployment cancelled." in seconds. One never did: run
+  # 42050610219 on 2026-11-05, nor its rerun 3.5 h later. Pages names a
+  # deployment after GITHUB_SHA, and only a new commit deployed it. So:
+  #
+  # 1. Up to three attempts at this commit, 30s then 60s apart, each capped at
+  #    6 min by the action. The cap covers the observed history of healthy
+  #    publishes (median ~7s, p95 ~278s, max ~323s over 40 runs, #25), so a
+  #    slow-but-healthy deploy succeeds on attempt 1 instead of being killed.
+  #    The action allows at most 10 min. It cancels a deployment only on
+  #    timeout, after too many status-poll errors, or on a signal. A final
+  #    error status such as "Deployment failed, try again later." fails the
+  #    step without a cancel.
+  # 2. If no attempt succeeded, the landed check: a deployment the action
+  #    canceled can still finish, so if the live build-version.txt already
+  #    equals this commit the job passes and nothing is redone.
+  # 3. Otherwise the job fails, and the redeploy job below gives the same
+  #    content a new commit.
+  #
+  # Time to live, counted from the push: a hang a retry recovers, ~14.5-16.5
+  # min (measured 14.5, 16.4 and 16.6 on the three above). A hang like
+  # 2026-11-05's, ~25-34 min: the first build (~4-6 min), two attempts to
+  # their caps and the third read back canceled (~14.5 min), then redeploy, a
+  # second full build of 5-12 min and the publish. Up to ~40 min if all three
+  # hang to the cap. Both miss the daily ESG SLA, and that is accepted: the
+  # alternative waited on a human, ~4 h on 2026-11-05.
   deploy:
     needs: build
     # Never deploy from a PR; PRs only validate the build job above.
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
-    # Deliberately larger than the build job's, and NOT 20: the retry ladder
-    # below has a pathological ceiling of 3 x 360s + 30s + 60s = 19.5 min when
-    # every attempt runs to its full cap. A tighter timeout would kill a
-    # legitimately-retrying publish, which is the exact failure this ladder
-    # exists to survive. 25 leaves 5.5 min of margin over that ceiling while
-    # still bounding the 6-hour default. Recompute if the per-attempt cap or
-    # either backoff changes.
+    # Worst case ~23.3 min: three attempts to their 7-min step caps (21), the
+    # 30s and 60s backoffs, and the landed check (under 1 min). That leaves
+    # ~1.5 min for job setup inside 25. The step caps are what bound a
+    # create() call that hangs, which the action's own timeout does not cover
+    # (its clock starts after create() returns). Without them a hung create()
+    # would run into this cap, the job would end cancelled, and redeploy,
+    # which runs only on failure, would not run. Kept at 25 because
+    # .github/workflows/repo-stats.yml's schedule comment counts on "up to its
+    # 25-min cap". Recompute both if a cap, a backoff or the landed check
+    # changes.
     #
     # Safe despite the concurrency group below: timeout-minutes measures
     # execution time on the runner, not time spent queued waiting for the
@@ -145,7 +206,10 @@ jobs:
     timeout-minutes: 25
     # Serialize deploys and never cancel an in-flight publish, so a retrying
     # run can't be killed by the next push (and vice versa). Scoped to this
-    # job so PR build runs don't share the group.
+    # job so PR build runs don't share the group. redeploy and report stay out
+    # of it: they never publish, and a queued member of the group replaces a
+    # pending one, so in the group a redeploy could cancel a newer push's
+    # pending deploy, or be canceled by one and lose the fallback.
     concurrency:
       group: "pages"
       cancel-in-progress: false
@@ -156,34 +220,156 @@ jobs:
       name: github-pages
       url: ${{ steps.deploy1.outputs.page_url || steps.deploy2.outputs.page_url || steps.deploy3.outputs.page_url }}
     steps:
-      # Attempt 1 — most deploys succeed here.
+      # Each attempt has a 7-min step cap over the action's 6-min one: the
+      # action's poll interval backs off to 30s, so it can overshoot its cap
+      # by up to ~30s, and the step cap also bounds a hung create(). A step
+      # that hits its cap reports outcome failure (actions/runner
+      # StepsRunner.cs RunStepAsync sets TaskResult.Failed on a step timeout;
+      # only canceling the job sets Canceled). The conditions also accept
+      # cancelled, which is harmless: a run canceled as a whole skips these
+      # steps anyway (no always()).
       - name: Deploy to GitHub Pages (attempt 1) 🚀
         id: deploy1
         continue-on-error: true
+        timeout-minutes: 7
         uses: actions/deploy-pages@v5
         with:
-          timeout: 360000 # 6 min cap per attempt (default is 10 min); covers observed p100 (~323s)
+          timeout: ${{ inputs.drill && 1 || 360000 }} # 6 min (default 10); drill: 1 ms
+          reporting_interval: ${{ inputs.drill && 1 || 5000 }} # 5000 is the action's default
 
-      # Attempt 2 — after a 30s backoff, only if attempt 1 failed.
       - name: Backoff before attempt 2 ⏳
-        if: steps.deploy1.outcome == 'failure'
+        if: steps.deploy1.outcome == 'failure' || steps.deploy1.outcome == 'cancelled'
         run: sleep 30
       - name: Deploy to GitHub Pages (attempt 2) 🚀
         id: deploy2
-        if: steps.deploy1.outcome == 'failure'
+        if: steps.deploy1.outcome == 'failure' || steps.deploy1.outcome == 'cancelled'
         continue-on-error: true
+        timeout-minutes: 7
         uses: actions/deploy-pages@v5
         with:
-          timeout: 360000
+          timeout: ${{ inputs.drill && 1 || 360000 }}
+          reporting_interval: ${{ inputs.drill && 1 || 5000 }}
 
-      # Attempt 3 (final) — after a 60s backoff. Not continue-on-error, so a
-      # genuine, persistent failure still fails the job and surfaces loudly.
       - name: Backoff before attempt 3 ⏳
-        if: steps.deploy1.outcome == 'failure' && steps.deploy2.outcome == 'failure'
+        if: steps.deploy2.outcome == 'failure' || steps.deploy2.outcome == 'cancelled'
         run: sleep 60
-      - name: Deploy to GitHub Pages (attempt 3, final) 🚀
+      - name: Deploy to GitHub Pages (attempt 3) 🚀
         id: deploy3
-        if: steps.deploy1.outcome == 'failure' && steps.deploy2.outcome == 'failure'
+        if: steps.deploy2.outcome == 'failure' || steps.deploy2.outcome == 'cancelled'
+        continue-on-error: true
+        timeout-minutes: 7
         uses: actions/deploy-pages@v5
         with:
-          timeout: 360000
+          timeout: ${{ inputs.drill && 1 || 360000 }}
+          reporting_interval: ${{ inputs.drill && 1 || 5000 }}
+
+      # Runs only when no attempt succeeded, and decides the job. Only an exact
+      # match with this commit counts as landed. Any other stamp (older,
+      # newer, missing or unreadable), or no deployment URL to fetch it from
+      # (no attempt's create() returned), means not landed, which costs at most
+      # one redundant redeploy and never a missed one. The no-URL case is an
+      # accepted exception to "a late landing is never redone" (#131): a
+      # create() that hung or errored may still have created a deployment
+      # that lands later.
+      - name: Check whether the site has this build 🔎
+        if: steps.deploy1.outcome != 'success' && steps.deploy2.outcome != 'success' && steps.deploy3.outcome != 'success'
+        env:
+          PAGE_URL: ${{ steps.deploy1.outputs.page_url || steps.deploy2.outputs.page_url || steps.deploy3.outputs.page_url }}
+          DRILL: ${{ inputs.drill || false }}
+          FALLBACK: ${{ inputs.fallback || false }}
+          REF: ${{ github.ref }}
+        run: |
+          recipe="branch off origin/main, git commit --allow-empty, git push origin HEAD:main, then gh workflow run deploy.yml --ref main (the dispatch is needed: an empty commit does not match the paths filter)"
+          if [[ $REF == refs/heads/main && $FALLBACK != true ]]; then
+            next="The redeploy job will push an empty commit on top of this one (or, if main has moved, use main's newer head), dispatch a fresh deploy and open a deploy-fallback issue. If it fails: $recipe."
+          else
+            next="No redeploy runs here (this run is itself the fallback, or not on main). To recover by hand: $recipe."
+          fi
+          if [[ -z $PAGE_URL ]]; then
+            echo "::error::No attempt returned a deployment URL, so the landed check cannot run; treated as not landed (at most one redundant redeploy). $next"
+            exit 1
+          fi
+          for try in 1 2 3; do
+            live=$(curl -fsS --max-time 10 -H 'Cache-Control: no-cache' \
+              "${PAGE_URL%/}/build-version.txt?run=${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}-${try}" || true)
+            if [[ $live == "$GITHUB_SHA" ]]; then
+              if [[ $DRILL == true ]]; then
+                echo "::error::Drill: the live stamp matches $GITHUB_SHA (likely an earlier deploy of this commit) and is ignored by design, so this is treated as not landed to exercise the fallback. $next"
+                exit 1
+              fi
+              echo "::notice::The live site already serves $GITHUB_SHA (live build-version.txt matches), so nothing is redone."
+              exit 0
+            fi
+            if ((try < 3)); then sleep 10; fi
+          done
+          echo "::error::The site is not serving $GITHUB_SHA (live build-version.txt: '${live:-unreadable}') after every attempt at this commit failed. $next"
+          exit 1
+
+  # The new-identity fallback (#131). It runs when the deploy job failed, on
+  # main, and not inside a run that is itself a fallback (the loop guard). The
+  # deploy job fails when the landed check found the site without this build,
+  # but also when no attempt returned a deployment URL to check (one may still
+  # have been created: the accepted AC2 exception above), or on a setup, OIDC
+  # or runner failure. Each of those is a new commit and a fresh build a few
+  # minutes later, at most once, which would also have recovered the
+  # 2026-08-17 setup 429. A failed build skips deploy, so it never gets here:
+  # a new commit would rebuild the same broken tree. failure() is needed
+  # because a job whose needs failed is otherwise skipped before its if: is
+  # read. It also opens the deploy-fallback issue that notifies the owner.
+  # Details in bin/pages-redeploy.sh.
+  redeploy:
+    needs: deploy
+    if: failure() && needs.deploy.result == 'failure' && github.ref == 'refs/heads/main' && !inputs.fallback
+    runs-on: ubuntu-latest
+    # One push, up to 40s of dispatch backoff and one issue. It does not wait
+    # on the run it dispatches; that run's report job follows up.
+    timeout-minutes: 5
+    permissions:
+      contents: write # push the empty commit
+      actions: write # dispatch deploy.yml
+      issues: write # open the deploy-fallback issue
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v7
+        with:
+          # The failed commit, not main's head: the empty commit must be its
+          # child, so the push succeeds only if main has not moved.
+          ref: ${{ github.sha }}
+      - name: Commit and redeploy under a new identity 🔁
+        env:
+          GH_TOKEN: ${{ github.token }}
+          STUCK_SHA: ${{ github.sha }}
+        run: bin/pages-redeploy.sh
+
+  # Closes the loop on a fallback: in a run redeploy dispatched, comment the
+  # deploy job's result on the most recent open deploy-fallback issue, and
+  # close the issue on success. Runs whatever deploy did (always()), but never
+  # on a failed build, which skips deploy and would only report "skipped", and
+  # never in a drill, whose deploy fails on purpose (drill step (a)).
+  report:
+    needs: deploy
+    if: always() && inputs.fallback && !inputs.drill && github.ref == 'refs/heads/main' && needs.deploy.result != 'skipped'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      issues: write # comment on and close the deploy-fallback issue
+    steps:
+      - name: Report the fallback deploy on its issue 📣
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RESULT: ${{ needs.deploy.result }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          issue=$(gh issue list --label deploy-fallback --state open --limit 1 --json number --jq '.[0].number // empty')
+          if [[ -z $issue ]]; then
+            echo "::notice::No open deploy-fallback issue to report on (a drill, or the issue was closed by hand). Fallback deploy result: $RESULT, $RUN_URL"
+            exit 0
+          fi
+          if [[ $RESULT == success ]]; then
+            gh issue comment "$issue" --body "The fallback deploy succeeded: $RUN_URL deployed $GITHUB_SHA. Closing; reopen to investigate further."
+            gh issue close "$issue" --reason completed
+          else
+            gh issue comment "$issue" --body "The fallback deploy did not succeed (deploy job: $RESULT): $RUN_URL. The site may not be serving this build: compare the live /build-version.txt with main's head before recovering by hand (a newer push's deploy may have replaced this one). To recover by hand: branch off origin/main, git commit --allow-empty, git push origin HEAD:main, then gh workflow run deploy.yml --ref main. If this run's deploy attempts hung or read back a cancel, a same-commit rerun is unlikely to help (it did not on 2026-11-05); if the deploy job failed before its attempts (setup, OIDC), rerun this run."
+            echo "::error::The fallback deploy did not succeed (deploy job: $RESULT); commented on deploy-fallback issue #$issue."
+          fi

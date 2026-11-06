@@ -37,11 +37,15 @@
 #   6. Dispatch deploy.yml. The comment at step 6 below says why it is
 #      explicit.
 #
-# Steps 5 and 6 are kept together at the end, using only $DATA, $sha, fail and
-# summary, so #72/#73 can lift them out when a second committing workflow needs
-# them.
+# Steps 5 and 6 use the shared push and dispatch functions in
+# bin/push-dispatch.sh, lifted out of this script for bin/pages-redeploy.sh
+# (#131). #72/#73 should use them too. This script keeps its own failure
+# messages.
 
 set -euo pipefail
+
+# shellcheck source=bin/push-dispatch.sh
+source "$(dirname "$0")/push-dispatch.sh"
 
 DATA=_data/repository_stats.json
 INPUT=_data/repositories.yml
@@ -221,35 +225,30 @@ git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 git add -- "$DATA"
 git commit --quiet -m "chore(repos): refresh repository stats"
 sha=$(git rev-parse HEAD)
-if ! git push origin HEAD:main; then
-  # The client can report failure after the remote took the update. A re-run
-  # would then find nothing to do and never dispatch, so check main first.
-  if ! remote=$(git ls-remote origin refs/heads/main); then
-    fail "push of $sha reported failure, and git ls-remote failed too, so whether main has it is unknown. If main contains $sha, run: gh workflow run deploy.yml --ref main. If not, re-run this workflow."
-  fi
-  if [[ ${remote%%[[:space:]]*} != "$sha" ]]; then
-    fail "push of $sha to main failed and main's head is not $sha. Most likely the push was rejected because main moved during the run; rarely, it landed and another push landed on top. Re-run this workflow; it checks out the new main. If the re-run reports unchanged, main already has the data: run gh workflow run deploy.yml --ref main if no deploy has run since."
-  fi
-  echo "push of $sha reported failure, but main has it; dispatching the deploy."
-fi
+# The client can report failure after the remote took the update. A re-run
+# would then find nothing to do and never dispatch, so push_head_to_main checks
+# main before reporting a failure (bin/push-dispatch.sh).
+push_rc=0
+push_head_to_main || push_rc=$?
+case $push_rc in
+  0) ;;
+  3) fail "push of $sha reported failure, and git ls-remote failed too, so whether main has it is unknown. If main contains $sha, run: gh workflow run deploy.yml --ref main. If not, re-run this workflow." ;;
+  *) fail "push of $sha to main failed and main's head is not $sha. Most likely the push was rejected because main moved during the run; rarely, it landed and another push landed on top. Re-run this workflow; it checks out the new main. If the re-run reports unchanged, main already has the data: run gh workflow run deploy.yml --ref main if no deploy has run since." ;;
+esac
 echo "pushed $sha to main."
 
 # 6. Dispatch the deploy. A push made with the workflow's GITHUB_TOKEN creates
 # no workflow runs, so deploy.yml's `_data/**` push filter never fires for the
 # commit above: without this step the run goes green and the site never
-# updates. workflow_dispatch is one of the two events that token is allowed to
-# trigger, which keeps this PAT-free. Do not "simplify" this into relying on
-# the path filter, and do not replace the token with a PAT (#54, #72,
-# CLAUDE.md "Deploy"). This run does not wait for the deploy, and a failed
-# deploy dispatched by github-actions may notify nobody; the next push-triggered
-# deploy (normally the daily ESG feed) rebuilds main either way.
+# updates. Why the dispatch must stay explicit is in bin/push-dispatch.sh. This
+# run does not wait for the deploy, and a failed deploy dispatched by
+# github-actions may notify nobody; the next push-triggered deploy (normally
+# the daily ESG feed) rebuilds main either way.
 deploys="${GITHUB_SERVER_URL:-https://github.com}/${GITHUB_REPOSITORY:-frederick-douglas-pearce/frederick-douglas-pearce.github.io}/actions/workflows/deploy.yml"
-for delay in 10 30 ""; do
-  if gh workflow run deploy.yml --ref main; then
-    echo "dispatched deploy.yml for $sha; its result is not watched here: $deploys"
-    summary "Pushed $sha and dispatched deploy.yml. This run does not watch the deploy; check it at $deploys"
-    exit 0
-  fi
-  if [[ -n $delay ]]; then sleep "$delay"; fi
-done
+# shellcheck disable=SC2119 # a plain dispatch, no -f inputs
+if dispatch_deploy; then
+  echo "dispatched deploy.yml for $sha; its result is not watched here: $deploys"
+  summary "Pushed $sha and dispatched deploy.yml. This run does not watch the deploy; check it at $deploys"
+  exit 0
+fi
 fail "pushed $sha to main, but dispatching deploy.yml failed 3 times. Run: gh workflow run deploy.yml --ref main. Re-running this workflow will NOT deploy it, because main already has the commit. The next push-triggered deploy (normally the daily ESG feed) ships it anyway."

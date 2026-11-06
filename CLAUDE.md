@@ -207,18 +207,36 @@ non-fast-forward. Run `git worktree list` before assuming which branch is where.
 
 ## Deploy
 
-Push to `main` (path-filtered) → build job → `deploy` job publishing to Pages with a
-three-attempt retry ladder (30s/60s backoff) around `actions/deploy-pages`, serialized on a
-`pages` concurrency group that never cancels in flight. The daily ESG feed push has an
+Push to `main` (path-filtered) → build job → `deploy` job publishing to Pages, serialized on
+a `pages` concurrency group that never cancels in flight. The daily ESG feed push has an
 effective ~14:01 UTC SLA, which is why the timeouts and the concurrency group are tuned the
 way the comments in `deploy.yml` describe — recompute the job `timeout-minutes` if you
-change a per-attempt cap or backoff.
+change a per-attempt cap, a backoff or the landed check.
+
+A failed publish is retried at the same commit first and under a new one only after that
+(#131). The job makes up to three attempts, 30s and then 60s apart, each capped at 6 min.
+That recovered 3 of the 4 hangs on record. If all three fail, the job checks the live
+`/build-version.txt` stamp (a canceled deployment can still finish). If the build isn't
+there, the job fails and the `redeploy` job (`bin/pages-redeploy.sh`) takes over. Pages
+names each deployment after the commit SHA, and on 2026-11-05 every attempt and a rerun 3.5 h
+later kept getting the canceled one back. So `redeploy` pushes an empty commit, dispatches a
+fresh deploy with `fallback=true`, and opens a `deploy-fallback` issue that @-mentions the
+owner. The fallback run's `report` job comments the result there and closes the issue on
+success. The label is load-bearing: `report` finds the issue by it. An open
+`deploy-fallback` issue means the site may still be stale. Recover by hand the same way:
+branch off `origin/main`, `git commit --allow-empty`, `git push origin HEAD:main`, then
+`gh workflow run deploy.yml --ref main`. The dispatch is needed because an empty commit
+doesn't match the `paths:` filter. **A same-commit rerun did not help on 2026-11-05; use the recipe.** The `drill`
+dispatch input exercises the whole path, and its procedure is in the comment on that input.
+Run it only off-hours.
 
 An in-Actions push using the default `GITHUB_TOKEN` does **not** trigger `deploy.yml`;
 a workflow that commits content must dispatch the deploy explicitly.
 `.github/workflows/schedule-posts.txt` (disabled — note the `.txt` extension) has this
-latent bug. `bin/repo-stats-refresh.sh` (run by `repo-stats.yml`) does the dispatch: it
-pushes, then runs `gh workflow run deploy.yml --ref main` with `actions: write`.
+latent bug. `bin/repo-stats-refresh.sh` (run by `repo-stats.yml`) and `bin/pages-redeploy.sh`
+(the `redeploy` job) do the dispatch through the shared functions in `bin/push-dispatch.sh`:
+push, then `gh workflow run deploy.yml --ref main` with `actions: write`. A new committing
+workflow should use them too.
 
 ## Issue tracking
 
