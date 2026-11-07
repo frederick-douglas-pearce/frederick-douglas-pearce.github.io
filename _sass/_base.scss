@@ -612,16 +612,6 @@ footer.sticky-bottom {
 
 // Repositories
 
-// Only the image-era repo_trophies.liquid still uses .repo (gated off by
-// repo_trophies.enabled and out of scope in #54 and #60). No issue schedules
-// this rule's deletion; delete it once that include no longer uses it. The
-// native cards and profile summary below do not.
-@media (min-width: 768px) {
-  .repo {
-    max-width: 50%;
-  }
-}
-
 // One column below 768px, two from there up. Cards in a row stretch to the
 // tallest, and minmax(0, 1fr) stops a long name from widening its column.
 .repo-grid {

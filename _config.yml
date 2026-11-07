@@ -35,19 +35,6 @@ back_to_top: true # set to false to disable the back to top button
 # Theme
 # -----------------------------------------------------------------------------
 
-# github-readme-stats host and themes. The /repositories/ cards (#56) and profile
-# summary (#58) are native HTML (epic #54), so nothing reads these keys any more.
-# #60 removes them. Self-hosting an instance was considered and rejected in #54.
-repo_stats_host: https://github-readme-stats.vercel.app
-
-# repo color theme
-repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
-repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
-repo_trophies:
-  enabled: false
-  theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
-  theme_dark: gitdimmed # https://github.com/ryo-ma/github-profile-trophy
-
 # -----------------------------------------------------------------------------
 # RSS Feed
 # -----------------------------------------------------------------------------
