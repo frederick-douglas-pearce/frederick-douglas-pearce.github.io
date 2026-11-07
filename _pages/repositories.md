@@ -12,10 +12,11 @@ whose public instance went down on 17 Aug 2026. The summary (#58) replaces that
 service's aggregate "GitHub users" card and carries the profile link. Each sits
 inside a block element so kramdown passes the include's HTML through as is.
 
-Upstream al-folio also renders a "trophies" block here from
+Upstream al-folio also renders a "trophies" block here, as remote images from
 github-profile-trophy.vercel.app. #60 removed it, with its include and
-_config.yml keys, because that service returns 402: switched on, it would bring
-back the broken images #54 replaced. Don't restore it from upstream.
+_config.yml keys: it is the same dependency on a third-party image service that
+#54 removed from this page, and that host returned 402 when checked on
+6 Nov 2026. Don't restore it from upstream.
 {% endcomment %}
 
 <div class="repo-profiles">
