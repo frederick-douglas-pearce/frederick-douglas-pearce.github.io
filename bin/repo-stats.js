@@ -132,9 +132,10 @@ const EXIT_TRANSIENT = 75;
 const REPO_PATTERN = /^[\w.-]+\/[\w.-]+$/;
 const LOGIN_PATTERN = /^[A-Za-z0-9](?:[A-Za-z0-9-]{0,38})$/;
 // A plain list item that Jekyll's reader (SafeYAML) reads as a boolean, null,
-// integer or date rather than a string, so the page's lookups (the profile
-// summary, the owner-prefix check in repo.liquid) use a key this script never
-// wrote; or that the refresh guardrail's reader (Psych's bare safe_load) does
+// integer or date rather than a string, so the profile summary
+// (repo_user.liquid) looks the user up under a key this script never wrote,
+// and the owner-prefix check in repo.liquid (`github_users contains` the
+// repo's owner) stops matching; or that the refresh guardrail's reader (Psych's bare safe_load) does
 // not read as a string, so the weekly run fails with a verdict that blames a
 // script rather than the curation (#130). The two readers disagree, so this is
 // the union of both: `0Xa` is an integer only to SafeYAML, and `2026-6-29` is a
