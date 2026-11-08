@@ -78,7 +78,10 @@
  * an avatar URL that is not plain https on avatars.githubusercontent.com also
  * fails, as an API-format problem rather than a curation one. Both lists must
  * be non-empty block lists: a missing, empty or flow-form list fails rather
- * than silently dropping what the page shows. The override map may be absent
+ * than silently dropping what the page shows. An unquoted item that YAML may
+ * read as a date, number, boolean or null (`2026-11-02`, `1234`, `yes`) fails
+ * too, with the action to quote it, since Jekyll would key it as that type and
+ * the page's lookup would miss. The override map may be absent
  * or empty, but a flow-form one fails for the same reason. So does any other
  * top-level line, since a form of the map this reader does not recognize
  * would otherwise read as no map while Jekyll still applies it. A transient
@@ -125,6 +128,19 @@ const EXIT_TRANSIENT = 75;
 
 const REPO_PATTERN = /^[\w.-]+\/[\w.-]+$/;
 const LOGIN_PATTERN = /^[A-Za-z0-9](?:[A-Za-z0-9-]{0,38})$/;
+// A plain list item that Jekyll's reader (SafeYAML) or the refresh guardrail's
+// (Psych safe_load) reads as a boolean, null, integer or date rather than a
+// string, so the page would look up a key this script never wrote (#130). The
+// two readers disagree, so this is the union of both: `0Xa` is an integer only
+// to SafeYAML, `2026-6-29` a date only to Psych. It is a deliberate superset,
+// since a false positive (`08`, `0B0`, `2520-12-77`) costs only a pair of
+// quotes. It is complete only for LOGIN_PATTERN's `[A-Za-z0-9-]`, where every
+// other YAML 1.1 typed form is unwritable (floats, `.inf` and timestamps need
+// `.` or `:`, null `~`, signs a leading `+`/`-`; Psych versions differ only on
+// `_` and `,` in integers). It is not a general YAML type test, so do not
+// reuse it for MAP_ENTRY values, which allow those characters. A REPO_PATTERN
+// item contains `/`, so never matches.
+const TYPED_SCALAR = /^(?:yes|no|true|false|on|off|null|[0-9]+|0x[0-9a-f]+|0b[01]+|[0-9]{4}-[0-9]{1,2}-[0-9]{1,2})$/i;
 const TOKEN_PATTERN = /^[\x21-\x7e]+$/;
 
 const RETRY = "re-run later";
@@ -258,6 +274,15 @@ function readList(file, lines, key, pattern, what) {
     if (!m) throw new Failure(file, false, `line ${n + 1}: not a list item: ${text}`, fix);
     const item = m[2];
     if (!pattern.test(item)) throw new Failure(file, false, `line ${n + 1}: not ${what}: ${item}`, fix);
+    // A quoted item is always a string; only a plain one can be typed.
+    if (m[1] === "" && TYPED_SCALAR.test(item)) {
+      throw new Failure(
+        file,
+        false,
+        `line ${n + 1}: ${item} is unquoted, and YAML may read it as a date, number, boolean or null rather than ${what}`,
+        `quote it in _data/repositories.yml: - "${item}"`
+      );
+    }
     // GitHub names are case-insensitive, so two spellings are one repo or user.
     const folded = item.toLowerCase();
     if (seen.has(folded)) throw new Failure(file, false, `line ${n + 1}: ${item} duplicates line ${seen.get(folded)}`, fix);
