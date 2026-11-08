@@ -208,9 +208,11 @@ kramdown:
 # Includes & excludes
 include: ["_pages", "_scripts"]
 exclude:
-  # Repo-only files. Jekyll publishes every file whose name doesn't start with
-  # `_`, `.`, `#` or `~`, so a new repo-only file at the root goes live unless
-  # it is listed here (#126: CLAUDE.md and requirements.txt were served live).
+  # Repo-only files. Jekyll publishes any root file it doesn't filter out, and
+  # its own filters (a leading `_`, `.`, `#` or `~`; built-in excludes such as
+  # Gemfile and node_modules) don't catch ordinary names. So a new repo-only
+  # root file goes live unless it is listed here (#126: CLAUDE.md and
+  # requirements.txt were served live).
   - bin/
   - CLAUDE.md
   - CONTRIBUTING.md
