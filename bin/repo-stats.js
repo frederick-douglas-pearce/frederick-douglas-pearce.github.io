@@ -81,7 +81,13 @@
  * than silently dropping what the page shows. The override map may be absent
  * or empty, but a flow-form one fails for the same reason. So does any other
  * top-level line, since a form of the map this reader does not recognize
- * would otherwise read as no map while Jekyll still applies it. A transient
+ * would otherwise read as no map while Jekyll still applies it. An unquoted
+ * list item that YAML may read as a date, number, boolean or null
+ * (`2026-11-02`, `1234`, `yes`) fails too, with the action to quote it: where
+ * Jekyll reads it as that type, the page's lookups by the string this script
+ * keys it under miss, and where the refresh guardrail's Psych does not read it
+ * as a string, the weekly run fails with a verdict that blames a script rather
+ * than the curation (see TYPED_SCALAR). A transient
  * failure (5xx, network error, timeout, rate limit, unreadable response) also
  * fails the run, with its own exit code, which tells a scheduled job to retry
  * rather than ask a human to edit the curation. Override keys are checked
@@ -125,6 +131,24 @@ const EXIT_TRANSIENT = 75;
 
 const REPO_PATTERN = /^[\w.-]+\/[\w.-]+$/;
 const LOGIN_PATTERN = /^[A-Za-z0-9](?:[A-Za-z0-9-]{0,38})$/;
+// A plain list item that Jekyll's reader (SafeYAML) reads as a boolean, null,
+// integer or date rather than a string, so the profile summary
+// (repo_user.liquid) looks the user up under a key this script never wrote,
+// and the owner-prefix check in repo.liquid (`github_users contains` the
+// repo's owner) stops matching; or that the refresh guardrail's reader (Psych's bare safe_load) does
+// not read as a string, so the weekly run fails with a verdict that blames a
+// script rather than the curation (#130). The two readers disagree, so this is
+// the union of both: `0Xa` is an integer only to SafeYAML, and `2026-6-29` is a
+// string to SafeYAML but date-shaped to Psych, whose bare safe_load refuses any
+// date-shaped item, valid or not (`2026-02-30`). It is a deliberate superset,
+// since a false positive (`08`, `0B0`, `2520-12-77`) costs only a pair of
+// quotes. It is complete only for LOGIN_PATTERN's `[A-Za-z0-9-]`, where every
+// other YAML 1.1 typed form is unwritable (floats, base-60 numbers, `.inf` and
+// timestamps need `.` or `:`, null `~`, signs a leading `+`/`-`; Psych
+// versions differ only on `_` and `,` in integers). It is not a general YAML
+// type test, so do not reuse it for MAP_ENTRY values, which allow those
+// characters. A REPO_PATTERN item contains `/`, so never matches.
+const TYPED_SCALAR = /^(?:yes|no|true|false|on|off|null|[0-9]+|0x[0-9a-f]+|0b[01]+|[0-9]{4}-[0-9]{1,2}-[0-9]{1,2})$/i;
 const TOKEN_PATTERN = /^[\x21-\x7e]+$/;
 
 const RETRY = "re-run later";
@@ -258,6 +282,15 @@ function readList(file, lines, key, pattern, what) {
     if (!m) throw new Failure(file, false, `line ${n + 1}: not a list item: ${text}`, fix);
     const item = m[2];
     if (!pattern.test(item)) throw new Failure(file, false, `line ${n + 1}: not ${what}: ${item}`, fix);
+    // A quoted item is always a string; only a plain one can be typed.
+    if (m[1] === "" && TYPED_SCALAR.test(item)) {
+      throw new Failure(
+        file,
+        false,
+        `line ${n + 1}: ${item} is unquoted, and YAML may read it as a date, number, boolean or null rather than ${what}`,
+        `quote it in _data/repositories.yml: - "${item}"`
+      );
+    }
     // GitHub names are case-insensitive, so two spellings are one repo or user.
     const folded = item.toLowerCase();
     if (seen.has(folded)) throw new Failure(file, false, `line ${n + 1}: ${item} duplicates line ${seen.get(folded)}`, fix);
