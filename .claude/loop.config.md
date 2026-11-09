@@ -35,7 +35,7 @@ The binding table. The engine names each parameter in `CAPS`; the values here ar
 
 | Parameter | Value | Notes |
 |-----------|-------|-------|
-| `BACKLOG_SOURCE` | GitHub issues on `frederick-douglas-pearce/frederick-douglas-pearce.github.io`. Epics are plain issues that list their children by number (no milestones, no native sub-issues). **Current active epic: #54** (native `/repositories/` cards), children #55–#60, label `repositories`. Order is the epic's priority table: **#55 → #56 → #57** is the MVP that un-breaks production and ships before **#58, #59, #60**. | from `CLAUDE.md` "Issue tracking" and the #54 body. Specs for in-flight epics live in `.claude/specs/` |
+| `BACKLOG_SOURCE` | GitHub issues on `frederick-douglas-pearce/frederick-douglas-pearce.github.io`. Epics are plain issues that list their children by number (no milestones, no native sub-issues). **Current active epic: #142** (tech debt and deploy hardening), label `tech-debt`. Order is the epic's priority table: **#126 → #135 → #132 → #134 → #136 → #27 → #129**. #134, #135 and #136 all edit `.github/workflows/deploy.yml`, so they land one at a time, never in parallel. #72, #24 and #120 are out of scope per the epic. | from `CLAUDE.md` "Issue tracking" and the #142 body. The previous epic, #54 (native `/repositories/` cards), closed on 2026-11-07. Specs for in-flight epics live in `.claude/specs/` |
 | `SCOPE_AGENT` | `pm` (user-global subagent) | named in #112. User-global, so not inferable from the repo |
 | `DESIGN_AGENT` | `architect` (user-global subagent) | reviews plans pre-implementation (the architect gate); also rules on scope — and stops for you with that ruling attached — when a BLOCKING code-review finding raises a design question, a separate scope-ruling gate the engine makes due rather than this file. The engine's Gate table is the authoritative **list** of every gate this binding staffs. **Never delete this row.** No value here switches the scope ruling off — absent, `—` or `TODO`, the stop still fires, with no ruling attached and a `gate-error` in its place. The row earns its keep at the architect gate, which does read a deliberate `—` as not-applicable |
 | `CODE_REVIEW` | parallel finder subagents over `git diff main...HEAD` **+ the issue's acceptance criteria**, angles chosen per the diff's risk surface (the code-review gate), then a pass confirming each finding | **`main...HEAD` is round 1's base only** — a round after the first reads the delta since the head the last round read, per the engine's code-review gate, which also fixes when such a round falls back to full. Do not restate a base here that contradicts it. **In this repo `main` means `origin/main`**: there is no usable local `main` here (see `BRANCH_FMT`), so diff against `origin/main...HEAD` after a fresh `git fetch`. The orchestrator runs this itself — the finder fan-out is the engine's inline default and the binding this repo keeps. A porting project may bind a different review procedure here, but only one the orchestrator can actually invoke: a skill marked `disable-model-invocation` is user-triggered only, so keep such skills as a human escalation, never a binding. A gate bound to something it cannot invoke is never journalled passed — the orchestrator falls back to the inline fan-out, records a `- gate-fallback:` line, and surfaces the misbinding to you (engine Gate-outcome invariant) |
@@ -49,10 +49,10 @@ The binding table. The engine names each parameter in `CAPS`; the values here ar
 | `TYPE_CMD` | — (no type checker: Liquid, SCSS and plain Node CJS scripts, no TypeScript) | |
 | `HERMETIC_TEST_CMD` | — (no offline/hermetic tier declared: the repo has no tests at all) | runs at the engine's implement step on a `code`-route change that adds or modifies a test. Confirmed against `CLAUDE.md` ("There are no unit tests"), `package.json` (no `test` script) and the workflows. **Never delete this row:** an absent row reads as unknown and stops the run — write `—` plus a reason instead. **The block must be socket-level — a proxy still resolves DNS.** Verify once: for a wrapper-style block run `<the block> python3 -c "import socket; socket.create_connection(('1.1.1.1',443),3)"` and require it to fail (and to connect without the block); for an in-process blocker, add a throwaway test doing that connect and confirm it fails inside the tier and passes outside it. A bare `—` with no reason, or a `TODO`, escalates — neither is read as "no tier" |
 | `CI_STATUS_CMD` | `gh pr checks <PR>` | GitHub host. PR checks: `check` (Prettier), `build` (`deploy.yml`, **path-filtered**, so a PR touching only excluded paths such as `.claude/**` or `README.md` gets no build check, and that is not a failure), and `analyze` (CodeQL). The `deploy` job runs only on push to `main`. **A push made with `GITHUB_TOKEN` inside Actions does not trigger `deploy.yml`** (#72): a workflow that commits content must dispatch the deploy explicitly |
-| `BRANCH_FMT` | `<type>/<topic>`, where `<type>` is the Conventional Commits type (`feat/`, `fix/`, `docs/`), branched with `git fetch origin && git checkout -b <type>/<topic> origin/main` | from `git branch -a` and recent PR heads (`feat/vote-dashboard-link`, `docs/utm-reddit-source`). **This directory is a detached HEAD and `main` is checked out in the sibling `…-feed` worktree, so `git checkout main` fails.** Leave the `-feed` worktree alone. External syncs and the daily ESG cron (~14:01 UTC) push straight to `main`, so `main` moves during a run: **rebase onto `origin/main` before pushing and again before merging**, never assume it is where it was |
+| `BRANCH_FMT` | `<type>/<topic>`, where `<type>` is the Conventional Commits type (`feat/`, `fix/`, `docs/`), branched with `git fetch origin && git checkout -b <type>/<topic> origin/main` | from `git branch -a` and recent PR heads (`feat/vote-dashboard-link`, `docs/utm-reddit-source`). **This directory is a detached HEAD and `main` is checked out in the sibling `…-feed` worktree, so `git checkout main` fails.** Leave the `-feed` worktree alone. External syncs and the daily ESG push at 07:01 Pacific (14:01 UTC in summer, 15:01 UTC in winter) push straight to `main`, so `main` moves during a run: **rebase onto `origin/main` before pushing and again before merging**, never assume it is where it was |
 | `COMMIT_CONV` | Conventional Commits: `type(scope): imperative summary`, scope optional (`feat(about):`, `fix(a11y):`, `docs(utm):`). `chore(sync):` is **reserved** for the external post syncs and `Update ESG news feed - <date>` for the cron; never use either. American English. Co-author trailer per harness policy | from `git log origin/main` and #112 |
 | `PR_TEMPLATE` | — (none: no `.github/PULL_REQUEST_TEMPLATE.md`) | |
-| `MERGE_METHOD` | Squash: `gh pr merge <PR> --squash`, **without `--delete-branch`**; then delete the branch by hand (`git push origin --delete <branch>`, `git branch -D <branch>`). The squash subject is the Conventional Commits title with the PR number appended, e.g. `feat(about): … (#117)` | from recent history (#109–#111, #115–#117 are one squashed commit each) and the #54 working notes: `--delete-branch` tries to switch the local checkout to `main`, which fails in this worktree layout **after the remote merge has already succeeded**. After merging a change that deploys, confirm the deploy with `gh run list --workflow=deploy.yml --limit 1`, **then check the live site**. Fetch each affected URL on https://frederick-douglas-pearce.github.io and assert that the element or text the change adds is present, as `VERIFY` (a) did locally. A green deploy run does not prove the page changed. Pages can serve a cached copy for a minute or so, so retry once before calling it a failure. Skip this for a change with no rendered effect (e.g. a `bin/` script nothing reads yet) |
+| `MERGE_METHOD` | Squash: `gh pr merge <PR> --squash`, **without `--delete-branch`**; then delete the branch by hand (`git push origin --delete <branch>`, `git branch -D <branch>`). The squash subject is the Conventional Commits title with the PR number appended, e.g. `feat(about): … (#117)` | from recent history (#109–#111, #115–#117 are one squashed commit each) and the #54 working notes: `--delete-branch` tries to switch the local checkout to `main`, which fails in this worktree layout **after the remote merge has already succeeded**. After merging a change that deploys, confirm the deploy with `gh run list --workflow=deploy.yml --limit 1`, **then check the live site**. Fetch each affected URL on https://frederick-douglas-pearce.github.io and assert that the element or text the change adds is present, as `VERIFY` (a) did locally. A green deploy run does not prove the page changed. Pages can serve a cached copy for a minute or so, so retry once before calling it a failure. Skip this for a change with no rendered effect (e.g. a `bin/` script nothing reads yet). An issue whose acceptance can only be checked after deploy is never auto-closed by the merge: see "Post-merge-only acceptance criteria" in §5 |
 | `APPEND_ONLY_FILES` | — (this repo has no append-only decision log, so no `.claude/loop.append-guard.json` sidecar) | scanned for `decisions.md` / `CHANGELOG.md`-style files with repeated `## <ID>` headers; none found. Paths the loop must **never edit** are a different list, in §3 |
 | `LEDGER_ROOT` | `.claude/loop/` | **gitignored** — local working state, never committed |
 | `RELEASE_SCHEME` | No release cycle: every merge to `main` deploys the site. `package.json` has no `version` | merge gate reads "≤ patch bump or no bump" |
@@ -68,8 +68,9 @@ Fire `DESIGN_AGENT` when the plan does any of the following, or when the orchest
 Bias toward calling it. Skip for the `docs` route.
 
 - Adds or changes a workflow under `.github/workflows/`, or anything on the deploy path:
-  `deploy.yml`'s timeouts, retry ladder or `pages` concurrency group (tuned for the ~14:01 UTC ESG
-  feed SLA; see the comments in `deploy.yml`), or a workflow that commits to the repo.
+  `deploy.yml`'s timeouts, retry ladder or `pages` concurrency group (tuned for the SLA of the ESG
+  push at 07:01 Pacific (14:01 UTC in summer, 15:01 UTC in winter); see the comments in
+  `deploy.yml`), or a workflow that commits to the repo.
 - Adds a `_plugins/` plugin, a build-time network dependency, or a third-party library to
   `_config.yml`.
 - Adds a generated or machine-written file under `_data/`, or changes how one is written. It must be
@@ -82,9 +83,9 @@ Bias toward calling it. Skip for the `docs` route.
 - Adds a dependency to `package.json` or `Gemfile`. (Ad hoc tooling deps are installed with
   `npm install --no-save` and stay out of `package.json` on purpose.)
 
-When the issue belongs to an epic that has already had a design review (#54 did, on 17 Aug), the
-architect checks the plan against the decisions recorded in the epic body, including the options it
-lists as rejected, rather than re-opening them.
+When the issue belongs to an epic that has already had a design review, the architect checks the
+plan against the decisions recorded in the epic body, including the options it lists as rejected,
+rather than re-opening them.
 
 ## 3. `SOURCE_LAYOUT` — router signals
 
@@ -100,7 +101,7 @@ lists as rejected, rather than re-opening them.
   content, render, so they route as `code`. So do `_sass/`, `_plugins/`, `_scripts/`, `_config.yml`
   and `.github/workflows/`.
 - **`research` label / path:** — (no research label or convention in this repo).
-- **`stub-defer` marker:** an epic, an issue titled `Epic: …` (e.g. #54). It is tracking-only and
+- **`stub-defer` marker:** an epic, an issue titled `Epic: …` (e.g. #142). It is tracking-only and
   never implemented directly: work its children in the order its priority table gives.
 - **`code` (default):** everything not routed above → full pipeline.
 
@@ -111,8 +112,8 @@ at them; report the finding and say where the fix belongs.
 
 - **`_posts/`**: synced byte-for-byte from `claude-code-sessions`, `us-presidential-vote-analysis`
   and `claude-code-loop`. A fix goes upstream in the publishing repo.
-- **`_data/esg_news.json`**: pushed by the external daily cron (~14:01 UTC). Machine-generated and
-  `.prettierignore`d.
+- **`_data/esg_news.json`**: pushed by the external daily cron at 07:01 Pacific (14:01 UTC in
+  summer, 15:01 UTC in winter). Machine-generated and `.prettierignore`d.
 - **The vendored pygments themes `assets/css/jekyll-pygments-themes-*.css`**: kept byte-identical to
   upstream. Contrast fixes go into `_sass/_syntax.scss` by re-running `node bin/contrast-sweep.js`.
 - Build output and fetched libraries: `_site/`, `.jekyll-cache/`, `assets/libs/`.
@@ -200,3 +201,18 @@ missing ref, not as a clean review: repair it and re-run. Never journal it as cl
   and no test runner is introduced. Keep each check fast, because a mutation means a rebuild.
   The Class B "no test added" finding is still raised. The human acknowledges it at the gate, with
   the check as the evidence; it is not waived in advance.
+- **Post-merge-only acceptance criteria.** When an issue has a criterion that can only be verified
+  on the live site after the deploy (e.g. #126: a file stops being served), the merge must not close
+  the issue:
+  - The PR body says `Refs #N`, never `Closes #N` (or `Fixes`/`Resolves`).
+  - **No commit message on the branch may contain a closing keyword for #N either.** GitHub closes
+    the issue from a branch commit's message even when the squash body says `Refs` (#146 was merged
+    with an explicit `--body` and #126 still closed a second later). The orchestrator never
+    force-pushes, so a slipped keyword can't be reworded away: reopen the issue right after the merge
+    instead.
+  - After the deploy, the orchestrator posts the evidence on the issue (the exact commands and their
+    output) and closes it by hand once it passes. If it fails, the issue is still open and tracking
+    the unmet criterion.
+
+  Reason: with `Closes`, a failed deploy leaves no open issue for the criterion, and the step someone
+  has to remember falls on the failure path.
