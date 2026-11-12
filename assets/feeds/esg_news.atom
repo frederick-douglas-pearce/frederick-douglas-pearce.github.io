@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://frederick-douglas-pearce.github.io/esg-news/</id>
   <title>ESG Sportswear News</title>
-  <updated>2026-11-11T15:00:35.819825+00:00</updated>
+  <updated>2026-11-12T15:00:26.959799+00:00</updated>
   <author>
     <name>ESG News Classifier</name>
     <uri>https://frederick-douglas-pearce.github.io</uri>
@@ -28,8 +28,8 @@
     <link href="https://www.textileworld.com/textile-world/2025/09/purpose-driven-and-material-innovation-xpore-teams-up-with-patagonia-and-industry-leaders-at-from-material-science-to-mission-2025-circular-economy-forum/"/>
     <summary>Brands: Patagonia | Categories: Environmental, Social | Source: textileworld.com</summary>
     <category term="Patagonia" label="Patagonia"/>
-    <category term="social" label="Social"/>
     <category term="environmental" label="Environmental"/>
+    <category term="social" label="Social"/>
     <published>2025-09-23T18:30:00+00:00</published>
   </entry>
   <entry>
@@ -149,8 +149,8 @@
     <link href="https://www.motherjones.com/sponsored/patagonias-playbook-for-environmental-activism/"/>
     <summary>Brands: Patagonia | Categories: Environmental, Governance, Social | Source: motherjones.com</summary>
     <category term="Patagonia" label="Patagonia"/>
-    <category term="social" label="Social"/>
     <category term="environmental" label="Environmental"/>
+    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
     <published>2025-11-12T19:45:00+00:00</published>
   </entry>
@@ -231,8 +231,8 @@
     <link href="https://www.yahoo.com/news/articles/patagonia-paradox-successes-contradictions-founder-040001948.html"/>
     <summary>Brands: Patagonia | Categories: Environmental, Governance, Social | Source: yahoo.com</summary>
     <category term="Patagonia" label="Patagonia"/>
-    <category term="social" label="Social"/>
     <category term="environmental" label="Environmental"/>
+    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
     <published>2025-12-02T04:30:00+00:00</published>
   </entry>
@@ -273,8 +273,8 @@
     <link href="https://www.deseret.com/business/2025/12/01/patagonia-biography-yvon-chouinard-david-gelles-succession-outdoor-gear/"/>
     <summary>Brands: Patagonia | Categories: Environmental, Governance, Social | Source: deseret.com</summary>
     <category term="Patagonia" label="Patagonia"/>
-    <category term="social" label="Social"/>
     <category term="environmental" label="Environmental"/>
+    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
     <published>2025-12-02T23:15:00+00:00</published>
   </entry>
@@ -524,21 +524,21 @@
     <published>2025-12-18T10:30:00+00:00</published>
   </entry>
   <entry>
-    <id>2ac5f313-c0b3-4756-966b-228adf98baaa</id>
-    <title>Trending tickers : BP , Oracle , Micron , Lululemon</title>
-    <updated>2025-12-18T11:15:00+00:00</updated>
-    <link href="https://www.aol.co.uk/articles/trending-tickers-bp-oracle-micron-095841359.html"/>
-    <summary>Brands: Lululemon | Categories: Governance | Source: aol.co.uk</summary>
-    <category term="Lululemon" label="Lululemon"/>
-    <category term="governance" label="Governance"/>
-    <published>2025-12-18T11:15:00+00:00</published>
-  </entry>
-  <entry>
     <id>ba0dd219-3164-4f6d-b5fb-eae91b468a61</id>
     <title>Elliott Management Takes $1 Billion Stake In Lululemon , Proposes Former Ralph Lauren Executive As New CEO : Report</title>
     <updated>2025-12-18T11:15:00+00:00</updated>
     <link href="https://biztoc.com/x/8fce0e4f800e2714"/>
     <summary>Brands: Lululemon | Categories: Governance | Source: biztoc.com</summary>
+    <category term="Lululemon" label="Lululemon"/>
+    <category term="governance" label="Governance"/>
+    <published>2025-12-18T11:15:00+00:00</published>
+  </entry>
+  <entry>
+    <id>2ac5f313-c0b3-4756-966b-228adf98baaa</id>
+    <title>Trending tickers : BP , Oracle , Micron , Lululemon</title>
+    <updated>2025-12-18T11:15:00+00:00</updated>
+    <link href="https://www.aol.co.uk/articles/trending-tickers-bp-oracle-micron-095841359.html"/>
+    <summary>Brands: Lululemon | Categories: Governance | Source: aol.co.uk</summary>
     <category term="Lululemon" label="Lululemon"/>
     <category term="governance" label="Governance"/>
     <published>2025-12-18T11:15:00+00:00</published>
@@ -574,16 +574,6 @@
     <published>2025-12-18T15:00:00+00:00</published>
   </entry>
   <entry>
-    <id>242da8e3-5db8-40ff-86e5-fe68bb9c861c</id>
-    <title>Lululemon shares up after reports of Elliott Management buying stake – Winnipeg Free Press</title>
-    <updated>2025-12-18T16:30:00+00:00</updated>
-    <link href="https://www.winnipegfreepress.com/business/2025/12/18/lululemon-shares-up-after-reports-of-elliott-management-buying-stake"/>
-    <summary>Brands: Lululemon | Categories: Governance | Source: winnipegfreepress.com</summary>
-    <category term="Lululemon" label="Lululemon"/>
-    <category term="governance" label="Governance"/>
-    <published>2025-12-18T16:30:00+00:00</published>
-  </entry>
-  <entry>
     <id>a0378056-de10-40ab-a83a-6568ad6a2134</id>
     <title>Activist investor Elliott Management acquires $1bn Lululemon stake</title>
     <updated>2025-12-18T16:30:00+00:00</updated>
@@ -599,6 +589,16 @@
     <updated>2025-12-18T16:30:00+00:00</updated>
     <link href="https://biztoc.com/x/3acc9efd3c2da877"/>
     <summary>Brands: Lululemon | Categories: Governance | Source: biztoc.com</summary>
+    <category term="Lululemon" label="Lululemon"/>
+    <category term="governance" label="Governance"/>
+    <published>2025-12-18T16:30:00+00:00</published>
+  </entry>
+  <entry>
+    <id>242da8e3-5db8-40ff-86e5-fe68bb9c861c</id>
+    <title>Lululemon shares up after reports of Elliott Management buying stake – Winnipeg Free Press</title>
+    <updated>2025-12-18T16:30:00+00:00</updated>
+    <link href="https://www.winnipegfreepress.com/business/2025/12/18/lululemon-shares-up-after-reports-of-elliott-management-buying-stake"/>
+    <summary>Brands: Lululemon | Categories: Governance | Source: winnipegfreepress.com</summary>
     <category term="Lululemon" label="Lululemon"/>
     <category term="governance" label="Governance"/>
     <published>2025-12-18T16:30:00+00:00</published>
@@ -856,21 +856,21 @@
     <published>2025-12-30T15:15:00+00:00</published>
   </entry>
   <entry>
-    <id>c0799949-f673-40ef-a010-403667bc8e34</id>
-    <title>Chip Wilson : Lululemon tells employees it business as usual</title>
-    <updated>2025-12-30T16:00:00+00:00</updated>
-    <link href="https://www.bnnbloomberg.ca/business/2025/12/30/lululemon-tells-employees-its-business-as-usual-as-founder-challenges-board/"/>
-    <summary>Brands: Lululemon | Categories: Governance | Source: bnnbloomberg.ca</summary>
-    <category term="Lululemon" label="Lululemon"/>
-    <category term="governance" label="Governance"/>
-    <published>2025-12-30T16:00:00+00:00</published>
-  </entry>
-  <entry>
     <id>ce7afdf9-0361-4904-a2e6-69b36337a3c2</id>
     <title>Lululemon Sends an Email to its Employees</title>
     <updated>2025-12-30T16:00:00+00:00</updated>
     <link href="https://www.marketscreener.com/news/lululemon-sends-an-email-to-its-employees-ce7e59d8d88af124"/>
     <summary>Brands: Lululemon | Categories: Governance | Source: marketscreener.com</summary>
+    <category term="Lululemon" label="Lululemon"/>
+    <category term="governance" label="Governance"/>
+    <published>2025-12-30T16:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>c0799949-f673-40ef-a010-403667bc8e34</id>
+    <title>Chip Wilson : Lululemon tells employees it business as usual</title>
+    <updated>2025-12-30T16:00:00+00:00</updated>
+    <link href="https://www.bnnbloomberg.ca/business/2025/12/30/lululemon-tells-employees-its-business-as-usual-as-founder-challenges-board/"/>
+    <summary>Brands: Lululemon | Categories: Governance | Source: bnnbloomberg.ca</summary>
     <category term="Lululemon" label="Lululemon"/>
     <category term="governance" label="Governance"/>
     <published>2025-12-30T16:00:00+00:00</published>
@@ -1357,8 +1357,8 @@
     <updated>2026-01-28T18:20:41+00:00</updated>
     <link href="https://www.tekedia.com/antas-29-puma-stake-sparks-market-rally-as-first-abu-dhabi-bank-records-22-profit/"/>
     <summary>Brands: Anta, Puma | Categories: Governance, Social | Source: Tekedia</summary>
-    <category term="Puma" label="Puma"/>
     <category term="Anta" label="Anta"/>
+    <category term="Puma" label="Puma"/>
     <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
     <published>2026-01-28T18:20:41+00:00</published>
@@ -1472,8 +1472,8 @@
     <link href="https://menafn.com/1110695818/Berger-Montague-PC-Investigates-Under-Armour-Incs-Board-Of-Directors-For-Breach-Of-Fiduciary-Duty-NYSE-UA"/>
     <summary>Brands: Under Armour | Categories: Digital Transformation, Governance | Source: Menafn</summary>
     <category term="Under Armour" label="Under Armour"/>
-    <category term="governance" label="Governance"/>
     <category term="digital_transformation" label="Digital Transformation"/>
+    <category term="governance" label="Governance"/>
     <published>2026-02-04T11:46:22+00:00</published>
   </entry>
   <entry>
@@ -1843,6 +1843,16 @@
     <published>2026-02-10T00:30:00+00:00</published>
   </entry>
   <entry>
+    <id>8c0968d2-d680-475b-bb36-f93f48363a7a</id>
+    <title>Eddie Bauer stores are closing nationwide . Find out when outlet at Destiny united states may shut doors</title>
+    <updated>2026-02-10T01:45:00+00:00</updated>
+    <link href="https://www.syracuse.com/business/2026/02/eddie-bauer-stores-are-closing-nationwide-find-out-when-outlet-at-destiny-usa-may-shut-doors.html"/>
+    <summary>Brands: Eddie Bauer | Categories: Social | Source: syracuse.com</summary>
+    <category term="Eddie Bauer" label="Eddie Bauer"/>
+    <category term="social" label="Social"/>
+    <published>2026-02-10T01:45:00+00:00</published>
+  </entry>
+  <entry>
     <id>9a84ea8b-fad4-4653-9959-19d4c117ba7a</id>
     <title>Nike - Owned Converse May Be About to Make Deep Cuts . Will It Affect Nike Stock ? </title>
     <updated>2026-02-10T01:45:00+00:00</updated>
@@ -1850,16 +1860,6 @@
     <summary>Brands: Converse, Nike | Categories: Social | Source: fool.com</summary>
     <category term="Nike" label="Nike"/>
     <category term="Converse" label="Converse"/>
-    <category term="social" label="Social"/>
-    <published>2026-02-10T01:45:00+00:00</published>
-  </entry>
-  <entry>
-    <id>8c0968d2-d680-475b-bb36-f93f48363a7a</id>
-    <title>Eddie Bauer stores are closing nationwide . Find out when outlet at Destiny united states may shut doors</title>
-    <updated>2026-02-10T01:45:00+00:00</updated>
-    <link href="https://www.syracuse.com/business/2026/02/eddie-bauer-stores-are-closing-nationwide-find-out-when-outlet-at-destiny-usa-may-shut-doors.html"/>
-    <summary>Brands: Eddie Bauer | Categories: Social | Source: syracuse.com</summary>
-    <category term="Eddie Bauer" label="Eddie Bauer"/>
     <category term="social" label="Social"/>
     <published>2026-02-10T01:45:00+00:00</published>
   </entry>
@@ -1880,8 +1880,8 @@
     <link href="https://www.globenewswire.com/fr/news-release/2026/02/10/3235335/0/en/Berger-Montague-PC-Investigates-Under-Armour-Inc-s-Board-of-Directors-for-Breach-of-Fiduciary-Duty-NYSE-UA.html"/>
     <summary>Brands: Under Armour | Categories: Digital Transformation, Governance | Source: Globenewswire_fr</summary>
     <category term="Under Armour" label="Under Armour"/>
-    <category term="governance" label="Governance"/>
     <category term="digital_transformation" label="Digital Transformation"/>
+    <category term="governance" label="Governance"/>
     <published>2026-02-10T13:41:00+00:00</published>
   </entry>
   <entry>
@@ -2057,8 +2057,8 @@
     <link href="https://www.webpronews.com/adidas-data-breach-exposes-millions-of-customer-records-through-third-party-vendor-weakness/"/>
     <summary>Brands: Adidas | Categories: Digital Transformation, Governance | Source: Webpronews</summary>
     <category term="Adidas" label="Adidas"/>
-    <category term="governance" label="Governance"/>
     <category term="digital_transformation" label="Digital Transformation"/>
+    <category term="governance" label="Governance"/>
     <published>2026-02-20T13:05:06+00:00</published>
   </entry>
   <entry>
@@ -2401,6 +2401,16 @@
     <published>2026-04-01T14:30:00+00:00</published>
   </entry>
   <entry>
+    <id>dd56c235-fe91-4592-8473-6444d411aae2</id>
+    <title>Nike sued after customer personal information was exposed</title>
+    <updated>2026-04-01T16:15:00+00:00</updated>
+    <link href="https://kyma.com/dsw-living/consumer/2026/04/01/nike-sued-after-customers-personal-information-was-exposed/"/>
+    <summary>Brands: Nike | Categories: Digital Transformation | Source: kyma.com</summary>
+    <category term="Nike" label="Nike"/>
+    <category term="digital_transformation" label="Digital Transformation"/>
+    <published>2026-04-01T16:15:00+00:00</published>
+  </entry>
+  <entry>
     <id>20cde66f-bdbb-4e5e-8edf-f72bb7635681</id>
     <title>Nike Resets Digital Strategy with Strong Push on AI and Technology Transformation</title>
     <updated>2026-04-01T16:15:00+00:00</updated>
@@ -2408,16 +2418,6 @@
     <summary>Brands: Nike | Categories: Digital Transformation, Social | Source: infotechlead.com</summary>
     <category term="Nike" label="Nike"/>
     <category term="social" label="Social"/>
-    <category term="digital_transformation" label="Digital Transformation"/>
-    <published>2026-04-01T16:15:00+00:00</published>
-  </entry>
-  <entry>
-    <id>dd56c235-fe91-4592-8473-6444d411aae2</id>
-    <title>Nike sued after customer personal information was exposed</title>
-    <updated>2026-04-01T16:15:00+00:00</updated>
-    <link href="https://kyma.com/dsw-living/consumer/2026/04/01/nike-sued-after-customers-personal-information-was-exposed/"/>
-    <summary>Brands: Nike | Categories: Digital Transformation | Source: kyma.com</summary>
-    <category term="Nike" label="Nike"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-04-01T16:15:00+00:00</published>
   </entry>
@@ -2491,8 +2491,8 @@
     <link href="https://www.breitbart.com/politics/2026/04/13/texas-launches-investigation-into-lululemon-over-potential-presence-of-forever-chemicals-in-apparel/"/>
     <summary>Brands: Lululemon | Categories: Environmental, Governance, Social | Source: breitbart.com</summary>
     <category term="Lululemon" label="Lululemon"/>
-    <category term="social" label="Social"/>
     <category term="environmental" label="Environmental"/>
+    <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
     <published>2026-04-13T21:30:00+00:00</published>
   </entry>
@@ -2743,21 +2743,21 @@
     <published>2026-04-23T12:30:00+00:00</published>
   </entry>
   <entry>
-    <id>3963cc34-23b9-44e8-bc03-b5b1ba2dffd1</id>
-    <title>Lulu stock : Lululemon shares sink after CEO from Nike unimpressed</title>
-    <updated>2026-04-23T15:15:00+00:00</updated>
-    <link href="https://www.bnnbloomberg.ca/business/2026/04/23/lululemon-sinks-after-new-ceo-hire-from-nike-fails-to-impress-investors/"/>
-    <summary>Brands: Lululemon | Categories: Governance | Source: bnnbloomberg.ca</summary>
-    <category term="Lululemon" label="Lululemon"/>
-    <category term="governance" label="Governance"/>
-    <published>2026-04-23T15:15:00+00:00</published>
-  </entry>
-  <entry>
     <id>7cd32ebc-6322-4f38-a530-1a39e031d807</id>
     <title>Lululemon Athletica New CEO Pick Triggers Transition Jitters , Stock Slides - Lululemon Athletica ( NASDAQ : </title>
     <updated>2026-04-23T15:15:00+00:00</updated>
     <link href="https://www.benzinga.com/trading-ideas/movers/26/04/52003063/lululemon-athletica-new-ceo-pick-triggers-transition-jitters-stock-slides"/>
     <summary>Brands: Lululemon | Categories: Governance | Source: benzinga.com</summary>
+    <category term="Lululemon" label="Lululemon"/>
+    <category term="governance" label="Governance"/>
+    <published>2026-04-23T15:15:00+00:00</published>
+  </entry>
+  <entry>
+    <id>3963cc34-23b9-44e8-bc03-b5b1ba2dffd1</id>
+    <title>Lulu stock : Lululemon shares sink after CEO from Nike unimpressed</title>
+    <updated>2026-04-23T15:15:00+00:00</updated>
+    <link href="https://www.bnnbloomberg.ca/business/2026/04/23/lululemon-sinks-after-new-ceo-hire-from-nike-fails-to-impress-investors/"/>
+    <summary>Brands: Lululemon | Categories: Governance | Source: bnnbloomberg.ca</summary>
     <category term="Lululemon" label="Lululemon"/>
     <category term="governance" label="Governance"/>
     <published>2026-04-23T15:15:00+00:00</published>
@@ -2913,21 +2913,21 @@
     <published>2026-04-24T08:15:00+00:00</published>
   </entry>
   <entry>
-    <id>27fc2c53-7a18-483d-9816-d0b5ada82875</id>
-    <title>Nike is cutting another 1 , 400 jobs worldwide</title>
-    <updated>2026-04-24T09:00:00+00:00</updated>
-    <link href="https://www.retaildetail.eu/news/fashion/nike-is-cutting-another-1400-jobs-worldwide/"/>
-    <summary>Brands: Nike | Categories: Social | Source: retaildetail.eu</summary>
-    <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
-    <published>2026-04-24T09:00:00+00:00</published>
-  </entry>
-  <entry>
     <id>a8e23af2-7e44-49c3-a410-df7e55f087e2</id>
     <title>Nike to lay off 1400 , majority cuts to be in technology team ; COO Venkatesh Alagirisamy says in memo : This is not a new … </title>
     <updated>2026-04-24T09:00:00+00:00</updated>
     <link href="https://timesofindia.indiatimes.com/technology/tech-news/nike-to-lay-off-1400-majority-cuts-to-be-in-technology-team-coo-venkatesh-alagirisamy-says-in-memo-this-is-not-a-new-/articleshow/130487559.cms"/>
     <summary>Brands: Nike | Categories: Social | Source: timesofindia.indiatimes.com</summary>
+    <category term="Nike" label="Nike"/>
+    <category term="social" label="Social"/>
+    <published>2026-04-24T09:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>27fc2c53-7a18-483d-9816-d0b5ada82875</id>
+    <title>Nike is cutting another 1 , 400 jobs worldwide</title>
+    <updated>2026-04-24T09:00:00+00:00</updated>
+    <link href="https://www.retaildetail.eu/news/fashion/nike-is-cutting-another-1400-jobs-worldwide/"/>
+    <summary>Brands: Nike | Categories: Social | Source: retaildetail.eu</summary>
     <category term="Nike" label="Nike"/>
     <category term="social" label="Social"/>
     <published>2026-04-24T09:00:00+00:00</published>
@@ -3406,16 +3406,6 @@
     <published>2026-06-04T18:49:58+00:00</published>
   </entry>
   <entry>
-    <id>05e8ef12-39b5-47db-a590-95249f1debe0</id>
-    <title>Lululemon Flubbed the Quarter , and the Founder Wont Say a Bad Word</title>
-    <updated>2026-06-05T11:15:00+00:00</updated>
-    <link href="https://www.fool.com/investing/2026/06/05/lululemon-flubbed-the-quarter-and-the-founder-wont-say-a-bad-word/?source=iedfolrf0000001"/>
-    <summary>Brands: Lululemon | Categories: Governance | Source: fool.com</summary>
-    <category term="Lululemon" label="Lululemon"/>
-    <category term="governance" label="Governance"/>
-    <published>2026-06-05T11:15:00+00:00</published>
-  </entry>
-  <entry>
     <id>8ff7fb41-3e7f-45eb-9b70-4cc68a66ba6c</id>
     <title>Ad of the Day : Nike upstages Adidas World Cup</title>
     <updated>2026-06-05T11:15:00+00:00</updated>
@@ -3423,6 +3413,16 @@
     <summary>Brands: Nike | Categories: Social | Source: thedrum.com</summary>
     <category term="Nike" label="Nike"/>
     <category term="social" label="Social"/>
+    <published>2026-06-05T11:15:00+00:00</published>
+  </entry>
+  <entry>
+    <id>05e8ef12-39b5-47db-a590-95249f1debe0</id>
+    <title>Lululemon Flubbed the Quarter , and the Founder Wont Say a Bad Word</title>
+    <updated>2026-06-05T11:15:00+00:00</updated>
+    <link href="https://www.fool.com/investing/2026/06/05/lululemon-flubbed-the-quarter-and-the-founder-wont-say-a-bad-word/?source=iedfolrf0000001"/>
+    <summary>Brands: Lululemon | Categories: Governance | Source: fool.com</summary>
+    <category term="Lululemon" label="Lululemon"/>
+    <category term="governance" label="Governance"/>
     <published>2026-06-05T11:15:00+00:00</published>
   </entry>
   <entry>
@@ -4068,16 +4068,6 @@
     <published>2026-09-20T21:00:00+00:00</published>
   </entry>
   <entry>
-    <id>6b7b0790-69fc-4c27-98ed-cdabcc6dfd14</id>
-    <title>Converse pulls sneaker ad that critics said had racist imagery</title>
-    <updated>2026-09-20T21:30:00+00:00</updated>
-    <link href="https://www.wlky.com/article/converse-pulls-sneaker-ad-criticized-racist-imagery/73812205"/>
-    <summary>Brands: Converse | Categories: Social | Source: wlky.com</summary>
-    <category term="Converse" label="Converse"/>
-    <category term="social" label="Social"/>
-    <published>2026-09-20T21:30:00+00:00</published>
-  </entry>
-  <entry>
     <id>87741027-02fd-443a-ac8f-2b42a3d47fa1</id>
     <title>Converse apologizes , pulls sneaker ad critics said has racist imagery</title>
     <updated>2026-09-20T21:30:00+00:00</updated>
@@ -4086,6 +4076,16 @@
     <category term="Converse" label="Converse"/>
     <category term="social" label="Social"/>
     <category term="governance" label="Governance"/>
+    <published>2026-09-20T21:30:00+00:00</published>
+  </entry>
+  <entry>
+    <id>6b7b0790-69fc-4c27-98ed-cdabcc6dfd14</id>
+    <title>Converse pulls sneaker ad that critics said had racist imagery</title>
+    <updated>2026-09-20T21:30:00+00:00</updated>
+    <link href="https://www.wlky.com/article/converse-pulls-sneaker-ad-criticized-racist-imagery/73812205"/>
+    <summary>Brands: Converse | Categories: Social | Source: wlky.com</summary>
+    <category term="Converse" label="Converse"/>
+    <category term="social" label="Social"/>
     <published>2026-09-20T21:30:00+00:00</published>
   </entry>
   <entry>
