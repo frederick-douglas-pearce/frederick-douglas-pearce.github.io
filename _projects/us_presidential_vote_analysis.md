@@ -16,6 +16,8 @@ The argument runs on top of a record that, as far as I've been able to find, has
 
 In the spirit of checks and balances, the analysis layer adds a third option alongside the two familiar ones: **the average of the Electoral College and popular-vote shares**. The API serves it for every election the public surface has a popular vote for. In the 13 elections from 1976 to 2024, the popular vote would have changed the winner twice, in 2000 and 2016, and the hybrid never does. What it moves is the margin: in 2000, Bush's lead of 0.9 points in electoral share narrows to 0.2 points.
 
+The record now also carries **people per electoral vote**: for every state in every election from 1824 to 2024, the US Census population behind its electors, and how many residents each elector stood for. Each election reads the census that set its electoral votes, not the nearest one. So 2020 uses the 2010 census, and 1924 and 1928 use 1910, because Congress did not reapportion the House after the 1920 census. The series is on the API and has its own page in the explorer, and it is groundwork for further analysis of the hybrid.
+
 <div class="mt-5"></div>
 
 ## Three Ways to Pick a Winner
@@ -62,7 +64,7 @@ Every response ships in a `{data, meta}` envelope, and `meta.provenance` travels
 The [data explorer](https://explore.us-presidential-election-center.org/) reads the public API and draws the record for readers who would rather look than query. Its charts are built with Plotly.
 
 - **Every election at a glance** (`/elections`): headline metrics for the elections shown, with the average Electoral College and popular-vote margins; each election's Electoral College leader against the majority line; and electors appointed and total popular vote per election, with a state filter.
-- **One election** (`/election/<year>`): each candidate's electoral share against their popular-vote share, with the majority line, then a page of state results and a chart of people per electoral vote by state. Links step to the previous and next election.
+- **One election** (`/election/<year>`): each candidate's electoral share against their popular-vote share, with the majority line, then two subpages: state results, and people per electoral vote by state. Links step to the previous and next election.
 - **States and candidates:** a page for every state across every election, and a page for every candidate with their record and the party that nominated them each time.
 
 It has light, dark and auto themes, and browser tests in Playwright cover it.
