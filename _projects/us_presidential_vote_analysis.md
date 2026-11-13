@@ -12,19 +12,19 @@ category: work
 
 Every four years the same argument returns: should the Electoral College decide the presidency, or should the national popular vote? Five times in 47 presidencies the two records disagreed — 1824, 1876, 1888, 2000, 2016 — and the National Popular Vote Interstate Compact now holds [222 of the 270 electoral votes](https://www.nationalpopularvote.com/state-status) it would need to activate without a constitutional amendment.
 
-The argument runs on top of a record that, as far as I've been able to find, has never been assembled publicly in one place a machine can read. The National Archives keeps the Electoral College result; election researchers keep the popular vote separately, in sources with different coverage, different state conventions, and different spellings of the same candidate's name. This project takes those documents, reconciles them onto one shared state-and-candidate model back to **1824**, and publishes the result as a **[free public API](https://api.us-presidential-election-center.org/docs)** — 51 elections, 5,623 state-by-candidate rows, 96 candidates, no key required. A **[data explorer](https://explore.us-presidential-election-center.org/)** built on the API puts the same record in front of readers who don't write queries, browsable by election or by state.
+The argument runs on top of a record that, as far as I've been able to find, has never been assembled publicly in one place a machine can read. The National Archives keeps the Electoral College result; election researchers keep the popular vote separately, in sources with different coverage, different state conventions, and different spellings of the same candidate's name. This project takes those documents, reconciles them onto one shared state-and-candidate model back to **1824**, and publishes the result as a **[free public API](https://api.us-presidential-election-center.org/docs)** — 51 elections, 5,623 state-by-candidate rows, 96 candidates, no key required. A **[data explorer](https://explore.us-presidential-election-center.org/)** built on the API puts the same record in front of readers who don't write queries, with charts and a page for every election, state and candidate.
 
-In the spirit of checks and balances, the analysis layer explores a third option alongside the two familiar ones: **the average of the Electoral College and popular-vote outcomes**. How many elections would have flipped, and by how much would the margins move?
+In the spirit of checks and balances, the analysis layer adds a third option alongside the two familiar ones: **the average of the Electoral College and popular-vote shares**. The API serves it for every election the public surface has a popular vote for. In the 13 elections from 1976 to 2024, the popular vote would have changed the winner twice, in 2000 and 2016, and the hybrid never does. What it moves is the margin: in 2000, Bush's lead of 0.9 points in electoral share narrows to 0.2 points.
 
 <div class="mt-5"></div>
 
 ## Three Ways to Pick a Winner
 
-| Method                | How the winner is decided                             | Status                                                        |
-| --------------------- | ----------------------------------------------------- | ------------------------------------------------------------- |
-| **Electoral College** | A majority of electors _appointed_ — 270 of 538 today | Recorded 1824–2024, live on the public API                    |
-| **Popular Vote**      | The national vote count, summed across states         | Recorded 1976–2024 on the public surface (licensing boundary) |
-| **Hybrid**            | The average of the two — a more balanced third option | In development — the analysis layer on top of the warehouse   |
+| Method                | How the winner is decided                             | Status                                                         |
+| --------------------- | ----------------------------------------------------- | -------------------------------------------------------------- |
+| **Electoral College** | A majority of electors _appointed_ — 270 of 538 today | Recorded 1824–2024, live on the public API                     |
+| **Popular Vote**      | The national vote count, summed across states         | Recorded 1976–2024 on the public surface (licensing boundary)  |
+| **Hybrid**            | The average of the two shares — a third option        | Live on the public API wherever the popular vote is, 1976–2024 |
 
 <div class="mt-5"></div>
 
@@ -39,16 +39,37 @@ A read-only snapshot of the joined record, live and free to query. Interactive O
   Try a live query
 </a>
 
-| Endpoint                       | Returns                                                                  |
-| ------------------------------ | ------------------------------------------------------------------------ |
-| `/v1/elections`                | Every covered year, with candidate count and whether popular vote exists |
-| `/v1/elections/{year}`         | Per-state rows for one election, filterable by state                     |
-| `/v1/elections/{year}/summary` | The national roll-up — electoral votes, popular votes, who took office   |
-| `/v1/states/{usps}`            | One state's record across every election                                 |
-| `/v1/candidates/{slug}`        | One candidate's record across every election they contested              |
-| `/v1/meta`, `/health`          | Provenance, coverage windows, and the loaded snapshot version            |
+| Endpoint                          | Returns                                                                                                       |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| `/v1/elections`                   | Every covered year, with candidate count and whether popular vote exists                                      |
+| `/v1/elections/{year}`            | Per-state rows for one election, filterable by state                                                          |
+| `/v1/elections/{year}/summary`    | The national roll-up and the three-method comparison — winners, margins, flips                                |
+| `/v1/elections/summary`           | Every election's national roll-up and three-method comparison in one response                                 |
+| `/v1/elections/states`            | Every election state by state — electors appointed, population, people per electoral vote, total popular vote |
+| `/v1/elections/{year}/per-capita` | People per electoral vote for every state in one election                                                     |
+| `/v1/states/{usps}`               | One state's record across every election                                                                      |
+| `/v1/states/{usps}/per-capita`    | One state's people per electoral vote across every election                                                   |
+| `/v1/candidates`                  | Every candidate, with the election years they appear in                                                       |
+| `/v1/candidates/{slug}`           | One candidate's record across every election they contested                                                   |
+| `/v1/meta`, `/health`             | Provenance, coverage windows, and the loaded snapshot version                                                 |
 
 Every response ships in a `{data, meta}` envelope, and `meta.provenance` travels with it — source, license, coverage window, snapshot version — so the data's limits can never drift from what was actually built.
+
+<div class="mt-5"></div>
+
+## Explore the Data
+
+The [data explorer](https://explore.us-presidential-election-center.org/) reads the public API and draws the record for readers who would rather look than query. Its charts are built with Plotly.
+
+- **Every election at a glance** (`/elections`): headline metrics for the elections shown, with the average Electoral College and popular-vote margins; each election's Electoral College leader against the majority line; and electors appointed and total popular vote per election, with a state filter.
+- **One election** (`/election/<year>`): each candidate's electoral share against their popular-vote share, with the majority line, then a page of state results and a chart of people per electoral vote by state. Links step to the previous and next election.
+- **States and candidates:** a page for every state across every election, and a page for every candidate with their record and the party that nominated them each time.
+
+It has light, dark and auto themes, and browser tests in Playwright cover it.
+
+<a href="https://explore.us-presidential-election-center.org/" class="btn btn-primary">
+  Explore the Data
+</a>
 
 <div class="mt-5"></div>
 
@@ -166,11 +187,13 @@ The pipeline moves from two incompatible public records to one queryable surface
 
 Coverage is stated on every response, never inferred from a field of nulls.
 
-| Layer                       | Window        | Source                           | License                                                            |
-| --------------------------- | ------------- | -------------------------------- | ------------------------------------------------------------------ |
-| **Electoral College**       | **1824–2024** | US National Archives (NARA)      | Public domain, US Government                                       |
-| **Popular vote**            | **1976–2024** | MIT Election Lab                 | CC0 1.0                                                            |
-| **Historical popular vote** | pre-1976      | UCSB American Presidency Project | Not redistributable — warehouse only, excluded from the public API |
+| Layer                       | Window              | Source                           | License                                                            |
+| --------------------------- | ------------------- | -------------------------------- | ------------------------------------------------------------------ |
+| **Electoral College**       | **1824–2024**       | US National Archives (NARA)      | Public domain, US Government                                       |
+| **Popular vote**            | **1976–2024**       | MIT Election Lab                 | CC0 1.0                                                            |
+| **Historical popular vote** | pre-1976            | UCSB American Presidency Project | Not redistributable — warehouse only, excluded from the public API |
+| **Population**              | **1824–2024**       | US Census Bureau                 | Public domain, US Government                                       |
+| **Nominating party**        | where NARA lacks it | US Government publications       | Public domain, US Government                                       |
 
 The popular-vote window is a licensing boundary, not a records one. The returns exist much further back; the source that is free to redistribute starts in 1976. Rather than hide the seam, every pre-1976 row says _which kind_ of null it carries — a state that held no popular vote is a different fact from a year this surface cannot reach.
 
@@ -191,17 +214,21 @@ The popular-vote window is a licensing boundary, not a records one. The returns 
 - **Warehouse:** PostgreSQL star schema, psycopg2, [pandas](https://pandas.pydata.org), [GeoPandas](https://geopandas.org) for state geography
 - **Scraping:** [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) + requests, with a politeness-honoring local corpus
 - **API:** [FastAPI](https://fastapi.tiangolo.com) + [Pydantic](https://docs.pydantic.dev) over a read-only SQLite snapshot
-- **Testing:** [pytest](https://pytest.org) (1,099 tests), [mypy](https://mypy.readthedocs.io), [ruff](https://docs.astral.sh/ruff/)
-- **Deployment:** Docker, Google Cloud Run, Cloudflare Workers, GitHub Actions with Workload Identity Federation
+- **Explorer:** [Dash](https://dash.plotly.com) and [Plotly](https://plotly.com/python/), reading the public API
+- **Testing:** [pytest](https://pytest.org) (5,638 tests, including the explorer's [Playwright](https://playwright.dev) browser tests), [mypy](https://mypy.readthedocs.io), [ruff](https://docs.astral.sh/ruff/)
+- **Deployment:** Docker, Google Cloud Run for the API, Google App Engine for the explorer, Cloudflare Workers, GitHub Actions with Workload Identity Federation
 
 <div class="mt-5"></div>
 
 ## The Blog Series — _Counted, Not Assumed_
 
-An accompanying series reads two centuries of presidential elections from what the record actually says instead of the shorthand everyone repeats — legislature-chosen states, cast-versus-appointed electors, a number frozen by policy choice, a name with three correct spellings. Ten posts are planned; the series states what the record shows and leaves the conclusions to the reader.
+An accompanying series reads two centuries of presidential elections from what the record actually says instead of the shorthand everyone repeats — legislature-chosen states, cast-versus-appointed electors, a number frozen by policy choice, a name with three correct spellings. Six posts are out so far, from how many electors there are and why to how many times anyone has organized faithless electors, plus a dated tally of the compact's progress toward 270. The series states what the record shows and leaves the conclusions to the reader.
 
-<a href="{{ '/blog/2026/222-votes-away/' | relative_url }}" class="btn btn-outline-primary">
+<a href="{{ '/blog/2026/222-votes-away/' | relative_url }}" class="btn btn-outline-primary me-2">
   Post 1 — 222 Votes Away, and a Record Few Can Get End to End
+</a>
+<a href="{{ '/blog/category/us-presidential-vote/' | relative_url }}" class="btn btn-outline-primary">
+  All posts in the series
 </a>
 
 <div class="mt-5"></div>
@@ -211,6 +238,9 @@ An accompanying series reads two centuries of presidential elections from what t
 <a href="https://github.com/frederick-douglas-pearce/us-presidential-vote-analysis" class="btn btn-outline-primary me-2">
   <i class="fab fa-github"></i> View on GitHub
 </a>
-<a href="https://api.us-presidential-election-center.org/docs" class="btn btn-outline-primary">
+<a href="https://api.us-presidential-election-center.org/docs" class="btn btn-outline-primary me-2">
   <i class="fas fa-code"></i> Public API Docs
+</a>
+<a href="https://explore.us-presidential-election-center.org/" class="btn btn-outline-primary">
+  <i class="fas fa-chart-bar"></i> Data Explorer
 </a>

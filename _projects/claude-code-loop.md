@@ -6,6 +6,8 @@ img: assets/img/claude_code_loop_ledger.svg
 og_image: https://frederick-douglas-pearce.github.io/assets/img/claude-code-loop-og.png
 importance: 2
 category: work
+# No math on this page, and MathJax's `$` delimiter would typeset the dollar amounts.
+enable_math: false
 ---
 
 ## Overview
@@ -14,7 +16,7 @@ claude-code-loop is a [Claude Code](https://code.claude.com) plugin, `dev-loop`,
 
 Everything the loop does is written to a ledger on disk rather than kept in the model's context. That's what lets the next invocation pick up where the last one stopped, whether the session ended with a `/clear`, a compaction, or a crash.
 
-The engine was first built and hardened inside **[AgentFluent](/projects/agentfluent/)**, where it ran the v0.10.x and v0.11.0 releases, and was then extracted into its own repo so any project can use it. It now drives six repos, including itself: this repo works its own backlog with the loop it develops.
+It started inside **[AgentFluent](/projects/agentfluent/)**, where a pm agent, an architect agent and Claude already worked as a team, but every handoff between them happened because I typed it, and I often forgot to bring the architect in until a plan was already written. The loop made remembering its job. It ran AgentFluent's v0.10.x and v0.11.0 releases and was then extracted into its own repo so any project can use it. It now drives seven repos, including itself: this repo works its own backlog with the loop it develops.
 
 <div class="mt-5"></div>
 
@@ -31,6 +33,8 @@ The pipeline is modeled on the roles of a human team. Each role is a binding in 
 | **Security reviewer** | runs where the route and the touched files call for it                                              |
 | **QA**                | a fresh agent that checks every acceptance criterion and whether the tests would catch a regression |
 | **Owner**             | you: approve plans, approve merges, and settle anything the agents disagree on                      |
+
+A business analyst (ba), which keeps a glossary so the roles stop talking past each other, isn't in the engine yet. Two projects have wired one in through their own configs.
 
 <div class="mt-5"></div>
 
@@ -79,6 +83,8 @@ The pipeline is modeled on the roles of a human team. Each role is a binding in 
 ## What Sets It Apart
 
 - **One issue per invocation, end to end.** It's a single supervised orchestrator handling one routed issue at a time, not a graph of agents running in parallel. Re-invoke it for the next issue, or let Claude Code's `/loop` drive it.
+- **A feature has to name its user before any code exists.** A feature plan opens with a map of one to three user stories: who benefits, how often real usage hits it, and a falsifier, an observation that would show the feature is the wrong thing to build. When that check is cheap, the plan runs it. A plan with no credible user goes back to the pm, and the gate has since stopped features in two repos before any code was written.
+- **Scope cut in a plan is recorded, not dropped.** If a plan would deliver less than an acceptance criterion asks, the engine records the amendment on the issue and files the removed scope as a new issue.
 - **A gate that didn't run never counts as passed.** No verdict means not passed. A gate's pass covers only the commit it ran on, and expires if the PR changes afterward. A blank binding in the config falls back to a built-in equivalent or stops and asks; it never quietly turns the gate off.
 - **A fix is never checked by whoever wrote it.** When the loop fixes a review or acceptance finding, a freshly spawned agent decides whether the fix worked. If that one re-check comes back dirty, the loop stops and asks you instead of iterating on itself.
 - **When the architect rewrites the plan, you see the plan.** If design review materially changes the approach, the loop stops and shows you what changed before any code is written. No mode setting reaches that stop.
@@ -88,7 +94,19 @@ The pipeline is modeled on the roles of a human team. Each role is a binding in 
 
 ## Measuring What a Run Costs
 
-The repo keeps a research notebook on why an iteration costs what it does and what would make it cheaper without making it worse. It reads Claude Code session transcripts and the ledger's per-iteration budget lines, prices them against a shared [cost specification](https://github.com/frederick-douglas-pearce/claude-code-sessions/blob/main/reference/cost-model.md), and is set up as causal inference rather than trend-reading: issue difficulty is an unmeasured confounder, so config levers are estimated as total effects. Releases reach the consuming repos on different dates, and two repos are deliberately held back on an older engine as an untreated control.
+The repo keeps a research notebook on why an iteration costs what it does and what would make it cheaper without making it worse. It reads Claude Code session transcripts and the ledger's per-iteration budget lines, prices them against a shared [cost specification](https://github.com/frederick-douglas-pearce/claude-code-sessions/blob/main/reference/cost-model.md), and is set up as causal inference rather than trend-reading: issue difficulty is an unmeasured confounder, so config levers are estimated as total effects. Two repos were held back on an older engine as an untreated control until October 31, when the control was dropped: it had too few runs to support the comparison, and holding it back kept two repos on a known-defective engine. Every repo now runs the current engine, and a paired benchmark replaces the control.
+
+The [October cost review](https://github.com/frederick-douglas-pearce/claude-code-loop/blob/main/docs/research/cost-review-2026-10-26.md) found that the bill is driven by turns, not context. On v0.3.1 each turn of the orchestrating agent cost about 25k billable-equivalent tokens in both repos measured, so a run costs roughly its turn count times 25k. The three levers shipped before the review all acted on context, and the program's own cost model had priced each at 3–5% of a run, so they barely moved the bill, as the model predicted. The median run cost $17.61 in this repo and $35.61 in the election-data repo, counting every subagent, and subagents were about a third of that. Of the nine levers the review ranks, the largest act on turns: a fresh agent applies review fixes, and review rounds get a ceiling. Deleting engine text, another of the nine, shipped in v0.4.0 and v0.5.0.
+
+<div class="mt-5"></div>
+
+## A Model for Each Role
+
+Every subagent the loop spawns runs on the session's own model, and subagents are about a third of the bill. Per-role model selection ([epic #308](https://github.com/frederick-douglas-pearce/claude-code-loop/issues/308)) lets each project choose the model and effort for each role the loop spawns, to cut cost without lowering quality, and to make it possible to run the loop on models from other providers. The cost review estimates it at 7–15% of the total bill.
+
+A `MODEL_TIERS` table in the project config binds each role to a tier and an optional effort, for example `mutation: sonnet@medium`. The tiers are Claude Code's four model aliases plus `inherit`. The engine never names a provider: the project's environment, through the `ANTHROPIC_DEFAULT_*_MODEL` settings or a gateway, decides which model each alias resolves to. An entry the engine can't read falls back to `inherit`, and each run's budget line records what every spawn was passed.
+
+Only the groundwork exists so far. It merged on November 12 and ships in the next release: the vocabulary, the budget-line slot and the README section, with every role set to `inherit`, so nothing changes yet. Measured presets come next. One of them is an "inverted roster": a cheaper model for the session, with the judgment roles tiered up. After that comes a run on a third-party provider. One limit is built in: the implementer is the orchestrating agent itself, not a spawned role, so only the session's own model writes the code.
 
 <div class="mt-5"></div>
 
@@ -104,7 +122,7 @@ The repo keeps a research notebook on why an iteration costs what it does and wh
 
 ## Status
 
-At v0.3.1 the plugin is **not yet stable**. Six repos drive it, and the loop had carried 111 issues to done across five of them by the v0.3.0 release. That's enough to show the plugin and config split holds under real use, but not enough to call it stable. Findings from real runs are collected in [issue #1](https://github.com/frederick-douglas-pearce/claude-code-loop/issues/1), and reports from repos unlike the current six are welcome.
+At v0.5.0 the plugin is **not yet stable**. Seven repos drive it, and the loop had carried 111 issues to done across the five driving it at the v0.3.0 release in September, the last time the count was taken. That's enough to show the plugin and config split holds under real use, but not enough to call it stable. Findings from real runs are collected in [issue #1](https://github.com/frederick-douglas-pearce/claude-code-loop/issues/1), and reports from repos unlike the current seven are welcome.
 
 <div class="mt-5"></div>
 
@@ -122,10 +140,13 @@ Before the first run, read the README's section on what the loop can do to your 
 
 ## The Blog Series — _A Cross-Functional Team of One_
 
-A coding agent really is cross-functional: it plans, designs, implements and tests. When the same mind that did the work also checks it, it tends to confirm its own thinking. The series goes gate by gate through how each role in the loop works, the real runs where one nearly let something through, and what changed in the loop afterward. It also covers setting up the loop for your own projects and the cost experiments aimed at making it cheaper without making it weaker.
+_An agent can do every job on a dev team. What it shouldn't do is check its own work._ When the same mind that did the work also checks it, it tends to confirm its own thinking. The series goes gate by gate through how each role in the loop works, the real runs where one nearly let something through, and what changed in the loop afterward. It also covers setting up the loop for your own projects and the cost experiments aimed at making it cheaper without making it weaker.
 
 <a href="{{ '/blog/2026/a-loop-to-remember/' | relative_url }}" class="btn btn-outline-primary me-2">
   Post 1 — A Loop to Remember
+</a>
+<a href="{{ '/blog/2026/the-developer-in-the-middle/' | relative_url }}" class="btn btn-outline-primary me-2">
+  Post 2 — The Developer in the Middle
 </a>
 <a href="{{ '/blog/category/claude-code-loop/' | relative_url }}" class="btn btn-outline-primary">
   All posts in the series
