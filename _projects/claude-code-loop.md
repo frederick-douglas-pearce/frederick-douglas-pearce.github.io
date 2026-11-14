@@ -1,10 +1,10 @@
 ---
 layout: page
-title: claude-code-loop
-description: A Claude Code plugin that works an issue backlog like a small dev team, one gated issue at a time
+title: Claude Code Loop
+description: A plugin for Claude Code. An AI dev team that works your backlog with the checks a good human team has, while you keep the decisions
 img: assets/img/claude_code_loop_ledger.svg
 og_image: https://frederick-douglas-pearce.github.io/assets/img/claude-code-loop-og.png
-importance: 2
+importance: 1
 category: work
 # No math on this page, and MathJax's `$` delimiter would typeset the dollar amounts.
 enable_math: false
@@ -12,48 +12,58 @@ enable_math: false
 
 ## Overview
 
-claude-code-loop is a [Claude Code](https://code.claude.com) plugin, `dev-loop`, that works through a GitHub issue backlog the way a small, disciplined dev team would. Each invocation takes exactly one issue end to end: scope it, plan it, have the plan design-reviewed, implement it on a branch, open the PR, run code review and (where the change calls for it) security review, have an agent that didn't write the code check it against the acceptance criteria, and merge. By default it stops for your approval on every plan before any code is written and on every merge.
+Claude Code Loop is an AI dev team that works through your backlog with the checks a good human team has, while you keep the decisions. It runs inside [Claude Code](https://code.claude.com) as a plugin. It takes one issue at a time from your GitHub backlog and carries it from scoping to merge. A product manager agent scopes it, an architect agent reviews the design before any code is written, and the main agent builds it. Other agents review the code, and an agent that didn't write it checks the result. By default it stops for your approval on every plan before any code is written and on every merge.
 
-Everything the loop does is written to a ledger on disk rather than kept in the model's context. That's what lets the next invocation pick up where the last one stopped, whether the session ended with a `/clear`, a compaction, or a crash.
+What that gets you:
 
-It started inside **[AgentFluent](/projects/agentfluent/)**, where a pm agent, an architect agent and Claude already worked as a team, but every handoff between them happened because I typed it, and I often forgot to bring the architect in until a plan was already written. The loop made remembering its job. It ran AgentFluent's v0.10.x and v0.11.0 releases and was then extracted into its own repo so any project can use it. It now drives seven repos, including itself: this repo works its own backlog with the loop it develops.
+- **The right thing gets built.** A feature has to name who it's for, and what would show it's the wrong thing to build, before any code exists.
+- **Problems surface early.** The design is reviewed before code, and the work is never checked by the agent that did it.
+- **Security gets a look.** Built-in security review where the change calls for it, and a short list of rules on what the loop must never do.
+- **You stay in charge, with a record.** Two human approvals, and every gate decision added to a running record on disk.
+- **Cost is measured, not guessed.** I price every session from Claude Code's own records and use the numbers to decide what to change.
+
+It runs today on seven projects, including its own: the loop works its own backlog. It was built inside my **[AgentFluent](/projects/agentfluent/)** project and then pulled out so any project can use it.
 
 <div class="mt-5"></div>
 
 ## A Dev Team, in a Loop
 
-The pipeline is modeled on the roles of a human team. Each role is a binding in a per-project config file, and the plugin ships no agent definitions of its own: the scope and design roles point at subagents you already have.
+The pipeline is modeled on the roles of a human team. Each project's settings file says which agent fills each role. The plugin doesn't come with agents of its own: you point the product manager and architect roles at agents you already have.
 
-| Team role             | What it does in the loop                                                                            |
-| --------------------- | --------------------------------------------------------------------------------------------------- |
-| **Product manager**   | answers scope, priority and requirements questions, and splits an issue too large for one pass      |
-| **Architect**         | reviews the plan before any code is written, read-only, when a trigger fires or the loop is unsure  |
-| **Developer**         | the orchestrator itself: plans, implements, runs your lint, type and test commands, opens the PR    |
-| **Code reviewers**    | parallel read-only reviewers over the diff, each handed the issue's acceptance criteria             |
-| **Security reviewer** | runs where the route and the touched files call for it                                              |
-| **QA**                | a fresh agent that checks every acceptance criterion and whether the tests would catch a regression |
-| **Owner**             | you: approve plans, approve merges, and settle anything the agents disagree on                      |
+| Team role             | What it does in the loop                                                                                                                                                                        |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Product manager**   | answers scope, priority and requirements questions, and splits an issue too large for one pass                                                                                                  |
+| **Architect**         | reviews the design before any code is written: whether it fits the project's conventions and existing code, reuses what's there, and leaves room for the roadmap. It reads but never edits code |
+| **Developer**         | the main agent, which also coordinates the others: plans, writes the code, runs your automated checks, opens the pull request                                                                   |
+| **Code reviewers**    | several reviewer agents read the change side by side, each given the issue's acceptance criteria (its written definition of done)                                                               |
+| **Security reviewer** | runs when the kind of change and the files it touches call for it                                                                                                                               |
+| **QA**                | an agent that didn't do the work checks every acceptance criterion, and whether the tests would catch the code breaking later                                                                   |
+| **Owner**             | you: approve plans, approve merges, and settle anything the agents disagree on                                                                                                                  |
 
-A business analyst (ba), which keeps a glossary so the roles stop talking past each other, isn't in the engine yet. Two projects have wired one in through their own configs.
+A business analyst agent, which keeps a glossary so the roles stop talking past each other, isn't built into the plugin yet. Two of my projects add one through their own settings files.
 
 <div class="mt-5"></div>
 
-## How It Works
+## What It Gives You
+
+Each step the work must pass before it moves on, whether an agent's review or your approval, is a gate.
 
 <div class="row mt-4">
     <div class="col-md-6 mb-3 mb-md-0">
         <div class="card h-100">
             <div class="card-body">
-                <h3 class="card-title">Routed by risk</h3>
-                <p class="card-text mb-0">Each issue is routed by its labels and the path rules in your config. A <code>code</code> change gets the full pipeline and every gate. <code>research</code> gets a lighter plan, <code>docs</code> skips the architect and security passes, and <code>stub-defer</code> is journaled and left in the backlog.</p>
+                <h3 class="card-title">It builds the right thing</h3>
+                <p class="card-text">Agents have made features easier to build, not easier to choose. Before any code exists, a feature plan has to name who it's for and an observation that would show the feature is the wrong thing to build. An issue too big for one pass goes to the product manager agent for a split. If a plan would deliver less than the issue asks, the cut is recorded on the issue and the removed scope is filed as a new one.</p>
+                <p class="card-text mb-0"><strong>Example:</strong> in my election-data project, a proposed cache fix assumed visitors would request the same uncached page at the same moment. The plan checked a month of the dashboard's logs and found no two requests for the same page within 30 seconds. I closed it with no code written.</p>
             </div>
         </div>
     </div>
     <div class="col-md-6">
         <div class="card h-100">
             <div class="card-body">
-                <h3 class="card-title">Two human gates</h3>
-                <p class="card-text mb-0">The plan gate and the merge gate are set separately, so loosening how much planning you review never loosens what merges without you. Auto-merge exists only for routes you have explicitly graduated, and never for a feature, a breaking change, or anything touching a security surface.</p>
+                <h3 class="card-title">It catches problems early and often</h3>
+                <p class="card-text">Review is done by agents that didn't write the code, and a fix is never checked by the agent that wrote it. On a code change that alters behavior, the final QA check also breaks the code on purpose, in a throwaway copy, to see whether the tests notice. Code review asks the same question of any new tests.</p>
+                <p class="card-text mb-0"><strong>Example:</strong> when a reviewer finds a problem serious enough to hold the merge, and it raises a design question, the loop stops and brings it to you, with the architect's ruling on scope attached. It never dismisses the problem on its own.</p>
             </div>
         </div>
     </div>
@@ -63,16 +73,39 @@ A business analyst (ba), which keeps a glossary so the roles stop talking past e
     <div class="col-md-6 mb-3 mb-md-0">
         <div class="card h-100">
             <div class="card-body">
-                <h3 class="card-title">A ledger, not a context window</h3>
-                <p class="card-text mb-0">Each run keeps a work queue, an append-only journal of every gate decision, and a plan per issue under <code>.claude/loop/</code>. On resume, the loop checks each unfinished row against live git and PR state before starting anything new.</p>
+                <h3 class="card-title">It takes care with security</h3>
+                <p class="card-text">There's a built-in security review, run when the kind of change and the files it touches call for it. The loop is instructed never to merge while the automated checks are failing, never to overwrite history on GitHub, to work on one pull request at a time, never to sweep unrelated files into a commit, and never to edit its own settings. Those rules are instructions the agent is told to follow, not a sandbox. What is enforced is narrower: the stops for your approval, and a guard against overwriting the loop's record, within limits the README lists. For a hard boundary, use Claude Code's own permission settings.</p>
+                <p class="card-text mb-0"><strong>Example:</strong> auto-merge is off by default, and even when you turn it on it never applies to a feature, a breaking change, or anything touching security-sensitive code.</p>
             </div>
         </div>
     </div>
     <div class="col-md-6">
         <div class="card h-100">
             <div class="card-body">
-                <h3 class="card-title">Tests that would notice</h3>
-                <p class="card-text mb-0">On a change that alters behavior, the acceptance gate breaks the guarded code on purpose in a throwaway copy of your tree, runs your suite, and reports any test that stayed green. A test that can't fail is protection you think you have and don't.</p>
+                <h3 class="card-title">You stay in charge, with a record</h3>
+                <p class="card-text">You set the two approvals separately: one on the plan, one on the merge. Choosing to review fewer plans never lets more code merge without you. Every gate decision, each agent's review result and each of your approvals, is added to a running record on disk, so the record doesn't depend on the model's memory. The loop picks up where it stopped after the session's working memory is cleared or condensed, or after a crash.</p>
+                <p class="card-text mb-0"><strong>Example:</strong> if the architect materially rewrites a plan, the loop stops and shows you what changed before any code is written. No setting turns that stop off.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-3">
+    <div class="col-md-6 mb-3 mb-md-0">
+        <div class="card h-100">
+            <div class="card-body">
+                <h3 class="card-title">Code that fits your codebase</h3>
+                <p class="card-text">A common complaint about coding agents is that they don't know the codebase they're working in. They ignore the project's conventions, rebuild logic that already exists, and box in the features on the roadmap. The architect is there to catch that before any code is written. In my setup it reads the project's rules, its existing code and its roadmap, then reviews the plan for reuse, one source of truth for each fact, a clear split of responsibilities, and room for what's coming next. It never writes code. It rates each concern as blocking or not, and when a plan is sound it says so. Each project lists the kinds of change that need this review, and the loop also calls it whenever it's unsure.</p>
+                <p class="card-text mb-0"><strong>Example:</strong> I asked for an executive brief built on per-PR briefs, with two similar ideas already in the backlog. The architect recommended one combined design instead of three separate ones. It also reversed my plan to commit the briefs to the repo, because "the brief becomes part of the diff it describes." I took both.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card h-100">
+            <div class="card-body">
+                <h3 class="card-title">Cost is measured, not guessed</h3>
+                <p class="card-text">I measure what each session costs from Claude Code's own records, and I've learned that the bill follows how many back-and-forth steps the main agent takes, not how much text it is holding at each step. So the savings come from fewer review rounds, not shorter text. The next lever is a cheaper model for some roles. Early work on it is merged but not released, and today every role uses the main agent's model, so nothing changes yet.</p>
+                <p class="card-text mb-0"><strong>Example:</strong> in the October review, on v0.3.1, the median session working one issue cost $17.61 in the loop's own project and $35.61 in the election-data project, including the other agents it called on, which made up about a third of the cost.</p>
             </div>
         </div>
     </div>
@@ -80,49 +113,32 @@ A business analyst (ba), which keeps a glossary so the roles stop talking past e
 
 <div class="mt-5"></div>
 
-## What Sets It Apart
+## Under the Hood
 
-- **One issue per invocation, end to end.** It's a single supervised orchestrator handling one routed issue at a time, not a graph of agents running in parallel. Re-invoke it for the next issue, or let Claude Code's `/loop` drive it.
-- **A feature has to name its user before any code exists.** A feature plan opens with a map of one to three user stories: who benefits, how often real usage hits it, and a falsifier, an observation that would show the feature is the wrong thing to build. When that check is cheap, the plan runs it. A plan with no credible user goes back to the pm, and the gate has since stopped features in two repos before any code was written.
-- **Scope cut in a plan is recorded, not dropped.** If a plan would deliver less than an acceptance criterion asks, the engine records the amendment on the issue and files the removed scope as a new issue.
-- **A gate that didn't run never counts as passed.** No verdict means not passed. A gate's pass covers only the commit it ran on, and expires if the PR changes afterward. A blank binding in the config falls back to a built-in equivalent or stops and asks; it never quietly turns the gate off.
-- **A fix is never checked by whoever wrote it.** When the loop fixes a review or acceptance finding, a freshly spawned agent decides whether the fix worked. If that one re-check comes back dirty, the loop stops and asks you instead of iterating on itself.
-- **When the architect rewrites the plan, you see the plan.** If design review materially changes the approach, the loop stops and shows you what changed before any code is written. No mode setting reaches that stop.
-- **One engine, one config per project.** Your build commands, branch format, commit convention, merge method and PR template live in one `loop.config.md` that `/init-loop` infers from the repo. The engine itself is never edited per project.
+For developers, a condensed version. The [README](https://github.com/frederick-douglas-pearce/claude-code-loop#readme) has the depth.
 
-<div class="mt-5"></div>
+- **One issue per invocation.** A single supervised orchestrator, not a graph of agents. Re-invoke it for the next issue, or let Claude Code's `/loop` drive it.
+- **Routed by risk.** Each issue is routed by its labels and the path rules in your config. A `code` change gets the full pipeline and every gate. `research` gets a lighter plan, `docs` skips the architect and security passes, and `stub-defer` is journaled and left in the backlog.
+- **A ledger, not a context window.** Each run keeps a work queue, an append-only journal and a plan per issue under `.claude/loop/`. On resume, the loop checks each unfinished row against live git and PR state before starting anything new.
+- **Mutation testing.** On a `code` change that alters behavior, the acceptance gate mutates the guarded code in a throwaway copy of your tree, runs your suite, and reports any test that stayed green.
+- **A gate that didn't run never counts as passed.** No verdict means not passed, and a pass covers only the commit it ran on.
+- **One engine, one config per project.** Your build commands, branch format, commit convention, merge method and PR template live in one `loop.config.md` that `/init-loop` infers from the repo. The engine is never edited per project.
+- **Per-role model tiers.** A `MODEL_TIERS` table in the config binds each role to a tier and an optional effort, for example `mutation: sonnet@medium`. The engine passes only Claude Code's own model aliases, and your environment decides what they resolve to. An entry it can't read falls back to `inherit`. One limit is built in: the implementer is the orchestrating agent itself, so only the session's own model writes the code.
+- **Cost research.** The repo keeps a notebook that reads session transcripts and the ledger's per-iteration budget lines and prices them against a shared [cost specification](https://github.com/frederick-douglas-pearce/claude-code-sessions/blob/main/reference/cost-model.md). It's framed as causal inference, since issue difficulty is an unmeasured confounder. Two repos were held back on an older engine as an untreated control until October 31, when I dropped the control because it had too few runs to support the comparison. A paired benchmark replaces it. The [October cost review](https://github.com/frederick-douglas-pearce/claude-code-loop/blob/main/docs/research/cost-review-2026-10-26.md) has the findings.
 
-## Measuring What a Run Costs
+### Technology Stack
 
-The repo keeps a research notebook on why an iteration costs what it does and what would make it cheaper without making it worse. It reads Claude Code session transcripts and the ledger's per-iteration budget lines, prices them against a shared [cost specification](https://github.com/frederick-douglas-pearce/claude-code-sessions/blob/main/reference/cost-model.md), and is set up as causal inference rather than trend-reading: issue difficulty is an unmeasured confounder, so config levers are estimated as total effects. Two repos were held back on an older engine as an untreated control until October 31, when the control was dropped: it had too few runs to support the comparison, and holding it back kept two repos on a known-defective engine. Every repo now runs the current engine, and a paired benchmark replaces the control.
-
-The [October cost review](https://github.com/frederick-douglas-pearce/claude-code-loop/blob/main/docs/research/cost-review-2026-10-26.md) found that the bill is driven by turns, not context. On v0.3.1 each turn of the orchestrating agent cost about 25k billable-equivalent tokens in both repos measured, so a run costs roughly its turn count times 25k. The three levers shipped before the review all acted on context, and the program's own cost model had priced each at 3–5% of a run, so they barely moved the bill, as the model predicted. The median run cost $17.61 in this repo and $35.61 in the election-data repo, counting every subagent, and subagents were about a third of that. Of the nine levers the review ranks, the largest act on turns: a fresh agent applies review fixes, and review rounds get a ceiling. Deleting engine text, another of the nine, shipped in v0.4.0 and v0.5.0.
-
-<div class="mt-5"></div>
-
-## A Model for Each Role
-
-Every subagent the loop spawns runs on the session's own model, and subagents are about a third of the bill. Per-role model selection ([epic #308](https://github.com/frederick-douglas-pearce/claude-code-loop/issues/308)) lets each project choose the model and effort for each role the loop spawns, to cut cost without lowering quality, and to make it possible to run the loop on models from other providers. The cost review estimates it at 7–15% of the total bill.
-
-A `MODEL_TIERS` table in the project config binds each role to a tier and an optional effort, for example `mutation: sonnet@medium`. The tiers are Claude Code's four model aliases plus `inherit`. The engine never names a provider: the project's environment, through the `ANTHROPIC_DEFAULT_*_MODEL` settings or a gateway, decides which model each alias resolves to. An entry the engine can't read falls back to `inherit`, and each run's budget line records what every spawn was passed.
-
-Only the groundwork exists so far. It merged on November 12 and ships in the next release: the vocabulary, the budget-line slot and the README section, with every role set to `inherit`, so nothing changes yet. Measured presets come next. One of them is an "inverted roster": a cheaper model for the session, with the judgment roles tiered up. After that comes a run on a third-party provider. One limit is built in: the implementer is the orchestrating agent itself, not a spawned role, so only the session's own model writes the code.
-
-<div class="mt-5"></div>
-
-## Technology Stack
-
-- **Engine:** Markdown instructions that the orchestrating agent executes, split into a core read on every invocation and phase units read when needed
+- **Engine:** Markdown instructions that the orchestrating agent executes
 - **Platform:** [Claude Code](https://code.claude.com) plugin, installed from its own marketplace
 - **Integrations:** git and the [GitHub CLI](https://cli.github.com) (`gh`) for issues, pull requests and CI checks
 - **Guard hook and mutation harness:** Python 3.9+, standard library only
-- **Testing:** stdlib `unittest`, run on Python 3.9 through 3.13 in CI, pinning the couplings between files (every parameter the engine reads exists in the onboarding skeleton, the pipeline's step order agrees wherever it's restated)
+- **Testing:** stdlib `unittest`, run on Python 3.9 through 3.13 in CI
 
 <div class="mt-5"></div>
 
 ## Status
 
-At v0.5.0 the plugin is **not yet stable**. Seven repos drive it, and the loop had carried 111 issues to done across the five driving it at the v0.3.0 release in September, the last time the count was taken. That's enough to show the plugin and config split holds under real use, but not enough to call it stable. Findings from real runs are collected in [issue #1](https://github.com/frederick-douglas-pearce/claude-code-loop/issues/1), and reports from repos unlike the current seven are welcome.
+The plugin is at v0.5.0 and in active use on seven projects, and a 1.0 release is coming soon. At the v0.3.0 release in September, the loop had carried 111 issues to done across the five projects using it then, the last time I took the count. That shows one shared plugin, with its own settings file in each project, holds up under real use. Findings from real runs are collected in [issue #1](https://github.com/frederick-douglas-pearce/claude-code-loop/issues/1), and reports from projects unlike the current seven are welcome.
 
 <div class="mt-5"></div>
 
@@ -138,18 +154,22 @@ Before the first run, read the README's section on what the loop can do to your 
 
 <div class="mt-5"></div>
 
-## The Blog Series — _A Cross-Functional Team of One_
+## The Blog Series: _A Cross-Functional Team of One_
 
 _An agent can do every job on a dev team. What it shouldn't do is check its own work._ When the same mind that did the work also checks it, it tends to confirm its own thinking. The series goes gate by gate through how each role in the loop works, the real runs where one nearly let something through, and what changed in the loop afterward. It also covers setting up the loop for your own projects and the cost experiments aimed at making it cheaper without making it weaker.
 
-<a href="{{ '/blog/2026/a-loop-to-remember/' | relative_url }}" class="btn btn-outline-primary me-2">
-  Post 1 — A Loop to Remember
-</a>
-<a href="{{ '/blog/2026/the-developer-in-the-middle/' | relative_url }}" class="btn btn-outline-primary me-2">
-  Post 2 — The Developer in the Middle
-</a>
 <a href="{{ '/blog/category/claude-code-loop/' | relative_url }}" class="btn btn-outline-primary">
-  All posts in the series
+  Read the series
+</a>
+
+<div class="mt-5"></div>
+
+## Interested in Trying It?
+
+I'm helping organizations build more effectively with AI, and this plugin is a big part of how I work. If you'd like to see it on your backlog, or just want to talk through how it would fit your team, the best place to reach me is LinkedIn.
+
+<a href="https://www.linkedin.com/in/frederick-douglas-pearce/" class="btn btn-outline-primary">
+  <i class="fab fa-linkedin"></i> Find me on LinkedIn
 </a>
 
 <div class="mt-5"></div>
