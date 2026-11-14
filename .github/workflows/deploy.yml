@@ -102,10 +102,15 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v7
+      # A minor series, not a patch pin. On 2026-11-13 `ubuntu-latest` moved to
+      # ubuntu-26.04, and setup-ruby builds only the latest patch of each series
+      # for newer images, so the inherited upstream pin "3.3.5" 404'd at this step
+      # and failed every build. Nothing needs the exact patch: Gemfile.lock has no
+      # RUBY VERSION section. Keep broken-links-site.yml on the same series.
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.3.5"
+          ruby-version: "3.3"
       - name: Install dependencies 💎
         run: bundle install --jobs 4
       - name: Setup Python 🐍
