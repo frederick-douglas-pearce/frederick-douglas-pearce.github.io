@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Claude Code Loop
-description: An AI dev team that works your backlog with the checks a good human team has, while you keep the decisions
+description: A plugin for Claude Code. An AI dev team that works your backlog with the checks a good human team has, while you keep the decisions
 img: assets/img/claude_code_loop_ledger.svg
 og_image: https://frederick-douglas-pearce.github.io/assets/img/claude-code-loop-og.png
 importance: 1
