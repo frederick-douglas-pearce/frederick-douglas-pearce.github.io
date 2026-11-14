@@ -149,14 +149,8 @@ Before the first run, read the README's section on what the loop can do to your 
 
 _An agent can do every job on a dev team. What it shouldn't do is check its own work._ When the same mind that did the work also checks it, it tends to confirm its own thinking. The series goes gate by gate through how each role in the loop works, the real runs where one nearly let something through, and what changed in the loop afterward. It also covers setting up the loop for your own projects and the cost experiments aimed at making it cheaper without making it weaker.
 
-<a href="{{ '/blog/2026/a-loop-to-remember/' | relative_url }}" class="btn btn-outline-primary me-2">
-  Post 1: A Loop to Remember
-</a>
-<a href="{{ '/blog/2026/the-developer-in-the-middle/' | relative_url }}" class="btn btn-outline-primary me-2">
-  Post 2: The Developer in the Middle
-</a>
 <a href="{{ '/blog/category/claude-code-loop/' | relative_url }}" class="btn btn-outline-primary">
-  All posts in the series
+  Read the series
 </a>
 
 <div class="mt-5"></div>
