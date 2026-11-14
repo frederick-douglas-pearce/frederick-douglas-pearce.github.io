@@ -4,7 +4,7 @@ title: AgentFluent
 description: Local-first agent analytics with behavior-to-improvement diagnostics for Claude Code and the Agent SDK
 img: assets/img/agentfluent_config_check.svg
 og_image: https://frederick-douglas-pearce.github.io/assets/img/agentfluent-og.png
-importance: 1
+importance: 2
 category: work
 ---
 

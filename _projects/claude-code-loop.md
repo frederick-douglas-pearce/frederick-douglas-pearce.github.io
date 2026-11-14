@@ -1,10 +1,10 @@
 ---
 layout: page
-title: claude-code-loop
+title: Claude Code Loop
 description: An AI dev team that works your backlog with the checks a good human team has, while you keep the decisions
 img: assets/img/claude_code_loop_ledger.svg
 og_image: https://frederick-douglas-pearce.github.io/assets/img/claude-code-loop-og.png
-importance: 2
+importance: 1
 category: work
 # No math on this page, and MathJax's `$` delimiter would typeset the dollar amounts.
 enable_math: false
@@ -12,7 +12,7 @@ enable_math: false
 
 ## Overview
 
-claude-code-loop is an AI dev team that works through your backlog with the checks a good human team has, while you keep the decisions. It runs inside [Claude Code](https://code.claude.com) as a plugin. It takes one issue at a time from your GitHub backlog and carries it from scoping to merge. A product manager agent scopes it, an architect agent reviews the plan when the change calls for it, and the main agent builds it. Other agents review the code, and an agent that didn't write it checks the result. By default it stops for your approval on every plan before any code is written and on every merge.
+Claude Code Loop is an AI dev team that works through your backlog with the checks a good human team has, while you keep the decisions. It runs inside [Claude Code](https://code.claude.com) as a plugin. It takes one issue at a time from your GitHub backlog and carries it from scoping to merge. A product manager agent scopes it, an architect agent reviews the design before any code is written, and the main agent builds it. Other agents review the code, and an agent that didn't write it checks the result. By default it stops for your approval on every plan before any code is written and on every merge.
 
 What that gets you:
 
@@ -30,15 +30,15 @@ It runs today on seven projects, including its own: the loop works its own backl
 
 The pipeline is modeled on the roles of a human team. Each project's settings file says which agent fills each role. The plugin doesn't come with agents of its own: you point the product manager and architect roles at agents you already have.
 
-| Team role             | What it does in the loop                                                                                                          |
-| --------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| **Product manager**   | answers scope, priority and requirements questions, and splits an issue too large for one pass                                    |
-| **Architect**         | reviews the plan before any code is written, when the change calls for it or the loop is unsure; it reads but never edits code    |
-| **Developer**         | the main agent, which also coordinates the others: plans, writes the code, runs your automated checks, opens the pull request     |
-| **Code reviewers**    | several reviewer agents read the change side by side, each given the issue's acceptance criteria (its written definition of done) |
-| **Security reviewer** | runs when the kind of change and the files it touches call for it                                                                 |
-| **QA**                | an agent that didn't do the work checks every acceptance criterion, and whether the tests would catch the code breaking later     |
-| **Owner**             | you: approve plans, approve merges, and settle anything the agents disagree on                                                    |
+| Team role             | What it does in the loop                                                                                                                                                                        |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Product manager**   | answers scope, priority and requirements questions, and splits an issue too large for one pass                                                                                                  |
+| **Architect**         | reviews the design before any code is written: whether it fits the project's conventions and existing code, reuses what's there, and leaves room for the roadmap. It reads but never edits code |
+| **Developer**         | the main agent, which also coordinates the others: plans, writes the code, runs your automated checks, opens the pull request                                                                   |
+| **Code reviewers**    | several reviewer agents read the change side by side, each given the issue's acceptance criteria (its written definition of done)                                                               |
+| **Security reviewer** | runs when the kind of change and the files it touches call for it                                                                                                                               |
+| **QA**                | an agent that didn't do the work checks every acceptance criterion, and whether the tests would catch the code breaking later                                                                   |
+| **Owner**             | you: approve plans, approve merges, and settle anything the agents disagree on                                                                                                                  |
 
 A business analyst agent, which keeps a glossary so the roles stop talking past each other, isn't built into the plugin yet. Two of my projects add one through their own settings files.
 
@@ -62,7 +62,7 @@ Each step the work must pass before it moves on, whether an agent's review or yo
         <div class="card h-100">
             <div class="card-body">
                 <h3 class="card-title">It catches problems early and often</h3>
-                <p class="card-text">When a change calls for it, the architect reviews the plan before any code is written. Review is done by agents that didn't write the code, and a fix is never checked by the agent that wrote it. On a code change that alters behavior, the final QA check also breaks the code on purpose, in a throwaway copy, to see whether the tests notice. Code review asks the same question of any new tests.</p>
+                <p class="card-text">Review is done by agents that didn't write the code, and a fix is never checked by the agent that wrote it. On a code change that alters behavior, the final QA check also breaks the code on purpose, in a throwaway copy, to see whether the tests notice. Code review asks the same question of any new tests.</p>
                 <p class="card-text mb-0"><strong>Example:</strong> when a reviewer finds a problem serious enough to hold the merge, and it raises a design question, the loop stops and brings it to you, with the architect's ruling on scope attached. It never dismisses the problem on its own.</p>
             </div>
         </div>
@@ -91,7 +91,16 @@ Each step the work must pass before it moves on, whether an agent's review or yo
 </div>
 
 <div class="row mt-3">
-    <div class="col-12">
+    <div class="col-md-6 mb-3 mb-md-0">
+        <div class="card h-100">
+            <div class="card-body">
+                <h3 class="card-title">Code that fits your codebase</h3>
+                <p class="card-text">A common complaint about coding agents is that they don't know the codebase they're working in. They ignore the project's conventions, rebuild logic that already exists, and box in the features on the roadmap. The architect is there to catch that before any code is written. In my setup it reads the project's rules, its existing code and its roadmap, then reviews the plan for reuse, one source of truth for each fact, a clear split of responsibilities, and room for what's coming next. It never writes code. It rates each concern as blocking or not, and when a plan is sound it says so. Each project lists the kinds of change that need this review, and the loop also calls it whenever it's unsure.</p>
+                <p class="card-text mb-0"><strong>Example:</strong> I asked for an executive brief built on per-PR briefs, with two similar ideas already in the backlog. The architect recommended one combined design instead of three separate ones. It also reversed my plan to commit the briefs to the repo, because "the brief becomes part of the diff it describes." I took both.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
         <div class="card h-100">
             <div class="card-body">
                 <h3 class="card-title">Cost is measured, not guessed</h3>
