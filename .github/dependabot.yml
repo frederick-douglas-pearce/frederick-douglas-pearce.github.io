@@ -31,3 +31,32 @@ updates:
       actions:
         patterns:
           - "*"
+
+  # Ruby gems in Gemfile / Gemfile.lock, installed by the CI builds in
+  # deploy.yml and broken-links-site.yml. Not the gems inside the amirpourmand/al-folio image used for
+  # local builds (see CLAUDE.md); those are separate.
+  #
+  # lockfile-only: the Gemfile is human-owned. Its >= floors record security
+  # minimums, and css_parser's ~> pin stays because no build calls the parser,
+  # so a major needs the manual API check from #132. A security fix that lies
+  # outside a Gemfile requirement is not auto-PR'd; it surfaces as an alert to
+  # handle by hand.
+  #
+  # Dependabot resolves on its own Ruby and Bundler, so check its PRs the way
+  # #132 did: BUNDLED WITH and PLATFORMS unchanged, every platform-specific
+  # nokogiri entry present. CI builds on Ruby 3.3, so a gem that needs a newer
+  # Ruby shows up as a failed PR build.
+  - package-ecosystem: bundler
+    directory: "/"
+    schedule:
+      interval: monthly
+    versioning-strategy: lockfile-only
+    # jekyll-terser comes from a personal fork (:git, no ref) and minifies the
+    # JS the site ships. Moving its locked revision is a deliberate commit, not
+    # one line in a grouped monthly PR.
+    ignore:
+      - dependency-name: jekyll-terser
+    groups:
+      bundler:
+        patterns:
+          - "*"
