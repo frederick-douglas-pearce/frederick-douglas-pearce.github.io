@@ -192,6 +192,10 @@ jobs:
   deploy:
     needs: build
     # Never deploy from a PR; PRs only validate the build job above.
+    # A workflow_dispatch on another branch passes this `if:` but cannot
+    # publish: the github-pages environment (Settings -> Environments) allows
+    # deployments from `main` only, so the job fails at the environment check.
+    # That policy is the guard, not this condition; keep it main-only (#135).
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     # Worst case ~23.3 min: three attempts to their 7-min step caps (21), the
