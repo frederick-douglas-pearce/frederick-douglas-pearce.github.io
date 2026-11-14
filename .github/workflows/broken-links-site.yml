@@ -19,10 +19,12 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v7
+      # Same series as deploy.yml, which says why it is a series and not a patch
+      # pin. The inherited "3.2.2" would 404 on ubuntu-26.04 the same way.
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.2.2"
+          ruby-version: "3.3"
       - name: Install dependencies 💎
         run: bundle install --jobs 4
       - name: Update _config.yml ⚙️
