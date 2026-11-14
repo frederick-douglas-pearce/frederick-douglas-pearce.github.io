@@ -32,28 +32,33 @@ updates:
         patterns:
           - "*"
 
-  # Ruby gems in Gemfile / Gemfile.lock, installed by the CI builds in
-  # deploy.yml and broken-links-site.yml. Not the gems inside the amirpourmand/al-folio image used for
-  # local builds (see CLAUDE.md); those are separate.
+  # Ruby gems in Gemfile / Gemfile.lock. CI installs them in deploy.yml and
+  # broken-links-site.yml, and the local build recipe in CLAUDE.md installs
+  # this lockfile into a vendor dir. Only the gems preinstalled in the
+  # amirpourmand/al-folio image are separate, and they are not covered here.
   #
   # lockfile-only: the Gemfile is human-owned. Its >= floors record security
-  # minimums, and css_parser's ~> pin stays because no build calls the parser,
-  # so a major needs the manual API check from #132. A security fix that lies
-  # outside a Gemfile requirement is not auto-PR'd; it surfaces as an alert to
-  # handle by hand.
+  # minimums, and css_parser's ~> pin is explained at its Gemfile line.
+  # In-range updates come with the monthly grouped PR, or sooner as individual
+  # security PRs when Dependabot security updates are enabled in the repo
+  # settings. A fix outside a Gemfile requirement is never auto-PR'd; it
+  # surfaces as an alert to handle by hand.
   #
   # Dependabot resolves on its own Ruby and Bundler, so check its PRs the way
-  # #132 did: BUNDLED WITH and PLATFORMS unchanged, every platform-specific
-  # nokogiri entry present. CI builds on Ruby 3.3, so a gem that needs a newer
-  # Ruby shows up as a failed PR build.
+  # PR #154 did: BUNDLED WITH and PLATFORMS unchanged, every platform-specific
+  # nokogiri entry present. CI builds on Ruby 3.3, but until its bundle install
+  # is frozen (#153) a gem that needs a newer Ruby may be re-resolved rather
+  # than fail, so read the PR build's "Install dependencies" log for Resolving
+  # lines or versions that differ from the lockfile.
   - package-ecosystem: bundler
     directory: "/"
     schedule:
       interval: monthly
     versioning-strategy: lockfile-only
-    # jekyll-terser comes from a personal fork (:git, no ref) and minifies the
-    # JS the site ships. Moving its locked revision is a deliberate commit, not
-    # one line in a grouped monthly PR.
+    # jekyll-terser comes from a third-party git repo (RobertoJBeltran/
+    # jekyll-terser, inherited from upstream al-folio; :git with no ref) and
+    # minifies the JS the site ships. Moving its locked revision is a
+    # deliberate commit, not one line in a grouped monthly PR.
     ignore:
       - dependency-name: jekyll-terser
     groups:
