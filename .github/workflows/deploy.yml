@@ -226,7 +226,7 @@ jobs:
     # which the action's own timeout does not cover (its clock starts after
     # create() returns). Without them a hung create() would run into this cap,
     # the job would end canceled, and redeploy, which runs only on failure,
-    # would not run. Three places depend on this cap: the "~46 min before the
+    # would not run. Four places depend on this cap: the "~46 min before the
     # ESG push" in the drill comment above and in
     # .github/workflows/repo-stats.yml's schedule comment (a build of up to 20
     # min plus this cap), that comment's "up to its 26-min cap", and the
