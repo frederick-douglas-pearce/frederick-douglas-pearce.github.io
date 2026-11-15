@@ -702,7 +702,7 @@ An owner decision after the review above, not one of its corrections. #72 now de
 `schedule-posts.txt` instead of fixing it (it moves files into `_posts/`, which only the
 external syncs may write) and is **no longer a prerequisite for #73**. This supersedes every
 #72↔#73 ordering or dependency claim above: the priority-table row for #72, "fix both
-together (#72)" in the findings, "Depends on: #72's dispatch pattern" and "Dependencies. #72"
+together (#72)" in "Hard constraints and known traps", "Depends on: #72's dispatch pattern" and "Dependencies. #72"
 under #73, and "Prerequisite for: #73" and "Should land before/with #73" under #72. The
 dispatch pattern already exists in `bin/push-dispatch.sh` (`push_head_to_main`,
 `dispatch_deploy`), and #73 owns the end-to-end deploy check that was #72's scope. The #72
