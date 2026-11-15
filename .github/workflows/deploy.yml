@@ -408,35 +408,102 @@ jobs:
   # 2026-08-17 setup 429. A failed build skips deploy, so it never gets here:
   # a new commit would rebuild the same broken tree. failure() is needed
   # because a job whose needs failed is otherwise skipped before its if: is
-  # read. It also opens the deploy-fallback issue that notifies the owner.
-  # Details in bin/pages-redeploy.sh.
+  # read. It also opens the deploy-fallback issue that notifies the owner:
+  # the script does on the paths it handles, and the job's last step does
+  # whenever the script did not (#136). Details in bin/pages-redeploy.sh.
   redeploy:
     needs: deploy
     if: failure() && needs.deploy.result == 'failure' && github.ref == 'refs/heads/main' && !inputs.fallback
     runs-on: ubuntu-latest
     # One push, up to 40s of dispatch backoff and one issue. It does not wait
-    # on the run it dispatches; that run's report job follows up.
-    timeout-minutes: 5
+    # on the run it dispatches; that run's report job follows up. The step
+    # caps (2 + 3 + 1) are what make a hang notify: a step that hits its cap
+    # fails (see the superseded check's comment in the deploy job), so the
+    # backstop step still runs, where a job-level timeout cancels the job and
+    # runs nothing after it. This cap is the steps plus ~1 min of setup, and
+    # it only catches a runner or setup hang before any step, which notifies
+    # nobody. Nothing else depends on it.
+    timeout-minutes: 7
     permissions:
       contents: write # push the empty commit
       actions: write # dispatch deploy.yml
       issues: write # open the deploy-fallback issue
     steps:
       - name: Checkout 🛎️
+        id: checkout
+        timeout-minutes: 2
         uses: actions/checkout@v7
         with:
           # The failed commit, not main's head: the empty commit must be its
           # child, so the push succeeds only if main has not moved.
           ref: ${{ github.sha }}
       - name: Commit and redeploy under a new identity 🔁
+        id: redeploy
+        # Healthy worst case ~1.5 min (push, ls-remote, three dispatches with
+        # 10s and 30s backoff, one issue).
+        timeout-minutes: 3
         env:
           GH_TOKEN: ${{ github.token }}
           STUCK_SHA: ${{ github.sha }}
+          # Written once the script has opened the issue. Same value in the
+          # backstop step below; keep the two in step. (runner is not
+          # available in job-level env.)
+          FALLBACK_SENTINEL: ${{ runner.temp }}/deploy-fallback-notified
         run: bin/pages-redeploy.sh
+      # The backstop (#136): open the deploy-fallback issue whenever the script
+      # did not, so every redeploy outcome notifies the owner. That covers a
+      # failed or timed-out checkout (the script then never runs: outcome
+      # skipped), a set -e or set -u abort, the script step's cap, and a green
+      # script whose own `gh issue create` failed. !cancelled(), not failure(),
+      # is for that last case; a run a human canceled is left alone. It needs
+      # no checkout, because the checkout may be what failed, so everything
+      # comes in through env. A dispatched fallback run never gets here: the
+      # job's if: skips it on inputs.fallback.
+      - name: Notify if the redeploy did not 📣
+        if: ${{ !cancelled() }}
+        timeout-minutes: 1
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          OWNER: ${{ github.repository_owner }}
+          STUCK_SHA: ${{ github.sha }}
+          CHECKOUT_OUTCOME: ${{ steps.checkout.outcome }}
+          REDEPLOY_OUTCOME: ${{ steps.redeploy.outcome }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          DEPLOYS_URL: ${{ github.server_url }}/${{ github.repository }}/actions/workflows/deploy.yml
+          FALLBACK_SENTINEL: ${{ runner.temp }}/deploy-fallback-notified
+        run: |
+          if [[ -e $FALLBACK_SENTINEL ]]; then
+            echo "The redeploy script opened the deploy-fallback issue; nothing to do."
+            exit 0
+          fi
+          short=${STUCK_SHA:0:7}
+          if [[ $REDEPLOY_OUTCOME == success ]]; then
+            title="Pages deploy fallback ran for $short"
+            what="The redeploy step succeeded (its log shows what it pushed and dispatched), but it could not open this issue itself."
+          else
+            title="Pages redeploy fallback failed for $short"
+            what="The redeploy fallback itself failed (checkout: $CHECKOUT_OUTCOME, redeploy script: $REDEPLOY_OUTCOME), so the site may still not serve this build, and whether a fresh deploy was dispatched is unknown: check the failed run's log."
+          fi
+          body="@$OWNER the deploy job for \`$STUCK_SHA\` failed, so the redeploy fallback ran (#131). $what
+
+          - Failed run: $RUN_URL
+          - Deploy runs: $DEPLOYS_URL
+
+          If a fallback deploy was dispatched, its report job comments here and closes this issue on success. If nothing follows within ~30 min, compare the live /build-version.txt with main's head. To recover by hand: branch off origin/main, git commit --allow-empty, git push origin HEAD:main, then gh workflow run deploy.yml --ref main (an empty commit does not match deploy.yml's paths filter, so the dispatch is needed)."
+          if ! gh issue create --label deploy-fallback --title "$title" --body "$body"; then
+            echo "::error::Could not open the deploy-fallback issue here either, so the owner was not notified: $RUN_URL"
+            exit 1
+          fi
 
   # Closes the loop on a fallback: in a run redeploy dispatched, comment the
   # deploy job's result on the most recent open deploy-fallback issue, and
-  # close the issue on success. Runs whatever deploy did (always()), but never
+  # close the issue on success. "Most recent" has two known gaps, accepted
+  # (#136): when one fallback opened two issues (see bin/pages-redeploy.sh),
+  # it closes the newer and leaves the older open, a false "may be stale";
+  # and when two fallbacks run within ~10 min, the first one's report can
+  # close the second one's issue. Key the lookup on the run instead if
+  # anything else starts opening deploy-fallback issues. Runs whatever deploy did (always()), but never
   # on a failed build, which skips deploy and would only report "skipped", and
   # never in a drill, whose deploy fails on purpose (drill step (a)).
   report:

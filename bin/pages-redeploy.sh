@@ -30,14 +30,21 @@
 #      a newer head is not guaranteed a deploy of its own (deploy.yml's paths
 #      filter skips some commits, and an Actions push triggers nothing), and a
 #      redundant deploy is harmless.
-#   4. Open a deploy-fallback issue on every path this script itself handles
-#      past the two entry guards (outside Actions, off main): success, or a
-#      fail() verdict. An unexpected failure (a failed checkout step, an
-#      unexpected git error, an unbound variable, the job's 5-min timeout)
-#      opens none, and the red run is the only signal. Otherwise the owner is
-#      emailed and the history shows how often this happens. The
-#      dispatched run's report job comments its result there and closes it on
-#      success.
+#   4. Open a deploy-fallback issue on every path this script itself handles:
+#      success, or a fail() verdict. Once the issue exists, write the
+#      FALLBACK_SENTINEL file. The redeploy job's last step (#136) opens the
+#      issue instead whenever that file is missing: a failed checkout, an
+#      unexpected git error under set -e, an unbound variable under set -u, a
+#      step that hits its cap, or a notify() whose `gh issue create` failed.
+#      So the owner is emailed on every redeploy outcome except a runner or
+#      setup hang that ends the job before any step runs, and the history
+#      shows how often this happens. The dispatched run's report job comments
+#      its result there and closes it on success.
+#
+#      Two issues can still open for one fallback, rarely: GitHub created the
+#      issue but `gh` reported an error, or the step was killed between the
+#      create and the sentinel write. That errs toward notifying twice, never
+#      zero times.
 #
 # The dispatched run's redeploy job is skipped (fallback=true), so a hang that
 # survives the new identity fails red once and does not loop.
@@ -66,6 +73,8 @@ if [[ "${GITHUB_ACTIONS:-}" != "true" ]]; then
 fi
 
 stuck=${STUCK_SHA:?STUCK_SHA must be the commit whose deploy failed}
+# Set once, as step env on both this step and the backstop step that reads it.
+sentinel=${FALLBACK_SENTINEL:?FALLBACK_SENTINEL must be the file the backstop step of the redeploy job checks}
 short=${stuck:0:7}
 server=${GITHUB_SERVER_URL:-https://github.com}
 repo=${GITHUB_REPOSITORY:-frederick-douglas-pearce/frederick-douglas-pearce.github.io}
@@ -74,9 +83,10 @@ failed_run="$server/$repo/actions/runs/${GITHUB_RUN_ID:-unknown}"
 deploys="$server/$repo/actions/workflows/deploy.yml"
 manual="To recover by hand: branch off origin/main, git commit --allow-empty, git push origin HEAD:main, then gh workflow run deploy.yml --ref main (an empty commit does not match deploy.yml's paths filter, so the dispatch is needed). A same-commit rerun is unlikely to help after a hang (it did not on 2026-11-05); the recipe always works."
 
-# notify <outcome line>: open the deploy-fallback issue. A failure here is a
-# warning, not a failed job: the redeploy itself already happened or failed,
-# and the deploy run is red either way.
+# notify <outcome line>: open the deploy-fallback issue and, only once it
+# exists, write the sentinel. A failure here is a warning, not a failed job:
+# the redeploy itself already happened or failed, and with no sentinel the
+# job's backstop step opens the issue instead.
 notify() {
   local body
   body="@$owner the deploy job for \`$stuck\` failed (every attempt at that commit and the landed check, or a setup, OIDC or runner failure; the failed run shows which step), so the redeploy fallback ran (#131).
@@ -86,8 +96,10 @@ notify() {
 - Deploy runs: $deploys
 
 The fallback deploy's report job comments its result here and closes this issue if it succeeds. If nothing follows within ~30 min, check the deploy runs above. $manual"
-  if ! gh issue create --label deploy-fallback --title "Pages deploy fallback ran for $short" --body "$body"; then
-    echo "::warning::$(esc "could not open the deploy-fallback issue; the owner was not notified. $1")"
+  if gh issue create --label deploy-fallback --title "Pages deploy fallback ran for $short" --body "$body"; then
+    : >"$sentinel"
+  else
+    echo "::warning::$(esc "could not open the deploy-fallback issue; the job's backstop step will try once more. $1")"
   fi
 }
 

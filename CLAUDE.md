@@ -223,7 +223,9 @@ names each deployment after the commit SHA, and on 2026-11-05 every attempt and 
 later kept getting the canceled one back. So `redeploy` pushes an empty commit, dispatches a
 fresh deploy with `fallback=true`, and opens a `deploy-fallback` issue that @-mentions the
 owner. The fallback run's `report` job comments the result there and closes the issue on
-success. The label is load-bearing: `report` finds the issue by it. An open
+success. If `redeploy` itself fails (checkout, a script abort, a step cap), its last step
+opens the issue instead (#136), so every outcome notifies except a runner hang before any
+step runs. The label is load-bearing: `report` finds the issue by it. An open
 `deploy-fallback` issue means the site may still be stale. Recover by hand the same way:
 branch off `origin/main`, `git commit --allow-empty`, `git push origin HEAD:main`, then
 `gh workflow run deploy.yml --ref main`. The dispatch is needed because an empty commit
