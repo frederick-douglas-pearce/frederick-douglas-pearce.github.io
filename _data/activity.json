@@ -1,0 +1,118 @@
+{
+  "_generated_by": "bin/activity-releases.js — do not edit by hand",
+  "generated_at": "2026-11-15T23:03:56Z",
+  "releases": [
+    {
+      "repo": "agentfluent",
+      "tag": "v0.11.0",
+      "date": "2026-07-23T01:02:37Z",
+      "summary": "analyze: show an SDK-vs-Claude-Code indicator",
+      "url": "https://github.com/frederick-douglas-pearce/agentfluent/releases/tag/v0.11.0"
+    },
+    {
+      "repo": "agentfluent",
+      "tag": "v0.10.0",
+      "date": "2026-07-03T07:31:23Z",
+      "summary": "config: add HookFieldCoverage model and hook_inspector module",
+      "url": "https://github.com/frederick-douglas-pearce/agentfluent/releases/tag/v0.10.0"
+    },
+    {
+      "repo": "agentfluent",
+      "tag": "v0.9.0",
+      "date": "2026-06-06T02:11:37Z",
+      "summary": "add model-turn count to SubagentTrace and AgentInvocation",
+      "url": "https://github.com/frederick-douglas-pearce/agentfluent/releases/tag/v0.9.0"
+    },
+    {
+      "repo": "agentfluent",
+      "tag": "v0.8.0",
+      "date": "2026-05-31T00:22:01Z",
+      "summary": "diagnostics: #400 — CI_FAILURE_FIRST_PUSH Tier 3 signal",
+      "url": "https://github.com/frederick-douglas-pearce/agentfluent/releases/tag/v0.8.0"
+    },
+    {
+      "repo": "agentfluent",
+      "tag": "v0.7.0",
+      "date": "2026-05-17T07:26:22Z",
+      "summary": "cli: add agentfluent report command skeleton",
+      "url": "https://github.com/frederick-douglas-pearce/agentfluent/releases/tag/v0.7.0"
+    },
+    {
+      "repo": "agentfluent",
+      "tag": "v0.6.0",
+      "date": "2026-05-09T05:02:46Z",
+      "summary": "cli: analyze --since/--until time filtering",
+      "url": "https://github.com/frederick-douglas-pearce/agentfluent/releases/tag/v0.6.0"
+    },
+    {
+      "repo": "agentfluent",
+      "tag": "v0.5.0",
+      "date": "2026-05-05T01:54:01Z",
+      "summary": "agents: add tester agent for fixing existing pytest failures",
+      "url": "https://github.com/frederick-douglas-pearce/agentfluent/releases/tag/v0.5.0"
+    },
+    {
+      "repo": "agentfluent",
+      "tag": "v0.4.0",
+      "date": "2026-04-30T00:06:13Z",
+      "summary": "analytics: surface total_cost_usd + avg_cost_per_invocation_usd on by_agent_type",
+      "url": "https://github.com/frederick-douglas-pearce/agentfluent/releases/tag/v0.4.0"
+    },
+    {
+      "repo": "codefluent",
+      "tag": "v1.2.0",
+      "date": "2026-04-29T19:32:39Z",
+      "summary": "detect error recovery patterns in conversation flow",
+      "url": "https://github.com/frederick-douglas-pearce/codefluent/releases/tag/v1.2.0"
+    },
+    {
+      "repo": "agentfluent",
+      "tag": "v0.3.0",
+      "date": "2026-04-25T07:10:12Z",
+      "summary": "cli: add --claude-config-dir flag and CLAUDE_CONFIG_DIR env var",
+      "url": "https://github.com/frederick-douglas-pearce/agentfluent/releases/tag/v0.3.0"
+    },
+    {
+      "repo": "agentfluent",
+      "tag": "v0.2.0",
+      "date": "2026-04-20T07:55:13Z",
+      "summary": "label cost output as API rate with subscription-plan footnote",
+      "url": "https://github.com/frederick-douglas-pearce/agentfluent/releases/tag/v0.2.0"
+    },
+    {
+      "repo": "agentfluent",
+      "tag": "v0.1.0",
+      "date": "2026-04-17T10:33:18Z",
+      "summary": "add versioned JSON envelope and help examples",
+      "url": "https://github.com/frederick-douglas-pearce/agentfluent/releases/tag/v0.1.0"
+    },
+    {
+      "repo": "codefluent",
+      "tag": "v1.1.0",
+      "date": "2026-04-10T08:14:44Z",
+      "summary": "add .claude/ directory configuration scanner",
+      "url": "https://github.com/frederick-douglas-pearce/codefluent/releases/tag/v1.1.0"
+    },
+    {
+      "repo": "codefluent",
+      "tag": "v1.0.0",
+      "date": "2026-03-25T09:09:31Z",
+      "summary": "add automated scoring regression eval runner",
+      "url": "https://github.com/frederick-douglas-pearce/codefluent/releases/tag/v1.0.0"
+    },
+    {
+      "repo": "codefluent",
+      "tag": "v0.3.0",
+      "date": "2026-03-14T02:41:17Z",
+      "summary": "add changelogs and Release Please automation",
+      "url": "https://github.com/frederick-douglas-pearce/codefluent/releases/tag/v0.3.0"
+    },
+    {
+      "repo": "codefluent",
+      "tag": "v0.2.0",
+      "date": "2026-03-09T07:52:53Z",
+      "summary": "Add CI/CD pipeline, branching workflow, and project filter",
+      "url": "https://github.com/frederick-douglas-pearce/codefluent/releases/tag/v0.2.0"
+    }
+  ]
+}
