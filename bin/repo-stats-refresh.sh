@@ -39,7 +39,7 @@
 #
 # Steps 5 and 6 use the shared push and dispatch functions in
 # bin/push-dispatch.sh, lifted out of this script for bin/pages-redeploy.sh
-# (#131). #72/#73 should use them too. This script keeps its own failure
+# (#131). #73 should use them too. This script keeps its own failure
 # messages.
 
 set -euo pipefail
