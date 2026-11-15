@@ -80,9 +80,9 @@ on:
         type: boolean
         default: false
 
-# Least privilege at the top; the deploy job widens to what Pages needs, the
-# redeploy job to what a commit, a dispatch and an issue need, and the report
-# job to issues only.
+# Least privilege at the top; the deploy job widens to what Pages and its
+# superseded check need, the redeploy job to what a commit, a dispatch and an
+# issue need, and the report job to issues only.
 permissions:
   contents: read
 
@@ -189,6 +189,27 @@ jobs:
   # second full build of 5-12 min and the publish. Up to ~40 min if all three
   # hang to the cap. Both miss the daily ESG SLA, and that is accepted: the
   # alternative waited on a human, ~4 h on 2026-11-05.
+  #
+  # Before any attempt, the job skips publishing when the live site already
+  # serves a newer commit (#134). The build job sits outside the "pages"
+  # group, so builds can finish out of order: push A, then B; B builds faster
+  # and publishes, then A would publish over it. The check reads the live
+  # build-version.txt and asks the compare API how it relates to this commit.
+  # Only "ahead" (the live commit descends from this one, so its tree already
+  # has this commit's changes) skips, and the job then succeeds without
+  # publishing. Equal, older, diverged, unreadable, an API error or a timeout
+  # all publish, as before. A rerun of an old run's deploy job skips too, so
+  # a rollback is a revert commit, not a rerun. A drill never skips.
+  #
+  # The check runs inside the group, so no other in-group publish can land
+  # between it and this job's attempts. Three gaps remain. A deployment an
+  # earlier attempt canceled can still land late, outside any group (item 2
+  # above). The expected limit is CDN lag: the check runs seconds after the
+  # newer publish, may read the older stamp, and then publishes, which is the
+  # old behavior. And a newer commit's pending deploy can be replaced in the
+  # queue by an older one's and lost (#157). The live stamp, not the
+  # github-pages environment's record, says what is served: a skipped job
+  # still records its commit as the environment's active deployment.
   deploy:
     needs: build
     # Never deploy from a PR; PRs only validate the build job above.
@@ -198,21 +219,21 @@ jobs:
     # That policy is the guard, not this condition; keep it main-only (#135).
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
-    # Worst case ~23.3 min: three attempts to their 7-min step caps (21), the
-    # 30s and 60s backoffs, and the landed check (under 1 min). That leaves
-    # ~1.5 min for job setup inside 25. The step caps are what bound a
-    # create() call that hangs, which the action's own timeout does not cover
-    # (its clock starts after create() returns). Without them a hung create()
-    # would run into this cap, the job would end cancelled, and redeploy,
-    # which runs only on failure, would not run. Kept at 25 because
-    # .github/workflows/repo-stats.yml's schedule comment counts on "up to its
-    # 25-min cap". Recompute both if a cap, a backoff or the landed check
-    # changes.
+    # Worst case ~24.3 min: the superseded check to its 1-min step cap, three
+    # attempts to their 7-min step caps (21), the 30s and 60s backoffs, and
+    # the landed check (under 1 min). That leaves ~1.7 min for job setup
+    # inside 26. The step caps are what bound a create() call that hangs,
+    # which the action's own timeout does not cover (its clock starts after
+    # create() returns). Without them a hung create() would run into this cap,
+    # the job would end cancelled, and redeploy, which runs only on failure,
+    # would not run. .github/workflows/repo-stats.yml's schedule comment
+    # counts on "up to its 26-min cap". Recompute both if a cap, a backoff,
+    # the landed check or the superseded check changes.
     #
     # Safe despite the concurrency group below: timeout-minutes measures
     # execution time on the runner, not time spent queued waiting for the
     # group, so a deploy held behind another does not burn its budget.
-    timeout-minutes: 25
+    timeout-minutes: 26
     # Serialize deploys and never cancel an in-flight publish, so a retrying
     # run can't be killed by the next push (and vice versa). Scoped to this
     # job so PR build runs don't share the group. redeploy and report stay out
@@ -225,10 +246,61 @@ jobs:
     permissions:
       pages: write # to deploy to Pages
       id-token: write # to verify the deployment originates from this workflow
+      # For the superseded check's compare API call. This block replaces the
+      # top-level one, so without it the job has no contents scope at all.
+      contents: read
     environment:
       name: github-pages
-      url: ${{ steps.deploy1.outputs.page_url || steps.deploy2.outputs.page_url || steps.deploy3.outputs.page_url }}
+      url: ${{ steps.deploy1.outputs.page_url || steps.deploy2.outputs.page_url || steps.deploy3.outputs.page_url || steps.newer.outputs.url }}
     steps:
+      # The superseded check (#134; see the comment above the job). It must
+      # never stop a deploy: it is capped at 1 min, every network call has its
+      # own timeout, continue-on-error keeps a failure from skipping the
+      # attempts, and the guards below test != 'true', so a step that failed
+      # or wrote nothing publishes. It always logs what it read.
+      - name: Skip if the site already serves a newer commit ⏭️
+        id: newer
+        timeout-minutes: 1
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DRILL: ${{ inputs.drill || false }}
+        run: |
+          url=$(timeout 15 gh api "repos/$GITHUB_REPOSITORY/pages" --jq .html_url) || url=
+          echo "url=$url" >> "$GITHUB_OUTPUT"
+          live=
+          if [[ -n $url ]]; then
+            live=$(curl -fsS --max-time 10 -H 'Cache-Control: no-cache' \
+              "${url%/}/build-version.txt?run=${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}-pre" | tr -d '[:space:]') || live=
+          fi
+          if [[ -z $url ]]; then
+            status="no Pages URL (API call failed)"
+          elif [[ ! $live =~ ^[0-9a-f]{40}$ ]]; then
+            status="no readable live stamp"
+          elif [[ $live == "$GITHUB_SHA" ]]; then
+            status=identical
+          else
+            status=$(timeout 15 gh api "repos/$GITHUB_REPOSITORY/compare/$GITHUB_SHA...$live" --jq .status) || status=
+            status=${status:-"compare failed"}
+          fi
+          skip=false
+          if [[ $status == ahead && $DRILL != true ]]; then
+            skip=true
+          fi
+          shown=${live:0:40} # a non-SHA stamp is whatever the URL served
+          summary="live: ${shown:-none}, this commit: $GITHUB_SHA, compare: $status"
+          if [[ $skip == true ]]; then
+            echo "::notice::The live site already serves $live, a newer commit than $GITHUB_SHA, so nothing is published ($summary)."
+          elif [[ $status == ahead ]]; then
+            echo "::notice::Drill: the live site serves a newer commit, but a drill never skips; publishing ($summary)."
+          else
+            case $status in
+              identical | behind | diverged) echo "Publishing ($summary)." ;;
+              *) echo "::warning::Superseded check inconclusive; publishing as before ($summary)." ;;
+            esac
+          fi
+          echo "skip=$skip" >> "$GITHUB_OUTPUT"
+
       # Each attempt has a 7-min step cap over the action's 6-min one: the
       # action's poll interval backs off to 30s, so it can overshoot its cap
       # by up to ~30s, and the step cap also bounds a hung create(). A step
@@ -239,6 +311,7 @@ jobs:
       # steps anyway (no always()).
       - name: Deploy to GitHub Pages (attempt 1) 🚀
         id: deploy1
+        if: steps.newer.outputs.skip != 'true'
         continue-on-error: true
         timeout-minutes: 7
         uses: actions/deploy-pages@v5
@@ -281,7 +354,7 @@ jobs:
       # create() that hung or errored may still have created a deployment
       # that lands later.
       - name: Check whether the site has this build 🔎
-        if: steps.deploy1.outcome != 'success' && steps.deploy2.outcome != 'success' && steps.deploy3.outcome != 'success'
+        if: steps.newer.outputs.skip != 'true' && steps.deploy1.outcome != 'success' && steps.deploy2.outcome != 'success' && steps.deploy3.outcome != 'success'
         env:
           PAGE_URL: ${{ steps.deploy1.outputs.page_url || steps.deploy2.outputs.page_url || steps.deploy3.outputs.page_url }}
           DRILL: ${{ inputs.drill || false }}

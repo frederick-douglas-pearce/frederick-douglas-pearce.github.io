@@ -9,7 +9,7 @@ on:
     # Monday 03:17 UTC, well clear of the daily ESG deploy, which follows the
     # ESG push at 07:01 Pacific (14:01 UTC in summer, 15:01 UTC in winter). A
     # refresh with changes dispatches deploy.yml, whose deploy job holds the
-    # "pages" concurrency group for up to its 25-min cap after a build of up to
+    # "pages" concurrency group for up to its 26-min cap after a build of up to
     # 20 min. GitHub can also start scheduled runs late under load. Starting
     # 10¾-11¾ hours earlier means a scheduled refresh's deploy cannot be queued
     # ahead of the ESG one. A manual run can be: avoid dispatching one in the

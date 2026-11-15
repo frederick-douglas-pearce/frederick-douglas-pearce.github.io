@@ -230,6 +230,11 @@ doesn't match the `paths:` filter. **A same-commit rerun did not help on 2026-11
 dispatch input exercises the whole path, and its procedure is in the comment on that input.
 Run it only off-hours.
 
+Builds run outside the `pages` group, so they can finish out of order. Before its first
+attempt the deploy job reads the live stamp, and if the site already serves a newer commit
+it publishes nothing and succeeds (#134). So a rerun of an old run's deploy no longer rolls
+the site back: roll back with a revert commit.
+
 An in-Actions push using the default `GITHUB_TOKEN` does **not** trigger `deploy.yml`;
 a workflow that commits content must dispatch the deploy explicitly.
 `.github/workflows/schedule-posts.txt` (disabled — note the `.txt` extension) has this
