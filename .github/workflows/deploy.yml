@@ -418,12 +418,18 @@ jobs:
     # One push, up to 40s of dispatch backoff and one issue. It does not wait
     # on the run it dispatches; that run's report job follows up. The step
     # caps (2 + 3 + 1) are what make a hang notify: a step that hits its cap
-    # fails (see the superseded check's comment in the deploy job), so the
-    # backstop step still runs, where a job-level timeout cancels the job and
-    # runs nothing after it. This cap is the steps plus ~1 min of setup, and
-    # it only catches a runner or setup hang before any step, which notifies
-    # nobody. Nothing else depends on it.
-    timeout-minutes: 7
+    # ends as failure (see the comment above the deploy job's first attempt
+    # step; a probe run linked on #136 observed it), so the !cancelled()
+    # backstop step still runs. A job-level timeout instead cancels the job, and the
+    # backstop is skipped. This cap is the shared budget: the step caps, ~10s
+    # for each capped step to be killed, and ~1 min of setup, so ~7.5 min.
+    # The checkout's post step runs after the backstop and does not spend its
+    # time. What still notifies nobody: a runner or setup hang or failure
+    # before any step runs (e.g. the actions/checkout download failing in
+    # "Set up job"), a run a human canceled, or `gh issue create` failing in
+    # both the script and the backstop (the run is red with an ::error::).
+    # Nothing else depends on this cap.
+    timeout-minutes: 8
     permissions:
       contents: write # push the empty commit
       actions: write # dispatch deploy.yml
@@ -445,13 +451,14 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           STUCK_SHA: ${{ github.sha }}
-          # Written once the script has opened the issue. Same value in the
-          # backstop step below; keep the two in step. (runner is not
-          # available in job-level env.)
+          # Written once the script has opened the issue. Defined twice, here
+          # and in the backstop step below; the two values must match.
+          # (runner is not available in job-level env.)
           FALLBACK_SENTINEL: ${{ runner.temp }}/deploy-fallback-notified
         run: bin/pages-redeploy.sh
       # The backstop (#136): open the deploy-fallback issue whenever the script
-      # did not, so every redeploy outcome notifies the owner. That covers a
+      # did not (the job's cap comment lists what still notifies nobody). That
+      # covers a
       # failed or timed-out checkout (the script then never runs: outcome
       # skipped), a set -e or set -u abort, the script step's cap, and a green
       # script whose own `gh issue create` failed. !cancelled(), not failure(),
@@ -492,7 +499,7 @@ jobs:
 
           If a fallback deploy was dispatched, its report job comments here and closes this issue on success. If nothing follows within ~30 min, compare the live /build-version.txt with main's head. To recover by hand: branch off origin/main, git commit --allow-empty, git push origin HEAD:main, then gh workflow run deploy.yml --ref main (an empty commit does not match deploy.yml's paths filter, so the dispatch is needed)."
           if ! gh issue create --label deploy-fallback --title "$title" --body "$body"; then
-            echo "::error::Could not open the deploy-fallback issue here either, so the owner was not notified: $RUN_URL"
+            echo "::error::Could not open the deploy-fallback issue (checkout: $CHECKOUT_OUTCOME, redeploy script: $REDEPLOY_OUTCOME), so the owner was not notified: $RUN_URL"
             exit 1
           fi
 
@@ -503,9 +510,10 @@ jobs:
   # it closes the newer and leaves the older open, a false "may be stale";
   # and when two fallbacks run within ~10 min, the first one's report can
   # close the second one's issue. Key the lookup on the run instead if
-  # anything else starts opening deploy-fallback issues. Runs whatever deploy did (always()), but never
-  # on a failed build, which skips deploy and would only report "skipped", and
-  # never in a drill, whose deploy fails on purpose (drill step (a)).
+  # anything else starts opening deploy-fallback issues. Runs whatever
+  # deploy did (always()), but never on a failed build, which skips deploy
+  # and would only report "skipped", and never in a drill, whose deploy
+  # fails on purpose (drill step (a)).
   report:
     needs: deploy
     if: always() && inputs.fallback && !inputs.drill && github.ref == 'refs/heads/main' && needs.deploy.result != 'skipped'

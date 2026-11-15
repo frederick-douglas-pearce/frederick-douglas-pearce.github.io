@@ -9,7 +9,7 @@
 # fallback=true, and opens a deploy-fallback issue that @-mentions the owner.
 # It pushes to main, so it refuses to run outside Actions or off main.
 #
-#   STUCK_SHA=<sha> bin/pages-redeploy.sh   (from the workflow; needs GITHUB_ACTIONS=true, GITHUB_REF=refs/heads/main)
+#   STUCK_SHA=<sha> FALLBACK_SENTINEL=<file> bin/pages-redeploy.sh   (from the workflow; needs GITHUB_ACTIONS=true, GITHUB_REF=refs/heads/main)
 #
 # Why a new commit: actions/deploy-pages names a Pages deployment after
 # GITHUB_SHA, and a same-commit retry can keep getting a canceled deployment
@@ -30,21 +30,25 @@
 #      a newer head is not guaranteed a deploy of its own (deploy.yml's paths
 #      filter skips some commits, and an Actions push triggers nothing), and a
 #      redundant deploy is harmless.
-#   4. Open a deploy-fallback issue on every path this script itself handles:
-#      success, or a fail() verdict. Once the issue exists, write the
+#   4. Open a deploy-fallback issue on every path this script itself handles
+#      past the two entry guards (outside Actions, off main): success, or a
+#      fail() verdict. Once the issue exists, write the
 #      FALLBACK_SENTINEL file. The redeploy job's last step (#136) opens the
 #      issue instead whenever that file is missing: a failed checkout, an
 #      unexpected git error under set -e, an unbound variable under set -u, a
 #      step that hits its cap, or a notify() whose `gh issue create` failed.
-#      So the owner is emailed on every redeploy outcome except a runner or
-#      setup hang that ends the job before any step runs, and the history
-#      shows how often this happens. The dispatched run's report job comments
+#      Inside the job, that also covers the off-main guard. What still
+#      notifies nobody is listed in the redeploy job's cap comment in
+#      deploy.yml (a runner or setup hang or failure before any step, a run a
+#      human canceled, the issue API failing in both steps). Otherwise the
+#      owner is emailed, and the history shows how often this happens. The dispatched run's report job comments
 #      its result there and closes it on success.
 #
 #      Two issues can still open for one fallback, rarely: GitHub created the
-#      issue but `gh` reported an error, or the step was killed between the
-#      create and the sentinel write. That errs toward notifying twice, never
-#      zero times.
+#      issue but `gh` reported an error, the step was killed between the
+#      create and the sentinel write, or the sentinel write itself failed
+#      (set -e then aborts the script). Each errs toward notifying twice,
+#      never zero times; #136 records this reading of "exactly one".
 #
 # The dispatched run's redeploy job is skipped (fallback=true), so a hang that
 # survives the new identity fails red once and does not loop.
@@ -73,7 +77,8 @@ if [[ "${GITHUB_ACTIONS:-}" != "true" ]]; then
 fi
 
 stuck=${STUCK_SHA:?STUCK_SHA must be the commit whose deploy failed}
-# Set once, as step env on both this step and the backstop step that reads it.
+# Defined twice in deploy.yml, as step env on this step and on the backstop
+# step that reads it; the two values must match.
 sentinel=${FALLBACK_SENTINEL:?FALLBACK_SENTINEL must be the file the backstop step of the redeploy job checks}
 short=${stuck:0:7}
 server=${GITHUB_SERVER_URL:-https://github.com}
