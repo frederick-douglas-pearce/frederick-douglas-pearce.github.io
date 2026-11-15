@@ -420,15 +420,16 @@ jobs:
     # caps (2 + 3 + 1) are what make a hang notify: a step that hits its cap
     # ends as failure (see the comment above the deploy job's first attempt
     # step; a probe run linked on #136 observed it), so the !cancelled()
-    # backstop step still runs. A job-level timeout instead cancels the job, and the
-    # backstop is skipped. This cap is the shared budget: the step caps, ~10s
-    # for each capped step to be killed, and ~1 min of setup, so ~7.5 min.
-    # The checkout's post step runs after the backstop and does not spend its
-    # time. What still notifies nobody: a runner or setup hang or failure
-    # before any step runs (e.g. the actions/checkout download failing in
-    # "Set up job"), a run a human canceled, or `gh issue create` failing in
-    # both the script and the backstop (the run is red with an ::error::).
-    # Nothing else depends on this cap.
+    # backstop step still runs. A job-level timeout instead cancels the job,
+    # and the backstop is skipped. This cap is the shared budget: the step
+    # caps, ~10s for each capped step to be killed, and ~1 min of setup, so
+    # ~7.5 min. The checkout's post step runs after the backstop, so it
+    # cannot delay it. What still notifies nobody: a runner or setup hang or
+    # failure before any step runs (e.g. the actions/checkout download
+    # failing in "Set up job"), the job hitting this cap (#161), a run a
+    # human canceled, or `gh issue create` failing in both the script and the
+    # backstop (the run is red with an ::error::). Nothing else depends on
+    # this cap.
     timeout-minutes: 8
     permissions:
       contents: write # push the empty commit
@@ -458,14 +459,13 @@ jobs:
         run: bin/pages-redeploy.sh
       # The backstop (#136): open the deploy-fallback issue whenever the script
       # did not (the job's cap comment lists what still notifies nobody). That
-      # covers a
-      # failed or timed-out checkout (the script then never runs: outcome
-      # skipped), a set -e or set -u abort, the script step's cap, and a green
-      # script whose own `gh issue create` failed. !cancelled(), not failure(),
-      # is for that last case; a run a human canceled is left alone. It needs
-      # no checkout, because the checkout may be what failed, so everything
-      # comes in through env. A dispatched fallback run never gets here: the
-      # job's if: skips it on inputs.fallback.
+      # covers a failed or timed-out checkout (the script then never runs:
+      # outcome skipped), a set -e or set -u abort, the script step's cap, and
+      # a green script whose own `gh issue create` failed. !cancelled(), not
+      # failure(), is for that last case; a run a human canceled is left
+      # alone. It needs no checkout, because the checkout may be what failed,
+      # so everything comes in through env. A dispatched fallback run never
+      # gets here: the job's if: skips it on inputs.fallback.
       - name: Notify if the redeploy did not 📣
         if: ${{ !cancelled() }}
         timeout-minutes: 1

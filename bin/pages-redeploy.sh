@@ -39,10 +39,11 @@
 #      step that hits its cap, or a notify() whose `gh issue create` failed.
 #      Inside the job, that also covers the off-main guard. What still
 #      notifies nobody is listed in the redeploy job's cap comment in
-#      deploy.yml (a runner or setup hang or failure before any step, a run a
-#      human canceled, the issue API failing in both steps). Otherwise the
-#      owner is emailed, and the history shows how often this happens. The dispatched run's report job comments
-#      its result there and closes it on success.
+#      deploy.yml (a runner or setup hang or failure before any step, the job
+#      hitting its cap, a run a human canceled, the issue API failing in both
+#      steps). Otherwise the owner is emailed, and the history shows how often
+#      this happens. The dispatched run's report job comments its result
+#      there and closes it on success.
 #
 #      Two issues can still open for one fallback, rarely: GitHub created the
 #      issue but `gh` reported an error, the step was killed between the
