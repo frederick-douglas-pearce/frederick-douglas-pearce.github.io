@@ -240,9 +240,9 @@ it publishes nothing and succeeds (#134). So a rerun of an old run's deploy no l
 the site back: roll back with a revert commit.
 
 An in-Actions push using the default `GITHUB_TOKEN` does **not** trigger `deploy.yml`;
-a workflow that commits content must dispatch the deploy explicitly.
-`.github/workflows/schedule-posts.txt` (disabled — note the `.txt` extension) has this
-latent bug. `bin/repo-stats-refresh.sh` (run by `repo-stats.yml`) and `bin/pages-redeploy.sh`
+a workflow that commits content must dispatch the deploy explicitly. Missing it fails
+green: the commit lands and nothing reports that no deploy ran.
+`bin/repo-stats-refresh.sh` (run by `repo-stats.yml`) and `bin/pages-redeploy.sh`
 (the `redeploy` job) do the dispatch through the shared functions in `bin/push-dispatch.sh`:
 push, then `gh workflow run deploy.yml --ref main` with `actions: write`. A new committing
 workflow should use them too.
