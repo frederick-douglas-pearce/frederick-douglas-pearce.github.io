@@ -1,9 +1,9 @@
 name: Refresh activity releases
 
-# Daily refresh of _data/activity.json, the GitHub Releases in the Activity
-# stream (#73). The work, including why the deploy is dispatched explicitly
-# instead of left to deploy.yml's _data/** path filter, is in
-# bin/activity-releases-refresh.sh.
+# Daily refresh of _data/activity.json, the GitHub Releases the Activity stream
+# is to show once #75 lands (#73). The work, including why the deploy is
+# dispatched explicitly instead of left to deploy.yml's _data/** path filter,
+# is in bin/activity-releases-refresh.sh.
 
 on:
   schedule:
@@ -13,9 +13,13 @@ on:
     # "pages" concurrency group for up to its 26-min cap after a build of up to
     # 20 min. Starting 8¼-9¼ hours earlier leaves room for GitHub starting a
     # scheduled run late under load. It is also clear of repo-stats.yml's
-    # Monday 03:17 UTC run, whose job and deploy finish by about 04:23. A manual
-    # run can still collide: avoid dispatching one in the ~46 min before the
-    # ESG push. The odd minute avoids top-of-the-hour schedule congestion.
+    # Monday 03:17 UTC run, whose job and deploy finish by about 04:23 (its
+    # 20-min job cap, a 20-min build and the 26-min deploy cap). A manual run
+    # can still collide: avoid dispatching one in the ~61 min before the ESG
+    # push (this job's 15-min cap, then a 20-min build and the 26-min deploy
+    # cap). deploy.yml's comment on its deploy-job cap lists this comment among
+    # the places to recompute. The odd minute avoids top-of-the-hour schedule
+    # congestion.
     - cron: "43 5 * * *"
   # Pull a new release on demand, re-run after a transient failure, and keep
   # the refresh alive if GitHub ever disables the schedule.
@@ -39,7 +43,8 @@ jobs:
     # sequential requests (3 x 3 = 9), each up to ~48s in the worst case (3 x
     # 15s timeout + 1s + 2s backoff), so ~7.2 min before it can exit 75 and
     # name what failed, plus up to 40s of dispatch backoff and setup. Recompute
-    # if RELEASE_REPOS or PAGE_CAP changes.
+    # if RELEASE_REPOS, PAGE_CAP, ATTEMPTS, REQUEST_TIMEOUT_MS or get()'s
+    # backoff changes, and the "~61 min" above with it.
     timeout-minutes: 15
     permissions:
       contents: write # push the regenerated data file

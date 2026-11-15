@@ -14,8 +14,10 @@
 # on the site and goes red with the action a human has to take:
 #
 #   1. Fetch. bin/activity-releases.js fails closed: if any repo fails, it
-#      writes nothing. Its stderr lines (`error:` / `  action:`, `warning:`,
-#      `usage error:`, `unexpected error:`) become Actions annotations. Exit 1
+#      writes nothing. Its stderr lines (`error:` / `  action:`, `usage
+#      error:`, `unexpected error:`) become Actions annotations. (It prints no
+#      `warning:` lines; the parse loop below keeps that branch only because
+#      it is a copy of its twin, #165.) Exit 1
 #      with at least one `error:` line and no `unexpected error:` line means a
 #      human must do what each error's action says; exit 1 otherwise means it
 #      crashed. Exit 75 (transient) means re-run; anything else is a usage
@@ -23,16 +25,24 @@
 #   2. Only the data file may change.
 #   3. Guardrail, read with Ruby's JSON (not the script's own code), on every
 #      run, so it also checks the file the site is already serving: every
-#      release is a well-formed entry (minor+ tag, github.com URL, a summary
-#      that is null or one line of text with no angle brackets, line
-#      separators or bidi controls), no `repo@tag` appears twice, and no
-#      `repo@tag` the committed file has is missing. That last check is the
-#      independent "never shorten" backstop for the script's own fail-closed
-#      rules. When a release really was deleted or demoted upstream, or a repo
-#      was removed from RELEASE_REPOS, confirm it, then run
-#      node bin/activity-releases.js locally and commit the result (a human
-#      push does not go through this guardrail). Never edit the file by hand.
-#   4. No change means no commit and no deploy.
+#      release is a well-formed entry (minor+ tag, a release URL on
+#      github.com under that entry's repo, a summary that is null or one line
+#      of text with no angle brackets, line separators or bidi controls), no
+#      `repo@tag` appears twice, and no `repo@tag` the committed file has is
+#      missing. That last check is the independent "never shorten" backstop
+#      for the script's own fail-closed rules. It also reports whether the
+#      file equals the committed one apart from `generated_at`. When a release
+#      really was deleted or demoted upstream, or a repo was removed from
+#      RELEASE_REPOS, confirm it, then run node bin/activity-releases.js
+#      locally and commit the result (a human push does not go through this
+#      guardrail). When EVERY release of a repo is gone, the local run refuses
+#      too: remove the repo from RELEASE_REPOS first. Never edit the file by
+#      hand.
+#   4. No change means no commit and no deploy. "No change" is decided here,
+#      independently of the script's own unchanged check: the file equals the
+#      committed one apart from `generated_at` (step 3). A rewrite that changes
+#      only the timestamp is discarded, so a regression in the script cannot
+#      turn into a daily commit and deploy.
 #   5. Commit and push, through push_head_to_main in bin/push-dispatch.sh. No
 #      rebase on a rejected push: the rebased tree would be one step 3 never
 #      checked. The run goes red and a re-run starts from the new main.
@@ -153,12 +163,17 @@ if [[ -n $status && $status != " M $DATA" && $status != "?? $DATA" ]]; then
 fi
 
 # 3. Guardrail, read independently of bin/activity-releases.js. The committed
-# copy (empty when HEAD has none, which skips the never-shorten check) is what
-# the site serves. It must print its sentinel line: a Ruby that exits 0
-# without running proves nothing. Ruby prints plain one-line results; this
-# script escapes and annotates them, so nothing from the data reaches the log
-# raw.
-git show "HEAD:$DATA" >"$committed" 2>/dev/null || : >"$committed"
+# copy is what the site serves. It is empty only when HEAD has no such file (a
+# first run), which skips the never-shorten check; any other git failure stops
+# the run under set -e rather than skipping the check. It must print its
+# sentinel line: a Ruby that exits 0 without running proves nothing. Ruby
+# prints plain one-line results; this script escapes and annotates them, so
+# nothing from the data reaches the log raw.
+if git cat-file -e "HEAD:$DATA" 2>/dev/null; then
+  git show "HEAD:$DATA" >"$committed"
+else
+  : >"$committed"
+fi
 rc=0
 guard=$(ruby -rjson -e '
   one_line = ->(s) { s.to_s.gsub(/[\r\n]/, " ")[0, 200] }
@@ -188,13 +203,16 @@ guard=$(ruby -rjson -e '
       keys[key] = true
       problems << "#{where}: tag #{r["tag"].inspect} is not minor-or-greater (vX.Y.0)" unless r["tag"].match?(/\Av?\d+\.\d+\.0\z/)
       problems << "#{where}: date #{r["date"].inspect} is not ISO 8601 UTC" unless r["date"].match?(/\A\d{4}-\d\d-\d\dT\d\d:\d\d:\d\dZ\z/)
-      problems << "#{where}: url is not a github.com release page" unless r["url"].start_with?("https://github.com/") && r["url"].include?("/releases/")
+      repo_url = %r{\Ahttps://github\.com/[\w.-]+/#{Regexp.escape(r["repo"])}/releases/[^\s"\x27<>]+\z}i
+      problems << "#{where}: url is not a release page of #{r["repo"]} on github.com" unless r["url"].match?(repo_url)
       s = r["summary"]
       unless s.nil? || (s.is_a?(String) && !s.strip.empty? && !s.match?(unsafe))
         problems << "#{where}: summary is not null or one line of plain text (no angle brackets, line separators or bidi controls)"
       end
     end
     before = File.size?(committed) ? JSON.parse(File.read(committed)) : nil
+    strip = ->(d) { d.is_a?(Hash) ? d.reject { |k, _| k == "generated_at" } : d }
+    same = !before.nil? && strip.(before) == strip.(data)
     if before.is_a?(Hash) && before["releases"].is_a?(Array)
       old = before["releases"].select { |r| r.is_a?(Hash) }.map { |r| "#{r["repo"]}@#{r["tag"]}" }
       missing = old - keys.keys
@@ -204,7 +222,7 @@ guard=$(ruby -rjson -e '
     end
     problems.each { |p| puts "problem: " + one_line.(p) }
     exit 3 unless problems.empty?
-    puts "guardrail: ok #{releases.size} releases"
+    puts "guardrail: ok #{releases.size} releases #{same ? "same-as-HEAD" : "changed"}"
   rescue StandardError => e
     puts "could not run: " + one_line.("#{e.class}: #{e.message}")
     exit 4
@@ -221,9 +239,9 @@ while IFS= read -r line; do
   esac
 done <<<"$guard"
 if ((rc == 3)); then
-  fail "guardrail: $DATA failed its checks, so nothing was committed. A malformed entry is a bug in bin/activity-releases.js. A dropped release means a release was deleted or demoted upstream, a repo was removed from RELEASE_REPOS, or the script's filter regressed: confirm which on GitHub; if the drop is real, run node bin/activity-releases.js locally and commit the result (never edit the file by hand)." 1 "${problems[@]}"
+  fail "guardrail: $DATA failed its checks, so nothing was committed. A malformed entry is a bug in bin/activity-releases.js. A dropped release means a release was deleted or demoted upstream, a repo was removed from RELEASE_REPOS, or the script's filter regressed: confirm which on GitHub; if the drop is real, run node bin/activity-releases.js locally and commit the result (never edit the file by hand). If every release of a repo is gone, remove it from RELEASE_REPOS first, or the local run refuses too." 1 "${problems[@]}"
 fi
-if ((rc != 0)) || ! grep -Eq '^guardrail: ok [0-9]+ releases$' <<<"$ok"; then
+if ((rc != 0)) || ! grep -Eq '^guardrail: ok [0-9]+ releases (same-as-HEAD|changed)$' <<<"$ok"; then
   if ((${#crash[@]})); then
     fail "guardrail raised an exception reading $DATA or its committed copy, so nothing was committed. A JSON::ParserError on $DATA is a bug in bin/activity-releases.js; any other is a bug in this script's guardrail." 1 "${crash[@]}"
   fi
@@ -231,8 +249,15 @@ if ((rc != 0)) || ! grep -Eq '^guardrail: ok [0-9]+ releases$' <<<"$ok"; then
 fi
 echo "$ok"
 
-# 4. No change, no commit, no deploy.
-if [[ -z $status ]]; then
+# 4. No change, no commit, no deploy. Decided by the guardrail's comparison
+# with the committed file, not by git status alone, so a rewrite that only
+# moved `generated_at` is discarded here.
+if [[ -z $status || $ok == *" same-as-HEAD" ]]; then
+  if [[ -n $status ]]; then
+    git checkout --quiet -- "$DATA"
+    echo "$DATA differs from HEAD only in generated_at; discarded. bin/activity-releases.js should have left it untouched, so its unchanged check may have regressed."
+    echo "::warning::$(esc "$DATA was rewritten with only generated_at changed; discarded. Check bin/activity-releases.js's unchanged-data check (sameData).")"
+  fi
   echo "$DATA unchanged: no commit, no deploy."
   summary "$DATA unchanged: no commit, no deploy."
   exit 0

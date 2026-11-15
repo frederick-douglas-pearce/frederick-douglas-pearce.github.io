@@ -1,15 +1,16 @@
 #!/usr/bin/env node
 /**
- * Fetch the GitHub Releases shown in the Activity stream into a committed data
- * file.
+ * Fetch the GitHub Releases that the Activity stream is to show (#75) into a
+ * committed data file.
  *
  * Fetches every release of each repo in RELEASE_REPOS from api.github.com,
  * keeps the published, minor-or-greater ones, derives a one-line summary from
  * each release body, and writes _data/activity.json. It runs daily from
  * .github/workflows/activity-releases.yml (through
  * bin/activity-releases-refresh.sh) and by hand, never inside the Jekyll build,
- * so a GitHub API failure cannot fail a deploy (#54, #73). The stream renders
- * from the local file only.
+ * so a GitHub API failure cannot fail a deploy (#54, #73). Nothing renders the
+ * file yet: #75 adds the stream's Release branch, which is to read only this
+ * local file.
  *
  *   node bin/activity-releases.js
  *
@@ -24,12 +25,15 @@
  * committed file has, so a removal must be committed from a local run: run this
  * script and commit both files. The same goes for a release deleted or turned
  * into a pre-release upstream: confirm it on GitHub, then run this script
- * locally and commit the result. Never edit _data/activity.json by hand.
+ * locally and commit the result. One exception: when EVERY release of a repo
+ * is gone, a local run fails too (an empty list is refused for a repo the file
+ * has releases for), so remove the repo from RELEASE_REPOS, run this script
+ * and commit both files. Never edit _data/activity.json by hand.
  *
  * Output: `{ _generated_by, generated_at, releases: [...] }`, newest first
  * (then by repo, then by tag), each release `{ repo, tag, date, summary, url }`.
- * `repo` is the short name (`agentfluent`), so `repo@tag` is the key the
- * render-time override file uses (#74). `date` is the release's published_at
+ * `repo` is the short name (`agentfluent`), so `repo@tag` is the key #74's
+ * render-time override file is to use. `date` is the release's published_at
  * as an ISO 8601 UTC string, not a Ruby Time, so convert it before sorting it
  * against posts or notes. `url` is the release page on github.com.
  *
@@ -37,9 +41,10 @@
  * influence (release-please builds release notes from commit and PR titles).
  * Render it with `| escape`, never `markdownify`. This script also strips
  * angle brackets, control, line-separator and bidi characters, and caps it at
- * SUMMARY_MAX characters, and the refresh guardrail checks the first two, but
- * escaping at render time is the contract. It is null when nothing usable was
- * found, and the stream then shows the tag alone.
+ * SUMMARY_MAX characters (cut at a code point, never inside one). The refresh
+ * guardrail rejects the same characters but does not check the length, and
+ * escaping at render time is the contract either way. It is null when nothing
+ * usable was found, and #75's Release branch is to show the tag alone then.
  *
  * Which releases. Drafts and pre-releases are skipped, as are patches
  * (vX.Y.Z with Z > 0): only minor-or-greater releases (vX.Y.0, `v` optional)
@@ -52,9 +57,14 @@
  * GitHub's generated notes):
  *   - release-please (a `### Features` heading): the first bullet under it.
  *   - GitHub's generated notes (`## What's Changed`): the first `feat:` bullet
- *     in that section, else the first bullet; dependabot bullets are skipped.
+ *     in that section, else the first bullet.
  *   - anything else: the first `feat` bullet in the body, else the first
- *     non-dependabot bullet.
+ *     bullet.
+ * Dependabot bullets (anything mentioning @dependabot, `chore(deps`,
+ * `build(deps`, `Bump `) and "@user made their first contribution" lines are
+ * never candidates. When a body has a recognized section but nothing usable is
+ * left in it, the summary is null; it never falls through to the rest of the
+ * body (which would reach `## New Contributors`).
  * Headings are never candidates. Each candidate is cleaned: the author and PR
  * link, link markup, bold, backticks and the `feat:` prefix (`feat(x): y`
  * becomes `x: y`) go, and so does EVERY trailing parenthetical group, not just
@@ -83,8 +93,13 @@
  *
  * Auth: one request per repo per 100 releases, well inside the 60/hr
  * unauthenticated limit. A token is used when available, from GITHUB_TOKEN,
- * GH_TOKEN, or `gh auth token`; pass --no-auth to skip it. The token is sent
- * only to the API base's own origin, including on paginated requests.
+ * GH_TOKEN, or `gh auth token`; pass --no-auth to skip it. A pagination link is
+ * followed only when it is on the API base's own origin, so the script never
+ * sends the token anywhere else itself. HTTP redirects are followed by fetch
+ * (`redirect: "follow"`, as in bin/repo-stats.js, which needs it for renamed
+ * repos), and those are not checked here: on a cross-origin redirect it is
+ * Node's fetch (undici, per the Fetch spec) that drops the Authorization
+ * header. Hardening both twins' redirect handling together is #165.
  *
  * ACTIVITY_API_BASE overrides https://api.github.com. It exists only to
  * exercise failure paths against a local stub, and a run with it set is always
@@ -105,7 +120,8 @@ const RELEASE_REPOS = ["frederick-douglas-pearce/codefluent", "frederick-douglas
 const API_OVERRIDDEN = Boolean(process.env.ACTIVITY_API_BASE);
 const API_BASE = API_OVERRIDDEN ? process.env.ACTIVITY_API_BASE : "https://api.github.com";
 // 100 releases a page. activity-releases.yml's timeout-minutes is derived from
-// RELEASE_REPOS.length x PAGE_CAP; recompute it if either changes.
+// RELEASE_REPOS.length x PAGE_CAP requests, each bounded by ATTEMPTS x
+// REQUEST_TIMEOUT_MS plus get()'s backoff; recompute it if any of those change.
 const PER_PAGE = 100;
 const PAGE_CAP = 3;
 const ATTEMPTS = 3;
@@ -279,7 +295,8 @@ function nextLink(header) {
 // Every release of one repo, following pagination. GitHub's next link often
 // points at /repositories/<id>/releases rather than /repos/<owner>/<name>/, so
 // only its origin is checked, and it must be the API base's own before the
-// request (with any token) is sent.
+// request (with any token) is sent. This covers Link pagination only; HTTP
+// redirects are fetch's (see the header).
 async function fetchReleases(repo, origin, headers, auth) {
   let url = `${API_BASE.replace(/\/+$/, "")}/repos/${repo}/releases?per_page=${PER_PAGE}`;
   const releases = [];
@@ -352,7 +369,9 @@ function checkRelease(repo, r) {
 
 const BULLET = /^ {0,3}[*-]\s+/;
 const HEADING = /^#{1,6}\s/;
-const isDependabot = (b) => /\bby @dependabot(\[bot\])?(\s|$)/i.test(b) || /^(chore|build)\(deps/i.test(b) || /^bump\s/i.test(b);
+const isDependabot = (b) => /@dependabot\b/i.test(b) || /^(chore|build)\(deps/i.test(b) || /^bump\s/i.test(b);
+const isFirstContribution = (b) => /^@\S+ made their first contribution\b/i.test(b);
+const usable = (b) => !isDependabot(b) && !isFirstContribution(b);
 const isFeat = (b) => /^feat(\([^)]*\))?!?:\s/i.test(b);
 
 // Lines after the first heading matching `heading`, up to the next heading.
@@ -370,20 +389,16 @@ function section(lines, heading) {
 const bullets = (lines) => lines.filter((l) => BULLET.test(l)).map((l) => l.replace(BULLET, "").trim());
 const featFirst = (bs) => [...bs.filter(isFeat), ...bs.filter((b) => !isFeat(b))];
 
-// Candidate bullets in order of preference, chosen by the body's shape.
+// Candidate bullets in order of preference, chosen by the body's shape. A
+// recognized section is final even when nothing usable is left in it: falling
+// through to the whole body would reach `## New Contributors`.
 function candidates(body) {
   const lines = (body || "").split(/\r?\n/);
   const features = section(lines, /^###\s+Features\s*$/i);
-  if (features) {
-    const bs = bullets(features).filter((b) => !isDependabot(b));
-    if (bs.length) return bs;
-  }
+  if (features) return bullets(features).filter(usable);
   const changed = section(lines, /^##\s+What['\u2019]s Changed\s*$/i);
-  if (changed) {
-    const bs = featFirst(bullets(changed).filter((b) => !isDependabot(b)));
-    if (bs.length) return bs;
-  }
-  return featFirst(bullets(lines).filter((b) => !isDependabot(b)));
+  if (changed) return featFirst(bullets(changed).filter(usable));
+  return featFirst(bullets(lines).filter(usable));
 }
 
 // Drop balanced parenthetical groups from the end of `s`, one at a time.
@@ -409,7 +424,7 @@ function clean(bullet) {
   let s = bullet;
   s = s.replace(/\s+by\s+@[\w.[\]-]+\s+in\s+\S+\s*$/i, ""); // GitHub's "by @user in <PR url>"
   s = s.replace(/,\s*closes\s+.*$/i, ""); // release-please's ", closes [#9](url)"
-  s = s.replace(/\[([^\]]*)\]\([^()\s]*\)/g, "$1"); // links to their text, before parentheses are stripped
+  s = s.replace(/\[([^\]]*)\]\((?:[^()\s]|\([^()\s]*\))*\)/g, "$1"); // links to their text (one level of parens in the URL), before parentheses are stripped
   s = s.replace(/^\*\*([^*]+?):\*\*\s*/, "$1: "); // release-please's **scope:**
   s = s.replace(/\*\*|`/g, "");
   s = s.replace(/^feat\(([^)]+)\)!?:\s*/i, "$1: ").replace(/^feat!?:\s*/i, "");
@@ -419,8 +434,10 @@ function clean(bullet) {
   // can be defeated by nesting, and plain text needs neither.
   s = s.replace(/[<>]/g, "");
   s = s.replace(/\s+/g, " ").trim();
-  if (s.length > SUMMARY_MAX) {
-    let cut = s.slice(0, SUMMARY_MAX - 1);
+  // Count and cut by code point, so the cap never splits a surrogate pair.
+  const points = Array.from(s);
+  if (points.length > SUMMARY_MAX) {
+    let cut = points.slice(0, SUMMARY_MAX - 1).join("");
     const space = cut.lastIndexOf(" ");
     if (space > SUMMARY_MAX / 2) cut = cut.slice(0, space);
     s = cut.replace(/[\s,;:.\-\u2013\u2014]+$/, "") + "\u2026";

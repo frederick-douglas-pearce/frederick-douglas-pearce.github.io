@@ -39,6 +39,8 @@ jobs:
     # user), each up to ~48s in the worst case (3 x 15s timeout + 1s + 2s
     # backoff), so ~11.2 min before it can exit 75 and name what failed, plus
     # up to 40s of dispatch backoff. Recompute if the curated lists grow.
+    # activity-releases.yml's schedule comment ("finish by about 04:23")
+    # depends on this cap too.
     timeout-minutes: 20
     permissions:
       contents: write # push the regenerated data file

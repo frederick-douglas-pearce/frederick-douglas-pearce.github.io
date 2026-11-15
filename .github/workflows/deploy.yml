@@ -226,12 +226,15 @@ jobs:
     # which the action's own timeout does not cover (its clock starts after
     # create() returns). Without them a hung create() would run into this cap,
     # the job would end canceled, and redeploy, which runs only on failure,
-    # would not run. Four places depend on this cap: the "~46 min before the
+    # would not run. Six places depend on this cap: the "~46 min before the
     # ESG push" in the drill comment above and in
     # .github/workflows/repo-stats.yml's schedule comment (a build of up to 20
-    # min plus this cap), that comment's "up to its 26-min cap", and the
-    # recompute rule in CLAUDE.md's Deploy section. Recompute them all if a
-    # cap, a backoff, the landed check or the superseded check changes.
+    # min plus this cap), that comment's "up to its 26-min cap", the "~61 min
+    # before the ESG push" (its own 15-min job, a 20-min build and this cap)
+    # and "up to its 26-min cap" in .github/workflows/activity-releases.yml's
+    # schedule comment, and the recompute rule in CLAUDE.md's Deploy section.
+    # Recompute them all if a cap, a backoff, the landed check or the
+    # superseded check changes.
     #
     # Safe despite the concurrency group below: timeout-minutes measures
     # execution time on the runner, not time spent queued waiting for the
