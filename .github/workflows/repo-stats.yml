@@ -13,7 +13,7 @@ on:
     # 20 min. GitHub can also start scheduled runs late under load. Starting
     # 10¾-11¾ hours earlier means a scheduled refresh's deploy cannot be queued
     # ahead of the ESG one. A manual run can be: avoid dispatching one in the
-    # ~45 min before the ESG push. The odd minute avoids top-of-the-hour
+    # ~46 min before the ESG push. The odd minute avoids top-of-the-hour
     # schedule congestion.
     - cron: "17 3 * * 1"
   # The manual fallback: re-running after a transient failure, and keeping the

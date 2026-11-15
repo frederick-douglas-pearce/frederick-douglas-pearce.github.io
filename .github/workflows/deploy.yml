@@ -69,7 +69,7 @@ on:
       # default 5s poll interval a healthy deploy, median ~7s, could report
       # success first.) The landed check also ignores a match, which could be
       # an earlier deploy's stamp. Procedure, on main and off-hours (never in
-      # the ~45 min before the ESG push at 07:01 Pacific, 14:01 UTC in summer,
+      # the ~46 min before the ESG push at 07:01 Pacific, 14:01 UTC in summer,
       # 15:01 UTC in winter): push an empty commit to main, then dispatch
       # (a) drill + fallback: deploy fails, redeploy and report are skipped,
       # no commit;
@@ -202,9 +202,9 @@ jobs:
   # a rollback is a revert commit, not a rerun. A drill never skips.
   #
   # The check runs inside the group, so no other in-group publish can land
-  # between it and this job's attempts. Three gaps remain. A deployment an
-  # earlier attempt canceled can still land late, outside any group (item 2
-  # above). The expected limit is CDN lag: the check runs seconds after the
+  # between it and this job's attempts. Three gaps remain. A deployment that
+  # an earlier run's attempt canceled can still land late, outside any group
+  # (item 2 above). The expected limit is CDN lag: the check runs seconds after the
   # newer publish, may read the older stamp, and then publishes, which is the
   # old behavior. And a newer commit's pending deploy can be replaced in the
   # queue by an older one's and lost (#157). The live stamp, not the
@@ -225,10 +225,13 @@ jobs:
     # inside 26. The step caps are what bound a create() call that hangs,
     # which the action's own timeout does not cover (its clock starts after
     # create() returns). Without them a hung create() would run into this cap,
-    # the job would end cancelled, and redeploy, which runs only on failure,
-    # would not run. .github/workflows/repo-stats.yml's schedule comment
-    # counts on "up to its 26-min cap". Recompute both if a cap, a backoff,
-    # the landed check or the superseded check changes.
+    # the job would end canceled, and redeploy, which runs only on failure,
+    # would not run. Three places depend on this cap: the "~46 min before the
+    # ESG push" in the drill comment above and in
+    # .github/workflows/repo-stats.yml's schedule comment (a build of up to 20
+    # min plus this cap), that comment's "up to its 26-min cap", and the
+    # recompute rule in CLAUDE.md's Deploy section. Recompute them all if a
+    # cap, a backoff, the landed check or the superseded check changes.
     #
     # Safe despite the concurrency group below: timeout-minutes measures
     # execution time on the runner, not time spent queued waiting for the
@@ -266,22 +269,30 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           DRILL: ${{ inputs.drill || false }}
         run: |
-          url=$(timeout 15 gh api "repos/$GITHUB_REPOSITORY/pages" --jq .html_url) || url=
+          # rc 124 is timeout's: a killed gh prints nothing, so say so.
+          rc=0
+          url=$(timeout 15 gh api "repos/$GITHUB_REPOSITORY/pages" --jq .html_url) || { rc=$?; url=; }
           echo "url=$url" >> "$GITHUB_OUTPUT"
           live=
           if [[ -n $url ]]; then
             live=$(curl -fsS --max-time 10 -H 'Cache-Control: no-cache' \
               "${url%/}/build-version.txt?run=${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}-pre" | tr -d '[:space:]') || live=
           fi
-          if [[ -z $url ]]; then
+          if [[ -z $url && $rc == 124 ]]; then
+            status="no Pages URL (API call timed out)"
+          elif [[ -z $url ]]; then
             status="no Pages URL (API call failed)"
           elif [[ ! $live =~ ^[0-9a-f]{40}$ ]]; then
             status="no readable live stamp"
           elif [[ $live == "$GITHUB_SHA" ]]; then
             status=identical
           else
-            status=$(timeout 15 gh api "repos/$GITHUB_REPOSITORY/compare/$GITHUB_SHA...$live" --jq .status) || status=
-            status=${status:-"compare failed"}
+            status=$(timeout 15 gh api "repos/$GITHUB_REPOSITORY/compare/$GITHUB_SHA...$live" --jq .status) || { rc=$?; status=; }
+            if [[ -z $status && $rc == 124 ]]; then
+              status="compare timed out"
+            elif [[ -z $status ]]; then
+              status="compare failed"
+            fi
           fi
           skip=false
           if [[ $status == ahead && $DRILL != true ]]; then
@@ -449,7 +460,7 @@ jobs:
             exit 0
           fi
           if [[ $RESULT == success ]]; then
-            gh issue comment "$issue" --body "The fallback deploy succeeded: $RUN_URL deployed $GITHUB_SHA. Closing; reopen to investigate further."
+            gh issue comment "$issue" --body "The fallback deploy job succeeded ($RUN_URL): the live site serves $GITHUB_SHA or a newer commit. Closing; reopen to investigate further."
             gh issue close "$issue" --reason completed
           else
             gh issue comment "$issue" --body "The fallback deploy did not succeed (deploy job: $RESULT): $RUN_URL. The site may not be serving this build: compare the live /build-version.txt with main's head before recovering by hand (a newer push's deploy may have replaced this one). To recover by hand: branch off origin/main, git commit --allow-empty, git push origin HEAD:main, then gh workflow run deploy.yml --ref main. If this run's deploy attempts hung or read back a cancel, a same-commit rerun is unlikely to help (it did not on 2026-11-05); if the deploy job failed before its attempts (setup, OIDC), rerun this run."
