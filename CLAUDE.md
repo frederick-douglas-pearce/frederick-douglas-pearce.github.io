@@ -210,8 +210,9 @@ non-fast-forward. Run `git worktree list` before assuming which branch is where.
 Push to `main` (path-filtered) → build job → `deploy` job publishing to Pages, serialized on
 a `pages` concurrency group that never cancels in flight. The daily ESG feed push has an
 effective ~14:01 UTC SLA, which is why the timeouts and the concurrency group are tuned the
-way the comments in `deploy.yml` describe — recompute the job `timeout-minutes` if you
-change a per-attempt cap, a backoff or the landed check.
+way the comments in `deploy.yml` describe — recompute the job `timeout-minutes`, and the
+places that depend on it (listed in its comment), if you change a per-attempt cap, a backoff,
+the landed check or the superseded check.
 
 A failed publish is retried at the same commit first and under a new one only after that
 (#131). The job makes up to three attempts, 30s and then 60s apart, each capped at 6 min.
@@ -229,6 +230,11 @@ branch off `origin/main`, `git commit --allow-empty`, `git push origin HEAD:main
 doesn't match the `paths:` filter. **A same-commit rerun did not help on 2026-11-05; use the recipe.** The `drill`
 dispatch input exercises the whole path, and its procedure is in the comment on that input.
 Run it only off-hours.
+
+Builds run outside the `pages` group, so they can finish out of order. Before its first
+attempt the deploy job reads the live stamp, and if the site already serves a newer commit
+it publishes nothing and succeeds (#134). So a rerun of an old run's deploy no longer rolls
+the site back: roll back with a revert commit.
 
 An in-Actions push using the default `GITHUB_TOKEN` does **not** trigger `deploy.yml`;
 a workflow that commits content must dispatch the deploy explicitly.
