@@ -415,7 +415,9 @@ function clean(bullet) {
   s = s.replace(/^feat\(([^)]+)\)!?:\s*/i, "$1: ").replace(/^feat!?:\s*/i, "");
   s = stripTrailingParens(s);
   s = s.replace(UNSAFE_CHARS, " ");
-  s = s.replace(/<[^>]*>/g, "").replace(/[<>]/g, "");
+  // Drop every angle bracket rather than stripping tags: a tag-matching regex
+  // can be defeated by nesting, and plain text needs neither.
+  s = s.replace(/[<>]/g, "");
   s = s.replace(/\s+/g, " ").trim();
   if (s.length > SUMMARY_MAX) {
     let cut = s.slice(0, SUMMARY_MAX - 1);
