@@ -1,7 +1,14 @@
 {
   "_generated_by": "bin/activity-releases.js — do not edit by hand",
-  "generated_at": "2026-11-15T23:03:56Z",
+  "generated_at": "2026-11-16T04:00:50Z",
   "releases": [
+    {
+      "repo": "claude-code-loop",
+      "tag": "v0.6.0",
+      "date": "2026-11-16T03:49:06Z",
+      "summary": "add the MODEL_TIERS vocabulary, behavior-neutral",
+      "url": "https://github.com/frederick-douglas-pearce/claude-code-loop/releases/tag/v0.6.0"
+    },
     {
       "repo": "agentfluent",
       "tag": "v0.11.0",
