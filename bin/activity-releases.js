@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Fetch the GitHub Releases that the Activity stream is to show (#75) into a
+ * Fetch the GitHub Releases that the Activity stream shows (#75) into a
  * committed data file.
  *
  * Fetches every release of each repo in RELEASE_REPOS from api.github.com,
@@ -8,9 +8,8 @@
  * each release body, and writes _data/activity.json. It runs daily from
  * .github/workflows/activity-releases.yml (through
  * bin/activity-releases-refresh.sh) and by hand, never inside the Jekyll build,
- * so a GitHub API failure cannot fail a deploy (#54, #73). Nothing renders the
- * file yet: #75 adds the stream's Release branch, which is to read only this
- * local file.
+ * so a GitHub API failure cannot fail a deploy (#54, #73). The stream's Release
+ * branch (_includes/activity.liquid, #75) reads only this local file.
  *
  *   node bin/activity-releases.js
  *
@@ -44,7 +43,7 @@
  * SUMMARY_MAX characters (cut at a code point, never inside one). The refresh
  * guardrail rejects the same characters but does not check the length, and
  * escaping at render time is the contract either way. It is null when nothing
- * usable was found, and #75's Release branch is to show the tag alone then.
+ * usable was found, and the stream's Release branch then shows the tag alone.
  *
  * Which releases. Drafts and pre-releases are skipped, as are patches
  * (vX.Y.Z with Z > 0): only minor-or-greater releases (vX.Y.0, `v` optional)

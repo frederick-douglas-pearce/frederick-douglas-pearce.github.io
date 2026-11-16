@@ -22,7 +22,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 activity:
-  enabled: true # includes the merged posts + notes stream below the bio
+  enabled: true # includes the merged posts, notes and releases stream below the bio
   limit: 5 # top-N shown here; leave blank to include the full stream (see /activity/)
 
 latest_posts:

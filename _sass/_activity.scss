@@ -1,8 +1,8 @@
-// Activity stream — the merged posts + notes list rendered by
+// Activity stream — the merged posts, notes and releases list rendered by
 // `_includes/activity.liquid` on /activity/ and on the about page.
 //
 // Greenfield: there was never a `.news` / `.news-title` rule in this repo, so
-// nothing here is a restyle. All colours come from the theme variables in
+// nothing here is a restyle. All colors come from the theme variables in
 // `_themes.scss`, which keeps the component correct on every dark surface
 // (page #1c1c1d, card #212529, panel #2c3237, evidence item #32383d) rather
 // than only on the page background.
@@ -44,9 +44,9 @@
   font-size: 0.9rem;
 }
 
-// The type badge is real text, not a colour cue: the label reads the same to a
+// The type badge is real text, not a color cue: the label reads the same to a
 // screen reader, in high-contrast mode, and to anyone who cannot separate the
-// two hues.
+// hues.
 .activity-type {
   font-size: 0.7rem;
   font-weight: 600;
@@ -61,6 +61,13 @@
 .activity-type--post {
   border-color: var(--global-theme-color);
   color: var(--global-theme-color);
+}
+
+// Body-text color rather than a new hue: it is distinct from Post (theme
+// color) and Note (light text), and has body-text contrast on every surface.
+.activity-type--release {
+  border-color: var(--global-text-color);
+  color: var(--global-text-color);
 }
 
 .activity-body {
@@ -82,6 +89,15 @@
 
   // Inline notes are one-liners, but they carry markdown, so keep long links
   // from pushing the row wider than the viewport.
+  overflow-wrap: anywhere;
+}
+
+// A release's one-line summary, under its repo + tag link. Plain text from
+// upstream release notes, so it can carry long identifiers with no spaces.
+.activity-summary {
+  margin: 0.15rem 0 0;
+  color: var(--global-text-color-light);
+  font-size: 0.9rem;
   overflow-wrap: anywhere;
 }
 

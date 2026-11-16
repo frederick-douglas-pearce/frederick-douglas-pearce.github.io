@@ -227,8 +227,8 @@ The MVP is **#67 → #68/#69 in parallel → #70 → #71**. Ship Phase C before 
    blog / projects / cv / [dropdown] / consulting = 5. Confirm `projects` stays out of the
    dropdown.
 4. **Type labels + visual treatment.** Proposed row types: **Post**, **Note**, **Release**.
-   Confirm the labels and whether type is shown as a text badge, an icon, or a colour. Badge
-   colours must come from existing SCSS tokens (no new hardcoded colour — see #53).
+   Confirm the labels and whether type is shown as a text badge, an icon, or a color. Badge
+   colors must come from existing SCSS tokens (no new hardcoded color — see #53).
 5. **Milestone backlog for #71.** #71 needs the actual list of historical milestones to seed
    (what events, what dates, one line each). Fred to supply, or approve a first draft.
 6. **#75 balance policy — deferred but will need numbers.** Per-source caps vs floors vs
@@ -305,7 +305,7 @@ emit a duplicate ID (axe violation) the moment a second dropdown ever exists.
 **Acceptance criteria.**
 - [ ] The navbar shows a single dropdown whose children are publications, repositories,
       activity; each navigates correctly.
-- [ ] Active-state propagates to the parent when a child page is current (existing behaviour
+- [ ] Active-state propagates to the parent when a child page is current (existing behavior
       preserved).
 - [ ] Top-level navbar is back to 5 slots (blog, projects, cv, dropdown, + room for consulting).
 - [ ] The dropdown toggle `id` is unique/derived; view-source shows no duplicate
@@ -337,7 +337,7 @@ a11y defects rather than inheriting them.
 - Replace the layout `<table>` with semantic list markup (`<dl>` or `<ul>`) that degrades on
   mobile instead of a fixed 20%/80% table.
 - If a scroll container is kept, it must have `tabindex="0"` and an accessible name.
-- Style all **4 dark-mode surfaces**; no new hardcoded colours.
+- Style all **4 dark-mode surfaces**; no new hardcoded colors.
 - Resolve the `page.announcements.*` vs `site.announcements.*` variable so the enable-gate
   works from the page front matter used in #67/#70.
 
@@ -347,7 +347,7 @@ a11y defects rather than inheriting them.
 - [ ] Markup is a semantic list, not a layout table; usable on a narrow viewport.
 - [ ] Any scroll region is keyboard-focusable (`tabindex="0"`) with an accessible name; axe
       reports no "scrollable region must have keyboard access."
-- [ ] Correct in both themes across all 4 dark surfaces; no new hardcoded colours.
+- [ ] Correct in both themes across all 4 dark surfaces; no new hardcoded colors.
 - [ ] No build-time external request; reads only local collections/data.
 - [ ] axe violations on `/activity/` do not exceed the pre-change baseline.
 
@@ -451,6 +451,9 @@ release-please makes upstream release bodies machine-written, so summaries must 
 
 ## #74 — Manual override file `_data/release_summaries.yml` (`repo@tag` → one-liner)
 
+> **Re-ordered 2026-11-15** to follow #75; see "#75 / #74 / #163 — re-scoped (2026-11-15)" in
+> Revision 2.
+
 **Phase:** D (goal). **Size:** S. **Depends on:** #73 (schema).
 
 **Problem.** Derived summaries are good but not always ideal; some releases deserve a
@@ -473,6 +476,9 @@ in the site repo.
 ---
 
 ## #75 — Integrate releases as the third source with interleaving / per-source caps
+
+> **Re-scoped 2026-11-15** to a plain date sort plus the Release render branch; the balance
+> policy moved to #163. See "#75 / #74 / #163 — re-scoped (2026-11-15)" in Revision 2.
 
 **Phase:** D (goal). **Size:** M. **Depends on:** #73 (data) and #69 (the stream include).
 
@@ -541,7 +547,7 @@ against the actual files; `file:line` references are real.
 | 2 | Dropdown parent label | **`more`** (lowercase, matches existing nav). |
 | — | Note-page indexing (new) | **`sitemap: false`, keep in search.** |
 | 3 | Does `projects` move under the dropdown? | **No** — stays top-level. |
-| 4 | Type labels | **Post / Note / Release.** Treatment still open (badge vs icon vs colour). |
+| 4 | Type labels | **Post / Note / Release.** Treatment still open (badge vs icon vs color). |
 | 5 | Milestone list for #71 | **Draft below — needs Fred's review.** |
 | 6 | #75 balance policy | Still deferred to #75. |
 
@@ -708,6 +714,29 @@ dispatch pattern already exists in `bin/push-dispatch.sh` (`push_head_to_main`,
 `dispatch_deploy`), and #73 owns the end-to-end deploy check that was #72's scope. The #72
 and #73 issue bodies (revised 2026-11-15) are authoritative for their scope and dependencies.
 
+### #75 / #74 / #163 — re-scoped (2026-11-15)
+
+An owner decision after the review above, made against real data (about 2–3 posts a month
+since August and no releases between 2026-07-23 and 2026-11-16, not the projection in "Hard
+constraints and known traps"). #75 adds releases with a **plain reverse-chronological sort**
+and the Release render branch. The balance policy (per-source caps / floors / interleave) moved
+to **#163**, to be decided against real data after #75 ships; it plugs into the ordering seam,
+and per-source caps compose before the about page's top-N. #74 resolves its override at render
+time inside #75's Release branch, so it **follows #75** (both edit `_includes/activity.liquid`,
+so they land one at a time). The loop order is #72 → #73 → #75 → #74.
+
+This supersedes every claim above that #75 applies a balance policy or that #74 precedes it,
+including: "Phase D needs per-source caps/floors or interleaving, not a plain date sort
+(#75)" in "Hard constraints and known traps"; "the balance problem only bites once releases
+land (#75)" in "Out of scope"; Q6 ("deferred but will need numbers … Not needed until #75") in
+"Open questions for the human"; "#75's per-source caps" in the #69 composition note; the priority-table rows for #74 and #75; under
+#75, the "balance logic" problem statement, the scope bullets "override-aware, #74" and "Apply
+the agreed balance policy", the criterion "the agreed balance policy is applied and visible",
+and "Blocked on Open Question 6"; "Depends on: #73" and "Dependencies. #73" under #74; Q6 ("Still
+deferred to #75") in "Decisions now settled"; and the "#75 balance policy" item under open
+items, which now belongs to #163. The #74, #75 and #163 issue bodies (revised 2026-11-15) are
+authoritative for their scope and dependencies.
+
 ## Acceptance criteria to rewrite
 
 - **"sitemap contains `/activity/` and not a live dead `/news/`"** — unsatisfiable by the
@@ -760,7 +789,7 @@ future notes: if it has a release tag, let #73 render it — don't write a Note.
 
 ## Open items still needing a decision
 
-- **Type treatment** (Q4): badge / icon / colour for Post · Note · Release. Colours must come
+- **Type treatment** (Q4): badge / icon / color for Post · Note · Release. Colors must come
   from existing SCSS tokens — no new hardcoded values (see #53). Candidate for a design pass
   before #69 is built.
 - **Milestone list** (Q5): review the draft table above.
