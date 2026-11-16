@@ -164,12 +164,15 @@ fi
 
 # 3. Guardrail, read independently of bin/activity-releases.js. The committed
 # copy is what the site serves. It is empty only when HEAD has no such file (a
-# first run), which skips the never-shorten check; any other git failure stops
-# the run under set -e rather than skipping the check. It must print its
+# first run), which skips the never-shorten check; any git failure stops the
+# run under set -e rather than skipping the check. The probe is ls-tree, not
+# `cat-file -e`, because cat-file exits 128 for an absent path and for a real
+# error alike, while ls-tree exits 0 with no output for an absent path. It must print its
 # sentinel line: a Ruby that exits 0 without running proves nothing. Ruby
 # prints plain one-line results; this script escapes and annotates them, so
 # nothing from the data reaches the log raw.
-if git cat-file -e "HEAD:$DATA" 2>/dev/null; then
+listing=$(git ls-tree --name-only HEAD -- "$DATA")
+if [[ -n $listing ]]; then
   git show "HEAD:$DATA" >"$committed"
 else
   : >"$committed"

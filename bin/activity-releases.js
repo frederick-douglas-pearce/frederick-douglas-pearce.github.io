@@ -71,7 +71,7 @@
  * link noise: `analyze: show an SDK-vs-Claude-Code indicator (CLI badge +
  * JSON) (#592)` becomes `analyze: show an SDK-vs-Claude-Code indicator`. That
  * was a deliberate choice on #73 (the issue's verified output); where it loses
- * meaning, write an override (#74).
+ * meaning, the override file #74 is to add will be the fix.
  *
  * Failure policy: fail closed. Everything is fetched and validated before
  * anything is written, and if any repo fails, nothing is written, so one repo
@@ -188,7 +188,7 @@ function apiOrigin() {
   return url.origin;
 }
 
-// Short names key the output and #74's overrides, so two repos with the same
+// Short names key the output (and are to key #74's overrides), so two repos with the same
 // name under different owners would collide. Checked before any request.
 function shortNames() {
   const names = new Map();
