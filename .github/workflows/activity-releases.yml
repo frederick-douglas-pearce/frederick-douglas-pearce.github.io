@@ -1,9 +1,9 @@
 name: Refresh activity releases
 
 # Daily refresh of _data/activity.json, the GitHub Releases the Activity stream
-# is to show once #75 lands (#73). The work, including why the deploy is
-# dispatched explicitly instead of left to deploy.yml's _data/** path filter,
-# is in bin/activity-releases-refresh.sh.
+# shows (#73, #75). The work, including why the deploy is dispatched explicitly
+# instead of left to deploy.yml's _data/** path filter, is in
+# bin/activity-releases-refresh.sh.
 
 on:
   schedule:
