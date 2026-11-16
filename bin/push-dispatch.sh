@@ -7,7 +7,8 @@
 #   push_head_to_main      # returns 0, 2 or 3 (below)
 #   dispatch_deploy [-f key=value ...]
 #
-# Callers: bin/repo-stats-refresh.sh (#59) and bin/pages-redeploy.sh (#131).
+# Callers: bin/repo-stats-refresh.sh (#59), bin/pages-redeploy.sh (#131) and
+# bin/activity-releases-refresh.sh (#73).
 # These steps were lifted out of the first one when the second needed them,
 # as its header asked. Each caller keeps its own failure messages, because
 # what a human should do next differs: the two functions report what happened
