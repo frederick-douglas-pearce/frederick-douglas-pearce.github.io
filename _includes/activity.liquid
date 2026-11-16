@@ -20,10 +20,17 @@
   a Time, while a release is a hash from JSON whose `date` is an ISO 8601
   string. A plain `sort: 'date'` over that mix raises no error and can order
   the stream wrongly. So (a) builds one string key per item,
-  `<epoch seconds, zero-padded to 12>|<source>|<index>`, sorts the keys (fixed
-  width makes text order chronological), applies the limit, and resolves each
-  key back to its object. `date: '%s'` gives the same instant for a Time and
-  for an ISO string, whatever the build's timezone.
+  `<epoch seconds, zero-padded to 12>|<source>|<index, zero-padded to 4>`,
+  sorts the keys (every field is fixed width, so text order is chronological;
+  the index pad assumes at most 9999 items per source), applies the limit, and
+  resolves each key back to its object. Items in the same second order by
+  source letter (release, post, note) and then by reverse position in their
+  source: deterministic, but not meaningful.
+
+  `date: '%s'` gives the same instant for a Time and for an ISO string with an
+  explicit offset, whatever the build's timezone. Release dates always end in
+  `Z`: bin/activity-releases.js writes them that way, and the guardrail in
+  bin/activity-releases-refresh.sh rejects any other form.
 
   Type discrimination in (b): `item.collection` is `"news"` or `"posts"` for
   a Document. A release has no `collection`, so it is recognized by its own
@@ -44,15 +51,18 @@
 {%- assign activity_releases = site.data.activity.releases -%}
 {%- assign activity_keys = '' | split: '' -%}
 {%- for item in site.posts -%}
-  {%- assign activity_key = item.date | date: '%s' | prepend: '000000000000' | slice: -12, 12 | append: '|p|' | append: forloop.index0 -%}
+  {%- assign activity_pos = forloop.index0 | prepend: '0000' | slice: -4, 4 -%}
+  {%- assign activity_key = item.date | date: '%s' | prepend: '000000000000' | slice: -12, 12 | append: '|p|' | append: activity_pos -%}
   {%- assign activity_keys = activity_keys | push: activity_key -%}
 {%- endfor -%}
 {%- for item in site.news -%}
-  {%- assign activity_key = item.date | date: '%s' | prepend: '000000000000' | slice: -12, 12 | append: '|n|' | append: forloop.index0 -%}
+  {%- assign activity_pos = forloop.index0 | prepend: '0000' | slice: -4, 4 -%}
+  {%- assign activity_key = item.date | date: '%s' | prepend: '000000000000' | slice: -12, 12 | append: '|n|' | append: activity_pos -%}
   {%- assign activity_keys = activity_keys | push: activity_key -%}
 {%- endfor -%}
 {%- for item in activity_releases -%}
-  {%- assign activity_key = item.date | date: '%s' | prepend: '000000000000' | slice: -12, 12 | append: '|r|' | append: forloop.index0 -%}
+  {%- assign activity_pos = forloop.index0 | prepend: '0000' | slice: -4, 4 -%}
+  {%- assign activity_key = item.date | date: '%s' | prepend: '000000000000' | slice: -12, 12 | append: '|r|' | append: activity_pos -%}
   {%- assign activity_keys = activity_keys | push: activity_key -%}
 {%- endfor -%}
 {%- assign activity_keys = activity_keys | sort | reverse -%}
@@ -62,7 +72,7 @@
 {%- assign activity_items = '' | split: '' -%}
 {%- for activity_key in activity_keys -%}
   {%- assign activity_key_parts = activity_key | split: '|' -%}
-  {%- comment -%} `split` yields strings, and Liquid indexes an array only by an Integer. {%- endcomment -%}
+  {%- comment -%} `split` yields strings, and Liquid indexes an array only by an Integer; `plus: 0` also drops the padding zeros. {%- endcomment -%}
   {%- assign activity_index = activity_key_parts[2] | plus: 0 -%}
   {%- case activity_key_parts[1] -%}
     {%- when 'p' -%}
@@ -92,11 +102,14 @@
           {%- continue -%}
         {%- endif -%}
 
-        {%- comment -%} Match the site's existing link convention (see latest_posts.liquid). {%- endcomment -%}
+        {%- comment -%}
+          Posts and notes match the site's existing link convention (see
+          latest_posts.liquid). A release always links out to its GitHub release
+          page, and its branch below renders the new-tab attributes itself.
+        {%- endcomment -%}
         {%- assign item_external = false -%}
         {%- if item_type == 'release' -%}
           {%- assign item_href = item.url -%}
-          {%- assign item_external = true -%}
         {%- elsif item.redirect == blank -%}
           {%- assign item_href = item.url | relative_url -%}
         {%- elsif item.redirect contains '://' -%}

@@ -2,7 +2,7 @@
 // `_includes/activity.liquid` on /activity/ and on the about page.
 //
 // Greenfield: there was never a `.news` / `.news-title` rule in this repo, so
-// nothing here is a restyle. All colours come from the theme variables in
+// nothing here is a restyle. All colors come from the theme variables in
 // `_themes.scss`, which keeps the component correct on every dark surface
 // (page #1c1c1d, card #212529, panel #2c3237, evidence item #32383d) rather
 // than only on the page background.
@@ -44,7 +44,7 @@
   font-size: 0.9rem;
 }
 
-// The type badge is real text, not a colour cue: the label reads the same to a
+// The type badge is real text, not a color cue: the label reads the same to a
 // screen reader, in high-contrast mode, and to anyone who cannot separate the
 // hues.
 .activity-type {
