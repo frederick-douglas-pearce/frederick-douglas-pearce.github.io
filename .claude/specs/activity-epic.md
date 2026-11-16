@@ -725,8 +725,11 @@ and per-source caps compose before the about page's top-N. #74 resolves its over
 time inside #75's Release branch, so it **follows #75** (both edit `_includes/activity.liquid`,
 so they land one at a time). The loop order is #72 → #73 → #75 → #74.
 
-This supersedes: "Phase D needs per-source caps/floors or interleaving, not a plain date sort
-(#75)" in "Hard constraints and known traps"; the priority-table rows for #74 and #75; under
+This supersedes every claim above that #75 applies a balance policy or that #74 precedes it,
+including: "Phase D needs per-source caps/floors or interleaving, not a plain date sort
+(#75)" in "Hard constraints and known traps"; "the balance problem only bites once releases
+land (#75)" in "Out of scope"; Q6 ("deferred but will need numbers … Not needed until #75") in
+"Open questions for the human"; "#75's per-source caps" in the #69 composition note; the priority-table rows for #74 and #75; under
 #75, the "balance logic" problem statement, the scope bullets "override-aware, #74" and "Apply
 the agreed balance policy", the criterion "the agreed balance policy is applied and visible",
 and "Blocked on Open Question 6"; "Depends on: #73" and "Dependencies. #73" under #74; Q6 ("Still
