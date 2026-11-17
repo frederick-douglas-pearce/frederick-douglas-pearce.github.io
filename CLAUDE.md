@@ -100,6 +100,10 @@ below.
    gone, the local run refuses too: remove the repo from `RELEASE_REPOS` first. Its
    `summary` field is plain text
    derived from upstream release notes: render it with `| escape`, never `markdownify`.
+   To reword one, add a `"repo@tag": "…"` entry to `_data/release_summaries.yml`
+   (#74), the hand-edited counterpart. The stream matches it case-insensitively when
+   the site builds, so a push of that file deploys directly. Never put an override
+   into `activity.json`.
 
 ## Blog taxonomy: `categories` means _series_
 

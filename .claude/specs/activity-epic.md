@@ -673,8 +673,9 @@ is more code and more ways to get the merge key wrong. **The AC must specify the
 case**, or it isn't testing the risky path.
 
 ### #74 — override resolves at **render time**
-`_data/activity.json` holds only the *derived* summary; the stream prefers
-`site.data.release_summaries['repo@tag']` at build time when the key exists. Why:
+`_data/activity.json` holds only the *derived* summary; at build time the stream iterates
+`site.data.release_summaries` and prefers the entry whose key matches `repo@tag`
+case-insensitively (as built in #74, PR #169). Why:
 - **Feedback loop.** Editing `release_summaries.yml` is a normal human push to `_data/**`,
   which triggers `deploy.yml` directly. A fetch-time override wouldn't appear until the next
   cron tick.
@@ -683,6 +684,9 @@ case**, or it isn't testing the risky path.
 - **Failure modes.** A render-time override for a tag absent from `activity.json` (e.g. a
   filtered-out patch) is a harmless no-op; fetch-time would silently drop overrides for
   anything the fetch filtered or missed.
+- **Case guard: iterate, not an exact lookup.** An exact `['repo@tag']` lookup with a
+  miscased key misses silently, indistinguishable from the intended no-op for an absent tag
+  (the #54 trap). Liquid cannot downcase hash keys, so the stream compares `downcase`d keys.
 
 ### #72 — three corrections
 - **`workflow_dispatch` already exists** (`deploy.yml:52`). No unstated prerequisite.

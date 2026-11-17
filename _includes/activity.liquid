@@ -13,8 +13,9 @@
     (b) the render loop   — one branch per item type
 
   Keep sorting and limiting out of the render loop. The balance policy
-  (per-source caps, then top-N; #163) belongs in (a), and the release-summary
-  override (#74) in the Release branch of (b).
+  (per-source caps, then top-N; #163) belongs in (a). The release-summary
+  override (#74, `_data/release_summaries.yml`) is resolved in the Release
+  branch of (b), so it changes what a row says and never the order.
 
   Why (a) sorts keys, not items: posts and notes are Documents whose `date` is
   a Time, while a release is a hash from JSON whose `date` is an ISO 8601
@@ -39,7 +40,9 @@
 
   A release `summary` is plain text derived from upstream release notes, which
   anyone opening a PR upstream can influence: render it with `escape`, never
-  `markdownify`. It can be null, and then the row shows the tag alone.
+  `markdownify`. A hand-written override replaces it and is escaped the same
+  way. The derived summary can be null; then the row shows the tag alone,
+  unless an override applies.
 
   There is no scroll container. Upstream's `<div class="table-responsive"
   style="max-height:60vw">` was a WCAG 2.1.1 failure (a scrollable region with
@@ -133,8 +136,31 @@
                 {{ item.tag | escape -}}
                 <span class="sr-only"> (opens in a new tab)</span>
               </a>
-              {%- if item.summary != blank -%}
-                <p class="activity-summary">{{ item.summary | escape }}</p>
+              {%- comment -%}
+                Release-summary override (#74): a "repo@tag" entry in
+                _data/release_summaries.yml replaces the derived summary. Keys
+                match case-insensitively (an exact lookup would miss a miscased
+                key silently, the #54 trap). A value YAML reads as null or
+                false, or a blank one, falls back to the derived summary; the
+                truthiness test comes before `strip`, which would turn false
+                into the string "false".
+              {%- endcomment -%}
+              {%- assign item_summary = item.summary -%}
+              {%- assign item_key = item.repo | append: '@' | append: item.tag | downcase -%}
+              {%- for activity_override in site.data.release_summaries -%}
+                {%- assign activity_override_key = activity_override[0] | downcase -%}
+                {%- if activity_override_key == item_key -%}
+                  {%- if activity_override[1] -%}
+                    {%- assign activity_override_value = activity_override[1] | strip -%}
+                    {%- if activity_override_value != '' -%}
+                      {%- assign item_summary = activity_override_value -%}
+                    {%- endif -%}
+                  {%- endif -%}
+                  {%- break -%}
+                {%- endif -%}
+              {%- endfor -%}
+              {%- if item_summary != blank -%}
+                <p class="activity-summary">{{ item_summary | escape }}</p>
               {%- endif -%}
             {%- else -%}
               <a

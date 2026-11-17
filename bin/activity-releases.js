@@ -27,14 +27,16 @@
  * locally and commit the result. One exception: when EVERY release of a repo
  * is gone, a local run fails too (an empty list is refused for a repo the file
  * has releases for), so remove the repo from RELEASE_REPOS, run this script
- * and commit both files. Never edit _data/activity.json by hand.
+ * and commit both files. Never edit _data/activity.json by hand: a summary
+ * that needs rewording gets an entry in _data/release_summaries.yml (#74).
  *
  * Output: `{ _generated_by, generated_at, releases: [...] }`, newest first
  * (then by repo, then by tag), each release `{ repo, tag, date, summary, url }`.
- * `repo` is the short name (`agentfluent`), so `repo@tag` is the key #74's
- * render-time override file is to use. `date` is the release's published_at
- * as an ISO 8601 UTC string, not a Ruby Time, so convert it before sorting it
- * against posts or notes. `url` is the release page on github.com.
+ * `repo` is the short name (`agentfluent`), so `repo@tag` is the key the
+ * render-time override file, _data/release_summaries.yml (#74), uses. `date`
+ * is the release's published_at as an ISO 8601 UTC string, not a Ruby Time, so
+ * convert it before sorting it against posts or notes.
+ * `url` is the release page on github.com.
  *
  * `summary` is PLAIN TEXT derived from text anyone who opens a PR upstream can
  * influence (release-please builds release notes from commit and PR titles).
@@ -70,7 +72,7 @@
  * link noise: `analyze: show an SDK-vs-Claude-Code indicator (CLI badge +
  * JSON) (#592)` becomes `analyze: show an SDK-vs-Claude-Code indicator`. That
  * was a deliberate choice on #73 (the issue's verified output); where it loses
- * meaning, the override file #74 is to add will be the fix.
+ * meaning, an entry in _data/release_summaries.yml (#74) is the fix.
  *
  * Failure policy: fail closed. Everything is fetched and validated before
  * anything is written, and if any repo fails, nothing is written, so one repo
@@ -187,7 +189,7 @@ function apiOrigin() {
   return url.origin;
 }
 
-// Short names key the output (and are to key #74's overrides), so two repos with the same
+// Short names key the output (and #74's overrides), so two repos with the same
 // name under different owners would collide. Checked before any request.
 function shortNames() {
   const names = new Map();
