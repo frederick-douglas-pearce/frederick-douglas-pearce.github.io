@@ -9,15 +9,19 @@
 # Format: a mapping (not a list) of `"<repo>@<tag>": "<summary>"`.
 #   - The key is the release's `repo` and `tag` exactly as activity.json writes
 #     them (e.g. agentfluent@v0.11.0). Matching ignores case.
-#   - Double-quote every key and value. Unquoted YAML turns words like no, off
-#     and ~ into false or null, and those fall back to the derived summary.
+#   - Double-quote every key and value. A value must be a quoted string:
+#     unquoted YAML turns words like no, off and ~ into false or null (those
+#     fall back to the derived summary), an unquoted number or date renders
+#     reformatted, and a list or mapping renders as unreadable text.
 #   - The value is one line of plain text, about 160 characters at most, like
 #     the derived summaries. It is escaped when rendered: no Markdown or HTML.
 #   - A blank value falls back to the derived summary.
 #   - A key that matches no release changes nothing and reports nothing (a
 #     patch tag, a typo, or a release not fetched yet), so check the row on
 #     /activity/ after the deploy.
-#   - If two keys differ only in case, the first one in this file wins.
+#   - If two keys differ only in case, only the first one in this file is
+#     read, even if its value is blank (the release then shows the derived
+#     summary). Delete the duplicate.
 #
 # Run `npx prettier . --write` before pushing: Prettier is a gating check on
 # main.

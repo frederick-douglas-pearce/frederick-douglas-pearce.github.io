@@ -41,7 +41,8 @@
   A release `summary` is plain text derived from upstream release notes, which
   anyone opening a PR upstream can influence: render it with `escape`, never
   `markdownify`. A hand-written override replaces it and is escaped the same
-  way. It can be null, and then the row shows the tag alone.
+  way. The derived summary can be null; then the row shows the tag alone,
+  unless an override applies.
 
   There is no scroll container. Upstream's `<div class="table-responsive"
   style="max-height:60vw">` was a WCAG 2.1.1 failure (a scrollable region with
@@ -147,7 +148,7 @@
               {%- assign item_summary = item.summary -%}
               {%- assign item_key = item.repo | append: '@' | append: item.tag | downcase -%}
               {%- for activity_override in site.data.release_summaries -%}
-                {%- assign activity_override_key = activity_override[0] | strip | downcase -%}
+                {%- assign activity_override_key = activity_override[0] | downcase -%}
                 {%- if activity_override_key == item_key -%}
                   {%- if activity_override[1] -%}
                     {%- assign activity_override_value = activity_override[1] | strip -%}

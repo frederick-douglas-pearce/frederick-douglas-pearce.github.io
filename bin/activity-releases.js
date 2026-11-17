@@ -35,7 +35,8 @@
  * `repo` is the short name (`agentfluent`), so `repo@tag` is the key the
  * render-time override file, _data/release_summaries.yml (#74), uses. `date`
  * is the release's published_at as an ISO 8601 UTC string, not a Ruby Time, so
- * convert it before sorting it against posts or notes. `url` is the release page on github.com.
+ * convert it before sorting it against posts or notes.
+ * `url` is the release page on github.com.
  *
  * `summary` is PLAIN TEXT derived from text anyone who opens a PR upstream can
  * influence (release-please builds release notes from commit and PR titles).
