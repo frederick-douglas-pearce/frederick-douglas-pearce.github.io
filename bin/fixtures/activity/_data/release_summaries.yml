@@ -1,0 +1,15 @@
+# Fixture for bin/activity-fixture-check.js (not the real override file, which
+# is _data/release_summaries.yml). Each entry exercises one rule of the
+# Release-branch override lookup in _includes/activity.liquid.
+
+# The derived summary is null: the override still applies.
+"fixture-b@v0.6.0": "Override on a release whose derived summary is null"
+# Hostile override: rendered escaped, like a derived summary. The markup must
+# be well-formed: /activity/ is a Markdown page, and kramdown escapes malformed
+# tags itself, which would hide a missing `| escape`.
+"fixture-c@v0.3.0": "<i>override</i> & <script>y</script>"
+# Empty and whitespace-only overrides fall back to the derived summary.
+"fixture-c@v0.2.0": ""
+"fixture-c@v0.1.0": "   "
+# The release is Fixture-D V1.0.0: keys match case-insensitively.
+"fixture-d@v1.0.0": "Override matched case-insensitively"

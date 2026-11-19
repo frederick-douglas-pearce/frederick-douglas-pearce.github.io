@@ -155,8 +155,19 @@ page (`activity.limit` in `_pages/about.md` front matter). The include is delibe
 two parts — an ordering seam that produces `activity_items`, and a render loop with one
 branch per type. Keep sorting and limiting out of the render loop. The seam sorts string
 keys built from each item's epoch seconds, not the items, because release dates are ISO
-strings and post/note dates are Ruby `Time`s, and a plain `sort: 'date'` over that mix can
-misorder without an error (the include's header comment has the details).
+strings and post/note dates are Ruby `Time`s. A plain `sort: 'date'` over that mix orders
+correctly today only because ActiveSupport, loaded by the plugins, redefines `Time#<=>`;
+without it the mix misorders without an error (the include's header comment has the details).
+
+Real data cannot exercise the escaping, null-summary or same-day ordering paths, so they are
+covered by an on-demand fixture check, `node bin/activity-fixture-check.js` (#168). It copies
+the working tree, swaps in the releases, overrides, posts and notes from
+`bin/fixtures/activity/`, builds the copy in the pinned Docker image (about 20 s once the gem
+dir is warm), and asserts on `/activity/` and the about page. Run it after changing the seam,
+the Release branch of the render loop, the shape of `activity.json` or
+`release_summaries.yml`, or the Jekyll, Liquid or jekyll-scholar gems. It is deliberately not
+in CI or `package.json`. Exit 1 is a failed assertion; exit 2 is a setup or build failure and
+says nothing about the template.
 
 The `news` collection keeps its internal name (`site.news`, read by the templates and the
 search index) but is user-facing as Activity, permalinked under `/activity/`.

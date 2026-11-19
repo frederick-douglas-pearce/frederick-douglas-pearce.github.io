@@ -741,6 +741,21 @@ deferred to #75") in "Decisions now settled"; and the "#75 balance policy" item 
 items, which now belongs to #163. The #74, #75 and #163 issue bodies (revised 2026-11-15) are
 authoritative for their scope and dependencies.
 
+### #168 — fixture check: committed (2026-11-19)
+
+Decision (owner, at #168's plan gate): commit a fixture plus an on-demand script,
+`bin/activity-fixture-check.js` with `bin/fixtures/activity/`, in the style of
+`bin/a11y-audit.js`; not in CI and not in `package.json`. It supersedes the scratch "Check 2"
+recipe in PR #167. From PR #169's `check74.py` stress run it covers the null, empty, blank,
+hostile and miscased-key override cases, not the duplicate-key or prefix-key ones. #163's seam
+rewrite updates the fixture's expected order rather than the script. Pointing the dev loop's
+Class B check at it is #170.
+
+AC2 was amended (owner, 2026-11-19, comment on #168): reverting the seam to a mixed
+`sort: 'date'` is an equivalent mutation under the current gems, because ActiveSupport (loaded
+by the plugins) redefines `Time#<=>` to parse a string. The check is required to fail only when
+`| escape` or `!= blank` is removed.
+
 ## Acceptance criteria to rewrite
 
 - **"sitemap contains `/activity/` and not a live dead `/news/`"** — unsatisfiable by the
