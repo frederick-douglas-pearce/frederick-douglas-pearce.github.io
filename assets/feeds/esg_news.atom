@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://frederick-douglas-pearce.github.io/esg-news/</id>
   <title>ESG Sportswear News</title>
-  <updated>2026-11-18T15:00:27.476934+00:00</updated>
+  <updated>2026-11-19T15:00:27.757883+00:00</updated>
   <author>
     <name>ESG News Classifier</name>
     <uri>https://frederick-douglas-pearce.github.io</uri>
@@ -285,8 +285,8 @@
     <link href="https://www.theguardian.com/media/2025/dec/03/nike-superdry-and-lacoste-ads-banned-in-uk-over-misleading-green-claims"/>
     <summary>Brands: Nike | Categories: Environmental, Governance | Source: theguardian.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2025-12-03T01:00:00+00:00</published>
   </entry>
   <entry>
@@ -296,8 +296,8 @@
     <link href="https://www.hamhigh.co.uk/news/national/25668232.nike-superdry-lacoste-ads-banned-exaggerating-sustainability-claims/"/>
     <summary>Brands: Nike | Categories: Environmental, Governance | Source: hamhigh.co.uk</summary>
     <category term="Nike" label="Nike"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2025-12-03T01:45:00+00:00</published>
   </entry>
   <entry>
@@ -307,8 +307,8 @@
     <link href="https://www.businessgreen.com/news/4522726/asa-raps-nike-superdry-lacoste-misleading-sustainability-claims"/>
     <summary>Brands: Nike | Categories: Environmental, Governance | Source: businessgreen.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2025-12-03T13:15:00+00:00</published>
   </entry>
   <entry>
@@ -328,8 +328,8 @@
     <link href="https://www.bbc.com/news/articles/ckgm79djr9yo"/>
     <summary>Brands: Nike | Categories: Environmental, Governance | Source: bbc.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2025-12-03T14:30:00+00:00</published>
   </entry>
   <entry>
@@ -359,8 +359,8 @@
     <link href="https://www.yahoo.com/news/articles/sustainable-not-quite-says-asa-205252522.html"/>
     <summary>Brands: Nike | Categories: Environmental, Governance | Source: yahoo.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2025-12-03T21:30:00+00:00</published>
   </entry>
   <entry>
@@ -524,21 +524,21 @@
     <published>2025-12-18T10:30:00+00:00</published>
   </entry>
   <entry>
-    <id>2ac5f313-c0b3-4756-966b-228adf98baaa</id>
-    <title>Trending tickers : BP , Oracle , Micron , Lululemon</title>
-    <updated>2025-12-18T11:15:00+00:00</updated>
-    <link href="https://www.aol.co.uk/articles/trending-tickers-bp-oracle-micron-095841359.html"/>
-    <summary>Brands: Lululemon | Categories: Governance | Source: aol.co.uk</summary>
-    <category term="Lululemon" label="Lululemon"/>
-    <category term="governance" label="Governance"/>
-    <published>2025-12-18T11:15:00+00:00</published>
-  </entry>
-  <entry>
     <id>ba0dd219-3164-4f6d-b5fb-eae91b468a61</id>
     <title>Elliott Management Takes $1 Billion Stake In Lululemon , Proposes Former Ralph Lauren Executive As New CEO : Report</title>
     <updated>2025-12-18T11:15:00+00:00</updated>
     <link href="https://biztoc.com/x/8fce0e4f800e2714"/>
     <summary>Brands: Lululemon | Categories: Governance | Source: biztoc.com</summary>
+    <category term="Lululemon" label="Lululemon"/>
+    <category term="governance" label="Governance"/>
+    <published>2025-12-18T11:15:00+00:00</published>
+  </entry>
+  <entry>
+    <id>2ac5f313-c0b3-4756-966b-228adf98baaa</id>
+    <title>Trending tickers : BP , Oracle , Micron , Lululemon</title>
+    <updated>2025-12-18T11:15:00+00:00</updated>
+    <link href="https://www.aol.co.uk/articles/trending-tickers-bp-oracle-micron-095841359.html"/>
+    <summary>Brands: Lululemon | Categories: Governance | Source: aol.co.uk</summary>
     <category term="Lululemon" label="Lululemon"/>
     <category term="governance" label="Governance"/>
     <published>2025-12-18T11:15:00+00:00</published>
@@ -574,21 +574,21 @@
     <published>2025-12-18T15:00:00+00:00</published>
   </entry>
   <entry>
-    <id>242da8e3-5db8-40ff-86e5-fe68bb9c861c</id>
-    <title>Lululemon shares up after reports of Elliott Management buying stake – Winnipeg Free Press</title>
-    <updated>2025-12-18T16:30:00+00:00</updated>
-    <link href="https://www.winnipegfreepress.com/business/2025/12/18/lululemon-shares-up-after-reports-of-elliott-management-buying-stake"/>
-    <summary>Brands: Lululemon | Categories: Governance | Source: winnipegfreepress.com</summary>
-    <category term="Lululemon" label="Lululemon"/>
-    <category term="governance" label="Governance"/>
-    <published>2025-12-18T16:30:00+00:00</published>
-  </entry>
-  <entry>
     <id>a0378056-de10-40ab-a83a-6568ad6a2134</id>
     <title>Activist investor Elliott Management acquires $1bn Lululemon stake</title>
     <updated>2025-12-18T16:30:00+00:00</updated>
     <link href="https://biztoc.com/x/d1560e0d019544eb"/>
     <summary>Brands: Lululemon | Categories: Governance | Source: biztoc.com</summary>
+    <category term="Lululemon" label="Lululemon"/>
+    <category term="governance" label="Governance"/>
+    <published>2025-12-18T16:30:00+00:00</published>
+  </entry>
+  <entry>
+    <id>242da8e3-5db8-40ff-86e5-fe68bb9c861c</id>
+    <title>Lululemon shares up after reports of Elliott Management buying stake – Winnipeg Free Press</title>
+    <updated>2025-12-18T16:30:00+00:00</updated>
+    <link href="https://www.winnipegfreepress.com/business/2025/12/18/lululemon-shares-up-after-reports-of-elliott-management-buying-stake"/>
+    <summary>Brands: Lululemon | Categories: Governance | Source: winnipegfreepress.com</summary>
     <category term="Lululemon" label="Lululemon"/>
     <category term="governance" label="Governance"/>
     <published>2025-12-18T16:30:00+00:00</published>
@@ -705,16 +705,6 @@
     <published>2025-12-29T16:30:00+00:00</published>
   </entry>
   <entry>
-    <id>06c877d0-4378-404d-b4fe-a675f1e070c3</id>
-    <title>Lululemon Founder Initiates Proxy Fight to Revamp Board Structure</title>
-    <updated>2025-12-29T18:00:00+00:00</updated>
-    <link href="https://www.el-balad.com/6805659"/>
-    <summary>Brands: Lululemon | Categories: Governance | Source: el-balad.com</summary>
-    <category term="Lululemon" label="Lululemon"/>
-    <category term="governance" label="Governance"/>
-    <published>2025-12-29T18:00:00+00:00</published>
-  </entry>
-  <entry>
     <id>56a46a95-e3a8-461b-975e-45527ab19fa5</id>
     <title>Lululemon Founder Chip Wilson Seeks Board Shake - up , Nominates 3 Directors</title>
     <updated>2025-12-29T18:00:00+00:00</updated>
@@ -725,14 +715,14 @@
     <published>2025-12-29T18:00:00+00:00</published>
   </entry>
   <entry>
-    <id>173ea1a2-7022-487c-9fd4-8eeefbd723c2</id>
-    <title>Lululemon Faces Fresh Challenges as Competitive Pressures Mount</title>
-    <updated>2025-12-29T18:15:00+00:00</updated>
-    <link href="https://www.el-balad.com/6805667"/>
+    <id>06c877d0-4378-404d-b4fe-a675f1e070c3</id>
+    <title>Lululemon Founder Initiates Proxy Fight to Revamp Board Structure</title>
+    <updated>2025-12-29T18:00:00+00:00</updated>
+    <link href="https://www.el-balad.com/6805659"/>
     <summary>Brands: Lululemon | Categories: Governance | Source: el-balad.com</summary>
     <category term="Lululemon" label="Lululemon"/>
     <category term="governance" label="Governance"/>
-    <published>2025-12-29T18:15:00+00:00</published>
+    <published>2025-12-29T18:00:00+00:00</published>
   </entry>
   <entry>
     <id>4c26a113-4a75-467b-9972-8c5b54c1cd86</id>
@@ -740,6 +730,16 @@
     <updated>2025-12-29T18:15:00+00:00</updated>
     <link href="https://edition.cnn.com/2025/12/29/business/lululemon-founder-proxy-fight"/>
     <summary>Brands: Lululemon | Categories: Governance | Source: edition.cnn.com</summary>
+    <category term="Lululemon" label="Lululemon"/>
+    <category term="governance" label="Governance"/>
+    <published>2025-12-29T18:15:00+00:00</published>
+  </entry>
+  <entry>
+    <id>173ea1a2-7022-487c-9fd4-8eeefbd723c2</id>
+    <title>Lululemon Faces Fresh Challenges as Competitive Pressures Mount</title>
+    <updated>2025-12-29T18:15:00+00:00</updated>
+    <link href="https://www.el-balad.com/6805667"/>
+    <summary>Brands: Lululemon | Categories: Governance | Source: el-balad.com</summary>
     <category term="Lululemon" label="Lululemon"/>
     <category term="governance" label="Governance"/>
     <published>2025-12-29T18:15:00+00:00</published>
@@ -856,21 +856,21 @@
     <published>2025-12-30T15:15:00+00:00</published>
   </entry>
   <entry>
-    <id>ce7afdf9-0361-4904-a2e6-69b36337a3c2</id>
-    <title>Lululemon Sends an Email to its Employees</title>
-    <updated>2025-12-30T16:00:00+00:00</updated>
-    <link href="https://www.marketscreener.com/news/lululemon-sends-an-email-to-its-employees-ce7e59d8d88af124"/>
-    <summary>Brands: Lululemon | Categories: Governance | Source: marketscreener.com</summary>
-    <category term="Lululemon" label="Lululemon"/>
-    <category term="governance" label="Governance"/>
-    <published>2025-12-30T16:00:00+00:00</published>
-  </entry>
-  <entry>
     <id>c0799949-f673-40ef-a010-403667bc8e34</id>
     <title>Chip Wilson : Lululemon tells employees it business as usual</title>
     <updated>2025-12-30T16:00:00+00:00</updated>
     <link href="https://www.bnnbloomberg.ca/business/2025/12/30/lululemon-tells-employees-its-business-as-usual-as-founder-challenges-board/"/>
     <summary>Brands: Lululemon | Categories: Governance | Source: bnnbloomberg.ca</summary>
+    <category term="Lululemon" label="Lululemon"/>
+    <category term="governance" label="Governance"/>
+    <published>2025-12-30T16:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>ce7afdf9-0361-4904-a2e6-69b36337a3c2</id>
+    <title>Lululemon Sends an Email to its Employees</title>
+    <updated>2025-12-30T16:00:00+00:00</updated>
+    <link href="https://www.marketscreener.com/news/lululemon-sends-an-email-to-its-employees-ce7e59d8d88af124"/>
+    <summary>Brands: Lululemon | Categories: Governance | Source: marketscreener.com</summary>
     <category term="Lululemon" label="Lululemon"/>
     <category term="governance" label="Governance"/>
     <published>2025-12-30T16:00:00+00:00</published>
@@ -1142,8 +1142,8 @@
     <updated>2026-01-23T23:45:27+00:00</updated>
     <link href="https://us.headtopics.com/news/nike-and-under-armour-s-potential-ransomware-attacks-what-78798004"/>
     <summary>Brands: Nike, Under Armour | Categories: Digital Transformation | Source: Headtopics</summary>
-    <category term="Nike" label="Nike"/>
     <category term="Under Armour" label="Under Armour"/>
+    <category term="Nike" label="Nike"/>
     <category term="digital_transformation" label="Digital Transformation"/>
     <published>2026-01-23T23:45:27+00:00</published>
   </entry>
@@ -1304,8 +1304,8 @@
     <updated>2026-01-27T20:15:00+00:00</updated>
     <link href="https://www.webwire.com/ViewPressRel.asp?aId=349704"/>
     <summary>Brands: Anta, Puma | Categories: Governance | Source: webwire.com</summary>
-    <category term="Puma" label="Puma"/>
     <category term="Anta" label="Anta"/>
+    <category term="Puma" label="Puma"/>
     <category term="governance" label="Governance"/>
     <published>2026-01-27T20:15:00+00:00</published>
   </entry>
@@ -1357,10 +1357,10 @@
     <updated>2026-01-28T18:20:41+00:00</updated>
     <link href="https://www.tekedia.com/antas-29-puma-stake-sparks-market-rally-as-first-abu-dhabi-bank-records-22-profit/"/>
     <summary>Brands: Anta, Puma | Categories: Governance, Social | Source: Tekedia</summary>
-    <category term="Puma" label="Puma"/>
     <category term="Anta" label="Anta"/>
-    <category term="social" label="Social"/>
+    <category term="Puma" label="Puma"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
     <published>2026-01-28T18:20:41+00:00</published>
   </entry>
   <entry>
@@ -1450,8 +1450,8 @@
     <updated>2026-02-03T23:00:00+00:00</updated>
     <link href="https://www.malaymail.com/news/money/2026/02/04/pinaults-puma-exit-how-an-anti-embarrassment-clause-sealed-the-anta-deal/207887"/>
     <summary>Brands: Anta, Puma | Categories: Governance | Source: Malay Mail</summary>
-    <category term="Puma" label="Puma"/>
     <category term="Anta" label="Anta"/>
+    <category term="Puma" label="Puma"/>
     <category term="governance" label="Governance"/>
     <published>2026-02-03T23:00:00+00:00</published>
   </entry>
@@ -1608,16 +1608,6 @@
     <published>2026-02-05T02:15:00+00:00</published>
   </entry>
   <entry>
-    <id>3b0ff5c2-f3a1-45ee-9936-f8dcd0d272f6</id>
-    <title>EEOC investigating Nike over alleged discrimination against White workers</title>
-    <updated>2026-02-05T02:45:00+00:00</updated>
-    <link href="https://www.wcbi.com/eeoc-investigating-nike-over-alleged-discrimination-against-white-workers/"/>
-    <summary>Brands: Nike | Categories: Social | Source: wcbi.com</summary>
-    <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
-    <published>2026-02-05T02:45:00+00:00</published>
-  </entry>
-  <entry>
     <id>1b532911-f92c-4e56-8337-cae08e5c0127</id>
     <title>Nike Faces Federal Probe Over Alleged Discrimination Against White Employees</title>
     <updated>2026-02-05T02:45:00+00:00</updated>
@@ -1625,6 +1615,16 @@
     <summary>Brands: Nike | Categories: Governance, Social | Source: businessoffashion.com</summary>
     <category term="Nike" label="Nike"/>
     <category term="governance" label="Governance"/>
+    <category term="social" label="Social"/>
+    <published>2026-02-05T02:45:00+00:00</published>
+  </entry>
+  <entry>
+    <id>3b0ff5c2-f3a1-45ee-9936-f8dcd0d272f6</id>
+    <title>EEOC investigating Nike over alleged discrimination against White workers</title>
+    <updated>2026-02-05T02:45:00+00:00</updated>
+    <link href="https://www.wcbi.com/eeoc-investigating-nike-over-alleged-discrimination-against-white-workers/"/>
+    <summary>Brands: Nike | Categories: Social | Source: wcbi.com</summary>
+    <category term="Nike" label="Nike"/>
     <category term="social" label="Social"/>
     <published>2026-02-05T02:45:00+00:00</published>
   </entry>
@@ -1640,22 +1640,22 @@
     <published>2026-02-05T04:15:00+00:00</published>
   </entry>
   <entry>
-    <id>15eb7784-e6d1-481d-9eac-72592f9e8a14</id>
-    <title>Nike diversity initiatives under EEOC scrutiny for alleged discrimination against White workers</title>
+    <id>44390923-e36f-4431-a06a-1ffafe3395cf</id>
+    <title>Nike faces federal probe over allegations of  DEI - related  discrimination against white workers</title>
     <updated>2026-02-05T04:30:00+00:00</updated>
-    <link href="https://www.fox7austin.com/news/nikes-diversity-initiatives-under-eeoc-scrutiny-alleged-discrimination-against-white-workers"/>
-    <summary>Brands: Nike | Categories: Governance, Social | Source: fox7austin.com</summary>
+    <link href="https://www.sgvtribune.com/2026/02/04/nike-discrimination-complaint/"/>
+    <summary>Brands: Nike | Categories: Governance, Social | Source: sgvtribune.com</summary>
     <category term="Nike" label="Nike"/>
     <category term="governance" label="Governance"/>
     <category term="social" label="Social"/>
     <published>2026-02-05T04:30:00+00:00</published>
   </entry>
   <entry>
-    <id>44390923-e36f-4431-a06a-1ffafe3395cf</id>
-    <title>Nike faces federal probe over allegations of  DEI - related  discrimination against white workers</title>
+    <id>15eb7784-e6d1-481d-9eac-72592f9e8a14</id>
+    <title>Nike diversity initiatives under EEOC scrutiny for alleged discrimination against White workers</title>
     <updated>2026-02-05T04:30:00+00:00</updated>
-    <link href="https://www.sgvtribune.com/2026/02/04/nike-discrimination-complaint/"/>
-    <summary>Brands: Nike | Categories: Governance, Social | Source: sgvtribune.com</summary>
+    <link href="https://www.fox7austin.com/news/nikes-diversity-initiatives-under-eeoc-scrutiny-alleged-discrimination-against-white-workers"/>
+    <summary>Brands: Nike | Categories: Governance, Social | Source: fox7austin.com</summary>
     <category term="Nike" label="Nike"/>
     <category term="governance" label="Governance"/>
     <category term="social" label="Social"/>
@@ -2088,8 +2088,8 @@
     <updated>2026-02-26T16:01:00+00:00</updated>
     <link href="https://www.manilatimes.net/2026/02/27/business/foreign-business/puma-to-remain-loss-making-this-year-cancels-dividend-in-turnaround-drive/2286150"/>
     <summary>Brands: Anta, Puma | Categories: Governance | Source: The Manila Times</summary>
-    <category term="Puma" label="Puma"/>
     <category term="Anta" label="Anta"/>
+    <category term="Puma" label="Puma"/>
     <category term="governance" label="Governance"/>
     <published>2026-02-26T16:01:00+00:00</published>
   </entry>
@@ -2355,8 +2355,8 @@
     <updated>2026-03-31T22:30:00+00:00</updated>
     <link href="https://www.bostonglobe.com/2026/03/31/business/nike-converse-authentic-brands/"/>
     <summary>Brands: Converse, Nike | Categories: Social | Source: bostonglobe.com</summary>
-    <category term="Nike" label="Nike"/>
     <category term="Converse" label="Converse"/>
+    <category term="Nike" label="Nike"/>
     <category term="social" label="Social"/>
     <published>2026-03-31T22:30:00+00:00</published>
   </entry>
@@ -2458,8 +2458,8 @@
     <link href="https://www.kagstv.com/article/news/local/texas/texas-ag-ken-paxton-investigating-lululemon-over-potentially-harmful-chemicals-in-its-products/287-7c257954-b83f-46e6-9c1f-d35df8541f16"/>
     <summary>Brands: Lululemon | Categories: Environmental, Governance | Source: kagstv.com</summary>
     <category term="Lululemon" label="Lululemon"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2026-04-13T20:00:00+00:00</published>
   </entry>
   <entry>
@@ -2480,8 +2480,8 @@
     <link href="https://wchstv.com/news/nation-world/texas-attorney-general-launches-investigation-into-lululemon-over-chemical-concerns"/>
     <summary>Brands: Lululemon | Categories: Environmental, Governance | Source: wchstv.com</summary>
     <category term="Lululemon" label="Lululemon"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2026-04-13T21:15:00+00:00</published>
   </entry>
   <entry>
@@ -2503,8 +2503,8 @@
     <link href="https://us.headtopics.com/news/texas-attorney-general-launches-probe-into-lululemon-s-82179042"/>
     <summary>Brands: Lululemon | Categories: Environmental, Governance</summary>
     <category term="Lululemon" label="Lululemon"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2026-04-13T22:06:53+00:00</published>
   </entry>
   <entry>
@@ -2585,8 +2585,8 @@
     <link href="http://africa.chinadaily.com.cn/a/202604/16/WS69e038e3a310d6866eb43b53.html"/>
     <summary>Brands: Lululemon | Categories: Environmental, Governance | Source: africa.chinadaily.com.cn</summary>
     <category term="Lululemon" label="Lululemon"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2026-04-16T02:45:00+00:00</published>
   </entry>
   <entry>
@@ -2743,21 +2743,21 @@
     <published>2026-04-23T12:30:00+00:00</published>
   </entry>
   <entry>
-    <id>7cd32ebc-6322-4f38-a530-1a39e031d807</id>
-    <title>Lululemon Athletica New CEO Pick Triggers Transition Jitters , Stock Slides - Lululemon Athletica ( NASDAQ : </title>
-    <updated>2026-04-23T15:15:00+00:00</updated>
-    <link href="https://www.benzinga.com/trading-ideas/movers/26/04/52003063/lululemon-athletica-new-ceo-pick-triggers-transition-jitters-stock-slides"/>
-    <summary>Brands: Lululemon | Categories: Governance | Source: benzinga.com</summary>
-    <category term="Lululemon" label="Lululemon"/>
-    <category term="governance" label="Governance"/>
-    <published>2026-04-23T15:15:00+00:00</published>
-  </entry>
-  <entry>
     <id>3963cc34-23b9-44e8-bc03-b5b1ba2dffd1</id>
     <title>Lulu stock : Lululemon shares sink after CEO from Nike unimpressed</title>
     <updated>2026-04-23T15:15:00+00:00</updated>
     <link href="https://www.bnnbloomberg.ca/business/2026/04/23/lululemon-sinks-after-new-ceo-hire-from-nike-fails-to-impress-investors/"/>
     <summary>Brands: Lululemon | Categories: Governance | Source: bnnbloomberg.ca</summary>
+    <category term="Lululemon" label="Lululemon"/>
+    <category term="governance" label="Governance"/>
+    <published>2026-04-23T15:15:00+00:00</published>
+  </entry>
+  <entry>
+    <id>7cd32ebc-6322-4f38-a530-1a39e031d807</id>
+    <title>Lululemon Athletica New CEO Pick Triggers Transition Jitters , Stock Slides - Lululemon Athletica ( NASDAQ : </title>
+    <updated>2026-04-23T15:15:00+00:00</updated>
+    <link href="https://www.benzinga.com/trading-ideas/movers/26/04/52003063/lululemon-athletica-new-ceo-pick-triggers-transition-jitters-stock-slides"/>
+    <summary>Brands: Lululemon | Categories: Governance | Source: benzinga.com</summary>
     <category term="Lululemon" label="Lululemon"/>
     <category term="governance" label="Governance"/>
     <published>2026-04-23T15:15:00+00:00</published>
@@ -2913,21 +2913,21 @@
     <published>2026-04-24T08:15:00+00:00</published>
   </entry>
   <entry>
-    <id>27fc2c53-7a18-483d-9816-d0b5ada82875</id>
-    <title>Nike is cutting another 1 , 400 jobs worldwide</title>
-    <updated>2026-04-24T09:00:00+00:00</updated>
-    <link href="https://www.retaildetail.eu/news/fashion/nike-is-cutting-another-1400-jobs-worldwide/"/>
-    <summary>Brands: Nike | Categories: Social | Source: retaildetail.eu</summary>
-    <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
-    <published>2026-04-24T09:00:00+00:00</published>
-  </entry>
-  <entry>
     <id>a8e23af2-7e44-49c3-a410-df7e55f087e2</id>
     <title>Nike to lay off 1400 , majority cuts to be in technology team ; COO Venkatesh Alagirisamy says in memo : This is not a new … </title>
     <updated>2026-04-24T09:00:00+00:00</updated>
     <link href="https://timesofindia.indiatimes.com/technology/tech-news/nike-to-lay-off-1400-majority-cuts-to-be-in-technology-team-coo-venkatesh-alagirisamy-says-in-memo-this-is-not-a-new-/articleshow/130487559.cms"/>
     <summary>Brands: Nike | Categories: Social | Source: timesofindia.indiatimes.com</summary>
+    <category term="Nike" label="Nike"/>
+    <category term="social" label="Social"/>
+    <published>2026-04-24T09:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>27fc2c53-7a18-483d-9816-d0b5ada82875</id>
+    <title>Nike is cutting another 1 , 400 jobs worldwide</title>
+    <updated>2026-04-24T09:00:00+00:00</updated>
+    <link href="https://www.retaildetail.eu/news/fashion/nike-is-cutting-another-1400-jobs-worldwide/"/>
+    <summary>Brands: Nike | Categories: Social | Source: retaildetail.eu</summary>
     <category term="Nike" label="Nike"/>
     <category term="social" label="Social"/>
     <published>2026-04-24T09:00:00+00:00</published>
@@ -2983,21 +2983,21 @@
     <published>2026-04-24T20:33:56+00:00</published>
   </entry>
   <entry>
-    <id>77da484d-fe1e-4bac-9b9a-90d7ed5dc654</id>
-    <title>Nike to cut 1 , 400 jobs - ABC Columbia</title>
-    <updated>2026-04-25T00:15:00+00:00</updated>
-    <link href="https://www.abccolumbia.com/2026/04/24/nike-to-cut-1400-jobs/"/>
-    <summary>Brands: Nike | Categories: Social | Source: abccolumbia.com</summary>
-    <category term="Nike" label="Nike"/>
-    <category term="social" label="Social"/>
-    <published>2026-04-25T00:15:00+00:00</published>
-  </entry>
-  <entry>
     <id>2f9e828a-c05d-4009-818b-cfba92b02122</id>
     <title>Nike to lay off 1 , 400 workers worldwide , including from Beaverton headquarters</title>
     <updated>2026-04-25T00:15:00+00:00</updated>
     <link href="https://www.kptv.com/2026/04/24/nike-lay-off-1400-workers-worldwide-including-beaverton-headquarters/"/>
     <summary>Brands: Nike | Categories: Social | Source: kptv.com</summary>
+    <category term="Nike" label="Nike"/>
+    <category term="social" label="Social"/>
+    <published>2026-04-25T00:15:00+00:00</published>
+  </entry>
+  <entry>
+    <id>77da484d-fe1e-4bac-9b9a-90d7ed5dc654</id>
+    <title>Nike to cut 1 , 400 jobs - ABC Columbia</title>
+    <updated>2026-04-25T00:15:00+00:00</updated>
+    <link href="https://www.abccolumbia.com/2026/04/24/nike-to-cut-1400-jobs/"/>
+    <summary>Brands: Nike | Categories: Social | Source: abccolumbia.com</summary>
     <category term="Nike" label="Nike"/>
     <category term="social" label="Social"/>
     <published>2026-04-25T00:15:00+00:00</published>
@@ -3236,21 +3236,21 @@
     <published>2026-05-16T11:15:00+00:00</published>
   </entry>
   <entry>
-    <id>420346b2-9e72-46df-a60b-885e1f34c4b5</id>
-    <title>Lululemon Criticises Chip Wilson , Sets Proxy Vote</title>
-    <updated>2026-05-18T18:45:00+00:00</updated>
-    <link href="https://www.businessoffashion.com/news/retail/lululemon-criticises-chip-wilson-sets-proxy-vote/"/>
-    <summary>Brands: Lululemon | Categories: Governance | Source: businessoffashion.com</summary>
-    <category term="Lululemon" label="Lululemon"/>
-    <category term="governance" label="Governance"/>
-    <published>2026-05-18T18:45:00+00:00</published>
-  </entry>
-  <entry>
     <id>0a8527a6-7ac1-4781-819e-b6801594e456</id>
     <title>Chip Wilson Issues Statement and Shares Details of Negotiations with lululemon</title>
     <updated>2026-05-18T18:45:00+00:00</updated>
     <link href="https://www.prnewswire.com/news-releases/chip-wilson-issues-statement-and-shares-details-of-negotiations-with-lululemon-302775101.html"/>
     <summary>Brands: Lululemon | Categories: Governance | Source: prnewswire.com</summary>
+    <category term="Lululemon" label="Lululemon"/>
+    <category term="governance" label="Governance"/>
+    <published>2026-05-18T18:45:00+00:00</published>
+  </entry>
+  <entry>
+    <id>420346b2-9e72-46df-a60b-885e1f34c4b5</id>
+    <title>Lululemon Criticises Chip Wilson , Sets Proxy Vote</title>
+    <updated>2026-05-18T18:45:00+00:00</updated>
+    <link href="https://www.businessoffashion.com/news/retail/lululemon-criticises-chip-wilson-sets-proxy-vote/"/>
+    <summary>Brands: Lululemon | Categories: Governance | Source: businessoffashion.com</summary>
     <category term="Lululemon" label="Lululemon"/>
     <category term="governance" label="Governance"/>
     <published>2026-05-18T18:45:00+00:00</published>
@@ -3482,8 +3482,8 @@
     <link href="https://www.cityam.com/adidas-calvin-klein-and-uniqlo-ads-banned-over-greenwashing/"/>
     <summary>Brands: Adidas | Categories: Environmental, Governance | Source: City A.m.</summary>
     <category term="Adidas" label="Adidas"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2026-06-23T23:01:00+00:00</published>
   </entry>
   <entry>
@@ -3695,8 +3695,8 @@
     <link href="https://economictimes.indiatimes.com/news/new-updates/patagonia-founder-yvon-chouinard-slept-on-dirt-floors-lived-on-1-a-day-ate-dented-cat-food-and-then-gave-away-his-3-billion-company-/articleshow/132638708.cms"/>
     <summary>Brands: Patagonia | Categories: Environmental, Governance | Source: economictimes.indiatimes.com</summary>
     <category term="Patagonia" label="Patagonia"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2026-07-26T09:30:00+00:00</published>
   </entry>
   <entry>
@@ -3931,8 +3931,8 @@
     <link href="https://www.933thedrive.com/2026/09/08/nike-shareholders-reject-climate-proposal-backed-by-norway-wealth-fund/"/>
     <summary>Brands: Nike | Categories: Environmental, Governance | Source: 933thedrive.com</summary>
     <category term="Nike" label="Nike"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2026-09-08T20:30:00+00:00</published>
   </entry>
   <entry>
@@ -3942,8 +3942,8 @@
     <link href="https://www.thestar.com.my/business/business-news/2026/09/10/shareholders-reject-nike-proposal-backed-by-norway-wealth-fund"/>
     <summary>Brands: Nike | Categories: Environmental, Governance | Source: The Star</summary>
     <category term="Nike" label="Nike"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2026-09-09T16:00:00+00:00</published>
   </entry>
   <entry>
@@ -3953,8 +3953,8 @@
     <link href="https://newsable.asianetnews.com/world/nike-shareholders-reject-climate-transparency-proposal-as-company-faces-sales-slump-and-regulatory-scrutiny-articleshow-4g4cpnm"/>
     <summary>Brands: Nike | Categories: Environmental, Governance | Source: Asianet Newsable</summary>
     <category term="Nike" label="Nike"/>
-    <category term="environmental" label="Environmental"/>
     <category term="governance" label="Governance"/>
+    <category term="environmental" label="Environmental"/>
     <published>2026-09-13T07:24:58+00:00</published>
   </entry>
   <entry>
