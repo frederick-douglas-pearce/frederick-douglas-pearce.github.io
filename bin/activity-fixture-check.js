@@ -8,20 +8,26 @@
  * and on the about page. Real data cannot exercise these branches: no real
  * release summary is null or empty or contains HTML, and no real release
  * shares a day with a post and a note. So dropping `| escape` from the
- * template renders byte-identical pages on real data and passes the build.
+ * summary renders byte-identical pages on real data and passes the build.
+ * Only the summary is checked for escaping, not the repo, tag or link.
  *
- * Run it on demand. It is deliberately not in CI or package.json (see
- * "Acceptance without tests" in .claude/loop.config.md). Run it after
- * changing any of:
+ * Run it on demand. It is deliberately not in CI or package.json, like
+ * bin/a11y-audit.js (the owner's decision on #168, recorded in
+ * .claude/specs/activity-epic.md, "#168 — fixture check: committed"; the dev
+ * loop's pointer to it is #170). Run it after changing any of:
  *   - the ordering seam, part (a) of _includes/activity.liquid (#163's
  *     balance policy goes there);
  *   - the Release branch of the render loop: the summary guard, `| escape`,
  *     or the override lookup;
  *   - the shape of _data/activity.json or _data/release_summaries.yml;
- *   - the Jekyll, Liquid or jekyll-scholar gems (the summary guard's
- *     `!= blank` relies on a `blank?` that Liquid 4.0.4 does not define; the
- *     csl gem, pulled in by jekyll-scholar, supplies it), or the plugins that
- *     load ActiveSupport (see EXPECTED_ORDER).
+ *   - the Jekyll, Liquid, ActiveSupport, jemoji (html-pipeline) or
+ *     jekyll-scholar (csl) gems, or _plugins/google-scholar-citations.rb and
+ *     _plugins/inspirehep-citations.rb. The summary guard's `!= blank` uses a
+ *     `blank?` that Liquid 4.0.4 does not define on strings or nil:
+ *     ActiveSupport's core_ext/object/blank supplies it (through
+ *     html-pipeline, and the `require "active_support/all"` in those two
+ *     plugins), with csl's as a fallback that treats "   " as not blank. The
+ *     same two plugins load the Time#<=> that EXPECTED_ORDER describes.
  *
  *   node bin/activity-fixture-check.js
  *
@@ -31,10 +37,16 @@
  *   --keep          keep the built copy and print its path. It contains
  *                   root-owned files: delete it from a container.
  *
+ * The temp copy is removed on every exit except an interrupted or hung run.
+ * To remove one left behind (root-owned), run:
+ *   docker run --rm -v <the /tmp/activity-fixture-* dir>:/w amirpourmand/al-folio:v0.14.6 rm -rf /w/site
+ * then delete the now-empty directory.
+ *
  * It copies the working tree, not HEAD, so an uncommitted template edit is
- * what gets checked. The copy includes assets/libs/, so a run needs the
- * network only when those have not been downloaded yet. Needs Docker; uses the
- * same pinned image and gem dir as the build in CLAUDE.md.
+ * what gets checked. A run needs the network only for `bundle install` into a
+ * cold gem dir (`third_party_libraries.download` is false in _config.yml, so
+ * the build fetches nothing). Needs Docker; uses the same pinned image and gem
+ * dir as the build in CLAUDE.md. The build runs with TZ=UTC.
  *
  * Exit status: 0 every assertion passed; 1 an assertion failed (each failure
  * is printed with its name); 2 setup or build failure, with the end of the
@@ -57,7 +69,9 @@ const SKIP = new Set([".git", "_site", ".jekyll-cache", ".jekyll-metadata", "nod
 // The three rows dated 2026-03-10 test cross-source ordering. Post and note
 // dates are Ruby Times and release dates are ISO strings. Jekyll 4.4.1's
 // `sort: 'date'` compares the two with `Time#<=>`. In this build that is
-// ActiveSupport's, which parses the string, so a plain sort orders the mix
+// ActiveSupport's (loaded by `require "active_support/all"` in
+// _plugins/google-scholar-citations.rb and _plugins/inspirehep-citations.rb),
+// which parses the string, so a plain sort orders the mix
 // correctly and the seam is not what this case tests today (#168). Without
 // ActiveSupport, `Time#<=>` returns nil and Jekyll compares the values as
 // text: "2026-03-10 16:00:00 +0000" < "2026-03-10T12:00:00Z", because " "
@@ -69,9 +83,11 @@ const EXPECTED_ORDER = [
   "release: fixture-a v1.0.0",
   "release: fixture-a v0.9.0",
   "release: fixture-a v0.8.0",
+  "release: fixture-e v0.2.0",
   "release: fixture-b v0.7.0",
   "release: fixture-b v0.6.0",
   "release: fixture-b v0.5.0",
+  "release: fixture-e v0.1.0",
   "note: Fixture note, same day, after the release.",
   "release: fixture-c v0.4.0",
   "post: Fixture post, same day, before the release",
@@ -94,9 +110,13 @@ const EXPECTED_SUMMARY = {
   "fixture-a v0.9.0": "a &lt; b &amp; \"c\" 'd' &lt;script&gt;x&lt;/script&gt; &lt;b&gt;bold&lt;/b&gt;",
   // A literal "&amp;" in the source: `escape` renders &amp;amp;, `escape_once` would render &amp;.
   "fixture-a v0.8.0": "Fish &amp;amp; chips",
+  // A whitespace-only derived summary is blank to ActiveSupport's String#blank?
+  // (no <p>); csl's fallback would render it.
+  "fixture-e v0.2.0": null,
   "fixture-b v0.7.0": null, // null summary, no override: the tag alone
   "fixture-b v0.6.0": "Override on a release whose derived summary is null",
   "fixture-b v0.5.0": null, // empty-string summary: no empty <p>
+  "fixture-e v0.1.0": "Derived summary kept under a false override",
   "fixture-c v0.4.0": "Same-day release, between the note and the post",
   "fixture-c v0.3.0": "&lt;i&gt;override&lt;/i&gt; &amp; &lt;script&gt;y&lt;/script&gt;",
   "fixture-c v0.2.0": "Derived summary kept under an empty override",
@@ -109,13 +129,21 @@ const RAW_MARKERS = ["<script>x", "<b>bold", "<script>y", "<i>override"];
 
 function parseArgs(argv) {
   const opts = { src: path.resolve(__dirname, ".."), vendor: "/tmp/al-folio-vendor", keep: false };
+  const value = (i) => {
+    const v = argv[i];
+    if (v === undefined || v.startsWith("--")) throw new Error(`${argv[i - 1]} needs a value`);
+    return v;
+  };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
-    if (a === "--src") opts.src = path.resolve(argv[++i]);
-    else if (a === "--vendor") opts.vendor = path.resolve(argv[++i]);
+    if (a === "--src") opts.src = value(++i);
+    else if (a === "--vendor") opts.vendor = path.resolve(value(++i));
     else if (a === "--keep") opts.keep = true;
     else throw new Error(`unknown option ${a}`);
   }
+  // Resolve symlinks: a symlinked source would be copied as a link, and the
+  // fixture and the build would then write into the real tree.
+  opts.src = fs.realpathSync(opts.src);
   return opts;
 }
 
@@ -128,11 +156,14 @@ function docker(args) {
 function stage(src, site) {
   fs.cpSync(src, site, {
     recursive: true,
+    verbatimSymlinks: true,
     filter: (p) => {
       const rel = path.relative(src, p);
       return rel === "" || !SKIP.has(rel.split(path.sep)[0]);
     },
   });
+  const st = fs.lstatSync(site);
+  if (st.isSymbolicLink() || !st.isDirectory()) throw new Error(`${site} is not a real directory; refusing to stage into it`);
   for (const dir of ["_posts", "_news"]) {
     fs.rmSync(path.join(site, dir), { recursive: true, force: true });
     fs.cpSync(path.join(FIXTURE, dir), path.join(site, dir), { recursive: true });
@@ -145,8 +176,9 @@ function stage(src, site) {
 function build(site, vendor) {
   fs.mkdirSync(vendor, { recursive: true });
   // TZ=UTC: _config.yml sets no `timezone:`, so Time#to_s follows the build's
-  // zone. The same-day rows only test the seam when the 16:00Z note stays on
-  // 2026-03-10; at +09:00 it moves to the next day and a mixed sort would pass.
+  // zone. The same-day rows depend on the 16:00Z note staying on 2026-03-10:
+  // at +09:00 it would move to the next day, and a text-fallback sort (no
+  // ActiveSupport) would no longer misorder it.
   const r = docker([
     "run",
     "--rm",
@@ -188,33 +220,43 @@ const decode = (s) =>
     .replace(/&#39;/g, "'")
     .replace(/&amp;/g, "&");
 const squash = (s) => s.replace(/\s+/g, " ").trim();
+// The text of a fragment up to its first tag. Fixture titles and notes are
+// plain text, so this is the whole name; the identity is only ever compared
+// with EXPECTED_ORDER, never written anywhere.
+const leadingText = (s) => squash(decode(s.split("<")[0]));
 
-// One entry per rendered row: its type, identity and the row's HTML.
+// One entry per rendered row: its type, identity and the row's HTML. A row
+// whose class or markup is not recognized gets "?" fields rather than
+// throwing, so a template change fails an assertion (exit 1), not setup.
 function rows(html) {
   const chunks = html.split('<li class="activity-item activity-item--').slice(1);
   return chunks.map((c) => {
-    const type = c.match(/^(\w+)"/)[1];
-    const body = c.slice(0, c.indexOf("</li>"));
-    let name;
-    if (type === "release") {
-      const a = body.match(/class="activity-title"[^>]*>([\s\S]*?)<span class="sr-only">/);
-      name = a ? squash(decode(a[1])) : "?";
-    } else if (type === "note") {
-      const p = body.match(/<p class="activity-note">([\s\S]*?)<\/p>/);
-      name = p ? squash(decode(p[1].replace(/<[^>]+>/g, ""))) : "?";
-    } else {
-      const a = body.match(/class="activity-title"[^>]*>([\s\S]*?)<\/a>/);
-      name = a ? squash(decode(a[1].replace(/<[^>]+>/g, ""))) : "?";
-    }
+    const t = c.match(/^([\w-]*)"/);
+    const type = t && t[1] ? t[1] : "?";
+    const end = c.indexOf("</li>");
+    const body = end === -1 ? c : c.slice(0, end);
+    let m;
+    if (type === "note") m = body.match(/<p class="activity-note">([\s\S]*?)<\/p>/);
+    else m = body.match(/class="activity-title"[^>]*>([\s\S]*?)<\/a>/);
+    const name = m ? leadingText(m[1]) || "?" : "?";
     const dt = body.match(/datetime="([^"]+)"/);
     return { type, name, id: `${type}: ${name}`, datetime: dt ? dt[1] : null, body };
   });
 }
 
+// activity.limit from the about page's front matter, read line by line.
 function aboutLimit(site) {
-  const fm = fs.readFileSync(path.join(site, "_pages", "about.md"), "utf8").split(/^---$/m)[1] || "";
-  const m = fm.match(/^activity:\s*\n(?:[ \t]+.*\n)*?[ \t]+limit:\s*(\d+)/m);
-  return m ? Number(m[1]) : null;
+  const lines = fs.readFileSync(path.join(site, "_pages", "about.md"), "utf8").split("\n");
+  const end = lines.indexOf("---", 1);
+  let inActivity = false;
+  for (const line of lines.slice(1, end === -1 ? lines.length : end)) {
+    if (/^\S/.test(line)) inActivity = line.trim() === "activity:";
+    else if (inActivity) {
+      const m = line.trim().match(/^limit:\s*(\d+)/);
+      if (m) return Number(m[1]);
+    }
+  }
+  return null;
 }
 
 function check(site) {
@@ -299,7 +341,13 @@ function main() {
     console.error(e.message);
     return 2;
   }
-  const tmp = fs.mkdtempSync(path.join(os.tmpdir(), "activity-fixture-"));
+  let tmp;
+  try {
+    tmp = fs.mkdtempSync(path.join(os.tmpdir(), "activity-fixture-"));
+  } catch (e) {
+    console.error(`setup error: ${e.message}`);
+    return 2;
+  }
   const site = path.join(tmp, "site");
   try {
     stage(opts.src, site);

@@ -746,14 +746,17 @@ authoritative for their scope and dependencies.
 Decision (owner, at #168's plan gate): commit a fixture plus an on-demand script,
 `bin/activity-fixture-check.js` with `bin/fixtures/activity/`, in the style of
 `bin/a11y-audit.js`; not in CI and not in `package.json`. It supersedes the scratch "Check 2"
-recipe in PR #167. From PR #169's `check74.py` stress run it covers the null, empty, blank,
-hostile and miscased-key override cases, not the duplicate-key or prefix-key ones. #163's seam
-rewrite updates the fixture's expected order rather than the script. Pointing the dev loop's
-Class B check at it is #170.
+recipe in PR #167. Of PR #169's `check74.py` stress cases it covers ii and xii (the key and
+the release cased differently), iv (empty), v (hostile), vi (whitespace) and vii (YAML
+`false`), plus an override on a release whose derived summary is null; not iii (a key for an
+absent tag), viii (`~`), ix/x (duplicate keys) or xi (a prefix key). #163's seam rewrite
+updates `EXPECTED_ORDER` in the script, plus fixture rows if it needs them. Pointing the dev
+loop's Class B check at it is #170.
 
 AC2 was amended (owner, 2026-11-19, comment on #168): reverting the seam to a mixed
 `sort: 'date'` is an equivalent mutation under the current gems, because ActiveSupport (loaded
-by the plugins) redefines `Time#<=>` to parse a string. The check is required to fail only when
+by `require "active_support/all"` in `_plugins/google-scholar-citations.rb` and
+`_plugins/inspirehep-citations.rb`) redefines `Time#<=>` to parse a string. The check is required to fail only when
 `| escape` or `!= blank` is removed.
 
 ## Acceptance criteria to rewrite

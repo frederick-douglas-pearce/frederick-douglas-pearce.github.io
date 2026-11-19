@@ -24,6 +24,13 @@
       "url": "https://github.com/frederick-douglas-pearce/fixture-a/releases/tag/v0.8.0"
     },
     {
+      "repo": "fixture-e",
+      "tag": "v0.2.0",
+      "date": "2026-03-15T10:00:00Z",
+      "summary": "   ",
+      "url": "https://github.com/frederick-douglas-pearce/fixture-e/releases/tag/v0.2.0"
+    },
+    {
       "repo": "fixture-b",
       "tag": "v0.7.0",
       "date": "2026-03-14T10:00:00Z",
@@ -43,6 +50,13 @@
       "date": "2026-03-12T10:00:00Z",
       "summary": "",
       "url": "https://github.com/frederick-douglas-pearce/fixture-b/releases/tag/v0.5.0"
+    },
+    {
+      "repo": "fixture-e",
+      "tag": "v0.1.0",
+      "date": "2026-03-11T10:00:00Z",
+      "summary": "Derived summary kept under a false override",
+      "url": "https://github.com/frederick-douglas-pearce/fixture-e/releases/tag/v0.1.0"
     },
     {
       "repo": "fixture-c",

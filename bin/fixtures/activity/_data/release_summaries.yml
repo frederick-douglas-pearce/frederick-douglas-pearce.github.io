@@ -11,5 +11,9 @@
 # Empty and whitespace-only overrides fall back to the derived summary.
 "fixture-c@v0.2.0": ""
 "fixture-c@v0.1.0": "   "
-# The release is Fixture-D V1.0.0: keys match case-insensitively.
-"fixture-d@v1.0.0": "Override matched case-insensitively"
+# YAML false (an unquoted no, off or false) falls back to the derived summary
+# and never renders the word "false".
+"fixture-e@v0.1.0": false
+# The release is Fixture-D V1.0.0, and the key is cased differently on both
+# halves, so the match needs both sides lowercased.
+"FIXTURE-d@V1.0.0": "Override matched case-insensitively"
