@@ -1,0 +1,97 @@
+{
+  "_generated_by": "bin/fixtures/activity: hand-written fixture for bin/activity-fixture-check.js, not generated",
+  "generated_at": "2026-03-22T00:00:00Z",
+  "releases": [
+    {
+      "repo": "fixture-a",
+      "tag": "v1.0.0",
+      "date": "2026-03-20T10:00:00Z",
+      "summary": "Control release with a plain summary",
+      "url": "https://github.com/frederick-douglas-pearce/fixture-a/releases/tag/v1.0.0"
+    },
+    {
+      "repo": "fixture-a",
+      "tag": "v0.9.0",
+      "date": "2026-03-18T10:00:00Z",
+      "summary": "a < b & \"c\" 'd' <script>x</script> <b>bold</b>",
+      "url": "https://github.com/frederick-douglas-pearce/fixture-a/releases/tag/v0.9.0"
+    },
+    {
+      "repo": "fixture-a",
+      "tag": "v0.8.0",
+      "date": "2026-03-16T10:00:00Z",
+      "summary": "Fish &amp; chips",
+      "url": "https://github.com/frederick-douglas-pearce/fixture-a/releases/tag/v0.8.0"
+    },
+    {
+      "repo": "fixture-b",
+      "tag": "v0.7.0",
+      "date": "2026-03-14T10:00:00Z",
+      "summary": null,
+      "url": "https://github.com/frederick-douglas-pearce/fixture-b/releases/tag/v0.7.0"
+    },
+    {
+      "repo": "fixture-b",
+      "tag": "v0.6.0",
+      "date": "2026-03-13T10:00:00Z",
+      "summary": null,
+      "url": "https://github.com/frederick-douglas-pearce/fixture-b/releases/tag/v0.6.0"
+    },
+    {
+      "repo": "fixture-b",
+      "tag": "v0.5.0",
+      "date": "2026-03-12T10:00:00Z",
+      "summary": "",
+      "url": "https://github.com/frederick-douglas-pearce/fixture-b/releases/tag/v0.5.0"
+    },
+    {
+      "repo": "fixture-e",
+      "tag": "v0.1.0",
+      "date": "2026-03-11T10:00:00Z",
+      "summary": "Derived summary kept under a false override",
+      "url": "https://github.com/frederick-douglas-pearce/fixture-e/releases/tag/v0.1.0"
+    },
+    {
+      "repo": "fixture-c",
+      "tag": "v0.4.0",
+      "date": "2026-03-10T12:00:00Z",
+      "summary": "Same-day release, between the note and the post",
+      "url": "https://github.com/frederick-douglas-pearce/fixture-c/releases/tag/v0.4.0"
+    },
+    {
+      "repo": "fixture-e",
+      "tag": "v0.2.0",
+      "date": "2026-03-09T10:00:00Z",
+      "summary": "   ",
+      "url": "https://github.com/frederick-douglas-pearce/fixture-e/releases/tag/v0.2.0"
+    },
+    {
+      "repo": "fixture-c",
+      "tag": "v0.3.0",
+      "date": "2026-03-08T10:00:00Z",
+      "summary": "Derived summary that the hostile override replaces",
+      "url": "https://github.com/frederick-douglas-pearce/fixture-c/releases/tag/v0.3.0"
+    },
+    {
+      "repo": "fixture-c",
+      "tag": "v0.2.0",
+      "date": "2026-03-06T10:00:00Z",
+      "summary": "Derived summary kept under an empty override",
+      "url": "https://github.com/frederick-douglas-pearce/fixture-c/releases/tag/v0.2.0"
+    },
+    {
+      "repo": "fixture-c",
+      "tag": "v0.1.0",
+      "date": "2026-03-04T10:00:00Z",
+      "summary": "Derived summary kept under a whitespace override",
+      "url": "https://github.com/frederick-douglas-pearce/fixture-c/releases/tag/v0.1.0"
+    },
+    {
+      "repo": "Fixture-D",
+      "tag": "V1.0.0",
+      "date": "2026-03-02T10:00:00Z",
+      "summary": "Derived summary replaced through a differently cased key",
+      "url": "https://github.com/frederick-douglas-pearce/Fixture-D/releases/tag/V1.0.0"
+    }
+  ]
+}

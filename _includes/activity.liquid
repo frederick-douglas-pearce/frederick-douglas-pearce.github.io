@@ -19,8 +19,13 @@
 
   Why (a) sorts keys, not items: posts and notes are Documents whose `date` is
   a Time, while a release is a hash from JSON whose `date` is an ISO 8601
-  string. A plain `sort: 'date'` over that mix raises no error and can order
-  the stream wrongly. So (a) builds one string key per item,
+  string. Jekyll's `sort: 'date'` compares a Time with a string correctly
+  only because ActiveSupport redefines `Time#<=>` (core_ext/time, loaded by
+  `require "active_support/all"` in _plugins/google-scholar-citations.rb and
+  _plugins/inspirehep-citations.rb).
+  Without it, Jekyll falls back to comparing the two as text and puts a
+  release above a post or note from the same day, with no error (#168). So
+  (a) does not depend on ActiveSupport: it builds one string key per item,
   `<epoch seconds, zero-padded to 12>|<source>|<index, zero-padded to 4>`,
   sorts the keys (every field is fixed width, so text order is chronological;
   the index pad assumes at most 9999 items per source), applies the limit, and
@@ -29,7 +34,9 @@
   source: deterministic, but not meaningful.
 
   `date: '%s'` gives the same instant for a Time and for an ISO string with an
-  explicit offset, whatever the build's timezone. Release dates always end in
+  explicit offset, whatever the build's timezone (checked once with a
+  Pacific-time build in #167; the fixture check pins TZ=UTC and does not
+  re-check it). Release dates always end in
   `Z`: bin/activity-releases.js writes them that way, and the guardrail in
   bin/activity-releases-refresh.sh rejects any other form.
 
@@ -42,7 +49,18 @@
   anyone opening a PR upstream can influence: render it with `escape`, never
   `markdownify`. A hand-written override replaces it and is escaped the same
   way. The derived summary can be null; then the row shows the tag alone,
-  unless an override applies.
+  unless an override applies. The `!= blank` guard depends on a `blank?`
+  method that Liquid 4.0.4 does not define on strings or nil. ActiveSupport's
+  core_ext/object/blank supplies it (loaded through jemoji's html-pipeline,
+  and by the two citation plugins above), and treats a whitespace-only
+  summary as blank. The csl gem (jekyll-scholar) defines a fallback that
+  does not.
+
+  Real data cannot exercise the summary escaping, null-summary or same-day
+  ordering paths, so after changing the seam (a), the Release branch of (b),
+  or the gems and plugins named above, run `node bin/activity-fixture-check.js` (#168). It
+  builds a copy of the site against the fixture in bin/fixtures/activity/.
+  It is on demand, not in CI.
 
   There is no scroll container. Upstream's `<div class="table-responsive"
   style="max-height:60vw">` was a WCAG 2.1.1 failure (a scrollable region with
