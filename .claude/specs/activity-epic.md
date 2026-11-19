@@ -748,7 +748,8 @@ Decision (owner, at #168's plan gate): commit a fixture plus an on-demand script
 `bin/a11y-audit.js`; not in CI and not in `package.json`. It supersedes the scratch "Check 2"
 recipe in PR #167. Of PR #169's `check74.py` stress cases it covers ii and xii (the key and
 the release cased differently), iv (empty), v (hostile), vi (whitespace) and vii (YAML
-`false`), plus an override on a release whose derived summary is null; not iii (a key for an
+`false`), plus an override on a release whose derived summary is null; i only in part (exact
+keys, but no overridden row on the about page); not iii (a key for an
 absent tag), viii (`~`), ix/x (duplicate keys) or xi (a prefix key). #163's seam rewrite
 updates `EXPECTED_ORDER` in the script, plus fixture rows if it needs them. Pointing the dev
 loop's Class B check at it is #170.

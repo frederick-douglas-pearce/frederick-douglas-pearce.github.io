@@ -37,7 +37,8 @@
  *   --keep          keep the built copy and print its path. It contains
  *                   root-owned files: delete it from a container.
  *
- * The temp copy is removed on every exit except an interrupted or hung run.
+ * The temp copy is removed on every exit except --keep, an interrupted or
+ * hung run, or a failed container cleanup (which prints a warning).
  * To remove one left behind (root-owned), run:
  *   docker run --rm -v <the /tmp/activity-fixture-* dir>:/w amirpourmand/al-folio:v0.14.6 rm -rf /w/site
  * then delete the now-empty directory.
