@@ -84,7 +84,6 @@ const EXPECTED_ORDER = [
   "release: fixture-a v1.0.0",
   "release: fixture-a v0.9.0",
   "release: fixture-a v0.8.0",
-  "release: fixture-e v0.2.0",
   "release: fixture-b v0.7.0",
   "release: fixture-b v0.6.0",
   "release: fixture-b v0.5.0",
@@ -92,6 +91,7 @@ const EXPECTED_ORDER = [
   "note: Fixture note, same day, after the release.",
   "release: fixture-c v0.4.0",
   "post: Fixture post, same day, before the release",
+  "release: fixture-e v0.2.0",
   "release: fixture-c v0.3.0",
   "release: fixture-c v0.2.0",
   "release: fixture-c v0.1.0",
@@ -114,7 +114,9 @@ const EXPECTED_SUMMARY = {
   // A whitespace-only derived summary is blank to ActiveSupport's String#blank?
   // (no <p>); csl's fallback would render it.
   "fixture-e v0.2.0": null,
-  "fixture-b v0.7.0": null, // null summary, no override: the tag alone
+  // Null summary, no override: the tag alone. The row before it (a v0.8.0) has a
+  // visible summary, so a summary carried over from the previous row would show.
+  "fixture-b v0.7.0": null,
   "fixture-b v0.6.0": "Override on a release whose derived summary is null",
   "fixture-b v0.5.0": null, // empty-string summary: no empty <p>
   "fixture-e v0.1.0": "Derived summary kept under a false override",
