@@ -200,7 +200,8 @@ to declare the dropdown. Child pages therefore carry no `nav:` of their own, and
   `assets/js/`, before concluding a reference is dead. Getting this backwards produced a
   phantom "these three analytics blocks 404" finding that reached three issue bodies (#86).
 - `_plugins/*.rb` are local Ruby plugins (cache-busting, third-party CDN vendoring,
-  citation fetching, `{% details %}`). `download-3rd-party.rb` fetches the libraries listed
+  citation fetching, `{% details %}`, accessible names for Markdown task-list checkboxes).
+  `download-3rd-party.rb` fetches the libraries listed
   in `_config.yml` into `assets/libs/` at build time, so a first build needs network.
 
 ## Accessibility
