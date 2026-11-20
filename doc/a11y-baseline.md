@@ -95,6 +95,20 @@ Note also that the include is full of Tailwind class names (`text-pink-700`,
 `list-disc`, `text-3xl`) and this site ships no Tailwind, so none of them
 do anything.
 
+## Task-list checkboxes from synced posts (#174)
+
+The #66 close-out audit (19 Nov 2026, build `c845449`) found the site's only
+remaining violations: 12 `label` nodes (critical, 6 per theme) on
+`/blog/2026/the-developer-in-the-middle/`. kramdown renders a Markdown task list
+(`- [ ] …`) as a disabled `<input type="checkbox">` with no accessible name.
+
+Posts are synced byte-for-byte from other repos, so the fix lives in the
+renderer, not the post: `_plugins/task-list-labels.rb` wraps each checkbox's
+item text in a `<span id>` and sets `aria-labelledby` on the checkbox, at build
+time, on every `.html` page. Any checklist a future post brings in is covered
+without per-post work. Its header comment records why it is not a `<label>`
+wrapper or client-side JS.
+
 ## Should this run in CI?
 
 **No — run it on demand.** Three reasons a blocking gate is the wrong shape:
