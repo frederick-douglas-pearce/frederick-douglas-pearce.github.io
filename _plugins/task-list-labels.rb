@@ -8,15 +8,19 @@
 #
 # Decisions (architect review on #174), recorded so they are not undone:
 # - :post_render over the composed page, not :post_convert per fragment. A task list can reach a page
-#   through a layout or include (notes on /activity/, excerpts on /blog/), and id uniqueness can only
-#   be checked against the whole page.
+#   through a layout or include (a note's content, rendered by _includes/activity.liquid on /activity/
+#   and the about page), and id uniqueness can only be checked against the whole page.
 # - aria-labelledby + <span>, not a <label> wrapper: Bootstrap's reboot makes <label> inline-block with
 #   a bottom margin, which would change how task lists look. No class is added, so PurgeCSS has
 #   nothing to strip and no stylesheet changes.
-# - .html output only. jekyll-feed embeds post content in feed.xml, and re-serializing that as HTML
-#   would break the Atom feed.
-# - Parsing with Nokogiri::HTML adds no new serialization behavior: jekyll-link-attributes already
-#   round-trips every page's output through it.
+# - Build time, not client-side JS: a script would fix the page only after it loads, so readers with
+#   JS off and anything reading the served HTML would still get unnamed checkboxes.
+# - .html output only. jekyll-feed embeds post content in feed.xml as raw HTML inside CDATA, and
+#   re-serializing that file as HTML would break the Atom feed.
+# - Parsing with Nokogiri::HTML adds no new serialization behavior while `external_links.enabled` is
+#   true in _config.yml (as it is today): jekyll-link-attributes then already round-trips every
+#   document's and every .html page's output through it. If that is turned off, this hook becomes the
+#   only HTML round-trip, on pages that contain task lists.
 
 require 'nokogiri'
 require 'set'
@@ -77,11 +81,18 @@ module Jekyll
       item.output = doc.to_s
     end
 
-    def self.named?(node)
-      return true unless node.text.strip.empty?
-      return false unless node.element?
+    # Content that never contributes to an accessible name: comments are not elements or text, and
+    # these elements' text is not rendered.
+    NAMELESS_TAGS = %w[script style template].freeze
+    VISIBLE_TEXT = './/text()[not(ancestor::script or ancestor::style or ancestor::template)]'
 
-      (node.name == 'img' && !node['alt'].to_s.strip.empty?) ||
+    def self.named?(node)
+      return !node.text.strip.empty? if node.text?
+      return false unless node.element?
+      return false if NAMELESS_TAGS.include?(node.name)
+      return !node['alt'].to_s.strip.empty? if node.name == 'img'
+
+      node.xpath(VISIBLE_TEXT).any? { |t| !t.text.strip.empty? } ||
         node.css('img[alt]').any? { |img| !img['alt'].strip.empty? }
     end
   end
