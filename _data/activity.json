@@ -1,7 +1,14 @@
 {
   "_generated_by": "bin/activity-releases.js — do not edit by hand",
-  "generated_at": "2026-11-16T04:00:50Z",
+  "generated_at": "2026-11-25T16:00:48Z",
   "releases": [
+    {
+      "repo": "agentfluent",
+      "tag": "v0.12.0",
+      "date": "2026-11-25T09:17:39Z",
+      "summary": "diff: disclose cost coverage for both baseline and current",
+      "url": "https://github.com/frederick-douglas-pearce/agentfluent/releases/tag/v0.12.0"
+    },
     {
       "repo": "claude-code-loop",
       "tag": "v0.6.0",
